@@ -1,4 +1,4 @@
-# Streetcraft Visual System (SVS) 1.6
+# Streetcraft Visual System (SVS) 1.6.2
 
 Streetcraft is an AI-agnostic visual reasoning and transformation system for real photographs, historical urban imagery, and photographs of the physical Fear City model.
 
