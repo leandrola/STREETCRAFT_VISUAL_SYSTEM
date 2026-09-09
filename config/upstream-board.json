@@ -1,0 +1,9 @@
+{
+  "connector": "pinterest_public_board",
+  "requested_url": "https://pin.it/5SbUv5Agi",
+  "canonical_board_url": null,
+  "visibility": "public",
+  "sync_policy": "incremental",
+  "full_snapshot_policy": "verified_total_required",
+  "archive_default_authority": "DOCUMENTARY_EVIDENCE"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "111111111111",
+    "pin_url": "https://www.pinterest.com/pin/111111111111/?utm_source=test",
+    "title": "Historic storefront",
+    "description": "Reference metadata",
+    "images": {
+      "236x": {"url": "https://i.pinimg.com/236x/a/b/c.jpg", "width": 236, "height": 354},
+      "orig": {"url": "https://i.pinimg.com/originals/a/b/c.jpg", "width": 1000, "height": 1500}
+    },
+    "source_url": "https://example.org/archive/item1?utm_source=pinterest"
+  },
+  {
+    "id": "222222222222",
+    "url": "https://www.pinterest.com/pin/222222222222/",
+    "image_url": "https://i.pinimg.com/originals/d/e/f.jpg"
+  },
+  {
+    "id": "111111111111",
+    "image_url": "https://i.pinimg.com/originals/duplicate.jpg"
+  },
+  {
+    "id": "333333333333",
+    "title": "missing image should be skipped"
+  }
+]

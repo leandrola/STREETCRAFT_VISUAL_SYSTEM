@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Streetcraft Archive Retrieval Response",
+  "type": "object",
+  "required": ["request_id", "retrieval_status", "candidates", "unresolved_questions"],
+  "properties": {
+    "request_id": {"type": "string"},
+    "retrieval_status": {"enum": ["RESOLVED", "PARTIAL", "UNRESOLVED"]},
+    "candidates": {
+      "type": "array",
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["archive_id", "evidence_unit_ids", "authority_score", "confidence", "provenance", "why_selected", "permitted_learning", "forbidden_transfer"],
+        "properties": {
+          "archive_id": {"type": "string"},
+          "evidence_unit_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "authority_score": {"type": "number", "minimum": 0, "maximum": 1},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+          "provenance": {"enum": ["P0", "P1", "P2", "P3", "P4"]},
+          "why_selected": {"type": "string"},
+          "permitted_learning": {"type": "array", "items": {"type": "string"}},
+          "forbidden_transfer": {"type": "array", "items": {"type": "string"}},
+          "unresolved_uncertainty": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": true
+      }
+    },
+    "unresolved_questions": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}

@@ -1,20 +1,70 @@
-# Streetcraft Visual System (SVS) 1.6.2
+# Streetcraft Archive 1.0-F
 
-Streetcraft is an AI-agnostic visual reasoning and transformation system for real photographs, historical urban imagery, and photographs of the physical Fear City model.
+Streetcraft Archive is the living documentary-evidence layer used by the Streetcraft Visual System.
 
-Streetcraft is not a web application, not a prompt preset, and not tied to any image model.
+It is designed around a public Pinterest board curated manually and growing indefinitely. The human workflow remains: find an image → save it to the board → done.
 
-## Project boundaries
-- **Fear City**: the authored physical world/model.
-- **Streetcraft**: the portable visual system used to understand, transform, critique and self-correct imagery.
-- **RDR / RDR 2.0**: visual profiles inside Streetcraft.
-- **NAAA**: separate project, not part of SVS.
+## 1.0-E adds
+- Public Pinterest Board Adapter contract
+- canonical-board / short-link resolution boundary
+- normalized pin extraction contract
+- FULL snapshot production rules
+- parser for Pinterest-like embedded JSON and normalized connector payloads
+- defensive deduplication by pin identity
+- source/image URL normalization
+- adapter diagnostics and degraded-mode behavior
+- executable adapter tests with local fixtures
 
-## Capabilities included in 1.6
-- SVS 1.0 Core visual grammar, preservation, modes, profiles, compliance and failure families.
-- SVS 1.2 Visual Intelligence: source analysis, evidence graph, preservation intelligence, uncertainty and scene understanding.
-- SVS 1.4 Visual Critic: comparative vision, failure diagnosis, gate-based compliance and revision contracts.
-- SVS 1.5 Self-Correction: orchestration, best-known-output protection, regression detection, escalation and stopping.
-- SVS 1.6 Fear City Vision: authored-world extraction, model/capture separation, scale translation and material-world translation.
+## Architecture boundary
+- SVS = visual governance and transformation decisions
+- Archive = living documentary evidence
+- Canon = explicitly promoted high-authority references
+- Pinterest = current public intake surface
+- Public Board Adapter = replaceable discovery/normalization layer
+- GPT = primary classifier/reasoning runtime
 
-Start with `STREETCRAFT.md`.
+## Target board
+The intended upstream is the user's public Pinterest board shared via:
+`https://pin.it/5SbUv5Agi`
+
+This URL is treated as configuration, not as permanent identity. The adapter should resolve and store the canonical board URL when a runtime with public-web/browser access is available.
+
+## Important behavior
+The adapter does not grant Pinterest authority over Streetcraft. It only enumerates documentary candidates.
+
+A failed or partial Pinterest fetch must never be emitted as `FULL`. Only a verified complete board enumeration may produce a `FULL` connector snapshot capable of marking older pins as missing.
+
+## Recommended reading order
+1. `core/ARCHIVE_ARCHITECTURE.md`
+2. `adapter/PUBLIC_PINTEREST_BOARD_ADAPTER.md`
+3. `adapter/PIN_NORMALIZATION_CONTRACT.md`
+4. `sync/CONNECTOR_SYNC_RUNTIME.md`
+5. `sync/NORMALIZED_CONNECTOR_SNAPSHOT.md`
+6. `pipeline/INGESTION_CLASSIFICATION_PIPELINE.md`
+7. `storage/STORAGE_ARCHITECTURE.md`
+8. `runtime/RETRIEVAL_RUNTIME.md`
+9. `runtime/SVS_INTEGRATION_CONTRACT.md`
+
+## Current implementation boundary
+1.0-E includes a tested parser/normalizer and snapshot builder, but the live Pinterest network/browser driver is intentionally not claimed as complete. Pinterest pages can require JavaScript, redirects, authentication challenges, or anti-automation handling depending on runtime. The adapter therefore separates **acquisition** from **normalization**.
+
+A compliant acquisition driver must provide either:
+- resolved public-board HTML containing sufficient embedded state, or
+- a structured list of public pin records gathered by an authorized browser/connector.
+
+The 1.0-E normalizer then converts that acquisition result into the Streetcraft connector snapshot expected by 1.0-D.
+
+## 1.0-F1 — Target Board Correction
+
+1.0-F adds an executable Playwright acquisition layer for a public Pinterest board.
+
+Target upstream:
+`https://pin.it/5SbUv5Agi`
+
+The driver resolves redirects in a real browser, enumerates `/pin/` URLs, scrolls until stable, captures image candidates and emits a connector snapshot.
+
+**Important:** this release does not claim that the target board was successfully acquired from the ChatGPT runtime. Outbound DNS/network access to `pin.it` was unavailable here. The package therefore ships the live driver and a conservative completeness gate, but contains no fabricated board data.
+
+See `acquisition/LIVE_ACQUISITION_DRIVER.md`.
+
+Correction F1: target upstream URL updated to the user-confirmed public board. No runtime, schema, authority, or retrieval behavior changed.

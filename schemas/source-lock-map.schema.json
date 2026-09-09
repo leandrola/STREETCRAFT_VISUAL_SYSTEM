@@ -1,1 +1,0 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Streetcraft Source Lock Map","type":"object","required":["locks"],"properties":{"locks":{"type":"object","additionalProperties":{"enum":["HARD","SOFT","OPEN"]}}}}

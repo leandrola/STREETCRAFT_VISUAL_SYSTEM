@@ -1,0 +1,42 @@
+{
+  "archive_class": "DOCUMENTARY_EVIDENCE",
+  "image_status": "USABLE",
+  "scene_summary": "Street-level urban storefront scene with brick facades, exterior fire escape, market display, period advertising and several people.",
+  "evidence_units": [
+    {
+      "domain": "STOREFRONT",
+      "subject": "produce display",
+      "observation": "Open sidewalk market display uses stacked crates and goods directly in front of the shop opening.",
+      "visual_location": "lower left",
+      "evidence_type": "OBSERVED",
+      "confidence": 0.95,
+      "transfer_eligibility": "FORM_REFERENCE",
+      "notes": "Use for display organization only; do not transfer business identity or exact products."
+    }
+  ],
+  "temporal_estimate": {
+    "value": "mid-20th-century",
+    "confidence": 0.62,
+    "basis": ["storefront advertising treatment", "street clothing", "commercial display"]
+  },
+  "regional_estimate": {
+    "value": null,
+    "confidence": 0.15,
+    "basis": ["urban morphology is not sufficient for a reliable city-level claim"]
+  },
+  "provenance": {
+    "level": "P1",
+    "source_url": "https://www.pinterest.example/pin/123",
+    "original_source_url": null,
+    "notes": "Pinterest discovery source only; original documentary source unresolved."
+  },
+  "retrieval": {
+    "descriptors": ["sidewalk produce display", "stacked market crates", "brick storefront", "exterior fire escape"],
+    "high_risk_terms": ["business identity", "exact advertising text", "people identity"]
+  },
+  "validation": {
+    "status": "PASS",
+    "flags": [],
+    "diagnostics": "Location remains unresolved and no semantic text was inferred beyond visible evidence."
+  }
+}

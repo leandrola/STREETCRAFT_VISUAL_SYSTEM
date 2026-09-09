@@ -1,0 +1,12 @@
+{
+  "request_id": "RNM-2026-0001",
+  "requested_domain": "signage",
+  "specific_problem": "Resolve the construction and mounting behavior of a projecting storefront sign without importing business identity or readable wording.",
+  "source_context": "Historic urban storefront; sign shape is visible but mounting detail is unclear.",
+  "period_constraint": {"from": 1965, "to": 1978, "hard": false},
+  "regional_constraint": {"region": "US Northeast", "hard": false},
+  "minimum_provenance": "P1",
+  "minimum_confidence": 0.70,
+  "forbidden_transfer": ["business_name", "exact_wording", "geographic_identity"],
+  "max_results": 3
+}

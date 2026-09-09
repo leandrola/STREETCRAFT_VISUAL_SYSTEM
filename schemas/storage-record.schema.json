@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Streetcraft Archive Storage Record",
+  "type": "object",
+  "required": ["archive_id", "archive_class", "source_status", "schema_version", "first_ingested_at"],
+  "properties": {
+    "archive_id": {"type": "string", "pattern": "^SCA-[0-9]{6,}$"},
+    "archive_class": {"enum": ["DOCUMENTARY_EVIDENCE", "INFLUENCE_REFERENCE", "CANON_CANDIDATE", "CANONICAL", "REJECTED"]},
+    "source_status": {"enum": ["AVAILABLE", "UNAVAILABLE", "CHANGED", "QUARANTINED"]},
+    "schema_version": {"type": "string"},
+    "first_ingested_at": {"type": "string"},
+    "last_seen_at": {"type": ["string", "null"]},
+    "content_fingerprint": {"type": ["string", "null"]},
+    "perceptual_hash": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}

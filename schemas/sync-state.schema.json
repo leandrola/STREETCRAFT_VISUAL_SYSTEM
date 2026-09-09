@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Streetcraft Archive Sync State",
+  "type": "object",
+  "required": ["board_url","items"],
+  "properties": {
+    "board_url":{"type":"string"},
+    "last_sync_at":{"type":"string"},
+    "items":{"type":"object","additionalProperties":{"type":"object","required":["archive_id","fingerprint"],"properties":{"archive_id":{"type":"string"},"fingerprint":{"type":"string"},"source_status":{"type":"string"}}}}
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Streetcraft Archive Relationship",
+  "type": "object",
+  "required": ["from_archive_id", "to_archive_id", "relationship", "confidence"],
+  "properties": {
+    "from_archive_id": {"type": "string", "pattern": "^SCA-[0-9]{6,}$"},
+    "to_archive_id": {"type": "string", "pattern": "^SCA-[0-9]{6,}$"},
+    "relationship": {"enum": ["EXACT_DUPLICATE", "NEAR_DUPLICATE", "ALTERNATE_SCAN", "CROP_OF", "REPOST_OF", "SAME_SCENE", "SAME_SUBJECT", "RELATED_SERIES"]},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": false
+}

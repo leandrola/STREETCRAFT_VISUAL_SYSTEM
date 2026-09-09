@@ -1,0 +1,33 @@
+{
+  "provider": "pinterest",
+  "board_url": "https://www.pinterest.com/example/streetcraft-archive/",
+  "board_external_id": "example-board",
+  "enumerated_at": "2026-09-09T21:00:00Z",
+  "enumeration_mode": "FULL",
+  "items": [
+    {
+      "external_id": "pin-1001",
+      "pin_url": "https://www.pinterest.com/pin/1001/",
+      "image_url": "https://images.example/1001.jpg",
+      "caption": "Historic storefront, updated caption",
+      "outbound_source_url": null,
+      "provider_updated_at": "2026-09-09T18:00:00Z"
+    },
+    {
+      "external_id": "pin-1002",
+      "pin_url": "https://www.pinterest.com/pin/1002/",
+      "image_url": "https://images.example/1002.jpg",
+      "caption": "Street scene",
+      "outbound_source_url": "https://archive.example/item/42",
+      "provider_updated_at": null
+    },
+    {
+      "external_id": "pin-1003",
+      "pin_url": "https://www.pinterest.com/pin/1003/",
+      "image_url": "https://images.example/1003.jpg",
+      "caption": "Newly added reference",
+      "outbound_source_url": null,
+      "provider_updated_at": null
+    }
+  ]
+}

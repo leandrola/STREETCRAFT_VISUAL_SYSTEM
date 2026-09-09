@@ -1,0 +1,18 @@
+{
+  "request_id": "RNM-2026-0001",
+  "retrieval_status": "RESOLVED",
+  "candidates": [
+    {
+      "archive_id": "SCA-000742",
+      "evidence_unit_ids": ["SCA-000742:EU-004"],
+      "authority_score": 0.86,
+      "confidence": 0.91,
+      "provenance": "P2",
+      "why_selected": "The Evidence Unit directly documents projecting-sign mounting geometry in a compatible period and urban context.",
+      "permitted_learning": ["mounting_geometry", "relative_projection_depth", "material_behavior"],
+      "forbidden_transfer": ["business_name", "exact_wording", "street_identity"],
+      "unresolved_uncertainty": ["exact manufacturer", "exact installation date"]
+    }
+  ],
+  "unresolved_questions": []
+}

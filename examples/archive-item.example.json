@@ -1,0 +1,40 @@
+{
+  "archive_id": "SCA-000742",
+  "class": "DOCUMENTARY_EVIDENCE",
+  "source_status": "AVAILABLE",
+  "source": {
+    "provider": "pinterest",
+    "external_id": "example-pin-id",
+    "item_url": "https://www.pinterest.com/pin/example",
+    "board_url": "https://www.pinterest.com/example-board",
+    "outbound_source_url": null
+  },
+  "provenance_level": "P1",
+  "period": {"estimate":"1970s","confidence":0.72},
+  "region": {"estimate":"Northeastern United States","confidence":0.55},
+  "evidence_units": [
+    {
+      "domain": "SIGNAGE",
+      "subject": "painted storefront sign",
+      "observation": "large hand-painted sign integrated into narrow commercial facade",
+      "visual_location": "ground floor",
+      "evidence_type": "OBSERVED",
+      "confidence": 0.92,
+      "transfer_eligibility": ["FORM_REFERENCE"],
+      "notes": "literal wording is not transferable"
+    },
+    {
+      "domain": "MATERIALS",
+      "subject": "painted brick",
+      "observation": "localized grime and tonal variation without uniform heavy decay",
+      "visual_location": "upper facade",
+      "evidence_type": "OBSERVED",
+      "confidence": 0.88,
+      "transfer_eligibility": ["DOCUMENTARY_PHYSICS"],
+      "notes": "source color is not transferable by default"
+    }
+  ],
+  "visual_fingerprint": "example-sha256-or-perceptual-hash",
+  "first_ingested_at": "2026-09-08T18:55:00-03:00",
+  "last_synced_at": "2026-09-08T18:55:00-03:00"
+}
