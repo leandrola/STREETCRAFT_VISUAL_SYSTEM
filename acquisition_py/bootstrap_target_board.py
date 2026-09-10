@@ -8,6 +8,7 @@ cmd = [
     '--canonical-url', 'https://ar.pinterest.com/leolaudicina/us-image-archive',
     '--expected-total', '536',
     '--profile-dir', str(ROOT / '.browser-profile'),
+    '--bootstrap-login', '--headed',
     '-o', str(ROOT / 'snapshots' / 'target-board.snapshot.json')
 ]
 raise SystemExit(subprocess.call(cmd))

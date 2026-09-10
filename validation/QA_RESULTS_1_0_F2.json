@@ -1,0 +1,14 @@
+{
+  "release": "1.0-F2",
+  "canonical_board_url": "https://ar.pinterest.com/leolaudicina/us-image-archive",
+  "observed_total_hint": 536,
+  "python_compile": true,
+  "python_compile_stderr": "/mnt/data/STREETCRAFT_ARCHIVE_V1_0_F2/acquisition_py/pinterest_live_driver.py:67: SyntaxWarning: invalid escape sequence '\\/'\n  const m = href.match(/\\/pin\\/(\\d+)/);\n/mnt/data/STREETCRAFT_ARCHIVE_V1_0_F2/acquisition_py/pinterest_live_driver.py:108: SyntaxWarning: invalid escape sequence '\\d'\n  const m = body.match(/([\\d,.]+)\\s+(?:Pins?|pines?)\\b/i);\n",
+  "json_validation": true,
+  "json_files_validated": 23,
+  "json_errors": [],
+  "persistent_profile_support": true,
+  "bootstrap_login_support": true,
+  "expected_total_gate": true,
+  "no_credentials_in_config": true
+}
