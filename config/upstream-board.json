@@ -3,9 +3,8 @@
   "requested_url": "https://pin.it/5SbUv5Agi",
   "canonical_board_url": "https://ar.pinterest.com/leolaudicina/us-image-archive",
   "visibility": "public",
-  "observed_total_hint": 536,
-  "observed_at": "2026-09-09T03:45:54.147657+00:00",
-  "sync_policy": "incremental",
-  "full_snapshot_policy": "expected_total_and_stability_required",
+  "last_successful_enumeration_count": 547,
+  "previous_visible_total_hint": 536,
+  "count_policy": "observed totals are hints, never permanent corpus truth",
   "archive_default_authority": "DOCUMENTARY_EVIDENCE"
 }

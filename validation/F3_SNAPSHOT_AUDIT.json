@@ -1,0 +1,18 @@
+{
+  "release": "1.0-F3",
+  "input_snapshot_version": "1.0-F2",
+  "item_count": 547,
+  "unique_pin_ids": 547,
+  "duplicate_pin_ids": [],
+  "unique_pin_urls": 547,
+  "duplicate_pin_urls": [],
+  "unique_fingerprints": 547,
+  "duplicate_fingerprints": [],
+  "image_url_count": 547,
+  "pinimg_236x_count": 547,
+  "pinimg_originals_count": 0,
+  "board_url_in_snapshot": "https://ar.pinterest.com",
+  "configured_canonical_board": "https://ar.pinterest.com/leolaudicina/us-image-archive",
+  "all_items_board_match_before_normalization": false,
+  "note": "Different pin IDs may still contain the same underlying photograph. Perceptual deduplication remains a later image-level audit."
+}
