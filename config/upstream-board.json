@@ -3,8 +3,17 @@
   "requested_url": "https://pin.it/5SbUv5Agi",
   "canonical_board_url": "https://ar.pinterest.com/leolaudicina/us-image-archive",
   "visibility": "public",
-  "last_successful_enumeration_count": 547,
-  "previous_visible_total_hint": 536,
-  "count_policy": "observed totals are hints, never permanent corpus truth",
+  "last_live_snapshot_version": "1.0-F2",
+  "last_live_enumeration_mode": "PARTIAL",
+  "last_live_item_count": 508,
+  "last_live_unique_pin_ids": 508,
+  "last_live_236x_count": 508,
+  "completeness_policy": "pin-count stability AND scroll-height stability",
+  "resolution_policy": [
+    "originals",
+    "736x",
+    "564x",
+    "dom_fallback"
+  ],
   "archive_default_authority": "DOCUMENTARY_EVIDENCE"
 }

@@ -1,0 +1,21 @@
+{
+  "release": "1.0-F4",
+  "basis": {
+    "uploaded_live_snapshot": "target-board.snapshot(1).json",
+    "enumeration_mode": "PARTIAL",
+    "item_count": 508,
+    "unique_pin_ids": 508,
+    "pinimg_236x_count": 508
+  },
+  "checks": {
+    "python_compile": true,
+    "json_validation": true,
+    "canonical_board_lock": false,
+    "reachable_image_resolution": true,
+    "scroll_height_stability_gate": true,
+    "visible_total_not_required_for_full": true,
+    "snapshot_001_frozen": false
+  },
+  "json_files_validated": 29,
+  "json_errors": []
+}

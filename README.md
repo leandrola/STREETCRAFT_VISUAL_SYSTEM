@@ -54,7 +54,7 @@ A compliant acquisition driver must provide either:
 
 The 1.0-E normalizer then converts that acquisition result into the Streetcraft connector snapshot expected by 1.0-D.
 
-## 1.0-F3 — Target Board Correction
+## 1.0-F4 — Target Board Correction
 
 1.0-F adds an executable Playwright acquisition layer for a public Pinterest board.
 
@@ -76,3 +76,7 @@ Use `python acquisition_py/bootstrap_target_board.py` once if Pinterest requires
 
 ## F3
 F3 hardens canonical board provenance and high-resolution image acquisition before Archive Snapshot 001 is frozen. See `acquisition/F3_ARCHIVE_ACQUISITION_HARDENING.md`.
+
+
+## F4
+F4 resolves the highest reachable Pinterest image asset and requires independent pin-count + scroll-height stability before `FULL`. See `acquisition/F4_RESOLUTION_ENUMERATION_HARDENING.md`.
