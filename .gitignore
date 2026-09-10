@@ -1,0 +1,29 @@
+# macOS metadata
+.DS_Store
+._*
+
+# Persistent browser session data
+/.browser-profile/
+
+# Python environments and generated caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local environment configuration
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Editor temporary files
+*.swp
+*.swo
+*~
