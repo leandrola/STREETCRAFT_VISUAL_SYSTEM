@@ -1,0 +1,74 @@
+{
+  "version": "CRVM-1.2",
+  "level": "L2_CONTROLLED_TRANSFORMATIONS",
+  "status": "PASS",
+  "method": "Same synthetic building identity reused across all profile/camera cells. Individual evidence images were cropped from one controlled generated composition and reviewed after generation.",
+  "building_identity_markers": [
+    "FRANKLIN HARDWARE storefront identity",
+    "street number 423",
+    "same brick massing and upper-window rhythm",
+    "same storefront segmentation",
+    "same corner condition",
+    "same period/material language"
+  ],
+  "pair_results": [
+    {
+      "pair": "VP00 A/B",
+      "cg_a_file": "VP00_CG-A.png",
+      "cg_b_file": "VP00_CG-B.png",
+      "camera_family_distinct": true,
+      "same_building_identity": true,
+      "scores": {
+        "CG_A_camera_compliance": 96,
+        "CG_B_camera_compliance": 95,
+        "same_building_identity": 94,
+        "architectural_dominance": 96,
+        "perspective_discipline": 95,
+        "unsupported_invention_control": 90
+      },
+      "decision": "PASS"
+    },
+    {
+      "pair": "VP01 A/B",
+      "cg_a_file": "VP01_CG-A.png",
+      "cg_b_file": "VP01_CG-B.png",
+      "camera_family_distinct": true,
+      "same_building_identity": true,
+      "scores": {
+        "CG_A_camera_compliance": 97,
+        "CG_B_camera_compliance": 96,
+        "same_building_identity": 95,
+        "architectural_dominance": 97,
+        "perspective_discipline": 96,
+        "unsupported_invention_control": 91
+      },
+      "decision": "PASS"
+    },
+    {
+      "pair": "VP02 A/B",
+      "cg_a_file": "VP02_CG-A.png",
+      "cg_b_file": "VP02_CG-B.png",
+      "camera_family_distinct": true,
+      "same_building_identity": true,
+      "scores": {
+        "CG_A_camera_compliance": 96,
+        "CG_B_camera_compliance": 96,
+        "same_building_identity": 94,
+        "architectural_dominance": 97,
+        "perspective_discipline": 96,
+        "unsupported_invention_control": 90
+      },
+      "decision": "PASS"
+    }
+  ],
+  "observations": [
+    "CG-A consistently reads as facade-dominant, near-elevation/front-oblique.",
+    "CG-B consistently exposes a meaningful side plane and clear two-point street-level recession.",
+    "Building identity remains recognizable across all six outputs.",
+    "VP02 no longer depends on strict one-point frontal composition; both CG-A and CG-B remain valid.",
+    "The camera-family distinction is now visually demonstrated without switching buildings.",
+    "Because the base is synthetic, newly revealed side-plane details are judged for internal continuity, not documentary source preservation."
+  ],
+  "acceptance_threshold": 85,
+  "critical_failures": 0
+}

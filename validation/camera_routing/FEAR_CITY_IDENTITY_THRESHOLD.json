@@ -1,0 +1,44 @@
+{
+  "version": "FCIT-1.0",
+  "states": [
+    "CONFIRMED",
+    "PROBABLE",
+    "UNRESOLVED",
+    "NOT_APPLICABLE"
+  ],
+  "confirmed_when": [
+    "User/project explicitly identifies source as Fear City",
+    "OR at least one structural anchor plus one identity anchor are supported by a known source or multi-view set"
+  ],
+  "structural_anchors": [
+    "known elevated structure geometry",
+    "known underpass/opening geometry",
+    "known embedded track/street topology",
+    "known authored wall relationships"
+  ],
+  "identity_anchors": [
+    "Tanner Street in known authored relationship",
+    "Jericho Street in known authored relationship",
+    "known recurring graffiti/mural composition",
+    "known recurring street-furniture / curb relationships",
+    "known multi-view arrangement of walls, elevated and road"
+  ],
+  "never_sufficient_alone": [
+    "New York resemblance",
+    "1970s/1980s atmosphere",
+    "brick",
+    "graffiti",
+    "elevated steel",
+    "grime/decay",
+    "period vehicles",
+    "miniature appearance",
+    "night photography",
+    "Fear City-like mood"
+  ],
+  "routing": {
+    "CONFIRMED": "T06 + VP03 + CG-FC",
+    "PROBABLE": "no auto-route to VP03",
+    "UNRESOLVED": "source-safe routing; no auto-route",
+    "NOT_APPLICABLE": "normal non-Fear-City routing"
+  }
+}

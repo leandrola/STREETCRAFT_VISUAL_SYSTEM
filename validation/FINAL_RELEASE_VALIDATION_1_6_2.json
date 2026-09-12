@@ -1,0 +1,15 @@
+{
+  "release": "SVS 1.6.2",
+  "state": "VALIDATED_RELEASE",
+  "camera_profile_routing_milestone_pct": 100,
+  "validation": {
+    "L0_structural": "PASS_26_26",
+    "L1_visual_fixture_review": "PASS",
+    "L2_same_building_camera_distinction": "PASS",
+    "L3_fear_city_routing_identity": "PASS"
+  },
+  "fear_city_default_route": "T06 + VP03 + CG-FC",
+  "vp02_strict_frontality_required": false,
+  "canon_modified": false,
+  "sc_rule_set_modified": false
+}

@@ -1,0 +1,50 @@
+{
+  "name": "Streetcraft Visual System",
+  "version": "1.6.2",
+  "build_date": "2026-09-11",
+  "entry_point": "STREETCRAFT.md",
+  "integrated_milestones": [
+    "1.0 Core",
+    "1.1 Visual Canon",
+    "1.2 Visual Intelligence",
+    "1.4 Visual Critic",
+    "1.5 Self-Correction",
+    "1.6 Fear City Vision",
+    "1.6.2 Camera Grammar + Profiles + Fear City Auto-Routing"
+  ],
+  "modules": [
+    "core",
+    "reference",
+    "transform",
+    "intelligence",
+    "critic",
+    "self_correction",
+    "fear_city",
+    "agent",
+    "schemas",
+    "adapters",
+    "legacy"
+  ],
+  "status": "validated-release",
+  "canon_policy": "Only the human project owner can grant CANONICAL status",
+  "reference_assets_included": true,
+  "canon_modified": false,
+  "sc_rule_set_modified": false,
+  "base_package": "STREETCRAFT_VISUAL_SYSTEM_V1_6_1",
+  "validated_features": [
+    "CG-A Frontal-Oblique Architectural Immersion",
+    "CG-B Street-Level Oblique Monumentality",
+    "CG-S Source-Locked Camera",
+    "CG-FC Fear City Authored-View Camera",
+    "VP00/VP01/VP02 revised camera behavior",
+    "Fear City Auto-Routing",
+    "Fear City Identity Threshold"
+  ],
+  "validation": {
+    "L0": "PASS 26/26",
+    "L1": "PASS",
+    "L2": "PASS",
+    "L3": "PASS",
+    "milestone": "Camera/Profile/Routing 100%"
+  }
+}

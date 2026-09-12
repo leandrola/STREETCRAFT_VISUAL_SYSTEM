@@ -1,0 +1,64 @@
+{
+  "release": "1.6.2",
+  "validated_governing_files_unchanged_during_consolidation": true,
+  "files": {
+    "core/VISUAL_GRAMMAR.md": {
+      "sha256_before": "83b7893b0886e684f3266fd257bee33cdd36f053c1e3e14acae9900844cdd6da",
+      "sha256_after": "83b7893b0886e684f3266fd257bee33cdd36f053c1e3e14acae9900844cdd6da",
+      "unchanged": true
+    },
+    "transform/VISUAL_PROFILES.md": {
+      "sha256_before": "50724cf1f2bc5869975ebaebcbb3ccc714525e60673fd5246051a31409047251",
+      "sha256_after": "50724cf1f2bc5869975ebaebcbb3ccc714525e60673fd5246051a31409047251",
+      "unchanged": true
+    },
+    "transform/AUTO_ROUTING.md": {
+      "sha256_before": "a6a2e57c81526f355ef6e6e03842692a21998d50bec8238b2507c7855067f454",
+      "sha256_after": "a6a2e57c81526f355ef6e6e03842692a21998d50bec8238b2507c7855067f454",
+      "unchanged": true
+    },
+    "transform/FEAR_CITY_IDENTITY_THRESHOLD.md": {
+      "sha256_before": "cb90c4551aaf57d1793e788f06d440382fd018e191362fd4b13cc847ace53c51",
+      "sha256_after": "cb90c4551aaf57d1793e788f06d440382fd018e191362fd4b13cc847ace53c51",
+      "unchanged": true
+    },
+    "reference/VISUAL_CANON.md": {
+      "sha256_before": "d9db4da72dc8b41bd447f65cfae20ace7938d804f82e6867d06056541d3a66c8",
+      "sha256_after": "d9db4da72dc8b41bd447f65cfae20ace7938d804f82e6867d06056541d3a66c8",
+      "unchanged": true
+    },
+    "reference/CANON_CANDIDATES.md": {
+      "sha256_before": "84b5a89b033624b5a63888d5bd8be4b1c45f4d380a14b98e93690f662e275975",
+      "sha256_after": "84b5a89b033624b5a63888d5bd8be4b1c45f4d380a14b98e93690f662e275975",
+      "unchanged": true
+    },
+    "reference/DOCUMENTARY_EVIDENCE.md": {
+      "sha256_before": "bc09740dd25c28d939928fa342e9590e69482551ba3ed173d066d58e23d13022",
+      "sha256_after": "bc09740dd25c28d939928fa342e9590e69482551ba3ed173d066d58e23d13022",
+      "unchanged": true
+    },
+    "fear_city/FEAR_CITY_VISION.md": {
+      "sha256_before": "9ddd834c44dda5c362040c60e59aa552b251f979945dfb7a58afc1563bbf2b98",
+      "sha256_after": "9ddd834c44dda5c362040c60e59aa552b251f979945dfb7a58afc1563bbf2b98",
+      "unchanged": true
+    },
+    "transform/TRANSFORMATION_MODES.md": {
+      "sha256_before": "0d44531f6d13774b050c2028ce29cf91f27528f63bd97adad7cf43599d79593b",
+      "sha256_after": "0d44531f6d13774b050c2028ce29cf91f27528f63bd97adad7cf43599d79593b",
+      "unchanged": true
+    },
+    "core/PRESERVATION_MODEL.md": {
+      "sha256_before": "a4c4debffa3114a0cba17b04a9188cdd2aec92a32e10a0b7a76a066f3b37994c",
+      "sha256_after": "a4c4debffa3114a0cba17b04a9188cdd2aec92a32e10a0b7a76a066f3b37994c",
+      "unchanged": true
+    }
+  },
+  "metadata_files_updated": [
+    "README.md",
+    "STREETCRAFT.md",
+    "CHANGELOG.md",
+    "PACKAGE_MANIFEST.json",
+    "RELEASE_NOTES_1_6_2.md",
+    "validation/FINAL_RELEASE_VALIDATION_1_6_2.json"
+  ]
+}

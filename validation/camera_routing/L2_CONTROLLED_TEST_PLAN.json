@@ -1,0 +1,59 @@
+{
+  "version": "CRVM-1.1",
+  "purpose": "Balanced controlled generation plan after L1 fixture review.",
+  "cells": [
+    {
+      "id": "L2-VP00-A",
+      "profile": "VP00",
+      "camera": "CG-A",
+      "required": true
+    },
+    {
+      "id": "L2-VP00-B",
+      "profile": "VP00",
+      "camera": "CG-B",
+      "required": true
+    },
+    {
+      "id": "L2-VP01-A",
+      "profile": "VP01",
+      "camera": "CG-A",
+      "required": true
+    },
+    {
+      "id": "L2-VP01-B",
+      "profile": "VP01",
+      "camera": "CG-B",
+      "required": true
+    },
+    {
+      "id": "L2-VP02-A",
+      "profile": "VP02",
+      "camera": "CG-A",
+      "required": true
+    },
+    {
+      "id": "L2-VP02-B",
+      "profile": "VP02",
+      "camera": "CG-B",
+      "required": true
+    },
+    {
+      "id": "L2-BOUNDARY-01",
+      "profile": "VP02",
+      "camera": "A_B_BOUNDARY",
+      "required": true
+    },
+    {
+      "id": "L2-SOURCELOCK-01",
+      "profile": "VP02",
+      "camera": "CG-S",
+      "required": true
+    }
+  ],
+  "acceptance": {
+    "camera_family_compliance_min": 0.85,
+    "critical_source_identity_preservation": 1.0,
+    "unsupported_invention_critical_failures_allowed": 0
+  }
+}

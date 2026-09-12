@@ -1,0 +1,312 @@
+--- a/core/VISUAL_GRAMMAR.md
++++ b/core/VISUAL_GRAMMAR.md
+@@ -9,6 +9,66 @@
+ VG-06 Environmental Storytelling — secondary elements suggest use, not decoration.
+ VG-07 Atmospheric Restraint — cinematic only when physically plausible and source-compatible.
+ VG-08 Regional Specificity — known regional evidence outranks generic Americana.
++
++## Camera Grammar — formal camera families
++
++Camera is governed hierarchically:
++
++SOURCE IDENTITY → TRANSFORMATION MODE → PROFILE → CAMERA FAMILY
++
++Camera grammar must never destroy source identity under conservative modes. It constrains how Streetcraft interprets or reconstructs the scene when camera transformation is permitted.
++
++### CG-A — Frontal-Oblique Architectural Immersion
++Primary architectural camera family for VP00/VP01/VP02 when source/mode permit transformation.
++
++- Apparent camera height: human eye-level to slightly low.
++- View: frontal-oblique, close to architectural elevation but not forced orthographic/frontal.
++- Perspective: one dominant vanishing point with a weak secondary convergence, or controlled two-point perspective.
++- Architectural plane remains dominant.
++- Enough side depth may be visible to create immersion and believable urban volume.
++- Vertical convergence should remain controlled; dramatic upward tilt is forbidden unless source/task requires it.
++- The scene should be capable of being mistaken for a real street-level urban photograph rather than a flattened backdrop.
++- Vehicles and people are absent by default in generative/reconstructive use. Under T01 they are preserved when they are source evidence unless removal is explicitly authorized.
++
++### CG-B — Street-Level Oblique Monumentality
++Secondary architectural camera family for corners, side planes and deeper street geometry.
++
++- Apparent camera height: human eye-level to slightly low.
++- View: oblique at street level.
++- Perspective: principally two-point.
++- The observer should feel physically present in the street, facing a facade or corner with architectural monumentality.
++- Architecture and urban fabric dominate the frame.
++- Side depth may become stronger than in CG-A, but may not become wide-angle spectacle.
++- Aerial, bird's-eye, drone-like and elevated overview readings are forbidden unless explicit source/mode authority requires them.
++- Vehicles and people are absent by default in generative/reconstructive use. T01 source preservation still has higher authority.
++
++### CG-S — Source-Locked Camera
++Used when camera transformation would violate source identity or transformation intent.
++
++- Preserve source camera height, yaw, pitch, crop logic and dominant convergence as closely as practical.
++- Do not force CG-A or CG-B simply because a profile prefers them.
++- T01 Faithful Reinterpretation defaults to CG-S unless the source already naturally belongs to CG-A or CG-B.
++- CG-S is a preservation mechanism, not a visual style.
++
++### CG-FC — Fear City Authored-View Camera
++Used after Fear City auto-routing or explicit Fear City selection.
++
++- Preserve the authored physical world and the evidentiary camera relationship to it.
++- Correct or translate only capture/model scale breakers that are permitted under T06.
++- Do not force RDR frontalization or generic two-point dramatization.
++- Camera changes must increase world plausibility without redesigning authored geometry.
++- Multi-view evidence may support a more coherent world-space reading, but never licenses new geometry absent from all views.
++
++## Camera selection constraints
++
++1. CG-A and CG-B are the normal transformable camera families for VP00/VP01/VP02.
++2. One-point frontal perspective remains legal, but is no longer mandatory for VP02.
++3. VP02 may use CG-B when corner geometry, side depth or urban massing materially contributes to the source.
++4. Under conservative source-preserving work, CG-S outranks profile preference.
++5. Fear City routing selects CG-FC by default.
++6. Camera grammar does not authorize new architecture, new streets, new signage or new geographic identity.
++7. Camera immersion must come from spatial reading, not atmospheric inflation.
++8. Camera transformation must preserve the identity-bearing relationships of the source.
+ 
+ ## Rules SC-01–SC-66
+ SC-01 Human Viewpoint
+--- a/transform/VISUAL_PROFILES.md
++++ b/transform/VISUAL_PROFILES.md
+@@ -1,13 +1,83 @@
+ # Visual Profiles
+ 
++Profiles define visual behavior. They do not replace source authority or Transformation Modes.
++
+ ## VP00 STREETCRAFT CORE
+-Human camera, architecture dominant, causal imperfection, surface memory, temporal layering, atmospheric restraint, regional coherence, source identity and no AI beautification.
++Streetcraft's broad architectural interpretation profile.
++
++Camera:
++- Human eye-level or slightly low.
++- CG-A or CG-B when transformation is permitted.
++- CG-S under source-locked conservative reinterpretation.
++- No mandatory frontalization.
++- No aerial overview by default.
++
++Visual behavior:
++- Architecture dominant.
++- Causal imperfection, surface memory and temporal layering.
++- Atmospheric restraint and regional coherence.
++- Source identity preserved.
++- No AI beautification.
++- Vehicles/people absent by default in generative or reconstructive outputs, but T01 preserves source-contained human/vehicle evidence unless removal is authorized.
++
++Use VP00 when the task should feel unmistakably Streetcraft without imposing the stronger heritage constraints of RDR Classic or RDR 2.0.
+ 
+ ## VP01 RDR CLASSIC
+-North American mid-century urban landscape. Architecture protagonist. Diorama/model readability plus realistic depth. Restrained palette and reduced human activity.
++North American mid-century urban architecture with diorama readability and realistic spatial depth.
++
++Camera:
++- CG-A preferred.
++- CG-B allowed for corners, industrial blocks, side planes and urban depth.
++- Human eye-level or slightly low.
++- Frontal-oblique is preferred over strict frontal orthogonality.
++- One dominant vanishing point with a weak second convergence is ideal when source geometry supports it.
++- Controlled two-point perspective is valid.
++- CG-S remains mandatory when source preservation outranks profile transformation.
++
++Visual behavior:
++- Architecture protagonist.
++- Restrained palette.
++- Reduced activity.
++- Realistic depth with residual model/diorama readability.
++- Avoid theatrical wide-angle exaggeration.
++- Vehicles/people absent by default unless source/mode authority requires preservation.
+ 
+ ## VP02 RDR 2.0
+-Strict heritage profile: human eye-level camera, yaw≈0°, frontal facade, one-point perspective, observer on opposite/front sidewalk, architecture dominant, people/vehicles absent by default, minimal activity, aerial forbidden. Historical target: North America/USA 1960s–1970s with mid-rise brick, rooftop signs, water towers, Art Deco verticals and industrial/commercial character.
++Strict architectural-immersion heritage profile for North American/USA urban scenes, especially 1960s–1970s.
++
++Camera:
++- Human eye-level to slightly low.
++- CG-A is primary.
++- CG-B is explicitly permitted when the architecture is read through a corner, side plane or deeper street-level relationship.
++- Strict yaw≈0° is retired as a mandatory requirement.
++- Strict one-point frontal perspective is retired as a mandatory requirement.
++- One-point frontal remains a valid special case when naturally supported by the scene.
++- The preferred reading is nearly architectural elevation with real-world spatial depth, not a flat facade diagram.
++- Aerial and elevated overview remain forbidden by default.
++- CG-S still outranks the profile under source-locked T01.
++
++Visual behavior:
++- Architecture dominant and immersive.
++- People and vehicles absent by default.
++- Minimal activity.
++- Historical target remains North America/USA 1960s–1970s.
++- Mid-rise brick, rooftop signs, water towers, Art Deco verticals and industrial/commercial character remain compatible lineage signals, never mandatory object lists.
++- The scene should read as a plausible real urban photograph while preserving the handcrafted/model-derived lineage of RDR 2.0.
++- Do not use cinematic mood, decay or props to compensate for weak composition.
+ 
+ ## VP03 FEAR CITY
+-Model authorship absolute. Layout and facade identity absolute. Signage identity strong. Material intention strong. Apparent scale, atmospheric depth and lighting realism transformable. Background continuity inferable only within evidence.
++Fear City is an authored physical world and uses its own camera authority.
++
++Camera:
++- CG-FC default.
++- Preserve authored geometry and the evidentiary relationship between camera and model.
++- Do not inherit VP00/VP01/VP02 camera preferences automatically.
++- Any camera translation must support world-scale plausibility without redesigning the physical authorship.
++
++Visual behavior:
++- Model authorship absolute.
++- Layout and facade identity absolute.
++- Signage identity strong.
++- Material intention strong.
++- Apparent scale, atmospheric depth and lighting realism transformable.
++- Background continuity inferable only within evidence.
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,3 +1,14 @@
++# SVS 1.6.2 Camera/Routing Patch
++
++- Formalized CG-A frontal-oblique architectural immersion.
++- Formalized CG-B street-level oblique monumentality.
++- Added CG-S source-locked camera.
++- Added CG-FC Fear City authored-view camera.
++- Revised VP00, VP01 and VP02 camera behavior.
++- Retired mandatory yaw≈0° and mandatory one-point frontality from VP02.
++- Added conservative Fear City Auto-Routing.
++- No Visual Canon or SC rule changes.
++
+ # Changelog
+ 
+ ## 1.6 - 2026-09-06
+--- /dev/null
++++ b/transform/AUTO_ROUTING.md
+@@ -0,0 +1,99 @@
++# Auto-Routing
++
++## Purpose
++Auto-Routing determines the default Streetcraft Mode/Profile/Camera path from source identity before aesthetic interpretation.
++
++Routing is conservative. It may choose a safer path automatically, but it may not silently erase source identity.
++
++## Routing precedence
++1. Explicit source identity
++2. Explicit user Mode/Profile instruction
++3. Fear City source detection
++4. Transformation intent
++5. Default profile selection
++6. Camera family selection
++
++A direct user instruction to override Fear City routing must be explicit. Merely naming an RDR profile while supplying a Fear City source is not enough to erase Fear City authorship.
++
++## AR-01 Fear City explicit route
++If the user explicitly identifies the source/task as Fear City:
++
++MODE = T06 FEAR CITY INTERPRETATION
++PROFILE = VP03 FEAR CITY
++CAMERA = CG-FC
++
++No additional profile inference is required.
++
++## AR-02 Fear City detected route
++If the input is recognized with high confidence as a photograph of the authored Fear City physical model/world:
++
++MODE = T06
++PROFILE = VP03
++CAMERA = CG-FC
++
++Detection may use:
++- known Fear City multi-view identity;
++- repeated authored facade/layout relationships;
++- model construction cues consistent with the known project;
++- explicit Fear City signage/world evidence;
++- project context linking the source to Fear City.
++
++The route is based on source identity, not on visual resemblance to New York or other real cities.
++
++## AR-03 Ambiguous model route
++If an image appears to be a miniature/diorama but Fear City identity is uncertain:
++
++- Do not auto-promote to VP03.
++- Preserve the user-selected Mode/Profile when present.
++- Otherwise default to VP00 with source-preserving camera behavior.
++- Flag FEAR_CITY_IDENTITY = UNRESOLVED.
++- Never import Fear City geography, signage or authorship by resemblance.
++
++## AR-04 Real-world / historical photo route
++For real-world or historical urban photography with no Fear City authorship:
++
++- Use explicit user Mode/Profile when supplied.
++- If no profile is specified, default PROFILE = VP00.
++- Camera defaults:
++  - T01 → CG-S unless the source already conforms naturally to CG-A/CG-B.
++  - Transformative/reconstructive work → choose CG-A or CG-B according to architectural geometry.
++
++## AR-05 RDR profile routing
++When the user explicitly selects VP01 or VP02 on non-Fear-City material:
++
++- retain selected profile;
++- select CG-A by default;
++- select CG-B when corner/side-depth geometry materially contributes;
++- select CG-S when source preservation is the higher-order requirement.
++
++## AR-06 Explicit Fear City override
++To apply VP00/VP01/VP02 to a confirmed Fear City source, the instruction must explicitly authorize overriding normal Fear City routing.
++
++Even then:
++- source authorship remains protected;
++- no geographic substitution is allowed;
++- no RDR camera rule may redesign Fear City geometry;
++- T06 preservation constraints remain active unless the user also explicitly changes Mode.
++
++## Routing matrix
++
++| Source identity | Explicit profile? | Default Mode | Default Profile | Camera |
++|---|---|---|---|---|
++| Fear City confirmed | none | T06 | VP03 | CG-FC |
++| Fear City confirmed | VP00/01/02 but no explicit override | T06 | VP03 | CG-FC |
++| Fear City confirmed | explicit routing override | T06 unless Mode also overridden | requested profile with Fear City preservation | CG-FC or source-safe equivalent |
++| Miniature/diorama, Fear City uncertain | yes | requested/compatible | requested | CG-S / profile-safe |
++| Miniature/diorama, Fear City uncertain | none | T01 | VP00 | CG-S |
++| Historical/real photo | yes | requested/derived | requested | CG-S, CG-A or CG-B |
++| Historical/real photo | none | T01 | VP00 | CG-S |
++| Generated/reference image | yes | requested/derived | requested | profile-dependent |
++
++## Non-goals
++Auto-Routing does not:
++- classify Canon;
++- infer geography from visual similarity;
++- create historical facts;
++- change source authority;
++- authorize object removal;
++- authorize new architecture;
++- replace explicit transformation budgets.
+--- /dev/null
++++ b/CAMERA_ROUTING_PATCH_SCOPE.md
+@@ -0,0 +1,31 @@
++# Camera Grammar / Profile / Fear City Routing Patch
++
++## Scope
++This patch modifies only:
++- Camera Grammar
++- VP00 / VP01 / VP02 camera behavior
++- VP03 camera handoff wording
++- Auto-Routing toward Fear City
++- package metadata / changelog
++
++## Explicitly untouched
++- Visual Canon
++- Canon Candidates
++- Documentary Evidence
++- Fear City Vision
++- SC-01..SC-66 rule set
++- Transformation Modes
++- Preservation Model
++- schemas
++- critic / self-correction logic
++- Archive subsystem
++
++## Formal decisions
++1. Streetcraft's first three profiles no longer equate architectural discipline with strict frontality.
++2. Two transformable architectural camera families are formalized:
++   - CG-A Frontal-Oblique Architectural Immersion
++   - CG-B Street-Level Oblique Monumentality
++3. CG-S protects source camera when preservation outranks profile preference.
++4. VP02 retires mandatory yaw≈0° and mandatory one-point frontal perspective.
++5. Confirmed Fear City sources auto-route to T06 + VP03 + CG-FC.
++6. Fear City auto-routing is source-identity based, never resemblance based.

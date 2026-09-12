@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["source_type", "world_evidence", "model_evidence", "capture_evidence", "world_projection_readiness"],
+  "properties": {
+    "source_type": {"const": "FEAR_CITY_MODEL_PHOTO"},
+    "world_evidence": {"type": "array"},
+    "model_evidence": {"type": "array"},
+    "capture_evidence": {"type": "array"},
+    "authored_world_authority": {"type": "array"},
+    "authorial_persistence": {"type": "array"},
+    "multi_view_consistency": {"type": "array"},
+    "authorial_ambiguities": {"type": "array"},
+    "physical_materials": {"type": "array"},
+    "represented_materials": {"type": "array"},
+    "surface_memory_anchors": {"type": "array"},
+    "scale_cues": {"type": "array"},
+    "scale_breaking_artifacts": {"type": "array"},
+    "represented_camera": {"type": "object"},
+    "world_projection": {"type": "object"},
+    "preservation": {"type": "object"},
+    "forbidden_interpretations": {"type": "array"},
+    "world_projection_readiness": {"enum": ["READY","READY_WITH_INFERENCE","REFERENCE_ADVISED","INSUFFICIENT_EVIDENCE"]}
+  },
+  "additionalProperties": true
+}

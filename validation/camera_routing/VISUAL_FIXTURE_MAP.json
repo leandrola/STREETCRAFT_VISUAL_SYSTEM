@@ -1,0 +1,71 @@
+{
+  "version": "CRVM-1.0",
+  "fixtures": [
+    {
+      "fixture": "RDR-F02_GOTHAM_HOTEL.png",
+      "expected_family": "CG-A",
+      "validation_role": "frontal-oblique / architectural wall baseline",
+      "status": "READY"
+    },
+    {
+      "fixture": "RDR-F03_ECONOMY_CANDY.png",
+      "expected_family": "CG-A",
+      "validation_role": "strict frontal special-case baseline",
+      "status": "READY"
+    },
+    {
+      "fixture": "RDR-F04_GOOD_EARTH_BAR.png",
+      "expected_family": "CG-A",
+      "validation_role": "frontal facade baseline",
+      "status": "READY"
+    },
+    {
+      "fixture": "RDR-F05_RAJA_GROCERY.png",
+      "expected_family": "CG-A",
+      "validation_role": "frontal facade baseline",
+      "status": "READY"
+    },
+    {
+      "fixture": "RDR-F06_LOANS_OSCARS.png",
+      "expected_family": "CG-A",
+      "validation_role": "near-elevation / frontal baseline",
+      "status": "READY"
+    },
+    {
+      "fixture": "RDR-F01_L_KATZENSTEIN.jpg",
+      "expected_family": "CG-B",
+      "validation_role": "corner / side-depth boundary",
+      "status": "READY"
+    },
+    {
+      "fixture": "RDR-F07_DAVES_CORNER.png",
+      "expected_family": "CG-B",
+      "validation_role": "corner / side-depth boundary",
+      "status": "READY"
+    },
+    {
+      "fixture": "SC-B02_NEON_HOTEL_STREET.png",
+      "expected_family": "CG-B",
+      "validation_role": "street-level oblique monumentality boundary",
+      "status": "READY"
+    },
+    {
+      "fixture": "SC-D03_CONDOS_FOR_SALE.png",
+      "expected_family": "CG-B",
+      "validation_role": "oblique urban depth / non-RDR documentary boundary",
+      "status": "READY"
+    },
+    {
+      "fixture": "SC-D06_PHARMACY_OUTPUT.png",
+      "expected_family": "CG-B",
+      "validation_role": "real-world oblique street geometry",
+      "status": "READY"
+    },
+    {
+      "fixture": "Fear City Validation Set #001 (3 user-supplied views)",
+      "expected_family": "CG-FC",
+      "validation_role": "confirmed Fear City authored-view routing",
+      "status": "DOCUMENTED_NOT_EMBEDDED"
+    }
+  ]
+}

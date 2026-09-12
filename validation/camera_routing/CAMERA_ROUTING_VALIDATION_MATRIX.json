@@ -1,0 +1,852 @@
+{
+  "matrix_version": "CRVM-1.0",
+  "svs_patch_under_test": "1.6.2-camera-routing-patch",
+  "purpose": "Validate Camera Grammar, VP00/VP01/VP02 camera selection and Fear City Auto-Routing before further Canon changes.",
+  "structural_cases": [
+    {
+      "id": "CR-01",
+      "group": "SOURCE_LOCK",
+      "scenario": "Historical photo, no explicit profile, ordinary source camera.",
+      "input": {
+        "source_identity": "HISTORICAL_PHOTO",
+        "explicit_mode": null,
+        "explicit_profile": null,
+        "source_camera_family": "OTHER",
+        "geometry": "frontal",
+        "camera_transform_authorized": false,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T01"
+        ],
+        "profile": [
+          "VP00"
+        ],
+        "camera": [
+          "CG-S"
+        ],
+        "fear_city_identity": [
+          "NOT_APPLICABLE"
+        ]
+      },
+      "assertions": [
+        "Source camera is preserved.",
+        "No profile preference may force frontalization."
+      ]
+    },
+    {
+      "id": "CR-02",
+      "group": "SOURCE_LOCK",
+      "scenario": "Historical photo already naturally conforms to CG-A, VP02 requested under T01.",
+      "input": {
+        "source_identity": "HISTORICAL_PHOTO",
+        "explicit_mode": "T01",
+        "explicit_profile": "VP02",
+        "source_camera_family": "CG-A",
+        "geometry": "front_oblique",
+        "camera_transform_authorized": false,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T01"
+        ],
+        "profile": [
+          "VP02"
+        ],
+        "camera": [
+          "CG-A",
+          "CG-S"
+        ],
+        "fear_city_identity": [
+          "NOT_APPLICABLE"
+        ]
+      },
+      "assertions": [
+        "Existing CG-A geometry is legal without camera redesign.",
+        "T01 remains source-preserving."
+      ]
+    },
+    {
+      "id": "CR-03",
+      "group": "SOURCE_LOCK",
+      "scenario": "Historical photo already naturally conforms to CG-B, VP02 requested under T01.",
+      "input": {
+        "source_identity": "HISTORICAL_PHOTO",
+        "explicit_mode": "T01",
+        "explicit_profile": "VP02",
+        "source_camera_family": "CG-B",
+        "geometry": "corner",
+        "camera_transform_authorized": false,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T01"
+        ],
+        "profile": [
+          "VP02"
+        ],
+        "camera": [
+          "CG-B",
+          "CG-S"
+        ],
+        "fear_city_identity": [
+          "NOT_APPLICABLE"
+        ]
+      },
+      "assertions": [
+        "VP02 accepts genuine two-point/corner source geometry.",
+        "Strict one-point frontality is not mandatory."
+      ]
+    },
+    {
+      "id": "CR-04",
+      "group": "SOURCE_LOCK",
+      "scenario": "Elevated historical source, VP02, T01.",
+      "input": {
+        "source_identity": "HISTORICAL_PHOTO",
+        "explicit_mode": "T01",
+        "explicit_profile": "VP02",
+        "source_camera_family": "ELEVATED",
+        "geometry": "oblique",
+        "camera_transform_authorized": false,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T01"
+        ],
+        "profile": [
+          "VP02"
+        ],
+        "camera": [
+          "CG-S"
+        ],
+        "fear_city_identity": [
+          "NOT_APPLICABLE"
+        ]
+      },
+      "assertions": [
+        "Profile preference cannot erase an elevated source camera under T01.",
+        "Source identity outranks default no-aerial preference."
+      ]
+    },
+    {
+      "id": "CR-05",
+      "group": "SOURCE_LOCK",
+      "scenario": "Historical source with camera transformation explicitly authorized toward a facade-oriented result.",
+      "input": {
+        "source_identity": "HISTORICAL_PHOTO",
+        "explicit_mode": "T08",
+        "explicit_profile": "VP02",
+        "source_camera_family": "OTHER",
+        "geometry": "frontal",
+        "camera_transform_authorized": true,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T08"
+        ],
+        "profile": [
+          "VP02"
+        ],
+        "camera": [
+          "CG-A"
+        ],
+        "fear_city_identity": [
+          "NOT_APPLICABLE"
+        ]
+      },
+      "assertions": [
+        "Transformable facade geometry chooses CG-A.",
+        "Camera correction does not authorize architectural invention."
+      ]
+    },
+    {
+      "id": "CR-06",
+      "group": "SOURCE_LOCK",
+      "scenario": "Corner historical source with camera transformation explicitly authorized.",
+      "input": {
+        "source_identity": "HISTORICAL_PHOTO",
+        "explicit_mode": "T08",
+        "explicit_profile": "VP01",
+        "source_camera_family": "OTHER",
+        "geometry": "corner",
+        "camera_transform_authorized": true,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T08"
+        ],
+        "profile": [
+          "VP01"
+        ],
+        "camera": [
+          "CG-B"
+        ],
+        "fear_city_identity": [
+          "NOT_APPLICABLE"
+        ]
+      },
+      "assertions": [
+        "Corner/side-plane geometry may choose CG-B.",
+        "Two-point perspective is valid in VP01."
+      ]
+    },
+    {
+      "id": "CR-07",
+      "group": "PROFILE_CAMERA",
+      "scenario": "VP00 generative/reconstructive frontal-oblique architecture.",
+      "input": {
+        "source_identity": "GENERATED_REFERENCE",
+        "explicit_mode": "T07",
+        "explicit_profile": "VP00",
+        "source_camera_family": "UNKNOWN",
+        "geometry": "front_oblique",
+        "camera_transform_authorized": true,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T07"
+        ],
+        "profile": [
+          "VP00"
+        ],
+        "camera": [
+          "CG-A"
+        ],
+        "fear_city_identity": [
+          "NOT_APPLICABLE"
+        ]
+      },
+      "assertions": [
+        "VP00 accepts CG-A as normal transformable camera."
+      ]
+    },
+    {
+      "id": "CR-08",
+      "group": "PROFILE_CAMERA",
+      "scenario": "VP00 generative/reconstructive corner architecture.",
+      "input": {
+        "source_identity": "GENERATED_REFERENCE",
+        "explicit_mode": "T07",
+        "explicit_profile": "VP00",
+        "source_camera_family": "UNKNOWN",
+        "geometry": "corner",
+        "camera_transform_authorized": true,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T07"
+        ],
+        "profile": [
+          "VP00"
+        ],
+        "camera": [
+          "CG-B"
+        ],
+        "fear_city_identity": [
+          "NOT_APPLICABLE"
+        ]
+      },
+      "assertions": [
+        "VP00 accepts CG-B where side depth materially contributes."
+      ]
+    },
+    {
+      "id": "CR-09",
+      "group": "PROFILE_CAMERA",
+      "scenario": "VP01 frontal-oblique mid-century facade.",
+      "input": {
+        "source_identity": "GENERATED_REFERENCE",
+        "explicit_mode": "T07",
+        "explicit_profile": "VP01",
+        "source_camera_family": "UNKNOWN",
+        "geometry": "front_oblique",
+        "camera_transform_authorized": true,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T07"
+        ],
+        "profile": [
+          "VP01"
+        ],
+        "camera": [
+          "CG-A"
+        ],
+        "fear_city_identity": [
+          "NOT_APPLICABLE"
+        ]
+      },
+      "assertions": [
+        "VP01 prefers CG-A."
+      ]
+    },
+    {
+      "id": "CR-10",
+      "group": "PROFILE_CAMERA",
+      "scenario": "VP01 corner / industrial block.",
+      "input": {
+        "source_identity": "GENERATED_REFERENCE",
+        "explicit_mode": "T07",
+        "explicit_profile": "VP01",
+        "source_camera_family": "UNKNOWN",
+        "geometry": "corner",
+        "camera_transform_authorized": true,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T07"
+        ],
+        "profile": [
+          "VP01"
+        ],
+        "camera": [
+          "CG-B"
+        ],
+        "fear_city_identity": [
+          "NOT_APPLICABLE"
+        ]
+      },
+      "assertions": [
+        "VP01 allows CG-B for corners and side planes."
+      ]
+    },
+    {
+      "id": "CR-11",
+      "group": "PROFILE_CAMERA",
+      "scenario": "VP02 strict frontal facade.",
+      "input": {
+        "source_identity": "GENERATED_REFERENCE",
+        "explicit_mode": "T07",
+        "explicit_profile": "VP02",
+        "source_camera_family": "UNKNOWN",
+        "geometry": "frontal",
+        "camera_transform_authorized": true,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T07"
+        ],
+        "profile": [
+          "VP02"
+        ],
+        "camera": [
+          "CG-A"
+        ],
+        "fear_city_identity": [
+          "NOT_APPLICABLE"
+        ]
+      },
+      "assertions": [
+        "One-point/frontal remains valid as a special case, not a mandate."
+      ]
+    },
+    {
+      "id": "CR-12",
+      "group": "PROFILE_CAMERA",
+      "scenario": "VP02 street-level corner with meaningful side depth.",
+      "input": {
+        "source_identity": "GENERATED_REFERENCE",
+        "explicit_mode": "T07",
+        "explicit_profile": "VP02",
+        "source_camera_family": "UNKNOWN",
+        "geometry": "corner",
+        "camera_transform_authorized": true,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T07"
+        ],
+        "profile": [
+          "VP02"
+        ],
+        "camera": [
+          "CG-B"
+        ],
+        "fear_city_identity": [
+          "NOT_APPLICABLE"
+        ]
+      },
+      "assertions": [
+        "VP02 explicitly permits CG-B.",
+        "No forced yaw≈0°."
+      ]
+    },
+    {
+      "id": "CR-13",
+      "group": "FEAR_CITY_ROUTING",
+      "scenario": "Fear City explicitly identified, no mode/profile specified.",
+      "input": {
+        "source_identity": "FEAR_CITY_CONFIRMED",
+        "explicit_mode": null,
+        "explicit_profile": null,
+        "source_camera_family": "OTHER",
+        "geometry": "oblique",
+        "camera_transform_authorized": false,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T06"
+        ],
+        "profile": [
+          "VP03"
+        ],
+        "camera": [
+          "CG-FC"
+        ],
+        "fear_city_identity": [
+          "CONFIRMED"
+        ]
+      },
+      "assertions": [
+        "Fear City auto-routes to T06 + VP03 + CG-FC."
+      ]
+    },
+    {
+      "id": "CR-14",
+      "group": "FEAR_CITY_ROUTING",
+      "scenario": "Confirmed Fear City source; user merely names VP02/RDR 2.0, with no explicit routing override.",
+      "input": {
+        "source_identity": "FEAR_CITY_CONFIRMED",
+        "explicit_mode": null,
+        "explicit_profile": "VP02",
+        "source_camera_family": "OTHER",
+        "geometry": "oblique",
+        "camera_transform_authorized": false,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T06"
+        ],
+        "profile": [
+          "VP03"
+        ],
+        "camera": [
+          "CG-FC"
+        ],
+        "fear_city_identity": [
+          "CONFIRMED"
+        ]
+      },
+      "assertions": [
+        "Merely naming RDR 2.0 does not erase Fear City authorship."
+      ]
+    },
+    {
+      "id": "CR-15",
+      "group": "FEAR_CITY_ROUTING",
+      "scenario": "Confirmed Fear City source; VP01 named without explicit routing override.",
+      "input": {
+        "source_identity": "FEAR_CITY_CONFIRMED",
+        "explicit_mode": "T06",
+        "explicit_profile": "VP01",
+        "source_camera_family": "OTHER",
+        "geometry": "corner",
+        "camera_transform_authorized": true,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T06"
+        ],
+        "profile": [
+          "VP03"
+        ],
+        "camera": [
+          "CG-FC"
+        ],
+        "fear_city_identity": [
+          "CONFIRMED"
+        ]
+      },
+      "assertions": [
+        "VP03 remains default because Fear City routing was not explicitly overridden."
+      ]
+    },
+    {
+      "id": "CR-16",
+      "group": "FEAR_CITY_ROUTING",
+      "scenario": "Confirmed Fear City source with explicit profile-routing override to VP02, Mode not overridden.",
+      "input": {
+        "source_identity": "FEAR_CITY_CONFIRMED",
+        "explicit_mode": null,
+        "explicit_profile": "VP02",
+        "source_camera_family": "OTHER",
+        "geometry": "corner",
+        "camera_transform_authorized": false,
+        "fear_city_override": true
+      },
+      "expected": {
+        "mode": [
+          "T06"
+        ],
+        "profile": [
+          "VP02"
+        ],
+        "camera": [
+          "CG-FC",
+          "CG-S"
+        ],
+        "fear_city_identity": [
+          "CONFIRMED"
+        ]
+      },
+      "assertions": [
+        "T06 remains active.",
+        "Fear City authored geometry remains protected."
+      ]
+    },
+    {
+      "id": "CR-17",
+      "group": "FEAR_CITY_ROUTING",
+      "scenario": "Miniature/diorama source; Fear City identity uncertain, no profile specified.",
+      "input": {
+        "source_identity": "MINIATURE_UNKNOWN",
+        "explicit_mode": null,
+        "explicit_profile": null,
+        "source_camera_family": "OTHER",
+        "geometry": "oblique",
+        "camera_transform_authorized": false,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T01"
+        ],
+        "profile": [
+          "VP00"
+        ],
+        "camera": [
+          "CG-S"
+        ],
+        "fear_city_identity": [
+          "UNRESOLVED"
+        ]
+      },
+      "assertions": [
+        "Uncertain miniature is not auto-promoted to Fear City.",
+        "No geographic import by resemblance."
+      ]
+    },
+    {
+      "id": "CR-18",
+      "group": "FEAR_CITY_ROUTING",
+      "scenario": "Miniature/diorama source; Fear City identity uncertain, VP01 explicitly selected.",
+      "input": {
+        "source_identity": "MINIATURE_UNKNOWN",
+        "explicit_mode": "T01",
+        "explicit_profile": "VP01",
+        "source_camera_family": "OTHER",
+        "geometry": "front_oblique",
+        "camera_transform_authorized": false,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T01"
+        ],
+        "profile": [
+          "VP01"
+        ],
+        "camera": [
+          "CG-S"
+        ],
+        "fear_city_identity": [
+          "UNRESOLVED"
+        ]
+      },
+      "assertions": [
+        "Selected profile is retained, but camera remains source-safe."
+      ]
+    },
+    {
+      "id": "CR-19",
+      "group": "PRESERVATION",
+      "scenario": "T01 + VP02 source contains people and vehicles.",
+      "input": {
+        "source_identity": "HISTORICAL_PHOTO",
+        "explicit_mode": "T01",
+        "explicit_profile": "VP02",
+        "source_camera_family": "CG-A",
+        "geometry": "front_oblique",
+        "camera_transform_authorized": false,
+        "fear_city_override": false,
+        "source_contains_people": true,
+        "source_contains_vehicles": true
+      },
+      "expected": {
+        "mode": [
+          "T01"
+        ],
+        "profile": [
+          "VP02"
+        ],
+        "camera": [
+          "CG-A",
+          "CG-S"
+        ],
+        "fear_city_identity": [
+          "NOT_APPLICABLE"
+        ],
+        "people_policy": [
+          "PRESERVE"
+        ],
+        "vehicle_policy": [
+          "PRESERVE"
+        ]
+      },
+      "assertions": [
+        "Profile default absence does not authorize deletion of source evidence."
+      ]
+    },
+    {
+      "id": "CR-20",
+      "group": "PRESERVATION",
+      "scenario": "Generative VP02 task with no source people/vehicles.",
+      "input": {
+        "source_identity": "GENERATED_REFERENCE",
+        "explicit_mode": "T07",
+        "explicit_profile": "VP02",
+        "source_camera_family": "UNKNOWN",
+        "geometry": "front_oblique",
+        "camera_transform_authorized": true,
+        "fear_city_override": false,
+        "source_contains_people": false,
+        "source_contains_vehicles": false
+      },
+      "expected": {
+        "mode": [
+          "T07"
+        ],
+        "profile": [
+          "VP02"
+        ],
+        "camera": [
+          "CG-A"
+        ],
+        "fear_city_identity": [
+          "NOT_APPLICABLE"
+        ],
+        "people_policy": [
+          "ABSENT_DEFAULT"
+        ],
+        "vehicle_policy": [
+          "ABSENT_DEFAULT"
+        ]
+      },
+      "assertions": [
+        "People/vehicles are absent by default in generative VP02."
+      ]
+    },
+    {
+      "id": "CR-21",
+      "group": "PRESERVATION",
+      "scenario": "T03 Clean Plate on historical source; camera not authorized to change.",
+      "input": {
+        "source_identity": "HISTORICAL_PHOTO",
+        "explicit_mode": "T03",
+        "explicit_profile": "VP00",
+        "source_camera_family": "CG-B",
+        "geometry": "corner",
+        "camera_transform_authorized": false,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T03"
+        ],
+        "profile": [
+          "VP00"
+        ],
+        "camera": [
+          "CG-S",
+          "CG-B"
+        ],
+        "fear_city_identity": [
+          "NOT_APPLICABLE"
+        ]
+      },
+      "assertions": [
+        "Object removal does not automatically imply camera redesign."
+      ]
+    },
+    {
+      "id": "CR-22",
+      "group": "PRESERVATION",
+      "scenario": "T05 Atmosphere Transfer on historical source; spatial identity must remain.",
+      "input": {
+        "source_identity": "HISTORICAL_PHOTO",
+        "explicit_mode": "T05",
+        "explicit_profile": "VP01",
+        "source_camera_family": "CG-A",
+        "geometry": "front_oblique",
+        "camera_transform_authorized": false,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T05"
+        ],
+        "profile": [
+          "VP01"
+        ],
+        "camera": [
+          "CG-S",
+          "CG-A"
+        ],
+        "fear_city_identity": [
+          "NOT_APPLICABLE"
+        ]
+      },
+      "assertions": [
+        "Atmosphere change does not grant camera redesign authority."
+      ]
+    },
+    {
+      "id": "CR-23",
+      "group": "BOUNDARY",
+      "scenario": "Real-world photo visually resembles Fear City but has no Fear City authorship.",
+      "input": {
+        "source_identity": "REAL_WORLD",
+        "explicit_mode": null,
+        "explicit_profile": null,
+        "source_camera_family": "OTHER",
+        "geometry": "oblique",
+        "camera_transform_authorized": false,
+        "fear_city_override": false,
+        "visual_resemblance_to_fear_city": true
+      },
+      "expected": {
+        "mode": [
+          "T01"
+        ],
+        "profile": [
+          "VP00"
+        ],
+        "camera": [
+          "CG-S"
+        ],
+        "fear_city_identity": [
+          "NOT_APPLICABLE"
+        ]
+      },
+      "assertions": [
+        "Visual resemblance is not source identity.",
+        "No Fear City routing."
+      ]
+    },
+    {
+      "id": "CR-24",
+      "group": "BOUNDARY",
+      "scenario": "Unknown miniature strongly resembles New York / Fear City.",
+      "input": {
+        "source_identity": "MINIATURE_UNKNOWN",
+        "explicit_mode": null,
+        "explicit_profile": null,
+        "source_camera_family": "OTHER",
+        "geometry": "corner",
+        "camera_transform_authorized": false,
+        "fear_city_override": false,
+        "visual_resemblance_to_fear_city": true
+      },
+      "expected": {
+        "mode": [
+          "T01"
+        ],
+        "profile": [
+          "VP00"
+        ],
+        "camera": [
+          "CG-S"
+        ],
+        "fear_city_identity": [
+          "UNRESOLVED"
+        ]
+      },
+      "assertions": [
+        "Resemblance never creates Fear City identity."
+      ]
+    },
+    {
+      "id": "CR-25",
+      "group": "BOUNDARY",
+      "scenario": "VP02 corner geometry with deep side plane but no wide-angle spectacle requirement.",
+      "input": {
+        "source_identity": "GENERATED_REFERENCE",
+        "explicit_mode": "T07",
+        "explicit_profile": "VP02",
+        "source_camera_family": "UNKNOWN",
+        "geometry": "deep_oblique",
+        "camera_transform_authorized": true,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T07"
+        ],
+        "profile": [
+          "VP02"
+        ],
+        "camera": [
+          "CG-B"
+        ],
+        "fear_city_identity": [
+          "NOT_APPLICABLE"
+        ]
+      },
+      "assertions": [
+        "CG-B may be strong without becoming theatrical wide-angle."
+      ]
+    },
+    {
+      "id": "CR-26",
+      "group": "BOUNDARY",
+      "scenario": "VP02 source with naturally strict frontal one-point camera.",
+      "input": {
+        "source_identity": "HISTORICAL_PHOTO",
+        "explicit_mode": "T01",
+        "explicit_profile": "VP02",
+        "source_camera_family": "CG-A",
+        "geometry": "frontal",
+        "camera_transform_authorized": false,
+        "fear_city_override": false
+      },
+      "expected": {
+        "mode": [
+          "T01"
+        ],
+        "profile": [
+          "VP02"
+        ],
+        "camera": [
+          "CG-A",
+          "CG-S"
+        ],
+        "fear_city_identity": [
+          "NOT_APPLICABLE"
+        ]
+      },
+      "assertions": [
+        "Retiring mandatory frontality does not prohibit frontal sources."
+      ]
+    }
+  ],
+  "pass_definition": {
+    "structural": "Computed route must fall within every expected allowed set and no assertion may conflict with the governing documents.",
+    "visual": "Generated/reinterpreted image must satisfy route outcome plus camera-family visual criteria without violating Source Identity Preservation."
+  }
+}

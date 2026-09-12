@@ -1,0 +1,54 @@
+{
+  "version": "CRVM-1.0",
+  "visual_test_dimensions": [
+    {
+      "name": "ROUTE_CORRECTNESS",
+      "weight": 20,
+      "critical": true
+    },
+    {
+      "name": "CAMERA_FAMILY_COMPLIANCE",
+      "weight": 20,
+      "critical": true
+    },
+    {
+      "name": "SOURCE_IDENTITY_PRESERVATION",
+      "weight": 20,
+      "critical": true
+    },
+    {
+      "name": "PROFILE_COMPLIANCE",
+      "weight": 10,
+      "critical": false
+    },
+    {
+      "name": "ARCHITECTURAL_DOMINANCE",
+      "weight": 10,
+      "critical": false
+    },
+    {
+      "name": "PERSPECTIVE_DISCIPLINE",
+      "weight": 10,
+      "critical": false
+    },
+    {
+      "name": "ATMOSPHERIC_RESTRAINT",
+      "weight": 5,
+      "critical": false
+    },
+    {
+      "name": "UNSUPPORTED_INVENTION_CONTROL",
+      "weight": 5,
+      "critical": true
+    }
+  ],
+  "critical_failure_rules": [
+    "Fear City confirmed but routed outside T06/VP03/CG-FC without explicit override.",
+    "Fear City false-positive caused only by resemblance.",
+    "T01 camera redesigned when source preservation should win.",
+    "VP02 forced to strict frontal/one-point despite legitimate CG-B geometry.",
+    "Profile default removes source people/vehicles under T01.",
+    "Camera transformation invents architecture or geographic identity."
+  ],
+  "pass_threshold": 85
+}
