@@ -1,3 +1,49 @@
+# SVS 1.8.1 — R2 Baseline Calibration
+
+- Calibrated the first R2 visual baseline.
+- Added semantic identity anchors plus SHA-256/dHash fixture signatures.
+- Split R2 into R2a baseline calibration and R2b future candidate regression.
+- Added baseline-integrity checker.
+- Framework release gate can now close without circular self-certification.
+- No Streetcraft runtime behavior changes.
+
+# SVS 1.8.0 — Regression & Benchmark Suite
+
+- Added formal regression/release gate.
+- Added R0 automated regression suite.
+- Added R1 SHA-256 golden fixture integrity layer.
+- Added R2 visual benchmark cases and scoring rubric.
+- Added governing-file baseline drift detection.
+- Added Archive V1 integration regression.
+- Added visual result scorer and runbook.
+- No Visual Canon or runtime behavior changes.
+
+# SVS 1.7.0 — Archive-Aware Reference Runtime
+
+- Added Reference Need Model 1.0.
+- Added Reference Authority Map 1.0.
+- Added Archive Domain Policy.
+- Added Evidence Admission Policy 1.0.
+- Added Archive failure/no-result policy.
+- Added CGC reference-runtime enrichment.
+- Added executable Archive V1 adapter.
+- Added evidence-bundle admission and generation projection.
+- Added reference-bleed inspection/correction.
+- CIL syntax unchanged.
+- Archive remains separate from Canon.
+- No Canon-by-similarity behavior permitted.
+
+# SVS 1.6.4 — Operational Hardening
+
+- Added Semantic Text Lock.
+- Added Material Intensity Delta.
+- Added Occlusion Locks.
+- Added Compact Generation Contract and schema.
+- Added Micro-Drift Critic.
+- Added Profile Delta Matrix.
+- Integrated hardening gates with Visual Intelligence, Visual Critic, Self-Correction, Agent Protocol and CIL.
+- No Visual Canon authority changes.
+
 # SVS 1.6.3 — 2026-09-12
 
 - Consolidated full release package from SVS 1.6.2 + CIL 1.0 patch.

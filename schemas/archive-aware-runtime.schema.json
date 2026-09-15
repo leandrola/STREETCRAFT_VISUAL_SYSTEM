@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Streetcraft Archive-Aware Runtime Record",
+  "type": "object",
+  "required": [
+    "runtime_status",
+    "needs",
+    "admissions",
+    "unresolved_needs"
+  ],
+  "properties": {
+    "runtime_status": {
+      "enum": [
+        "NOT_NEEDED",
+        "READY",
+        "PARTIAL",
+        "REFERENCE_UNRESOLVED",
+        "ARCHIVE_UNAVAILABLE",
+        "BLOCKED",
+        "REVIEW"
+      ]
+    },
+    "needs": {
+      "type": "array",
+      "items": {
+        "$ref": "reference-need.schema.json"
+      }
+    },
+    "admissions": {
+      "type": "array",
+      "items": {
+        "$ref": "evidence-admission.schema.json"
+      }
+    },
+    "evidence_bundle_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "negative_evidence": {
+      "type": "array"
+    },
+    "unresolved_needs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "authority_map": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

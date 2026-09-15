@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Streetcraft Compact Generation Contract",
+  "type": "object",
+  "required": [
+    "source_identity",
+    "mode",
+    "profile",
+    "camera",
+    "preserve",
+    "transform",
+    "remove",
+    "infer",
+    "unknown",
+    "forbid",
+    "semantic_text_lock",
+    "material_intensity_delta",
+    "occlusion_locks"
+  ],
+  "properties": {
+    "source_identity": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    },
+    "profile": {
+      "type": "string"
+    },
+    "camera": {
+      "type": "string"
+    },
+    "preserve": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "transform": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "remove": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "infer": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unknown": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "forbid": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "semantic_text_lock": {
+      "enum": [
+        "STRICT",
+        "NORMAL",
+        "EXPLICIT_OVERRIDE"
+      ]
+    },
+    "material_intensity_delta": {
+      "type": "integer",
+      "minimum": -1,
+      "maximum": 3
+    },
+    "occlusion_locks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

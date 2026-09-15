@@ -43,3 +43,9 @@ Maximum: output initial + up to three automatic revisions. Early stop is preferr
 PASS achieved; only S0/S1 remain within Failure Budget; correction risk exceeds benefit; Acceptance Floor reached; revisions exhausted; regression persists; evidence insufficient; capability insufficient; human decision required.
 
 Detect diminishing returns and revision oscillation.
+
+## 1.6.4 Hardening Correction Order
+Correct source-identity drift before aesthetic drift. Priority: semantic text > authored geometry/relationships > camera > occlusion > material intensity > atmosphere > cosmetic detail.
+
+## SVS 1.7 Evidence-Bleed Correction
+If a reference caused unauthorized transfer, remove the transferred feature first. Do not compensate by adding a different unsupported reference detail. Revert to source authority and the scoped Evidence Unit.

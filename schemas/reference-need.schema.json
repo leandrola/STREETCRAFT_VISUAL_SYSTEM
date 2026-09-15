@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Streetcraft Reference Need",
+  "type": "object",
+  "required": [
+    "need_id",
+    "state",
+    "target_domains",
+    "specific_problem",
+    "task_context"
+  ],
+  "properties": {
+    "need_id": {
+      "type": "string",
+      "pattern": "^RN-"
+    },
+    "state": {
+      "enum": [
+        "RN_NONE",
+        "RN_SUPPORT",
+        "RN_REQUIRED",
+        "RN_BLOCKED"
+      ]
+    },
+    "target_domains": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "specific_problem": {
+      "type": "string"
+    },
+    "task_context": {
+      "type": "string"
+    },
+    "source_context": {
+      "type": "string"
+    },
+    "period": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "region": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "min_provenance": {
+      "enum": [
+        "P0",
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ]
+    },
+    "max_transfer_risk": {
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    "max_results": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "source_invariants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "forbidden_transfers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blocked_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

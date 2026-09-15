@@ -1,0 +1,29 @@
+{
+  "suite": "SVS 1.8 R2 Visual Benchmark",
+  "candidate_release": "SVS x.y.z",
+  "runtime": {
+    "provider": "",
+    "model": "",
+    "version": "",
+    "notes": ""
+  },
+  "results": [
+    {
+      "case_id": "B2-005",
+      "scores": {
+        "identity": 0,
+        "geometry": 0,
+        "camera": 0,
+        "text": 0,
+        "material": 0,
+        "occlusion": 0,
+        "reference_isolation": 0,
+        "atmosphere": 0
+      },
+      "critical_failures": [],
+      "findings": [],
+      "candidate_file": "",
+      "candidate_sha256": ""
+    }
+  ]
+}

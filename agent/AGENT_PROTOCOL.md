@@ -21,3 +21,21 @@ geometry_control
 text_rendering
 
 The adapter translates Streetcraft semantic contracts into model-specific syntax. Vendor parameters must not leak into the Core.
+
+## SVS 1.6.4 Compact Contract Gate
+Before generation, resolve a Compact Generation Contract. If preserve/transform/remove/infer/unknown/forbid cannot be made internally consistent, do not generate until the conflict is resolved.
+
+## SVS 1.7 Archive-Aware Reference Gate
+After the Compact Generation Contract is drafted, evaluate Reference Need before generation.
+
+Sequence:
+1. classify Reference Need;
+2. skip Archive when `RN_NONE`;
+3. preserve unknown without retrieval when `RN_BLOCKED`;
+4. query Archive for `RN_SUPPORT` or `RN_REQUIRED`;
+5. admit evidence through EAP 1.0;
+6. enrich the CGC with only scoped admitted evidence;
+7. generate;
+8. inspect for reference bleed with Visual Critic and Micro-Drift Critic.
+
+Archive evidence never changes Mode/Profile/Camera by itself.

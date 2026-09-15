@@ -1,0 +1,556 @@
+{
+  "suite_version": "1.0",
+  "svs_release": "1.8.0",
+  "case_count": 39,
+  "cases": [
+    {
+      "case_id": "B0-001",
+      "category": "B0",
+      "name": "Required runtime modules exist",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "result": "PASS"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B0-002",
+      "category": "B0",
+      "name": "All JSON files parse",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "result": "PASS"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B0-003",
+      "category": "B0",
+      "name": "Protected governing files match 1.7 baseline",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "result": "PASS"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B1-001",
+      "category": "B1",
+      "name": "CIL regression suite",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "tests": "13/13"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B1-002",
+      "category": "B1",
+      "name": "Profile conflict rejected",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "error": "PROFILE_CONFLICT"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B1-003",
+      "category": "B1",
+      "name": "Unknown command rejected",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "error": "UNKNOWN_COMMAND"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B2-001",
+      "category": "B2",
+      "name": "VP02 CG-A command resolves",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "profile": "VP02",
+        "camera": "CG-A"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B2-002",
+      "category": "B2",
+      "name": "VP02 CG-B command resolves",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "profile": "VP02",
+        "camera": "CG-B"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B2-003",
+      "category": "B2",
+      "name": "Source lock remains available",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "camera": "CG-S"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B2-004",
+      "category": "B2",
+      "name": "Camera routing structural matrix",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "matrix": "PASS"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B2-005",
+      "category": "B2",
+      "name": "VP02 A/B visual separability",
+      "execution": "VISUAL",
+      "critical": true,
+      "fixture": [
+        "validation/camera_routing/l2_evidence/VP02_CG-A.png",
+        "validation/camera_routing/l2_evidence/VP02_CG-B.png"
+      ],
+      "expected": {
+        "camera_pair_distinguishable": true,
+        "same_building_identity": true
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B2-006",
+      "category": "B2",
+      "name": "VP00 A/B visual separability",
+      "execution": "VISUAL",
+      "critical": false,
+      "fixture": [
+        "validation/camera_routing/l2_evidence/VP00_CG-A.png",
+        "validation/camera_routing/l2_evidence/VP00_CG-B.png"
+      ],
+      "expected": {
+        "camera_pair_distinguishable": true,
+        "same_building_identity": true
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B2-007",
+      "category": "B2",
+      "name": "VP01 A/B visual separability",
+      "execution": "VISUAL",
+      "critical": false,
+      "fixture": [
+        "validation/camera_routing/l2_evidence/VP01_CG-A.png",
+        "validation/camera_routing/l2_evidence/VP01_CG-B.png"
+      ],
+      "expected": {
+        "camera_pair_distinguishable": true,
+        "same_building_identity": true
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B3-001",
+      "category": "B3",
+      "name": "Confirmed Fear City routes T06+VP03+CG-FC",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "route": "T06+VP03+CG-FC"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B3-002",
+      "category": "B3",
+      "name": "Fear City + VP02 name without override does not reroute",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "route": "T06+VP03+CG-FC"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B3-003",
+      "category": "B3",
+      "name": "Resemblance-only miniature does not auto-confirm Fear City",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "fear_city_identity": "UNRESOLVED"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B3-004",
+      "category": "B3",
+      "name": "Real-world city resemblance not Fear City",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "fear_city_identity": "NOT_APPLICABLE"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B3-005",
+      "category": "B3",
+      "name": "Confirmed Fear City multi-view identity",
+      "execution": "VISUAL",
+      "critical": true,
+      "fixture": [
+        "validation/camera_routing/l3_fear_city_evidence/FCV001_VIEW_01.jpg",
+        "validation/camera_routing/l3_fear_city_evidence/FCV001_VIEW_02.jpg",
+        "validation/camera_routing/l3_fear_city_evidence/FCV001_VIEW_03.jpg",
+        "validation/camera_routing/l3_fear_city_evidence/FCV001_VIEW_04.jpg"
+      ],
+      "expected": {
+        "identity_consistent": true,
+        "geographic_import": false
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B4-001",
+      "category": "B4",
+      "name": "Operational hardening unit suite",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "tests": "12/12"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B4-002",
+      "category": "B4",
+      "name": "Illegible text cannot gain semantics",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "invent_semantics": false
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B4-003",
+      "category": "B4",
+      "name": "T01 material delta +1 rejected",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "allowed": false
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B4-004",
+      "category": "B4",
+      "name": "Single-view occlusion locked unknown",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "state": "LOCKED_UNKNOWN"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B4-005",
+      "category": "B4",
+      "name": "S3 micro-drift fails",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "verdict": "FAIL"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B4-006",
+      "category": "B4",
+      "name": "Text/geometry/material visual hardening",
+      "execution": "VISUAL",
+      "critical": true,
+      "fixture": [
+        "reference/assets/RDR-F03_ECONOMY_CANDY.png"
+      ],
+      "expected": {
+        "semantic_text_invention": false,
+        "unsupported_hidden_geometry": false,
+        "material_intensity_delta_max": 0,
+        "critical_identity_preserved": true
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B5-001",
+      "category": "B5",
+      "name": "Archive-aware runtime unit suite",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "tests": "10/10"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B5-002",
+      "category": "B5",
+      "name": "Archive V1 integration",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "runtime_status": "READY",
+        "admitted": [
+          "EU-MAT"
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B5-003",
+      "category": "B5",
+      "name": "RN_BLOCKED does not query for exact unknown",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "state": "RN_BLOCKED"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B5-004",
+      "category": "B5",
+      "name": "Archive unavailable remains explicit",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "runtime_status": "ARCHIVE_UNAVAILABLE"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B5-005",
+      "category": "B5",
+      "name": "CG-S rejects camera transfer",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "decision": "ADMITTED_NEGATIVE_ONLY"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B5-006",
+      "category": "B5",
+      "name": "Fear City rejects regional leakage",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "fixture": null,
+      "expected": {
+        "decision": "ADMITTED_NEGATIVE_ONLY"
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B5-007",
+      "category": "B5",
+      "name": "Reference isolation visual benchmark",
+      "execution": "VISUAL",
+      "critical": true,
+      "fixture": [
+        "validation/camera_routing/l3_fear_city_evidence/FCV001_VIEW_04.jpg"
+      ],
+      "expected": {
+        "domain_transfer_only": true,
+        "reference_specific_geometry_copied": false,
+        "regional_leak": false,
+        "text_leak": false
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B6-001",
+      "category": "B6",
+      "name": "Visual identity fixture 1",
+      "execution": "VISUAL",
+      "critical": false,
+      "fixture": [
+        "reference/assets/RDR-F02_GOTHAM_HOTEL.png"
+      ],
+      "expected": {
+        "source_identity_preserved": true,
+        "geometry_drift": "NONE_OR_S1",
+        "semantic_text_invention": false,
+        "material_inflation": false,
+        "camera_violation": false
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B6-002",
+      "category": "B6",
+      "name": "Visual identity fixture 2",
+      "execution": "VISUAL",
+      "critical": false,
+      "fixture": [
+        "reference/assets/RDR-F04_GOOD_EARTH_BAR.png"
+      ],
+      "expected": {
+        "source_identity_preserved": true,
+        "geometry_drift": "NONE_OR_S1",
+        "semantic_text_invention": false,
+        "material_inflation": false,
+        "camera_violation": false
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B6-003",
+      "category": "B6",
+      "name": "Visual identity fixture 3",
+      "execution": "VISUAL",
+      "critical": false,
+      "fixture": [
+        "reference/assets/RDR-F05_RAJA_GROCERY.png"
+      ],
+      "expected": {
+        "source_identity_preserved": true,
+        "geometry_drift": "NONE_OR_S1",
+        "semantic_text_invention": false,
+        "material_inflation": false,
+        "camera_violation": false
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B6-004",
+      "category": "B6",
+      "name": "Visual identity fixture 4",
+      "execution": "VISUAL",
+      "critical": false,
+      "fixture": [
+        "reference/assets/RDR-F06_LOANS_OSCARS.png"
+      ],
+      "expected": {
+        "source_identity_preserved": true,
+        "geometry_drift": "NONE_OR_S1",
+        "semantic_text_invention": false,
+        "material_inflation": false,
+        "camera_violation": false
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B6-005",
+      "category": "B6",
+      "name": "Visual identity fixture 5",
+      "execution": "VISUAL",
+      "critical": false,
+      "fixture": [
+        "reference/assets/SC-B01_PEEP_SHOW.png"
+      ],
+      "expected": {
+        "source_identity_preserved": true,
+        "geometry_drift": "NONE_OR_S1",
+        "semantic_text_invention": false,
+        "material_inflation": false,
+        "camera_violation": false
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B6-006",
+      "category": "B6",
+      "name": "Visual identity fixture 6",
+      "execution": "VISUAL",
+      "critical": false,
+      "fixture": [
+        "reference/assets/SC-B02_NEON_HOTEL_STREET.png"
+      ],
+      "expected": {
+        "source_identity_preserved": true,
+        "geometry_drift": "NONE_OR_S1",
+        "semantic_text_invention": false,
+        "material_inflation": false,
+        "camera_violation": false
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B6-007",
+      "category": "B6",
+      "name": "Visual identity fixture 7",
+      "execution": "VISUAL",
+      "critical": false,
+      "fixture": [
+        "reference/assets/SC-D01_BASIC_METAL.png"
+      ],
+      "expected": {
+        "source_identity_preserved": true,
+        "geometry_drift": "NONE_OR_S1",
+        "semantic_text_invention": false,
+        "material_inflation": false,
+        "camera_violation": false
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "B6-008",
+      "category": "B6",
+      "name": "Visual identity fixture 8",
+      "execution": "VISUAL",
+      "critical": false,
+      "fixture": [
+        "reference/assets/SC-D02_MG_SOUL_FOOD.png"
+      ],
+      "expected": {
+        "source_identity_preserved": true,
+        "geometry_drift": "NONE_OR_S1",
+        "semantic_text_invention": false,
+        "material_inflation": false,
+        "camera_violation": false
+      },
+      "notes": ""
+    }
+  ]
+}

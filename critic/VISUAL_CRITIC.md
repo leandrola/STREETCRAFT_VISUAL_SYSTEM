@@ -50,3 +50,19 @@ PROTECTED RELATIONSHIPS
 FORBIDDEN
 SUCCESS CONDITION
 REGRESSION TEST
+
+## 1.6.4 Micro-Drift Pass
+After the normal critique, run the Micro-Drift Critic. Explicitly inspect text semantics, opening counts/positions, storefront segmentation, material intensity, camera family, occluded reconstruction and geographic identity. S3 fails; multiple S2 findings require revision.
+
+## SVS 1.7 Reference-Bleed Inspection
+When Archive evidence was used, inspect for:
+- copying beyond the requested domain;
+- regional or temporal leakage;
+- new text semantics;
+- imported geometry;
+- reference-specific props;
+- camera imitation;
+- material-intensity inflation;
+- Canon-by-similarity behavior.
+
+Any such unauthorized transfer is evidence bleed and must be corrected.

@@ -142,3 +142,14 @@ The commands are only a short invocation layer. They do not replace the Streetcr
 - `command_invocation/COMMAND_INVOCATION_LAYER.md`
 - `transform/AUTO_ROUTING.md`
 - `transform/FEAR_CITY_IDENTITY_THRESHOLD.md`
+
+
+## Archive-aware behavior (SVS 1.7)
+
+No new command is required.
+
+`/sc-2`, `/sc-2a`, `/sc-2b`, `/sc-fear`, etc. still work normally.
+
+When the source has a legitimate documentary evidence deficit, SVS 1.7 can automatically create a scoped Reference Need and consult Streetcraft Archive V1.
+
+Archive retrieval never means “make it look like this reference.” It means “use eligible evidence only for the declared missing domain.”

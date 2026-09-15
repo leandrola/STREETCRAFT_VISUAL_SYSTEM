@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Streetcraft Visual Benchmark Result",
+  "type": "object",
+  "required": [
+    "case_id",
+    "scores",
+    "critical_failures",
+    "findings"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "scores": {
+      "type": "object",
+      "required": [
+        "identity",
+        "geometry",
+        "camera",
+        "text",
+        "material",
+        "occlusion",
+        "reference_isolation",
+        "atmosphere"
+      ],
+      "properties": {
+        "identity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 25
+        },
+        "geometry": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 15
+        },
+        "camera": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 15
+        },
+        "text": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "material": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "occlusion": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "reference_isolation": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "atmosphere": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        }
+      }
+    },
+    "critical_failures": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "severity": {
+            "enum": [
+              "S0",
+              "S1",
+              "S2",
+              "S3"
+            ]
+          },
+          "code": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

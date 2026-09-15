@@ -1,7 +1,7 @@
 {
   "name": "Streetcraft Visual System",
-  "version": "1.6.3",
-  "build_date": "2026-09-12",
+  "version": "1.8.1",
+  "build_date": "2026-09-15",
   "entry_point": "STREETCRAFT.md",
   "integrated_milestones": [
     "1.0 Core",
@@ -30,7 +30,7 @@
   "reference_assets_included": true,
   "canon_modified": false,
   "sc_rule_set_modified": false,
-  "base_package": "STREETCRAFT_VISUAL_SYSTEM_V1_6_2",
+  "base_package": "STREETCRAFT_VISUAL_SYSTEM_V1_8_0",
   "validated_features": [
     "CG-A Frontal-Oblique Architectural Immersion",
     "CG-B Street-Level Oblique Monumentality",
@@ -47,5 +47,35 @@
     "L3": "PASS",
     "CIL": "PASS 13/13 tests"
   },
-  "includes_patch": "STREETCRAFT_VISUAL_SYSTEM_V1_6_3_CIL_PATCH"
+  "includes_patch": "STREETCRAFT_VISUAL_SYSTEM_V1_6_3_CIL_PATCH",
+  "release_focus": "R2 Visual Baseline Calibration",
+  "operational_hardening": [
+    "Semantic Text Lock",
+    "Material Intensity Delta",
+    "Occlusion Locks",
+    "Compact Generation Contract",
+    "Micro-Drift Critic",
+    "Profile Delta Matrix"
+  ],
+  "archive_dependency": {
+    "name": "Streetcraft Archive V1",
+    "minimum": "V1 FINAL",
+    "relationship": "separate runtime dependency; not Canon"
+  },
+  "archive_aware_runtime": [
+    "Reference Need Model 1.0",
+    "Reference Authority Map 1.0",
+    "Evidence Admission Policy 1.0",
+    "Archive Domain Policy",
+    "CGC reference enrichment",
+    "Archive V1 adapter",
+    "Reference-bleed critic"
+  ],
+  "benchmark_suite": {
+    "version": "1.1",
+    "R0": "Automated Regression",
+    "R1": "Golden Fixture Integrity",
+    "R2a": "Visual Baseline Calibration",
+    "R2b": "Candidate Regression required for behavior-changing releases"
+  }
 }

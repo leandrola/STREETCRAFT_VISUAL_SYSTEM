@@ -1,5 +1,11 @@
-# Streetcraft Visual System (SVS) 1.6.3
+# Streetcraft Visual System (SVS) 1.8.1
 
-Streetcraft is an AI-agnostic visual reasoning and transformation system for real photographs, historical urban imagery, generated/reference images, and photographs of the physical Fear City model.
+SVS 1.8.1 closes the Regression & Benchmark Suite milestone by calibrating the first R2 visual baseline.
 
-SVS 1.6.3 is the full consolidated release that includes the validated 1.6.2 Camera/Profile/Routing milestone and the 1.6.3 Command Invocation Layer (CIL) 1.0.
+## Release layers
+- R0 Automated Regression
+- R1 Golden Fixture Integrity
+- R2a Visual Baseline Calibration
+- R2b Candidate Regression for future behavior-changing releases
+
+SVS does not treat an existing golden image as a freshly generated candidate PASS. The baseline and the future candidate run remain separate.

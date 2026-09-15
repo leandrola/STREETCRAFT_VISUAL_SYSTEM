@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Streetcraft Evidence Admission Record",
+  "type": "object",
+  "required": [
+    "evidence_unit_id",
+    "decision",
+    "domain",
+    "reasons"
+  ],
+  "properties": {
+    "evidence_unit_id": {
+      "type": "string"
+    },
+    "archive_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "decision": {
+      "enum": [
+        "ADMITTED_SCOPED",
+        "ADMITTED_NEGATIVE_ONLY",
+        "REVIEW_REQUIRED",
+        "REJECTED"
+      ]
+    },
+    "domain": {
+      "type": "string"
+    },
+    "reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "permitted_learning": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "forbidden_transfer": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "authority_score": {
+      "type": "number"
+    },
+    "retrieval_score": {
+      "type": "number"
+    },
+    "transfer_risk": {
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

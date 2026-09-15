@@ -48,3 +48,6 @@ Modern Contamination: PERIOD-COMPATIBLE, POSSIBLY COMPATIBLE, TEMPORALLY AMBIGUO
 
 ## Transformation Readiness Engine
 READY / READY_WITH_INFERENCE / REFERENCE_ADVISED / INSUFFICIENT_EVIDENCE / MODE_CONFLICT / USER_DECISION_REQUIRED
+
+## 1.6.4 Pre-Generation Locks
+Before generation, classify source text evidence, material-intensity authority and occluded regions. Emit these constraints into the Compact Generation Contract. Unknown detail remains unknown.
