@@ -1,0 +1,129 @@
+{
+  "version": "CIL-1.0",
+  "turn_scoped": true,
+  "persistent_state": false,
+  "commands": [
+    {
+      "command": "/sc-core",
+      "type": "profile_macro",
+      "expands_to": {
+        "profile": "VP00",
+        "mode": "T01",
+        "camera": "AUTO"
+      }
+    },
+    {
+      "command": "/sc-classic",
+      "type": "profile_macro",
+      "expands_to": {
+        "profile": "VP01",
+        "mode": "T01",
+        "camera": "AUTO"
+      }
+    },
+    {
+      "command": "/sc-2",
+      "type": "profile_macro",
+      "expands_to": {
+        "profile": "VP02",
+        "mode": "T01",
+        "camera": "AUTO"
+      }
+    },
+    {
+      "command": "/sc-2a",
+      "type": "profile_macro",
+      "expands_to": {
+        "profile": "VP02",
+        "mode": "T01",
+        "camera": "CG-A"
+      }
+    },
+    {
+      "command": "/sc-2b",
+      "type": "profile_macro",
+      "expands_to": {
+        "profile": "VP02",
+        "mode": "T01",
+        "camera": "CG-B"
+      }
+    },
+    {
+      "command": "/sc-fear",
+      "type": "fear_city_macro",
+      "expands_to": {
+        "fear_city_identity": "REQUIRE_CONFIRMED_OR_RESOLVE",
+        "profile": "VP03",
+        "mode": "T06",
+        "camera": "CG-FC"
+      }
+    },
+    {
+      "command": "/sc-fear2",
+      "type": "fear_city_override_macro",
+      "expands_to": {
+        "fear_city_identity": "REQUIRE_CONFIRMED_OR_RESOLVE",
+        "profile": "VP02",
+        "mode": "T06",
+        "camera": "FEAR_CITY_SAFE_AUTO",
+        "explicit_fear_city_profile_override": true
+      }
+    },
+    {
+      "command": "/sc-clean",
+      "type": "mode_modifier",
+      "expands_to": {
+        "mode": "T03"
+      }
+    },
+    {
+      "command": "/sc-lock",
+      "type": "camera_modifier",
+      "expands_to": {
+        "camera": "CG-S"
+      }
+    },
+    {
+      "command": "/sc-auto",
+      "type": "camera_modifier",
+      "expands_to": {
+        "camera": "AUTO"
+      }
+    },
+    {
+      "command": "/sc-preserve",
+      "type": "safety_modifier",
+      "expands_to": {
+        "preservation": "STRICT_OBSERVED_EVIDENCE"
+      }
+    },
+    {
+      "command": "/sc-noinvent",
+      "type": "safety_modifier",
+      "expands_to": {
+        "uncertainty": "STRICT_UNKNOWN_PRESERVATION"
+      }
+    },
+    {
+      "command": "/sc-status",
+      "type": "diagnostic",
+      "expands_to": {
+        "action": "REPORT_RESOLVED_CONFIGURATION"
+      }
+    },
+    {
+      "command": "/sc-help",
+      "type": "diagnostic",
+      "expands_to": {
+        "action": "SHOW_COMMAND_REFERENCE"
+      }
+    }
+  ],
+  "aliases": {
+    "/sc-rdr1": "/sc-classic",
+    "/sc-rdr2": "/sc-2",
+    "/sc-rdr2a": "/sc-2a",
+    "/sc-rdr2b": "/sc-2b",
+    "/sc-fc": "/sc-fear"
+  }
+}

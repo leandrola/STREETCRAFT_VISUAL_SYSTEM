@@ -1,7 +1,7 @@
 {
   "name": "Streetcraft Visual System",
-  "version": "1.6.2",
-  "build_date": "2026-09-11",
+  "version": "1.6.3",
+  "build_date": "2026-09-12",
   "entry_point": "STREETCRAFT.md",
   "integrated_milestones": [
     "1.0 Core",
@@ -25,12 +25,12 @@
     "adapters",
     "legacy"
   ],
-  "status": "validated-release",
+  "status": "full-release",
   "canon_policy": "Only the human project owner can grant CANONICAL status",
   "reference_assets_included": true,
   "canon_modified": false,
   "sc_rule_set_modified": false,
-  "base_package": "STREETCRAFT_VISUAL_SYSTEM_V1_6_1",
+  "base_package": "STREETCRAFT_VISUAL_SYSTEM_V1_6_2",
   "validated_features": [
     "CG-A Frontal-Oblique Architectural Immersion",
     "CG-B Street-Level Oblique Monumentality",
@@ -45,6 +45,7 @@
     "L1": "PASS",
     "L2": "PASS",
     "L3": "PASS",
-    "milestone": "Camera/Profile/Routing 100%"
-  }
+    "CIL": "PASS 13/13 tests"
+  },
+  "includes_patch": "STREETCRAFT_VISUAL_SYSTEM_V1_6_3_CIL_PATCH"
 }

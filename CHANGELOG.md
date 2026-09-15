@@ -1,3 +1,21 @@
+# SVS 1.6.3 — 2026-09-12
+
+- Consolidated full release package from SVS 1.6.2 + CIL 1.0 patch.
+- Added Streetcraft Command Invocation Layer (CIL) 1.0 to the mainline release.
+- Added short `/sc-*` command vocabulary and resolver.
+- No Visual Canon, Transformation Mode, Preservation Model or SC rule changes.
+
+# SVS 1.6.3 CIL Patch
+
+- Added CIL 1.0.
+- Added `/sc-core`, `/sc-classic`, `/sc-2`, `/sc-2a`, `/sc-2b`.
+- Added `/sc-fear`, `/sc-fear2`.
+- Added `/sc-clean`, `/sc-lock`, `/sc-auto`, `/sc-preserve`, `/sc-noinvent`.
+- Added `/sc-status`, `/sc-help`.
+- Commands are turn-scoped. No hidden persistent state.
+- Added deterministic resolver and tests.
+- No Canon or governing visual-rule changes.
+
 # SVS 1.6.2 — 2026-09-11
 
 - Promoted the validated Camera/Routing patch to formal release.
