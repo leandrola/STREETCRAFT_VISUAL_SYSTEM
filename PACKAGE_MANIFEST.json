@@ -1,6 +1,6 @@
 {
   "name": "Streetcraft Visual System",
-  "version": "1.8.1",
+  "version": "1.9.0",
   "build_date": "2026-09-15",
   "entry_point": "STREETCRAFT.md",
   "integrated_milestones": [
@@ -25,12 +25,12 @@
     "adapters",
     "legacy"
   ],
-  "status": "full-release",
+  "status": "candidate-release",
   "canon_policy": "Only the human project owner can grant CANONICAL status",
   "reference_assets_included": true,
   "canon_modified": false,
   "sc_rule_set_modified": false,
-  "base_package": "STREETCRAFT_VISUAL_SYSTEM_V1_8_0",
+  "base_package": "STREETCRAFT_VISUAL_SYSTEM_V1_8_1",
   "validated_features": [
     "CG-A Frontal-Oblique Architectural Immersion",
     "CG-B Street-Level Oblique Monumentality",
@@ -48,7 +48,7 @@
     "CIL": "PASS 13/13 tests"
   },
   "includes_patch": "STREETCRAFT_VISUAL_SYSTEM_V1_6_3_CIL_PATCH",
-  "release_focus": "R2 Visual Baseline Calibration",
+  "release_focus": "Scene Intelligence",
   "operational_hardening": [
     "Semantic Text Lock",
     "Material Intensity Delta",
@@ -77,5 +77,21 @@
     "R1": "Golden Fixture Integrity",
     "R2a": "Visual Baseline Calibration",
     "R2b": "Candidate Regression required for behavior-changing releases"
+  },
+  "scene_intelligence": {
+    "version": "1.0",
+    "analysis_record": "SAR2",
+    "modules": [
+      "Scene Entity Model",
+      "Scene Relationship Graph",
+      "Scene Salience Model",
+      "Scene Action Resolver",
+      "Scene-to-CGC Projection"
+    ]
+  },
+  "release_gate": {
+    "R0": "required",
+    "R1": "required",
+    "R2b": "required before stable promotion"
   }
 }

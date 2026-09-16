@@ -39,3 +39,20 @@ Sequence:
 8. inspect for reference bleed with Visual Critic and Micro-Drift Critic.
 
 Archive evidence never changes Mode/Profile/Camera by itself.
+
+## SVS 1.9 Scene Intelligence Gate
+
+During ANALYZE, build SAR2 before finalizing the CGC.
+
+Required sequence:
+1. identify meaningful entities;
+2. assign scene roles;
+3. map protected relationships;
+4. attach preservation/epistemic authority;
+5. calculate analytical salience;
+6. resolve entity actions;
+7. preserve locked unknowns;
+8. derive scoped Reference Need hints;
+9. project SAR2 into the CGC.
+
+Do not treat transient objects as removable without Mode/task authority.

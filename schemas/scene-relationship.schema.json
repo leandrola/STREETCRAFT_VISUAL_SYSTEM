@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Streetcraft Scene Relationship",
+  "type": "object",
+  "required": [
+    "relationship_id",
+    "subject",
+    "predicate",
+    "object",
+    "protection"
+  ],
+  "properties": {
+    "relationship_id": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "predicate": {
+      "enum": [
+        "ATTACHED_TO",
+        "SUPPORTED_BY",
+        "ABOVE",
+        "BELOW",
+        "ADJACENT_TO",
+        "ALIGNED_WITH",
+        "CONTINUES_INTO",
+        "BOUNDS",
+        "APPLIED_TO",
+        "OCCLUDES",
+        "COVERS",
+        "REPLACES",
+        "PART_OF",
+        "CONNECTED_TO",
+        "FOLLOWS",
+        "INTERSECTS"
+      ]
+    },
+    "object": {
+      "type": "string"
+    },
+    "protection": {
+      "enum": [
+        "PR0",
+        "PR1",
+        "PR2",
+        "PRX"
+      ]
+    },
+    "epistemic_class": {
+      "enum": [
+        "OBSERVED",
+        "DERIVED",
+        "INFERRED",
+        "UNKNOWN"
+      ]
+    },
+    "confidence": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

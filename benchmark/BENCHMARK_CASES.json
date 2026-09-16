@@ -1,7 +1,7 @@
 {
   "suite_version": "1.0",
   "svs_release": "1.8.0",
-  "case_count": 39,
+  "case_count": 47,
   "cases": [
     {
       "case_id": "B0-001",
@@ -551,6 +551,86 @@
         "camera_violation": false
       },
       "notes": ""
+    },
+    {
+      "case_id": "B9-001",
+      "category": "B9",
+      "name": "T01 transient observed vehicle preserved",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "expected": {
+        "action": "PRESERVE_CONTEXT"
+      }
+    },
+    {
+      "case_id": "B9-002",
+      "category": "B9",
+      "name": "P5-D hidden region remains unknown",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "expected": {
+        "action": "UNKNOWN_LOCKED"
+      }
+    },
+    {
+      "case_id": "B9-003",
+      "category": "B9",
+      "name": "T03 authorized removal allowed",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "expected": {
+        "action": "REMOVE_AUTHORIZED"
+      }
+    },
+    {
+      "case_id": "B9-004",
+      "category": "B9",
+      "name": "Multi-view continuation permits minimal inference",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "expected": {
+        "action": "INFER_MINIMAL"
+      }
+    },
+    {
+      "case_id": "B9-005",
+      "category": "B9",
+      "name": "PR0 prevents destructive removal",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "expected": {
+        "action": "PRESERVE_RELATIONSHIP"
+      }
+    },
+    {
+      "case_id": "B9-006",
+      "category": "B9",
+      "name": "Fear City structural authored geometry stays exact",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "expected": {
+        "action": "PRESERVE_EXACT"
+      }
+    },
+    {
+      "case_id": "B9-007",
+      "category": "B9",
+      "name": "Unknown lock maps to RN_BLOCKED",
+      "execution": "AUTOMATED",
+      "critical": true,
+      "expected": {
+        "state": "RN_BLOCKED"
+      }
+    },
+    {
+      "case_id": "B9-008",
+      "category": "B9",
+      "name": "Scoped material transform may produce RN_REQUIRED",
+      "execution": "AUTOMATED",
+      "critical": false,
+      "expected": {
+        "state": "RN_REQUIRED"
+      }
     }
   ]
 }

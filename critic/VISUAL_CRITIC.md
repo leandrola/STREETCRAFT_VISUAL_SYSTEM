@@ -66,3 +66,13 @@ When Archive evidence was used, inspect for:
 - Canon-by-similarity behavior.
 
 Any such unauthorized transfer is evidence bleed and must be corrected.
+
+## SVS 1.9 Scene-Graph Regression Check
+
+Compare the generated output against SAR2:
+- identity anchors survive;
+- PR0/PR1 relationships survive;
+- authorized removals do not erase unrelated structure;
+- unknown locks do not become specific invented content;
+- transient-source evidence is not silently deleted under T01;
+- reference support does not alter unrelated entities.

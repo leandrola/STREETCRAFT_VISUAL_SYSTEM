@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Streetcraft Scene Entity",
+  "type": "object",
+  "required": [
+    "entity_id",
+    "kind",
+    "roles",
+    "preservation_level",
+    "epistemic_class"
+  ],
+  "properties": {
+    "entity_id": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "kind": {
+      "enum": [
+        "ARCHITECTURE",
+        "INFRASTRUCTURE",
+        "STOREFRONT",
+        "SIGNAGE",
+        "GRAPHIC",
+        "SURFACE",
+        "VEHICLE",
+        "PERSON",
+        "STREET_FURNITURE",
+        "VEGETATION",
+        "LIGHT_SOURCE",
+        "ATMOSPHERIC_REGION",
+        "OCCLUDED_REGION",
+        "FRAME_BOUNDARY",
+        "UNKNOWN"
+      ]
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "STRUCTURAL_CORE",
+          "IDENTITY_ANCHOR",
+          "RELATIONSHIP_ANCHOR",
+          "CONTEXTUAL_SUPPORT",
+          "TEMPORAL_EVIDENCE",
+          "TRANSIENT_OBJECT",
+          "OCCLUDER",
+          "REMOVAL_CANDIDATE",
+          "UNKNOWN_REGION"
+        ]
+      }
+    },
+    "preservation_level": {
+      "enum": [
+        "P0",
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5-A",
+        "P5-B",
+        "P5-C",
+        "P5-D"
+      ]
+    },
+    "epistemic_class": {
+      "enum": [
+        "OBSERVED",
+        "DERIVED",
+        "INFERRED",
+        "GENERATED",
+        "UNKNOWN"
+      ]
+    },
+    "confidence": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNKNOWN"
+      ]
+    },
+    "observed": {
+      "type": "boolean"
+    },
+    "removal_authorized": {
+      "type": "boolean"
+    },
+    "multi_view_support": {
+      "type": "boolean"
+    },
+    "authored_world": {
+      "type": "boolean"
+    },
+    "salience": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

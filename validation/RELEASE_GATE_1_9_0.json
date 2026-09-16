@@ -1,0 +1,10 @@
+{
+  "release": "SVS 1.9.0",
+  "R0": "PASS",
+  "R1": "PASS",
+  "R2a": "PASS_BASELINE",
+  "R2b": "REQUIRED_PENDING",
+  "decision": "CANDIDATE_RELEASE_READY",
+  "stable_release": "NOT_YET",
+  "reason": "Scene Intelligence changes pre-generation behavior and SVS 1.8.1 policy requires fresh visual candidate regression."
+}

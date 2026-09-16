@@ -15,3 +15,7 @@ CIL commands resolve into the Compact Generation Contract before normal generati
 
 ## SVS 1.7 Archive-Aware Behavior
 CIL syntax is unchanged. Reference retrieval is automatic and follows the resolved CGC. A short command such as `/sc-2b` does not authorize broad Archive imitation.
+
+## SVS 1.9 Scene Intelligence
+
+No new command is required. `/sc-*` commands resolve as before; SAR2 is built automatically from the active source before generation.

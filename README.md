@@ -1,11 +1,23 @@
-# Streetcraft Visual System (SVS) 1.8.1
+# Streetcraft Visual System (SVS) 1.9.0
 
-SVS 1.8.1 closes the Regression & Benchmark Suite milestone by calibrating the first R2 visual baseline.
+SVS 1.9 introduces **Scene Intelligence**.
 
-## Release layers
-- R0 Automated Regression
-- R1 Golden Fixture Integrity
-- R2a Visual Baseline Calibration
-- R2b Candidate Regression for future behavior-changing releases
+Streetcraft now represents a source explicitly as:
+- entities
+- scene roles
+- protected relationships
+- preservation authority
+- salience
+- entity-level actions
+- unknown locks
+- scoped Reference Need hints
 
-SVS does not treat an existing golden image as a freshly generated candidate PASS. The baseline and the future candidate run remain separate.
+The objective is to improve decisions before generation, not to add another visual style.
+
+## New runtime layer
+`SOURCE → SAR2 Scene Intelligence → CGC → Archive-Aware Runtime → Generation → Critic`
+
+## Release status
+Implementation and automated regression are complete.
+
+Because Scene Intelligence changes pre-generation behavior, the SVS 1.8 benchmark policy requires a fresh R2b visual candidate regression before 1.9 can be promoted to fully stable.

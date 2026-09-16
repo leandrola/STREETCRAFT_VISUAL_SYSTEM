@@ -59,6 +59,7 @@ def main():
       run_py("benchmark/check_r2_baseline.py",cwd=ROOT),
       run_py("command_invocation/test_commands.py",cwd=ROOT/"command_invocation"),
       run_py("hardening/test_operational_hardening.py",cwd=ROOT/"hardening"),
+      run_py("scene_intelligence/test_scene_intelligence.py",cwd=ROOT/"scene_intelligence"),
       run_py("reference_runtime/test_archive_aware_runtime.py",cwd=ROOT),
       run_py("validation/camera_routing/validate_matrix.py",cwd=ROOT),
       run_py("validation/camera_routing/validate_l3.py",cwd=ROOT),

@@ -1,0 +1,29 @@
+{
+  "release": "SVS 1.9.0",
+  "status": "CANDIDATE_RELEASE",
+  "scene_intelligence": "IMPLEMENTED",
+  "scene_intelligence_tests": "PASS 24/24",
+  "syntax_validation": "PASS",
+  "json_validation": "PASS",
+  "json_files": 63,
+  "R0_automated_regression": "PASS",
+  "R1_fixture_integrity": "PASS",
+  "R2a_baseline": "PASS",
+  "R2b_visual_candidate_regression": "PENDING_REQUIRED_FOR_STABLE_PROMOTION",
+  "protected_governing_files_unchanged": true,
+  "protected_files": {
+    "core/IDENTITY.md": true,
+    "core/PRESERVATION_MODEL.md": true,
+    "core/VISUAL_GRAMMAR.md": true,
+    "transform/TRANSFORMATION_MODES.md": true,
+    "transform/VISUAL_PROFILES.md": true,
+    "transform/AUTO_ROUTING.md": true,
+    "transform/FEAR_CITY_IDENTITY_THRESHOLD.md": true,
+    "reference/VISUAL_CANON.md": true,
+    "reference/CANON_CANDIDATES.md": true,
+    "reference/DOCUMENTARY_EVIDENCE.md": true,
+    "fear_city/FEAR_CITY_VISION.md": true
+  },
+  "macbook_required_for_this_milestone": false,
+  "stable_promotion_condition": "Run fresh R2b visual candidate regression because 1.9 changes pre-generation behavior."
+}

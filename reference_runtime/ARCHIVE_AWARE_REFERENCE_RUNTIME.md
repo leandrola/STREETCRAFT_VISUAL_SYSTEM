@@ -73,3 +73,9 @@ When Archive cannot resolve a need:
 SVS may continue source-only when the requested transformation is still valid without external evidence.
 
 If evidence is required for the requested transformation, the unsupported branch is blocked rather than hallucinated.
+
+## SVS 1.9 Scene Intelligence Input
+
+Reference Need can now originate from SAR2 entity actions.
+
+Archive queries remain domain-scoped. Scene Intelligence cannot use Archive to resolve an `UNKNOWN_LOCKED` entity.

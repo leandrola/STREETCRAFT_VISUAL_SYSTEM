@@ -1,0 +1,165 @@
+{
+  "scene_id": "SCENE-FEAR-CITY-001",
+  "source_identity": "FEAR_CITY_CONFIRMED",
+  "mode": "T06",
+  "profile": "VP03",
+  "entities": [
+    {
+      "entity_id": "FC-ELEVATED",
+      "label": "elevated steel structure",
+      "kind": "INFRASTRUCTURE",
+      "roles": [
+        "STRUCTURAL_CORE",
+        "IDENTITY_ANCHOR"
+      ],
+      "preservation_level": "P0",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH",
+      "observed": true,
+      "authored_world": true,
+      "salience": {
+        "identity_salience": 1,
+        "structural_dependency": 1,
+        "task_relevance": 1,
+        "relationship_centrality": 1,
+        "temporal_relevance": 0.5
+      }
+    },
+    {
+      "entity_id": "FC-TRACK",
+      "label": "embedded track path",
+      "kind": "INFRASTRUCTURE",
+      "roles": [
+        "STRUCTURAL_CORE",
+        "RELATIONSHIP_ANCHOR"
+      ],
+      "preservation_level": "P0",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH",
+      "observed": true,
+      "authored_world": true,
+      "salience": {
+        "identity_salience": 0.8,
+        "structural_dependency": 1,
+        "task_relevance": 1,
+        "relationship_centrality": 1,
+        "temporal_relevance": 0.5
+      }
+    },
+    {
+      "entity_id": "FC-UNDERPASS",
+      "label": "central underpass",
+      "kind": "ARCHITECTURE",
+      "roles": [
+        "STRUCTURAL_CORE",
+        "IDENTITY_ANCHOR",
+        "RELATIONSHIP_ANCHOR"
+      ],
+      "preservation_level": "P0",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH",
+      "observed": true,
+      "authored_world": true,
+      "salience": {
+        "identity_salience": 1,
+        "structural_dependency": 1,
+        "task_relevance": 1,
+        "relationship_centrality": 1,
+        "temporal_relevance": 0.5
+      }
+    },
+    {
+      "entity_id": "FC-WALL",
+      "label": "recurring graffiti brick wall",
+      "kind": "ARCHITECTURE",
+      "roles": [
+        "STRUCTURAL_CORE",
+        "IDENTITY_ANCHOR",
+        "TEMPORAL_EVIDENCE"
+      ],
+      "preservation_level": "P0",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH",
+      "observed": true,
+      "authored_world": true,
+      "salience": {
+        "identity_salience": 1,
+        "structural_dependency": 0.8,
+        "task_relevance": 0.9,
+        "relationship_centrality": 0.8,
+        "temporal_relevance": 1
+      }
+    },
+    {
+      "entity_id": "FC-GRAFFITI",
+      "label": "recurring graffiti composition",
+      "kind": "GRAPHIC",
+      "roles": [
+        "IDENTITY_ANCHOR",
+        "TEMPORAL_EVIDENCE"
+      ],
+      "preservation_level": "P1",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH",
+      "observed": true,
+      "authored_world": true,
+      "salience": {
+        "identity_salience": 1,
+        "structural_dependency": 0.1,
+        "task_relevance": 0.8,
+        "relationship_centrality": 0.7,
+        "temporal_relevance": 1
+      }
+    },
+    {
+      "entity_id": "FC-TANNER",
+      "label": "Tanner Street sign",
+      "kind": "SIGNAGE",
+      "roles": [
+        "IDENTITY_ANCHOR",
+        "RELATIONSHIP_ANCHOR"
+      ],
+      "preservation_level": "P1",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH",
+      "observed": true,
+      "authored_world": true,
+      "salience": {
+        "identity_salience": 1,
+        "structural_dependency": 0.1,
+        "task_relevance": 0.7,
+        "relationship_centrality": 0.7,
+        "temporal_relevance": 0.5
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "FC-R1",
+      "subject": "FC-ELEVATED",
+      "predicate": "ABOVE",
+      "object": "FC-TRACK",
+      "protection": "PR0",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH"
+    },
+    {
+      "relationship_id": "FC-R2",
+      "subject": "FC-TRACK",
+      "predicate": "CONTINUES_INTO",
+      "object": "FC-UNDERPASS",
+      "protection": "PR0",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH"
+    },
+    {
+      "relationship_id": "FC-R3",
+      "subject": "FC-GRAFFITI",
+      "predicate": "APPLIED_TO",
+      "object": "FC-WALL",
+      "protection": "PR1",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH"
+    }
+  ]
+}

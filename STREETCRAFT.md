@@ -1,6 +1,6 @@
 # STREETCRAFT.md
 ## Entry point for AI agents
-Version: SVS 1.8.1
+Version: SVS 1.9.0
 
 Streetcraft is a visual transformation specification.
 
@@ -56,3 +56,10 @@ See `benchmark/REGRESSION_BENCHMARK_SUITE.md`.
 
 ## R2 Baseline 1.8.1
 The visual benchmark baseline is calibrated. Future behavior-changing releases must execute R2b Candidate Regression.
+
+
+## Scene Intelligence 1.9
+Before final CGC resolution, build SAR2:
+`Entities → Roles → Relationships → Authority → Salience → Action Plan → Reference Gaps`.
+
+Read `scene_intelligence/SCENE_INTELLIGENCE.md`.

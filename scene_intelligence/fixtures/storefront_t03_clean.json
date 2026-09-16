@@ -1,0 +1,109 @@
+{
+  "scene_id": "SCENE-STOREFRONT-T03",
+  "source_identity": "REAL_HISTORICAL_PHOTO",
+  "mode": "T03",
+  "profile": "VP02",
+  "entities": [
+    {
+      "entity_id": "E-BUILDING",
+      "label": "primary brick facade",
+      "kind": "ARCHITECTURE",
+      "roles": [
+        "STRUCTURAL_CORE",
+        "IDENTITY_ANCHOR"
+      ],
+      "preservation_level": "P0",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH",
+      "observed": true,
+      "salience": {
+        "identity_salience": 1,
+        "structural_dependency": 1,
+        "task_relevance": 1,
+        "relationship_centrality": 0.8,
+        "temporal_relevance": 0.5
+      }
+    },
+    {
+      "entity_id": "E-SIGN",
+      "label": "storefront sign",
+      "kind": "SIGNAGE",
+      "roles": [
+        "IDENTITY_ANCHOR",
+        "RELATIONSHIP_ANCHOR"
+      ],
+      "preservation_level": "P1",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH",
+      "observed": true,
+      "salience": {
+        "identity_salience": 1,
+        "structural_dependency": 0.2,
+        "task_relevance": 0.9,
+        "relationship_centrality": 0.8,
+        "temporal_relevance": 0.6
+      }
+    },
+    {
+      "entity_id": "E-CAR",
+      "label": "parked car",
+      "kind": "VEHICLE",
+      "roles": [
+        "TRANSIENT_OBJECT",
+        "OCCLUDER",
+        "REMOVAL_CANDIDATE"
+      ],
+      "preservation_level": "P4",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH",
+      "observed": true,
+      "salience": {
+        "identity_salience": 0.2,
+        "structural_dependency": 0,
+        "task_relevance": 0.2,
+        "relationship_centrality": 0.2,
+        "temporal_relevance": 0.6
+      },
+      "removal_authorized": true
+    },
+    {
+      "entity_id": "E-HIDDEN",
+      "label": "wall behind parked car",
+      "kind": "OCCLUDED_REGION",
+      "roles": [],
+      "preservation_level": "P5-A",
+      "epistemic_class": "INFERRED",
+      "confidence": "UNKNOWN",
+      "observed": false,
+      "salience": {
+        "identity_salience": 0,
+        "structural_dependency": 0.2,
+        "task_relevance": 0.2,
+        "relationship_centrality": 0.2,
+        "temporal_relevance": 0
+      },
+      "multi_view_support": true,
+      "continuity_support": true
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "R-SIGN",
+      "subject": "E-SIGN",
+      "predicate": "ATTACHED_TO",
+      "object": "E-BUILDING",
+      "protection": "PR1",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH"
+    },
+    {
+      "relationship_id": "R-OCC",
+      "subject": "E-CAR",
+      "predicate": "OCCLUDES",
+      "object": "E-HIDDEN",
+      "protection": "PR2",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH"
+    }
+  ]
+}

@@ -49,3 +49,9 @@ Correct source-identity drift before aesthetic drift. Priority: semantic text > 
 
 ## SVS 1.7 Evidence-Bleed Correction
 If a reference caused unauthorized transfer, remove the transferred feature first. Do not compensate by adding a different unsupported reference detail. Revert to source authority and the scoped Evidence Unit.
+
+## SVS 1.9 Scene-Aware Correction
+
+When correcting a failure, target the failing entity/relationship rather than globally restyling the image.
+
+PR0/PR1 relationship restoration outranks cosmetic improvement.

@@ -26,3 +26,7 @@ Checks that retrieved evidence teaches only its declared domain and does not bec
 
 ## B8 · Governing-File Drift
 Checks protected high-authority files against the release baseline.
+
+
+## B9 · Scene Intelligence
+Checks entity roles, protected relationships, transient/removal logic, unknown locks, scene-to-CGC projection and scene-derived Reference Need behavior.

@@ -47,3 +47,11 @@ Reference Need is evaluated from:
 `UNKNOWN` does not automatically imply `RN_REQUIRED`.
 
 Some unknowns must remain unknown.
+
+## SVS 1.9 Scene-Derived Needs
+
+Scene Intelligence may emit Reference Need hints.
+
+`UNKNOWN_LOCKED` maps to `RN_BLOCKED`, not to automatic retrieval.
+
+`TRANSFORM_SCOPED` may map to `RN_SUPPORT` or `RN_REQUIRED` only when a declared Archive domain can legitimately support the transformation.

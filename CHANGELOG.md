@@ -1,3 +1,18 @@
+# SVS 1.9.0 — Scene Intelligence
+
+- Added Scene Entity Model.
+- Added Scene Relationship Graph.
+- Added Scene Salience Model.
+- Added Scene Action Resolver.
+- Added Scene Analysis Record v2.
+- Added Scene-to-CGC projection.
+- Added Fear City Scene Intelligence policy.
+- Added scene-derived Reference Need hints.
+- Added B9 deterministic regression cases.
+- CIL syntax unchanged.
+- Visual Profiles, Camera Grammar and Canon authority unchanged.
+- Fresh R2b visual candidate regression required before stable promotion.
+
 # SVS 1.8.1 — R2 Baseline Calibration
 
 - Calibrated the first R2 visual baseline.

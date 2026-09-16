@@ -51,3 +51,13 @@ READY / READY_WITH_INFERENCE / REFERENCE_ADVISED / INSUFFICIENT_EVIDENCE / MODE_
 
 ## 1.6.4 Pre-Generation Locks
 Before generation, classify source text evidence, material-intensity authority and occluded regions. Emit these constraints into the Compact Generation Contract. Unknown detail remains unknown.
+
+## SVS 1.9 Scene Intelligence
+
+Scene Understanding now produces SAR2 through the Scene Intelligence pipeline:
+
+`Entities → Roles → Relationships → Authority → Salience → Action Plan → Reference Gaps`
+
+Salience controls analytical attention only. It does not create preservation authority.
+
+Use `scene_intelligence/SCENE_INTELLIGENCE.md` and the SAR2 schema.
