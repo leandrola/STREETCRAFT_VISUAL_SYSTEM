@@ -1,6 +1,7 @@
 # STREETCRAFT.md
 ## Entry point for AI agents
-Version: SVS 1.9.0
+Version: SVS 1.9.1
+Status: Candidate Release / R2b retest required
 
 Streetcraft is a visual transformation specification.
 
@@ -20,6 +21,7 @@ Interpret a supplied source while preserving its authored or documentary identit
 ## Camera routing summary
 - CG-A: frontal-oblique architectural immersion
 - CG-B: street-level oblique monumentality
+- CG-F: strict frontal elevation camera (CIL 1.1)
 - CG-S: source-locked camera
 - CG-FC: Fear City authored-view camera
 
@@ -27,39 +29,34 @@ Confirmed Fear City defaults to:
 `T06 → VP03 → CG-FC`
 
 ## Command Invocation Layer
-This release includes CIL 1.0 with:
-`/sc-core`, `/sc-classic`, `/sc-2`, `/sc-2a`, `/sc-2b`, `/sc-fear`, `/sc-fear2`, `/sc-clean`, `/sc-lock`, `/sc-auto`, `/sc-preserve`, `/sc-noinvent`, `/sc-status`, `/sc-help`
+CIL 1.1 commands include:
+`/sc-core`, `/sc-classic`, `/sc-2`, `/sc-2a`, `/sc-2b`, `/sc-rdr2-elevation`, `/sc-fear`, `/sc-fear2`, `/sc-clean`, `/sc-lock`, `/sc-auto`, `/sc-front`, `/sc-preserve`, `/sc-noinvent`, `/sc-status`, `/sc-help`.
 
-See `command_invocation/COMMAND_INVOCATION_LAYER.md`.
+Elevation aliases: `/sc-2f`, `/sc-rdr2-front`, `/sc-elevation`.
 
+`/sc-rdr2-elevation` → `VP02 + T02 + CG-F` with strict Identity Lock, `LOCKED_UNKNOWN` Occlusion Lock, strict frontalization, 16:9 and minimal street. See `command_invocation/CG_F_FRONTAL_ELEVATION.md`.
 
 ## Operational Hardening 1.6.4
-See `hardening/OPERATIONAL_HARDENING.md`. Every generation should resolve a Compact Generation Contract and every inspection should include a Micro-Drift pass.
-
+Use Semantic Text Lock, Material Intensity Delta, Occlusion Locks, Compact Generation Contract and Micro-Drift Critic.
 
 ## Archive-Aware Reference Runtime 1.7
-When a scoped documentary deficit matters to the transformation, evaluate Reference Need.
+Reference Need states: `RN_NONE`, `RN_SUPPORT`, `RN_REQUIRED`, `RN_BLOCKED`. Archive evidence is scoped and never outranks source identity.
 
-`RN_NONE` → source-only  
-`RN_SUPPORT` → optional scoped Archive support  
-`RN_REQUIRED` → Archive support required for that branch  
-`RN_BLOCKED` → unknown must remain unknown
-
-Read `reference_runtime/ARCHIVE_AWARE_REFERENCE_RUNTIME.md`.
-
-
-## Regression & Benchmark Suite 1.8
-Future releases should pass R0 automated regression, R1 golden fixture integrity and R2 visual benchmarks before being promoted to stable.
-
-See `benchmark/REGRESSION_BENCHMARK_SUITE.md`.
-
-
-## R2 Baseline 1.8.1
-The visual benchmark baseline is calibrated. Future behavior-changing releases must execute R2b Candidate Regression.
-
+## Regression & Benchmark Suite 1.8 / 1.8.1
+R0 automated regression, R1 fixture integrity, R2a calibrated visual baseline, R2b candidate regression for behavior-changing releases.
 
 ## Scene Intelligence 1.9
 Before final CGC resolution, build SAR2:
 `Entities → Roles → Relationships → Authority → Salience → Action Plan → Reference Gaps`.
 
-Read `scene_intelligence/SCENE_INTELLIGENCE.md`.
+## Critical Hardening Patch 1.9.1
+Before generation run:
+1. Semantic Token Freeze
+2. Low-Confidence Text Mask
+3. Fear City Geographic Null Lock
+4. Reference Bleed Preflight
+5. Atmosphere / Material Carryover Guard
+
+Any S3-class violation blocks generation.
+
+Read `patch/PATCH_RUNTIME_ORDER.md` and `integration/PATCH_HOOKS_1_9_1.md`.

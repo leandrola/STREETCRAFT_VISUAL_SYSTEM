@@ -1,0 +1,20 @@
+{
+  "release": "SVS 1.9.1 Patch",
+  "tests": "PASS 24/24 SVS 1.9.1 patch tests",
+  "test_returncode": 0,
+  "syntax": "PASS",
+  "syntax_files": [
+    {
+      "file": "patch/svs_1_9_1_patch.py",
+      "status": "PASS"
+    },
+    {
+      "file": "validation/test_patch_1_9_1.py",
+      "status": "PASS"
+    }
+  ],
+  "audit_source": "R2B_1_9_0_CRITICAL_AUDIT",
+  "patch_targets": 3,
+  "stable_promotion": false,
+  "R2b_retest": "REQUIRED"
+}

@@ -1,0 +1,146 @@
+{
+  "package": "STREETCRAFT_VISUAL_SYSTEM_V1_9_1_FULL_RECONSTRUCTED",
+  "source_repository": "https://github.com/leandrola/STREETCRAFT_VISUAL_SYSTEM",
+  "source_branch": "main",
+  "source_commit": "04c070d2043295bb802ce3381b7c78faa26ee991",
+  "source_tree": "c9b52237e1cdfeb799d0c6f729114721858517b4",
+  "base_release": "SVS 1.9.0 Candidate",
+  "integrated_patch": "SVS 1.9.1",
+  "reconstruction_strategy": [
+    "seeded from locally available earlier Streetcraft package structure",
+    "reconstructed current 1.9.0 runtime modules from GitHub main",
+    "recovered exact current reference/Fear City binaries by Git blob identity from local assets",
+    "integrated complete local 1.9.1 patch overlay",
+    "rebuilt validation/benchmark metadata and package checksums"
+  ],
+  "exact_embedded_assets": [
+    {
+      "path": "reference/assets/RDR-F01_L_KATZENSTEIN.jpg",
+      "git_blob_sha": "777285269c0536cacdf6a702f2814749f45a3308",
+      "bytes": 447617
+    },
+    {
+      "path": "reference/assets/RDR-F02_GOTHAM_HOTEL.png",
+      "git_blob_sha": "b041bede837e9d135da1e5d1f4ecbfc30782c0b4",
+      "bytes": 444008
+    },
+    {
+      "path": "reference/assets/RDR-F03_ECONOMY_CANDY.png",
+      "git_blob_sha": "8efe6a0ba24c63d352cf41a2f4f58c3de306536b",
+      "bytes": 570115
+    },
+    {
+      "path": "reference/assets/RDR-F04_GOOD_EARTH_BAR.png",
+      "git_blob_sha": "ffa430850576df62c69d5b417ee1b39fc9f2d014",
+      "bytes": 655709
+    },
+    {
+      "path": "reference/assets/RDR-F05_RAJA_GROCERY.png",
+      "git_blob_sha": "72bdecc51ea3f9ddfb0e2723c7072e01f5f8cbf2",
+      "bytes": 477450
+    },
+    {
+      "path": "reference/assets/RDR-F06_LOANS_OSCARS.png",
+      "git_blob_sha": "ee1d3044fb134758a244ff7e9e1dee714e75294d",
+      "bytes": 403821
+    },
+    {
+      "path": "reference/assets/RDR-F07_DAVES_CORNER.png",
+      "git_blob_sha": "777285269c0536cacdf6a702f2814749f45a3308",
+      "bytes": 447617
+    },
+    {
+      "path": "reference/assets/SC-B01_PEEP_SHOW.png",
+      "git_blob_sha": "05d38dfd8f50f883edffb6c11db77ae1ec19d6ad",
+      "bytes": 463460
+    },
+    {
+      "path": "reference/assets/SC-B02_NEON_HOTEL_STREET.png",
+      "git_blob_sha": "4531acba7d6954b1241c288eaad36f704fb71598",
+      "bytes": 459517
+    },
+    {
+      "path": "reference/assets/SC-D01_BASIC_METAL.png",
+      "git_blob_sha": "e45421d1baca2e6bfb444e6c8140e6c304c4efd6",
+      "bytes": 596879
+    },
+    {
+      "path": "reference/assets/SC-D02_MG_SOUL_FOOD.png",
+      "git_blob_sha": "889263c9b780a1ab1c4ea233b972dd830db3d433",
+      "bytes": 724529
+    },
+    {
+      "path": "reference/assets/SC-D03_CONDOS_FOR_SALE.png",
+      "git_blob_sha": "b791102473e0a645c530f9e6f2fca7e6cd56fb3f",
+      "bytes": 671831
+    },
+    {
+      "path": "reference/assets/SC-D04_BRIDGE.png",
+      "git_blob_sha": "3d9de3798cae8eff0c74146e4cf68ad2c5d95412",
+      "bytes": 364415
+    },
+    {
+      "path": "reference/assets/SC-D05_ELEVATED_TRAIN_NIGHT.png",
+      "git_blob_sha": "b37eeb6b95f5e45ef0d834b208b574f87bac3b2c",
+      "bytes": 139156
+    },
+    {
+      "path": "reference/assets/SC-D06_PHARMACY_OUTPUT.png",
+      "git_blob_sha": "094c9d3cb938b0fc56b94fb6beaf5d7c924d7056",
+      "bytes": 466727
+    },
+    {
+      "path": "validation/camera_routing/l3_fear_city_evidence/FCV001_VIEW_01.jpg",
+      "git_blob_sha": "e2552413202f7e1156dd2f3825217f45e23d869c",
+      "bytes": 733554
+    },
+    {
+      "path": "validation/camera_routing/l3_fear_city_evidence/FCV001_VIEW_02.jpg",
+      "git_blob_sha": "b1a7dbaadbd42718300a9ba17319d2c1827e7e7b",
+      "bytes": 177302
+    },
+    {
+      "path": "validation/camera_routing/l3_fear_city_evidence/FCV001_VIEW_03.jpg",
+      "git_blob_sha": "56feb437adc5fc8ebce347da64bbfb0bf8da2a6e",
+      "bytes": 623731
+    },
+    {
+      "path": "validation/camera_routing/l3_fear_city_evidence/FCV001_VIEW_04.jpg",
+      "git_blob_sha": "5d85ed3a524e09493c4319b827e64222a652c5d4",
+      "bytes": 1100593
+    }
+  ],
+  "remote_only_historical_fixtures": [
+    {
+      "path": "validation/camera_routing/l2_evidence/L2_EVIDENCE_CONTACT_SHEET.png",
+      "git_blob_sha": "6444d01ec2991b44d1004e9fcab7fcae7086756b"
+    },
+    {
+      "path": "validation/camera_routing/l2_evidence/VP00_CG-A.png",
+      "git_blob_sha": "6f64e07083836e9f1da7e900c671c62cd5df76ac"
+    },
+    {
+      "path": "validation/camera_routing/l2_evidence/VP00_CG-B.png",
+      "git_blob_sha": "729237e6ceda40fce994d3ab72a87183dff91879"
+    },
+    {
+      "path": "validation/camera_routing/l2_evidence/VP01_CG-A.png",
+      "git_blob_sha": "73f64bc31c6f4c4a5d14a04730cadd231b5808c8"
+    },
+    {
+      "path": "validation/camera_routing/l2_evidence/VP01_CG-B.png",
+      "git_blob_sha": "5836a064809d6a0664a13629fada9ffd05cf9b3b"
+    },
+    {
+      "path": "validation/camera_routing/l2_evidence/VP02_CG-A.png",
+      "git_blob_sha": "a8d820ff9d5099f79d0dd9070deec71aca63f8b0"
+    },
+    {
+      "path": "validation/camera_routing/l2_evidence/VP02_CG-B.png",
+      "git_blob_sha": "0fd29a12b8e5ac969d465bb58771e6d7fb2bb6b3"
+    }
+  ],
+  "exact_git_archive_claim": false,
+  "operational_full_package_claim": true,
+  "note": "The seven remote-only files are historical L2 visual evidence; runtime, current source assets, Fear City evidence, patch code and deterministic tests are embedded."
+}

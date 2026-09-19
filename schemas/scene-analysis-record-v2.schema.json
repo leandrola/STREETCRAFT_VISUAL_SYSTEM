@@ -1,6 +1,5 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Streetcraft Scene Analysis Record v2",
   "type": "object",
   "required": [
     "scene_id",
@@ -15,55 +14,5 @@
     "reference_need_hints",
     "warnings"
   ],
-  "properties": {
-    "scene_id": {
-      "type": "string"
-    },
-    "source_identity": {
-      "type": "string"
-    },
-    "mode": {
-      "type": "string"
-    },
-    "profile": {
-      "type": "string"
-    },
-    "entities": {
-      "type": "array",
-      "items": {
-        "$ref": "scene-entity.schema.json"
-      }
-    },
-    "relationships": {
-      "type": "array",
-      "items": {
-        "$ref": "scene-relationship.schema.json"
-      }
-    },
-    "action_plan": {
-      "type": "array"
-    },
-    "identity_anchors": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "unknown_locks": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "reference_need_hints": {
-      "type": "array"
-    },
-    "warnings": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    }
-  },
   "additionalProperties": true
 }

@@ -1,6 +1,5 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Streetcraft Evidence Admission Record",
   "type": "object",
   "required": [
     "evidence_unit_id",
@@ -11,12 +10,6 @@
   "properties": {
     "evidence_unit_id": {
       "type": "string"
-    },
-    "archive_id": {
-      "type": [
-        "string",
-        "null"
-      ]
     },
     "decision": {
       "enum": [
@@ -34,31 +27,6 @@
       "items": {
         "type": "string"
       }
-    },
-    "permitted_learning": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "forbidden_transfer": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "authority_score": {
-      "type": "number"
-    },
-    "retrieval_score": {
-      "type": "number"
-    },
-    "transfer_risk": {
-      "enum": [
-        "LOW",
-        "MEDIUM",
-        "HIGH"
-      ]
     }
   },
   "additionalProperties": true

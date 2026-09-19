@@ -1,76 +1,16 @@
 import json,sys
 from pathlib import Path
-ROOT=Path(__file__).resolve().parent
-sys.path.insert(0,str(ROOT))
+ROOT=Path(__file__).resolve().parent;sys.path.insert(0,str(ROOT))
 from scene_intelligence import *
-
-def load(name):
-    return json.loads((ROOT/"fixtures"/name).read_text())
-
-# 1-4 salience
-s=salience_score({"salience":{"identity_salience":1,"structural_dependency":1,"task_relevance":1,"relationship_centrality":1,"temporal_relevance":1}})
-assert s["score"]==1.0
-assert s["band"]=="CRITICAL_ATTENTION"
-low=salience_score({"salience":{}})
-assert low["band"]=="MINOR_ATTENTION"
-
-# T01 storefront
-sc=load("storefront_t01.json")
-sar=build_scene_analysis_record(**sc)
-actions={a["entity_id"]:a for a in sar["action_plan"]}
-assert actions["E-BUILDING"]["action"]=="PRESERVE_EXACT"
-assert actions["E-SIGN"]["action"]=="PRESERVE_CHARACTER"
-assert actions["E-CAR"]["action"]=="PRESERVE_CONTEXT"  # transient != removable under T01
-assert actions["E-HIDDEN"]["action"]=="UNKNOWN_LOCKED"
-assert "E-SIGN" in sar["identity_anchors"]
-assert "E-HIDDEN" in sar["unknown_locks"]
-assert any(h["state"]=="RN_BLOCKED" and h["entity_id"]=="E-HIDDEN" for h in sar["reference_need_hints"])
-
-# Relation locks
-assert actions["E-SIGN"]["relationship_lock"] is True
-assert "R-SIGN" in actions["E-SIGN"]["protected_relationships"]
-
-# T03 Clean Plate
-sc3=load("storefront_t03_clean.json")
-sar3=build_scene_analysis_record(**sc3)
-a3={a["entity_id"]:a for a in sar3["action_plan"]}
-assert a3["E-CAR"]["action"]=="REMOVE_AUTHORIZED"
-assert a3["E-HIDDEN"]["action"]=="INFER_MINIMAL"
-
-# CGC projection
-cgc={"source_identity":"REAL_HISTORICAL_PHOTO","mode":"T03","profile":"VP02","camera":"CG-S",
-     "preserve":[],"transform":[],"remove":[],"infer":[],"unknown":[],"forbid":[]}
-out=project_scene_to_cgc(cgc,sar3)
-assert any(x.startswith("E-CAR:") for x in out["remove"])
-assert any(x.startswith("E-HIDDEN:") for x in out["infer"])
-assert "scene_intelligence" in out
-
-# Fear City
-fc=load("fear_city_scene_001.json")
-fcs=build_scene_analysis_record(**fc)
-fa={a["entity_id"]:a for a in fcs["action_plan"]}
-assert fa["FC-ELEVATED"]["action"]=="PRESERVE_EXACT"
-assert fa["FC-TRACK"]["action"]=="PRESERVE_EXACT"
-assert fa["FC-UNDERPASS"]["action"]=="PRESERVE_EXACT"
-assert fa["FC-WALL"]["action"]=="PRESERVE_EXACT"
-assert fa["FC-GRAFFITI"]["action"]=="PRESERVE_CHARACTER"
-assert fa["FC-TRACK"]["relationship_lock"] is True
-assert not fcs["warnings"]
-
-# Low authority cannot silently break PR0
-e={"entity_id":"X","label":"small object","kind":"STREET_FURNITURE","roles":["REMOVAL_CANDIDATE"],"preservation_level":"P4","epistemic_class":"OBSERVED","confidence":"HIGH","observed":True,"removal_authorized":True,"salience":{}}
-other={"entity_id":"Y","label":"structure","kind":"ARCHITECTURE","roles":["STRUCTURAL_CORE"],"preservation_level":"P0","epistemic_class":"OBSERVED","confidence":"HIGH","observed":True,"salience":{}}
-r=[{"relationship_id":"XY","subject":"X","predicate":"ATTACHED_TO","object":"Y","protection":"PR0","epistemic_class":"OBSERVED","confidence":"HIGH"}]
-assert resolve_entity_action(e,r,"T03")["action"]=="PRESERVE_RELATIONSHIP"
-
-# reference hint from scoped transform
-mat={"entity_id":"M","label":"brick behavior","kind":"SURFACE","roles":["CONTEXTUAL_SUPPORT"],"preservation_level":"P3","epistemic_class":"OBSERVED","confidence":"HIGH","observed":True,"reference_domain":"MATERIALS","reference_required":True,"salience":{}}
-ms=build_scene_analysis_record(scene_id="M",source_identity="X",mode="T06",profile="VP03",entities=[mat],relationships=[])
-assert ms["reference_need_hints"][0]["state"]=="RN_REQUIRED"
-assert ms["reference_need_hints"][0]["target_domains"]==["MATERIALS"]
-
-# dangling relation detected
-bad=build_scene_analysis_record(scene_id="B",source_identity="X",mode="T01",profile="VP00",entities=[other],relationships=[{"relationship_id":"BAD","subject":"Y","predicate":"ABOVE","object":"MISSING","protection":"PR1","epistemic_class":"OBSERVED","confidence":"HIGH"}])
-assert any(x.startswith("DANGLING_RELATIONSHIP") for x in bad["warnings"])
-
-print("PASS 24/24 Scene Intelligence tests")
+def load(name):return json.loads((ROOT/'fixtures'/name).read_text())
+s=salience_score({'salience':{'identity_salience':1,'structural_dependency':1,'task_relevance':1,'relationship_centrality':1,'temporal_relevance':1}});assert s['score']==1.0;assert s['band']=='CRITICAL_ATTENTION'
+low=salience_score({'salience':{}});assert low['band']=='MINOR_ATTENTION'
+sc=load('storefront_t01.json');sar=build_scene_analysis_record(**sc);actions={a['entity_id']:a for a in sar['action_plan']}
+assert actions['E-BUILDING']['action']=='PRESERVE_EXACT';assert actions['E-SIGN']['action']=='PRESERVE_CHARACTER';assert actions['E-CAR']['action']=='PRESERVE_CONTEXT';assert actions['E-HIDDEN']['action']=='UNKNOWN_LOCKED';assert 'E-SIGN' in sar['identity_anchors'];assert 'E-HIDDEN' in sar['unknown_locks'];assert any(h['state']=='RN_BLOCKED' and h['entity_id']=='E-HIDDEN' for h in sar['reference_need_hints']);assert actions['E-SIGN']['relationship_lock'] is True;assert 'R-SIGN' in actions['E-SIGN']['protected_relationships']
+sc3=load('storefront_t03_clean.json');sar3=build_scene_analysis_record(**sc3);a3={a['entity_id']:a for a in sar3['action_plan']};assert a3['E-CAR']['action']=='REMOVE_AUTHORIZED';assert a3['E-HIDDEN']['action']=='INFER_MINIMAL'
+cgc={'source_identity':'REAL_HISTORICAL_PHOTO','mode':'T03','profile':'VP02','camera':'CG-S','preserve':[],'transform':[],'remove':[],'infer':[],'unknown':[],'forbid':[]};out=project_scene_to_cgc(cgc,sar3);assert any(x.startswith('E-CAR:') for x in out['remove']);assert any(x.startswith('E-HIDDEN:') for x in out['infer']);assert 'scene_intelligence' in out
+fc=load('fear_city_scene_001.json');fcs=build_scene_analysis_record(**fc);fa={a['entity_id']:a for a in fcs['action_plan']};assert fa['FC-ELEVATED']['action']=='PRESERVE_EXACT';assert fa['FC-TRACK']['action']=='PRESERVE_EXACT';assert fa['FC-UNDERPASS']['action']=='PRESERVE_EXACT';assert fa['FC-WALL']['action']=='PRESERVE_EXACT';assert fa['FC-GRAFFITI']['action']=='PRESERVE_CHARACTER';assert fa['FC-TRACK']['relationship_lock'] is True;assert not fcs['warnings']
+e={'entity_id':'X','label':'small object','kind':'STREET_FURNITURE','roles':['REMOVAL_CANDIDATE'],'preservation_level':'P4','epistemic_class':'OBSERVED','confidence':'HIGH','observed':True,'removal_authorized':True,'salience':{}};other={'entity_id':'Y','label':'structure','kind':'ARCHITECTURE','roles':['STRUCTURAL_CORE'],'preservation_level':'P0','epistemic_class':'OBSERVED','confidence':'HIGH','observed':True,'salience':{}};r=[{'relationship_id':'XY','subject':'X','predicate':'ATTACHED_TO','object':'Y','protection':'PR0','epistemic_class':'OBSERVED','confidence':'HIGH'}];assert resolve_entity_action(e,r,'T03')['action']=='PRESERVE_RELATIONSHIP'
+mat={'entity_id':'M','label':'brick behavior','kind':'SURFACE','roles':['CONTEXTUAL_SUPPORT'],'preservation_level':'P3','epistemic_class':'OBSERVED','confidence':'HIGH','observed':True,'reference_domain':'MATERIALS','reference_required':True,'salience':{}};ms=build_scene_analysis_record(scene_id='M',source_identity='X',mode='T06',profile='VP03',entities=[mat],relationships=[]);assert ms['reference_need_hints'][0]['state']=='RN_REQUIRED';assert ms['reference_need_hints'][0]['target_domains']==['MATERIALS']
+bad=build_scene_analysis_record(scene_id='B',source_identity='X',mode='T01',profile='VP00',entities=[other],relationships=[{'relationship_id':'BAD','subject':'Y','predicate':'ABOVE','object':'MISSING','protection':'PR1','epistemic_class':'OBSERVED','confidence':'HIGH'}]);assert any(x.startswith('DANGLING_RELATIONSHIP') for x in bad['warnings'])
+print('PASS 24/24 Scene Intelligence tests')

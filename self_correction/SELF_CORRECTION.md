@@ -44,14 +44,8 @@ PASS achieved; only S0/S1 remain within Failure Budget; correction risk exceeds 
 
 Detect diminishing returns and revision oscillation.
 
-## 1.6.4 Hardening Correction Order
-Correct source-identity drift before aesthetic drift. Priority: semantic text > authored geometry/relationships > camera > occlusion > material intensity > atmosphere > cosmetic detail.
-
-## SVS 1.7 Evidence-Bleed Correction
-If a reference caused unauthorized transfer, remove the transferred feature first. Do not compensate by adding a different unsupported reference detail. Revert to source authority and the scoped Evidence Unit.
-
 ## SVS 1.9 Scene-Aware Correction
+Target the failing entity/relationship rather than globally restyling. PR0/PR1 restoration outranks cosmetic improvement.
 
-When correcting a failure, target the failing entity/relationship rather than globally restyling the image.
-
-PR0/PR1 relationship restoration outranks cosmetic improvement.
+## SVS 1.9.1 Correction Priority
+Exact text token → authored geography/world identity → protected relationship/camera → occlusion → material/atmosphere carryover → cosmetic drift.

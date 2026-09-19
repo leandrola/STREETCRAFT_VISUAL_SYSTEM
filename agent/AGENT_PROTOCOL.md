@@ -22,37 +22,8 @@ text_rendering
 
 The adapter translates Streetcraft semantic contracts into model-specific syntax. Vendor parameters must not leak into the Core.
 
-## SVS 1.6.4 Compact Contract Gate
-Before generation, resolve a Compact Generation Contract. If preserve/transform/remove/infer/unknown/forbid cannot be made internally consistent, do not generate until the conflict is resolved.
-
-## SVS 1.7 Archive-Aware Reference Gate
-After the Compact Generation Contract is drafted, evaluate Reference Need before generation.
-
-Sequence:
-1. classify Reference Need;
-2. skip Archive when `RN_NONE`;
-3. preserve unknown without retrieval when `RN_BLOCKED`;
-4. query Archive for `RN_SUPPORT` or `RN_REQUIRED`;
-5. admit evidence through EAP 1.0;
-6. enrich the CGC with only scoped admitted evidence;
-7. generate;
-8. inspect for reference bleed with Visual Critic and Micro-Drift Critic.
-
-Archive evidence never changes Mode/Profile/Camera by itself.
-
 ## SVS 1.9 Scene Intelligence Gate
+During ANALYZE, build SAR2 before finalizing the CGC: entities → roles → protected relationships → authority → salience → entity actions → unknown locks → reference hints. Transient objects are not removable without Mode/task authority.
 
-During ANALYZE, build SAR2 before finalizing the CGC.
-
-Required sequence:
-1. identify meaningful entities;
-2. assign scene roles;
-3. map protected relationships;
-4. attach preservation/epistemic authority;
-5. calculate analytical salience;
-6. resolve entity actions;
-7. preserve locked unknowns;
-8. derive scoped Reference Need hints;
-9. project SAR2 into the CGC.
-
-Do not treat transient objects as removable without Mode/task authority.
+## SVS 1.9.1 Pre-Generation Patch Gate
+After SAR2/CGC/reference admission and before generation, run Semantic Token Freeze, Low-Confidence Text Mask, Fear City Geographic Null Lock, Reference Bleed Preflight and Atmosphere/Material Carryover Guard. Any S3 blocks generation.

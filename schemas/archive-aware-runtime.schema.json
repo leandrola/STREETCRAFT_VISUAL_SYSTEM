@@ -1,6 +1,5 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Streetcraft Archive-Aware Runtime Record",
   "type": "object",
   "required": [
     "runtime_status",
@@ -21,34 +20,13 @@
       ]
     },
     "needs": {
-      "type": "array",
-      "items": {
-        "$ref": "reference-need.schema.json"
-      }
+      "type": "array"
     },
     "admissions": {
-      "type": "array",
-      "items": {
-        "$ref": "evidence-admission.schema.json"
-      }
-    },
-    "evidence_bundle_ids": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "negative_evidence": {
       "type": "array"
     },
     "unresolved_needs": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "authority_map": {
-      "type": "string"
+      "type": "array"
     }
   },
   "additionalProperties": true

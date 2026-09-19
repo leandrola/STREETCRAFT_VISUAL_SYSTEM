@@ -1,21 +1,12 @@
-# CIL Agent Integration
-
-1. Scan the request for `/sc-*`.
-2. Expand through `COMMANDS.json`.
-3. Reject unknown commands and profile conflicts.
-4. Apply modifiers over macro defaults.
-5. Re-apply normal Streetcraft source authority and routing.
-6. If `/sc-status` is present, report the resolved configuration before generation.
-7. Continue with normal Streetcraft execution.
-
-CIL never grants authority that the underlying SVS does not already possess.
-
-## 1.6.4 Contract Expansion
-CIL commands resolve into the Compact Generation Contract before normal generation. CIL remains an invocation layer and cannot weaken hard source-authority locks.
-
-## SVS 1.7 Archive-Aware Behavior
-CIL syntax is unchanged. Reference retrieval is automatic and follows the resolved CGC. A short command such as `/sc-2b` does not authorize broad Archive imitation.
-
-## SVS 1.9 Scene Intelligence
-
-No new command is required. `/sc-*` commands resolve as before; SAR2 is built automatically from the active source before generation.
+# CIL 1.1 Agent Integration
+1. Scan `/sc-*` commands.
+2. Expand aliases and macros via `COMMANDS.json`.
+3. Reject unknown commands and profile-macro conflicts.
+4. Apply normal Streetcraft authority hierarchy.
+5. When `CG-F` is selected, load `CG_F_FRONTAL_ELEVATION.md`.
+6. For `/sc-rdr2-elevation`, carry Identity Lock, Occlusion Lock, strict frontalization, 16:9 and minimal-street constraints into SAR2/CGC.
+7. Identity Lock projects source-defining P0 geometry/relationships into preserve/forbid constraints.
+8. `LOCKED_UNKNOWN` occlusion remains unknown unless independent evidence authorizes reconstruction.
+9. Build SAR2 and CGC.
+10. Reference retrieval remains automatic and scoped. References cannot fill locked occlusions or redesign identity during frontalization.
+11. 1.9.1 preflight gates run before generation.

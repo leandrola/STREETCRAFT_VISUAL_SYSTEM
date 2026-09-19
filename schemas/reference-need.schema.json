@@ -1,6 +1,5 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Streetcraft Reference Need",
   "type": "object",
   "required": [
     "need_id",
@@ -11,8 +10,7 @@
   ],
   "properties": {
     "need_id": {
-      "type": "string",
-      "pattern": "^RN-"
+      "type": "string"
     },
     "state": {
       "enum": [
@@ -34,29 +32,8 @@
     "task_context": {
       "type": "string"
     },
-    "source_context": {
-      "type": "string"
-    },
-    "period": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "region": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
     "min_provenance": {
-      "enum": [
-        "P0",
-        "P1",
-        "P2",
-        "P3",
-        "P4"
-      ]
+      "type": "string"
     },
     "max_transfer_risk": {
       "enum": [
@@ -69,24 +46,6 @@
       "type": "integer",
       "minimum": 1,
       "maximum": 5
-    },
-    "source_invariants": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "forbidden_transfers": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "blocked_reason": {
-      "type": [
-        "string",
-        "null"
-      ]
     }
   },
   "additionalProperties": true

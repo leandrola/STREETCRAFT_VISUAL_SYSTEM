@@ -1,0 +1,9 @@
+{
+  "release": "SVS 1.9.1 Patch",
+  "patch_implementation": "PASS",
+  "deterministic_negative_regression": "PASS_24_24",
+  "R2b_retest": "REQUIRED",
+  "stable_release": false,
+  "promotion_condition": "fresh R2b critical rerun with S3=0 and global score>=90",
+  "note": "Patch implementation alone cannot promote 1.9.1 Stable; visual candidate evidence is still required."
+}

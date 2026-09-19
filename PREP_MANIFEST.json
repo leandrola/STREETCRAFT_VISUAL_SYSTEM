@@ -1,0 +1,55 @@
+{
+  "package": "STREETCRAFT_VISUAL_SYSTEM_V1_9_1_CIL_1_1_R2B_PREP",
+  "base": "STREETCRAFT_VISUAL_SYSTEM_V1_9_1_FULL_RECONSTRUCTED",
+  "release_status": "CANDIDATE_R2B_READY",
+  "r2b": {
+    "status": "PREPARED_AFTER_CIL_1_1_RECOVERY",
+    "critical_blocks": [
+      "VP02_CG-A",
+      "VP02_CG-B",
+      "FEAR_CITY_REFERENCE_ISOLATION",
+      "SEMANTIC_TEXT_LOCK",
+      "OCCLUSION_LOCK",
+      "VP02_CG-F_ELEVATION"
+    ],
+    "promotion_gate": {
+      "S3": 0,
+      "global_score_min": 90
+    }
+  },
+  "cil": {
+    "version": "CIL-1.1",
+    "historical_authority_commit": "696afe5",
+    "remote_resolution": "NOT_FOUND",
+    "recovery": "SEMANTIC_RECONSTRUCTION_FROM_EXPLICIT_PROJECT_DEFINITION",
+    "commands_added": [
+      "/sc-rdr2-elevation",
+      "/sc-front"
+    ],
+    "aliases_added": [
+      "/sc-2f",
+      "/sc-rdr2-front",
+      "/sc-elevation"
+    ]
+  },
+  "image_export": {
+    "A4_landscape": {
+      "dpi": [
+        150,
+        300
+      ]
+    },
+    "A3_landscape": {
+      "dpi": [
+        150,
+        300
+      ]
+    },
+    "90x45cm_landscape": {
+      "dpi": [
+        150
+      ],
+      "dpi_300": "EXCLUDED"
+    }
+  }
+}

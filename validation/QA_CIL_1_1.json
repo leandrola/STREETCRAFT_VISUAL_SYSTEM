@@ -1,0 +1,35 @@
+{
+  "component": "CIL 1.1 RDR2 Elevation Recovery",
+  "package": "SVS 1.9.1 Candidate",
+  "historical_commit": "696afe5",
+  "historical_commit_remote_resolution": "NOT_FOUND",
+  "recovery_type": "SEMANTIC_RECONSTRUCTION",
+  "required_mapping": {
+    "command": "/sc-rdr2-elevation",
+    "profile": "VP02",
+    "mode": "T02",
+    "camera": "CG-F"
+  },
+  "required_constraints": {
+    "identity_lock": "STRICT",
+    "occlusion_lock": "LOCKED_UNKNOWN",
+    "frontalization": "STRICT",
+    "aspect_ratio": "16:9",
+    "street_presence": "MINIMAL"
+  },
+  "modifier": "/sc-front",
+  "aliases": [
+    "/sc-2f",
+    "/sc-rdr2-front",
+    "/sc-elevation"
+  ],
+  "tests": "PASS 19/19 CIL 1.1 tests",
+  "other_regression": {
+    "test_scene_intelligence.py": "PASS 24/24 Scene Intelligence tests",
+    "test_operational_hardening.py": "PASS 12/12 operational hardening tests",
+    "test_patch_1_9_1.py": "PASS 24/24 SVS 1.9.1 patch tests",
+    "test_archive_aware_runtime.py": "PASS 10/10 archive-aware runtime unit tests"
+  },
+  "json_integrity": "PASS",
+  "python_syntax": "PASS"
+}

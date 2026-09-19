@@ -51,28 +51,8 @@ FORBIDDEN
 SUCCESS CONDITION
 REGRESSION TEST
 
-## 1.6.4 Micro-Drift Pass
-After the normal critique, run the Micro-Drift Critic. Explicitly inspect text semantics, opening counts/positions, storefront segmentation, material intensity, camera family, occluded reconstruction and geographic identity. S3 fails; multiple S2 findings require revision.
-
-## SVS 1.7 Reference-Bleed Inspection
-When Archive evidence was used, inspect for:
-- copying beyond the requested domain;
-- regional or temporal leakage;
-- new text semantics;
-- imported geometry;
-- reference-specific props;
-- camera imitation;
-- material-intensity inflation;
-- Canon-by-similarity behavior.
-
-Any such unauthorized transfer is evidence bleed and must be corrected.
-
 ## SVS 1.9 Scene-Graph Regression Check
+Inspect identity anchors, PR0/PR1 relationships, authorized removals, unknown locks and scoped reference transfers.
 
-Compare the generated output against SAR2:
-- identity anchors survive;
-- PR0/PR1 relationships survive;
-- authorized removals do not erase unrelated structure;
-- unknown locks do not become specific invented content;
-- transient-source evidence is not silently deleted under T01;
-- reference support does not alter unrelated entities.
+## SVS 1.9.1 Critical Checks
+Treat exact token mutation, readable invention from masked text, Fear City regional leak, camera transfer over CG-S/CG-FC, and reference-specific unscoped geometry/props as S3-class failures.

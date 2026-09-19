@@ -49,15 +49,8 @@ Modern Contamination: PERIOD-COMPATIBLE, POSSIBLY COMPATIBLE, TEMPORALLY AMBIGUO
 ## Transformation Readiness Engine
 READY / READY_WITH_INFERENCE / REFERENCE_ADVISED / INSUFFICIENT_EVIDENCE / MODE_CONFLICT / USER_DECISION_REQUIRED
 
-## 1.6.4 Pre-Generation Locks
-Before generation, classify source text evidence, material-intensity authority and occluded regions. Emit these constraints into the Compact Generation Contract. Unknown detail remains unknown.
-
 ## SVS 1.9 Scene Intelligence
+Scene Understanding produces SAR2 through `Entities → Roles → Relationships → Authority → Salience → Action Plan → Reference Gaps`. Salience controls analytical attention only and never creates preservation authority.
 
-Scene Understanding now produces SAR2 through the Scene Intelligence pipeline:
-
-`Entities → Roles → Relationships → Authority → Salience → Action Plan → Reference Gaps`
-
-Salience controls analytical attention only. It does not create preservation authority.
-
-Use `scene_intelligence/SCENE_INTELLIGENCE.md` and the SAR2 schema.
+## SVS 1.9.1 Text/Geography Preflight
+Classify visible text tokens before generation and freeze exact P0/P1/numeric identity tokens. Low-confidence text remains non-semantic. Confirmed Fear City defaults to geographic null outside authored evidence.

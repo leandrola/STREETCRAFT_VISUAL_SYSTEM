@@ -1,0 +1,23 @@
+{
+  "patch": "SVS 1.9.1",
+  "base_release": "SVS 1.9.0 Candidate",
+  "date": "2026-09-16",
+  "status": "PATCH_IMPLEMENTED_R2B_RETEST_REQUIRED",
+  "targets": [
+    "R2B-FC-001",
+    "R2B-TXT-001",
+    "R2B-OCC-TXT-001"
+  ],
+  "controls": [
+    "Semantic Token Freeze",
+    "Low-Confidence Text Mask",
+    "Fear City Geographic Null Lock",
+    "Reference Bleed Preflight",
+    "Atmosphere/Material Carryover Guard"
+  ],
+  "camera_grammar_changed": false,
+  "visual_profiles_changed": false,
+  "canon_authority_changed": false,
+  "cil_changed": false,
+  "stable_promotion": false
+}

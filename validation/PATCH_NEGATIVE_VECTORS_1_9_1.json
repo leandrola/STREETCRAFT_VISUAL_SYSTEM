@@ -1,0 +1,74 @@
+{
+  "suite": "SVS 1.9.1 Patch Negative Regression",
+  "source": "SVS 1.9.0 R2b Critical Audit",
+  "cases": [
+    {
+      "id": "PATCH-TXT-315",
+      "rule": "Semantic Token Freeze",
+      "source_token": "315",
+      "candidate": "313",
+      "expected": "S3 TEXT_MUTATION"
+    },
+    {
+      "id": "PATCH-TXT-CBGB",
+      "rule": "Semantic Token Freeze",
+      "source_token": "CBGB",
+      "candidate": "CBGB",
+      "expected": "PASS"
+    },
+    {
+      "id": "PATCH-LCTM-001",
+      "rule": "Low Confidence Text Mask",
+      "source_token": null,
+      "confidence": 0.2,
+      "candidate": "FRESH PRODUCE",
+      "expected": "S3 TEXT_INVENTION"
+    },
+    {
+      "id": "PATCH-LCTM-002",
+      "rule": "Low Confidence Text Mask",
+      "source_token": null,
+      "confidence": 0.2,
+      "candidate": null,
+      "expected": "PASS"
+    },
+    {
+      "id": "PATCH-FC-GEO-001",
+      "rule": "Fear City Geographic Null Lock",
+      "candidate": "NEW YORK",
+      "expected": "S3 REGIONAL_LEAK"
+    },
+    {
+      "id": "PATCH-FC-GEO-002",
+      "rule": "Fear City Geographic Null Lock",
+      "candidate": "TANNER STREET",
+      "authored": true,
+      "expected": "PASS"
+    },
+    {
+      "id": "PATCH-RBP-001",
+      "rule": "Reference Bleed Preflight",
+      "feature": "reference prop without source target",
+      "expected": "REJECT"
+    },
+    {
+      "id": "PATCH-RBP-002",
+      "rule": "Reference Bleed Preflight",
+      "feature": "camera transfer under CG-FC",
+      "expected": "REJECT"
+    },
+    {
+      "id": "PATCH-AMCG-001",
+      "rule": "Atmosphere Carryover",
+      "source": "DRY",
+      "candidate": "WET",
+      "expected": "REJECT"
+    },
+    {
+      "id": "PATCH-AMCG-002",
+      "rule": "Material transfer",
+      "feature": "brick material behavior",
+      "expected": "PASS"
+    }
+  ]
+}

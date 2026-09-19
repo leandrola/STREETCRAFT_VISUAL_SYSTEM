@@ -1,97 +1,63 @@
 {
   "name": "Streetcraft Visual System",
-  "version": "1.9.0",
-  "build_date": "2026-09-15",
+  "version": "1.9.1",
+  "build_date": "2026-09-16",
+  "status": "candidate-release-full-reconstructed",
   "entry_point": "STREETCRAFT.md",
-  "integrated_milestones": [
-    "1.0 Core",
-    "1.1 Visual Canon",
-    "1.2 Visual Intelligence",
-    "1.4 Visual Critic",
-    "1.5 Self-Correction",
-    "1.6 Fear City Vision",
-    "1.6.2 Camera Grammar + Profiles + Fear City Auto-Routing"
-  ],
+  "source_repository": "https://github.com/leandrola/STREETCRAFT_VISUAL_SYSTEM",
+  "source_base_commit": "04c070d2043295bb802ce3381b7c78faa26ee991",
+  "source_base_tree": "c9b52237e1cdfeb799d0c6f729114721858517b4",
+  "base_release": "1.9.0 Candidate",
+  "integrated_patch": "1.9.1 Critical R2b Hardening",
   "modules": [
     "core",
     "reference",
     "transform",
     "intelligence",
+    "scene_intelligence",
+    "hardening",
+    "reference_runtime",
     "critic",
     "self_correction",
-    "fear_city",
+    "command_invocation",
     "agent",
     "schemas",
-    "adapters",
-    "legacy"
+    "benchmark",
+    "validation",
+    "patch",
+    "integration"
   ],
-  "status": "candidate-release",
-  "canon_policy": "Only the human project owner can grant CANONICAL status",
-  "reference_assets_included": true,
+  "patch_controls": [
+    "Semantic Token Freeze",
+    "Low-Confidence Text Mask",
+    "Fear City Geographic Null Lock",
+    "Reference Bleed Preflight",
+    "Atmosphere/Material Carryover Guard"
+  ],
   "canon_modified": false,
-  "sc_rule_set_modified": false,
-  "base_package": "STREETCRAFT_VISUAL_SYSTEM_V1_8_1",
-  "validated_features": [
-    "CG-A Frontal-Oblique Architectural Immersion",
-    "CG-B Street-Level Oblique Monumentality",
-    "CG-S Source-Locked Camera",
-    "CG-FC Fear City Authored-View Camera",
-    "VP00/VP01/VP02 revised camera behavior",
-    "Fear City Auto-Routing",
-    "Fear City Identity Threshold"
-  ],
-  "validation": {
-    "L0": "PASS 26/26",
-    "L1": "PASS",
-    "L2": "PASS",
-    "L3": "PASS",
-    "CIL": "PASS 13/13 tests"
+  "camera_grammar_modified_by_1_9_1": false,
+  "visual_profiles_modified_by_1_9_1": false,
+  "cil_modified_by_1_9_1": false,
+  "stable_promotion": false,
+  "stable_promotion_condition": "fresh R2b visual candidate rerun with S3=0 and global score>=90",
+  "reconstruction": {
+    "operational_full_package": true,
+    "byte_identical_git_archive": false,
+    "remote_historical_l2_binary_fixtures": 7
   },
-  "includes_patch": "STREETCRAFT_VISUAL_SYSTEM_V1_6_3_CIL_PATCH",
-  "release_focus": "Scene Intelligence",
-  "operational_hardening": [
-    "Semantic Text Lock",
-    "Material Intensity Delta",
-    "Occlusion Locks",
-    "Compact Generation Contract",
-    "Micro-Drift Critic",
-    "Profile Delta Matrix"
-  ],
-  "archive_dependency": {
-    "name": "Streetcraft Archive V1",
-    "minimum": "V1 FINAL",
-    "relationship": "separate runtime dependency; not Canon"
-  },
-  "archive_aware_runtime": [
-    "Reference Need Model 1.0",
-    "Reference Authority Map 1.0",
-    "Evidence Admission Policy 1.0",
-    "Archive Domain Policy",
-    "CGC reference enrichment",
-    "Archive V1 adapter",
-    "Reference-bleed critic"
-  ],
-  "benchmark_suite": {
-    "version": "1.1",
-    "R0": "Automated Regression",
-    "R1": "Golden Fixture Integrity",
-    "R2a": "Visual Baseline Calibration",
-    "R2b": "Candidate Regression required for behavior-changing releases"
-  },
-  "scene_intelligence": {
-    "version": "1.0",
-    "analysis_record": "SAR2",
-    "modules": [
-      "Scene Entity Model",
-      "Scene Relationship Graph",
-      "Scene Salience Model",
-      "Scene Action Resolver",
-      "Scene-to-CGC Projection"
-    ]
-  },
-  "release_gate": {
-    "R0": "required",
-    "R1": "required",
-    "R2b": "required before stable promotion"
+  "command_invocation_layer": "CIL 1.1",
+  "cil_1_1_recovery": {
+    "status": "RECOVERED_SEMANTICALLY",
+    "historical_commit_requested": "696afe5",
+    "historical_commit_remote_resolution": "NOT_FOUND",
+    "new_camera": "CG-F",
+    "new_macro": "/sc-rdr2-elevation",
+    "new_modifier": "/sc-front",
+    "aliases": [
+      "/sc-2f",
+      "/sc-rdr2-front",
+      "/sc-elevation"
+    ],
+    "r2b_required": true
   }
 }

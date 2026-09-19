@@ -1,0 +1,38 @@
+{
+  "release": "SVS 1.9.1 FULL_RECONSTRUCTED",
+  "source_commit": "04c070d2043295bb802ce3381b7c78faa26ee991",
+  "deterministic_regression": "PASS",
+  "current_embedded_asset_integrity": "PASS",
+  "tests": [
+    {
+      "test": "command_invocation/test_commands.py",
+      "status": "PASS",
+      "output": "PASS 13/13 CIL tests"
+    },
+    {
+      "test": "hardening/test_operational_hardening.py",
+      "status": "PASS",
+      "output": "PASS 12/12 operational hardening tests"
+    },
+    {
+      "test": "reference_runtime/test_archive_aware_runtime.py",
+      "status": "PASS",
+      "output": "PASS 10/10 archive-aware runtime unit tests"
+    },
+    {
+      "test": "scene_intelligence/test_scene_intelligence.py",
+      "status": "PASS",
+      "output": "PASS 24/24 Scene Intelligence tests"
+    },
+    {
+      "test": "validation/test_patch_1_9_1.py",
+      "status": "PASS",
+      "output": "PASS 24/24 SVS 1.9.1 patch tests"
+    }
+  ],
+  "all_tests_pass": true,
+  "historical_l2_remote_only_count": 7,
+  "R2b_visual": "REQUIRED_PENDING",
+  "stable_release": false,
+  "package_type": "operationally complete reconstructed candidate; not byte-identical Git archive"
+}

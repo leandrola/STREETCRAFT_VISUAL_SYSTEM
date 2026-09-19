@@ -1,70 +1,35 @@
-# Streetcraft Command Invocation Layer (CIL) 1.0
+# Streetcraft Command Invocation Layer (CIL) 1.1
 
-CIL is the short human-facing invocation layer for Streetcraft.
-
-Commands apply to the **current request only**. There is no hidden persistent configuration in CIL 1.0.
+CIL is the short human-facing invocation layer for Streetcraft. Commands are turn-scoped and expand into valid Mode/Profile/Camera configuration. CIL never weakens source authority.
 
 ## Primary commands
+`/sc-core`, `/sc-classic`, `/sc-2`, `/sc-2a`, `/sc-2b`, `/sc-rdr2-elevation`, `/sc-fear`, `/sc-fear2`.
 
-| Command | Expansion |
-|---|---|
-| `/sc-core` | VP00 + T01 + camera AUTO |
-| `/sc-classic` | VP01 + T01 + camera AUTO |
-| `/sc-2` | VP02 + T01 + camera AUTO |
-| `/sc-2a` | VP02 + T01 + CG-A |
-| `/sc-2b` | VP02 + T01 + CG-B |
-| `/sc-fear` | T06 + VP03 + CG-FC |
-| `/sc-fear2` | T06 + VP02 explicit Fear City override |
+## Camera / mode modifiers
+`/sc-clean`, `/sc-lock`, `/sc-auto`, `/sc-front`.
 
-## Modifiers
-
-| Command | Effect |
-|---|---|
-| `/sc-clean` | T03 Clean Plate |
-| `/sc-lock` | CG-S source-lock |
-| `/sc-auto` | automatic camera resolution |
-| `/sc-preserve` | strict observed-evidence preservation |
-| `/sc-noinvent` | strict uncertainty preservation |
+## Safety modifiers
+`/sc-preserve`, `/sc-noinvent`.
 
 ## Diagnostics
-- `/sc-status` reports the resolved configuration before generation.
-- `/sc-help` shows this command vocabulary.
+`/sc-status`, `/sc-help`.
 
-## Examples
+## CIL 1.1 elevation macro
+`/sc-rdr2-elevation` resolves to:
 
-`/sc-2`
+`VP02 + T02 + CG-F`
 
-`/sc-2b`
+with:
+- Identity Lock: `STRICT`
+- Occlusion Lock: `LOCKED_UNKNOWN`
+- frontalization: `STRICT`
+- aspect ratio: `16:9`
+- street presence: `MINIMAL`
 
-`/sc-2 /sc-clean`
+Aliases: `/sc-2f`, `/sc-rdr2-front`, `/sc-elevation`.
 
-`/sc-core /sc-lock /sc-preserve /sc-noinvent`
+`/sc-front` is a camera modifier selecting `CG-F` with strict frontalization while leaving the current Profile/Mode intact.
 
-`/sc-fear`
+Multiple profile macros are invalid. Use `/sc-fear2` for explicit VP02-on-Fear-City override.
 
-`/sc-fear2`
-
-## Conflict rules
-
-Multiple ordinary profile macros are invalid:
-`/sc-core /sc-2`
-
-Fear City plus an ordinary profile macro is also invalid:
-`/sc-fear /sc-2`
-
-Use `/sc-fear2` for the explicit VP02 override.
-
-Modifiers override macro defaults but do not override hard source-authority constraints. A requested CG-A/CG-B may still resolve to CG-S when Source Identity Preservation requires it.
-
-## Precedence
-
-1. Source identity and hard preservation invariants
-2. Explicit natural-language user override
-3. Fear City identity/routing constraints
-4. Mode modifier
-5. Profile macro
-6. Camera modifier
-7. Safety modifiers
-8. Streetcraft defaults
-
-CIL is a Streetcraft convention, not a native ChatGPT slash-command feature. A compatible Streetcraft agent or wrapper interprets it.
+See `CG_F_FRONTAL_ELEVATION.md` for the operational camera contract.

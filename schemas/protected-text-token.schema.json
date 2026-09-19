@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "token_id",
+    "state",
+    "confidence",
+    "preservation_level"
+  ],
+  "properties": {
+    "token_id": {
+      "type": "string"
+    },
+    "literal": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "state": {
+      "enum": [
+        "FROZEN_EXACT",
+        "MASK_PARTIAL",
+        "MASK_GRAPHIC_ONLY"
+      ]
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "preservation_level": {
+      "type": "string"
+    },
+    "entity_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "identity_bearing": {
+      "type": "boolean"
+    },
+    "numeral": {
+      "type": "boolean"
+    }
+  }
+}

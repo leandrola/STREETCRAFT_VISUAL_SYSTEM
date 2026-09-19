@@ -1,5 +1,5 @@
 {
-  "version": "CIL-1.0",
+  "version": "CIL-1.1",
   "turn_scoped": true,
   "persistent_state": false,
   "commands": [
@@ -49,6 +49,20 @@
       }
     },
     {
+      "command": "/sc-rdr2-elevation",
+      "type": "elevation_macro",
+      "expands_to": {
+        "profile": "VP02",
+        "mode": "T02",
+        "camera": "CG-F",
+        "identity_lock": "STRICT",
+        "occlusion_lock": "LOCKED_UNKNOWN",
+        "frontalization": "STRICT",
+        "aspect_ratio": "16:9",
+        "street_presence": "MINIMAL"
+      }
+    },
+    {
       "command": "/sc-fear",
       "type": "fear_city_macro",
       "expands_to": {
@@ -91,6 +105,14 @@
       }
     },
     {
+      "command": "/sc-front",
+      "type": "camera_modifier",
+      "expands_to": {
+        "camera": "CG-F",
+        "frontalization": "STRICT"
+      }
+    },
+    {
       "command": "/sc-preserve",
       "type": "safety_modifier",
       "expands_to": {
@@ -124,6 +146,9 @@
     "/sc-rdr2": "/sc-2",
     "/sc-rdr2a": "/sc-2a",
     "/sc-rdr2b": "/sc-2b",
-    "/sc-fc": "/sc-fear"
+    "/sc-fc": "/sc-fear",
+    "/sc-2f": "/sc-rdr2-elevation",
+    "/sc-rdr2-front": "/sc-rdr2-elevation",
+    "/sc-elevation": "/sc-rdr2-elevation"
   }
 }

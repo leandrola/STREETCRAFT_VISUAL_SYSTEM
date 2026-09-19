@@ -1,0 +1,126 @@
+{
+  "release": "SVS 1.9.0 Candidate",
+  "benchmark": "R2b Critical Candidate Regression",
+  "method": "External visual comparison of real individual outputs against real source fixtures. Synthetic benchmark dashboards were explicitly excluded.",
+  "cases_evaluated": 3,
+  "critical_failures": 4,
+  "s3_count": 4,
+  "numeric_average": 83.0,
+  "release_gate": "FAIL",
+  "stable_promotion": false,
+  "reason": "R2b policy requires zero S3 findings. At least one S3 exists, so numeric average cannot promote the release.",
+  "cases": [
+    {
+      "case_id": "R2B-FC-001",
+      "name": "Fear City identity / reference isolation",
+      "scores": {
+        "identity": 18,
+        "geometry": 11,
+        "camera": 13,
+        "text": 7,
+        "material": 8,
+        "occlusion": 8,
+        "reference_isolation": 2,
+        "atmosphere": 5
+      },
+      "critical_failures": [
+        "FEAR_CITY_GEOGRAPHIC_IMPORT",
+        "REFERENCE_BLEED"
+      ],
+      "findings": [
+        {
+          "severity": "S3",
+          "code": "REGIONAL_LEAK",
+          "note": "Candidate introduces explicit New York identity (newspaper headline) not authorized by Fear City source."
+        },
+        {
+          "severity": "S3",
+          "code": "AUTHORED_WORLD_DRIFT",
+          "note": "Vehicle/prop and streetscape interpretation extends beyond authored-world evidence."
+        },
+        {
+          "severity": "S2",
+          "code": "MATERIAL_ATMOSPHERE_INFLATION",
+          "note": "Wet reflective pavement and cinematic realism intensify beyond source evidence."
+        }
+      ],
+      "score": 72,
+      "status": "FAIL",
+      "source_file": "R2B-FC-001_source.jpg",
+      "source_sha256": "606df421aabc715cf11ef86336b9d06bbd35081a4b2f95346224506ecc445684",
+      "candidate_file": "R2B-FC-001_candidate.png",
+      "candidate_sha256": "c27697e3cce4fa31f2329da428f1c15caf33d30b5e29fa4ba0c0bfcb4fea928e"
+    },
+    {
+      "case_id": "R2B-TXT-001",
+      "name": "Semantic Text Lock / CBGB",
+      "scores": {
+        "identity": 22,
+        "geometry": 13,
+        "camera": 15,
+        "text": 5,
+        "material": 9,
+        "occlusion": 8,
+        "reference_isolation": 10,
+        "atmosphere": 5
+      },
+      "critical_failures": [
+        "SEMANTIC_TEXT_MUTATION"
+      ],
+      "findings": [
+        {
+          "severity": "S3",
+          "code": "TEXT_MUTATION",
+          "note": "Visible source number 315 is changed to 313 at the Palace Hotel entrance."
+        },
+        {
+          "severity": "S2",
+          "code": "DETAIL_INVENTION",
+          "note": "Additional poster/graffiti micro-content is synthesized beyond legible source evidence."
+        }
+      ],
+      "score": 87,
+      "status": "FAIL",
+      "source_file": "R2B-TXT-001_source.jpg",
+      "source_sha256": "bdcc344cdbadf01312336f76d1a1db8ccdeb1398111536d1087d68aa527a5011",
+      "candidate_file": "R2B-TXT-001_candidate.png",
+      "candidate_sha256": "5168318bff6753148ab12e379d671c1e03e673de63abbffa1f66f62731f68608"
+    },
+    {
+      "case_id": "R2B-OCC-TXT-001",
+      "name": "Occlusion + text discipline / laundry storefront",
+      "scores": {
+        "identity": 22,
+        "geometry": 13,
+        "camera": 15,
+        "text": 7,
+        "material": 9,
+        "occlusion": 9,
+        "reference_isolation": 10,
+        "atmosphere": 5
+      },
+      "critical_failures": [
+        "SEMANTIC_TEXT_INVENTION"
+      ],
+      "findings": [
+        {
+          "severity": "S3",
+          "code": "TEXT_INVENTION",
+          "note": "Small low-confidence storefront/product text is rendered as specific new readable semantics rather than preserving ambiguity."
+        },
+        {
+          "severity": "S1",
+          "code": "SOURCE_CLEANUP",
+          "note": "Material/detail cleanup is stronger than strictly necessary but does not dominate identity."
+        }
+      ],
+      "score": 90,
+      "status": "FAIL",
+      "source_file": "R2B-OCC-TXT-001_source.jpg",
+      "source_sha256": "3404d73eea2d9a9761392b97918c73df2af6ff2dc7d6010c9289302c2b4366af",
+      "candidate_file": "R2B-OCC-TXT-001_candidate.png",
+      "candidate_sha256": "c2ddbe2af968a825778c5f915b937b6471e1c42a7f70a286a88241039646c71e"
+    }
+  ],
+  "invalid_attempts_note": "Meta-infographic/dashboard generations from the current image runtime were not counted as candidate evidence."
+}

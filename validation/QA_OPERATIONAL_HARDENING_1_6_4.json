@@ -1,9 +1,0 @@
-{
-  "release": "SVS 1.6.4",
-  "compile": "PASS",
-  "hardening_tests": "PASS 12/12 operational hardening tests",
-  "json_validation": "PASS",
-  "visual_canon_authority_modified": false,
-  "cil_commands_modified": false,
-  "camera_routing_modified": false
-}

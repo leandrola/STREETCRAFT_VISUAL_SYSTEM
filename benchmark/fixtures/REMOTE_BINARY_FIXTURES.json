@@ -1,0 +1,36 @@
+{
+  "source_repository": "https://github.com/leandrola/STREETCRAFT_VISUAL_SYSTEM",
+  "source_commit": "04c070d2043295bb802ce3381b7c78faa26ee991",
+  "status": "REMOTE_VERIFIED_NOT_EMBEDDED",
+  "reason": "Connected GitHub interface exposes binary contents as truncated base64 in this runtime; exact bytes were not materialized.",
+  "fixtures": [
+    {
+      "path": "validation/camera_routing/l2_evidence/L2_EVIDENCE_CONTACT_SHEET.png",
+      "git_blob_sha": "6444d01ec2991b44d1004e9fcab7fcae7086756b"
+    },
+    {
+      "path": "validation/camera_routing/l2_evidence/VP00_CG-A.png",
+      "git_blob_sha": "6f64e07083836e9f1da7e900c671c62cd5df76ac"
+    },
+    {
+      "path": "validation/camera_routing/l2_evidence/VP00_CG-B.png",
+      "git_blob_sha": "729237e6ceda40fce994d3ab72a87183dff91879"
+    },
+    {
+      "path": "validation/camera_routing/l2_evidence/VP01_CG-A.png",
+      "git_blob_sha": "73f64bc31c6f4c4a5d14a04730cadd231b5808c8"
+    },
+    {
+      "path": "validation/camera_routing/l2_evidence/VP01_CG-B.png",
+      "git_blob_sha": "5836a064809d6a0664a13629fada9ffd05cf9b3b"
+    },
+    {
+      "path": "validation/camera_routing/l2_evidence/VP02_CG-A.png",
+      "git_blob_sha": "a8d820ff9d5099f79d0dd9070deec71aca63f8b0"
+    },
+    {
+      "path": "validation/camera_routing/l2_evidence/VP02_CG-B.png",
+      "git_blob_sha": "0fd29a12b8e5ac969d465bb58771e6d7fb2bb6b3"
+    }
+  ]
+}
