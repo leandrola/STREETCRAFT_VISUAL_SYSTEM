@@ -1,36 +1,50 @@
 {
   "source_repository": "https://github.com/leandrola/STREETCRAFT_VISUAL_SYSTEM",
   "source_commit": "04c070d2043295bb802ce3381b7c78faa26ee991",
-  "status": "REMOTE_VERIFIED_NOT_EMBEDDED",
-  "reason": "Connected GitHub interface exposes binary contents as truncated base64 in this runtime; exact bytes were not materialized.",
+  "status": "EMBEDDED_VERIFIED",
+  "reason": "Restored from user-designated master 1.6.2; all seven bytes match recorded Git blob IDs.",
   "fixtures": [
     {
       "path": "validation/camera_routing/l2_evidence/L2_EVIDENCE_CONTACT_SHEET.png",
-      "git_blob_sha": "6444d01ec2991b44d1004e9fcab7fcae7086756b"
+      "git_blob_sha": "6444d01ec2991b44d1004e9fcab7fcae7086756b",
+      "sha256": "b2d0836163e95de11c4d9dd68fef79536c82ef3632f7d549e3e38f228aef15a7",
+      "status": "EMBEDDED_VERIFIED"
     },
     {
       "path": "validation/camera_routing/l2_evidence/VP00_CG-A.png",
-      "git_blob_sha": "6f64e07083836e9f1da7e900c671c62cd5df76ac"
+      "git_blob_sha": "6f64e07083836e9f1da7e900c671c62cd5df76ac",
+      "sha256": "4b27a8f336ced8e89afd9b2c8d9fc60e6b145b1eccdda0aa49522e9dcb8b06fa",
+      "status": "EMBEDDED_VERIFIED"
     },
     {
       "path": "validation/camera_routing/l2_evidence/VP00_CG-B.png",
-      "git_blob_sha": "729237e6ceda40fce994d3ab72a87183dff91879"
+      "git_blob_sha": "729237e6ceda40fce994d3ab72a87183dff91879",
+      "sha256": "9708c2752cfe82131f07abd5386ce453cd70152cbfcd5b4f6daf0caa4808dbd7",
+      "status": "EMBEDDED_VERIFIED"
     },
     {
       "path": "validation/camera_routing/l2_evidence/VP01_CG-A.png",
-      "git_blob_sha": "73f64bc31c6f4c4a5d14a04730cadd231b5808c8"
+      "git_blob_sha": "73f64bc31c6f4c4a5d14a04730cadd231b5808c8",
+      "sha256": "2c30f4d7552359854f81e62507f64e80a775d3deb5263e793cc5ff76991b7ea2",
+      "status": "EMBEDDED_VERIFIED"
     },
     {
       "path": "validation/camera_routing/l2_evidence/VP01_CG-B.png",
-      "git_blob_sha": "5836a064809d6a0664a13629fada9ffd05cf9b3b"
+      "git_blob_sha": "5836a064809d6a0664a13629fada9ffd05cf9b3b",
+      "sha256": "57b0bcf5f47993d8c5abc1f1bd0df265e17776e99b36ef7b1d3dbbd1a351a567",
+      "status": "EMBEDDED_VERIFIED"
     },
     {
       "path": "validation/camera_routing/l2_evidence/VP02_CG-A.png",
-      "git_blob_sha": "a8d820ff9d5099f79d0dd9070deec71aca63f8b0"
+      "git_blob_sha": "a8d820ff9d5099f79d0dd9070deec71aca63f8b0",
+      "sha256": "0ea6ccad8a2427e9513acd708a76137dfaef7bbfe684a24daaf6d97e37fb170a",
+      "status": "EMBEDDED_VERIFIED"
     },
     {
       "path": "validation/camera_routing/l2_evidence/VP02_CG-B.png",
-      "git_blob_sha": "0fd29a12b8e5ac969d465bb58771e6d7fb2bb6b3"
+      "git_blob_sha": "0fd29a12b8e5ac969d465bb58771e6d7fb2bb6b3",
+      "sha256": "ee6b6c7342f80e6a002f5925200a15c7de5d32f5cc997618ebabec1fc457af70",
+      "status": "EMBEDDED_VERIFIED"
     }
   ]
 }

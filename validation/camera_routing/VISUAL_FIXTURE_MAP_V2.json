@@ -1,0 +1,118 @@
+{
+  "version": "CRVM-1.1",
+  "note": "Validation-only reclassification. No Canon or SVS authority change.",
+  "fixtures": [
+    {
+      "fixture": "RDR-F02_GOTHAM_HOTEL.png",
+      "classification": "CG-A",
+      "confidence": 0.98,
+      "independent_validation": true,
+      "role": "Facade plane dominates; essentially frontal/near-elevation with controlled depth. Strong CG-A positive."
+    },
+    {
+      "fixture": "RDR-F03_ECONOMY_CANDY.png",
+      "classification": "CG-A",
+      "confidence": 0.99,
+      "independent_validation": true,
+      "role": "Strict frontal facade special case. Confirms that retired mandatory frontality remains legal."
+    },
+    {
+      "fixture": "RDR-F04_GOOD_EARTH_BAR.png",
+      "classification": "CG-A",
+      "confidence": 0.97,
+      "independent_validation": true,
+      "role": "Facade-dominant near-elevation reading with shallow side depth."
+    },
+    {
+      "fixture": "RDR-F05_RAJA_GROCERY.png",
+      "classification": "CG-A",
+      "confidence": 0.99,
+      "independent_validation": true,
+      "role": "Strong facade-dominant frontal reading with restrained perspective."
+    },
+    {
+      "fixture": "RDR-F06_LOANS_OSCARS.png",
+      "classification": "CG-A",
+      "confidence": 0.98,
+      "independent_validation": true,
+      "role": "Broad frontal commercial facade. Vehicle presence is irrelevant to camera family."
+    },
+    {
+      "fixture": "RDR-F01_L_KATZENSTEIN.jpg",
+      "classification": "CG-B",
+      "confidence": 0.99,
+      "independent_validation": true,
+      "role": "Corner condition with strong side-street recession and two-plane architectural reading. Strong CG-B positive."
+    },
+    {
+      "fixture": "RDR-F07_DAVES_CORNER.png",
+      "classification": "CG-B",
+      "confidence": 0.99,
+      "independent_validation": false,
+      "role": "Pixel-identical to RDR-F01. Valid as the same CG-B example but excluded from independent coverage metrics.",
+      "duplicate_of": "RDR-F01_L_KATZENSTEIN.jpg"
+    },
+    {
+      "fixture": "SC-B01_PEEP_SHOW.png",
+      "classification": "CG-A",
+      "confidence": 0.98,
+      "independent_validation": true,
+      "role": "Strict frontal storefront wall. Strong CG-A positive."
+    },
+    {
+      "fixture": "SC-B02_NEON_HOTEL_STREET.png",
+      "classification": "CG-B",
+      "confidence": 0.96,
+      "independent_validation": true,
+      "role": "Street-level oblique row with strong recession, visible depth and two-point spatial reading."
+    },
+    {
+      "fixture": "SC-D01_BASIC_METAL.png",
+      "classification": "CG-A",
+      "confidence": 0.86,
+      "independent_validation": true,
+      "role": "Dominant industrial facade remains close to elevation despite contextual elevated structure. Moderate CG-A positive."
+    },
+    {
+      "fixture": "SC-D02_MG_SOUL_FOOD.png",
+      "classification": "CG-A",
+      "confidence": 0.99,
+      "independent_validation": true,
+      "role": "Flat frontal storefront block. Strong CG-A positive."
+    },
+    {
+      "fixture": "SC-D03_CONDOS_FOR_SALE.png",
+      "classification": "NON_DIAGNOSTIC",
+      "confidence": 0.88,
+      "independent_validation": true,
+      "role": "Oblique urban depth exists, but no single architectural facade/corner dominates. Useful negative/boundary control, not a clean CG-B positive."
+    },
+    {
+      "fixture": "SC-D04_BRIDGE.png",
+      "classification": "OUT_OF_SCOPE",
+      "confidence": 0.99,
+      "independent_validation": true,
+      "role": "Landscape/infrastructure composition rather than facade-dominant architectural camera. Should not calibrate CG-A/CG-B."
+    },
+    {
+      "fixture": "SC-D05_ELEVATED_TRAIN_NIGHT.png",
+      "classification": "NON_DIAGNOSTIC",
+      "confidence": 0.82,
+      "independent_validation": true,
+      "role": "Dark, compressed scene with insufficient perspective cues for a robust A/B family decision."
+    },
+    {
+      "fixture": "SC-D06_PHARMACY_OUTPUT.png",
+      "classification": "BOUNDARY_A_B_LEAN_A",
+      "confidence": 0.72,
+      "independent_validation": true,
+      "role": "Dominant near-frontal pharmacy plane suggests CG-A, while side-street recession introduces CG-B traits. Valuable A/B boundary fixture, not a strong CG-B positive."
+    }
+  ],
+  "fear_city_fixture": {
+    "fixture": "Fear City Validation Set #001 (3 user-supplied views)",
+    "classification": "CG-FC",
+    "status": "DOCUMENTED_NOT_EMBEDDED",
+    "independent_validation": true
+  }
+}

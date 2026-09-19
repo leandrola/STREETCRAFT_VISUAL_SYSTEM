@@ -1,0 +1,14 @@
+{
+  "release": "CRVM-1.2",
+  "L0": "PASS_26_26",
+  "L1": "COMPLETED_REVIEW",
+  "L2": "PASS",
+  "L2_valid_pairs": 3,
+  "L2_valid_outputs": 6,
+  "L2_same_building_constraint": "PASS",
+  "L2_camera_distinguishability": "PASS",
+  "L3": "PENDING",
+  "canon_modified": false,
+  "governing_svs_modified": false,
+  "next_gate": "L3 Fear City routing visual validation"
+}

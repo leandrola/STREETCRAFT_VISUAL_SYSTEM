@@ -1,0 +1,191 @@
+{
+  "version": "1.0",
+  "fixtures": [
+    {
+      "fixture_id": "FX-C3FCADEB",
+      "path": "reference/assets/RDR-F01_L_KATZENSTEIN.jpg",
+      "sha256": "c7cae60b151049b315427ca4f6e8743d78d417daca0e933f37e430e737757d5b",
+      "bytes": 447617,
+      "role": "STYLE_REFERENCE_FIXTURE"
+    },
+    {
+      "fixture_id": "FX-E6D94057",
+      "path": "reference/assets/RDR-F02_GOTHAM_HOTEL.png",
+      "sha256": "7913e7fdf9d26874ffb543f95ce91ea5ea7e55404d9249e7727ac0d066b72932",
+      "bytes": 444008,
+      "role": "STYLE_REFERENCE_FIXTURE"
+    },
+    {
+      "fixture_id": "FX-B45D1329",
+      "path": "reference/assets/RDR-F03_ECONOMY_CANDY.png",
+      "sha256": "a14f99ea23def859c7367e99a9b52c0437501bc1f846c462197b9bf174c74145",
+      "bytes": 570115,
+      "role": "STYLE_REFERENCE_FIXTURE"
+    },
+    {
+      "fixture_id": "FX-C96842EE",
+      "path": "reference/assets/RDR-F04_GOOD_EARTH_BAR.png",
+      "sha256": "475a3f1b39369991478e55bc35ceed38af23dd5f2265fc895ffdddf3b0a41401",
+      "bytes": 655709,
+      "role": "STYLE_REFERENCE_FIXTURE"
+    },
+    {
+      "fixture_id": "FX-72BB8F5F",
+      "path": "reference/assets/RDR-F05_RAJA_GROCERY.png",
+      "sha256": "1d65f155a1006e658dfb0bfd24835d047a4dd4fe1ebe24d3f2c6b0b049305706",
+      "bytes": 477450,
+      "role": "STYLE_REFERENCE_FIXTURE"
+    },
+    {
+      "fixture_id": "FX-923A389C",
+      "path": "reference/assets/RDR-F06_LOANS_OSCARS.png",
+      "sha256": "f6f40a1cba1051c0942772190766538c6e0cc176ae9c5d2b685d56304414534b",
+      "bytes": 403821,
+      "role": "STYLE_REFERENCE_FIXTURE"
+    },
+    {
+      "fixture_id": "FX-C4A635AE",
+      "path": "reference/assets/RDR-F07_DAVES_CORNER.png",
+      "sha256": "c7cae60b151049b315427ca4f6e8743d78d417daca0e933f37e430e737757d5b",
+      "bytes": 447617,
+      "role": "STYLE_REFERENCE_FIXTURE"
+    },
+    {
+      "fixture_id": "FX-29E558C3",
+      "path": "reference/assets/SC-B01_PEEP_SHOW.png",
+      "sha256": "c8a4dc47c608a5fa8bc376c89565cea58ecd6f1cee330084e4fdb8b2e9678a9d",
+      "bytes": 463460,
+      "role": "STYLE_REFERENCE_FIXTURE"
+    },
+    {
+      "fixture_id": "FX-F00356DC",
+      "path": "reference/assets/SC-B02_NEON_HOTEL_STREET.png",
+      "sha256": "ae1f541c77045f8b689f42e756d395e1b114ed596e24a7e4a8f7c0add113d2c6",
+      "bytes": 459517,
+      "role": "STYLE_REFERENCE_FIXTURE"
+    },
+    {
+      "fixture_id": "FX-F469FF57",
+      "path": "reference/assets/SC-D01_BASIC_METAL.png",
+      "sha256": "e30c7f055af1b2a91eda2848524be341c4d538b2c56f0b07b0d6c69d431eaaae",
+      "bytes": 596879,
+      "role": "STYLE_REFERENCE_FIXTURE"
+    },
+    {
+      "fixture_id": "FX-A8F6D9AC",
+      "path": "reference/assets/SC-D02_MG_SOUL_FOOD.png",
+      "sha256": "bd1b1e8651e5d60ec6a5a3d43e18e535b7ec3ac4b6eab71bcf97b6383d293599",
+      "bytes": 724529,
+      "role": "STYLE_REFERENCE_FIXTURE"
+    },
+    {
+      "fixture_id": "FX-D37E850F",
+      "path": "reference/assets/SC-D03_CONDOS_FOR_SALE.png",
+      "sha256": "f5439e147d1d313dffdd9d2bdcc9f0e45df7bcbd3e526db38754900ec10a01e1",
+      "bytes": 671831,
+      "role": "STYLE_REFERENCE_FIXTURE"
+    },
+    {
+      "fixture_id": "FX-0418EEB9",
+      "path": "reference/assets/SC-D04_BRIDGE.png",
+      "sha256": "c60c500a1279d54970aabb30ac1537c5d7aa9b334327a9395dba9d931628fbc6",
+      "bytes": 364415,
+      "role": "STYLE_REFERENCE_FIXTURE"
+    },
+    {
+      "fixture_id": "FX-9FED89A6",
+      "path": "reference/assets/SC-D05_ELEVATED_TRAIN_NIGHT.png",
+      "sha256": "15d64736a8292a19456aab53c0dbfec9db1a1d7b9ab57e5d66882717acb1dbdf",
+      "bytes": 139156,
+      "role": "STYLE_REFERENCE_FIXTURE"
+    },
+    {
+      "fixture_id": "FX-703D84F4",
+      "path": "reference/assets/SC-D06_PHARMACY_OUTPUT.png",
+      "sha256": "bbd6b869190224ed9c532a4811913b1310f56136f87a285e73b5fa3781aaf13d",
+      "bytes": 466727,
+      "role": "STYLE_REFERENCE_FIXTURE"
+    },
+    {
+      "fixture_id": "FX-829010FB",
+      "path": "validation/camera_routing/l2_evidence/VP00_CG-A.png",
+      "sha256": "4b27a8f336ced8e89afd9b2c8d9fc60e6b145b1eccdda0aa49522e9dcb8b06fa",
+      "bytes": 345228,
+      "role": "CAMERA_GOLDEN_OUTPUT"
+    },
+    {
+      "fixture_id": "FX-23239344",
+      "path": "validation/camera_routing/l2_evidence/VP00_CG-B.png",
+      "sha256": "9708c2752cfe82131f07abd5386ce453cd70152cbfcd5b4f6daf0caa4808dbd7",
+      "bytes": 382665,
+      "role": "CAMERA_GOLDEN_OUTPUT"
+    },
+    {
+      "fixture_id": "FX-C9F965CF",
+      "path": "validation/camera_routing/l2_evidence/VP01_CG-A.png",
+      "sha256": "2c30f4d7552359854f81e62507f64e80a775d3deb5263e793cc5ff76991b7ea2",
+      "bytes": 297414,
+      "role": "CAMERA_GOLDEN_OUTPUT"
+    },
+    {
+      "fixture_id": "FX-000F8D28",
+      "path": "validation/camera_routing/l2_evidence/VP01_CG-B.png",
+      "sha256": "57b0bcf5f47993d8c5abc1f1bd0df265e17776e99b36ef7b1d3dbbd1a351a567",
+      "bytes": 339031,
+      "role": "CAMERA_GOLDEN_OUTPUT"
+    },
+    {
+      "fixture_id": "FX-C1E02D98",
+      "path": "validation/camera_routing/l2_evidence/VP02_CG-A.png",
+      "sha256": "0ea6ccad8a2427e9513acd708a76137dfaef7bbfe684a24daaf6d97e37fb170a",
+      "bytes": 274676,
+      "role": "CAMERA_GOLDEN_OUTPUT"
+    },
+    {
+      "fixture_id": "FX-3543AB43",
+      "path": "validation/camera_routing/l2_evidence/VP02_CG-B.png",
+      "sha256": "ee6b6c7342f80e6a002f5925200a15c7de5d32f5cc997618ebabec1fc457af70",
+      "bytes": 309366,
+      "role": "CAMERA_GOLDEN_OUTPUT"
+    },
+    {
+      "fixture_id": "FX-BCE7B1FE",
+      "path": "validation/camera_routing/l3_fear_city_evidence/FCV001_VIEW_01.jpg",
+      "sha256": "606df421aabc715cf11ef86336b9d06bbd35081a4b2f95346224506ecc445684",
+      "bytes": 733554,
+      "role": "FEAR_CITY_SOURCE"
+    },
+    {
+      "fixture_id": "FX-98312830",
+      "path": "validation/camera_routing/l3_fear_city_evidence/FCV001_VIEW_02.jpg",
+      "sha256": "bef7192bad392912f59980cbee18486d4c92d9876371b9bf3f08b3882d47d83b",
+      "bytes": 177302,
+      "role": "FEAR_CITY_SOURCE"
+    },
+    {
+      "fixture_id": "FX-B7270DE0",
+      "path": "validation/camera_routing/l3_fear_city_evidence/FCV001_VIEW_03.jpg",
+      "sha256": "00e9a06e8ea16e0e41516e1b764ab43ea893f8554741c76b0de54067210ec410",
+      "bytes": 623731,
+      "role": "FEAR_CITY_SOURCE"
+    },
+    {
+      "fixture_id": "FX-F5297B54",
+      "path": "validation/camera_routing/l3_fear_city_evidence/FCV001_VIEW_04.jpg",
+      "sha256": "63dadf94c50f264eaa30d8d232d0d12d522d09adb0e96fe98569e5aa9672b134",
+      "bytes": 1100593,
+      "role": "FEAR_CITY_SOURCE"
+    }
+  ],
+  "known_duplicate_groups": [
+    {
+      "group_id": "DG-001",
+      "type": "PIXEL_IDENTICAL",
+      "members": [
+        "reference/assets/RDR-F01_L_KATZENSTEIN.jpg",
+        "reference/assets/RDR-F07_DAVES_CORNER.png"
+      ],
+      "independent_fixture_count": 1
+    }
+  ]
+}

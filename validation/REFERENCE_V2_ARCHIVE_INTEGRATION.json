@@ -1,0 +1,776 @@
+{
+  "status": "PASS",
+  "test_count": 12,
+  "scope": "REAL_ARCHIVE_SOFTWARE_WITH_SYNTHETIC_TEST_EVIDENCE",
+  "live_classified_collection": "NOT_AVAILABLE_IN_ARCHIVE_PACKAGE",
+  "archive_modules": {
+    "runtime/assets/asset_cache.py": "3e630e86e66cd6d18a4e31b7055675637d2092419023579bc6ab797ec6a1500e",
+    "runtime/assets/perceptual_dedupe.py": "8847039f498f4c534e57736450ad7920ca8abf73641ae5d197b0ec089acacdf6",
+    "runtime/evidence_intelligence/provenance_scoring.py": "c2804565bae90e73aee2a805c072b7ae509a530e58558056a7b45030848495f3",
+    "runtime/evidence_intelligence/transfer_risk.py": "214acd3c8957178396ae92bb5c7256114599c4194351010c886539da53cbba13",
+    "runtime/governance/governance.py": "eb50a2f37cf903e02b72d680df0b0ebd96956c037bafcd4a393125bec0f22df0",
+    "runtime/governance/health.py": "e111da183bb0f0425d995735fd2d374256be7af2bd809b9b6a5e90529f6a0d08",
+    "runtime/integration/evidence_bundle.py": "3d84b33b8829e5e2ac702b4c8fcb15033be0ad9398ce6b7938eeecaaebff8c92",
+    "runtime/integration/negative_evidence.py": "9463d4767f2e561beb006d96a4a6a96433ad33dac4c9579576a741fba369b83b",
+    "runtime/retrieval/eligibility.py": "a20b8db0e946cc61e0be4413350f66de45c388f792cf9e579b9e0874e823e514",
+    "runtime/retrieval/query_planner.py": "b4240090b5e3eaa8bda401f5edcaf82b23b1f716c324724079ac0876267886ce",
+    "runtime/retrieval/ranking.py": "62af2f94161705d85a41d69106f069352a707c07fc8ab7c2e4f6f6c56eea105e",
+    "runtime/sqlite/dedupe_exact.py": "aa6e6f08fdc63622af96c1359bf0333657216ba0e2b16fca410bb2a6cb199e38",
+    "runtime/sqlite/ingest_snapshot.py": "43782cef7d24954b899a178741044df2cd026223311b67299444386122fd9a71",
+    "runtime/tests/test_archive_v1_final.py": "3b9c6b4339ff134c7287cd9d18fe79cdca1c23669cd718c3a405f7cc6f48c267",
+    "runtime/tests/test_asset_cache_perceptual.py": "47a54ef5c05417ea028a2b8986693194ce4423f0b198bd0b60a2cbc6b148550a",
+    "runtime/tests/test_end_to_end_svs_archive.py": "4758896b9357cbe01d04896688f39e3f302c5d01c199ac929b26364958e50878",
+    "runtime/tests/test_evidence_intelligence.py": "859880987b53381ae0291852016ee5ea11367f46fcd47d05b1e3378ffb92b966",
+    "runtime/tests/test_g5_acceptance.py": "fa04265c07c5b1b02aa09a8e9c3868c7e66ab468a1cbd40c72672df3eb3949ab",
+    "runtime/tests/test_governance_readiness.py": "33ea58b0c4bcf37ab1f200aebd31426efba914d50be4042092351d27312f9b05",
+    "runtime/tests/test_retrieval_benchmark.py": "ebf1bd88b850f9f8e234ec78870808982c4155afe6531d08f9fa724020fa12ce"
+  },
+  "checks": [
+    {
+      "name": "scoped_material_admission",
+      "status": "PASS",
+      "record": {
+        "version": "RR-2.0-experimental",
+        "status": "READY",
+        "queries": 1,
+        "query_budget": 4,
+        "need_results": {
+          "N1": "SATISFIED_EVIDENCE"
+        },
+        "unresolved_required": [],
+        "trace": [
+          {
+            "need_id": "N1",
+            "reason": [
+              "ARCHIVE_QUERY"
+            ],
+            "screen_rejections": [],
+            "result": "SATISFIED_EVIDENCE",
+            "evidence_ids": [
+              "TEST-MAT"
+            ],
+            "evidence_bundle_ids": [
+              "EB-F04DD475EEB5E6"
+            ],
+            "negative_evidence": []
+          }
+        ],
+        "admissions": [
+          {
+            "evidence_unit_id": "TEST-MAT",
+            "archive_id": "SYNTHETIC-TEST-ONLY",
+            "decision": "ADMITTED_SCOPED",
+            "domain": "MATERIALS",
+            "reasons": [
+              "eligible_scoped_evidence"
+            ],
+            "permitted_learning": [
+              "matte response"
+            ],
+            "forbidden_transfer": [
+              "exact facade geometry"
+            ],
+            "visible_fact": "Matte brick response",
+            "provenance_level": "P4",
+            "authority_score": 0.95,
+            "retrieval_score": 0.855,
+            "transfer_risk": "LOW",
+            "need_id": "N1"
+          }
+        ],
+        "generation_projection": [
+          {
+            "need_id": "N1",
+            "evidence_unit_id": "TEST-MAT",
+            "domain": "MATERIALS",
+            "visible_fact": "Matte brick response",
+            "permitted_learning": [
+              "matte response"
+            ],
+            "forbidden_transfer": [
+              "exact facade geometry"
+            ]
+          }
+        ],
+        "locked_unknowns": []
+      }
+    },
+    {
+      "name": "bundle_provenance_retained",
+      "status": "PASS",
+      "record": {
+        "version": "RR-2.0-experimental",
+        "status": "READY",
+        "queries": 1,
+        "query_budget": 4,
+        "need_results": {
+          "N1": "SATISFIED_EVIDENCE"
+        },
+        "unresolved_required": [],
+        "trace": [
+          {
+            "need_id": "N1",
+            "reason": [
+              "ARCHIVE_QUERY"
+            ],
+            "screen_rejections": [],
+            "result": "SATISFIED_EVIDENCE",
+            "evidence_ids": [
+              "TEST-MAT"
+            ],
+            "evidence_bundle_ids": [
+              "EB-F04DD475EEB5E6"
+            ],
+            "negative_evidence": []
+          }
+        ],
+        "admissions": [
+          {
+            "evidence_unit_id": "TEST-MAT",
+            "archive_id": "SYNTHETIC-TEST-ONLY",
+            "decision": "ADMITTED_SCOPED",
+            "domain": "MATERIALS",
+            "reasons": [
+              "eligible_scoped_evidence"
+            ],
+            "permitted_learning": [
+              "matte response"
+            ],
+            "forbidden_transfer": [
+              "exact facade geometry"
+            ],
+            "visible_fact": "Matte brick response",
+            "provenance_level": "P4",
+            "authority_score": 0.95,
+            "retrieval_score": 0.855,
+            "transfer_risk": "LOW",
+            "need_id": "N1"
+          }
+        ],
+        "generation_projection": [
+          {
+            "need_id": "N1",
+            "evidence_unit_id": "TEST-MAT",
+            "domain": "MATERIALS",
+            "visible_fact": "Matte brick response",
+            "permitted_learning": [
+              "matte response"
+            ],
+            "forbidden_transfer": [
+              "exact facade geometry"
+            ]
+          }
+        ],
+        "locked_unknowns": []
+      }
+    },
+    {
+      "name": "cgc_locks_preserved",
+      "status": "PASS",
+      "record": {
+        "version": "RR-2.0-experimental",
+        "status": "READY",
+        "queries": 1,
+        "query_budget": 4,
+        "need_results": {
+          "N1": "SATISFIED_EVIDENCE"
+        },
+        "unresolved_required": [],
+        "trace": [
+          {
+            "need_id": "N1",
+            "reason": [
+              "ARCHIVE_QUERY"
+            ],
+            "screen_rejections": [],
+            "result": "SATISFIED_EVIDENCE",
+            "evidence_ids": [
+              "TEST-MAT"
+            ],
+            "evidence_bundle_ids": [
+              "EB-F04DD475EEB5E6"
+            ],
+            "negative_evidence": []
+          }
+        ],
+        "admissions": [
+          {
+            "evidence_unit_id": "TEST-MAT",
+            "archive_id": "SYNTHETIC-TEST-ONLY",
+            "decision": "ADMITTED_SCOPED",
+            "domain": "MATERIALS",
+            "reasons": [
+              "eligible_scoped_evidence"
+            ],
+            "permitted_learning": [
+              "matte response"
+            ],
+            "forbidden_transfer": [
+              "exact facade geometry"
+            ],
+            "visible_fact": "Matte brick response",
+            "provenance_level": "P4",
+            "authority_score": 0.95,
+            "retrieval_score": 0.855,
+            "transfer_risk": "LOW",
+            "need_id": "N1"
+          }
+        ],
+        "generation_projection": [
+          {
+            "need_id": "N1",
+            "evidence_unit_id": "TEST-MAT",
+            "domain": "MATERIALS",
+            "visible_fact": "Matte brick response",
+            "permitted_learning": [
+              "matte response"
+            ],
+            "forbidden_transfer": [
+              "exact facade geometry"
+            ]
+          }
+        ],
+        "locked_unknowns": []
+      }
+    },
+    {
+      "name": "fear_city_geography_excluded",
+      "status": "PASS",
+      "record": {
+        "version": "RR-2.0-experimental",
+        "status": "BLOCKED_REQUIRED",
+        "queries": 1,
+        "query_budget": 4,
+        "need_results": {
+          "N1": "UNRESOLVED"
+        },
+        "unresolved_required": [
+          "N1"
+        ],
+        "trace": [
+          {
+            "need_id": "N1",
+            "reason": [
+              "ARCHIVE_QUERY"
+            ],
+            "screen_rejections": [],
+            "result": "UNRESOLVED",
+            "evidence_ids": [
+              "TEST-MAT"
+            ],
+            "evidence_bundle_ids": [
+              "EB-F04DD475EEB5E6"
+            ],
+            "negative_evidence": [
+              {
+                "anti_pattern": "REGIONAL_LEAK",
+                "rule": "Do not transfer region-specific facts without compatibility evidence.",
+                "evidence_unit_id": "TEST-MAT"
+              }
+            ]
+          }
+        ],
+        "admissions": [
+          {
+            "evidence_unit_id": "TEST-MAT",
+            "archive_id": "SYNTHETIC-TEST-ONLY",
+            "decision": "ADMITTED_NEGATIVE_ONLY",
+            "domain": "REGIONAL_CHARACTER",
+            "reasons": [
+              "fear_city_geographic_identity_lock"
+            ],
+            "permitted_learning": [
+              "matte response"
+            ],
+            "forbidden_transfer": [
+              "exact facade geometry"
+            ],
+            "visible_fact": "Matte brick response",
+            "provenance_level": "P4",
+            "authority_score": 0.95,
+            "retrieval_score": 0.855,
+            "transfer_risk": "LOW",
+            "need_id": "N1"
+          }
+        ],
+        "generation_projection": [],
+        "locked_unknowns": []
+      }
+    },
+    {
+      "name": "negative_evidence_retained",
+      "status": "PASS",
+      "record": {
+        "version": "RR-2.0-experimental",
+        "status": "BLOCKED_REQUIRED",
+        "queries": 1,
+        "query_budget": 4,
+        "need_results": {
+          "N1": "UNRESOLVED"
+        },
+        "unresolved_required": [
+          "N1"
+        ],
+        "trace": [
+          {
+            "need_id": "N1",
+            "reason": [
+              "ARCHIVE_QUERY"
+            ],
+            "screen_rejections": [],
+            "result": "UNRESOLVED",
+            "evidence_ids": [
+              "TEST-MAT"
+            ],
+            "evidence_bundle_ids": [
+              "EB-F04DD475EEB5E6"
+            ],
+            "negative_evidence": [
+              {
+                "anti_pattern": "REGIONAL_LEAK",
+                "rule": "Do not transfer region-specific facts without compatibility evidence.",
+                "evidence_unit_id": "TEST-MAT"
+              }
+            ]
+          }
+        ],
+        "admissions": [
+          {
+            "evidence_unit_id": "TEST-MAT",
+            "archive_id": "SYNTHETIC-TEST-ONLY",
+            "decision": "ADMITTED_NEGATIVE_ONLY",
+            "domain": "REGIONAL_CHARACTER",
+            "reasons": [
+              "fear_city_geographic_identity_lock"
+            ],
+            "permitted_learning": [
+              "matte response"
+            ],
+            "forbidden_transfer": [
+              "exact facade geometry"
+            ],
+            "visible_fact": "Matte brick response",
+            "provenance_level": "P4",
+            "authority_score": 0.95,
+            "retrieval_score": 0.855,
+            "transfer_risk": "LOW",
+            "need_id": "N1"
+          }
+        ],
+        "generation_projection": [],
+        "locked_unknowns": []
+      }
+    },
+    {
+      "name": "text_invention_excluded",
+      "status": "PASS",
+      "record": {
+        "version": "RR-2.0-experimental",
+        "status": "BLOCKED_REQUIRED",
+        "queries": 1,
+        "query_budget": 4,
+        "need_results": {
+          "N1": "UNRESOLVED"
+        },
+        "unresolved_required": [
+          "N1"
+        ],
+        "trace": [
+          {
+            "need_id": "N1",
+            "reason": [
+              "ARCHIVE_QUERY"
+            ],
+            "screen_rejections": [],
+            "result": "UNRESOLVED",
+            "evidence_ids": [
+              "TEST-MAT"
+            ],
+            "evidence_bundle_ids": [
+              "EB-F04DD475EEB5E6"
+            ],
+            "negative_evidence": [
+              {
+                "anti_pattern": "TEXT_INVENTION",
+                "rule": "Do not invent legible signage where text is unreadable or absent.",
+                "evidence_unit_id": "TEST-MAT"
+              }
+            ]
+          }
+        ],
+        "admissions": [
+          {
+            "evidence_unit_id": "TEST-MAT",
+            "archive_id": "SYNTHETIC-TEST-ONLY",
+            "decision": "ADMITTED_NEGATIVE_ONLY",
+            "domain": "SIGNAGE",
+            "reasons": [
+              "semantic_text_lock_limits_transfer"
+            ],
+            "permitted_learning": [
+              "matte response"
+            ],
+            "forbidden_transfer": [
+              "exact facade geometry"
+            ],
+            "visible_fact": "Matte brick response",
+            "provenance_level": "P4",
+            "authority_score": 0.95,
+            "retrieval_score": 0.855,
+            "transfer_risk": "LOW",
+            "need_id": "N1"
+          }
+        ],
+        "generation_projection": [],
+        "locked_unknowns": []
+      }
+    },
+    {
+      "name": "camera_locked",
+      "status": "PASS",
+      "record": {
+        "version": "RR-2.0-experimental",
+        "status": "BLOCKED_REQUIRED",
+        "queries": 1,
+        "query_budget": 4,
+        "need_results": {
+          "N1": "UNRESOLVED"
+        },
+        "unresolved_required": [
+          "N1"
+        ],
+        "trace": [
+          {
+            "need_id": "N1",
+            "reason": [
+              "ARCHIVE_QUERY"
+            ],
+            "screen_rejections": [],
+            "result": "UNRESOLVED",
+            "evidence_ids": [
+              "TEST-MAT"
+            ],
+            "evidence_bundle_ids": [
+              "EB-F04DD475EEB5E6"
+            ],
+            "negative_evidence": []
+          }
+        ],
+        "admissions": [
+          {
+            "evidence_unit_id": "TEST-MAT",
+            "archive_id": "SYNTHETIC-TEST-ONLY",
+            "decision": "ADMITTED_NEGATIVE_ONLY",
+            "domain": "CAMERA",
+            "reasons": [
+              "camera_authority_locked"
+            ],
+            "permitted_learning": [
+              "matte response"
+            ],
+            "forbidden_transfer": [
+              "exact facade geometry"
+            ],
+            "visible_fact": "Matte brick response",
+            "provenance_level": "P4",
+            "authority_score": 0.95,
+            "retrieval_score": 0.855,
+            "transfer_risk": "LOW",
+            "need_id": "N1"
+          }
+        ],
+        "generation_projection": [],
+        "locked_unknowns": []
+      }
+    },
+    {
+      "name": "provenance_floor",
+      "status": "PASS",
+      "record": {
+        "version": "RR-2.0-experimental",
+        "status": "BLOCKED_REQUIRED",
+        "queries": 1,
+        "query_budget": 4,
+        "need_results": {
+          "N1": "UNRESOLVED"
+        },
+        "unresolved_required": [
+          "N1"
+        ],
+        "trace": [
+          {
+            "need_id": "N1",
+            "reason": [
+              "ARCHIVE_QUERY"
+            ],
+            "screen_rejections": [],
+            "result": "UNRESOLVED",
+            "evidence_ids": [],
+            "evidence_bundle_ids": [
+              "EB-9CDDC6B99A1D07"
+            ],
+            "negative_evidence": []
+          }
+        ],
+        "admissions": [],
+        "generation_projection": [],
+        "locked_unknowns": []
+      }
+    },
+    {
+      "name": "bundle_conflicts_preserved",
+      "status": "PASS",
+      "record": {
+        "version": "RR-2.0-experimental",
+        "status": "BLOCKED_REQUIRED",
+        "queries": 1,
+        "query_budget": 4,
+        "need_results": {
+          "N1": "REVIEW_REQUIRED"
+        },
+        "unresolved_required": [
+          "N1"
+        ],
+        "trace": [
+          {
+            "need_id": "N1",
+            "reason": [
+              "ARCHIVE_QUERY"
+            ],
+            "screen_rejections": [],
+            "result": "REVIEW_REQUIRED",
+            "evidence_ids": [
+              "TEST-MAT",
+              "TEST-MAT-2"
+            ],
+            "evidence_bundle_ids": [
+              "EB-6D23DE6A00F36C"
+            ],
+            "negative_evidence": []
+          }
+        ],
+        "admissions": [
+          {
+            "evidence_unit_id": "TEST-MAT",
+            "archive_id": "SYNTHETIC-TEST-ONLY",
+            "decision": "REVIEW_REQUIRED",
+            "domain": "MATERIALS",
+            "reasons": [
+              "evidence_conflict"
+            ],
+            "permitted_learning": [
+              "matte response"
+            ],
+            "forbidden_transfer": [
+              "exact facade geometry"
+            ],
+            "visible_fact": "Matte brick response",
+            "provenance_level": "P4",
+            "authority_score": 0.95,
+            "retrieval_score": 0.855,
+            "transfer_risk": "LOW",
+            "need_id": "N1"
+          },
+          {
+            "evidence_unit_id": "TEST-MAT-2",
+            "archive_id": "SYNTHETIC-TEST-ONLY",
+            "decision": "REVIEW_REQUIRED",
+            "domain": "MATERIALS",
+            "reasons": [
+              "evidence_conflict"
+            ],
+            "permitted_learning": [
+              "matte response"
+            ],
+            "forbidden_transfer": [
+              "exact facade geometry"
+            ],
+            "visible_fact": "Glossy brick response",
+            "provenance_level": "P4",
+            "authority_score": 0.95,
+            "retrieval_score": 0.855,
+            "transfer_risk": "LOW",
+            "need_id": "N1"
+          }
+        ],
+        "generation_projection": [],
+        "locked_unknowns": []
+      }
+    },
+    {
+      "name": "zero_budget_blocks_required",
+      "status": "PASS",
+      "record": {
+        "version": "RR-2.0-experimental",
+        "status": "BLOCKED_REQUIRED",
+        "queries": 0,
+        "query_budget": 0,
+        "need_results": {
+          "N1": "UNRESOLVED"
+        },
+        "unresolved_required": [
+          "N1"
+        ],
+        "trace": [
+          {
+            "need_id": "N1",
+            "reason": [
+              "BUDGET_EXHAUSTED"
+            ],
+            "screen_rejections": [],
+            "result": "UNRESOLVED",
+            "evidence_ids": [],
+            "evidence_bundle_ids": [],
+            "negative_evidence": []
+          }
+        ],
+        "admissions": [],
+        "generation_projection": [],
+        "locked_unknowns": []
+      }
+    },
+    {
+      "name": "identical_queries_cached",
+      "status": "PASS",
+      "record": {
+        "version": "RR-2.0-experimental",
+        "status": "READY",
+        "queries": 1,
+        "query_budget": 4,
+        "need_results": {
+          "N1": "SATISFIED_EVIDENCE",
+          "N2": "SATISFIED_EVIDENCE"
+        },
+        "unresolved_required": [],
+        "trace": [
+          {
+            "need_id": "N1",
+            "reason": [
+              "ARCHIVE_QUERY"
+            ],
+            "screen_rejections": [],
+            "result": "SATISFIED_EVIDENCE",
+            "evidence_ids": [
+              "TEST-MAT"
+            ],
+            "evidence_bundle_ids": [
+              "EB-F04DD475EEB5E6"
+            ],
+            "negative_evidence": []
+          },
+          {
+            "need_id": "N2",
+            "reason": [
+              "CACHE_REUSE"
+            ],
+            "screen_rejections": [],
+            "result": "SATISFIED_EVIDENCE",
+            "evidence_ids": [
+              "TEST-MAT"
+            ],
+            "evidence_bundle_ids": [
+              "EB-F04DD475EEB5E6"
+            ],
+            "negative_evidence": []
+          }
+        ],
+        "admissions": [
+          {
+            "evidence_unit_id": "TEST-MAT",
+            "archive_id": "SYNTHETIC-TEST-ONLY",
+            "decision": "ADMITTED_SCOPED",
+            "domain": "MATERIALS",
+            "reasons": [
+              "eligible_scoped_evidence"
+            ],
+            "permitted_learning": [
+              "matte response"
+            ],
+            "forbidden_transfer": [
+              "exact facade geometry"
+            ],
+            "visible_fact": "Matte brick response",
+            "provenance_level": "P4",
+            "authority_score": 0.95,
+            "retrieval_score": 0.855,
+            "transfer_risk": "LOW",
+            "need_id": "N1"
+          },
+          {
+            "evidence_unit_id": "TEST-MAT",
+            "archive_id": "SYNTHETIC-TEST-ONLY",
+            "decision": "ADMITTED_SCOPED",
+            "domain": "MATERIALS",
+            "reasons": [
+              "eligible_scoped_evidence"
+            ],
+            "permitted_learning": [
+              "matte response"
+            ],
+            "forbidden_transfer": [
+              "exact facade geometry"
+            ],
+            "visible_fact": "Matte brick response",
+            "provenance_level": "P4",
+            "authority_score": 0.95,
+            "retrieval_score": 0.855,
+            "transfer_risk": "LOW",
+            "need_id": "N2"
+          }
+        ],
+        "generation_projection": [
+          {
+            "need_id": "N1",
+            "evidence_unit_id": "TEST-MAT",
+            "domain": "MATERIALS",
+            "visible_fact": "Matte brick response",
+            "permitted_learning": [
+              "matte response"
+            ],
+            "forbidden_transfer": [
+              "exact facade geometry"
+            ]
+          },
+          {
+            "need_id": "N2",
+            "evidence_unit_id": "TEST-MAT",
+            "domain": "MATERIALS",
+            "visible_fact": "Matte brick response",
+            "permitted_learning": [
+              "matte response"
+            ],
+            "forbidden_transfer": [
+              "exact facade geometry"
+            ]
+          }
+        ],
+        "locked_unknowns": []
+      }
+    },
+    {
+      "name": "unknown_not_queried",
+      "status": "PASS",
+      "record": {
+        "version": "RR-2.0-experimental",
+        "status": "READY",
+        "queries": 0,
+        "query_budget": 4,
+        "need_results": {
+          "N1": "LOCKED_UNKNOWN"
+        },
+        "unresolved_required": [],
+        "trace": [
+          {
+            "need_id": "N1",
+            "reason": "NO_QUERY_LOCKED_UNKNOWN"
+          }
+        ],
+        "admissions": [],
+        "generation_projection": [],
+        "locked_unknowns": [
+          "N1"
+        ]
+      }
+    }
+  ]
+}

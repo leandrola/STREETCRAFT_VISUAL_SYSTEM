@@ -40,9 +40,14 @@ for rec in prov['exact_embedded_assets']:
   asset_bad.append(rec['path'])
 checks.append({'name':'exact_embedded_asset_identity','status':'PASS' if not asset_bad else 'FAIL','failures':asset_bad})
 remote=json.loads((ROOT/'benchmark/fixtures/REMOTE_BINARY_FIXTURES.json').read_text())
-checks.append({'name':'historical_l2_remote_fixture_registry','status':'PASS' if len(remote.get('fixtures',[]))==7 else 'FAIL','remote_fixture_count':len(remote.get('fixtures',[])),'note':'provenance registry only; exact bytes not embedded'})
+l2_bad=[r['path'] for r in remote['fixtures'] if not (ROOT/r['path']).exists() or git_blob(ROOT/r['path'])!=r['git_blob_sha']]
+checks.append({'name':'historical_l2_embedded_identity','status':'PASS' if len(remote['fixtures'])==7 and not l2_bad else 'FAIL','fixture_count':len(remote['fixtures']),'failures':l2_bad})
+gold=json.loads((ROOT/'benchmark/fixtures/GOLDEN_FIXTURES.json').read_text())
+golden_bad=[r['path'] for r in gold['fixtures'] if not (ROOT/r['path']).exists() or hashlib.sha256((ROOT/r['path']).read_bytes()).hexdigest()!=r['sha256']]
+checks.append({'name':'golden_fixture_integrity','status':'PASS' if not golden_bad else 'FAIL','fixtures_checked':len(gold['fixtures']),'failures':golden_bad})
+checks.append(run('benchmark/check_r2_baseline.py',ROOT))
 status='PASS' if all(c['status']=='PASS' for c in checks) else 'FAIL'
-report={'suite':'SVS 1.9.1 Reconstructed Deterministic Regression','R0':status,'R1_current_embedded_assets':next(c['status'] for c in checks if c['name']=='exact_embedded_asset_identity'),'R2b_visual':'REQUIRED_PENDING','stable_promotion':False,'checks':checks}
-out=ROOT/'validation/REGRESSION_REPORT_1_9_1_RECONSTRUCTED.json';out.write_text(json.dumps(report,indent=2),encoding='utf-8')
+report={'suite':'SVS 1.9.1 / CIL 1.1 Integrated Regression','R0':status,'R1_current_embedded_assets':next(c['status'] for c in checks if c['name']=='exact_embedded_asset_identity'),'R2b_visual':'REQUIRED_PENDING','stable_promotion':False,'checks':checks}
+out=ROOT/'validation/INTEGRATION_QA.json';out.write_text(json.dumps(report,indent=2),encoding='utf-8')
 print(json.dumps(report,indent=2))
 raise SystemExit(0 if status=='PASS' else 1)

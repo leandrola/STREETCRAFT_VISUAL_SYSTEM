@@ -1,0 +1,320 @@
+{
+  "matrix_version": "CRVM-1.0",
+  "passed": 26,
+  "total": 26,
+  "status": "PASS",
+  "results": [
+    {
+      "id": "CR-01",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "NOT_APPLICABLE",
+        "mode": "T01",
+        "profile": "VP00",
+        "camera": "CG-S"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-02",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "NOT_APPLICABLE",
+        "mode": "T01",
+        "profile": "VP02",
+        "camera": "CG-A"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-03",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "NOT_APPLICABLE",
+        "mode": "T01",
+        "profile": "VP02",
+        "camera": "CG-B"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-04",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "NOT_APPLICABLE",
+        "mode": "T01",
+        "profile": "VP02",
+        "camera": "CG-S"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-05",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "NOT_APPLICABLE",
+        "mode": "T08",
+        "profile": "VP02",
+        "camera": "CG-A",
+        "people_policy": "ABSENT_DEFAULT",
+        "vehicle_policy": "ABSENT_DEFAULT"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-06",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "NOT_APPLICABLE",
+        "mode": "T08",
+        "profile": "VP01",
+        "camera": "CG-B",
+        "people_policy": "ABSENT_DEFAULT",
+        "vehicle_policy": "ABSENT_DEFAULT"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-07",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "NOT_APPLICABLE",
+        "mode": "T07",
+        "profile": "VP00",
+        "camera": "CG-A",
+        "people_policy": "ABSENT_DEFAULT",
+        "vehicle_policy": "ABSENT_DEFAULT"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-08",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "NOT_APPLICABLE",
+        "mode": "T07",
+        "profile": "VP00",
+        "camera": "CG-B",
+        "people_policy": "ABSENT_DEFAULT",
+        "vehicle_policy": "ABSENT_DEFAULT"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-09",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "NOT_APPLICABLE",
+        "mode": "T07",
+        "profile": "VP01",
+        "camera": "CG-A",
+        "people_policy": "ABSENT_DEFAULT",
+        "vehicle_policy": "ABSENT_DEFAULT"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-10",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "NOT_APPLICABLE",
+        "mode": "T07",
+        "profile": "VP01",
+        "camera": "CG-B",
+        "people_policy": "ABSENT_DEFAULT",
+        "vehicle_policy": "ABSENT_DEFAULT"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-11",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "NOT_APPLICABLE",
+        "mode": "T07",
+        "profile": "VP02",
+        "camera": "CG-A",
+        "people_policy": "ABSENT_DEFAULT",
+        "vehicle_policy": "ABSENT_DEFAULT"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-12",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "NOT_APPLICABLE",
+        "mode": "T07",
+        "profile": "VP02",
+        "camera": "CG-B",
+        "people_policy": "ABSENT_DEFAULT",
+        "vehicle_policy": "ABSENT_DEFAULT"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-13",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "CONFIRMED",
+        "mode": "T06",
+        "profile": "VP03",
+        "camera": "CG-FC"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-14",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "CONFIRMED",
+        "mode": "T06",
+        "profile": "VP03",
+        "camera": "CG-FC"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-15",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "CONFIRMED",
+        "mode": "T06",
+        "profile": "VP03",
+        "camera": "CG-FC"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-16",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "CONFIRMED",
+        "mode": "T06",
+        "profile": "VP02",
+        "camera": "CG-FC"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-17",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "UNRESOLVED",
+        "mode": "T01",
+        "profile": "VP00",
+        "camera": "CG-S"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-18",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "UNRESOLVED",
+        "mode": "T01",
+        "profile": "VP01",
+        "camera": "CG-S"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-19",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "NOT_APPLICABLE",
+        "mode": "T01",
+        "profile": "VP02",
+        "camera": "CG-A",
+        "people_policy": "PRESERVE",
+        "vehicle_policy": "PRESERVE"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-20",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "NOT_APPLICABLE",
+        "mode": "T07",
+        "profile": "VP02",
+        "camera": "CG-A",
+        "people_policy": "ABSENT_DEFAULT",
+        "vehicle_policy": "ABSENT_DEFAULT"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-21",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "NOT_APPLICABLE",
+        "mode": "T03",
+        "profile": "VP00",
+        "camera": "CG-B",
+        "people_policy": "ABSENT_DEFAULT",
+        "vehicle_policy": "ABSENT_DEFAULT"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-22",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "NOT_APPLICABLE",
+        "mode": "T05",
+        "profile": "VP01",
+        "camera": "CG-A",
+        "people_policy": "ABSENT_DEFAULT",
+        "vehicle_policy": "ABSENT_DEFAULT"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-23",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "NOT_APPLICABLE",
+        "mode": "T01",
+        "profile": "VP00",
+        "camera": "CG-S"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-24",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "UNRESOLVED",
+        "mode": "T01",
+        "profile": "VP00",
+        "camera": "CG-S"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-25",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "NOT_APPLICABLE",
+        "mode": "T07",
+        "profile": "VP02",
+        "camera": "CG-B",
+        "people_policy": "ABSENT_DEFAULT",
+        "vehicle_policy": "ABSENT_DEFAULT"
+      },
+      "failures": []
+    },
+    {
+      "id": "CR-26",
+      "pass": true,
+      "actual": {
+        "fear_city_identity": "NOT_APPLICABLE",
+        "mode": "T01",
+        "profile": "VP02",
+        "camera": "CG-A"
+      },
+      "failures": []
+    }
+  ]
+}

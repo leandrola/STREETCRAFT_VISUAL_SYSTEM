@@ -1,0 +1,29 @@
+{
+  "sources": [
+    {
+      "historical_case_id": "R2B-FC-001",
+      "path": "benchmark/r2b_1_9_1/sources/R2B-FC-001_source.jpg",
+      "sha256": "606df421aabc715cf11ef86336b9d06bbd35081a4b2f95346224506ecc445684",
+      "role": "SOURCE_ONLY",
+      "candidate": null
+    },
+    {
+      "historical_case_id": "R2B-TXT-001",
+      "path": "benchmark/r2b_1_9_1/sources/R2B-TXT-001_source.jpg",
+      "sha256": "bdcc344cdbadf01312336f76d1a1db8ccdeb1398111536d1087d68aa527a5011",
+      "role": "SOURCE_ONLY",
+      "candidate": null
+    },
+    {
+      "historical_case_id": "R2B-OCC-TXT-001",
+      "path": "benchmark/r2b_1_9_1/sources/R2B-OCC-TXT-001_source.jpg",
+      "sha256": "3404d73eea2d9a9761392b97918c73df2af6ff2dc7d6010c9289302c2b4366af",
+      "role": "SOURCE_ONLY",
+      "candidate": null
+    }
+  ],
+  "camera_goldens": "validation/camera_routing/l2_evidence/VP02_CG-A.png and VP02_CG-B.png are historical golden outputs, not fresh candidates or original photographs.",
+  "camera_source_selection": "PENDING",
+  "generation_status": "NOT_STARTED",
+  "fresh_candidate_count": 0
+}

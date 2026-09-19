@@ -1,0 +1,14 @@
+{
+  "version": "CRVM-1.4",
+  "level": "L3_FEAR_CITY_ROUTING",
+  "status": "PASS",
+  "structural_cases": "7/7 PASS",
+  "visual_identity_validation": "PASS",
+  "confirmed_source_views": 4,
+  "confirmed_route": "T06 + VP03 + CG-FC",
+  "override_behavior": "PASS",
+  "false_positive_protection": "PASS",
+  "world_depth_guard": "PASS",
+  "geographic_import_guard": "PASS",
+  "critical_failures": 0
+}

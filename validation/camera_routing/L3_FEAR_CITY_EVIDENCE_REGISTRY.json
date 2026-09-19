@@ -1,0 +1,58 @@
+{
+  "validation_set": "Fear City Validation Set #001",
+  "view_count": 4,
+  "source": "user-supplied confirmed Fear City photographs",
+  "views": [
+    {
+      "id": "FCV001-01",
+      "file": "FCV001_VIEW_01.jpg",
+      "sha256": "606df421aabc715cf11ef86336b9d06bbd35081a4b2f95346224506ecc445684",
+      "observed_anchors": [
+        "wide underpass/road view",
+        "elevated steel",
+        "Tanner Street",
+        "Jericho Street",
+        "graffiti wall",
+        "embedded track",
+        "street furniture"
+      ]
+    },
+    {
+      "id": "FCV001-02",
+      "file": "FCV001_VIEW_02.jpg",
+      "sha256": "bef7192bad392912f59980cbee18486d4c92d9876371b9bf3f08b3882d47d83b",
+      "observed_anchors": [
+        "street-level storefront/elevated context",
+        "period vehicles",
+        "elevated support",
+        "authored storefront backdrop"
+      ]
+    },
+    {
+      "id": "FCV001-03",
+      "file": "FCV001_VIEW_03.jpg",
+      "sha256": "00e9a06e8ea16e0e41516e1b764ab43ea893f8554741c76b0de54067210ec410",
+      "observed_anchors": [
+        "night/detail recurring graffiti wall",
+        "graffiti identity",
+        "period vehicles",
+        "street-level authored scene"
+      ]
+    },
+    {
+      "id": "FCV001-04",
+      "file": "FCV001_VIEW_04.jpg",
+      "sha256": "63dadf94c50f264eaa30d8d232d0d12d522d09adb0e96fe98569e5aa9672b134",
+      "observed_anchors": [
+        "wide authored-world overview",
+        "elevated rail vehicle",
+        "underpass",
+        "Tanner Street",
+        "Jericho Street",
+        "graffiti wall",
+        "street/curb topology"
+      ]
+    }
+  ],
+  "routing_conclusion": "CONFIRMED"
+}

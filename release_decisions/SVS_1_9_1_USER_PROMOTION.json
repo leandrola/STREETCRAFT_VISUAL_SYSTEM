@@ -1,0 +1,13 @@
+{
+  "release": "SVS 1.9.1 / CIL 1.1",
+  "status": "STABLE_BY_USER_DECISION",
+  "authorization": "si registra y pasa a Reference Reasoning 2.0",
+  "basis": "Explicit user waiver of incomplete R2b for 1.9.1; not a visual PASS.",
+  "r2b_status": "INCOMPLETE",
+  "fresh_candidates": 1,
+  "formally_scored_candidates": 0,
+  "required_candidates": 6,
+  "visual_pass": false,
+  "scope": "1.9.1 only; no automatic waiver for later releases",
+  "next_milestone_authorized": "Reference Reasoning 2.0"
+}

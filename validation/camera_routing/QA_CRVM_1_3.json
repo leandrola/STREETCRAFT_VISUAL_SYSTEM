@@ -1,0 +1,14 @@
+{
+  "release": "CRVM-1.3",
+  "L0": "PASS_26_26",
+  "L1": "COMPLETED",
+  "L2": "PASS",
+  "L3": "PARTIAL_PASS",
+  "L3_structural_identity_routing": "PASS",
+  "L3_structural_cases": "7/7",
+  "L3_visual_confirmed_source_reexecution": "PENDING_SOURCE_IMAGES",
+  "canon_modified": false,
+  "governing_svs_modified": false,
+  "camera_profile_routing_overall_estimate_pct": 94,
+  "next_gate": "Re-run L3 visual confirmed-source cases when the three Fear City Validation Set #001 images are active."
+}

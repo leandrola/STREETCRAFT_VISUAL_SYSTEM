@@ -1,0 +1,29 @@
+{
+  "release": "SVS 1.8.0",
+  "compile": "PASS",
+  "json_validation": "PASS",
+  "json_files": 50,
+  "benchmark_case_count": 39,
+  "visual_case_count": 14,
+  "automated_case_count": 25,
+  "R0": "PASS",
+  "R1": "PASS",
+  "R2": "PENDING_EXTERNAL_GENERATION_AND_SCORING",
+  "release_gate": "PENDING_R2",
+  "protected_governing_files_unchanged": true,
+  "protected_files": {
+    "core/IDENTITY.md": true,
+    "core/PRESERVATION_MODEL.md": true,
+    "core/VISUAL_GRAMMAR.md": true,
+    "transform/TRANSFORMATION_MODES.md": true,
+    "transform/VISUAL_PROFILES.md": true,
+    "transform/AUTO_ROUTING.md": true,
+    "transform/FEAR_CITY_IDENTITY_THRESHOLD.md": true,
+    "reference/VISUAL_CANON.md": true,
+    "reference/CANON_CANDIDATES.md": true,
+    "reference/DOCUMENTARY_EVIDENCE.md": true,
+    "fear_city/FEAR_CITY_VISION.md": true
+  },
+  "visual_canon_modified": false,
+  "runtime_behavior_modified": false
+}

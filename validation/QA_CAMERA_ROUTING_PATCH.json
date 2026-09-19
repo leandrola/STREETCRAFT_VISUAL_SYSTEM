@@ -1,0 +1,49 @@
+{
+  "release": "1.6.2-camera-routing-patch",
+  "base": "1.6.1",
+  "modified_scope": [
+    "core/VISUAL_GRAMMAR.md",
+    "transform/VISUAL_PROFILES.md",
+    "transform/AUTO_ROUTING.md"
+  ],
+  "metadata_scope": [
+    "CAMERA_ROUTING_PATCH_SCOPE.md",
+    "CHANGELOG.md",
+    "PACKAGE_MANIFEST.json"
+  ],
+  "canon_files_unchanged": true,
+  "untouched_file_checks": {
+    "reference/VISUAL_CANON.md": {
+      "unchanged": true,
+      "sha256": "d9db4da72dc8b41bd447f65cfae20ace7938d804f82e6867d06056541d3a66c8"
+    },
+    "reference/CANON_CANDIDATES.md": {
+      "unchanged": true,
+      "sha256": "84b5a89b033624b5a63888d5bd8be4b1c45f4d380a14b98e93690f662e275975"
+    },
+    "reference/DOCUMENTARY_EVIDENCE.md": {
+      "unchanged": true,
+      "sha256": "bc09740dd25c28d939928fa342e9590e69482551ba3ed173d066d58e23d13022"
+    },
+    "reference/CANONICAL_REFERENCE_SPEC.md": {
+      "unchanged": true,
+      "sha256": "4eb1bb8eb49457362a17ef6f45e6d67eba42e0be29f0ee33fdd66bc27140b4f5"
+    },
+    "fear_city/FEAR_CITY_VISION.md": {
+      "unchanged": true,
+      "sha256": "9ddd834c44dda5c362040c60e59aa552b251f979945dfb7a58afc1563bbf2b98"
+    },
+    "transform/TRANSFORMATION_MODES.md": {
+      "unchanged": true,
+      "sha256": "0d44531f6d13774b050c2028ce29cf91f27528f63bd97adad7cf43599d79593b"
+    },
+    "core/PRESERVATION_MODEL.md": {
+      "unchanged": true,
+      "sha256": "a4c4debffa3114a0cba17b04a9188cdd2aec92a32e10a0b7a76a066f3b37994c"
+    }
+  },
+  "sc_01_66_preserved": true,
+  "auto_routing_present": true,
+  "fear_city_default_route": "T06 + VP03 + CG-FC",
+  "vp02_mandatory_frontal_retired": true
+}

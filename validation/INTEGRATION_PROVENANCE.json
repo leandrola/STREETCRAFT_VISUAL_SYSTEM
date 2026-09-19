@@ -1,0 +1,413 @@
+{
+  "date": "2026-09-19",
+  "restored": [
+    {
+      "path": "CAMERA_ROUTING_PATCH_SCOPE.md",
+      "source": "master_1.6.2",
+      "sha256": "6682b3145cd165f25c6fb437323810a7e5a9d45741b57194c5a04341de3a4947"
+    },
+    {
+      "path": "CAMERA_ROUTING_VALIDATION_SCOPE.md",
+      "source": "master_1.6.2",
+      "sha256": "55a5cebe427d873e6ae045d5bd031daad699a7a6323f56de08c595b28cb575a0"
+    },
+    {
+      "path": "RELEASE_NOTES_1_6_2.md",
+      "source": "master_1.6.2",
+      "sha256": "75672b1909849a99e07f8dfc88e83bfdaa3d111b878a82eed31aa1e4c12f8795"
+    },
+    {
+      "path": "validation/CAMERA_ROUTING_PATCH.diff",
+      "source": "master_1.6.2",
+      "sha256": "510a5c5fb4c9c58f9a3d5af0d8cb20924fb1201bc3572833d379df0fa3f5502e"
+    },
+    {
+      "path": "validation/CONSOLIDATION_AUDIT_1_6_2.json",
+      "source": "master_1.6.2",
+      "sha256": "75f45e9687c5960cc73c1dcac7dbcbad4a15deb888a7e49621a5cbcf599bb391"
+    },
+    {
+      "path": "validation/FINAL_RELEASE_VALIDATION_1_6_2.json",
+      "source": "master_1.6.2",
+      "sha256": "4ab2ba970ff5934729f56b508dcd3b228f63f4e9467d57cac3dd8ced25cc4437"
+    },
+    {
+      "path": "validation/QA_CAMERA_ROUTING_PATCH.json",
+      "source": "master_1.6.2",
+      "sha256": "72b4cc4a35c1dfcb933075f6632f45c09239cd1b7864d17b080d5d8d638669f6"
+    },
+    {
+      "path": "validation/SHA256SUMS_1_6_2.json",
+      "source": "master_1.6.2",
+      "sha256": "9b570497c570b23493efac27648f45992cde1944c8bb9fcace7fd40d0240b408"
+    },
+    {
+      "path": "validation/camera_routing/CAMERA_ROUTING_VALIDATION_MATRIX.json",
+      "source": "master_1.6.2",
+      "sha256": "c70857180f02043a173f1b427e5a17c2476eeb6b9fb03b47c8a31e1178b8d176"
+    },
+    {
+      "path": "validation/camera_routing/CAMERA_ROUTING_VALIDATION_MATRIX.md",
+      "source": "master_1.6.2",
+      "sha256": "c3c82859f9aae19623372fe86800f51c9017ddb24254c9fc684080a6763bafec"
+    },
+    {
+      "path": "validation/camera_routing/FEAR_CITY_IDENTITY_THRESHOLD.json",
+      "source": "master_1.6.2",
+      "sha256": "7e8c56803542efc0edef6009861b12fc074e4bc40245991e38609169ebe200c2"
+    },
+    {
+      "path": "validation/camera_routing/L1_VISUAL_REVIEW.md",
+      "source": "master_1.6.2",
+      "sha256": "599046dd1d7100c79215be8e8a890a44cd34ec3079a9fa9216a2a657240faf14"
+    },
+    {
+      "path": "validation/camera_routing/L1_VISUAL_REVIEW_RESULTS.json",
+      "source": "master_1.6.2",
+      "sha256": "692d4673fdcb520c3da7cba7888b253e1783d029ce676dc9bfdb8b32b97f3813"
+    },
+    {
+      "path": "validation/camera_routing/L2_CONTROLLED_RESULTS.json",
+      "source": "master_1.6.2",
+      "sha256": "01023708baa0a3ab58c07f0bdb9156c1467feb20511e9e54df30582ac3ea78a3"
+    },
+    {
+      "path": "validation/camera_routing/L2_CONTROLLED_RESULTS.md",
+      "source": "master_1.6.2",
+      "sha256": "486499b1e5e1c45e3eec7e21b49c39991cb5a0bb5bd49f85d3f8b8080da6bf38"
+    },
+    {
+      "path": "validation/camera_routing/L2_CONTROLLED_TEST_PLAN.json",
+      "source": "master_1.6.2",
+      "sha256": "39f659d89dd5ae1a97abea48501a88c5b00d158f14963052685c14c31a1ec7e1"
+    },
+    {
+      "path": "validation/camera_routing/L2_EVIDENCE_SHA256.json",
+      "source": "master_1.6.2",
+      "sha256": "4dbfe73bf3068e27727245233804dce18916cde5e7acdca35e8142ca6ecb294f"
+    },
+    {
+      "path": "validation/camera_routing/L3_FEAR_CITY_EVIDENCE_REGISTRY.json",
+      "source": "master_1.6.2",
+      "sha256": "5e0b2b3160eaf667bcfe2595e331496e1f0d448e99833b3285bc9e071c7e467f"
+    },
+    {
+      "path": "validation/camera_routing/L3_FEAR_CITY_ROUTING_MATRIX.json",
+      "source": "master_1.6.2",
+      "sha256": "04ea9ee0b1ea585128cf4c88348ef1c9c8e5f85f9a0cbfd3149eac2e4e6926e7"
+    },
+    {
+      "path": "validation/camera_routing/L3_FEAR_CITY_ROUTING_REPORT.md",
+      "source": "master_1.6.2",
+      "sha256": "cfa9b31e52520bc5e779487607c5c829ab35d620f5d162337f745ee05d34ff4e"
+    },
+    {
+      "path": "validation/camera_routing/L3_FINAL_RESULTS.json",
+      "source": "master_1.6.2",
+      "sha256": "495e88567c801749e9829895476d4c236beb87ab26566dc4b7d4fee6a94916d2"
+    },
+    {
+      "path": "validation/camera_routing/L3_NEGATIVE_CONTROL_REGISTRY.json",
+      "source": "master_1.6.2",
+      "sha256": "d70ecd8e1e852946d5ca6d46f2aa9a13f23a066a9a152c9d7fffe44c734c5d7e"
+    },
+    {
+      "path": "validation/camera_routing/L3_STRUCTURAL_RESULTS.json",
+      "source": "master_1.6.2",
+      "sha256": "20448af9818d33d196e2795af24a5b1648ff99811af3967e113b55fccd7b0bf0"
+    },
+    {
+      "path": "validation/camera_routing/QA_CRVM_1_0.json",
+      "source": "master_1.6.2",
+      "sha256": "5d9fde0a79fe4af797e1fcb8345e8af0ca2810fdc12f32f4a541b5d2877dc192"
+    },
+    {
+      "path": "validation/camera_routing/QA_CRVM_1_1.json",
+      "source": "master_1.6.2",
+      "sha256": "5be969fd07cfe3062278399b6fe6f023cf423d4f36f8d0cef054f6ae267546be"
+    },
+    {
+      "path": "validation/camera_routing/QA_CRVM_1_2.json",
+      "source": "master_1.6.2",
+      "sha256": "34dc78ec6f8b42faa606694d43d9db3ff6682adfceacc2fa60c9ce21e9988eb0"
+    },
+    {
+      "path": "validation/camera_routing/QA_CRVM_1_3.json",
+      "source": "master_1.6.2",
+      "sha256": "38c99ccdc588d66345ff48fbea8e4253db1d5f5f344b60205d67bbf98d3ba485"
+    },
+    {
+      "path": "validation/camera_routing/QA_CRVM_1_4_FINAL.json",
+      "source": "master_1.6.2",
+      "sha256": "2df90345db046a827b81a480bc67042a9513c083577643da5f25f9d679b3d780"
+    },
+    {
+      "path": "validation/camera_routing/STRUCTURAL_VALIDATION_RESULTS.json",
+      "source": "master_1.6.2",
+      "sha256": "09839541c5b2e4b867847791e03fbf2f75162f0c4a150dae34b4e54ec0789ade"
+    },
+    {
+      "path": "validation/camera_routing/VISUAL_FIXTURE_MAP.json",
+      "source": "master_1.6.2",
+      "sha256": "47a971711b4ac5d31e3de950ea888cbe893e597785f65a0e9c810d8aa3b00f10"
+    },
+    {
+      "path": "validation/camera_routing/VISUAL_FIXTURE_MAP_V2.json",
+      "source": "master_1.6.2",
+      "sha256": "e174e356eaf2f1d999edaa6e4904e35256889731f5a76f8d3322694c62386541"
+    },
+    {
+      "path": "validation/camera_routing/VISUAL_VALIDATION_RUBRIC.json",
+      "source": "master_1.6.2",
+      "sha256": "66427323f321d1118b4b93bbcb42f62e50e8aa9ee28b4240bf17238319074f49"
+    },
+    {
+      "path": "validation/camera_routing/l2_evidence/L2_EVIDENCE_CONTACT_SHEET.png",
+      "source": "master_1.6.2",
+      "sha256": "b2d0836163e95de11c4d9dd68fef79536c82ef3632f7d549e3e38f228aef15a7"
+    },
+    {
+      "path": "validation/camera_routing/l2_evidence/VP00_CG-A.png",
+      "source": "master_1.6.2",
+      "sha256": "4b27a8f336ced8e89afd9b2c8d9fc60e6b145b1eccdda0aa49522e9dcb8b06fa"
+    },
+    {
+      "path": "validation/camera_routing/l2_evidence/VP00_CG-B.png",
+      "source": "master_1.6.2",
+      "sha256": "9708c2752cfe82131f07abd5386ce453cd70152cbfcd5b4f6daf0caa4808dbd7"
+    },
+    {
+      "path": "validation/camera_routing/l2_evidence/VP01_CG-A.png",
+      "source": "master_1.6.2",
+      "sha256": "2c30f4d7552359854f81e62507f64e80a775d3deb5263e793cc5ff76991b7ea2"
+    },
+    {
+      "path": "validation/camera_routing/l2_evidence/VP01_CG-B.png",
+      "source": "master_1.6.2",
+      "sha256": "57b0bcf5f47993d8c5abc1f1bd0df265e17776e99b36ef7b1d3dbbd1a351a567"
+    },
+    {
+      "path": "validation/camera_routing/l2_evidence/VP02_CG-A.png",
+      "source": "master_1.6.2",
+      "sha256": "0ea6ccad8a2427e9513acd708a76137dfaef7bbfe684a24daaf6d97e37fb170a"
+    },
+    {
+      "path": "validation/camera_routing/l2_evidence/VP02_CG-B.png",
+      "source": "master_1.6.2",
+      "sha256": "ee6b6c7342f80e6a002f5925200a15c7de5d32f5cc997618ebabec1fc457af70"
+    },
+    {
+      "path": "validation/camera_routing/validate_l3.py",
+      "source": "master_1.6.2",
+      "sha256": "50d8525c8992335adcfe1f3e413a4d2d3c8877adbbea96acd90805000a0bd8ed"
+    },
+    {
+      "path": "validation/camera_routing/validate_matrix.py",
+      "source": "master_1.6.2",
+      "sha256": "50e19318fb7055dd6b16d659b0b0d28e6bafcc95e5f92f2057991d720efa81a0"
+    },
+    {
+      "path": "CIL_PATCH_SCOPE.md",
+      "source": "baseline_1.8.1",
+      "sha256": "3df8e5a02ef625d555e72dd6ccece5272b12deed7a6caf48db7b8f4f0e6449f5"
+    },
+    {
+      "path": "RELEASE_NOTES_1_6_3.md",
+      "source": "baseline_1.8.1",
+      "sha256": "d71b189028e1a1bc74b72328fc0804dd26dd48290d2202eb563f83f7edfebff2"
+    },
+    {
+      "path": "RELEASE_NOTES_1_6_4.md",
+      "source": "baseline_1.8.1",
+      "sha256": "3e1b089287a45b1db2f9dc0814a2aebaf940bf552b5efac0f55b6b341c8e07d2"
+    },
+    {
+      "path": "RELEASE_NOTES_1_7_0.md",
+      "source": "baseline_1.8.1",
+      "sha256": "eb91fbd76c2433f220800e0c248dd778ff963ab73529b01122628f68ab83d656"
+    },
+    {
+      "path": "RELEASE_NOTES_1_8_0.md",
+      "source": "baseline_1.8.1",
+      "sha256": "7ab069f46fed342cf7862cb2832e0ddb0d6550796e07dce84e2dec0c43a79c99"
+    },
+    {
+      "path": "RELEASE_NOTES_1_8_1.md",
+      "source": "baseline_1.8.1",
+      "sha256": "5780c301bc57d7c5dd379ec2cd57aa0292d05244ef57d117e68b87df236f1164"
+    },
+    {
+      "path": "benchmark/R2_BASELINE_CALIBRATION.md",
+      "source": "baseline_1.8.1",
+      "sha256": "2915d6df7a2d83d8e668477b3e0d6f991b8abfae39f11d4bd474012258329a44"
+    },
+    {
+      "path": "benchmark/R2_EXECUTION_POLICY.md",
+      "source": "baseline_1.8.1",
+      "sha256": "1a8f2c4f171d08e35a9161969740dcef57220293e518348b8007e85b662d4813"
+    },
+    {
+      "path": "benchmark/REGRESSION_BENCHMARK_SUITE.md",
+      "source": "baseline_1.8.1",
+      "sha256": "3eced564940336e56d03a0e30369aa5390797310b91d7ff0fb6488985d80f1b1"
+    },
+    {
+      "path": "benchmark/VISUAL_BENCHMARK_RUNBOOK.md",
+      "source": "baseline_1.8.1",
+      "sha256": "a6c84fb6075f82e1e81ed2182af1d7cb191b5f8d9be29b3fda64276364da4b83"
+    },
+    {
+      "path": "benchmark/baselines/GOVERNING_FILES_1_7_BASELINE.json",
+      "source": "baseline_1.8.1",
+      "sha256": "4156b1598e34110c3466365f0238bc2c94d0b67160088dc3547ab093cee7d801"
+    },
+    {
+      "path": "benchmark/baselines/R2_VISUAL_BASELINE_1_8_1.json",
+      "source": "baseline_1.8.1",
+      "sha256": "913c25bf40fd9350648c8d48e2b7026856131f801952439cfb02e742674d1b32"
+    },
+    {
+      "path": "benchmark/check_r2_baseline.py",
+      "source": "baseline_1.8.1",
+      "sha256": "20897a8de5a66d5a44c801bebbbede3b11ce4d8c8a2ef7a90ce22a2d030e63cd"
+    },
+    {
+      "path": "benchmark/fixtures/GOLDEN_FIXTURES.json",
+      "source": "baseline_1.8.1",
+      "sha256": "d93f1e6ec351334c3dcdb437b692693487fe61b5101461cd6272b59a31c80b2e"
+    },
+    {
+      "path": "benchmark/fixtures/README.md",
+      "source": "baseline_1.8.1",
+      "sha256": "63b8d66697e5d589316365a4f906cbf029e87feff61a9065e392b59a805436aa"
+    },
+    {
+      "path": "benchmark/score_visual_results.py",
+      "source": "baseline_1.8.1",
+      "sha256": "fa90c5cedae401205689312af588801fdddfc2c248f0d8bac85c13bd303165f2"
+    },
+    {
+      "path": "benchmark/visual_results_template.json",
+      "source": "baseline_1.8.1",
+      "sha256": "0b0ca9dcfd5528163035019d85323c1cfff8fc7a219d6eb925f5b91f791e7eac"
+    },
+    {
+      "path": "reference_runtime/archive_v1_adapter.py",
+      "source": "baseline_1.8.1",
+      "sha256": "6c3dbceba168bb285baa31943cac011a19260c55c9e20ddf4970536ddda6035e"
+    },
+    {
+      "path": "reference_runtime/test_archive_v1_integration.py",
+      "source": "baseline_1.8.1",
+      "sha256": "27981ab3536cbfd816e46ef1cebda89ab7a9e94db190e1a3604c0854993ef151"
+    },
+    {
+      "path": "validation/FINAL_RELEASE_VALIDATION_1_6_3.json",
+      "source": "baseline_1.8.1",
+      "sha256": "ee046e5c931cdba25e41cedd3b9202f4f2d46429f47d1bdbff3b659b20be78cc"
+    },
+    {
+      "path": "validation/QA_ARCHIVE_AWARE_RUNTIME_1_7_0.json",
+      "source": "baseline_1.8.1",
+      "sha256": "c8d08538419817bb5fb573fd573cc635ddb6248ec13e00bda5202747e37285d4"
+    },
+    {
+      "path": "validation/QA_CIL_1_0.json",
+      "source": "baseline_1.8.1",
+      "sha256": "6043381df425c5676e3393cdcb32bcc8cdf9c9b5609e4ad677e39abd91f59a7b"
+    },
+    {
+      "path": "validation/QA_OPERATIONAL_HARDENING_1_6_4.json",
+      "source": "baseline_1.8.1",
+      "sha256": "e3c75a3320e0370f41504769cbb606d773e821fc3f973c63b84e05c5886180c9"
+    },
+    {
+      "path": "validation/QA_R2_BASELINE_1_8_1.json",
+      "source": "baseline_1.8.1",
+      "sha256": "9661ca80e1b9c26e28f168973f10aeaa6317f603c5d17d3d1052d8744e5943b1"
+    },
+    {
+      "path": "validation/QA_REGRESSION_BENCHMARK_1_8_0.json",
+      "source": "baseline_1.8.1",
+      "sha256": "7f9bdf15ae18d7cb3c6b2e72a19294151864cfee143f191d69a63accf8cb2dfc"
+    },
+    {
+      "path": "validation/REGRESSION_REPORT_1_8_0.json",
+      "source": "baseline_1.8.1",
+      "sha256": "ff4d11f4a48fcaa602b82fb163b51f1790e6c489dce993866a5f967e1d5d85ea"
+    },
+    {
+      "path": "validation/REGRESSION_REPORT_1_8_1.json",
+      "source": "baseline_1.8.1",
+      "sha256": "ce7dbcd4aef6936e8c2865a8d9bc0a9a7872ff2ab927525ea624a32153f38a33"
+    },
+    {
+      "path": "validation/SHA256SUMS_1_6_3.json",
+      "source": "baseline_1.8.1",
+      "sha256": "17b741674dade5153bc27e2dcbd8863dfad8e25dae3e5d877c54b4200459823b"
+    },
+    {
+      "path": "validation/SHA256SUMS_1_6_4.json",
+      "source": "baseline_1.8.1",
+      "sha256": "6cbf4bbf6cdbfacd282de572ab1115b13f0fb09d2f0d800adffc6237195f252b"
+    },
+    {
+      "path": "validation/SHA256SUMS_1_7_0.json",
+      "source": "baseline_1.8.1",
+      "sha256": "77f50402422de5c78b65611ca717cc8e696b2ace743b7bb93ebcceb189b0212e"
+    },
+    {
+      "path": "validation/SHA256SUMS_1_8_0.json",
+      "source": "baseline_1.8.1",
+      "sha256": "d7af94ee0904d4e75e10d510122a681ebc79761c39b56e3a11885fd2594052d3"
+    },
+    {
+      "path": "validation/SHA256SUMS_1_8_1.json",
+      "source": "baseline_1.8.1",
+      "sha256": "858a212f6b4d9a8188f6d1741e01633d84bc0dae36906b5bdc935830e4d36923"
+    }
+  ],
+  "sources": [
+    {
+      "historical_case_id": "R2B-FC-001",
+      "path": "benchmark/r2b_1_9_1/sources/R2B-FC-001_source.jpg",
+      "sha256": "606df421aabc715cf11ef86336b9d06bbd35081a4b2f95346224506ecc445684",
+      "role": "SOURCE_ONLY",
+      "candidate": null
+    },
+    {
+      "historical_case_id": "R2B-TXT-001",
+      "path": "benchmark/r2b_1_9_1/sources/R2B-TXT-001_source.jpg",
+      "sha256": "bdcc344cdbadf01312336f76d1a1db8ccdeb1398111536d1087d68aa527a5011",
+      "role": "SOURCE_ONLY",
+      "candidate": null
+    },
+    {
+      "historical_case_id": "R2B-OCC-TXT-001",
+      "path": "benchmark/r2b_1_9_1/sources/R2B-OCC-TXT-001_source.jpg",
+      "sha256": "3404d73eea2d9a9761392b97918c73df2af6ff2dc7d6010c9289302c2b4366af",
+      "role": "SOURCE_ONLY",
+      "candidate": null
+    }
+  ],
+  "inputs": [
+    {
+      "name": "R2B_1_9_0_CRITICAL_AUDIT.zip",
+      "sha256": "7e92d854d9f00e6880a0a87529e52a0ab9fbf3696cc8ac135b11f859051fdb45"
+    },
+    {
+      "name": "STREETCRAFT_VISUAL_SYSTEM_V1_6_2.zip",
+      "sha256": "0edbee2e9ea8747498a6645651f41a4369cd12095a05d7e14cd351e39ef003bc"
+    },
+    {
+      "name": "STREETCRAFT_VISUAL_SYSTEM_V1_8_1.zip",
+      "sha256": "6241b82e3366dd7de181d05cdf78184cdee7289dd49e8335de1e539a5f539972"
+    },
+    {
+      "name": "STREETCRAFT_VISUAL_SYSTEM_V1_9_1_CIL_1_1_R2B_PREP.zip",
+      "sha256": "607266c418b9762f8eac017ee93066bf4764dd83e415f1d130c20240d2711dbc"
+    }
+  ],
+  "stable": false,
+  "fresh_candidates": 0
+}

@@ -1,0 +1,149 @@
+{
+  "version": "CRVM-1.3",
+  "level": "L3_FEAR_CITY_ROUTING",
+  "status": "PARTIAL_PASS",
+  "structural_identity_routing_status": "PASS",
+  "confirmed_source_basis": {
+    "validation_set": "Fear City Validation Set #001",
+    "views": 3,
+    "stable_evidence": [
+      "elevated steel structure",
+      "two principal brick walls",
+      "central underpass/opening",
+      "embedded track path",
+      "street and curb topology",
+      "Tanner Street / Jericho Street signs",
+      "major graffiti compositions",
+      "street furniture relationships"
+    ],
+    "stable_relationships": [
+      "elevated ABOVE street",
+      "tracks CONTINUE_INTO underpass",
+      "brick walls BOUND underpass",
+      "Tanner Street sign ATTACHED_TO corner pole",
+      "graffiti APPLIED_TO specific brick wall",
+      "sidewalk FOLLOWS building edge"
+    ]
+  },
+  "cases": [
+    {
+      "id": "L3-FC-01",
+      "name": "Confirmed Fear City, no explicit profile",
+      "source_identity": "FEAR_CITY_CONFIRMED",
+      "explicit_profile": null,
+      "explicit_mode": null,
+      "explicit_override": false,
+      "expected": {
+        "mode": "T06",
+        "profile": "VP03",
+        "camera": "CG-FC",
+        "fear_city_identity": "CONFIRMED"
+      },
+      "decision": "PASS"
+    },
+    {
+      "id": "L3-FC-02",
+      "name": "Confirmed Fear City + VP02 named, no routing override",
+      "source_identity": "FEAR_CITY_CONFIRMED",
+      "explicit_profile": "VP02",
+      "explicit_mode": null,
+      "explicit_override": false,
+      "expected": {
+        "mode": "T06",
+        "profile": "VP03",
+        "camera": "CG-FC",
+        "fear_city_identity": "CONFIRMED"
+      },
+      "decision": "PASS"
+    },
+    {
+      "id": "L3-FC-03",
+      "name": "Confirmed Fear City + explicit profile-routing override to VP02",
+      "source_identity": "FEAR_CITY_CONFIRMED",
+      "explicit_profile": "VP02",
+      "explicit_mode": null,
+      "explicit_override": true,
+      "expected": {
+        "mode": "T06",
+        "profile": "VP02",
+        "camera": [
+          "CG-FC",
+          "CG-S"
+        ],
+        "fear_city_identity": "CONFIRMED"
+      },
+      "decision": "PASS"
+    },
+    {
+      "id": "L3-FC-04",
+      "name": "Unknown miniature strongly resembling Fear City",
+      "source_identity": "MINIATURE_UNKNOWN",
+      "visual_traits": [
+        "elevated steel",
+        "brick walls",
+        "graffiti",
+        "embedded track",
+        "urban grime"
+      ],
+      "explicit_profile": null,
+      "explicit_mode": null,
+      "explicit_override": false,
+      "expected": {
+        "mode": "T01",
+        "profile": "VP00",
+        "camera": "CG-S",
+        "fear_city_identity": "UNRESOLVED"
+      },
+      "decision": "PASS"
+    },
+    {
+      "id": "L3-FC-05",
+      "name": "Real-world North American city photograph resembling Fear City",
+      "source_identity": "REAL_WORLD",
+      "visual_traits": [
+        "elevated structure",
+        "graffiti",
+        "brick",
+        "1970s urban density"
+      ],
+      "explicit_profile": null,
+      "explicit_mode": null,
+      "explicit_override": false,
+      "expected": {
+        "mode": "T01",
+        "profile": "VP00",
+        "camera": "CG-S",
+        "fear_city_identity": "NOT_APPLICABLE"
+      },
+      "decision": "PASS"
+    },
+    {
+      "id": "L3-FC-06",
+      "name": "Confirmed Fear City must not import New York identity",
+      "source_identity": "FEAR_CITY_CONFIRMED",
+      "requested_geographic_import": false,
+      "expected": {
+        "geographic_identity_import": "FORBIDDEN",
+        "world_depth": "WDB0-WDB1"
+      },
+      "decision": "PASS"
+    },
+    {
+      "id": "L3-FC-07",
+      "name": "Confirmed Fear City world depth remains evidence-bounded",
+      "source_identity": "FEAR_CITY_CONFIRMED",
+      "multi_view_support_for_deep_city": false,
+      "expected": {
+        "unsupported_world_extension": "FORBIDDEN",
+        "world_depth": "WDB0-WDB1"
+      },
+      "decision": "PASS"
+    }
+  ],
+  "visual_execution": {
+    "confirmed_Fear_City_CG_FC": "PREVIOUSLY_DOCUMENTED_NOT_REEXECUTABLE_IN_CURRENT_PACKAGE",
+    "confirmed_Fear_City_override": "PENDING_SOURCE_IMAGES_IN_ACTIVE_CONTEXT",
+    "negative_lookalike_controls": "STRUCTURALLY_VALIDATED",
+    "reason": "The three original Fear City photographs are documented in VALIDATION_001.md but are not embedded in the current package or retrievable as source image files in the active validation environment."
+  }
+}

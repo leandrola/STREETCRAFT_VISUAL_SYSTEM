@@ -1,0 +1,14 @@
+{
+  "fresh_candidates": 1,
+  "formally_scored": 0,
+  "required": 6,
+  "status": "INCOMPLETE",
+  "candidates": [
+    {
+      "case": "R2B-191-D",
+      "path": "benchmark/r2b_1_9_1/candidates/CBGB_001.png",
+      "sha256": "30e7099ca9ca48667d42715dacaa06d45e4f291412313f0e6b50c47e15ec8b43",
+      "evaluation": "PENDING"
+    }
+  ]
+}

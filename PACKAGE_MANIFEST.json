@@ -1,13 +1,13 @@
 {
   "name": "Streetcraft Visual System",
-  "version": "1.9.1",
-  "build_date": "2026-09-16",
-  "status": "candidate-release-full-reconstructed",
+  "version": "1.10.0-dev2",
+  "build_date": "2026-09-19",
+  "status": "development-reference-reasoning-v2",
   "entry_point": "STREETCRAFT.md",
   "source_repository": "https://github.com/leandrola/STREETCRAFT_VISUAL_SYSTEM",
   "source_base_commit": "04c070d2043295bb802ce3381b7c78faa26ee991",
   "source_base_tree": "c9b52237e1cdfeb799d0c6f729114721858517b4",
-  "base_release": "1.9.0 Candidate",
+  "base_release": "SVS 1.9.1 Stable by user decision; R2b incomplete",
   "integrated_patch": "1.9.1 Critical R2b Hardening",
   "modules": [
     "core",
@@ -43,7 +43,8 @@
   "reconstruction": {
     "operational_full_package": true,
     "byte_identical_git_archive": false,
-    "remote_historical_l2_binary_fixtures": 7
+    "remote_historical_l2_binary_fixtures": 0,
+    "embedded_historical_l2_binary_fixtures": 7
   },
   "command_invocation_layer": "CIL 1.1",
   "cil_1_1_recovery": {
@@ -59,5 +60,19 @@
       "/sc-elevation"
     ],
     "r2b_required": true
+  },
+  "integration": {
+    "master": "STREETCRAFT_VISUAL_SYSTEM_V1_6_2.zip",
+    "runtime_overlay": "STREETCRAFT_VISUAL_SYSTEM_V1_9_1_CIL_1_1_R2B_PREP.zip",
+    "baseline": "STREETCRAFT_VISUAL_SYSTEM_V1_8_1.zip",
+    "historical_commit_696afe5": "NOT_VERIFIED_IN_THIS_RUN",
+    "fresh_candidates": 0
+  },
+  "reference_reasoning_v2": {
+    "status": "EXPERIMENTAL_IMPLEMENTATION",
+    "entry_point": "reference_runtime/reference_reasoning_v2.py",
+    "default_runtime_changed": false,
+    "archive_software_integration": "PASS_12_CHECKS_SYNTHETIC_EVIDENCE",
+    "live_collection_integration": "PENDING_CLASSIFIED_CATALOG"
   }
 }

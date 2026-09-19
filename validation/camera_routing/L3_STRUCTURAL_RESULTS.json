@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "passed": 7,
+  "total": 7,
+  "results": [
+    {
+      "id": "L3-FC-01",
+      "pass": true,
+      "actual": {
+        "mode": "T06",
+        "profile": "VP03",
+        "camera": "CG-FC",
+        "fear_city_identity": "CONFIRMED"
+      },
+      "errors": []
+    },
+    {
+      "id": "L3-FC-02",
+      "pass": true,
+      "actual": {
+        "mode": "T06",
+        "profile": "VP03",
+        "camera": "CG-FC",
+        "fear_city_identity": "CONFIRMED"
+      },
+      "errors": []
+    },
+    {
+      "id": "L3-FC-03",
+      "pass": true,
+      "actual": {
+        "mode": "T06",
+        "profile": "VP02",
+        "camera": "CG-FC",
+        "fear_city_identity": "CONFIRMED"
+      },
+      "errors": []
+    },
+    {
+      "id": "L3-FC-04",
+      "pass": true,
+      "actual": {
+        "mode": "T01",
+        "profile": "VP00",
+        "camera": "CG-S",
+        "fear_city_identity": "UNRESOLVED"
+      },
+      "errors": []
+    },
+    {
+      "id": "L3-FC-05",
+      "pass": true,
+      "actual": {
+        "mode": "T01",
+        "profile": "VP00",
+        "camera": "CG-S",
+        "fear_city_identity": "NOT_APPLICABLE"
+      },
+      "errors": []
+    },
+    {
+      "id": "L3-FC-06",
+      "pass": true
+    },
+    {
+      "id": "L3-FC-07",
+      "pass": true
+    }
+  ]
+}

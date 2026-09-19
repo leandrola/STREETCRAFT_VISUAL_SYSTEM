@@ -1,0 +1,48 @@
+{
+  "release": "CRVM-1.1",
+  "l0": "PASS_26_OF_26",
+  "l1": "PARTIAL_PASS",
+  "l1_reason": "Grammar stable; fixture corrections and CG-B coverage expansion required.",
+  "governing_svs_files_unchanged": true,
+  "protected_file_checks": {
+    "core/VISUAL_GRAMMAR.md": {
+      "unchanged": true,
+      "sha256": "83b7893b0886e684f3266fd257bee33cdd36f053c1e3e14acae9900844cdd6da"
+    },
+    "transform/VISUAL_PROFILES.md": {
+      "unchanged": true,
+      "sha256": "50724cf1f2bc5869975ebaebcbb3ccc714525e60673fd5246051a31409047251"
+    },
+    "transform/AUTO_ROUTING.md": {
+      "unchanged": true,
+      "sha256": "a6a2e57c81526f355ef6e6e03842692a21998d50bec8238b2507c7855067f454"
+    },
+    "reference/VISUAL_CANON.md": {
+      "unchanged": true,
+      "sha256": "d9db4da72dc8b41bd447f65cfae20ace7938d804f82e6867d06056541d3a66c8"
+    },
+    "reference/CANON_CANDIDATES.md": {
+      "unchanged": true,
+      "sha256": "84b5a89b033624b5a63888d5bd8be4b1c45f4d380a14b98e93690f662e275975"
+    },
+    "reference/DOCUMENTARY_EVIDENCE.md": {
+      "unchanged": true,
+      "sha256": "bc09740dd25c28d939928fa342e9590e69482551ba3ed173d066d58e23d13022"
+    },
+    "fear_city/FEAR_CITY_VISION.md": {
+      "unchanged": true,
+      "sha256": "9ddd834c44dda5c362040c60e59aa552b251f979945dfb7a58afc1563bbf2b98"
+    },
+    "transform/TRANSFORMATION_MODES.md": {
+      "unchanged": true,
+      "sha256": "0d44531f6d13774b050c2028ce29cf91f27528f63bd97adad7cf43599d79593b"
+    },
+    "core/PRESERVATION_MODEL.md": {
+      "unchanged": true,
+      "sha256": "a4c4debffa3114a0cba17b04a9188cdd2aec92a32e10a0b7a76a066f3b37994c"
+    }
+  },
+  "canon_modified": false,
+  "l2_plan_ready": true,
+  "l3_status": "PENDING"
+}

@@ -1,7 +1,8 @@
 # STREETCRAFT.md
 ## Entry point for AI agents
-Version: SVS 1.9.1
-Status: Candidate Release / R2b retest required
+Version: SVS 1.10.0-dev2
+Status: Development / Reference Reasoning 2.0
+Base: SVS 1.9.1 Stable by explicit user decision; visual R2b remains incomplete.
 
 Streetcraft is a visual transformation specification.
 
@@ -60,3 +61,6 @@ Before generation run:
 Any S3-class violation blocks generation.
 
 Read `patch/PATCH_RUNTIME_ORDER.md` and `integration/PATCH_HOOKS_1_9_1.md`.
+
+## Reference Reasoning 2.0 development
+Experimental opt-in entry: reference_runtime/reference_reasoning_v2.py. See REFERENCE_REASONING_2.md. The 1.9.1 promotion exception does not apply to 1.10.

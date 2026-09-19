@@ -1,0 +1,15 @@
+{
+  "release": "CRVM-1.4",
+  "L0": "PASS_26_26",
+  "L1": "PASS",
+  "L2": "PASS",
+  "L3": "PASS",
+  "camera_grammar": "VALIDATED",
+  "VP00_VP01_VP02_camera_profiles": "VALIDATED",
+  "fear_city_auto_routing": "VALIDATED",
+  "fear_city_identity_threshold": "VALIDATED",
+  "canon_modified": false,
+  "governing_svs_modified": false,
+  "camera_profile_routing_milestone_pct": 100,
+  "next_phase": "Consolidate validated patch into next SVS release without changing the rest of Canon."
+}
