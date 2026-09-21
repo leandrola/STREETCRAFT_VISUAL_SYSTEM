@@ -26,8 +26,10 @@ checks += [
  run('command_invocation/test_commands.py',ROOT/'command_invocation'),
  run('hardening/test_operational_hardening.py',ROOT/'hardening'),
  run('reference_runtime/test_archive_aware_runtime.py',ROOT),
+ run('reference_runtime/test_reference_reasoning.py',ROOT/'reference_runtime'),
  run('scene_intelligence/test_scene_intelligence.py',ROOT/'scene_intelligence'),
  run('validation/test_patch_1_9_1.py',ROOT),
+ run('validation/test_single_client_1_10_0.py',ROOT),
 ]
 # Exact embedded visuals have a provenance manifest; verify current bytes against recorded git blob ids.
 prov=json.loads((ROOT/'RECONSTRUCTION_PROVENANCE.json').read_text())
@@ -47,7 +49,7 @@ golden_bad=[r['path'] for r in gold['fixtures'] if not (ROOT/r['path']).exists()
 checks.append({'name':'golden_fixture_integrity','status':'PASS' if not golden_bad else 'FAIL','fixtures_checked':len(gold['fixtures']),'failures':golden_bad})
 checks.append(run('benchmark/check_r2_baseline.py',ROOT))
 status='PASS' if all(c['status']=='PASS' for c in checks) else 'FAIL'
-report={'suite':'SVS 1.9.1 / CIL 1.1 Integrated Regression','R0':status,'R1_current_embedded_assets':next(c['status'] for c in checks if c['name']=='exact_embedded_asset_identity'),'R2b_visual':'REQUIRED_PENDING','stable_promotion':False,'checks':checks}
+report={'suite':'SVS 1.10.0 Unified Client Regression','base_release':'SVS 1.9.1 / CIL 1.1','R0':status,'R1_current_embedded_assets':next(c['status'] for c in checks if c['name']=='exact_embedded_asset_identity'),'R2b_visual':'REQUIRED_PENDING','stable_promotion':False,'checks':checks}
 out=ROOT/'validation/INTEGRATION_QA.json';out.write_text(json.dumps(report,indent=2),encoding='utf-8')
 print(json.dumps(report,indent=2))
 raise SystemExit(0 if status=='PASS' else 1)

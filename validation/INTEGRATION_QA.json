@@ -1,5 +1,6 @@
 {
-  "suite": "SVS 1.9.1 / CIL 1.1 Integrated Regression",
+  "suite": "SVS 1.10.0 Unified Client Regression",
+  "base_release": "SVS 1.9.1 / CIL 1.1",
   "R0": "PASS",
   "R1_current_embedded_assets": "PASS",
   "R2b_visual": "REQUIRED_PENDING",
@@ -34,6 +35,12 @@
       "stderr": ""
     },
     {
+      "name": "reference_runtime/test_reference_reasoning.py",
+      "status": "PASS",
+      "stdout": "",
+      "stderr": "................\n----------------------------------------------------------------------\nRan 16 tests in 0.002s\n\nOK"
+    },
+    {
       "name": "scene_intelligence/test_scene_intelligence.py",
       "status": "PASS",
       "stdout": "PASS 24/24 Scene Intelligence tests",
@@ -43,6 +50,12 @@
       "name": "validation/test_patch_1_9_1.py",
       "status": "PASS",
       "stdout": "PASS 24/24 SVS 1.9.1 patch tests",
+      "stderr": ""
+    },
+    {
+      "name": "validation/test_single_client_1_10_0.py",
+      "status": "PASS",
+      "stdout": "PASS single-client governance 1.10.0",
       "stderr": ""
     },
     {
@@ -66,7 +79,7 @@
       "name": "benchmark/check_r2_baseline.py",
       "status": "PASS",
       "stdout": "{\n  \"result\": \"PASS\",\n  \"cases\": 14,\n  \"fixtures_checked\": 20,\n  \"errors\": []\n}",
-      "stderr": "/workspace/scratch/07c40f858f61/work/STREETCRAFT_VISUAL_SYSTEM_V1_10_0_DEV2/benchmark/check_r2_baseline.py:12: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.\n  px=list(im.getdata())"
+      "stderr": "/workspace/scratch/527ce712c476/streetcraft/benchmark/check_r2_baseline.py:12: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.\n  px=list(im.getdata())"
     }
   ]
 }

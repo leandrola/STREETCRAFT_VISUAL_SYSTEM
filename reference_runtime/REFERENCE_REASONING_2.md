@@ -1,11 +1,11 @@
-# Reference Reasoning 2.0 · Primera implementación experimental
+# Reference Reasoning 2.0 · Integración principal de SVS 1.10.0
 
-Estado: EN DESARROLLO, opt-in. No sustituye automáticamente al runtime 1.7.
+Estado: EN DESARROLLO dentro del único cliente Streetcraft. Amplía la admisión Archive 1.7 como componente interno y constituye la interfaz principal de razonamiento de referencias.
 
 ## Flujo implementado
 Validar necesidades → ordenar dependencias → priorizar requeridas → aplicar presupuesto → consultar Archive → filtrar procedencia y duplicados → aplicar admisión existente → resolver contradicciones → proyectar evidencia admitida al CGC.
 
-`resolve_reference_v2` recibe las necesidades existentes con `depends_on` opcional. Usa el mismo callback Archive (`request` → `bundle`) que el runtime anterior. La solicitud agrega `specific_problem`. No requiere nuevos comandos CIL.
+`resolve_reference` recibe las necesidades existentes con `depends_on` opcional. Usa el callback Archive (`request` → `bundle`) de la capa interna de admisión. La solicitud agrega `specific_problem`. No requiere nuevos comandos CIL.
 
 - RN_NONE evita consultas y registra que la fuente es suficiente.
 - RN_BLOCKED conserva unknowns; no busca referencias para rellenarlos.
@@ -23,7 +23,7 @@ Validar necesidades → ordenar dependencias → priorizar requeridas → aplica
 
 ## Uso
 
-Desde Python, incluir `reference_runtime` en el import path, importar `resolve_reference_v2` y `enrich_cgc_v2`. Pasar `needs`, `profile`, `mode`, `camera`, `archive_retriever`; opcionalmente `query_budget`, `allow_support`, `semantic_text_lock`, `occlusion_locked`, `fear_city_confirmed`.
+Desde Python, incluir `reference_runtime` en el import path, importar `resolve_reference` y `enrich_cgc` desde `reference_reasoning`. Pasar `needs`, `profile`, `mode`, `camera`, `archive_retriever`; opcionalmente `query_budget`, `allow_support`, `semantic_text_lock`, `occlusion_locked`, `fear_city_confirmed`.
 
 READY significa que las necesidades documentales modeladas están satisfechas o son opcionales. No certifica calidad visual ni reemplaza el preflight 1.9.1 o el Critic.
 
@@ -34,10 +34,10 @@ READY significa que las necesidades documentales modeladas están satisfechas o 
 - No deduplica contenidos iguales con IDs distintos todavía.
 - No analiza imágenes ni crea SAR2 automáticamente.
 - No ejecuta por sí mismo generación ni preflight 1.9.1: deben permanecer en el flujo posterior.
-- Integración con Archive real y nueva validación visual pendientes. Los 16 casos automatizados usan callbacks controlados.
+- Validación con un catálogo Archive real y nueva validación visual pendientes. Los 16 casos automatizados usan callbacks controlados.
 - Siguiente entrega: integrar y probar el adaptador Archive real; después ampliar deduplicación/contradicciones y evaluar cambios visuales.
 
-La promoción excepcional de 1.9.1 no constituye aprobación de esta versión 1.10.0-dev.
+La promoción excepcional de 1.9.1 no constituye aprobación final de SVS 1.10.0.
 
-## dev2
-Integración de software Archive: 12 comprobaciones PASS con datos sintéticos. Catálogo real no disponible. Nueva entrada run_reference_v2_archive.py; trazas retienen bundle IDs y negative_evidence.
+## Integración Archive
+Integración de software Archive: 12 comprobaciones PASS con datos sintéticos. Catálogo real no disponible. Entrada ejecutable: `run_reference_archive.py`; las trazas retienen bundle IDs y `negative_evidence`.

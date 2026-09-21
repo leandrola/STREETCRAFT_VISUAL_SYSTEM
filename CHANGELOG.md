@@ -1,3 +1,11 @@
+# SVS 1.10.0 — Single-client integration in progress
+
+- Established one Streetcraft client and one release line.
+- Integrated Reference Reasoning 2.0 as the primary reference interface.
+- Retained Archive-aware admission as an internal component, not an alternative client runtime.
+- Removed pre-release, opt-in and unpushed-state labels from current release documentation.
+- Preserved the release gate: R2b must finish with S3=0 and global score >=90.
+
 # CIL 1.1 · RDR2 Elevation Recovery
 
 - Recovered `/sc-rdr2-elevation` → `VP02 + T02 + CG-F`.

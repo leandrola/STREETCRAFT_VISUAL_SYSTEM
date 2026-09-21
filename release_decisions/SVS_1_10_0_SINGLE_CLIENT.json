@@ -1,0 +1,20 @@
+{
+  "decision": "SINGLE_STREETCRAFT_CLIENT",
+  "effective_date": "2026-09-21",
+  "current_client": "SVS 1.9.1 / CIL 1.1",
+  "next_release": "SVS 1.10.0",
+  "scope": "Reference Reasoning 2.0 plus integration hardening",
+  "rules": [
+    "No parallel product clients",
+    "No alternative product runtimes",
+    "No consumable dev or experimental versions",
+    "Internal milestones do not create product versions",
+    "Validated capabilities replace or extend the single main flow"
+  ],
+  "promotion_gate": {
+    "r2b_cases": 6,
+    "s3_violations": 0,
+    "minimum_global_score": 90
+  },
+  "status": "AUTHORIZED_IN_PROGRESS"
+}

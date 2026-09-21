@@ -1,8 +1,8 @@
 {
   "name": "Streetcraft Visual System",
-  "version": "1.10.0-dev2",
-  "build_date": "2026-09-19",
-  "status": "development-reference-reasoning-v2",
+  "version": "1.10.0",
+  "build_date": "2026-09-21",
+  "status": "next-release-in-progress",
   "entry_point": "STREETCRAFT.md",
   "source_repository": "https://github.com/leandrola/STREETCRAFT_VISUAL_SYSTEM",
   "source_base_commit": "04c070d2043295bb802ce3381b7c78faa26ee991",
@@ -38,6 +38,8 @@
   "camera_grammar_modified_by_1_9_1": false,
   "visual_profiles_modified_by_1_9_1": false,
   "cil_modified_by_1_9_1": false,
+  "single_client": true,
+  "parallel_product_runtimes": false,
   "stable_promotion": false,
   "stable_promotion_condition": "fresh R2b visual candidate rerun with S3=0 and global score>=90",
   "reconstruction": {
@@ -68,10 +70,11 @@
     "historical_commit_696afe5": "NOT_VERIFIED_IN_THIS_RUN",
     "fresh_candidates": 0
   },
-  "reference_reasoning_v2": {
-    "status": "EXPERIMENTAL_IMPLEMENTATION",
-    "entry_point": "reference_runtime/reference_reasoning_v2.py",
-    "default_runtime_changed": false,
+  "reference_reasoning": {
+    "capability_version": "2.0",
+    "status": "INTEGRATED_MAINLINE_IN_PROGRESS",
+    "entry_point": "reference_runtime/reference_reasoning.py",
+    "primary_reference_interface": true,
     "archive_software_integration": "PASS_12_CHECKS_SYNTHETIC_EVIDENCE",
     "live_collection_integration": "PENDING_CLASSIFIED_CATALOG"
   }
