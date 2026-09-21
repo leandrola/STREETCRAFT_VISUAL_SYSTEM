@@ -1,0 +1,215 @@
+{
+  "baseline": "SVS 1.10.0 STABLE",
+  "starting_commit": "9a9840cec39da18062d3bb40a1d345d90f1e510e",
+  "root_file_count_before": 40,
+  "root_file_count_after": 12,
+  "runtime_changes": 0,
+  "status": "PASS",
+  "scope": "Available local regression and evidence integrity; external cases explicitly not rerun",
+  "moves": {
+    "CAMERA_ROUTING_PATCH_SCOPE.md": "docs/history/CAMERA_ROUTING_PATCH_SCOPE.md",
+    "CAMERA_ROUTING_VALIDATION_SCOPE.md": "docs/history/CAMERA_ROUTING_VALIDATION_SCOPE.md",
+    "CIL_1_1_RECOVERY.md": "docs/history/CIL_1_1_RECOVERY.md",
+    "CIL_PATCH_SCOPE.md": "docs/history/CIL_PATCH_SCOPE.md",
+    "CIL_SYNC_STATUS_696afe5.md": "docs/history/CIL_SYNC_STATUS_696afe5.md",
+    "CHANGELOG_1_9_1.md": "docs/history/CHANGELOG_1_9_1.md",
+    "PATCH_NOTES_1_9_1.md": "docs/history/PATCH_NOTES_1_9_1.md",
+    "INTEGRATION_NOTES.md": "docs/history/INTEGRATION_NOTES.md",
+    "REFERENCE_V2_ARCHIVE_INTEGRATION.md": "docs/history/REFERENCE_V2_ARCHIVE_INTEGRATION.md",
+    "RELEASE_NOTES_1_6_2.md": "docs/releases/RELEASE_NOTES_1_6_2.md",
+    "RELEASE_NOTES_1_6_3.md": "docs/releases/RELEASE_NOTES_1_6_3.md",
+    "RELEASE_NOTES_1_6_4.md": "docs/releases/RELEASE_NOTES_1_6_4.md",
+    "RELEASE_NOTES_1_7_0.md": "docs/releases/RELEASE_NOTES_1_7_0.md",
+    "RELEASE_NOTES_1_8_0.md": "docs/releases/RELEASE_NOTES_1_8_0.md",
+    "RELEASE_NOTES_1_8_1.md": "docs/releases/RELEASE_NOTES_1_8_1.md",
+    "RELEASE_NOTES_1_9_0.md": "docs/releases/RELEASE_NOTES_1_9_0.md",
+    "RELEASE_NOTES_1_9_1.md": "docs/releases/RELEASE_NOTES_1_9_1.md",
+    "RELEASE_NOTES_CIL_1_1.md": "docs/releases/RELEASE_NOTES_CIL_1_1.md",
+    "HITO2_RR2_REAL_ARCHIVE_COMPLETION.md": "docs/milestones/HITO2_RR2_REAL_ARCHIVE_COMPLETION.md",
+    "HITO3_CGC_END_TO_END_COMPLETION.md": "docs/milestones/HITO3_CGC_END_TO_END_COMPLETION.md",
+    "HITO4_SVS_1_10_0_PROMOTION.md": "docs/milestones/HITO4_SVS_1_10_0_PROMOTION.md",
+    "RR2_REAL_CATALOG_IMPLEMENTATION_STATUS.md": "docs/milestones/RR2_REAL_CATALOG_IMPLEMENTATION_STATUS.md",
+    "RECONSTRUCTION_PROVENANCE.md": "docs/provenance/RECONSTRUCTION_PROVENANCE.md",
+    "PREP_MANIFEST.json": "docs/provenance/PREP_MANIFEST.json",
+    "PREP_SHA256SUMS.json": "docs/provenance/PREP_SHA256SUMS.json",
+    "DEV_SHA256SUMS.json": "docs/provenance/DEV_SHA256SUMS.json",
+    "INTEGRATED_SHA256SUMS.json": "docs/provenance/INTEGRATED_SHA256SUMS.json",
+    "PATCH_MANIFEST_1_9_1.json": "docs/provenance/PATCH_MANIFEST_1_9_1.json"
+  },
+  "link_repairs": [
+    {
+      "file": "docs/history/INTEGRATION_NOTES.md",
+      "from": "RELEASE_NOTES_1_10_0.md",
+      "to": "../../RELEASE_NOTES_1_10_0.md"
+    },
+    {
+      "file": "docs/history/INTEGRATION_NOTES.md",
+      "from": "validation/RELEASE_GATE_1_10_0_FINAL.json",
+      "to": "../../validation/RELEASE_GATE_1_10_0_FINAL.json"
+    },
+    {
+      "file": "docs/history/REFERENCE_V2_ARCHIVE_INTEGRATION.md",
+      "from": "REFERENCE_REASONING_ARCHIVE_INTEGRATION.md",
+      "to": "../../REFERENCE_REASONING_ARCHIVE_INTEGRATION.md"
+    },
+    {
+      "file": "docs/milestones/RR2_REAL_CATALOG_IMPLEMENTATION_STATUS.md",
+      "from": "validation/RR2_REAL_ARCHIVE_VALIDATION_V1.json",
+      "to": "../../validation/RR2_REAL_ARCHIVE_VALIDATION_V1.json"
+    },
+    {
+      "file": "docs/milestones/RR2_REAL_CATALOG_IMPLEMENTATION_STATUS.md",
+      "from": "validation/CGC_END_TO_END_REAL_ARCHIVE_V1.json",
+      "to": "../../validation/CGC_END_TO_END_REAL_ARCHIVE_V1.json"
+    },
+    {
+      "file": "docs/milestones/RR2_REAL_CATALOG_IMPLEMENTATION_STATUS.md",
+      "from": "reference_runtime/run_reference_archive.py",
+      "to": "../../reference_runtime/run_reference_archive.py"
+    }
+  ],
+  "manifest_dependency_search": {
+    "RECONSTRUCTION_PROVENANCE.json": [
+      "DEV_SHA256SUMS.json",
+      "INTEGRATED_SHA256SUMS.json",
+      "PREP_SHA256SUMS.json",
+      "SVS_1_10_0_SHA256SUMS.json",
+      "benchmark/run_regression_suite.py",
+      "docs/repository/CLEANUP_SHA256SUMS.json",
+      "docs/repository/INVENTORY_BEFORE.json",
+      "validation/SHA256SUMS_1_9_1_FULL_RECONSTRUCTED.json"
+    ],
+    "PREP_MANIFEST.json": [
+      "DEV_SHA256SUMS.json",
+      "INTEGRATED_SHA256SUMS.json",
+      "PREP_SHA256SUMS.json",
+      "SVS_1_10_0_SHA256SUMS.json",
+      "docs/repository/CLEANUP_SHA256SUMS.json",
+      "docs/repository/INVENTORY_BEFORE.json"
+    ],
+    "PREP_SHA256SUMS.json": [
+      "DEV_SHA256SUMS.json",
+      "INTEGRATED_SHA256SUMS.json",
+      "SVS_1_10_0_SHA256SUMS.json",
+      "docs/repository/CLEANUP_SHA256SUMS.json",
+      "docs/repository/INVENTORY_BEFORE.json"
+    ],
+    "DEV_SHA256SUMS.json": [
+      "docs/repository/CLEANUP_SHA256SUMS.json",
+      "docs/repository/INVENTORY_BEFORE.json",
+      "docs/repository/REFERENCE_AUDIT.json"
+    ],
+    "INTEGRATED_SHA256SUMS.json": [
+      "DEV_SHA256SUMS.json",
+      "INTEGRATION_NOTES.md",
+      "SVS_1_10_0_SHA256SUMS.json",
+      "docs/repository/CLEANUP_SHA256SUMS.json",
+      "docs/repository/INVENTORY_BEFORE.json",
+      "docs/repository/REFERENCE_AUDIT.json"
+    ],
+    "PATCH_MANIFEST_1_9_1.json": [
+      "DEV_SHA256SUMS.json",
+      "INTEGRATED_SHA256SUMS.json",
+      "PREP_SHA256SUMS.json",
+      "SVS_1_10_0_SHA256SUMS.json",
+      "docs/repository/CLEANUP_SHA256SUMS.json",
+      "docs/repository/INVENTORY_BEFORE.json",
+      "validation/SHA256SUMS_1_9_1_FULL_RECONSTRUCTED.json"
+    ],
+    "REFERENCE_REASONING_ARCHIVE_INTEGRATION.md": [
+      "README.md",
+      "REFERENCE_V2_ARCHIVE_INTEGRATION.md",
+      "SVS_1_10_0_SHA256SUMS.json",
+      "docs/repository/CLEANUP_SHA256SUMS.json",
+      "docs/repository/INVENTORY_BEFORE.json",
+      "validation/test_single_client_1_10_0.py"
+    ]
+  },
+  "checks": [
+    {
+      "name": "all_original_files_preserved_only_links_changed",
+      "status": "PASS",
+      "errors": [],
+      "original_files": 387,
+      "byte_identical": 384,
+      "link_only_changes": [
+        "docs/history/INTEGRATION_NOTES.md",
+        "docs/history/REFERENCE_V2_ARCHIVE_INTEGRATION.md",
+        "docs/milestones/RR2_REAL_CATALOG_IMPLEMENTATION_STATUS.md"
+      ],
+      "python_files_verified": 27,
+      "moved": 28
+    },
+    {
+      "name": "protected_evidence_runtime_and_stable_manifest",
+      "status": "PASS",
+      "errors": [],
+      "files": 242
+    },
+    {
+      "name": "markdown_relative_links",
+      "status": "PASS",
+      "errors": [],
+      "before": 0,
+      "after": 0,
+      "checked": 122
+    },
+    {
+      "name": "benchmark/run_regression_suite.py",
+      "status": "PASS",
+      "errors": [],
+      "exit_code": 0,
+      "stdout": "{\n  \"suite\": \"SVS 1.10.0 Unified Client Regression\",\n  \"base_release\": \"SVS 1.9.1 / CIL 1.1\",\n  \"R0\": \"PASS\",\n  \"R1_current_embedded_assets\": \"PASS\",\n  \"R2b_visual\": \"PASS\",\n  \"R2b_global_score\": 91.0,\n  \"R2b_s3\": 0,\n  \"RR2_real_archive\": \"PASS\",\n  \"CGC_end_to_end\": \"PASS\",\n  \"promotion_ready\": true,\n  \"stable_promotion\": true,\n  \"release_status\": \"STABLE\",\n  \"pending\": [],\n  \"checks\": [\n    {\n      \"name\": \"json_integrity\",\n      \"status\": \"PASS\",\n      \"errors\": []\n    },\n    {\n      \"name\": \"python_syntax\",\n      \"status\": \"PASS\",\n      \"errors\": []\n    },\n    {\n      \"name\": \"command_invocation/test_commands.py\",\n      \"status\": \"PASS\",\n      \"stdout\": \"PASS 19/19 CIL 1.1 tests\",\n      \"stderr\": \"\"\n    },\n    {\n      \"name\": \"hardening/test_operational_hardening.py\",\n      \"status\": \"PASS\",\n      \"stdout\": \"PASS 12/12 operational hardening tests\",\n      \"stderr\": \"\"\n    },\n    {\n      \"name\": \"reference_runtime/test_archive_aware_runtime.py\",\n      \"status\": \"PASS\",\n      \"stdout\": \"PASS 10/10 archive-aware runtime unit tests\",\n      \"stderr\": \"\"\n    },\n    {\n      \"name\": \"reference_runtime/test_reference_reasoning.py\",\n      \"status\": \"PASS\",\n      \"stdout\": \"\",\n      \"stderr\": \"..................\\n----------------------------------------------------------------------\\nRan 18 tests in 0.003s\\n\\nOK\"\n    },\n    {\n      \"name\": \"scene_intelligence/test_scene_intelligence.py\",\n      \"status\": \"PASS\",\n      \"stdout\": \"PASS 24/24 Scene Intelligence tests\",\n      \"stderr\": \"\"\n    },\n    {\n      \"name\": \"integration/test_streetcraft_orchestrator.py\",\n      \"status\": \"PASS\",\n      \"stdout\": \"\",\n      \"stderr\": \"..........\\n----------------------------------------------------------------------\\nRan 10 tests in 0.003s\\n\\nOK\"\n    },\n    {\n      \"name\": \"validation/test_patch_1_9_1.py\",\n      \"status\": \"PASS\",\n      \"stdout\": \"PASS 24/24 SVS 1.9.1 patch tests\",\n      \"stderr\": \"\"\n    },\n    {\n      \"name\": \"validation/test_single_client_1_10_0.py\",\n      \"status\": \"PASS\",\n      \"stdout\": \"PASS single-client governance 1.10.0\",\n      \"stderr\": \"\"\n    },\n    {\n      \"name\": \"exact_embedded_asset_identity\",\n      \"status\": \"PASS\",\n      \"failures\": []\n    },\n    {\n      \"name\": \"historical_l2_embedded_identity\",\n      \"status\": \"PASS\",\n      \"fixture_count\": 7,\n      \"failures\": []\n    },\n    {\n      \"name\": \"golden_fixture_integrity\",\n      \"status\": \"PASS\",\n      \"fixtures_checked\": 25,\n      \"failures\": []\n    },\n    {\n      \"name\": \"benchmark/check_r2_baseline.py\",\n      \"status\": \"PASS\",\n      \"stdout\": \"{\\n  \\\"result\\\": \\\"PASS\\\",\\n  \\\"cases\\\": 14,\\n  \\\"fixtures_checked\\\": 20,\\n  \\\"errors\\\": []\\n}\",\n      \"stderr\": \"/private/var/folders/4j/9wb2jw_12k9gvtcfjwqv58000000gn/T/streetcraft-root-hygiene-cw4_7oa6/test-copy-nfoosbew/benchmark/check_r2_baseline.py:12: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.\\n  px=list(im.getdata())\"\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "validation/camera_routing/validate_matrix.py",
+      "status": "PASS",
+      "errors": [],
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"passed\": 26,\n  \"total\": 26\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "validation/camera_routing/validate_l3.py",
+      "status": "PASS",
+      "errors": [],
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"passed\": 7,\n  \"total\": 7\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "schemas_and_stored_CGC_SAR2_instances",
+      "status": "PASS",
+      "errors": [],
+      "schemas": 16,
+      "instances": 22
+    },
+    {
+      "name": "recorded_real_Archive_evidence_provenance",
+      "status": "PASS",
+      "errors": [],
+      "cases": 16,
+      "module_hashes": 20,
+      "scope": "Preserved evidence check, not external execution"
+    },
+    {
+      "name": "R2b_recorded_evidence",
+      "status": "PASS",
+      "errors": [],
+      "files": 14,
+      "recorded_result": {
+        "cases": 6,
+        "s3": 0,
+        "global_score": 91.0,
+        "total_points": 546,
+        "max_points": 600
+      }
+    },
+    {
+      "name": "RR2_real_CGC_E2E_and_external_Archive_integration",
+      "status": "NOT RERUN · EXTERNAL ARCHIVE UNAVAILABLE",
+      "reason": "No matching Archive package in repository, accessible Documents/Desktop or local filename index. Stored release evidence is preserved and separately checked."
+    }
+  ]
+}

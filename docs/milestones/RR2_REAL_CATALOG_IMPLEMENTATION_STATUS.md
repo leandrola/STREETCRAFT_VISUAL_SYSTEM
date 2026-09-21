@@ -1,6 +1,6 @@
 # Hito 2 · RR2 / Archive synthetic → real
 
-> Historical pre-validation implementation checklist. All steps below were subsequently completed; the patch was integrated and is not a required local input. Current results: [RR2 real 8/8 PASS](validation/RR2_REAL_ARCHIVE_VALIDATION_V1.json), [CGC E2E 8/8 PASS](validation/CGC_END_TO_END_REAL_ARCHIVE_V1.json). Current executable: [run_reference_archive.py](reference_runtime/run_reference_archive.py).
+> Historical pre-validation implementation checklist. All steps below were subsequently completed; the patch was integrated and is not a required local input. Current results: [RR2 real 8/8 PASS](../../validation/RR2_REAL_ARCHIVE_VALIDATION_V1.json), [CGC E2E 8/8 PASS](../../validation/CGC_END_TO_END_REAL_ARCHIVE_V1.json). Current executable: [run_reference_archive.py](../../reference_runtime/run_reference_archive.py).
 
 ## Implemented in this patch
 

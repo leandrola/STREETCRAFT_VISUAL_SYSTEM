@@ -1,6 +1,6 @@
 # Reference Reasoning 2.0 · Archive integration · dev2
 
-> Historical development integration record; its pending status and synthetic-only results are superseded by [the stable Archive integration](REFERENCE_REASONING_ARCHIVE_INTEGRATION.md). SVS 1.10.0 STABLE is the sole current client. The executable examples below use the current runner name; they do not introduce another runtime.
+> Historical development integration record; its pending status and synthetic-only results are superseded by [the stable Archive integration](../../REFERENCE_REASONING_ARCHIVE_INTEGRATION.md). SVS 1.10.0 STABLE is the sole current client. The executable examples below use the current runner name; they do not introduce another runtime.
 
 12/12 comprobaciones contra módulos reales de STREETCRAFT_ARCHIVE_V1_FINAL.
 Evidence Units sintéticos, identificados como TEST / SYNTHETIC-TEST-ONLY: no equivale a recuperación sobre la colección real.
