@@ -1,5 +1,7 @@
 # Hito 3 · CGC end-to-end · COMPLETADO
 
+> Historical Hito 3 completion record, preceding promotion. The later [Hito 4](HITO4_SVS_1_10_0_PROMOTION.md) completed promotion to SVS 1.10.0 STABLE; the promotion-ready statement below is historical.
+
 Fecha: 2026-09-21
 
 ## Flujo integrado

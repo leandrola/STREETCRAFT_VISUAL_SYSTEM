@@ -21,6 +21,8 @@ The catalog is metadata-only. Archive retrieval reasons over classified Evidence
 - Fear City geographic isolation;
 - locked unknowns.
 
-## Important
+## Validation and runtime dependency
 
-The current connected GitHub integration is read-only in this session (write returned HTTP 403), and `STREETCRAFT_ARCHIVE_V1_FINAL` is not available as a connected file/repository here. Therefore this patch prepares the classified real catalog and RR2 changes, but the final real-Archive execution must run where the Archive V1 Final runtime is available.
+Real validation is complete: [8/8 RR2 cases](../../validation/RR2_REAL_ARCHIVE_VALIDATION_V1.json) and [8/8 CGC E2E cases](../../validation/CGC_END_TO_END_REAL_ARCHIVE_V1.json) passed for SVS 1.10.0 STABLE. Requests, results, bundles and traces remain under `validation/rr2_real_archive/` and `validation/cgc_e2e/` at the repository root.
+
+Re-execution requires an external `STREETCRAFT_ARCHIVE_V1_FINAL` runtime matching the [recorded module identity](../../validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json). The catalog is not a replacement for that software. See [verification instructions](../../docs/repository/VERIFICATION.md).

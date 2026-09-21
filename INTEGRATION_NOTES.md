@@ -1,5 +1,7 @@
 # Integración verificada · SVS 1.9.1 / CIL 1.1
 
+> Historical reconstruction record for SVS 1.9.1. Candidate status and checksums below describe that build. Current status: [SVS 1.10.0 STABLE](RELEASE_NOTES_1_10_0.md), with the [final gate](validation/RELEASE_GATE_1_10_0_FINAL.json) and original release manifest `SVS_1_10_0_SHA256SUMS.json`.
+
 - Master indicado por el usuario: STREETCRAFT_VISUAL_SYSTEM_V1_6_2.zip (copia de la carpeta Streetcraft, 12/09).
 - Runtime y CIL conservados del paquete 1.9.1 / CIL 1.1 recuperado.
 - 73 archivos faltantes restaurados desde master 1.6.2 y baseline 1.8.1.

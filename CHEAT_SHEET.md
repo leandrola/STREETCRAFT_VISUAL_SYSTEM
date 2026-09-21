@@ -1,4 +1,4 @@
-# Streetcraft 1.9.1 / CIL 1.1 · Cheat Sheet
+# Streetcraft SVS 1.10.0 / CIL 1.1 · Cheat Sheet
 
 ## Everyday commands
 - `/sc-core` — VP00 + T01 + Camera Auto

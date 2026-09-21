@@ -27,3 +27,13 @@ htmlcov/
 *.swp
 *.swo
 *~
+
+# Disposable local tooling and build outputs (release evidence stays tracked)
+.cache/
+.tox/
+.nox/
+*.egg-info/
+/build/
+/dist/
+/tmp/
+/outputs/

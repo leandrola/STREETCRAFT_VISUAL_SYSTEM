@@ -27,7 +27,7 @@ Desde Python, incluir `reference_runtime` en el import path, importar `resolve_r
 
 READY significa que las necesidades documentales modeladas están satisfechas o son opcionales. No certifica calidad visual ni reemplaza el preflight 1.9.1 o el Critic.
 
-## Límites y pendientes
+## Límites de alcance
 
 - Saturación inicial: una consulta por necesidad; sin búsqueda iterativa adaptativa ni ranking nuevo.
 - Conflictos detectados por IDs inconsistentes, conflictos estructurados del bundle y `claim_key`/`claim_value` explícitos del catálogo. No se infieren contradicciones semánticas en lenguaje natural.
@@ -37,7 +37,7 @@ READY significa que las necesidades documentales modeladas están satisfechas o 
 - Validación real completada el 21/09/2026: catálogo V1 con 10 Evidence Units, 18/18 tests RR2 PASS y 8/8 casos reales PASS contra runtime byte-verificado de `STREETCRAFT_ARCHIVE_V1_FINAL`. R2b visual también cerró PASS con 91.0 y S3=0.
 - CGC end-to-end validado el 21/09/2026: 8/8 casos PASS atravesando CIL → SAR2 → RR2/Archive → CGC → hardening/preflight.
 
-SVS 1.10.0 queda promotion-ready; la promoción a Stable sigue requiriendo decisión explícita del usuario.
+SVS 1.10.0 está **STABLE**. La promoción fue completada en el [Gate 4 final](../validation/RELEASE_GATE_1_10_0_FINAL.json); el [Roadmap 21/9](../ROADMAP.md) está cerrado.
 
 ## Integración Archive
 Integración de software Archive: 12 comprobaciones sintéticas históricas PASS + 8/8 casos reales PASS. Entrada ejecutable: `run_reference_archive.py`; las trazas retienen bundle IDs, `negative_evidence`, request/evidence SHA y hashes del runtime Archive.
