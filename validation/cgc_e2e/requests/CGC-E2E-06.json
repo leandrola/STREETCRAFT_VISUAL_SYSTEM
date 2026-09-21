@@ -1,0 +1,49 @@
+{
+  "command_text": "/sc-2a",
+  "scene": {
+    "scene_id": "CGC-E2E-06",
+    "source_identity": "REAL_PROJECT_SOURCE",
+    "mode": "T01",
+    "profile": "VP02",
+    "entities": [
+      {
+        "entity_id": "E-BUILDING",
+        "label": "source storefront",
+        "kind": "ARCHITECTURE",
+        "roles": [
+          "STRUCTURAL_CORE",
+          "IDENTITY_ANCHOR"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {
+          "identity_salience": 1,
+          "structural_dependency": 1,
+          "task_relevance": 1,
+          "relationship_centrality": 0,
+          "temporal_relevance": 0
+        }
+      }
+    ],
+    "relationships": []
+  },
+  "reference_needs": [
+    {
+      "need_id": "N-WET",
+      "state": "RN_REQUIRED",
+      "target_domains": [
+        "RAIN_SNOW_ASPHALT"
+      ],
+      "specific_problem": "Determine source-compatible pavement wetness for R2B-191-A",
+      "task_context": "R2b corrective rerun",
+      "source_context": "Source and candidate disagree",
+      "min_provenance": "P2",
+      "max_transfer_risk": "MEDIUM",
+      "max_results": 5
+    }
+  ],
+  "query_budget": 2,
+  "_validation_expected": "BLOCKED_REFERENCE"
+}

@@ -1,0 +1,45 @@
+{
+  "command_text": "/sc-2a",
+  "scene": {
+    "scene_id": "CGC-E2E-08",
+    "source_identity": "REAL_PROJECT_SOURCE",
+    "mode": "T01",
+    "profile": "VP02",
+    "entities": [
+      {
+        "entity_id": "E-BUILDING",
+        "label": "source storefront",
+        "kind": "ARCHITECTURE",
+        "roles": [
+          "STRUCTURAL_CORE",
+          "IDENTITY_ANCHOR"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {
+          "identity_salience": 1,
+          "structural_dependency": 1,
+          "task_relevance": 1,
+          "relationship_centrality": 0,
+          "temporal_relevance": 0
+        }
+      }
+    ],
+    "relationships": []
+  },
+  "text_tokens": [
+    {
+      "token_id": "T-DINER",
+      "literal": "TERMINAL DINER",
+      "confidence": 0.99,
+      "preservation_level": "P0",
+      "identity_bearing": true
+    }
+  ],
+  "proposed_text": {
+    "T-DINER": "TERMINAL DINNER"
+  },
+  "_validation_expected": "BLOCKED_PREFLIGHT"
+}

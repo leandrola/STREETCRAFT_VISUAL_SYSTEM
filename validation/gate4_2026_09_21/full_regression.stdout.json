@@ -1,0 +1,97 @@
+{
+  "suite": "SVS 1.10.0 Unified Client Regression",
+  "base_release": "SVS 1.9.1 / CIL 1.1",
+  "R0": "PASS",
+  "R1_current_embedded_assets": "PASS",
+  "R2b_visual": "PASS",
+  "R2b_global_score": 91.0,
+  "R2b_s3": 0,
+  "RR2_real_archive": "PASS",
+  "CGC_end_to_end": "PASS",
+  "promotion_ready": true,
+  "stable_promotion": false,
+  "pending": [],
+  "checks": [
+    {
+      "name": "json_integrity",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "name": "python_syntax",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "name": "command_invocation/test_commands.py",
+      "status": "PASS",
+      "stdout": "PASS 19/19 CIL 1.1 tests",
+      "stderr": ""
+    },
+    {
+      "name": "hardening/test_operational_hardening.py",
+      "status": "PASS",
+      "stdout": "PASS 12/12 operational hardening tests",
+      "stderr": ""
+    },
+    {
+      "name": "reference_runtime/test_archive_aware_runtime.py",
+      "status": "PASS",
+      "stdout": "PASS 10/10 archive-aware runtime unit tests",
+      "stderr": ""
+    },
+    {
+      "name": "reference_runtime/test_reference_reasoning.py",
+      "status": "PASS",
+      "stdout": "",
+      "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.003s\n\nOK"
+    },
+    {
+      "name": "scene_intelligence/test_scene_intelligence.py",
+      "status": "PASS",
+      "stdout": "PASS 24/24 Scene Intelligence tests",
+      "stderr": ""
+    },
+    {
+      "name": "integration/test_streetcraft_orchestrator.py",
+      "status": "PASS",
+      "stdout": "",
+      "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.004s\n\nOK"
+    },
+    {
+      "name": "validation/test_patch_1_9_1.py",
+      "status": "PASS",
+      "stdout": "PASS 24/24 SVS 1.9.1 patch tests",
+      "stderr": ""
+    },
+    {
+      "name": "validation/test_single_client_1_10_0.py",
+      "status": "PASS",
+      "stdout": "PASS single-client governance 1.10.0",
+      "stderr": ""
+    },
+    {
+      "name": "exact_embedded_asset_identity",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "name": "historical_l2_embedded_identity",
+      "status": "PASS",
+      "fixture_count": 7,
+      "failures": []
+    },
+    {
+      "name": "golden_fixture_integrity",
+      "status": "PASS",
+      "fixtures_checked": 25,
+      "failures": []
+    },
+    {
+      "name": "benchmark/check_r2_baseline.py",
+      "status": "PASS",
+      "stdout": "{\n  \"result\": \"PASS\",\n  \"cases\": 14,\n  \"fixtures_checked\": 20,\n  \"errors\": []\n}",
+      "stderr": "/mnt/data/sc_gate4/STREETCRAFT_VISUAL_SYSTEM/benchmark/check_r2_baseline.py:12: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.\n  px=list(im.getdata())"
+    }
+  ]
+}

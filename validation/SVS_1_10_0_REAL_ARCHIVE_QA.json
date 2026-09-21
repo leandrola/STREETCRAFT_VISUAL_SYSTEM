@@ -24,13 +24,15 @@
   ],
   "not_claimed": [
     "No semantic contradiction inference from natural language.",
-    "SVS 1.10.0 stable promotion is not claimed until CGC end-to-end validation is complete."
+    "Stable promotion is not automatic; explicit user release decision remains required."
   ],
-  "next_gate": "Integrate RR2 projection into full CGC orchestration and validate end-to-end.",
+  "next_gate": "No technical gate remains in roadmap 21/9; explicit user release decision only.",
   "archive_execution": "PASS_8_OF_8",
   "rr2_unit_tests": "PASS_18_OF_18",
   "bundles_preserved": true,
   "provenance_sha_preserved": true,
   "traces_preserved": true,
-  "archive_runtime_identity": "PASS_20_MODULE_HASHES"
+  "archive_runtime_identity": "PASS_20_MODULE_HASHES",
+  "cgc_end_to_end": "PASS_8_OF_8",
+  "promotion_ready": true
 }

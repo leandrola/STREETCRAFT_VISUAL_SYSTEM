@@ -28,6 +28,7 @@ checks += [
  run('reference_runtime/test_archive_aware_runtime.py',ROOT),
  run('reference_runtime/test_reference_reasoning.py',ROOT/'reference_runtime'),
  run('scene_intelligence/test_scene_intelligence.py',ROOT/'scene_intelligence'),
+ run('integration/test_streetcraft_orchestrator.py',ROOT),
  run('validation/test_patch_1_9_1.py',ROOT),
  run('validation/test_single_client_1_10_0.py',ROOT),
 ]
@@ -52,7 +53,13 @@ status='PASS' if all(c['status']=='PASS' for c in checks) else 'FAIL'
 r2b=json.loads((ROOT/'benchmark/r2b_1_9_1/RUN_STATUS.json').read_text())
 real_archive_path=ROOT/'validation/RR2_REAL_ARCHIVE_VALIDATION_V1.json'
 real_archive=json.loads(real_archive_path.read_text()) if real_archive_path.exists() else {'status':'PENDING'}
-report={'suite':'SVS 1.10.0 Unified Client Regression','base_release':'SVS 1.9.1 / CIL 1.1','R0':status,'R1_current_embedded_assets':next(c['status'] for c in checks if c['name']=='exact_embedded_asset_identity'),'R2b_visual':r2b.get('status','PENDING'),'R2b_global_score':r2b.get('global_score'),'R2b_s3':r2b.get('s3_count'),'RR2_real_archive':real_archive.get('status','PENDING'),'stable_promotion':False,'pending':['full CGC orchestration projection'],'checks':checks}
+cgc_path=ROOT/'validation/CGC_END_TO_END_REAL_ARCHIVE_V1.json'
+cgc=json.loads(cgc_path.read_text()) if cgc_path.exists() else {'status':'PENDING'}
+promotion_ready=(status=='PASS' and r2b.get('status')=='PASS' and r2b.get('s3_count')==0 and (r2b.get('global_score') or 0)>=90 and real_archive.get('status')=='PASS' and cgc.get('status')=='PASS')
+final_gate_path=ROOT/'validation/RELEASE_GATE_1_10_0_FINAL.json'
+final_gate=json.loads(final_gate_path.read_text()) if final_gate_path.exists() else {}
+stable_promotion=bool(promotion_ready and final_gate.get('stable_promotion') is True and final_gate.get('status')=='PASS')
+report={'suite':'SVS 1.10.0 Unified Client Regression','base_release':'SVS 1.9.1 / CIL 1.1','R0':status,'R1_current_embedded_assets':next(c['status'] for c in checks if c['name']=='exact_embedded_asset_identity'),'R2b_visual':r2b.get('status','PENDING'),'R2b_global_score':r2b.get('global_score'),'R2b_s3':r2b.get('s3_count'),'RR2_real_archive':real_archive.get('status','PENDING'),'CGC_end_to_end':cgc.get('status','PENDING'),'promotion_ready':promotion_ready,'stable_promotion':stable_promotion,'release_status':'STABLE' if stable_promotion else ('PROMOTION_READY' if promotion_ready else 'GATED'),'pending':[] if promotion_ready else ['unmet technical gate'],'checks':checks}
 out=ROOT/'validation/INTEGRATION_QA.json';out.write_text(json.dumps(report,indent=2),encoding='utf-8')
 print(json.dumps(report,indent=2))
 raise SystemExit(0 if status=='PASS' else 1)

@@ -1,33 +1,23 @@
 # SVS 1.10.0 · Reference Reasoning 2.0
 
-Status: next release in progress. This is the only Streetcraft client line and is not yet a stable promotion.
+Status: **STABLE** · promoted 2026-09-21 after Gate 4 PASS. Single Streetcraft client.
 
 ## Integrated
+- RR2 dependent needs, query budgets, cache, provenance floors, cross-ID dedupe and structured contradictions.
+- Real Archive catalog V1 and Archive adapter execution.
+- End-to-end CGC orchestration: CIL → SAR2 → RR2/Archive → CGC → 1.9.1 pre-generation hardening.
+- Generation blocks before adapter handoff when required references or S3 preflight checks fail.
+- CG-F elevation locks, Semantic Text Lock, Fear City Geographic Null Lock, Reference Bleed Preflight and material-intensity guard remain authoritative.
 
-- Reference Reasoning 2.0 is the primary reference interface.
-- Dependent needs, query budgets, request caching and provenance floors.
-- Duplicate and structured-conflict handling.
-- Scoped Archive admission with semantic-text, occlusion, camera and Fear City geography locks.
-- CGC projection only when required evidence is satisfied and review-free.
-- Single-client governance test and release decision record.
+## Final Gate 4 evidence
+- Unified regression: **PASS**.
+- RR2 unit tests: **18/18 PASS**.
+- Orchestrator: **10/10 PASS**.
+- Real Archive RR2: **8/8 PASS**.
+- CGC end-to-end real Archive: **8/8 PASS**.
+- R2b visual gate: **6/6 · S3=0 · 91.0 PASS**.
+- Visual evidence integrity: **14/14 SHA-256 MATCH**.
+- Archive runtime identity: **20/20 SHA-256 MATCH**.
 
-## Preserved from SVS 1.9.1 / CIL 1.1
-
-- Current Canon and camera routing.
-- Semantic Token Freeze and Low-Confidence Text Mask.
-- Fear City Geographic Null Lock and Reference Bleed Preflight.
-- Atmosphere / Material Carryover Guard.
-- `/sc-rdr2-elevation`, CG-F and all existing CIL commands.
-
-## Evidence
-
-- Reference Reasoning unit tests: 18 PASS.
-- Integrated automated regression: 106 tests/checks PASS.
-- Archive software integration: 12 historical synthetic checks PASS.
-- Real classified Archive catalog V1: 10 Evidence Units.
-- Real Archive execution: 8/8 cases PASS with bundles, provenance SHA and traces preserved.
-- R2b visual gate: 6/6, S3=0, global score 91.0 PASS.
-
-## Required before stable promotion
-
-- Connect reference projection to the complete CGC orchestration path and validate end-to-end.
+## Release state
+All Roadmap 21/9 gates are closed. **SVS 1.10.0 is the stable Streetcraft release.**

@@ -1,0 +1,64 @@
+{
+  "command_text": "/sc-2a",
+  "scene": {
+    "scene_id": "CGC-E2E-01",
+    "source_identity": "REAL_PROJECT_SOURCE",
+    "mode": "T01",
+    "profile": "VP02",
+    "entities": [
+      {
+        "entity_id": "E-BUILDING",
+        "label": "source storefront",
+        "kind": "ARCHITECTURE",
+        "roles": [
+          "STRUCTURAL_CORE",
+          "IDENTITY_ANCHOR"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {
+          "identity_salience": 1,
+          "structural_dependency": 1,
+          "task_relevance": 1,
+          "relationship_centrality": 0,
+          "temporal_relevance": 0
+        }
+      },
+      {
+        "entity_id": "E-MATERIAL",
+        "label": "restrained facade material",
+        "kind": "SURFACE",
+        "roles": [
+          "CONTEXTUAL_SUPPORT"
+        ],
+        "preservation_level": "P3",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "reference_domain": "MATERIALS",
+        "reference_required": true,
+        "reference_problem": "Restrained weathered facade material behavior",
+        "reference_task_context": "RDR2 facade transformation",
+        "reference_source_context": "Material response under-specified",
+        "min_provenance": "P2",
+        "max_transfer_risk": "LOW",
+        "max_results": 3,
+        "source_invariants": [
+          "geometry preserved",
+          "signage preserved"
+        ],
+        "forbidden_transfers": [
+          "exact facade geometry"
+        ],
+        "salience": {
+          "task_relevance": 1
+        }
+      }
+    ],
+    "relationships": []
+  },
+  "query_budget": 2,
+  "_validation_expected": "GENERATION_READY"
+}

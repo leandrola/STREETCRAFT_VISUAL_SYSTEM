@@ -1,0 +1,1 @@
+{"status": "READY", "queries": 0, "evidence_count": 10}

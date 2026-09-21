@@ -1,0 +1,268 @@
+{
+  "version": "SC-ORCH-1.0",
+  "command": {
+    "status": "OK",
+    "commands": [
+      "/sc-fear"
+    ],
+    "config": {
+      "profile": "VP03",
+      "mode": "T06",
+      "camera": "CG-FC",
+      "fear_city_identity": "REQUIRE_CONFIRMED_OR_RESOLVE",
+      "preservation": null,
+      "uncertainty": null,
+      "explicit_fear_city_profile_override": false,
+      "identity_lock": null,
+      "occlusion_lock": null,
+      "frontalization": null,
+      "aspect_ratio": null,
+      "street_presence": null
+    },
+    "diagnostics": []
+  },
+  "resolved_config": {
+    "profile": "VP03",
+    "mode": "T06",
+    "camera": "CG-FC",
+    "fear_city_identity": "REQUIRE_CONFIRMED_OR_RESOLVE",
+    "preservation": null,
+    "uncertainty": null,
+    "explicit_fear_city_profile_override": false,
+    "identity_lock": null,
+    "occlusion_lock": null,
+    "frontalization": null,
+    "aspect_ratio": null,
+    "street_presence": null
+  },
+  "sar2": {
+    "scene_id": "CGC-E2E-04",
+    "source_identity": "REAL_PROJECT_SOURCE",
+    "mode": "T06",
+    "profile": "VP03",
+    "entities": [
+      {
+        "entity_id": "E-BUILDING",
+        "label": "source storefront",
+        "kind": "ARCHITECTURE",
+        "roles": [
+          "STRUCTURAL_CORE",
+          "IDENTITY_ANCHOR"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {
+          "identity_salience": 1,
+          "structural_dependency": 1,
+          "task_relevance": 1,
+          "relationship_centrality": 0,
+          "temporal_relevance": 0
+        }
+      }
+    ],
+    "relationships": [],
+    "action_plan": [
+      {
+        "entity_id": "E-BUILDING",
+        "action": "PRESERVE_EXACT",
+        "relationship_lock": false,
+        "protected_relationships": [],
+        "salience": {
+          "score": 0.75,
+          "band": "CRITICAL_ATTENTION",
+          "axes": {
+            "identity_salience": 1.0,
+            "structural_dependency": 1.0,
+            "task_relevance": 1.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      }
+    ],
+    "identity_anchors": [
+      "E-BUILDING"
+    ],
+    "unknown_locks": [],
+    "reference_need_hints": [],
+    "warnings": []
+  },
+  "reference_needs": [
+    {
+      "need_id": "N-GEO",
+      "state": "RN_REQUIRED",
+      "target_domains": [
+        "REGIONAL_CHARACTER"
+      ],
+      "specific_problem": "Infer real-world city identity from visual resemblance",
+      "task_context": "Fear City authored-world transformation",
+      "source_context": "Authored world confirmed",
+      "min_provenance": "P2",
+      "max_transfer_risk": "HIGH",
+      "max_results": 3
+    }
+  ],
+  "reference_reasoning": {
+    "version": "RR-2.0",
+    "status": "BLOCKED_REQUIRED",
+    "queries": 1,
+    "query_budget": 2,
+    "need_results": {
+      "N-GEO": "UNRESOLVED"
+    },
+    "unresolved_required": [
+      "N-GEO"
+    ],
+    "trace": [
+      {
+        "need_id": "N-GEO",
+        "reason": [
+          "ARCHIVE_QUERY"
+        ],
+        "screen_rejections": [],
+        "result": "UNRESOLVED",
+        "evidence_ids": [
+          "REAL-FEAR-CITY-GEO-001"
+        ],
+        "evidence_bundle_ids": [
+          "EB-9BA03D3143A615"
+        ],
+        "negative_evidence": [
+          {
+            "anti_pattern": "REGIONAL_LEAK",
+            "rule": "Do not transfer region-specific facts without compatibility evidence.",
+            "evidence_unit_id": "REAL-FEAR-CITY-GEO-001"
+          },
+          {
+            "anti_pattern": "CANON_BY_SIMILARITY",
+            "rule": "Visual similarity cannot promote Archive evidence to Canon.",
+            "evidence_unit_id": "REAL-FEAR-CITY-GEO-001"
+          }
+        ]
+      }
+    ],
+    "admissions": [
+      {
+        "evidence_unit_id": "REAL-FEAR-CITY-GEO-001",
+        "archive_id": "SC-REAL-CATALOG-V1",
+        "decision": "ADMITTED_NEGATIVE_ONLY",
+        "domain": "REGIONAL_CHARACTER",
+        "reasons": [
+          "fear_city_geographic_identity_lock",
+          "canon_by_similarity_forbidden"
+        ],
+        "permitted_learning": [
+          "preserve authored-world relationships",
+          "keep external geography unresolved"
+        ],
+        "forbidden_transfer": [
+          "New York identity",
+          "external regional signage",
+          "real-world landmark import"
+        ],
+        "visible_fact": "Fear City has authored internal place relationships; resemblance does not authorize importing a real-world geographic identity.",
+        "provenance_level": "P4",
+        "authority_score": 0.99,
+        "retrieval_score": 0.975,
+        "transfer_risk": "HIGH",
+        "need_id": "N-GEO"
+      }
+    ],
+    "generation_projection": [],
+    "locked_unknowns": []
+  },
+  "cgc_draft": {
+    "source_identity": "REAL_PROJECT_SOURCE",
+    "mode": "T06",
+    "profile": "VP03",
+    "camera": "CG-FC",
+    "preserve": [
+      "E-BUILDING:source storefront:PRESERVE_EXACT"
+    ],
+    "transform": [],
+    "remove": [],
+    "infer": [],
+    "unknown": [],
+    "forbid": [],
+    "semantic_text_lock": "STRICT",
+    "material_intensity_delta": 0,
+    "occlusion_locks": [],
+    "scene_intelligence": {
+      "scene_id": "CGC-E2E-04",
+      "identity_anchors": [
+        "E-BUILDING"
+      ],
+      "protected_relationships": [],
+      "entity_actions": [
+        {
+          "entity_id": "E-BUILDING",
+          "action": "PRESERVE_EXACT",
+          "relationship_lock": false,
+          "protected_relationships": [],
+          "salience": {
+            "score": 0.75,
+            "band": "CRITICAL_ATTENTION",
+            "axes": {
+              "identity_salience": 1.0,
+              "structural_dependency": 1.0,
+              "task_relevance": 1.0,
+              "relationship_centrality": 0.0,
+              "temporal_relevance": 0.0
+            }
+          }
+        }
+      ],
+      "unknown_locks": [],
+      "reference_need_hints": []
+    },
+    "cil": {
+      "commands": "/sc-fear",
+      "resolved": {
+        "profile": "VP03",
+        "mode": "T06",
+        "camera": "CG-FC",
+        "fear_city_identity": "REQUIRE_CONFIRMED_OR_RESOLVE",
+        "preservation": null,
+        "uncertainty": null,
+        "explicit_fear_city_profile_override": false,
+        "identity_lock": null,
+        "occlusion_lock": null,
+        "frontalization": null,
+        "aspect_ratio": null,
+        "street_presence": null
+      }
+    }
+  },
+  "generation_ready": false,
+  "status": "BLOCKED_REFERENCE",
+  "block_reason": "BLOCKED_REQUIRED",
+  "input_provenance": {
+    "evidence_sha256": "27d1dc9a0a76eb1940c069f15a2712dc0c075cf387c775ab04b547a2e8341a39",
+    "request_sha256": "461f032f74eda7de6aeb1ca62d2cab6b00d3ce19f1abf8fa7b9c694034c116f7",
+    "evidence_count": 10,
+    "archive_modules": {
+      "runtime/assets/asset_cache.py": "3e630e86e66cd6d18a4e31b7055675637d2092419023579bc6ab797ec6a1500e",
+      "runtime/assets/perceptual_dedupe.py": "8847039f498f4c534e57736450ad7920ca8abf73641ae5d197b0ec089acacdf6",
+      "runtime/evidence_intelligence/provenance_scoring.py": "c2804565bae90e73aee2a805c072b7ae509a530e58558056a7b45030848495f3",
+      "runtime/evidence_intelligence/transfer_risk.py": "214acd3c8957178396ae92bb5c7256114599c4194351010c886539da53cbba13",
+      "runtime/governance/governance.py": "eb50a2f37cf903e02b72d680df0b0ebd96956c037bafcd4a393125bec0f22df0",
+      "runtime/governance/health.py": "e111da183bb0f0425d995735fd2d374256be7af2bd809b9b6a5e90529f6a0d08",
+      "runtime/integration/evidence_bundle.py": "3d84b33b8829e5e2ac702b4c8fcb15033be0ad9398ce6b7938eeecaaebff8c92",
+      "runtime/integration/negative_evidence.py": "9463d4767f2e561beb006d96a4a6a96433ad33dac4c9579576a741fba369b83b",
+      "runtime/retrieval/eligibility.py": "a20b8db0e946cc61e0be4413350f66de45c388f792cf9e579b9e0874e823e514",
+      "runtime/retrieval/query_planner.py": "b4240090b5e3eaa8bda401f5edcaf82b23b1f716c324724079ac0876267886ce",
+      "runtime/retrieval/ranking.py": "62af2f94161705d85a41d69106f069352a707c07fc8ab7c2e4f6f6c56eea105e",
+      "runtime/sqlite/dedupe_exact.py": "aa6e6f08fdc63622af96c1359bf0333657216ba0e2b16fca410bb2a6cb199e38",
+      "runtime/sqlite/ingest_snapshot.py": "43782cef7d24954b899a178741044df2cd026223311b67299444386122fd9a71",
+      "runtime/tests/test_archive_v1_final.py": "3b9c6b4339ff134c7287cd9d18fe79cdca1c23669cd718c3a405f7cc6f48c267",
+      "runtime/tests/test_asset_cache_perceptual.py": "47a54ef5c05417ea028a2b8986693194ce4423f0b198bd0b60a2cbc6b148550a",
+      "runtime/tests/test_end_to_end_svs_archive.py": "4758896b9357cbe01d04896688f39e3f302c5d01c199ac929b26364958e50878",
+      "runtime/tests/test_evidence_intelligence.py": "859880987b53381ae0291852016ee5ea11367f46fcd47d05b1e3378ffb92b966",
+      "runtime/tests/test_g5_acceptance.py": "fa04265c07c5b1b02aa09a8e9c3868c7e66ab468a1cbd40c72672df3eb3949ab",
+      "runtime/tests/test_governance_readiness.py": "33ea58b0c4bcf37ab1f200aebd31426efba914d50be4042092351d27312f9b05",
+      "runtime/tests/test_retrieval_benchmark.py": "ebf1bd88b850f9f8e234ec78870808982c4155afe6531d08f9fa724020fa12ce"
+    }
+  }
+}

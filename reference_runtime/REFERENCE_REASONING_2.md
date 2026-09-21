@@ -1,6 +1,6 @@
 # Reference Reasoning 2.0 · Integración principal de SVS 1.10.0
 
-Estado: EN DESARROLLO dentro del único cliente Streetcraft. Amplía la admisión Archive 1.7 como componente interno y constituye la interfaz principal de razonamiento de referencias.
+Estado: INTEGRADO END-TO-END dentro del único cliente Streetcraft. Amplía la admisión Archive 1.7 como componente interno y constituye la interfaz principal de razonamiento de referencias.
 
 ## Flujo implementado
 Validar necesidades → ordenar dependencias → priorizar requeridas → aplicar presupuesto → consultar Archive → filtrar procedencia y duplicados → aplicar admisión existente → resolver contradicciones → proyectar evidencia admitida al CGC.
@@ -33,11 +33,11 @@ READY significa que las necesidades documentales modeladas están satisfechas o 
 - Conflictos detectados por IDs inconsistentes, conflictos estructurados del bundle y `claim_key`/`claim_value` explícitos del catálogo. No se infieren contradicciones semánticas en lenguaje natural.
 - Deduplica contenidos iguales bajo IDs distintos cuando comparten fingerprint (`content_sha256`, `source_sha256` o `source_git_blob_sha`) dentro del mismo dominio.
 - No analiza imágenes ni crea SAR2 automáticamente.
-- No ejecuta por sí mismo generación ni preflight 1.9.1: deben permanecer en el flujo posterior.
+- `reference_reasoning.py` sigue siendo vendor-agnostic; el preflight se ejecuta en `integration/streetcraft_orchestrator.py` antes del handoff al adapter.
 - Validación real completada el 21/09/2026: catálogo V1 con 10 Evidence Units, 18/18 tests RR2 PASS y 8/8 casos reales PASS contra runtime byte-verificado de `STREETCRAFT_ARCHIVE_V1_FINAL`. R2b visual también cerró PASS con 91.0 y S3=0.
-- Siguiente entrega: integrar la proyección RR2/Archive dentro de la orquestación CGC completa y validar end-to-end.
+- CGC end-to-end validado el 21/09/2026: 8/8 casos PASS atravesando CIL → SAR2 → RR2/Archive → CGC → hardening/preflight.
 
-La promoción excepcional de 1.9.1 no constituye aprobación final de SVS 1.10.0.
+SVS 1.10.0 queda promotion-ready; la promoción a Stable sigue requiriendo decisión explícita del usuario.
 
 ## Integración Archive
 Integración de software Archive: 12 comprobaciones sintéticas históricas PASS + 8/8 casos reales PASS. Entrada ejecutable: `run_reference_archive.py`; las trazas retienen bundle IDs, `negative_evidence`, request/evidence SHA y hashes del runtime Archive.

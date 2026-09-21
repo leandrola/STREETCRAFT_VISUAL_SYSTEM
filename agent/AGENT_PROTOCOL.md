@@ -27,3 +27,6 @@ During ANALYZE, build SAR2 before finalizing the CGC: entities → roles → pro
 
 ## SVS 1.9.1 Pre-Generation Patch Gate
 After SAR2/CGC/reference admission and before generation, run Semantic Token Freeze, Low-Confidence Text Mask, Fear City Geographic Null Lock, Reference Bleed Preflight and Atmosphere/Material Carryover Guard. Any S3 blocks generation.
+
+## SVS 1.10 Unified Orchestration
+The executable pre-generation path is `integration/streetcraft_orchestrator.py`. It resolves CIL, builds SAR2, projects the draft CGC, runs RR2/Archive, enriches the CGC, and executes the 1.9.1 pre-generation gate. Only `GENERATION_READY` may be handed to an image-model adapter.

@@ -2,7 +2,7 @@
   "name": "Streetcraft Visual System",
   "version": "1.10.0",
   "build_date": "2026-09-21",
-  "status": "1.10.0-in-progress-hito2-real-archive-pass",
+  "status": "stable-release-1.10.0-gate4-pass",
   "entry_point": "STREETCRAFT.md",
   "source_repository": "https://github.com/leandrola/STREETCRAFT_VISUAL_SYSTEM",
   "source_base_commit": "04c070d2043295bb802ce3381b7c78faa26ee991",
@@ -40,8 +40,8 @@
   "cil_modified_by_1_9_1": false,
   "single_client": true,
   "parallel_product_runtimes": false,
-  "stable_promotion": false,
-  "stable_promotion_condition": "full CGC orchestration projection and end-to-end validation",
+  "stable_promotion": true,
+  "stable_promotion_condition": "fulfilled by explicit user promotion request on 2026-09-21 after Gate 4 PASS",
   "reconstruction": {
     "operational_full_package": true,
     "byte_identical_git_archive": false,
@@ -72,7 +72,7 @@
   },
   "reference_reasoning": {
     "capability_version": "2.0",
-    "status": "REAL_ARCHIVE_VALIDATED_CGC_E2E_PENDING",
+    "status": "REAL_ARCHIVE_VALIDATED_CGC_E2E_PASS",
     "entry_point": "reference_runtime/reference_reasoning.py",
     "primary_reference_interface": true,
     "archive_software_integration": "PASS_12_SYNTHETIC_PLUS_8_REAL_CASES",
@@ -87,6 +87,19 @@
     "rr2_real_archive": "PASS_8_OF_8",
     "archive_runtime_identity": "PASS_20_MODULE_SHA256",
     "full_regression": "PASS",
-    "remaining_gate": "CGC_END_TO_END"
-  }
+    "remaining_gate": "NONE",
+    "cgc_e2e": "PASS_8_OF_8_REAL_ARCHIVE",
+    "orchestrator_unit_tests": "PASS_10_OF_10",
+    "gate4_final": "PASS_PROMOTED_STABLE"
+  },
+  "promotion_ready": true,
+  "orchestration": {
+    "status": "CGC_END_TO_END_PASS",
+    "entry_point": "integration/streetcraft_orchestrator.py",
+    "cli": "integration/run_streetcraft_orchestration.py",
+    "real_archive_cases_passed": "8/8",
+    "unit_tests": "10/10"
+  },
+  "release_status": "STABLE",
+  "final_gate_report": "validation/RELEASE_GATE_1_10_0_FINAL.json"
 }

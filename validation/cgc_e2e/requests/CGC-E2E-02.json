@@ -1,0 +1,47 @@
+{
+  "command_text": "/sc-rdr2-elevation",
+  "scene": {
+    "scene_id": "CGC-E2E-02",
+    "source_identity": "REAL_PROJECT_SOURCE",
+    "mode": "T02",
+    "profile": "VP02",
+    "entities": [
+      {
+        "entity_id": "E-BUILDING",
+        "label": "source storefront",
+        "kind": "ARCHITECTURE",
+        "roles": [
+          "STRUCTURAL_CORE",
+          "IDENTITY_ANCHOR"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {
+          "identity_salience": 1,
+          "structural_dependency": 1,
+          "task_relevance": 1,
+          "relationship_centrality": 0,
+          "temporal_relevance": 0
+        }
+      },
+      {
+        "entity_id": "E-HIDDEN",
+        "label": "occluded rear geometry",
+        "kind": "ARCHITECTURE",
+        "roles": [
+          "UNKNOWN_REGION"
+        ],
+        "preservation_level": "P5-D",
+        "epistemic_class": "UNKNOWN",
+        "confidence": "LOW",
+        "observed": false,
+        "salience": {}
+      }
+    ],
+    "relationships": []
+  },
+  "query_budget": 2,
+  "_validation_expected": "GENERATION_READY"
+}

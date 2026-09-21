@@ -1,0 +1,124 @@
+{
+  "suite": "GATE4_VISUAL_EVIDENCE_INTEGRITY",
+  "status": "PASS",
+  "r2b_status": "PASS",
+  "cases": 6,
+  "s3": 0,
+  "global_score": 91.0,
+  "evidence_files_verified": 14,
+  "evidence_hashes_match": true,
+  "checks": [
+    {
+      "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-A_candidate_initial.png",
+      "expected_sha256": "479c6476c66db88b0ff59ba5a96eb40c0a4bf998fec84df5bf67f9a15ea07405",
+      "actual_sha256": "479c6476c66db88b0ff59ba5a96eb40c0a4bf998fec84df5bf67f9a15ea07405",
+      "expected_size": 3579073,
+      "actual_size": 3579073,
+      "match": true
+    },
+    {
+      "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-A_candidate_rerun_PASS.png",
+      "expected_sha256": "9f2bbbd589d21611ba6dd2416b94d26e9c9739986367d73cc34e1b66e4e13142",
+      "actual_sha256": "9f2bbbd589d21611ba6dd2416b94d26e9c9739986367d73cc34e1b66e4e13142",
+      "expected_size": 2321689,
+      "actual_size": 2321689,
+      "match": true
+    },
+    {
+      "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-A_source.jpg",
+      "expected_sha256": "89face740ce626e2b7adf8b0e98fe7390cd4a51de7d72ece8a77e3745930163b",
+      "actual_sha256": "89face740ce626e2b7adf8b0e98fe7390cd4a51de7d72ece8a77e3745930163b",
+      "expected_size": 63949,
+      "actual_size": 63949,
+      "match": true
+    },
+    {
+      "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-B_candidate_PASS.png",
+      "expected_sha256": "89b30981c14707b0714e7f8f28c25cc2de45ca9fa10130eee89fd76a3ce9692b",
+      "actual_sha256": "89b30981c14707b0714e7f8f28c25cc2de45ca9fa10130eee89fd76a3ce9692b",
+      "expected_size": 3809293,
+      "actual_size": 3809293,
+      "match": true
+    },
+    {
+      "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-B_source.jpg",
+      "expected_sha256": "9a33f40bc6722b0673b1fa4350cc6c28fa024b7e95d6f62bcb766b3a36798650",
+      "actual_sha256": "9a33f40bc6722b0673b1fa4350cc6c28fa024b7e95d6f62bcb766b3a36798650",
+      "expected_size": 195661,
+      "actual_size": 195661,
+      "match": true
+    },
+    {
+      "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-C_candidate_PASS.png",
+      "expected_sha256": "d509878ae19cdc55638e9a228b32fc503f263be636a739bd080c38877b706235",
+      "actual_sha256": "d509878ae19cdc55638e9a228b32fc503f263be636a739bd080c38877b706235",
+      "expected_size": 3193030,
+      "actual_size": 3193030,
+      "match": true
+    },
+    {
+      "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-C_source.jpg",
+      "expected_sha256": "2130500a09548d4f9c1991a210de3cfa13d8ef63406dd0c3a78c257c68858a09",
+      "actual_sha256": "2130500a09548d4f9c1991a210de3cfa13d8ef63406dd0c3a78c257c68858a09",
+      "expected_size": 400306,
+      "actual_size": 400306,
+      "match": true
+    },
+    {
+      "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_candidate_PASS.png",
+      "expected_sha256": "cb8a3ffa9ed1c05c2f5455d21ca6ac56150e69f0a584eb244df751e41cc9f016",
+      "actual_sha256": "cb8a3ffa9ed1c05c2f5455d21ca6ac56150e69f0a584eb244df751e41cc9f016",
+      "expected_size": 3470140,
+      "actual_size": 3470140,
+      "match": true
+    },
+    {
+      "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_source.jpg",
+      "expected_sha256": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+      "actual_sha256": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+      "expected_size": 33183,
+      "actual_size": 33183,
+      "match": true
+    },
+    {
+      "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-E_candidate_PASS.png",
+      "expected_sha256": "71b36dfcc9ee32d3a796733641239cdce2b5fc9dbf9de3cf42a2cc29555b6154",
+      "actual_sha256": "71b36dfcc9ee32d3a796733641239cdce2b5fc9dbf9de3cf42a2cc29555b6154",
+      "expected_size": 3270637,
+      "actual_size": 3270637,
+      "match": true
+    },
+    {
+      "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-E_source.jpg",
+      "expected_sha256": "f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+      "actual_sha256": "f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+      "expected_size": 155553,
+      "actual_size": 155553,
+      "match": true
+    },
+    {
+      "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-F_candidate_initial.png",
+      "expected_sha256": "cb8a3ffa9ed1c05c2f5455d21ca6ac56150e69f0a584eb244df751e41cc9f016",
+      "actual_sha256": "cb8a3ffa9ed1c05c2f5455d21ca6ac56150e69f0a584eb244df751e41cc9f016",
+      "expected_size": 3470140,
+      "actual_size": 3470140,
+      "match": true
+    },
+    {
+      "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-F_candidate_rerun_PASS.png",
+      "expected_sha256": "d9cc3d29b0884572d7aa9d3cf48d2776690264119fdf4eb11263066da06df4d0",
+      "actual_sha256": "d9cc3d29b0884572d7aa9d3cf48d2776690264119fdf4eb11263066da06df4d0",
+      "expected_size": 2870459,
+      "actual_size": 2870459,
+      "match": true
+    },
+    {
+      "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-F_source.png",
+      "expected_sha256": "dc21c48d695cf3d14efa57365b246a765cec770792f173c47a1da1748d38f5bf",
+      "actual_sha256": "dc21c48d695cf3d14efa57365b246a765cec770792f173c47a1da1748d38f5bf",
+      "expected_size": 3884848,
+      "actual_size": 3884848,
+      "match": true
+    }
+  ]
+}

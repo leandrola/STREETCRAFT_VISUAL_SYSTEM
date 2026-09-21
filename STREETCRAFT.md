@@ -1,8 +1,8 @@
 # STREETCRAFT.md
 ## Entry point for AI agents
 Version: SVS 1.10.0
-Status: Next release in progress / single Streetcraft client
-Base: SVS 1.9.1 Stable by explicit user decision; visual R2b remains incomplete.
+Status: STABLE / single Streetcraft client
+Base: SVS 1.9.1 / CIL 1.1; R2b final gate PASS 91.0, S3=0.
 
 Streetcraft is a visual transformation specification.
 
@@ -65,4 +65,4 @@ Read `patch/PATCH_RUNTIME_ORDER.md` and `integration/PATCH_HOOKS_1_9_1.md`.
 ## Reference Reasoning 2.0
 Primary reference entry: `reference_runtime/reference_reasoning.py`. It extends the single Streetcraft flow and uses Archive-aware admission as an internal component. It is not a separate client or alternative runtime.
 
-SVS 1.10.0 remains in progress until the real catalog, full CGC orchestration and visual R2b gate pass. The 1.9.1 promotion exception does not apply to 1.10.0.
+SVS 1.10.0 is STABLE. Final Gate 4 passed regression, visual evidence, real Archive/RR2 evidence and CGC end-to-end orchestration. Primary orchestration: `integration/streetcraft_orchestrator.py`.

@@ -1,3 +1,13 @@
+# SVS 1.10.0 — STABLE · 2026-09-21
+
+- Promoted after Gate 4 final PASS by explicit user decision.
+- Unified regression PASS.
+- R2b visual 6/6, S3=0, global score 91.0.
+- RR2 real Archive 8/8 PASS; bundles, traces and provenance SHA preserved.
+- CGC end-to-end real Archive 8/8 PASS.
+- Archive runtime identity 20/20 SHA-256 match.
+- Single Streetcraft client remains authoritative.
+
 # SVS 1.10.0 — Single-client integration in progress
 
 - Established one Streetcraft client and one release line.

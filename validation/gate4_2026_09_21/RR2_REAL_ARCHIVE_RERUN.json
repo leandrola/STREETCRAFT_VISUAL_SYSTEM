@@ -1,0 +1,123 @@
+{
+  "suite": "GATE4_RR2_REAL_ARCHIVE_RERUN",
+  "archive_runtime": "STREETCRAFT_ARCHIVE_V1_FINAL",
+  "status": "PASS",
+  "passed": 8,
+  "total": 8,
+  "bundles_preserved": true,
+  "provenance_sha_preserved": true,
+  "traces_preserved": true,
+  "cases": [
+    {
+      "case_id": "RR2-REAL-01",
+      "expected": "READY",
+      "actual": "READY",
+      "exitcode": 0,
+      "status": "PASS",
+      "queries": 1,
+      "bundle_ids": [
+        "EB-DC359DF66953C6"
+      ],
+      "trace_count": 1,
+      "evidence_sha256": "27d1dc9a0a76eb1940c069f15a2712dc0c075cf387c775ab04b547a2e8341a39",
+      "request_sha256": "4aad862a1a422b0f7b8498d3eebe920c6eceefdffb970132407052f9e0c43dba"
+    },
+    {
+      "case_id": "RR2-REAL-02",
+      "expected": "BLOCKED_REQUIRED",
+      "actual": "BLOCKED_REQUIRED",
+      "exitcode": 2,
+      "status": "PASS",
+      "queries": 1,
+      "bundle_ids": [
+        "EB-C083A66826FE3E"
+      ],
+      "trace_count": 1,
+      "evidence_sha256": "27d1dc9a0a76eb1940c069f15a2712dc0c075cf387c775ab04b547a2e8341a39",
+      "request_sha256": "c33811349e689df74012c3371d7364fb50686bb60de9f00450b35214687a1cf8"
+    },
+    {
+      "case_id": "RR2-REAL-03",
+      "expected": "BLOCKED_REQUIRED",
+      "actual": "BLOCKED_REQUIRED",
+      "exitcode": 2,
+      "status": "PASS",
+      "queries": 1,
+      "bundle_ids": [
+        "EB-9BA03D3143A615"
+      ],
+      "trace_count": 1,
+      "evidence_sha256": "27d1dc9a0a76eb1940c069f15a2712dc0c075cf387c775ab04b547a2e8341a39",
+      "request_sha256": "c9f36022f4e5535460812e5dda9234cac059d18f79e25b1cf14a69ff363313b5"
+    },
+    {
+      "case_id": "RR2-REAL-04",
+      "expected": "READY",
+      "actual": "READY",
+      "exitcode": 0,
+      "status": "PASS",
+      "queries": 1,
+      "bundle_ids": [
+        "EB-F4E99D8A934174"
+      ],
+      "trace_count": 1,
+      "evidence_sha256": "27d1dc9a0a76eb1940c069f15a2712dc0c075cf387c775ab04b547a2e8341a39",
+      "request_sha256": "9271b4043172bf2d09290f248ef9302d501f514c031ffab5d8f822148f8569ef"
+    },
+    {
+      "case_id": "RR2-REAL-05",
+      "expected": "BLOCKED_REQUIRED",
+      "actual": "BLOCKED_REQUIRED",
+      "exitcode": 2,
+      "status": "PASS",
+      "queries": 1,
+      "bundle_ids": [
+        "EB-EBD0C9A0C73346"
+      ],
+      "trace_count": 1,
+      "evidence_sha256": "27d1dc9a0a76eb1940c069f15a2712dc0c075cf387c775ab04b547a2e8341a39",
+      "request_sha256": "e3eb0961905d1adbdcf285b446a76c7baab2254b2f6503c4734ee4aa3df6e0f6"
+    },
+    {
+      "case_id": "RR2-REAL-06",
+      "expected": "READY",
+      "actual": "READY",
+      "exitcode": 0,
+      "status": "PASS",
+      "queries": 1,
+      "bundle_ids": [
+        "EB-1270277FF04F5F"
+      ],
+      "trace_count": 2,
+      "evidence_sha256": "27d1dc9a0a76eb1940c069f15a2712dc0c075cf387c775ab04b547a2e8341a39",
+      "request_sha256": "1be8271a5b8125af698dfe61c5a4816b5def81fdde8737749e13726ad06a9f67"
+    },
+    {
+      "case_id": "RR2-REAL-07",
+      "expected": "READY",
+      "actual": "READY",
+      "exitcode": 0,
+      "status": "PASS",
+      "queries": 0,
+      "bundle_ids": [],
+      "trace_count": 1,
+      "evidence_sha256": "27d1dc9a0a76eb1940c069f15a2712dc0c075cf387c775ab04b547a2e8341a39",
+      "request_sha256": "a900c783ad8f72802b4fa95649ca9dfba00389b0867a90ccd8a2ab3028aad3be"
+    },
+    {
+      "case_id": "RR2-REAL-08",
+      "expected": "READY",
+      "actual": "READY",
+      "exitcode": 0,
+      "status": "PASS",
+      "queries": 1,
+      "bundle_ids": [
+        "EB-6082F854D94C8D",
+        "EB-6082F854D94C8D"
+      ],
+      "trace_count": 2,
+      "evidence_sha256": "27d1dc9a0a76eb1940c069f15a2712dc0c075cf387c775ab04b547a2e8341a39",
+      "request_sha256": "ff0b3debc6c4d8a0f7df16b25c1972df480a273f94677ce2fc1c25c01b6473d1"
+    }
+  ]
+}

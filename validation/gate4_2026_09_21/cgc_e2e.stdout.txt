@@ -1,0 +1,95 @@
+{
+  "suite": "CGC_END_TO_END_REAL_ARCHIVE_V1",
+  "status": "PASS",
+  "case_count": 8,
+  "passed": 8,
+  "archive_runtime_identity": "PASS",
+  "archive_verified_modules": 20,
+  "evidence_sha256": "27d1dc9a0a76eb1940c069f15a2712dc0c075cf387c775ab04b547a2e8341a39",
+  "cases": [
+    {
+      "case_id": "CGC-E2E-01",
+      "expected": "GENERATION_READY",
+      "actual": "GENERATION_READY",
+      "status": "PASS",
+      "queries": 1,
+      "bundle_ids": [
+        "EB-6ED57AFEEA6D23"
+      ],
+      "request_sha256": "653a089256c5e20a90b2eaf23335d9c9d3d307d468d117a745bbdd6a0e40eeb7"
+    },
+    {
+      "case_id": "CGC-E2E-02",
+      "expected": "GENERATION_READY",
+      "actual": "GENERATION_READY",
+      "status": "PASS",
+      "queries": 0,
+      "bundle_ids": [],
+      "request_sha256": "4f59612dc3cb16be31c523325696e82163d561ddc560e72c69d302813cbc5070"
+    },
+    {
+      "case_id": "CGC-E2E-03",
+      "expected": "BLOCKED_REFERENCE",
+      "actual": "BLOCKED_REFERENCE",
+      "status": "PASS",
+      "queries": 1,
+      "bundle_ids": [
+        "EB-C083A66826FE3E"
+      ],
+      "request_sha256": "c2fa562dd226e33f69e61ea7c6739713dea0a8a0527ba1bff501bb2e8a2ab01c"
+    },
+    {
+      "case_id": "CGC-E2E-04",
+      "expected": "BLOCKED_REFERENCE",
+      "actual": "BLOCKED_REFERENCE",
+      "status": "PASS",
+      "queries": 1,
+      "bundle_ids": [
+        "EB-9BA03D3143A615"
+      ],
+      "request_sha256": "461f032f74eda7de6aeb1ca62d2cab6b00d3ce19f1abf8fa7b9c694034c116f7"
+    },
+    {
+      "case_id": "CGC-E2E-05",
+      "expected": "GENERATION_READY",
+      "actual": "GENERATION_READY",
+      "status": "PASS",
+      "queries": 1,
+      "bundle_ids": [
+        "EB-F4E99D8A934174"
+      ],
+      "request_sha256": "f6aec9204328fc60dd3d703506eb66abbdb0e553b2849bd3da78ea758722a359"
+    },
+    {
+      "case_id": "CGC-E2E-06",
+      "expected": "BLOCKED_REFERENCE",
+      "actual": "BLOCKED_REFERENCE",
+      "status": "PASS",
+      "queries": 1,
+      "bundle_ids": [
+        "EB-EBD0C9A0C73346"
+      ],
+      "request_sha256": "009e7ace1a048f69255af0e79a058d440b379639ca95221c5bda3da142c06ff8"
+    },
+    {
+      "case_id": "CGC-E2E-07",
+      "expected": "GENERATION_READY",
+      "actual": "GENERATION_READY",
+      "status": "PASS",
+      "queries": 1,
+      "bundle_ids": [
+        "EB-1270277FF04F5F"
+      ],
+      "request_sha256": "a176a22def35f2c42470affc132d8d3546394f9f025922738358ed34532b5e23"
+    },
+    {
+      "case_id": "CGC-E2E-08",
+      "expected": "BLOCKED_PREFLIGHT",
+      "actual": "BLOCKED_PREFLIGHT",
+      "status": "PASS",
+      "queries": 0,
+      "bundle_ids": [],
+      "request_sha256": "c84b80c094d868a3d5a5498e9292014671c66e7aa2e692fe51af33c394f2962a"
+    }
+  ]
+}

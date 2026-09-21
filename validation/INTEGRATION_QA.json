@@ -7,10 +7,11 @@
   "R2b_global_score": 91.0,
   "R2b_s3": 0,
   "RR2_real_archive": "PASS",
-  "stable_promotion": false,
-  "pending": [
-    "full CGC orchestration projection"
-  ],
+  "CGC_end_to_end": "PASS",
+  "promotion_ready": true,
+  "stable_promotion": true,
+  "release_status": "STABLE",
+  "pending": [],
   "checks": [
     {
       "name": "json_integrity",
@@ -44,13 +45,19 @@
       "name": "reference_runtime/test_reference_reasoning.py",
       "status": "PASS",
       "stdout": "",
-      "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.003s\n\nOK"
+      "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.004s\n\nOK"
     },
     {
       "name": "scene_intelligence/test_scene_intelligence.py",
       "status": "PASS",
       "stdout": "PASS 24/24 Scene Intelligence tests",
       "stderr": ""
+    },
+    {
+      "name": "integration/test_streetcraft_orchestrator.py",
+      "status": "PASS",
+      "stdout": "",
+      "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.003s\n\nOK"
     },
     {
       "name": "validation/test_patch_1_9_1.py",
@@ -85,7 +92,7 @@
       "name": "benchmark/check_r2_baseline.py",
       "status": "PASS",
       "stdout": "{\n  \"result\": \"PASS\",\n  \"cases\": 14,\n  \"fixtures_checked\": 20,\n  \"errors\": []\n}",
-      "stderr": "/mnt/data/sc_hito2/sc/STREETCRAFT_VISUAL_SYSTEM/benchmark/check_r2_baseline.py:12: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.\n  px=list(im.getdata())"
+      "stderr": "/mnt/data/sc_gate4/STREETCRAFT_VISUAL_SYSTEM/benchmark/check_r2_baseline.py:12: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.\n  px=list(im.getdata())"
     }
   ]
 }

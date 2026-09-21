@@ -24,11 +24,11 @@
 
 ## Resultado
 
-El hito **RR2 / Archive sintético → real** queda cerrado. La deuda siguiente de SVS 1.10.0 es la integración CGC end-to-end.
+El hito **RR2 / Archive sintético → real** queda cerrado. La integración **CGC end-to-end** también quedó cerrada con 8/8 casos PASS.
 
 Evidencia principal:
 - `validation/RR2_REAL_ARCHIVE_VALIDATION_V1.json`
 - `validation/rr2_real_archive/results/`
 - `validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json`
 
-Archive continúa separado de Canon y la evidencia admitida sigue siendo scoped.
+Archive continúa separado de Canon y la evidencia admitida sigue siendo scoped. El handoff al adapter solo ocurre con `GENERATION_READY`.

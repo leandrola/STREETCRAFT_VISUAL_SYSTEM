@@ -1,0 +1,58 @@
+{
+  "version": "1.10.0",
+  "release": "SVS 1.10.0",
+  "date": "2026-09-21",
+  "status": "PASS",
+  "promotion": "STABLE",
+  "promotion_decision": "EXPLICIT_USER_REQUEST_GATE_FINAL_AND_PROMOTION",
+  "single_client": true,
+  "gate": {
+    "regression": {
+      "status": "PASS",
+      "promotion_ready": true,
+      "checks": 14
+    },
+    "visual_evidence": {
+      "status": "PASS",
+      "r2b_cases": 6,
+      "global_score": 91.0,
+      "s3": 0,
+      "evidence_files_verified": 14,
+      "all_sha256_match": true
+    },
+    "real_evidence_rr2": {
+      "status": "PASS",
+      "passed": 8,
+      "total": 8,
+      "bundles_preserved": true,
+      "provenance_sha_preserved": true,
+      "traces_preserved": true
+    },
+    "cgc_end_to_end": {
+      "status": "PASS",
+      "passed": 8,
+      "case_count": 8,
+      "evidence_sha256": "27d1dc9a0a76eb1940c069f15a2712dc0c075cf387c775ab04b547a2e8341a39"
+    },
+    "archive_runtime_identity": {
+      "status": "PASS",
+      "verified_modules": 20
+    }
+  },
+  "test_totals": {
+    "rr2_unit": "18/18 PASS",
+    "orchestrator": "10/10 PASS",
+    "cil": "19/19 PASS",
+    "operational_hardening": "12/12 PASS",
+    "archive_aware_runtime": "10/10 PASS",
+    "scene_intelligence": "24/24 PASS",
+    "patch_1_9_1": "24/24 PASS",
+    "r2b_visual": "6/6 PASS · 91.0 · S3=0",
+    "rr2_real_archive": "8/8 PASS",
+    "cgc_real_archive": "8/8 PASS"
+  },
+  "archive_validation_basis": "RR2 and CGC were rerun against an Archive runtime whose 20 exercised Python modules match the recorded STREETCRAFT_ARCHIVE_V1_FINAL SHA-256 manifest byte-for-byte.",
+  "archive_packaging_note": "The Library copy of STREETCRAFT_ARCHIVE_V1_FINAL.zip was not raw-materializable in this environment. This does not affect the tested runtime identity or RR2/CGC execution path; full Archive acquisition/release packaging was not re-certified by Gate 4.",
+  "pending_technical_gates": [],
+  "stable_promotion": true
+}

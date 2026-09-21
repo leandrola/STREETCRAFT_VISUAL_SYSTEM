@@ -4,18 +4,15 @@
   "status": "AUTOMATED_CHECKS_PASS",
   "primary_entry_point": "reference_runtime/reference_reasoning.py",
   "unit_tests": 18,
-  "integrated_automated_tests": 106,
-  "archive_software_checks": 12,
-  "archive_evidence_scope": "SYNTHETIC_TEST_EVIDENCE",
-  "real_catalog_validation": "PASS_8_OF_8_REAL_CASES",
-  "visual_validation": "R2B_PASS_91_0_S3_0",
+  "archive_evidence_scope": "REAL_CATALOG_V1_VALIDATED",
+  "real_catalog_validation": "PASS_8_OF_8",
+  "visual_validation": "R2B_PASS_91_S3_0",
+  "cgc_end_to_end": "PASS_8_OF_8",
   "result": {
     "test": "reference_runtime/test_reference_reasoning.py",
     "status": "PASS",
     "returncode": 0,
     "stdout": "",
-    "stderr": "................\n----------------------------------------------------------------------\nRan 16 tests in 0.002s\n\nOK"
-  },
-  "real_evidence_units": 10,
-  "real_archive_cases": 8
+    "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.003s\n\nOK"
+  }
 }
