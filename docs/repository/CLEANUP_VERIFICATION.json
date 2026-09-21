@@ -1,0 +1,238 @@
+{
+  "baseline_commit": "ba7c2c19d9eeb09d88644112fac95ff09e4e9aea",
+  "environment": {
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 17.0.0 (clang-1700.6.4.2)]",
+    "Pillow": "12.3.0",
+    "jsonschema": "4.26.0"
+  },
+  "checks": [
+    {
+      "name": "benchmark/run_regression_suite.py",
+      "status": "PASS",
+      "errors": [],
+      "exit_code": 0,
+      "stdout": "{\n  \"suite\": \"SVS 1.10.0 Unified Client Regression\",\n  \"base_release\": \"SVS 1.9.1 / CIL 1.1\",\n  \"R0\": \"PASS\",\n  \"R1_current_embedded_assets\": \"PASS\",\n  \"R2b_visual\": \"PASS\",\n  \"R2b_global_score\": 91.0,\n  \"R2b_s3\": 0,\n  \"RR2_real_archive\": \"PASS\",\n  \"CGC_end_to_end\": \"PASS\",\n  \"promotion_ready\": true,\n  \"stable_promotion\": true,\n  \"release_status\": \"STABLE\",\n  \"pending\": [],\n  \"checks\": [\n    {\n      \"name\": \"json_integrity\",\n      \"status\": \"PASS\",\n      \"errors\": []\n    },\n    {\n      \"name\": \"python_syntax\",\n      \"status\": \"PASS\",\n      \"errors\": []\n    },\n    {\n      \"name\": \"command_invocation/test_commands.py\",\n      \"status\": \"PASS\",\n      \"stdout\": \"PASS 19/19 CIL 1.1 tests\",\n      \"stderr\": \"\"\n    },\n    {\n      \"name\": \"hardening/test_operational_hardening.py\",\n      \"status\": \"PASS\",\n      \"stdout\": \"PASS 12/12 operational hardening tests\",\n      \"stderr\": \"\"\n    },\n    {\n      \"name\": \"reference_runtime/test_archive_aware_runtime.py\",\n      \"status\": \"PASS\",\n      \"stdout\": \"PASS 10/10 archive-aware runtime unit tests\",\n      \"stderr\": \"\"\n    },\n    {\n      \"name\": \"reference_runtime/test_reference_reasoning.py\",\n      \"status\": \"PASS\",\n      \"stdout\": \"\",\n      \"stderr\": \"..................\\n----------------------------------------------------------------------\\nRan 18 tests in 0.003s\\n\\nOK\"\n    },\n    {\n      \"name\": \"scene_intelligence/test_scene_intelligence.py\",\n      \"status\": \"PASS\",\n      \"stdout\": \"PASS 24/24 Scene Intelligence tests\",\n      \"stderr\": \"\"\n    },\n    {\n      \"name\": \"integration/test_streetcraft_orchestrator.py\",\n      \"status\": \"PASS\",\n      \"stdout\": \"\",\n      \"stderr\": \"..........\\n----------------------------------------------------------------------\\nRan 10 tests in 0.003s\\n\\nOK\"\n    },\n    {\n      \"name\": \"validation/test_patch_1_9_1.py\",\n      \"status\": \"PASS\",\n      \"stdout\": \"PASS 24/24 SVS 1.9.1 patch tests\",\n      \"stderr\": \"\"\n    },\n    {\n      \"name\": \"validation/test_single_client_1_10_0.py\",\n      \"status\": \"PASS\",\n      \"stdout\": \"PASS single-client governance 1.10.0\",\n      \"stderr\": \"\"\n    },\n    {\n      \"name\": \"exact_embedded_asset_identity\",\n      \"status\": \"PASS\",\n      \"failures\": []\n    },\n    {\n      \"name\": \"historical_l2_embedded_identity\",\n      \"status\": \"PASS\",\n      \"fixture_count\": 7,\n      \"failures\": []\n    },\n    {\n      \"name\": \"golden_fixture_integrity\",\n      \"status\": \"PASS\",\n      \"fixtures_checked\": 25,\n      \"failures\": []\n    },\n    {\n      \"name\": \"benchmark/check_r2_baseline.py\",\n      \"status\": \"PASS\",\n      \"stdout\": \"{\\n  \\\"result\\\": \\\"PASS\\\",\\n  \\\"cases\\\": 14,\\n  \\\"fixtures_checked\\\": 20,\\n  \\\"errors\\\": []\\n}\",\n      \"stderr\": \"/private/var/folders/4j/9wb2jw_12k9gvtcfjwqv58000000gn/T/streetcraft-cleanup-q31ld4_e/after/benchmark/check_r2_baseline.py:12: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.\\n  px=list(im.getdata())\"\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "validation/camera_routing/validate_matrix.py",
+      "status": "PASS",
+      "errors": [],
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"passed\": 26,\n  \"total\": 26\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "validation/camera_routing/validate_l3.py",
+      "status": "PASS",
+      "errors": [],
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"passed\": 7,\n  \"total\": 7\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "schema_validation",
+      "status": "PASS",
+      "errors": [],
+      "schemas": 16,
+      "instances": 22
+    },
+    {
+      "name": "original_release_integrity_with_documented_changes",
+      "status": "PASS",
+      "errors": [],
+      "release_entries": 377,
+      "unchanged": 369,
+      "documented_changes": [
+        {
+          "path": ".gitignore",
+          "release_sha256": "863a3968365d02ed9ffa9ed0cee2de2eefaffdc9600584067a95b6a97d4b0355",
+          "current_sha256": "db59483fb21e539c84e8b22c8d9fc48305e929872bbab400213de33a8df3938a"
+        },
+        {
+          "path": "CHEAT_SHEET.md",
+          "release_sha256": "3111ca6c2de54f158667768a5889f29347c3eb833c348828b5fcfaa38b247f7b",
+          "current_sha256": "c2476c9c974122de91bd6e093b9b1f800a599b6006b5996f86299fe82ca3c6ea"
+        },
+        {
+          "path": "HITO3_CGC_END_TO_END_COMPLETION.md",
+          "release_sha256": "4826906ca2385af1264b1f6eccff9a7fc43a74a6cd24d85213876a00c568d799",
+          "current_sha256": "5991661e7281e7d646d6032275e7984567c376bb4556992cce64fd33bc5fd64f"
+        },
+        {
+          "path": "INTEGRATION_NOTES.md",
+          "release_sha256": "290e70aded176a16730c22e8bc4860cc9c311a88a88a3212464ff1069e36a249",
+          "current_sha256": "a31602daa9fde49809d1bd21e8df9279cbd0abea7116fffd7b5954931dff875d"
+        },
+        {
+          "path": "README.md",
+          "release_sha256": "8a2f3e763bb76778375f7a534f172795ca08e8ed6845e6aa2e9c5238f518f812",
+          "current_sha256": "fba1aead931881ca5ac4de9d7ceca77853f07d33818b399bdd54c749b83a0e76"
+        },
+        {
+          "path": "RR2_REAL_CATALOG_IMPLEMENTATION_STATUS.md",
+          "release_sha256": "89c0d963650eca5fde727933b4cfd2d1cc559a15e363429632efa082e340c8ca",
+          "current_sha256": "95efc75f2c516db98ff0b7dd663f2b770a09a62996e467685e1cf2a2c4524285"
+        },
+        {
+          "path": "reference_runtime/REFERENCE_REASONING_2.md",
+          "release_sha256": "ab14f32d5880e7da5b79ad65060dad8d9bad78c8adeeb1134ca41e72ab71b680",
+          "current_sha256": "4892fc118211d1bf4a8dc42fb59c7010e773d4ea8b26d9992282e13d1a52cfc3"
+        },
+        {
+          "path": "reference_runtime/real_catalog/README.md",
+          "release_sha256": "7138e59e4dd7087380791610ce4880ff58203fa520479f033e0612077b46dd87",
+          "current_sha256": "e3bc41b321ab5bea40f31d4a255bb6cca8519ec7e6a4cb7266fef41ced57e541"
+        }
+      ]
+    },
+    {
+      "name": "runtime_contracts_and_protected_evidence_unchanged",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "name": "R2b_final_evidence_integrity",
+      "status": "PASS",
+      "errors": [],
+      "files": 14,
+      "cases": 6,
+      "global_score": 91.0,
+      "s3": 0,
+      "scope": "Recorded scores and bytes; no new image generation or visual scoring"
+    },
+    {
+      "name": "recorded_RR2_and_CGC_provenance",
+      "status": "FAIL",
+      "errors": [
+        "RR2-REAL-08: bundle IDs"
+      ],
+      "cases": 16,
+      "trace_entries": 18,
+      "bundle_references": 14,
+      "archive_module_hashes": 20,
+      "scope": "Stored evidence integrity; not a new external Archive execution"
+    },
+    {
+      "name": "RR2 real 8-case re-execution",
+      "status": "NOT_RUN_MISSING_DEPENDENCY",
+      "reason": "External STREETCRAFT_ARCHIVE_V1_FINAL runtime not present in repository or found in accessible Documents/Desktop; Downloads access denied; runtime location requested."
+    },
+    {
+      "name": "CGC E2E real 8-case re-execution",
+      "status": "NOT_RUN_MISSING_DEPENDENCY",
+      "reason": "External STREETCRAFT_ARCHIVE_V1_FINAL runtime not present in repository or found in accessible Documents/Desktop; Downloads access denied; runtime location requested."
+    },
+    {
+      "name": "Archive integration scripts",
+      "status": "NOT_RUN_MISSING_DEPENDENCY",
+      "reason": "External STREETCRAFT_ARCHIVE_V1_FINAL runtime not present in repository or found in accessible Documents/Desktop; Downloads access denied; runtime location requested."
+    },
+    {
+      "name": "internal_markdown_links",
+      "status": "PASS",
+      "errors": [],
+      "checked": 49
+    }
+  ],
+  "unified_regression": {
+    "suite": "SVS 1.10.0 Unified Client Regression",
+    "base_release": "SVS 1.9.1 / CIL 1.1",
+    "R0": "PASS",
+    "R1_current_embedded_assets": "PASS",
+    "R2b_visual": "PASS",
+    "R2b_global_score": 91.0,
+    "R2b_s3": 0,
+    "RR2_real_archive": "PASS",
+    "CGC_end_to_end": "PASS",
+    "promotion_ready": true,
+    "stable_promotion": true,
+    "release_status": "STABLE",
+    "pending": [],
+    "checks": [
+      {
+        "name": "json_integrity",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "name": "python_syntax",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "name": "command_invocation/test_commands.py",
+        "status": "PASS",
+        "stdout": "PASS 19/19 CIL 1.1 tests",
+        "stderr": ""
+      },
+      {
+        "name": "hardening/test_operational_hardening.py",
+        "status": "PASS",
+        "stdout": "PASS 12/12 operational hardening tests",
+        "stderr": ""
+      },
+      {
+        "name": "reference_runtime/test_archive_aware_runtime.py",
+        "status": "PASS",
+        "stdout": "PASS 10/10 archive-aware runtime unit tests",
+        "stderr": ""
+      },
+      {
+        "name": "reference_runtime/test_reference_reasoning.py",
+        "status": "PASS",
+        "stdout": "",
+        "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.003s\n\nOK"
+      },
+      {
+        "name": "scene_intelligence/test_scene_intelligence.py",
+        "status": "PASS",
+        "stdout": "PASS 24/24 Scene Intelligence tests",
+        "stderr": ""
+      },
+      {
+        "name": "integration/test_streetcraft_orchestrator.py",
+        "status": "PASS",
+        "stdout": "",
+        "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.003s\n\nOK"
+      },
+      {
+        "name": "validation/test_patch_1_9_1.py",
+        "status": "PASS",
+        "stdout": "PASS 24/24 SVS 1.9.1 patch tests",
+        "stderr": ""
+      },
+      {
+        "name": "validation/test_single_client_1_10_0.py",
+        "status": "PASS",
+        "stdout": "PASS single-client governance 1.10.0",
+        "stderr": ""
+      },
+      {
+        "name": "exact_embedded_asset_identity",
+        "status": "PASS",
+        "failures": []
+      },
+      {
+        "name": "historical_l2_embedded_identity",
+        "status": "PASS",
+        "fixture_count": 7,
+        "failures": []
+      },
+      {
+        "name": "golden_fixture_integrity",
+        "status": "PASS",
+        "fixtures_checked": 25,
+        "failures": []
+      },
+      {
+        "name": "benchmark/check_r2_baseline.py",
+        "status": "PASS",
+        "stdout": "{\n  \"result\": \"PASS\",\n  \"cases\": 14,\n  \"fixtures_checked\": 20,\n  \"errors\": []\n}",
+        "stderr": "/private/var/folders/4j/9wb2jw_12k9gvtcfjwqv58000000gn/T/streetcraft-cleanup-q31ld4_e/after/benchmark/check_r2_baseline.py:12: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.\n  px=list(im.getdata())"
+      }
+    ]
+  },
+  "local_status": "FAIL",
+  "all_requested_suites": "INCOMPLETE_EXTERNAL_ARCHIVE_UNAVAILABLE"
+}

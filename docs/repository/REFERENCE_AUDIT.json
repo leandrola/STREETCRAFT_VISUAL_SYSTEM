@@ -1,0 +1,3209 @@
+{
+  "method": "Heuristic scan of quoted/backticked file paths and JSON string keys/values, checked relative to both repository root and containing file. Not every absent literal is a broken link. Markdown links are validated separately.",
+  "findings": [
+    {
+      "file": "DEV_SHA256SUMS.json",
+      "target": "reference_runtime/reference_reasoning_v2.py",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "DEV_SHA256SUMS.json",
+      "target": "reference_runtime/run_reference_v2_archive.py",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "DEV_SHA256SUMS.json",
+      "target": "reference_runtime/test_archive_v1_integration.py",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "DEV_SHA256SUMS.json",
+      "target": "reference_runtime/test_reference_reasoning_v2.py",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "DEV_SHA256SUMS.json",
+      "target": "reference_runtime/test_reference_v2_archive_integration.py",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "DEV_SHA256SUMS.json",
+      "target": "validation/DEV2_QA.json",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "DEV_SHA256SUMS.json",
+      "target": "validation/REFERENCE_V2_ARCHIVE_INTEGRATION.json",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "DEV_SHA256SUMS.json",
+      "target": "validation/REFERENCE_V2_QA.json",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "HITO4_SVS_1_10_0_PROMOTION.md",
+      "target": "STREETCRAFT_ARCHIVE_V1_FINAL.zip",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "INTEGRATED_SHA256SUMS.json",
+      "target": "reference_runtime/test_archive_v1_integration.py",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "PACKAGE_MANIFEST.json",
+      "target": "STREETCRAFT_VISUAL_SYSTEM_V1_6_2.zip",
+      "classification": "historical_source_package"
+    },
+    {
+      "file": "PACKAGE_MANIFEST.json",
+      "target": "STREETCRAFT_VISUAL_SYSTEM_V1_8_1.zip",
+      "classification": "historical_source_package"
+    },
+    {
+      "file": "PACKAGE_MANIFEST.json",
+      "target": "STREETCRAFT_VISUAL_SYSTEM_V1_9_1_CIL_1_1_R2B_PREP.zip",
+      "classification": "historical_source_package"
+    },
+    {
+      "file": "RR2_REAL_CATALOG_IMPLEMENTATION_STATUS.md",
+      "target": "RR2_REAL_CATALOG_CODE.patch",
+      "classification": "historical_applied_patch_or_runner_basename_now_contextualized"
+    },
+    {
+      "file": "RR2_REAL_CATALOG_IMPLEMENTATION_STATUS.md",
+      "target": "run_reference_archive.py",
+      "classification": "historical_applied_patch_or_runner_basename_now_contextualized"
+    },
+    {
+      "file": "scene_intelligence/test_scene_intelligence.py",
+      "target": "fear_city_scene_001.json",
+      "classification": "fixture_basename_resolved_by_code"
+    },
+    {
+      "file": "scene_intelligence/test_scene_intelligence.py",
+      "target": "storefront_t01.json",
+      "classification": "fixture_basename_resolved_by_code"
+    },
+    {
+      "file": "scene_intelligence/test_scene_intelligence.py",
+      "target": "storefront_t03_clean.json",
+      "classification": "fixture_basename_resolved_by_code"
+    },
+    {
+      "file": "validation/INTEGRATION_PROVENANCE.json",
+      "target": "R2B_1_9_0_CRITICAL_AUDIT.zip",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/INTEGRATION_PROVENANCE.json",
+      "target": "STREETCRAFT_VISUAL_SYSTEM_V1_6_2.zip",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/INTEGRATION_PROVENANCE.json",
+      "target": "STREETCRAFT_VISUAL_SYSTEM_V1_8_1.zip",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/INTEGRATION_PROVENANCE.json",
+      "target": "STREETCRAFT_VISUAL_SYSTEM_V1_9_1_CIL_1_1_R2B_PREP.zip",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/INTEGRATION_PROVENANCE.json",
+      "target": "reference_runtime/test_archive_v1_integration.py",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/QA_CIL_1_1.json",
+      "target": "test_archive_aware_runtime.py",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/QA_CIL_1_1.json",
+      "target": "test_operational_hardening.py",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/QA_CIL_1_1.json",
+      "target": "test_scene_intelligence.py",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/R2B_CRITICAL_REPORT_1_9_0.json",
+      "target": "R2B-FC-001_candidate.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/R2B_CRITICAL_REPORT_1_9_0.json",
+      "target": "R2B-FC-001_source.jpg",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/R2B_CRITICAL_REPORT_1_9_0.json",
+      "target": "R2B-OCC-TXT-001_candidate.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/R2B_CRITICAL_REPORT_1_9_0.json",
+      "target": "R2B-OCC-TXT-001_source.jpg",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/R2B_CRITICAL_REPORT_1_9_0.json",
+      "target": "R2B-TXT-001_candidate.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/R2B_CRITICAL_REPORT_1_9_0.json",
+      "target": "R2B-TXT-001_source.jpg",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/R2B_CRITICAL_REPORT_1_9_0.md",
+      "target": "R2B-FC-001_comparison.jpg",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/R2B_CRITICAL_REPORT_1_9_0.md",
+      "target": "R2B-OCC-TXT-001_comparison.jpg",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/R2B_CRITICAL_REPORT_1_9_0.md",
+      "target": "R2B-TXT-001_comparison.jpg",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/REFERENCE_REASONING_ARCHIVE_INTEGRATION.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/REFERENCE_REASONING_ARCHIVE_INTEGRATION.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/REFERENCE_REASONING_ARCHIVE_INTEGRATION.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/REFERENCE_REASONING_ARCHIVE_INTEGRATION.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/REFERENCE_REASONING_ARCHIVE_INTEGRATION.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/REFERENCE_REASONING_ARCHIVE_INTEGRATION.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/REFERENCE_REASONING_ARCHIVE_INTEGRATION.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/REFERENCE_REASONING_ARCHIVE_INTEGRATION.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/REFERENCE_REASONING_ARCHIVE_INTEGRATION.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/REFERENCE_REASONING_ARCHIVE_INTEGRATION.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/REFERENCE_REASONING_ARCHIVE_INTEGRATION.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/REFERENCE_REASONING_ARCHIVE_INTEGRATION.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/REFERENCE_REASONING_ARCHIVE_INTEGRATION.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/REFERENCE_REASONING_ARCHIVE_INTEGRATION.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/REFERENCE_REASONING_ARCHIVE_INTEGRATION.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/REFERENCE_REASONING_ARCHIVE_INTEGRATION.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/REFERENCE_REASONING_ARCHIVE_INTEGRATION.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/REFERENCE_REASONING_ARCHIVE_INTEGRATION.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/REFERENCE_REASONING_ARCHIVE_INTEGRATION.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/REFERENCE_REASONING_ARCHIVE_INTEGRATION.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/REGRESSION_REPORT_1_8_0.json",
+      "target": "reference_runtime/test_archive_v1_integration.py",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/REGRESSION_REPORT_1_8_1.json",
+      "target": "reference_runtime/test_archive_v1_integration.py",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/RELEASE_GATE_1_10_0_FINAL.md",
+      "target": "STREETCRAFT_ARCHIVE_V1_FINAL.zip",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/SHA256SUMS_1_7_0.json",
+      "target": "reference_runtime/test_archive_v1_integration.py",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/SHA256SUMS_1_8_0.json",
+      "target": "reference_runtime/test_archive_v1_integration.py",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/SHA256SUMS_1_8_1.json",
+      "target": "reference_runtime/test_archive_v1_integration.py",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L1_VISUAL_REVIEW_RESULTS.json",
+      "target": "RDR-F01_L_KATZENSTEIN.jpg",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L1_VISUAL_REVIEW_RESULTS.json",
+      "target": "RDR-F02_GOTHAM_HOTEL.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L1_VISUAL_REVIEW_RESULTS.json",
+      "target": "RDR-F03_ECONOMY_CANDY.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L1_VISUAL_REVIEW_RESULTS.json",
+      "target": "RDR-F04_GOOD_EARTH_BAR.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L1_VISUAL_REVIEW_RESULTS.json",
+      "target": "RDR-F05_RAJA_GROCERY.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L1_VISUAL_REVIEW_RESULTS.json",
+      "target": "RDR-F06_LOANS_OSCARS.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L1_VISUAL_REVIEW_RESULTS.json",
+      "target": "RDR-F07_DAVES_CORNER.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L1_VISUAL_REVIEW_RESULTS.json",
+      "target": "SC-B01_PEEP_SHOW.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L1_VISUAL_REVIEW_RESULTS.json",
+      "target": "SC-B02_NEON_HOTEL_STREET.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L1_VISUAL_REVIEW_RESULTS.json",
+      "target": "SC-D01_BASIC_METAL.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L1_VISUAL_REVIEW_RESULTS.json",
+      "target": "SC-D02_MG_SOUL_FOOD.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L1_VISUAL_REVIEW_RESULTS.json",
+      "target": "SC-D03_CONDOS_FOR_SALE.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L1_VISUAL_REVIEW_RESULTS.json",
+      "target": "SC-D04_BRIDGE.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L1_VISUAL_REVIEW_RESULTS.json",
+      "target": "SC-D05_ELEVATED_TRAIN_NIGHT.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L1_VISUAL_REVIEW_RESULTS.json",
+      "target": "SC-D06_PHARMACY_OUTPUT.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L2_CONTROLLED_RESULTS.json",
+      "target": "VP00_CG-A.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L2_CONTROLLED_RESULTS.json",
+      "target": "VP00_CG-B.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L2_CONTROLLED_RESULTS.json",
+      "target": "VP01_CG-A.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L2_CONTROLLED_RESULTS.json",
+      "target": "VP01_CG-B.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L2_CONTROLLED_RESULTS.json",
+      "target": "VP02_CG-A.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L2_CONTROLLED_RESULTS.json",
+      "target": "VP02_CG-B.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L2_EVIDENCE_SHA256.json",
+      "target": "L2_EVIDENCE_CONTACT_SHEET.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L2_EVIDENCE_SHA256.json",
+      "target": "VP00_CG-A.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L2_EVIDENCE_SHA256.json",
+      "target": "VP00_CG-B.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L2_EVIDENCE_SHA256.json",
+      "target": "VP01_CG-A.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L2_EVIDENCE_SHA256.json",
+      "target": "VP01_CG-B.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L2_EVIDENCE_SHA256.json",
+      "target": "VP02_CG-A.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L2_EVIDENCE_SHA256.json",
+      "target": "VP02_CG-B.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L3_FEAR_CITY_EVIDENCE_REGISTRY.json",
+      "target": "FCV001_VIEW_01.jpg",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L3_FEAR_CITY_EVIDENCE_REGISTRY.json",
+      "target": "FCV001_VIEW_02.jpg",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L3_FEAR_CITY_EVIDENCE_REGISTRY.json",
+      "target": "FCV001_VIEW_03.jpg",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/L3_FEAR_CITY_EVIDENCE_REGISTRY.json",
+      "target": "FCV001_VIEW_04.jpg",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP.json",
+      "target": "RDR-F01_L_KATZENSTEIN.jpg",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP.json",
+      "target": "RDR-F02_GOTHAM_HOTEL.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP.json",
+      "target": "RDR-F03_ECONOMY_CANDY.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP.json",
+      "target": "RDR-F04_GOOD_EARTH_BAR.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP.json",
+      "target": "RDR-F05_RAJA_GROCERY.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP.json",
+      "target": "RDR-F06_LOANS_OSCARS.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP.json",
+      "target": "RDR-F07_DAVES_CORNER.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP.json",
+      "target": "SC-B02_NEON_HOTEL_STREET.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP.json",
+      "target": "SC-D03_CONDOS_FOR_SALE.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP.json",
+      "target": "SC-D06_PHARMACY_OUTPUT.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP_V2.json",
+      "target": "RDR-F01_L_KATZENSTEIN.jpg",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP_V2.json",
+      "target": "RDR-F02_GOTHAM_HOTEL.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP_V2.json",
+      "target": "RDR-F03_ECONOMY_CANDY.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP_V2.json",
+      "target": "RDR-F04_GOOD_EARTH_BAR.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP_V2.json",
+      "target": "RDR-F05_RAJA_GROCERY.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP_V2.json",
+      "target": "RDR-F06_LOANS_OSCARS.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP_V2.json",
+      "target": "RDR-F07_DAVES_CORNER.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP_V2.json",
+      "target": "SC-B01_PEEP_SHOW.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP_V2.json",
+      "target": "SC-B02_NEON_HOTEL_STREET.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP_V2.json",
+      "target": "SC-D01_BASIC_METAL.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP_V2.json",
+      "target": "SC-D02_MG_SOUL_FOOD.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP_V2.json",
+      "target": "SC-D03_CONDOS_FOR_SALE.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP_V2.json",
+      "target": "SC-D04_BRIDGE.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP_V2.json",
+      "target": "SC-D05_ELEVATED_TRAIN_NIGHT.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/camera_routing/VISUAL_FIXTURE_MAP_V2.json",
+      "target": "SC-D06_PHARMACY_OUTPUT.png",
+      "classification": "historical_snapshot_or_provenance_reference"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-01.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-01.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-01.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-01.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-01.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-01.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-01.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-01.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-01.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-01.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-01.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-01.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-01.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-01.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-01.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-01.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-01.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-01.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-01.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-01.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-02.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-02.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-02.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-02.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-02.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-02.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-02.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-02.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-02.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-02.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-02.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-02.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-02.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-02.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-02.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-02.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-02.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-02.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-02.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-02.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-03.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-03.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-03.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-03.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-03.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-03.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-03.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-03.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-03.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-03.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-03.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-03.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-03.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-03.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-03.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-03.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-03.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-03.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-03.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-03.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-04.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-04.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-04.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-04.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-04.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-04.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-04.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-04.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-04.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-04.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-04.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-04.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-04.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-04.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-04.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-04.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-04.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-04.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-04.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-04.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-05.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-05.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-05.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-05.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-05.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-05.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-05.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-05.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-05.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-05.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-05.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-05.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-05.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-05.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-05.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-05.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-05.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-05.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-05.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-05.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-06.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-06.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-06.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-06.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-06.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-06.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-06.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-06.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-06.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-06.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-06.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-06.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-06.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-06.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-06.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-06.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-06.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-06.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-06.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-06.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-07.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-07.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-07.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-07.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-07.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-07.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-07.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-07.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-07.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-07.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-07.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-07.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-07.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-07.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-07.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-07.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-07.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-07.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-07.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-07.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-08.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-08.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-08.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-08.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-08.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-08.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-08.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-08.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-08.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-08.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-08.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-08.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-08.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-08.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-08.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-08.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-08.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-08.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-08.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/cgc_e2e/results/CGC-E2E-08.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/ARCHIVE_RUNTIME_IDENTITY_RECHECK.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/ARCHIVE_RUNTIME_IDENTITY_RECHECK.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/ARCHIVE_RUNTIME_IDENTITY_RECHECK.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/ARCHIVE_RUNTIME_IDENTITY_RECHECK.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/ARCHIVE_RUNTIME_IDENTITY_RECHECK.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/ARCHIVE_RUNTIME_IDENTITY_RECHECK.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/ARCHIVE_RUNTIME_IDENTITY_RECHECK.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/ARCHIVE_RUNTIME_IDENTITY_RECHECK.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/ARCHIVE_RUNTIME_IDENTITY_RECHECK.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/ARCHIVE_RUNTIME_IDENTITY_RECHECK.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/ARCHIVE_RUNTIME_IDENTITY_RECHECK.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/ARCHIVE_RUNTIME_IDENTITY_RECHECK.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/ARCHIVE_RUNTIME_IDENTITY_RECHECK.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/ARCHIVE_RUNTIME_IDENTITY_RECHECK.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/ARCHIVE_RUNTIME_IDENTITY_RECHECK.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/ARCHIVE_RUNTIME_IDENTITY_RECHECK.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/ARCHIVE_RUNTIME_IDENTITY_RECHECK.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/ARCHIVE_RUNTIME_IDENTITY_RECHECK.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/ARCHIVE_RUNTIME_IDENTITY_RECHECK.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/ARCHIVE_RUNTIME_IDENTITY_RECHECK.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "target": "runtime/assets/asset_cache.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "target": "runtime/assets/perceptual_dedupe.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "target": "runtime/evidence_intelligence/provenance_scoring.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "target": "runtime/evidence_intelligence/transfer_risk.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "target": "runtime/governance/governance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "target": "runtime/governance/health.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "target": "runtime/integration/evidence_bundle.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "target": "runtime/integration/negative_evidence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "target": "runtime/retrieval/eligibility.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "target": "runtime/retrieval/query_planner.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "target": "runtime/retrieval/ranking.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "target": "runtime/sqlite/dedupe_exact.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "target": "runtime/sqlite/ingest_snapshot.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "target": "runtime/tests/test_archive_v1_final.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "target": "runtime/tests/test_asset_cache_perceptual.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "target": "runtime/tests/test_end_to_end_svs_archive.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "target": "runtime/tests/test_evidence_intelligence.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "target": "runtime/tests/test_g5_acceptance.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "target": "runtime/tests/test_governance_readiness.py",
+      "classification": "external_runtime_or_original_execution_path"
+    },
+    {
+      "file": "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "target": "runtime/tests/test_retrieval_benchmark.py",
+      "classification": "external_runtime_or_original_execution_path"
+    }
+  ],
+  "classification_counts": {
+    "historical_snapshot_or_provenance_reference": 88,
+    "external_runtime_or_original_execution_path": 542,
+    "historical_source_package": 3,
+    "historical_applied_patch_or_runner_basename_now_contextualized": 2,
+    "fixture_basename_resolved_by_code": 3
+  },
+  "confirmed_stale_executable_reference": {
+    "file": "REFERENCE_V2_ARCHIVE_INTEGRATION.md",
+    "old": "reference_runtime/run_reference_v2_archive.py",
+    "replacement": "reference_runtime/run_reference_archive.py",
+    "occurrences": 2
+  },
+  "new_broken_references_from_deletion": 0
+}
