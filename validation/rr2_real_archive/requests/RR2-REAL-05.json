@@ -1,0 +1,21 @@
+{
+  "profile": "VP02",
+  "mode": "T01",
+  "camera": "CG-A",
+  "query_budget": 2,
+  "needs": [
+    {
+      "need_id": "N-WET",
+      "state": "RN_REQUIRED",
+      "target_domains": [
+        "RAIN_SNOW_ASPHALT"
+      ],
+      "specific_problem": "Determine source-compatible pavement wetness for R2B-191-A",
+      "task_context": "R2b corrective rerun",
+      "source_context": "Source and candidate disagree",
+      "min_provenance": "P2",
+      "max_transfer_risk": "MEDIUM",
+      "max_results": 5
+    }
+  ]
+}

@@ -1,14 +1,9 @@
 {
-  "fresh_candidates": 1,
-  "formally_scored": 0,
+  "fresh_candidates": 6,
+  "formally_scored": 6,
   "required": 6,
-  "status": "INCOMPLETE",
-  "candidates": [
-    {
-      "case": "R2B-191-D",
-      "path": "benchmark/r2b_1_9_1/candidates/CBGB_001.png",
-      "sha256": "30e7099ca9ca48667d42715dacaa06d45e4f291412313f0e6b50c47e15ec8b43",
-      "evaluation": "PENDING"
-    }
-  ]
+  "status": "PASS",
+  "global_score": 91.0,
+  "s3_count": 0,
+  "validation_report": "validation/R2B_1_9_1_FINAL_2026_09_21.json"
 }

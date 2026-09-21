@@ -1,0 +1,194 @@
+{
+  "suite": "RR2_REAL_CATALOG_V1",
+  "purpose": "Exercise Reference Reasoning 2.0 against real Streetcraft evidence instead of synthetic TEST units.",
+  "cases": [
+    {
+      "case_id": "RR2-REAL-01",
+      "name": "Required material evidence",
+      "profile": "VP02",
+      "mode": "T01",
+      "camera": "CG-A",
+      "query_budget": 2,
+      "needs": [{
+        "need_id": "N-MAT",
+        "state": "RN_REQUIRED",
+        "target_domains": ["MATERIALS"],
+        "specific_problem": "Restrained weathered facade material behavior",
+        "task_context": "RDR2 facade transformation",
+        "source_context": "Material response under-specified",
+        "min_provenance": "P2",
+        "max_transfer_risk": "LOW",
+        "max_results": 3,
+        "source_invariants": ["geometry preserved", "signage preserved"],
+        "forbidden_transfers": ["exact facade geometry"]
+      }],
+      "expected": {"status": "READY", "max_queries": 1, "projected_domain": "MATERIALS"}
+    },
+    {
+      "case_id": "RR2-REAL-02",
+      "name": "Strict text lock blocks semantic transfer",
+      "profile": "VP02",
+      "mode": "T01",
+      "camera": "CG-S",
+      "query_budget": 2,
+      "semantic_text_lock": "STRICT",
+      "needs": [{
+        "need_id": "N-TEXT",
+        "state": "RN_REQUIRED",
+        "target_domains": ["SIGNAGE"],
+        "specific_problem": "Resolve unreadable storefront microtext",
+        "task_context": "Source preservation",
+        "source_context": "Exact wording not fully legible",
+        "min_provenance": "P2",
+        "max_transfer_risk": "HIGH",
+        "max_results": 3
+      }],
+      "expected": {"status": "BLOCKED_REQUIRED", "projection_empty": true}
+    },
+    {
+      "case_id": "RR2-REAL-03",
+      "name": "Fear City geographic evidence remains non-transferable",
+      "profile": "VP03",
+      "mode": "T06",
+      "camera": "CG-FC",
+      "query_budget": 2,
+      "fear_city_confirmed": true,
+      "needs": [{
+        "need_id": "N-GEO",
+        "state": "RN_REQUIRED",
+        "target_domains": ["REGIONAL_CHARACTER"],
+        "specific_problem": "Infer real-world city identity from visual resemblance",
+        "task_context": "Fear City authored-world transformation",
+        "source_context": "Authored world confirmed",
+        "min_provenance": "P2",
+        "max_transfer_risk": "HIGH",
+        "max_results": 3
+      }],
+      "expected": {"status": "BLOCKED_REQUIRED", "projection_empty": true}
+    },
+    {
+      "case_id": "RR2-REAL-04",
+      "name": "Cross-ID duplicate content is not independent evidence",
+      "profile": "VP02",
+      "mode": "T02",
+      "camera": "CG-A",
+      "query_budget": 2,
+      "needs": [{
+        "need_id": "N-CAM",
+        "state": "RN_REQUIRED",
+        "target_domains": ["CAMERA"],
+        "specific_problem": "Find oblique architectural camera evidence",
+        "task_context": "Camera reasoning",
+        "source_context": "Need independent camera evidence",
+        "min_provenance": "P2",
+        "max_transfer_risk": "LOW",
+        "max_results": 5
+      }],
+      "expected": {"status": "READY", "duplicate_rejection": "DUPLICATE_CONTENT_FINGERPRINT"}
+    },
+    {
+      "case_id": "RR2-REAL-05",
+      "name": "Structured contradiction from real R2b source/candidate pair",
+      "profile": "VP02",
+      "mode": "T01",
+      "camera": "CG-A",
+      "query_budget": 2,
+      "needs": [{
+        "need_id": "N-WET",
+        "state": "RN_REQUIRED",
+        "target_domains": ["RAIN_SNOW_ASPHALT"],
+        "specific_problem": "Determine source-compatible pavement wetness for R2B-191-A",
+        "task_context": "R2b corrective rerun",
+        "source_context": "Source and candidate disagree",
+        "min_provenance": "P2",
+        "max_transfer_risk": "MEDIUM",
+        "max_results": 5
+      }],
+      "expected": {"status": "BLOCKED_REQUIRED", "review_required": true, "claim_key": "R2B-191-A.surface_wetness"}
+    },
+    {
+      "case_id": "RR2-REAL-06",
+      "name": "Query budget prioritizes required need",
+      "profile": "VP02",
+      "mode": "T01",
+      "camera": "CG-A",
+      "query_budget": 1,
+      "needs": [
+        {
+          "need_id": "N-REQ",
+          "state": "RN_REQUIRED",
+          "target_domains": ["MATERIALS"],
+          "specific_problem": "Restrained facade materials",
+          "task_context": "Budget case",
+          "source_context": "Required",
+          "min_provenance": "P2",
+          "max_transfer_risk": "LOW",
+          "max_results": 3
+        },
+        {
+          "need_id": "N-SUP",
+          "state": "RN_SUPPORT",
+          "target_domains": ["RAIN_SNOW_ASPHALT"],
+          "specific_problem": "Optional pavement support",
+          "task_context": "Budget case",
+          "source_context": "Optional",
+          "min_provenance": "P2",
+          "max_transfer_risk": "MEDIUM",
+          "max_results": 3
+        }
+      ],
+      "expected": {"queries": 1, "required_result": "SATISFIED_EVIDENCE"}
+    },
+    {
+      "case_id": "RR2-REAL-07",
+      "name": "Locked unknown consumes no Archive query",
+      "profile": "VP02",
+      "mode": "T02",
+      "camera": "CG-F",
+      "query_budget": 2,
+      "occlusion_locked": true,
+      "needs": [{
+        "need_id": "N-OCC",
+        "state": "RN_BLOCKED",
+        "target_domains": ["ARCHITECTURE"],
+        "specific_problem": "Recover exact hidden rear geometry",
+        "task_context": "Elevation",
+        "source_context": "LOCKED_UNKNOWN"
+      }],
+      "expected": {"queries": 0, "locked_unknown": "N-OCC"}
+    },
+    {
+      "case_id": "RR2-REAL-08",
+      "name": "Identical real needs reuse one query",
+      "profile": "VP02",
+      "mode": "T01",
+      "camera": "CG-A",
+      "query_budget": 1,
+      "needs": [
+        {
+          "need_id": "N-MAT-1",
+          "state": "RN_REQUIRED",
+          "target_domains": ["MATERIALS"],
+          "specific_problem": "Restrained weathered facade material behavior",
+          "task_context": "Cache case",
+          "source_context": "Same request",
+          "min_provenance": "P2",
+          "max_transfer_risk": "LOW",
+          "max_results": 3
+        },
+        {
+          "need_id": "N-MAT-2",
+          "state": "RN_REQUIRED",
+          "target_domains": ["MATERIALS"],
+          "specific_problem": "Restrained weathered facade material behavior",
+          "task_context": "Cache case",
+          "source_context": "Same request",
+          "min_provenance": "P2",
+          "max_transfer_risk": "LOW",
+          "max_results": 3
+        }
+      ],
+      "expected": {"queries": 1, "both_satisfied": true}
+    }
+  ]
+}

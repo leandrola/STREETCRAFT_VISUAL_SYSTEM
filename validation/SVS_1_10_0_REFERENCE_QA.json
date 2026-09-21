@@ -3,17 +3,19 @@
   "capability": "Reference Reasoning 2.0",
   "status": "AUTOMATED_CHECKS_PASS",
   "primary_entry_point": "reference_runtime/reference_reasoning.py",
-  "unit_tests": 16,
+  "unit_tests": 18,
   "integrated_automated_tests": 106,
   "archive_software_checks": 12,
   "archive_evidence_scope": "SYNTHETIC_TEST_EVIDENCE",
-  "real_catalog_validation": "PENDING_CLASSIFIED_CATALOG",
-  "visual_validation": "R2B_REQUIRED_PENDING",
+  "real_catalog_validation": "PASS_8_OF_8_REAL_CASES",
+  "visual_validation": "R2B_PASS_91_0_S3_0",
   "result": {
     "test": "reference_runtime/test_reference_reasoning.py",
     "status": "PASS",
     "returncode": 0,
     "stdout": "",
     "stderr": "................\n----------------------------------------------------------------------\nRan 16 tests in 0.002s\n\nOK"
-  }
+  },
+  "real_evidence_units": 10,
+  "real_archive_cases": 8
 }

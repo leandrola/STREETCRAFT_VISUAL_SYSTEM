@@ -3,8 +3,14 @@
   "base_release": "SVS 1.9.1 / CIL 1.1",
   "R0": "PASS",
   "R1_current_embedded_assets": "PASS",
-  "R2b_visual": "REQUIRED_PENDING",
+  "R2b_visual": "PASS",
+  "R2b_global_score": 91.0,
+  "R2b_s3": 0,
+  "RR2_real_archive": "PASS",
   "stable_promotion": false,
+  "pending": [
+    "full CGC orchestration projection"
+  ],
   "checks": [
     {
       "name": "json_integrity",
@@ -38,7 +44,7 @@
       "name": "reference_runtime/test_reference_reasoning.py",
       "status": "PASS",
       "stdout": "",
-      "stderr": "................\n----------------------------------------------------------------------\nRan 16 tests in 0.002s\n\nOK"
+      "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.003s\n\nOK"
     },
     {
       "name": "scene_intelligence/test_scene_intelligence.py",
@@ -79,7 +85,7 @@
       "name": "benchmark/check_r2_baseline.py",
       "status": "PASS",
       "stdout": "{\n  \"result\": \"PASS\",\n  \"cases\": 14,\n  \"fixtures_checked\": 20,\n  \"errors\": []\n}",
-      "stderr": "/workspace/scratch/527ce712c476/streetcraft/benchmark/check_r2_baseline.py:12: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.\n  px=list(im.getdata())"
+      "stderr": "/mnt/data/sc_hito2/sc/STREETCRAFT_VISUAL_SYSTEM/benchmark/check_r2_baseline.py:12: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.\n  px=list(im.getdata())"
     }
   ]
 }

@@ -30,14 +30,14 @@ READY significa que las necesidades documentales modeladas están satisfechas o 
 ## Límites y pendientes
 
 - Saturación inicial: una consulta por necesidad; sin búsqueda iterativa adaptativa ni ranking nuevo.
-- Conflictos detectados por IDs inconsistentes y conflictos estructurados del bundle. No se infieren contradicciones semánticas en lenguaje natural.
-- No deduplica contenidos iguales con IDs distintos todavía.
+- Conflictos detectados por IDs inconsistentes, conflictos estructurados del bundle y `claim_key`/`claim_value` explícitos del catálogo. No se infieren contradicciones semánticas en lenguaje natural.
+- Deduplica contenidos iguales bajo IDs distintos cuando comparten fingerprint (`content_sha256`, `source_sha256` o `source_git_blob_sha`) dentro del mismo dominio.
 - No analiza imágenes ni crea SAR2 automáticamente.
 - No ejecuta por sí mismo generación ni preflight 1.9.1: deben permanecer en el flujo posterior.
-- Validación con un catálogo Archive real y nueva validación visual pendientes. Los 16 casos automatizados usan callbacks controlados.
-- Siguiente entrega: integrar y probar el adaptador Archive real; después ampliar deduplicación/contradicciones y evaluar cambios visuales.
+- Validación real completada el 21/09/2026: catálogo V1 con 10 Evidence Units, 18/18 tests RR2 PASS y 8/8 casos reales PASS contra runtime byte-verificado de `STREETCRAFT_ARCHIVE_V1_FINAL`. R2b visual también cerró PASS con 91.0 y S3=0.
+- Siguiente entrega: integrar la proyección RR2/Archive dentro de la orquestación CGC completa y validar end-to-end.
 
 La promoción excepcional de 1.9.1 no constituye aprobación final de SVS 1.10.0.
 
 ## Integración Archive
-Integración de software Archive: 12 comprobaciones PASS con datos sintéticos. Catálogo real no disponible. Entrada ejecutable: `run_reference_archive.py`; las trazas retienen bundle IDs y `negative_evidence`.
+Integración de software Archive: 12 comprobaciones sintéticas históricas PASS + 8/8 casos reales PASS. Entrada ejecutable: `run_reference_archive.py`; las trazas retienen bundle IDs, `negative_evidence`, request/evidence SHA y hashes del runtime Archive.

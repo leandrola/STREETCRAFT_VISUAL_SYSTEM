@@ -1,0 +1,34 @@
+{
+  "profile": "VP02",
+  "mode": "T01",
+  "camera": "CG-A",
+  "query_budget": 1,
+  "needs": [
+    {
+      "need_id": "N-MAT-1",
+      "state": "RN_REQUIRED",
+      "target_domains": [
+        "MATERIALS"
+      ],
+      "specific_problem": "Restrained weathered facade material behavior",
+      "task_context": "Cache case",
+      "source_context": "Same request",
+      "min_provenance": "P2",
+      "max_transfer_risk": "LOW",
+      "max_results": 3
+    },
+    {
+      "need_id": "N-MAT-2",
+      "state": "RN_REQUIRED",
+      "target_domains": [
+        "MATERIALS"
+      ],
+      "specific_problem": "Restrained weathered facade material behavior",
+      "task_context": "Cache case",
+      "source_context": "Same request",
+      "min_provenance": "P2",
+      "max_transfer_risk": "LOW",
+      "max_results": 3
+    }
+  ]
+}

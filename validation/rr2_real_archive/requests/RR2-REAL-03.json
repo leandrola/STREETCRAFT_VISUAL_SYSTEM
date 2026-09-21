@@ -1,0 +1,22 @@
+{
+  "profile": "VP03",
+  "mode": "T06",
+  "camera": "CG-FC",
+  "query_budget": 2,
+  "fear_city_confirmed": true,
+  "needs": [
+    {
+      "need_id": "N-GEO",
+      "state": "RN_REQUIRED",
+      "target_domains": [
+        "REGIONAL_CHARACTER"
+      ],
+      "specific_problem": "Infer real-world city identity from visual resemblance",
+      "task_context": "Fear City authored-world transformation",
+      "source_context": "Authored world confirmed",
+      "min_provenance": "P2",
+      "max_transfer_risk": "HIGH",
+      "max_results": 3
+    }
+  ]
+}

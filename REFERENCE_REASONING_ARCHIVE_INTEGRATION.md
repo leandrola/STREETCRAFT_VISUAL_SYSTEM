@@ -1,28 +1,34 @@
 # Reference Reasoning 2.0 · Integración Archive de SVS 1.10.0
 
-12/12 comprobaciones contra módulos reales de STREETCRAFT_ARCHIVE_V1_FINAL.
-Evidence Units sintéticos, identificados como TEST / SYNTHETIC-TEST-ONLY: no equivale a recuperación sobre la colección real.
-16 tests RR2, 89 existentes y 1 comprobación de entrada por archivos: PASS.
+## Estado actual
 
-## Cambios
-Se conservan los IDs de Evidence Bundles y la evidencia negativa en la traza.
-Se admite task_context omitido como contexto vacío, sin inferirlo.
-Entrada ejecutable: `reference_runtime/run_reference_archive.py`.
-Archive continúa separado de SVS.
+**PASS real V1 · 21/09/2026**
 
-## Límite
-Archive V1 Final entrega software y fixtures de prueba, pero no un catálogo clasificado de Evidence Units. Los snapshots de adquisición no sustituyen ese catálogo.
-El motor Archive marca hechos distintos de un dominio como posibles conflictos; se mantiene esa regla conservadora, aunque puede requerir revisión de hechos compatibles.
+- 18/18 tests de Reference Reasoning 2.0 PASS.
+- 8/8 casos reales PASS.
+- Catálogo real clasificado V1: 10 Evidence Units.
+- Runtime Archive usado: software byte-verificado contra los SHA-256 registrados para `STREETCRAFT_ARCHIVE_V1_FINAL`.
+- Bundles, trazas, `evidence_sha256`, `request_sha256` y hashes de módulos Archive preservados.
 
-## Ejecución
-python3 reference_runtime/run_reference_archive.py --archive-root /ruta/STREETCRAFT_ARCHIVE_V1_FINAL --evidence /ruta/evidence_units.json --request /ruta/request.json --output /ruta/result.json
+## Cobertura real
 
-Evidence: array JSON de unidades clasificadas con evidence_unit_id, domain, visible_fact, permitted_learning, provenance_level, transfer_risk y status; procedentes de datos documentales existentes.
-Request: objeto con needs, profile, mode, camera y controles RR2 opcionales. Necesidades compatibles con classify_reference_need.
-Salida: SHA-256 de entradas y módulos Archive. Exit 2 si quedan requisitos sin resolver o revisión pendiente. No existe fallback de evidencia inventada.
+- needs REQUIRED / SUPPORT / BLOCKED
+- query budget
+- cache reuse
+- provenance floor
+- dedupe cross-ID por fingerprint de contenido
+- contradicciones estructuradas por `claim_key` / `claim_value`
+- Semantic Text Lock
+- Fear City Geographic Null Lock
+- Occlusion / locked unknown
 
-## Estado
-1.9.1 Stable por decisión del usuario; R2b incompleto, sin PASS visual.
-SVS 1.10.0 sigue en desarrollo dentro del cliente único. Catálogo real y validación visual pendientes.
-Entrada necesaria: export clasificado de Evidence Units o ubicación de ese catálogo.
-Los formatos de exportación se mantienen en `ROADMAP.md`.
+## Resultado
+
+El hito **RR2 / Archive sintético → real** queda cerrado. La deuda siguiente de SVS 1.10.0 es la integración CGC end-to-end.
+
+Evidencia principal:
+- `validation/RR2_REAL_ARCHIVE_VALIDATION_V1.json`
+- `validation/rr2_real_archive/results/`
+- `validation/rr2_real_archive/ARCHIVE_RUNTIME_IDENTITY.json`
+
+Archive continúa separado de Canon y la evidencia admitida sigue siendo scoped.

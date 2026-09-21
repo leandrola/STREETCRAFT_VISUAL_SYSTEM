@@ -1,0 +1,21 @@
+{
+  "profile": "VP02",
+  "mode": "T02",
+  "camera": "CG-A",
+  "query_budget": 2,
+  "needs": [
+    {
+      "need_id": "N-CAM",
+      "state": "RN_REQUIRED",
+      "target_domains": [
+        "CAMERA"
+      ],
+      "specific_problem": "Find oblique architectural camera evidence",
+      "task_context": "Camera reasoning",
+      "source_context": "Need independent camera evidence",
+      "min_provenance": "P2",
+      "max_transfer_risk": "LOW",
+      "max_results": 5
+    }
+  ]
+}

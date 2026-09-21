@@ -1,0 +1,128 @@
+{
+  "archive_runtime": "STREETCRAFT_ARCHIVE_V1_FINAL",
+  "status": "PASS",
+  "verified_modules": 20,
+  "checks": [
+    {
+      "path": "runtime/assets/asset_cache.py",
+      "expected_sha256": "3e630e86e66cd6d18a4e31b7055675637d2092419023579bc6ab797ec6a1500e",
+      "actual_sha256": "3e630e86e66cd6d18a4e31b7055675637d2092419023579bc6ab797ec6a1500e",
+      "match": true
+    },
+    {
+      "path": "runtime/assets/perceptual_dedupe.py",
+      "expected_sha256": "8847039f498f4c534e57736450ad7920ca8abf73641ae5d197b0ec089acacdf6",
+      "actual_sha256": "8847039f498f4c534e57736450ad7920ca8abf73641ae5d197b0ec089acacdf6",
+      "match": true
+    },
+    {
+      "path": "runtime/evidence_intelligence/provenance_scoring.py",
+      "expected_sha256": "c2804565bae90e73aee2a805c072b7ae509a530e58558056a7b45030848495f3",
+      "actual_sha256": "c2804565bae90e73aee2a805c072b7ae509a530e58558056a7b45030848495f3",
+      "match": true
+    },
+    {
+      "path": "runtime/evidence_intelligence/transfer_risk.py",
+      "expected_sha256": "214acd3c8957178396ae92bb5c7256114599c4194351010c886539da53cbba13",
+      "actual_sha256": "214acd3c8957178396ae92bb5c7256114599c4194351010c886539da53cbba13",
+      "match": true
+    },
+    {
+      "path": "runtime/governance/governance.py",
+      "expected_sha256": "eb50a2f37cf903e02b72d680df0b0ebd96956c037bafcd4a393125bec0f22df0",
+      "actual_sha256": "eb50a2f37cf903e02b72d680df0b0ebd96956c037bafcd4a393125bec0f22df0",
+      "match": true
+    },
+    {
+      "path": "runtime/governance/health.py",
+      "expected_sha256": "e111da183bb0f0425d995735fd2d374256be7af2bd809b9b6a5e90529f6a0d08",
+      "actual_sha256": "e111da183bb0f0425d995735fd2d374256be7af2bd809b9b6a5e90529f6a0d08",
+      "match": true
+    },
+    {
+      "path": "runtime/integration/evidence_bundle.py",
+      "expected_sha256": "3d84b33b8829e5e2ac702b4c8fcb15033be0ad9398ce6b7938eeecaaebff8c92",
+      "actual_sha256": "3d84b33b8829e5e2ac702b4c8fcb15033be0ad9398ce6b7938eeecaaebff8c92",
+      "match": true
+    },
+    {
+      "path": "runtime/integration/negative_evidence.py",
+      "expected_sha256": "9463d4767f2e561beb006d96a4a6a96433ad33dac4c9579576a741fba369b83b",
+      "actual_sha256": "9463d4767f2e561beb006d96a4a6a96433ad33dac4c9579576a741fba369b83b",
+      "match": true
+    },
+    {
+      "path": "runtime/retrieval/eligibility.py",
+      "expected_sha256": "a20b8db0e946cc61e0be4413350f66de45c388f792cf9e579b9e0874e823e514",
+      "actual_sha256": "a20b8db0e946cc61e0be4413350f66de45c388f792cf9e579b9e0874e823e514",
+      "match": true
+    },
+    {
+      "path": "runtime/retrieval/query_planner.py",
+      "expected_sha256": "b4240090b5e3eaa8bda401f5edcaf82b23b1f716c324724079ac0876267886ce",
+      "actual_sha256": "b4240090b5e3eaa8bda401f5edcaf82b23b1f716c324724079ac0876267886ce",
+      "match": true
+    },
+    {
+      "path": "runtime/retrieval/ranking.py",
+      "expected_sha256": "62af2f94161705d85a41d69106f069352a707c07fc8ab7c2e4f6f6c56eea105e",
+      "actual_sha256": "62af2f94161705d85a41d69106f069352a707c07fc8ab7c2e4f6f6c56eea105e",
+      "match": true
+    },
+    {
+      "path": "runtime/sqlite/dedupe_exact.py",
+      "expected_sha256": "aa6e6f08fdc63622af96c1359bf0333657216ba0e2b16fca410bb2a6cb199e38",
+      "actual_sha256": "aa6e6f08fdc63622af96c1359bf0333657216ba0e2b16fca410bb2a6cb199e38",
+      "match": true
+    },
+    {
+      "path": "runtime/sqlite/ingest_snapshot.py",
+      "expected_sha256": "43782cef7d24954b899a178741044df2cd026223311b67299444386122fd9a71",
+      "actual_sha256": "43782cef7d24954b899a178741044df2cd026223311b67299444386122fd9a71",
+      "match": true
+    },
+    {
+      "path": "runtime/tests/test_archive_v1_final.py",
+      "expected_sha256": "3b9c6b4339ff134c7287cd9d18fe79cdca1c23669cd718c3a405f7cc6f48c267",
+      "actual_sha256": "3b9c6b4339ff134c7287cd9d18fe79cdca1c23669cd718c3a405f7cc6f48c267",
+      "match": true
+    },
+    {
+      "path": "runtime/tests/test_asset_cache_perceptual.py",
+      "expected_sha256": "47a54ef5c05417ea028a2b8986693194ce4423f0b198bd0b60a2cbc6b148550a",
+      "actual_sha256": "47a54ef5c05417ea028a2b8986693194ce4423f0b198bd0b60a2cbc6b148550a",
+      "match": true
+    },
+    {
+      "path": "runtime/tests/test_end_to_end_svs_archive.py",
+      "expected_sha256": "4758896b9357cbe01d04896688f39e3f302c5d01c199ac929b26364958e50878",
+      "actual_sha256": "4758896b9357cbe01d04896688f39e3f302c5d01c199ac929b26364958e50878",
+      "match": true
+    },
+    {
+      "path": "runtime/tests/test_evidence_intelligence.py",
+      "expected_sha256": "859880987b53381ae0291852016ee5ea11367f46fcd47d05b1e3378ffb92b966",
+      "actual_sha256": "859880987b53381ae0291852016ee5ea11367f46fcd47d05b1e3378ffb92b966",
+      "match": true
+    },
+    {
+      "path": "runtime/tests/test_g5_acceptance.py",
+      "expected_sha256": "fa04265c07c5b1b02aa09a8e9c3868c7e66ab468a1cbd40c72672df3eb3949ab",
+      "actual_sha256": "fa04265c07c5b1b02aa09a8e9c3868c7e66ab468a1cbd40c72672df3eb3949ab",
+      "match": true
+    },
+    {
+      "path": "runtime/tests/test_governance_readiness.py",
+      "expected_sha256": "33ea58b0c4bcf37ab1f200aebd31426efba914d50be4042092351d27312f9b05",
+      "actual_sha256": "33ea58b0c4bcf37ab1f200aebd31426efba914d50be4042092351d27312f9b05",
+      "match": true
+    },
+    {
+      "path": "runtime/tests/test_retrieval_benchmark.py",
+      "expected_sha256": "ebf1bd88b850f9f8e234ec78870808982c4155afe6531d08f9fa724020fa12ce",
+      "actual_sha256": "ebf1bd88b850f9f8e234ec78870808982c4155afe6531d08f9fa724020fa12ce",
+      "match": true
+    }
+  ],
+  "extra_python_modules": []
+}

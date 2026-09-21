@@ -21,13 +21,13 @@ Status: next release in progress. This is the only Streetcraft client line and i
 
 ## Evidence
 
-- Reference Reasoning unit tests: 16 PASS.
+- Reference Reasoning unit tests: 18 PASS.
 - Integrated automated regression: 106 tests/checks PASS.
-- Archive software integration: 12 PASS using explicitly synthetic evidence.
+- Archive software integration: 12 historical synthetic checks PASS.
+- Real classified Archive catalog V1: 10 Evidence Units.
+- Real Archive execution: 8/8 cases PASS with bundles, provenance SHA and traces preserved.
+- R2b visual gate: 6/6, S3=0, global score 91.0 PASS.
 
 ## Required before stable promotion
 
-- Validate against a classified real Archive catalog.
-- Connect reference projection to the complete CGC orchestration path.
-- Complete the six formal R2b visual cases.
-- Finish with zero S3 violations and a global score of at least 90.
+- Connect reference projection to the complete CGC orchestration path and validate end-to-end.

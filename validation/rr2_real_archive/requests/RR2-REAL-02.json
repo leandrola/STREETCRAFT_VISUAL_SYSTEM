@@ -1,0 +1,22 @@
+{
+  "profile": "VP02",
+  "mode": "T01",
+  "camera": "CG-S",
+  "query_budget": 2,
+  "semantic_text_lock": "STRICT",
+  "needs": [
+    {
+      "need_id": "N-TEXT",
+      "state": "RN_REQUIRED",
+      "target_domains": [
+        "SIGNAGE"
+      ],
+      "specific_problem": "Resolve unreadable storefront microtext",
+      "task_context": "Source preservation",
+      "source_context": "Exact wording not fully legible",
+      "min_provenance": "P2",
+      "max_transfer_risk": "HIGH",
+      "max_results": 3
+    }
+  ]
+}

@@ -44,6 +44,18 @@ class ReferenceReasoningTests(unittest.TestCase):
         r=self.run_engine([self.need()],[self.evidence(provenance_level='P1')]);self.assertEqual(r['status'],'BLOCKED_REQUIRED')
     def test_duplicate_not_independent(self):
         e=self.evidence();r=self.run_engine([self.need()],[e,e]);self.assertEqual(len(r['admissions']),1)
+    def test_cross_id_same_content_not_independent(self):
+        a=self.evidence(evidence_unit_id='E1',source_git_blob_sha='same-blob')
+        b=self.evidence(evidence_unit_id='E2',source_git_blob_sha='same-blob')
+        r=self.run_engine([self.need()],[a,b])
+        self.assertEqual(len(r['admissions']),1)
+        self.assertEqual(r['trace'][0]['screen_rejections'][0]['reason'],'DUPLICATE_CONTENT_FINGERPRINT')
+    def test_structured_claim_contradiction_requires_review(self):
+        a=self.evidence(evidence_unit_id='E1',claim_key='surface',claim_value='DRY')
+        b=self.evidence(evidence_unit_id='E2',claim_key='surface',claim_value='WET')
+        r=self.run_engine([self.need()],[a,b])
+        self.assertEqual(r['status'],'BLOCKED_REQUIRED')
+        self.assertTrue(any(x['decision']=='REVIEW_REQUIRED' for x in r['admissions']))
     def test_conflicting_duplicate_review(self):
         r=self.run_engine([self.need()],[self.evidence(),self.evidence(visible_fact='Glossy brick')]);self.assertEqual(r['status'],'BLOCKED_REQUIRED');self.assertFalse(r['generation_projection'])
     def test_fear_city_geography_not_projected(self):

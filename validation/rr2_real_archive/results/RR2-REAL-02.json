@@ -1,0 +1,118 @@
+{
+  "version": "RR-2.0",
+  "status": "BLOCKED_REQUIRED",
+  "queries": 1,
+  "query_budget": 2,
+  "need_results": {
+    "N-TEXT": "UNRESOLVED"
+  },
+  "unresolved_required": [
+    "N-TEXT"
+  ],
+  "trace": [
+    {
+      "need_id": "N-TEXT",
+      "reason": [
+        "ARCHIVE_QUERY"
+      ],
+      "screen_rejections": [],
+      "result": "UNRESOLVED",
+      "evidence_ids": [
+        "REAL-CBGB-SIGNAGE-001",
+        "REAL-LAUNDRY-LOWCONF-TEXT-001"
+      ],
+      "evidence_bundle_ids": [
+        "EB-C083A66826FE3E"
+      ],
+      "negative_evidence": [
+        {
+          "anti_pattern": "TEXT_INVENTION",
+          "rule": "Do not invent legible signage where text is unreadable or absent.",
+          "evidence_unit_id": "REAL-CBGB-SIGNAGE-001"
+        },
+        {
+          "anti_pattern": "TEXT_INVENTION",
+          "rule": "Do not invent legible signage where text is unreadable or absent.",
+          "evidence_unit_id": "REAL-LAUNDRY-LOWCONF-TEXT-001"
+        }
+      ]
+    }
+  ],
+  "admissions": [
+    {
+      "evidence_unit_id": "REAL-CBGB-SIGNAGE-001",
+      "archive_id": "SC-REAL-CATALOG-V1",
+      "decision": "ADMITTED_NEGATIVE_ONLY",
+      "domain": "SIGNAGE",
+      "reasons": [
+        "semantic_text_lock_limits_transfer"
+      ],
+      "permitted_learning": [
+        "preserve exact source-legible tokens",
+        "preserve unresolved low-confidence text"
+      ],
+      "forbidden_transfer": [
+        "invented microtext",
+        "token substitution",
+        "signage copied into unrelated scenes"
+      ],
+      "visible_fact": "Identity-bearing legible source text includes exact tokens; unreadable microtext must remain unresolved.",
+      "provenance_level": "P4",
+      "authority_score": 0.99,
+      "retrieval_score": 0.979,
+      "transfer_risk": "HIGH",
+      "need_id": "N-TEXT"
+    },
+    {
+      "evidence_unit_id": "REAL-LAUNDRY-LOWCONF-TEXT-001",
+      "archive_id": "SC-REAL-CATALOG-V1",
+      "decision": "ADMITTED_NEGATIVE_ONLY",
+      "domain": "SIGNAGE",
+      "reasons": [
+        "semantic_text_lock_limits_transfer"
+      ],
+      "permitted_learning": [
+        "preserve graphic density without readable invented wording"
+      ],
+      "forbidden_transfer": [
+        "specific invented wording",
+        "microtext completion"
+      ],
+      "visible_fact": "Low-confidence storefront/product text is not sufficiently legible to support exact new wording.",
+      "provenance_level": "P4",
+      "authority_score": 0.97,
+      "retrieval_score": 0.944,
+      "transfer_risk": "HIGH",
+      "need_id": "N-TEXT"
+    }
+  ],
+  "generation_projection": [],
+  "locked_unknowns": [],
+  "input_provenance": {
+    "evidence_sha256": "27d1dc9a0a76eb1940c069f15a2712dc0c075cf387c775ab04b547a2e8341a39",
+    "request_sha256": "c33811349e689df74012c3371d7364fb50686bb60de9f00450b35214687a1cf8",
+    "evidence_count": 10,
+    "archive_modules": {
+      "runtime/assets/asset_cache.py": "3e630e86e66cd6d18a4e31b7055675637d2092419023579bc6ab797ec6a1500e",
+      "runtime/assets/perceptual_dedupe.py": "8847039f498f4c534e57736450ad7920ca8abf73641ae5d197b0ec089acacdf6",
+      "runtime/evidence_intelligence/provenance_scoring.py": "c2804565bae90e73aee2a805c072b7ae509a530e58558056a7b45030848495f3",
+      "runtime/evidence_intelligence/transfer_risk.py": "214acd3c8957178396ae92bb5c7256114599c4194351010c886539da53cbba13",
+      "runtime/governance/governance.py": "eb50a2f37cf903e02b72d680df0b0ebd96956c037bafcd4a393125bec0f22df0",
+      "runtime/governance/health.py": "e111da183bb0f0425d995735fd2d374256be7af2bd809b9b6a5e90529f6a0d08",
+      "runtime/integration/evidence_bundle.py": "3d84b33b8829e5e2ac702b4c8fcb15033be0ad9398ce6b7938eeecaaebff8c92",
+      "runtime/integration/negative_evidence.py": "9463d4767f2e561beb006d96a4a6a96433ad33dac4c9579576a741fba369b83b",
+      "runtime/retrieval/eligibility.py": "a20b8db0e946cc61e0be4413350f66de45c388f792cf9e579b9e0874e823e514",
+      "runtime/retrieval/query_planner.py": "b4240090b5e3eaa8bda401f5edcaf82b23b1f716c324724079ac0876267886ce",
+      "runtime/retrieval/ranking.py": "62af2f94161705d85a41d69106f069352a707c07fc8ab7c2e4f6f6c56eea105e",
+      "runtime/sqlite/dedupe_exact.py": "aa6e6f08fdc63622af96c1359bf0333657216ba0e2b16fca410bb2a6cb199e38",
+      "runtime/sqlite/ingest_snapshot.py": "43782cef7d24954b899a178741044df2cd026223311b67299444386122fd9a71",
+      "runtime/tests/test_archive_v1_final.py": "3b9c6b4339ff134c7287cd9d18fe79cdca1c23669cd718c3a405f7cc6f48c267",
+      "runtime/tests/test_asset_cache_perceptual.py": "47a54ef5c05417ea028a2b8986693194ce4423f0b198bd0b60a2cbc6b148550a",
+      "runtime/tests/test_end_to_end_svs_archive.py": "4758896b9357cbe01d04896688f39e3f302c5d01c199ac929b26364958e50878",
+      "runtime/tests/test_evidence_intelligence.py": "859880987b53381ae0291852016ee5ea11367f46fcd47d05b1e3378ffb92b966",
+      "runtime/tests/test_g5_acceptance.py": "fa04265c07c5b1b02aa09a8e9c3868c7e66ab468a1cbd40c72672df3eb3949ab",
+      "runtime/tests/test_governance_readiness.py": "33ea58b0c4bcf37ab1f200aebd31426efba914d50be4042092351d27312f9b05",
+      "runtime/tests/test_retrieval_benchmark.py": "ebf1bd88b850f9f8e234ec78870808982c4155afe6531d08f9fa724020fa12ce"
+    }
+  }
+}

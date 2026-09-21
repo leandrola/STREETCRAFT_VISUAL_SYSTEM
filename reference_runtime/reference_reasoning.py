@@ -107,6 +107,8 @@ def resolve_reference(*, needs, profile, mode, camera, archive_retriever,
             bundle = retrieve(request)
             unique = {}
             conflicted = set()
+            content_seen = {}
+            claim_values = {}
             for raw in bundle.get('items', []):
                 item = deepcopy(raw)
                 eid = item.get('evidence_unit_id')
@@ -116,11 +118,50 @@ def resolve_reference(*, needs, profile, mode, camera, archive_retriever,
                 if not eid or minimum not in levels or provenance not in levels or levels[provenance] < levels[minimum]:
                     rejected.append({'evidence_unit_id': eid, 'reason': 'MISSING_ID_OR_INSUFFICIENT_PROVENANCE'})
                     continue
+                # Real catalogs can contain the same underlying asset under
+                # different IDs. Count it once per domain, not once per ID.
+                fingerprint = item.get('content_sha256') or item.get('source_sha256') or item.get('source_git_blob_sha')
+                fp_key = (item.get('domain'), fingerprint) if fingerprint else None
+                if fp_key and fp_key in content_seen and content_seen[fp_key] != eid:
+                    rejected.append({'evidence_unit_id': eid,
+                                     'reason': 'DUPLICATE_CONTENT_FINGERPRINT',
+                                     'duplicate_of': content_seen[fp_key]})
+                    continue
+                if fp_key:
+                    content_seen[fp_key] = eid
                 if eid in unique and unique[eid] != item:
                     conflicted.add(eid)
                 unique[eid] = item
+                # Contradictions are explicit structured claims only. RR2
+                # still does not infer contradictions from free-form prose.
+                claim_key = item.get('claim_key')
+                claim_value = item.get('claim_value')
+                if claim_key is not None and claim_value is not None:
+                    values = claim_values.setdefault(claim_key, {})
+                    values.setdefault(json.dumps(claim_value, sort_keys=True), []).append(eid)
             for eid in conflicted:
                 unique[eid]['bundle_conflict'] = True
+            for values in claim_values.values():
+                if len(values) > 1:
+                    for ids in values.values():
+                        for eid in ids:
+                            if eid in unique:
+                                unique[eid]['bundle_conflict'] = True
+            # Archive may have built conflicts before RR2 cross-ID dedupe.
+            # Remove conflict records that collapse to fewer than two surviving
+            # Evidence Unit IDs; otherwise one retained duplicate would stay
+            # falsely marked as conflicting with an item RR2 already rejected.
+            surviving = set(unique)
+            filtered_conflicts = []
+            for conflict in bundle.get('conflicts', []):
+                ids = []
+                lead = conflict.get('leading_evidence_unit_id')
+                if lead in surviving:
+                    ids.append(lead)
+                ids.extend(x for x in conflict.get('dissenting_evidence_unit_ids', []) if x in surviving)
+                if len(set(ids)) >= 2:
+                    filtered_conflicts.append(conflict)
+            bundle['conflicts'] = filtered_conflicts
             # Structured contradictions from the adapter are also honored by v1.
             bundle['items'] = list(unique.values())
             return bundle

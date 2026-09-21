@@ -49,7 +49,10 @@ golden_bad=[r['path'] for r in gold['fixtures'] if not (ROOT/r['path']).exists()
 checks.append({'name':'golden_fixture_integrity','status':'PASS' if not golden_bad else 'FAIL','fixtures_checked':len(gold['fixtures']),'failures':golden_bad})
 checks.append(run('benchmark/check_r2_baseline.py',ROOT))
 status='PASS' if all(c['status']=='PASS' for c in checks) else 'FAIL'
-report={'suite':'SVS 1.10.0 Unified Client Regression','base_release':'SVS 1.9.1 / CIL 1.1','R0':status,'R1_current_embedded_assets':next(c['status'] for c in checks if c['name']=='exact_embedded_asset_identity'),'R2b_visual':'REQUIRED_PENDING','stable_promotion':False,'checks':checks}
+r2b=json.loads((ROOT/'benchmark/r2b_1_9_1/RUN_STATUS.json').read_text())
+real_archive_path=ROOT/'validation/RR2_REAL_ARCHIVE_VALIDATION_V1.json'
+real_archive=json.loads(real_archive_path.read_text()) if real_archive_path.exists() else {'status':'PENDING'}
+report={'suite':'SVS 1.10.0 Unified Client Regression','base_release':'SVS 1.9.1 / CIL 1.1','R0':status,'R1_current_embedded_assets':next(c['status'] for c in checks if c['name']=='exact_embedded_asset_identity'),'R2b_visual':r2b.get('status','PENDING'),'R2b_global_score':r2b.get('global_score'),'R2b_s3':r2b.get('s3_count'),'RR2_real_archive':real_archive.get('status','PENDING'),'stable_promotion':False,'pending':['full CGC orchestration projection'],'checks':checks}
 out=ROOT/'validation/INTEGRATION_QA.json';out.write_text(json.dumps(report,indent=2),encoding='utf-8')
 print(json.dumps(report,indent=2))
 raise SystemExit(0 if status=='PASS' else 1)

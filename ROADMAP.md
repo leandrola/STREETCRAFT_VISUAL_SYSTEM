@@ -1,8 +1,8 @@
-# Streetcraft · Roadmap vigente
+# Streetcraft · Roadmap vigente · 21/09/2026
 
-1. **SVS 1.9.1 / CIL 1.1: STABLE_BY_USER_DECISION.** Promoción excepcional autorizada por el usuario. R2b permanece incompleto (1/6 generado, 0 evaluaciones formales); no equivale a PASS.
-2. **SVS 1.10.0 · Reference Reasoning 2.0: EN DESARROLLO SOBRE EL CLIENTE ÚNICO.** Necesidades dependientes, presupuesto de consultas, deduplicación, procedencia, contradicciones y trazabilidad ya integradas en la interfaz principal de referencias. Integración de software Archive: 12 comprobaciones con evidencia sintética PASS. Pendientes: catálogo real clasificado, proyección CGC en la orquestación completa y validación visual R2b. La excepción de 1.9.1 no se hereda.
-3. **Evolución posterior a 1.10.0: PLANIFICADA.** La orquestación seguirá ampliando el mismo Streetcraft; no se abrirán clientes ni runtimes de producto paralelos.
-4. **Image Export Runtime: DEFINIDO, NO IMPLEMENTADO.** A4 horizontal 150 dpi (1754 × 1240), 300 dpi (3508 × 2480); A3 horizontal 150 dpi (2480 × 1754), 300 dpi (4961 × 3508); 90 × 45 cm a 150 dpi únicamente (5315 × 2657). Se excluye 90 × 45 cm a 300 dpi.
+1. **SVS 1.9.1 / CIL 1.1: STABLE_BY_USER_DECISION.** R2b ya fue completado y validado: **6/6 casos, S3=0, score global 91.0/100 → PASS**.
+2. **SVS 1.10.0 · Reference Reasoning 2.0: EN DESARROLLO AVANZADO SOBRE EL CLIENTE ÚNICO.** Hito sintético→real completado: catálogo real clasificado V1, 18/18 tests RR2 PASS y 8/8 casos reales PASS contra software byte-verificado de `STREETCRAFT_ARCHIVE_V1_FINAL`. Quedan como deuda principal la proyección CGC dentro de la orquestación completa y su validación end-to-end.
+3. **Archive-aware reasoning: REAL VALIDATED V1.** Needs, query budget, cache reuse, provenance floors, cross-ID content dedupe, structured contradictions, Semantic Text Lock, Fear City geographic isolation y locked unknowns quedaron ejercitados con casos reales y trazas persistidas.
+4. **CGC en orquestación completa: PENDIENTE.** Integrar Reference Reasoning 2.0 → CGC → preflight/hardening → generación dentro del camino completo del cliente.
 
-Critic avanzado y Profile Evolution continúan fuera del alcance solicitado.
+Critic avanzado, Profile Evolution e Image Export Runtime quedan fuera del roadmap activo 21/9 salvo reincorporación explícita.

@@ -1,0 +1,36 @@
+{
+  "version": "1.10.0",
+  "capability": "Reference Reasoning 2.0 real-evidence transition",
+  "status": "PASS",
+  "date": "2026-09-21",
+  "catalog": "reference_runtime/real_catalog/REAL_EVIDENCE_CATALOG_V1.json",
+  "real_evidence_units": 10,
+  "real_cases": 8,
+  "coverage": [
+    "archive-aware reasoning",
+    "reference needs",
+    "query budget",
+    "cache reuse",
+    "provenance floor",
+    "cross-ID content dedupe",
+    "structured contradictions",
+    "semantic text lock",
+    "Fear City geographic isolation",
+    "locked unknowns"
+  ],
+  "code_delta": [
+    "dedupe different Evidence Unit IDs sharing one content fingerprint within the same domain",
+    "detect contradictions only from explicit claim_key/claim_value fields"
+  ],
+  "not_claimed": [
+    "No semantic contradiction inference from natural language.",
+    "SVS 1.10.0 stable promotion is not claimed until CGC end-to-end validation is complete."
+  ],
+  "next_gate": "Integrate RR2 projection into full CGC orchestration and validate end-to-end.",
+  "archive_execution": "PASS_8_OF_8",
+  "rr2_unit_tests": "PASS_18_OF_18",
+  "bundles_preserved": true,
+  "provenance_sha_preserved": true,
+  "traces_preserved": true,
+  "archive_runtime_identity": "PASS_20_MODULE_HASHES"
+}

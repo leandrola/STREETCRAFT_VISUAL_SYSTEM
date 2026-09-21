@@ -2,12 +2,12 @@
   "name": "Streetcraft Visual System",
   "version": "1.10.0",
   "build_date": "2026-09-21",
-  "status": "next-release-in-progress",
+  "status": "1.10.0-in-progress-hito2-real-archive-pass",
   "entry_point": "STREETCRAFT.md",
   "source_repository": "https://github.com/leandrola/STREETCRAFT_VISUAL_SYSTEM",
   "source_base_commit": "04c070d2043295bb802ce3381b7c78faa26ee991",
   "source_base_tree": "c9b52237e1cdfeb799d0c6f729114721858517b4",
-  "base_release": "SVS 1.9.1 Stable by user decision; R2b incomplete",
+  "base_release": "SVS 1.9.1 Stable by user decision; R2b PASS 91.0 S3=0",
   "integrated_patch": "1.9.1 Critical R2b Hardening",
   "modules": [
     "core",
@@ -41,7 +41,7 @@
   "single_client": true,
   "parallel_product_runtimes": false,
   "stable_promotion": false,
-  "stable_promotion_condition": "fresh R2b visual candidate rerun with S3=0 and global score>=90",
+  "stable_promotion_condition": "full CGC orchestration projection and end-to-end validation",
   "reconstruction": {
     "operational_full_package": true,
     "byte_identical_git_archive": false,
@@ -68,14 +68,25 @@
     "runtime_overlay": "STREETCRAFT_VISUAL_SYSTEM_V1_9_1_CIL_1_1_R2B_PREP.zip",
     "baseline": "STREETCRAFT_VISUAL_SYSTEM_V1_8_1.zip",
     "historical_commit_696afe5": "NOT_VERIFIED_IN_THIS_RUN",
-    "fresh_candidates": 0
+    "fresh_candidates": 6
   },
   "reference_reasoning": {
     "capability_version": "2.0",
-    "status": "INTEGRATED_MAINLINE_IN_PROGRESS",
+    "status": "REAL_ARCHIVE_VALIDATED_CGC_E2E_PENDING",
     "entry_point": "reference_runtime/reference_reasoning.py",
     "primary_reference_interface": true,
-    "archive_software_integration": "PASS_12_CHECKS_SYNTHETIC_EVIDENCE",
-    "live_collection_integration": "PENDING_CLASSIFIED_CATALOG"
+    "archive_software_integration": "PASS_12_SYNTHETIC_PLUS_8_REAL_CASES",
+    "live_collection_integration": "PASS_REAL_CATALOG_V1",
+    "unit_tests": 18,
+    "real_evidence_units": 10,
+    "real_cases_passed": "8/8"
+  },
+  "validation_2026_09_21": {
+    "r2b": "PASS_6_OF_6_SCORE_91_S3_0",
+    "rr2_unit_tests": "PASS_18_OF_18",
+    "rr2_real_archive": "PASS_8_OF_8",
+    "archive_runtime_identity": "PASS_20_MODULE_SHA256",
+    "full_regression": "PASS",
+    "remaining_gate": "CGC_END_TO_END"
   }
 }

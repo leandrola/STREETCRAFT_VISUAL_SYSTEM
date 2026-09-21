@@ -1,0 +1,19 @@
+{
+  "profile": "VP02",
+  "mode": "T02",
+  "camera": "CG-F",
+  "query_budget": 2,
+  "occlusion_locked": true,
+  "needs": [
+    {
+      "need_id": "N-OCC",
+      "state": "RN_BLOCKED",
+      "target_domains": [
+        "ARCHITECTURE"
+      ],
+      "specific_problem": "Recover exact hidden rear geometry",
+      "task_context": "Elevation",
+      "source_context": "LOCKED_UNKNOWN"
+    }
+  ]
+}
