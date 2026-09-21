@@ -1,6 +1,6 @@
 # Repository cleanup report
 
-Date: 2026-09-21. Release baseline: **SVS 1.10.0 STABLE**. Scope: housekeeping and documentation only; no branch, release promotion, runtime behavior, public schema, score, threshold or policy changes. No commit or push.
+Date: 2026-09-21. Release baseline: **SVS 1.10.0 STABLE**. Scope: housekeeping and documentation only; no branch, release promotion, runtime behavior, public schema, score, threshold or policy changes. No commit or push was performed by the cleanup agent. External workspace activity created commits during this task; see the Git section below.
 
 ## Inventory before changes
 
@@ -97,3 +97,67 @@ Deliberately retained:
 - `.browser-profile` and `.venv`: ignored local state with potential ongoing utility, outside tracked-package cleanup.
 
 No abandoned script could be demonstrated safe to delete: executable files are current runtime/tests or retained validation tooling covered by provenance. Older filenames alone were not treated as evidence of obsolescence.
+
+## Fresh local results
+
+| Check | Post-cleanup result |
+| --- | --- |
+| Unified regression | 14/14 checks PASS |
+| CIL / hardening / Archive-aware unit | 19/19 · 12/12 · 10/10 PASS |
+| RR2 / orchestrator unit | 18/18 · 10/10 PASS |
+| Scene Intelligence / patch | 24/24 · 24/24 PASS |
+| Single-client governance | PASS |
+| Camera matrix / L3 routing | PASS (counts and output in verification JSON) |
+| Schemas and stored contract instances | PASS |
+| Original runtime, contracts and protected evidence | Unchanged |
+| R2b evidence | 14/14 SHA/size matches; 6 final cases, score 91.0, S3=0 |
+| Recorded RR2/CGC provenance | 16 cases; request/evidence hashes and 20-module recorded maps match |
+| Internal Markdown links | PASS |
+| Fresh external Archive RR2/CGC execution | NOT RUN — external runtime unavailable |
+
+The RR2 cache-reuse case repeats a bundle ID across traces; its summary lists unique bundle IDs. Audit comparison uses unique IDs while retaining every original trace. No original test or expected result was changed.
+
+## Git and exact file lists
+
+Starting commit: `ba7c2c19d9eeb09d88644112fac95ff09e4e9aea`. During this task, external workspace activity created `274bc6d` and `8144132`, incorporating documentation work. The cleanup agent did not issue commit/push/reset commands and did not undo that activity. Therefore the ordinary final `git diff --stat` may contain only the remaining changes; compare to the starting commit for the complete task diff.
+
+Original versioned files modified by this task:
+
+```text
+.gitignore
+CHEAT_SHEET.md
+HITO3_CGC_END_TO_END_COMPLETION.md
+INTEGRATION_NOTES.md
+README.md
+REFERENCE_V2_ARCHIVE_INTEGRATION.md
+RR2_REAL_CATALOG_IMPLEMENTATION_STATUS.md
+reference_runtime/REFERENCE_REASONING_2.md
+reference_runtime/real_catalog/README.md
+```
+
+Added audit/documentation files:
+
+```text
+docs/repository/CLEANUP_SHA256SUMS.json
+docs/repository/CLEANUP_VERIFICATION.json
+docs/repository/INVENTORY_BEFORE.json
+docs/repository/REFERENCE_AUDIT.json
+docs/repository/REPOSITORY_CLEANUP_REPORT.md
+docs/repository/VERIFICATION.md
+```
+
+The exact deleted local paths are listed above. No tracked paths were deleted, moved or renamed. No runtime or API changes were made.
+
+<!-- FINAL_COUNTS -->
+## Final file counts and size
+
+| Scope | Before | After |
+| --- | ---: | ---: |
+| Repository content files (excluding Git/env/browser local state) | 388 | 387 |
+| Logical bytes in that scope | 49,455,778 | 49,730,354 |
+| Original tracked paths retained | 381 | 381 |
+| Added audit/documentation files | 0 | 6 |
+| Removed ignored metadata files | 0 | 7 |
+
+Local metadata removal saved 47,132 bytes. The total size changed by +274,576 bytes because the expanded documentation and explicit inventory, reference audit, test outputs and current SHA manifest are retained for review. This is not a binary-evidence size reduction. The final supplemental manifest verifies every retained repository-content file except itself.
+<!-- END_FINAL_COUNTS -->

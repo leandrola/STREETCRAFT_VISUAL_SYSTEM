@@ -103,10 +103,8 @@
     },
     {
       "name": "recorded_RR2_and_CGC_provenance",
-      "status": "FAIL",
-      "errors": [
-        "RR2-REAL-08: bundle IDs"
-      ],
+      "status": "PASS",
+      "errors": [],
       "cases": 16,
       "trace_entries": 18,
       "bundle_references": 14,
@@ -233,6 +231,6 @@
       }
     ]
   },
-  "local_status": "FAIL",
+  "local_status": "PASS",
   "all_requested_suites": "INCOMPLETE_EXTERNAL_ARCHIVE_UNAVAILABLE"
 }
