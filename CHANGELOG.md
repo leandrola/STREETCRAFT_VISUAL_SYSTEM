@@ -1,3 +1,13 @@
+# VSG-0.1.0 — Observer · 2026-09-22
+
+- Added an optional, non-governing Visual Scene Graph projection over SAR2.
+- Retained RR2 outcomes as passive, node-targeted reference observations.
+- Added typed nodes, explicit spatial/semantic edges, confidence, locks and provenance.
+- Added semantic text, rooftop, geometry and occlusion functional subgraphs.
+- Added the Kenny's Shop volumetric rooftop fixture and VSG JSON Schema.
+- Proved observer equivalence: stable orchestration output is unchanged except for the diagnostic graph.
+- Validation: VSG 24/24, orchestrator 12/12, unified regression PASS, R2b 91.0 and S3=0.
+
 # SVS 1.10.0 — STABLE · 2026-09-21
 
 - Promoted after Gate 4 final PASS by explicit user decision.

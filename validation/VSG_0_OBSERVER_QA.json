@@ -1,0 +1,31 @@
+{
+  "capability": "Visual Scene Graph VSG-0 Observer",
+  "version": "0.1.0",
+  "date": "2026-09-22",
+  "status": "PASS",
+  "base_release": "SVS 1.10.0 STABLE",
+  "mode": "OBSERVER",
+  "governs_generation": false,
+  "fixture": "visual_scene_graph/fixtures/kennys_rooftop_vsg0.json",
+  "checks": {
+    "vsg_unit_tests": "PASS_24_OF_24",
+    "orchestrator_tests": "PASS_12_OF_12",
+    "observer_equivalence": "PASS_STABLE_OUTPUT_IDENTICAL_EXCEPT_VISUAL_SCENE_GRAPH",
+    "observer_off_legacy_shape": "PASS",
+    "deterministic_graph": "PASS",
+    "rr2_reference_observations": "PASS",
+    "unified_regression": "PASS",
+    "r2b_visual_baseline": "PASS_91_S3_0"
+  },
+  "scope": {
+    "node_types": ["building", "facade", "storefront", "sign", "window", "door", "cornice", "roof", "parapet", "chimney", "hvac", "skylight", "water_tank", "access_bulkhead", "unknown_region", "unclassified"],
+    "edge_types": ["ABOVE", "BELOW", "LEFT_OF", "RIGHT_OF", "ATTACHED_TO", "INSIDE", "BEHIND", "IN_FRONT_OF", "OCCLUDES", "CONTAINS", "PART_OF"],
+    "functional_subgraphs": ["semantic_text", "rooftop", "geometry", "occlusion"]
+  },
+  "sha256": {
+    "visual_scene_graph/vsg_observer.py": "11aeffce07a525d62c1f3cf8519454def2527912d83cada201c403820c55758f",
+    "visual_scene_graph/fixtures/kennys_rooftop_vsg0.json": "c5b09bfac4887c2a8f1c736570a46b3570a094123f6c375ca3fb16abe1cdcb60",
+    "schemas/visual-scene-graph-vsg0.schema.json": "55f366a1fd56bf5681e4e5378a490c5829fc91f74ca42c60051f6d5dd8e80018"
+  },
+  "next_gate": "VSG-1_LOCKS_REQUIRES_DIAGNOSTIC_VALUE_REVIEW"
+}

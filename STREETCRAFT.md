@@ -66,3 +66,12 @@ Read `patch/PATCH_RUNTIME_ORDER.md` and `integration/PATCH_HOOKS_1_9_1.md`.
 Primary reference entry: `reference_runtime/reference_reasoning.py`. It extends the single Streetcraft flow and uses Archive-aware admission as an internal component. It is not a separate client or alternative runtime.
 
 SVS 1.10.0 is STABLE. Final Gate 4 passed regression, visual evidence, real Archive/RR2 evidence and CGC end-to-end orchestration. Primary orchestration: `integration/streetcraft_orchestrator.py`.
+
+## Visual Scene Graph · VSG-0 Observer
+
+VSG-0 is an optional passive projection of SAR2. When a request includes
+`"vsg": {"mode": "OBSERVER"}`, orchestration emits `visual_scene_graph` with
+typed nodes, explicit relations, confidence, locks, provenance, and functional
+subgraphs. It is diagnostic only and must keep `governs_generation=false`.
+Absence of VSG must preserve the stable response shape. See
+`visual_scene_graph/VSG_0_OBSERVER.md`.

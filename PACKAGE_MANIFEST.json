@@ -15,6 +15,7 @@
     "transform",
     "intelligence",
     "scene_intelligence",
+    "visual_scene_graph",
     "hardening",
     "reference_runtime",
     "critic",
@@ -98,7 +99,16 @@
     "entry_point": "integration/streetcraft_orchestrator.py",
     "cli": "integration/run_streetcraft_orchestration.py",
     "real_archive_cases_passed": "8/8",
-    "unit_tests": "10/10"
+    "unit_tests": "12/12"
+  },
+  "visual_scene_graph": {
+    "capability_version": "VSG-0.1.0",
+    "status": "OBSERVER_NON_GOVERNING_VALIDATED",
+    "entry_point": "visual_scene_graph/vsg_observer.py",
+    "schema": "schemas/visual-scene-graph-vsg0.schema.json",
+    "generation_behavior_modified": false,
+    "observer_tests": "24/24",
+    "orchestrator_tests": "12/12"
   },
   "release_status": "STABLE",
   "final_gate_report": "validation/RELEASE_GATE_1_10_0_FINAL.json"

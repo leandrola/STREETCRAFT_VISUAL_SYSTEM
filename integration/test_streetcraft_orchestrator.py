@@ -95,4 +95,19 @@ class OrchestratorTests(unittest.TestCase):
         r=orchestrate({'command_text':'/sc-2a','scene':s},archive_retriever=None)
         self.assertTrue(any(x.startswith('break_protected_relationships:A') for x in r['cgc_final']['forbid']))
 
+    def test_vsg_observer_is_non_governing(self):
+        request={'command_text':'/sc-2a','scene':scene()}
+        stable=orchestrate(request,archive_retriever=None)
+        observed=orchestrate({**request,'vsg':{'mode':'OBSERVER','reference_id':'TEST-REF'}},archive_retriever=None)
+        graph=observed.pop('visual_scene_graph')
+        self.assertEqual(observed,stable)
+        self.assertEqual(graph['mode'],'OBSERVER')
+        self.assertFalse(graph['governs_generation'])
+        self.assertEqual(graph['nodes'][0]['evidence']['reference_id'],'TEST-REF')
+        self.assertEqual(graph['provenance']['rr_status'],'READY')
+
+    def test_vsg_off_preserves_legacy_shape(self):
+        r=orchestrate({'command_text':'/sc-2a','scene':scene(),'vsg':{'mode':'OFF'}},archive_retriever=None)
+        self.assertNotIn('visual_scene_graph',r)
+
 if __name__=='__main__': unittest.main()

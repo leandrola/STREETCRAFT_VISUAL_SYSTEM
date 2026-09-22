@@ -129,6 +129,7 @@ streetcraft/
 ├── core/               # Identity, preservation and visual grammar
 ├── command_invocation/ # CIL commands and resolver
 ├── scene_intelligence/ # SAR2 and scene-to-contract projection
+├── visual_scene_graph/ # Passive VSG-0 observer and functional subgraphs
 ├── integration/        # Single-client orchestration
 ├── reference_runtime/  # RR2, Archive adapter and real catalog
 ├── reference/          # Canon governance and reference assets
@@ -152,4 +153,8 @@ streetcraft/
 
 ## Project status
 
-The **21/9 roadmap is complete**. Historical release notes and earlier manifests remain as audit evidence; they do not define the current release. Advanced Critic, Profile Evolution and Image Export Runtime are outside that closed roadmap.
+The **21/9 stable roadmap is complete**. The next authorized work runs as two
+decoupled tracks over that stable base: Build Kit and Visual Scene Graph. VSG-0
+is a non-governing observer; it does not change generation behavior. Historical
+release notes and earlier manifests remain as audit evidence; they do not define
+the current release.

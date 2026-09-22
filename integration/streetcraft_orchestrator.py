@@ -11,13 +11,14 @@ from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-for rel in ("command_invocation", "scene_intelligence", "hardening", "reference_runtime", "patch"):
+for rel in ("command_invocation", "scene_intelligence", "visual_scene_graph", "hardening", "reference_runtime", "patch"):
     p = str(ROOT / rel)
     if p not in sys.path:
         sys.path.insert(0, p)
 
 from resolve_commands import resolve as resolve_commands
 from scene_intelligence import build_scene_analysis_record, project_scene_to_cgc
+from vsg_observer import build_visual_scene_graph
 from operational_hardening import build_contract, material_delta_allowed
 from reference_reasoning import resolve_reference, enrich_cgc
 from svs_1_9_1_patch import classify_text_token, low_confidence_render_hint, patch_pre_generation_gate
@@ -193,6 +194,7 @@ def orchestrate(request: dict, *, archive_retriever=None) -> dict:
 
     scene = _scene_with_runtime_config(request["scene"], cfg)
     sar2 = build_scene_analysis_record(**scene)
+    vsg_config = request.get("vsg", {})
     cgc_draft = _draft_cgc(request, cfg, sar2)
     needs = _reference_needs(request, sar2)
 
@@ -207,12 +209,23 @@ def orchestrate(request: dict, *, archive_retriever=None) -> dict:
         occlusion_locked=occlusion_locked,
         fear_city_confirmed=fear_city_confirmed,
     )
+    vsg = None
+    if str(vsg_config.get("mode", "OFF")).upper() == "OBSERVER":
+        vsg = build_visual_scene_graph(
+            sar2,
+            reference_id=vsg_config.get("reference_id"),
+            reference_sha256=vsg_config.get("reference_sha256"),
+            reference_reasoning=rr,
+            reference_needs=needs,
+        )
 
     base = {
         "version": "SC-ORCH-1.0", "command": command, "resolved_config": cfg,
         "sar2": sar2, "reference_needs": needs, "reference_reasoning": rr,
         "cgc_draft": cgc_draft, "generation_ready": False,
     }
+    if vsg is not None:
+        base["visual_scene_graph"] = vsg
     if rr["status"] != "READY":
         base["status"] = "BLOCKED_REFERENCE"
         base["block_reason"] = rr["status"]

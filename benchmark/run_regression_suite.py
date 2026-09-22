@@ -28,6 +28,7 @@ checks += [
  run('reference_runtime/test_archive_aware_runtime.py',ROOT),
  run('reference_runtime/test_reference_reasoning.py',ROOT/'reference_runtime'),
  run('scene_intelligence/test_scene_intelligence.py',ROOT/'scene_intelligence'),
+ run('visual_scene_graph/test_vsg_observer.py',ROOT),
  run('integration/test_streetcraft_orchestrator.py',ROOT),
  run('validation/test_patch_1_9_1.py',ROOT),
  run('validation/test_single_client_1_10_0.py',ROOT),

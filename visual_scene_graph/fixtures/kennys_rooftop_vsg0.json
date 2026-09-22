@@ -1,0 +1,26 @@
+{
+  "scene_id": "VSG0-KENNYS-ROOFTOP",
+  "source_identity": "KENNYS_SHOP_REFERENCE",
+  "mode": "T01",
+  "profile": "VP02",
+  "entities": [
+    {"entity_id":"building_01","label":"Kenny's primary building","kind":"ARCHITECTURE","vsg_type":"building","roles":["STRUCTURAL_CORE","IDENTITY_ANCHOR"],"preservation_level":"P0","epistemic_class":"OBSERVED","confidence":"HIGH","observed":true,"geometry_lock":true,"salience":{}},
+    {"entity_id":"storefront_01","label":"street storefront","kind":"STOREFRONT","roles":["STRUCTURAL_CORE"],"preservation_level":"P0","epistemic_class":"OBSERVED","confidence":"HIGH","observed":true,"salience":{}},
+    {"entity_id":"sign_01","label":"Kenny's sign","kind":"SIGNAGE","text":"KENNY'S","semantic_lock":true,"roles":["IDENTITY_ANCHOR","RELATIONSHIP_ANCHOR"],"preservation_level":"P0","epistemic_class":"OBSERVED","confidence":0.99,"observed":true,"region":[0.18,0.42,0.49,0.55],"salience":{}},
+    {"entity_id":"roof_01","label":"volumetric roof","kind":"ROOF","vsg_properties":{"mode":"volumetric"},"roles":["STRUCTURAL_CORE"],"preservation_level":"P0","epistemic_class":"OBSERVED","confidence":"HIGH","observed":true,"salience":{}},
+    {"entity_id":"parapet_01","label":"masonry parapet","kind":"PARAPET","roles":["RELATIONSHIP_ANCHOR"],"preservation_level":"P1","epistemic_class":"OBSERVED","confidence":"HIGH","observed":true,"salience":{}},
+    {"entity_id":"hvac_01","label":"rooftop HVAC","kind":"HVAC","roles":["CONTEXTUAL_SUPPORT"],"preservation_level":"P2","epistemic_class":"OBSERVED","confidence":"MEDIUM","observed":true,"salience":{}},
+    {"entity_id":"chimney_01","label":"brick chimney","kind":"CHIMNEY","roles":["CONTEXTUAL_SUPPORT"],"preservation_level":"P2","epistemic_class":"OBSERVED","confidence":"HIGH","observed":true,"salience":{}},
+    {"entity_id":"skylight_01","label":"roof skylight","kind":"SKYLIGHT","roles":["CONTEXTUAL_SUPPORT"],"preservation_level":"P2","epistemic_class":"OBSERVED","confidence":"MEDIUM","observed":true,"salience":{}},
+    {"entity_id":"access_bulkhead_01","label":"roof access bulkhead","kind":"ACCESS_BULKHEAD","roles":["CONTEXTUAL_SUPPORT"],"preservation_level":"P2","epistemic_class":"OBSERVED","confidence":"MEDIUM","observed":true,"salience":{}}
+  ],
+  "relationships": [
+    {"relationship_id":"rel_sign_attached","subject":"sign_01","predicate":"ATTACHED_TO","object":"storefront_01","protection":"PR0","epistemic_class":"OBSERVED","confidence":"HIGH"},
+    {"relationship_id":"rel_storefront_part","subject":"storefront_01","predicate":"PART_OF","object":"building_01","protection":"PR0","epistemic_class":"OBSERVED","confidence":"HIGH"},
+    {"relationship_id":"rel_roof_part","subject":"roof_01","predicate":"PART_OF","object":"building_01","protection":"PR0","epistemic_class":"OBSERVED","confidence":"HIGH"},
+    {"relationship_id":"rel_parapet_part","subject":"parapet_01","predicate":"PART_OF","object":"roof_01","protection":"PR1","epistemic_class":"OBSERVED","confidence":"HIGH"},
+    {"relationship_id":"rel_hvac_behind","subject":"hvac_01","predicate":"BEHIND","object":"parapet_01","protection":"PR1","epistemic_class":"OBSERVED","confidence":"MEDIUM"},
+    {"relationship_id":"rel_chimney_left","subject":"chimney_01","predicate":"LEFT_OF","object":"skylight_01","protection":"PR2","epistemic_class":"OBSERVED","confidence":"HIGH"},
+    {"relationship_id":"rel_bulkhead_inside","subject":"access_bulkhead_01","predicate":"INSIDE","object":"roof_01","protection":"PR1","epistemic_class":"OBSERVED","confidence":"MEDIUM"}
+  ]
+}
