@@ -52,7 +52,7 @@ The benchmark remains the attribution authority. The original VSG-0.5 `diagnose_
 | COMPILER | SHADOW_COMPILER |
 | GENERATION | OBSERVED_OUTPUT |
 
-The diagnostic extension reuses the observer and Graph Lock validator to inspect lock violations at supplied stages, expected-versus-actual ledger entries and shadow lock requirements. Within a stage, existing benchmark findings take precedence; matching lock findings annotate them with exact `lock_id` values. A lost ledger entry is attributed to `GRAPH_LOCKS`; a lost shadow lock requirement to `SHADOW_COMPILER`.
+The diagnostic extension reuses the observer and Graph Lock validator to inspect lock violations at supplied stages, expected-versus-actual ledger entries and shadow lock requirements. Structured node type/text and edge type/endpoints are also compared at SAR2 and VSG transitions, so a changed `BEHIND` relation is not blamed on generation merely because its ID survived. Within a stage, existing benchmark findings take precedence; matching lock findings annotate them with exact `lock_id` values. A lost ledger entry is attributed to `GRAPH_LOCKS`; a lost shadow lock requirement to `SHADOW_COMPILER`.
 
 There is one deterministic primary root cause: the earliest incorrect stage, with the benchmark's stable ordering for ties. Reachable downstream findings are `symptoms`; unrelated findings remain `independent_findings`, not asserted consequences of that root. Every root and finding includes an explicit source-to-finding `causal_path`. This is structured dependency attribution, not a proof of physical causation beyond the supplied snapshots.
 
@@ -70,6 +70,8 @@ There is one deterministic primary root cause: the earliest incorrect stage, wit
 [The schema](../schemas/vsg-causal-trace.schema.json) defines the public trace shape. `validate_causal_trace` checks event uniqueness, resolvable pointers and event references, stage ordering, acyclicity, primary-root rules and hash validity. It also deterministically replays the benchmark and trace construction against the artifacts. A forged later root, omitted symptom, altered lock ID, reordered causal content or stale provenance fails replay even if an attacker recomputes the outer hash.
 
 Canonical hashing uses UTF-8 JSON with sorted keys, compact separators, literal Unicode and finite numbers. `trace_sha256` excludes **only** its own field. Provenance hashes each supplied artifact separately. Confidence `1.0` means an exact structured comparison, not certainty about pixel evidence or the completeness of the source interpretation.
+
+Tests require Python 3.10+ and the existing suite dependencies, Pillow and jsonschema.
 
 ```sh
 python visual_scene_graph/test_causal_trace.py
