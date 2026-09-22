@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from collections import Counter
+from copy import deepcopy
 import hashlib
 import json
 
@@ -187,8 +188,8 @@ def check_causal_graph_locks(*, expected_graph, sar2, reference_reasoning,
             findings.append({"stage": "SHADOW_COMPILER", "lock_id": lock_id,
                              "lock_type": lock["type"], "target": lock["target"],
                              "code": "SHADOW_LOCK_OMISSION"})
-    return {"mode": "VALIDATE_ONLY", "governs_generation": False,
-            "status": "FAIL" if findings else "PASS", "findings": findings, "input_sha256": input_sha256}
+    return deepcopy({"mode": "VALIDATE_ONLY", "governs_generation": False,
+                     "status": "FAIL" if findings else "PASS", "findings": findings, "input_sha256": input_sha256})
 
 
 def diagnose_causal_snapshots(*, expected_graph, sar2, reference_reasoning,
@@ -198,7 +199,6 @@ def diagnose_causal_snapshots(*, expected_graph, sar2, reference_reasoning,
     Existing VSG-0.5 diagnoses take precedence within the same stage. Lock IDs
     annotate those diagnoses rather than replacing an earlier causal transition.
     """
-    from copy import deepcopy
     legacy = diagnose_pipeline(expected_graph=expected_graph, sar2=sar2,
                                reference_reasoning=reference_reasoning, vsg=vsg,
                                generation_contract=shadow_contract,
@@ -236,6 +236,27 @@ def diagnose_causal_snapshots(*, expected_graph, sar2, reference_reasoning,
             findings.append({"stage": f["stage"], "code": f["code"], "target": target,
                              "target_kind": kind, "diagnostic_source": "GRAPH_LOCKS",
                              "lock_ids": [f["lock_id"]]})
+    # Identity-preserving values can change without an ID disappearing. Inspect
+    # those transitions too, including BEHIND/IN_FRONT_OF on non-lock-owning HVAC.
+    try:
+        from ..vsg_observer import build_visual_scene_graph
+    except ImportError:
+        from vsg_observer import build_visual_scene_graph
+    interpreted = build_visual_scene_graph(sar2)
+    for stage, upstream, downstream in (("SAR2", expected_graph, interpreted), ("VSG", interpreted, vsg)):
+        for field, kind in (("nodes", "NODE"), ("edges", "EDGE")):
+            left, right = _by_id(upstream[field]), _by_id(downstream[field])
+            for target in sorted(left.keys() & right.keys()):
+                if kind == "NODE":
+                    a = (left[target].get("type"), left[target].get("properties", {}).get("text"))
+                    b = (right[target].get("type"), right[target].get("properties", {}).get("text"))
+                else:
+                    a = tuple(left[target].get(k) for k in ("type", "from", "to"))
+                    b = tuple(right[target].get(k) for k in ("type", "from", "to"))
+                if a != b and not any(f["stage"] == stage and f["target"] == target and f["target_kind"] == kind for f in findings):
+                    findings.append({"stage": stage, "code": f"{stage}_{kind}_ALTERED",
+                                     "target": target, "target_kind": kind,
+                                     "diagnostic_source": "STRUCTURED_TRANSITION", "lock_ids": []})
     # Retain downstream disappearance even when an earlier omission meant the
     # shadow contract never requested that element. These are symptoms, not a
     # replacement for the benchmark's earlier primary stage.

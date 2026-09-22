@@ -1,3 +1,14 @@
+# VSG-1.5.0 — Causal Trace · 2026-09-22
+
+- Added an explicit diagnostic API over source expectations, SAR2, RR2, VSG, locks, shadow requirements and observed graphs.
+- Reused the VSG-0.5 benchmark as the primary-stage authority; retained its 13 original cases.
+- Added typed events, directed causality, resolvable artifact pointers, exact Graph Lock IDs, root causes and separate downstream/independent findings.
+- Added explicit INCOMPLETE results for unavailable or inconsistent snapshots; no stages are fabricated.
+- Added deterministic trace/provenance SHA-256 and replay validation against causal tampering.
+- Validated 19/19 controlled causal cases, 100% root attribution, zero cycles/unresolved references and no healthy-control false positives.
+- Remains TRACE_ONLY; stable orchestration, CGC, RR2, preflight and adapter input are unchanged.
+- Next milestone: VSG-2A Generation Compiler Shadow.
+
 # VSG-1.0.0 — Graph Locks · 2026-09-22
 
 - Added a deterministic graph-lock ledger with stable IDs, strength, expected state and provenance.

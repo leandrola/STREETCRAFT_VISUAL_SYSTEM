@@ -120,9 +120,28 @@
     "graph_locks": {
       "version": "1.0.0",
       "mode": "VALIDATE_ONLY",
-      "types": ["SEMANTIC_TEXT_LOCK", "GEOMETRY_LOCK", "OCCLUSION_LOCK", "REFERENCE_ISOLATION_LOCK"],
+      "types": [
+        "SEMANTIC_TEXT_LOCK",
+        "GEOMETRY_LOCK",
+        "OCCLUSION_LOCK",
+        "REFERENCE_ISOLATION_LOCK"
+      ],
       "tests": "25/25",
       "governs_generation": false
+    },
+    "causal_trace": {
+      "version": "1.5.0",
+      "status": "COMPLETED_AND_VALIDATED",
+      "mode": "TRACE_ONLY",
+      "governs_generation": false,
+      "entry_point": "visual_scene_graph/causal_trace.py",
+      "schema": "schemas/vsg-causal-trace.schema.json",
+      "cases": "19/19",
+      "causal_accuracy": 1.0,
+      "cycles": 0,
+      "unresolved_references": 0,
+      "healthy_control_false_positives": 0,
+      "next_milestone": "VSG-2A Generation Compiler Shadow"
     }
   },
   "release_status": "STABLE",

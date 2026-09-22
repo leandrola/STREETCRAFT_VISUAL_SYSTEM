@@ -90,3 +90,17 @@ IDs, strength, expected state and provenance. The validator compares a candidate
 graph against that ledger and emits typed S3/S2 findings. Enforcement remains
 `VALIDATE_ONLY`; VSG-1 cannot alter CGC, adapter input or `generation_ready`.
 See `visual_scene_graph/VSG_1_GRAPH_LOCKS.md`.
+
+## VSG-1.5 · Causal Trace
+
+Causal Trace is completed and validated as a separately invoked diagnostic API:
+`visual_scene_graph.causal_trace.build_causal_trace`. It consumes supplied structured
+snapshots and links source evidence → SAR2/RR2 → VSG → Graph Locks → shadow
+requirements → observed output → diagnosis. Missing inputs produce `INCOMPLETE`.
+It preserves `mode=TRACE_ONLY` and `governs_generation=false`; do not route its
+findings into CGC, preflight, adapter input or automatic regeneration. Existing
+orchestration is unchanged when this API is not called. The 19 controlled cases
+pass with deterministic hashes and no cycles/unresolved references.
+See [Causal Trace](visual_scene_graph/VSG_1_5_CAUSAL_TRACE.md).
+Next milestone: **VSG-2A Generation Compiler Shadow**; no production compiler or
+pixel-level output extraction is implemented.

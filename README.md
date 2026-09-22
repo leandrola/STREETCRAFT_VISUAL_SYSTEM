@@ -131,7 +131,7 @@ streetcraft/
 ├── core/               # Identity, preservation and visual grammar
 ├── command_invocation/ # CIL commands and resolver
 ├── scene_intelligence/ # SAR2 and scene-to-contract projection
-├── visual_scene_graph/ # Passive VSG-0 observer and functional subgraphs
+├── visual_scene_graph/ # Non-governing observer, Graph Locks and Causal Trace
 │   └── diagnostic_benchmark/ # VSG-0.5 causal fault-injection benchmark
 ├── integration/        # Single-client orchestration
 ├── reference_runtime/  # RR2, Archive adapter and real catalog
@@ -161,3 +161,17 @@ decoupled tracks over that stable base: Build Kit and Visual Scene Graph. VSG-0
 is a non-governing observer; it does not change generation behavior. Historical
 release notes and earlier manifests remain as audit evidence; they do not define
 the current release.
+
+## VSG-1.5 · Causal Trace
+
+**Completed and validated:** a diagnostic chain explains the first incorrect
+transition across structured source evidence, SAR2, RR2, VSG, Graph Locks,
+shadow requirements and an observed output graph. It distinguishes causes from
+downstream symptoms, retains exact lock/evidence IDs and marks missing inputs
+`INCOMPLETE`. It does not inspect pixels or change generation decisions.
+
+The controlled corpus passes **19/19 cases**, with **100% causal accuracy**, zero
+cycles/unresolved references and no healthy-control false positives. Read the
+[Causal Trace contract](visual_scene_graph/VSG_1_5_CAUSAL_TRACE.md) and
+[reproducible QA evidence](validation/VSG_1_5_CAUSAL_TRACE_QA.json).
+Next milestone: **VSG-2A Generation Compiler Shadow**.

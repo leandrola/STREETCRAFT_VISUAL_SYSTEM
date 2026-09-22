@@ -123,6 +123,7 @@ def _event_id(scene_id, stage, kind, identity):
 
 
 def _seal(trace):
+    trace = deepcopy(trace)
     trace["trace_sha256"] = trace_sha256(trace)
     return trace
 

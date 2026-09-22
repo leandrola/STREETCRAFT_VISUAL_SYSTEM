@@ -151,6 +151,23 @@ class CausalTraceTests(unittest.TestCase):
         self.assertTrue(any(f["artifact_id"] == "sign_01" for f in t["independent_findings"]))
         self.assertFalse(any(f["artifact_id"] == "sign_01" for f in t["symptoms"]))
 
+    def test_relation_mutation_is_located_before_generation(self):
+        for stage, field, key, value_key in (("SAR2", "relationships", "relationship_id", "predicate"),
+                                             ("VSG", "edges", "id", "type")):
+            a = deepcopy(self.cases[12][1])
+            next(r for r in a[stage.lower()][field] if r[key] == "rel_hvac_behind")[value_key] = "IN_FRONT_OF"
+            a = refresh(a)
+            trace = build_causal_trace(**a)
+            self.assertEqual(trace["root_cause"]["stage"], stage)
+            self.assertEqual(trace["root_cause"]["artifact_id"], "rel_hvac_behind")
+            self.assertEqual(validate_causal_trace(trace, a)["status"], "PASS")
+
+    def test_returned_trace_does_not_alias_input_reports(self):
+        a = deepcopy(self.cases[13][1]); before = deepcopy(a)
+        t = build_causal_trace(**a)
+        t["root_cause"]["lock_ids"].append("GL-EDITED-BY-CONSUMER")
+        self.assertEqual(a, before)
+
     def test_trace_call_does_not_change_stable_or_observer_orchestration(self):
         sys.path.insert(0, str(ROOT / "integration"))
         from streetcraft_orchestrator import orchestrate
