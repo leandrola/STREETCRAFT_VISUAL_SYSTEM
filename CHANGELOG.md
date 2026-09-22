@@ -1,3 +1,23 @@
+# VSG-1.0.0 — Graph Locks · 2026-09-22
+
+- Added a deterministic graph-lock ledger with stable IDs, strength, expected state and provenance.
+- Added Semantic Text, Geometry, Occlusion and Reference Isolation lock families.
+- Added candidate-graph validation with typed S3/S2 findings.
+- Geometry locks retain protected PR0/PR1 topology, not only node presence.
+- Reference Isolation validates RR2 forbidden transfers against applied transfers.
+- Added Kenny's Graph Locks fixture with all four lock families.
+- Validation: 25/25 Graph Locks tests; healthy graph PASS; six negative mutation classes detected.
+- Remains `VALIDATE_ONLY`; no CGC, adapter or generation decision is modified.
+
+# VSG-0.5.0 — Diagnostic Benchmark · 2026-09-22
+
+- Added causal localization across perception/SAR2, RR2, VSG projection, shadow compilation and observed output stages.
+- Added 13 controlled single-stage fault-injection cases over the Kenny's Shop fixture.
+- Covered missing nodes, missing/altered relations, lost RR2 observations, compiler omissions and semantic text mutation.
+- Added a healthy negative control to detect false positives.
+- Gate result: 13/13 PASS, 100% accuracy, all causal origins covered, zero healthy-control false positives.
+- Explicitly excludes pixel-level graph extraction and production generation compilation.
+
 # VSG-0.1.0 — Observer · 2026-09-22
 
 - Added an optional, non-governing Visual Scene Graph projection over SAR2.

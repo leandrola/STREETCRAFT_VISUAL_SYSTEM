@@ -1,0 +1,20 @@
+{
+  "scene_id": "VSG1-KENNYS-GRAPH-LOCKS",
+  "source_identity": "KENNYS_SHOP_REFERENCE",
+  "mode": "T01",
+  "profile": "VP02",
+  "entities": [
+    {"entity_id":"building_01","label":"Kenny's primary building","kind":"ARCHITECTURE","vsg_type":"building","roles":["STRUCTURAL_CORE","IDENTITY_ANCHOR"],"preservation_level":"P0","epistemic_class":"OBSERVED","confidence":"HIGH","observed":true,"geometry_lock":true,"salience":{}},
+    {"entity_id":"sign_01","label":"Kenny's sign","kind":"SIGNAGE","text":"KENNY'S","semantic_lock":true,"roles":["IDENTITY_ANCHOR","RELATIONSHIP_ANCHOR"],"preservation_level":"P0","epistemic_class":"OBSERVED","confidence":0.99,"observed":true,"salience":{}},
+    {"entity_id":"roof_01","label":"volumetric rooftop","kind":"ROOF","vsg_properties":{"mode":"volumetric"},"roles":["STRUCTURAL_CORE"],"preservation_level":"P0","epistemic_class":"OBSERVED","confidence":"HIGH","observed":true,"salience":{}},
+    {"entity_id":"parapet_01","label":"masonry parapet","kind":"PARAPET","roles":["RELATIONSHIP_ANCHOR"],"preservation_level":"P1","epistemic_class":"OBSERVED","confidence":"HIGH","observed":true,"salience":{}},
+    {"entity_id":"hvac_01","label":"rooftop HVAC","kind":"HVAC","roles":["CONTEXTUAL_SUPPORT"],"preservation_level":"P2","epistemic_class":"OBSERVED","confidence":"MEDIUM","observed":true,"salience":{}}
+  ],
+  "relationships": [
+    {"relationship_id":"rel_sign_attached","subject":"sign_01","predicate":"ATTACHED_TO","object":"building_01","protection":"PR0","epistemic_class":"OBSERVED","confidence":"HIGH"},
+    {"relationship_id":"rel_roof_part","subject":"roof_01","predicate":"PART_OF","object":"building_01","protection":"PR0","epistemic_class":"OBSERVED","confidence":"HIGH"},
+    {"relationship_id":"rel_parapet_part","subject":"parapet_01","predicate":"PART_OF","object":"roof_01","protection":"PR1","epistemic_class":"OBSERVED","confidence":"HIGH"},
+    {"relationship_id":"rel_hvac_behind","subject":"hvac_01","predicate":"BEHIND","object":"parapet_01","protection":"PR1","epistemic_class":"OBSERVED","confidence":"MEDIUM"},
+    {"relationship_id":"rel_parapet_occludes","subject":"parapet_01","predicate":"OCCLUDES","object":"hvac_01","protection":"PR1","epistemic_class":"OBSERVED","confidence":"HIGH"}
+  ]
+}

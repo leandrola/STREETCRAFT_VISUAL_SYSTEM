@@ -116,6 +116,8 @@ The [final release gate](validation/RELEASE_GATE_1_10_0_FINAL.json) records:
 | RR2 unit tests / orchestrator tests | 18/18 PASS / 10/10 PASS |
 | [RR2 real Archive cases](validation/RR2_REAL_ARCHIVE_VALIDATION_V1.json) | 8/8 PASS |
 | [CGC real Archive E2E](validation/CGC_END_TO_END_REAL_ARCHIVE_V1.json) | 8/8 PASS |
+| [VSG-0.5 diagnostic benchmark](validation/VSG_0_5_DIAGNOSTIC_BENCHMARK.json) | 13/13 PASS · controlled causal localization |
+| [VSG-1 Graph Locks](validation/VSG_1_GRAPH_LOCKS_QA.json) | 25/25 PASS · four lock families · validate-only |
 | [Unified regression](validation/gate4_2026_09_21/final_regression_after_promotion.json) | PASS |
 | Visual evidence / Archive identity | 14/14 evidence SHA matches / 20/20 recorded module SHA matches |
 
@@ -130,6 +132,7 @@ streetcraft/
 ├── command_invocation/ # CIL commands and resolver
 ├── scene_intelligence/ # SAR2 and scene-to-contract projection
 ├── visual_scene_graph/ # Passive VSG-0 observer and functional subgraphs
+│   └── diagnostic_benchmark/ # VSG-0.5 causal fault-injection benchmark
 ├── integration/        # Single-client orchestration
 ├── reference_runtime/  # RR2, Archive adapter and real catalog
 ├── reference/          # Canon governance and reference assets

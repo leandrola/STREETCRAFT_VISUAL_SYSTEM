@@ -32,3 +32,6 @@ graph, not separate sources of truth.
 The first fixture is Kenny's Shop because it exercises facade identity,
 Semantic Text Lock, a volumetric rooftop, separated rooftop pieces, and depth
 relations in one compact case.
+
+VSG-1 extends this observer output with `graph_locks`; VSG-0 remains the
+historical non-governing foundation.

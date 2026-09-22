@@ -45,7 +45,7 @@
       "name": "reference_runtime/test_reference_reasoning.py",
       "status": "PASS",
       "stdout": "",
-      "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.003s\n\nOK"
+      "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.002s\n\nOK"
     },
     {
       "name": "scene_intelligence/test_scene_intelligence.py",
@@ -60,10 +60,22 @@
       "stderr": ""
     },
     {
+      "name": "visual_scene_graph/test_graph_locks.py",
+      "status": "PASS",
+      "stdout": "PASS 25/25 VSG-1 Graph Locks tests",
+      "stderr": ""
+    },
+    {
+      "name": "visual_scene_graph/diagnostic_benchmark/test_diagnostic_engine.py",
+      "status": "PASS",
+      "stdout": "PASS 9/9 VSG-0.5 diagnostic benchmark tests",
+      "stderr": ""
+    },
+    {
       "name": "integration/test_streetcraft_orchestrator.py",
       "status": "PASS",
       "stdout": "",
-      "stderr": "............\n----------------------------------------------------------------------\nRan 12 tests in 0.002s\n\nOK"
+      "stderr": "............\n----------------------------------------------------------------------\nRan 12 tests in 0.004s\n\nOK"
     },
     {
       "name": "validation/test_patch_1_9_1.py",

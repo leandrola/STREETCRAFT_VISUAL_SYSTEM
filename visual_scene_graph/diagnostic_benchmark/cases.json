@@ -1,0 +1,23 @@
+{
+  "suite": "VSG-0.5 Diagnostic Benchmark",
+  "version": "0.5.0",
+  "fixture": "visual_scene_graph/fixtures/kennys_rooftop_vsg0.json",
+  "method": "controlled_single_stage_fault_injection",
+  "minimum_accuracy": 0.8,
+  "required_origins": ["PERCEPTION", "REFERENCE_REASONING", "GRAPH_PROJECTION", "COMPILER", "GENERATION", "NONE"],
+  "cases": [
+    {"case_id":"VSG-DIAG-01","title":"SAR2 misses rooftop HVAC","mutation":{"stage":"PERCEPTION","operation":"drop_node","target":"hvac_01"},"expected":{"origin":"PERCEPTION","code":"PERCEPTION_NODE_MISSING"}},
+    {"case_id":"VSG-DIAG-02","title":"SAR2 misses HVAC depth relation","mutation":{"stage":"PERCEPTION","operation":"drop_edge","target":"rel_hvac_behind"},"expected":{"origin":"PERCEPTION","code":"PERCEPTION_RELATION_MISSING"}},
+    {"case_id":"VSG-DIAG-03","title":"VSG omits detected roof","mutation":{"stage":"GRAPH_PROJECTION","operation":"drop_node","target":"roof_01"},"expected":{"origin":"GRAPH_PROJECTION","code":"VSG_NODE_OMISSION"}},
+    {"case_id":"VSG-DIAG-04","title":"VSG omits chimney/skylight relation","mutation":{"stage":"GRAPH_PROJECTION","operation":"drop_edge","target":"rel_chimney_left"},"expected":{"origin":"GRAPH_PROJECTION","code":"VSG_RELATION_OMISSION"}},
+    {"case_id":"VSG-DIAG-05","title":"RR2 expected admission is absent","mutation":{"stage":"REFERENCE_REASONING","operation":"drop_projection","target":"N-ROOF"},"expected":{"origin":"REFERENCE_REASONING","code":"RR2_EXPECTED_ADMISSION_MISSING"}},
+    {"case_id":"VSG-DIAG-06","title":"VSG loses admitted RR2 observation","mutation":{"stage":"GRAPH_PROJECTION","operation":"drop_reference_observation","target":"N-ROOF"},"expected":{"origin":"GRAPH_PROJECTION","code":"VSG_RR_OBSERVATION_MISSING"}},
+    {"case_id":"VSG-DIAG-07","title":"Compiler omits HVAC node","mutation":{"stage":"COMPILER","operation":"drop_node","target":"hvac_01"},"expected":{"origin":"COMPILER","code":"COMPILER_NODE_OMISSION"}},
+    {"case_id":"VSG-DIAG-08","title":"Compiler omits protected depth relation","mutation":{"stage":"COMPILER","operation":"drop_edge","target":"rel_hvac_behind"},"expected":{"origin":"COMPILER","code":"COMPILER_RELATION_OMISSION"}},
+    {"case_id":"VSG-DIAG-09","title":"Compiler drops semantic text lock","mutation":{"stage":"COMPILER","operation":"drop_semantic_text","target":"sign_01"},"expected":{"origin":"COMPILER","code":"COMPILER_SEMANTIC_LOCK_OMISSION"}},
+    {"case_id":"VSG-DIAG-10","title":"Generated output loses HVAC","mutation":{"stage":"GENERATION","operation":"drop_node","target":"hvac_01"},"expected":{"origin":"GENERATION","code":"OUTPUT_NODE_MISSING"}},
+    {"case_id":"VSG-DIAG-11","title":"Generated output reverses depth relation","mutation":{"stage":"GENERATION","operation":"replace_edge_type","target":"rel_hvac_behind","value":"IN_FRONT_OF"},"expected":{"origin":"GENERATION","code":"OUTPUT_RELATION_MISMATCH"}},
+    {"case_id":"VSG-DIAG-12","title":"Generated output mutates Kenny's text","mutation":{"stage":"GENERATION","operation":"replace_text","target":"sign_01","value":"KENNYS"},"expected":{"origin":"GENERATION","code":"OUTPUT_SEMANTIC_MUTATION"}},
+    {"case_id":"VSG-DIAG-13","title":"Healthy pipeline control","mutation":{"stage":"NONE","operation":"none","target":"pipeline"},"expected":{"origin":"NONE","code":"NO_FAILURE"}}
+  ]
+}

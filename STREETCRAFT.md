@@ -75,3 +75,18 @@ typed nodes, explicit relations, confidence, locks, provenance, and functional
 subgraphs. It is diagnostic only and must keep `governs_generation=false`.
 Absence of VSG must preserve the stable response shape. See
 `visual_scene_graph/VSG_0_OBSERVER.md`.
+
+VSG-0.5 adds a non-governing diagnostic benchmark. It localizes controlled
+faults to perception/SAR2, RR2, graph projection, shadow compilation or
+generation output. It does not perform pixel-level output-graph extraction and
+does not authorize VSG to govern generation. See
+`visual_scene_graph/diagnostic_benchmark/README.md`.
+
+## VSG-1 · Graph Locks
+
+VSG-1 adds a deterministic `graph_locks` ledger to every enabled VSG graph.
+Semantic Text, Geometry, Occlusion and Reference Isolation locks carry stable
+IDs, strength, expected state and provenance. The validator compares a candidate
+graph against that ledger and emits typed S3/S2 findings. Enforcement remains
+`VALIDATE_ONLY`; VSG-1 cannot alter CGC, adapter input or `generation_ready`.
+See `visual_scene_graph/VSG_1_GRAPH_LOCKS.md`.

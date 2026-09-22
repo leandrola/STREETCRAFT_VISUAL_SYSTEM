@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://streetcraft.local/schemas/visual-scene-graph-vsg1.schema.json",
+  "title": "Streetcraft Visual Scene Graph VSG-1",
+  "type": "object",
+  "required": ["schema_version", "mode", "governs_generation", "scene_id", "source_identity", "nodes", "edges", "reference_observations", "functional_subgraphs", "diagnostics", "provenance", "graph_locks"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "mode": {"const": "OBSERVER"},
+    "governs_generation": {"const": false},
+    "scene_id": {"type": "string"},
+    "source_identity": {"type": "string"},
+    "nodes": {"type": "array"},
+    "edges": {"type": "array"},
+    "reference_observations": {"type": "array"},
+    "functional_subgraphs": {"type": "array"},
+    "diagnostics": {"type": "object"},
+    "provenance": {"type": "object"},
+    "graph_locks": {
+      "type": "object",
+      "required": ["version", "mode", "governs_generation", "items", "summary", "ledger_sha256"],
+      "properties": {
+        "version": {"const": "1.0.0"},
+        "mode": {"const": "VALIDATE_ONLY"},
+        "governs_generation": {"const": false},
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "type", "target", "strength", "enforcement", "expected", "provenance"],
+            "properties": {
+              "id": {"type": "string"},
+              "type": {"enum": ["SEMANTIC_TEXT_LOCK", "GEOMETRY_LOCK", "OCCLUSION_LOCK", "REFERENCE_ISOLATION_LOCK"]},
+              "target": {
+                "type": "object",
+                "required": ["kind", "id"],
+                "properties": {"kind": {"enum": ["NODE", "EDGE"]}, "id": {"type": "string"}},
+                "additionalProperties": false
+              },
+              "strength": {"enum": ["ABSOLUTE", "STRONG"]},
+              "enforcement": {"const": "VALIDATE_ONLY"},
+              "expected": {"type": "object"},
+              "provenance": {"type": "object"}
+            },
+            "additionalProperties": false
+          }
+        },
+        "summary": {"type": "object"},
+        "ledger_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

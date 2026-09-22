@@ -102,13 +102,28 @@
     "unit_tests": "12/12"
   },
   "visual_scene_graph": {
-    "capability_version": "VSG-0.1.0",
-    "status": "OBSERVER_NON_GOVERNING_VALIDATED",
+    "capability_version": "VSG-1.0.0",
+    "observer_version": "VSG-0.1.0",
+    "status": "GRAPH_LOCKS_VALIDATED",
     "entry_point": "visual_scene_graph/vsg_observer.py",
-    "schema": "schemas/visual-scene-graph-vsg0.schema.json",
+    "schema": "schemas/visual-scene-graph-vsg1.schema.json",
     "generation_behavior_modified": false,
     "observer_tests": "24/24",
-    "orchestrator_tests": "12/12"
+    "orchestrator_tests": "12/12",
+    "diagnostic_benchmark": {
+      "method": "CONTROLLED_SINGLE_STAGE_FAULT_INJECTION",
+      "cases": "13/13",
+      "accuracy": 1.0,
+      "healthy_control_false_positives": 0,
+      "governs_generation": false
+    },
+    "graph_locks": {
+      "version": "1.0.0",
+      "mode": "VALIDATE_ONLY",
+      "types": ["SEMANTIC_TEXT_LOCK", "GEOMETRY_LOCK", "OCCLUSION_LOCK", "REFERENCE_ISOLATION_LOCK"],
+      "tests": "25/25",
+      "governs_generation": false
+    }
   },
   "release_status": "STABLE",
   "final_gate_report": "validation/RELEASE_GATE_1_10_0_FINAL.json"

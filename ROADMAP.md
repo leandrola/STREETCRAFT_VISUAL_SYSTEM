@@ -15,8 +15,10 @@ Critic avanzado, Profile Evolution e Image Export Runtime permanecen fuera del r
 ### VSG · Visual Scene Graph
 
 1. **VSG-0 Observer: COMPLETADO Y VALIDADO.** Proyección pasiva SAR2 + observaciones RR2 → grafo explícito, con nodos tipados, relaciones, confidence, locks, provenance y circuitos funcionales. No gobierna generación. Fixture inicial: Kenny's Shop / rooftop volumétrico.
-2. **VSG-1 Locks: PENDIENTE.** Consolidar Semantic Text, Geometry, Occlusion y Reference Isolation como propiedades verificables del grafo.
-3. **VSG-2 Generation Compiler: PENDIENTE Y CONDICIONADO.** Solo entra al runtime si VSG-0/1 demuestra valor diagnóstico sin regresiones.
-4. **VSG-3 Graph Critic: PENDIENTE.** Comparación Expected Graph vs Observed Output Graph y emisión de Graph Delta.
+2. **VSG-0.5 Diagnostic Benchmark: COMPLETADO Y VALIDADO.** Fault injection controlado sobre percepción/SAR2, RR2, proyección VSG, shadow compiler y salida observada. Resultado 13/13, accuracy 100%, cobertura causal completa y control sano sin falsos positivos. No implica todavía extracción de grafos desde píxeles.
+3. **VSG-1 Graph Locks: COMPLETADO Y VALIDADO.** Ledger determinista con Semantic Text, Geometry, Occlusion y Reference Isolation Locks. Validación `VALIDATE_ONLY`, IDs estables, strength, estado esperado y provenance. Fixture crítico 5/5 locks; 25/25 tests; mutaciones negativas detectadas sin gobernar generación.
+4. **VSG-1.5 Causal Trace: SIGUIENTE.** Unificar evidencia → nodo/relación → lock → instrucción → resultado y atribuir cada anomalía a una etapa concreta.
+5. **VSG-2 Generation Compiler: PENDIENTE Y CONDICIONADO.** Solo entra al runtime si VSG-1.5 demuestra preservación completa de restricciones P0/PR0/PR1 en modo shadow.
+6. **VSG-3 Graph Critic: PENDIENTE.** Comparación Expected Graph vs Observed Output Graph y emisión de Graph Delta. Requiere primero extracción confiable del grafo de salida.
 
 El track VSG permanece desacoplado de Build Kit durante sus primeras etapas. El punto de integración futuro será un `BK Compiler` consumidor del mismo grafo, no una dependencia de VSG-0.

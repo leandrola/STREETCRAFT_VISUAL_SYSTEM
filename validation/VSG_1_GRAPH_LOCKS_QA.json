@@ -1,0 +1,39 @@
+{
+  "capability": "Visual Scene Graph VSG-1 Graph Locks",
+  "version": "1.0.0",
+  "date": "2026-09-22",
+  "status": "PASS",
+  "base_release": "SVS 1.10.0 STABLE + VSG-0.5",
+  "mode": "VALIDATE_ONLY",
+  "governs_generation": false,
+  "fixture": "visual_scene_graph/fixtures/kennys_graph_locks_vsg1.json",
+  "checks": {
+    "graph_locks_tests": "PASS_25_OF_25",
+    "healthy_graph": "PASS_ZERO_FINDINGS",
+    "deterministic_ledger": "PASS",
+    "unique_stable_lock_ids": "PASS",
+    "semantic_text_mutation": "DETECTED",
+    "geometry_type_change": "DETECTED",
+    "geometry_node_missing": "DETECTED",
+    "occlusion_relation_change": "DETECTED",
+    "reference_forbidden_transfer": "DETECTED",
+    "reference_observation_missing": "DETECTED"
+  },
+  "lock_ledger": {
+    "fixture_total": 5,
+    "types": {
+      "SEMANTIC_TEXT_LOCK": 1,
+      "GEOMETRY_LOCK": 2,
+      "OCCLUSION_LOCK": 1,
+      "REFERENCE_ISOLATION_LOCK": 1
+    },
+    "enforcement": "VALIDATE_ONLY"
+  },
+  "sha256": {
+    "visual_scene_graph/graph_locks.py": "4884c055dee36bd4740bf63cb063cc862057b052b86c93f1b17800f20b98aa8d",
+    "visual_scene_graph/vsg_observer.py": "23c3aa119ffc63ec2b71dfac2d663ee4a02fec7907964ade0c599f2c59176437",
+    "visual_scene_graph/fixtures/kennys_graph_locks_vsg1.json": "77e2e0d144f95de802cb0d943661d749c34084223a7eaaec9a30b7ec0f2f3ea7",
+    "schemas/visual-scene-graph-vsg1.schema.json": "d4a4192999945d75cb446d41a4b6800b28f47ef87574ee502d1d247c6415f39a"
+  },
+  "next_gate": "VSG_1_5_CAUSAL_TRACE"
+}

@@ -11,7 +11,12 @@ from copy import deepcopy
 import hashlib
 import json
 
-VSG_VERSION = "0.1.0"
+try:
+    from .graph_locks import build_graph_locks
+except ImportError:  # direct module execution used by portable validators
+    from graph_locks import build_graph_locks
+
+VSG_VERSION = "1.0.0"
 
 NODE_TYPES = {
     "building", "facade", "storefront", "sign", "window", "door", "cornice",
@@ -131,6 +136,13 @@ def _reference_observations(reference_reasoning: dict | None, reference_needs: l
                 item["evidence_unit_id"] for item in items if item.get("evidence_unit_id")
             ),
             "evidence_bundle_ids": sorted(trace.get("evidence_bundle_ids", [])),
+            "permitted_learning": sorted({
+                value for item in items for value in item.get("permitted_learning", [])
+            }),
+            "forbidden_transfer": sorted({
+                value for item in items for value in item.get("forbidden_transfer", [])
+            }),
+            "applied_transfers": [],
         })
     return observations
 
@@ -226,7 +238,7 @@ def build_visual_scene_graph(
     if reference_sha256:
         provenance["reference_sha256"] = reference_sha256
 
-    return {
+    graph = {
         "schema_version": VSG_VERSION,
         "mode": "OBSERVER",
         "governs_generation": False,
@@ -248,3 +260,5 @@ def build_visual_scene_graph(
         },
         "provenance": provenance,
     }
+    graph["graph_locks"] = build_graph_locks(graph)
+    return graph
