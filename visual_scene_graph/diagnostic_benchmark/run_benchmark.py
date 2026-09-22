@@ -60,7 +60,9 @@ def _drop_node(container: dict, collection: str, key: str, target: str) -> None:
     container[collection] = [item for item in container[collection] if item.get(key) != target]
 
 
-def _apply_case(base_scene: dict, expected_graph: dict, case: dict) -> dict:
+def build_case_snapshots(base_scene: dict, expected_graph: dict, case: dict,
+                         *, trace_artifacts: bool = False) -> dict:
+    """Expose the existing fault-injection snapshots for diagnostic consumers."""
     scene = deepcopy(base_scene)
     rr, needs = _base_rr()
     mutation = case["mutation"]
@@ -119,6 +121,25 @@ def _apply_case(base_scene: dict, expected_graph: dict, case: dict) -> dict:
             if node.get("id") == target:
                 node.setdefault("properties", {})["text"] = mutation["value"]
 
+    if trace_artifacts:
+        # Controlled diagnostic snapshots only: this is not a production compiler.
+        contract["required_locks"] = sorted(lock["id"] for lock in vsg["graph_locks"]["items"])
+        output["reference_observations"] = deepcopy(vsg["reference_observations"])
+    return {
+        "expected_graph": deepcopy(expected_graph), "sar2": sar2,
+        "reference_reasoning": rr, "vsg": vsg,
+        "shadow_contract": contract, "observed_output_graph": output,
+    }
+
+
+def _apply_case(base_scene: dict, expected_graph: dict, case: dict) -> dict:
+    snapshots = build_case_snapshots(base_scene, expected_graph, case)
+    sar2 = snapshots["sar2"]
+    rr = snapshots["reference_reasoning"]
+    vsg = snapshots["vsg"]
+    contract = snapshots["shadow_contract"]
+    output = snapshots["observed_output_graph"]
+    mutation = case["mutation"]
     diagnosis = diagnose_pipeline(
         expected_graph=expected_graph,
         sar2=sar2,

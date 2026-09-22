@@ -1,0 +1,388 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VSG-1.5 Causal Trace (non-governing structured snapshots)",
+  "type": "object",
+  "required": [
+    "trace_version",
+    "mode",
+    "governs_generation",
+    "trace_id",
+    "scene_id",
+    "status",
+    "root_cause",
+    "events",
+    "causal_edges",
+    "symptoms",
+    "independent_findings",
+    "unresolved_inputs",
+    "provenance",
+    "trace_sha256"
+  ],
+  "properties": {
+    "trace_version": {
+      "const": "1.5.0"
+    },
+    "mode": {
+      "const": "TRACE_ONLY"
+    },
+    "governs_generation": {
+      "const": false
+    },
+    "trace_id": {
+      "type": "string",
+      "pattern": "^TRACE-[a-f0-9]{24}$"
+    },
+    "scene_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "HEALTHY",
+        "FAILURE_LOCALIZED",
+        "INCOMPLETE"
+      ]
+    },
+    "root_cause": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/finding"
+        }
+      ]
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "event_id": {
+            "$ref": "#/$defs/event_id"
+          },
+          "stage": {
+            "enum": [
+              "SOURCE_EVIDENCE",
+              "SAR2",
+              "RR2",
+              "VSG",
+              "GRAPH_LOCKS",
+              "SHADOW_COMPILER",
+              "OBSERVED_OUTPUT",
+              "DIAGNOSTIC"
+            ]
+          },
+          "artifact_kind": {
+            "enum": [
+              "NODE",
+              "EDGE",
+              "REFERENCE",
+              "LOCK",
+              "FINDING",
+              "SNAPSHOT"
+            ]
+          },
+          "artifact_id": {
+            "type": "string"
+          },
+          "artifact_ref": {
+            "$ref": "#/$defs/artifact_ref"
+          },
+          "operation": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "PRESENT",
+              "MISSING",
+              "ALTERED",
+              "REJECTED",
+              "ADMITTED",
+              "VALID",
+              "INVALID"
+            ]
+          },
+          "input_refs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/artifact_ref"
+            }
+          },
+          "output_refs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/artifact_ref"
+            }
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/artifact_ref"
+            }
+          },
+          "lock_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "required": [
+          "event_id",
+          "stage",
+          "artifact_kind",
+          "artifact_id",
+          "artifact_ref",
+          "operation",
+          "status",
+          "input_refs",
+          "output_refs",
+          "evidence_refs",
+          "lock_ids",
+          "confidence"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "causal_edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "from_event": {
+            "$ref": "#/$defs/event_id"
+          },
+          "to_event": {
+            "$ref": "#/$defs/event_id"
+          },
+          "relation": {
+            "enum": [
+              "PRODUCED",
+              "PROJECTED_TO",
+              "LOCKED_BY",
+              "REQUIRED_BY",
+              "OBSERVED_AS",
+              "CAUSED"
+            ]
+          }
+        },
+        "required": [
+          "from_event",
+          "to_event",
+          "relation"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "symptoms": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/finding"
+      }
+    },
+    "independent_findings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/finding"
+      }
+    },
+    "unresolved_inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "artifact",
+          "reason"
+        ],
+        "properties": {
+          "artifact": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "field": {
+            "type": "string"
+          },
+          "detail": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "sha256",
+          "artifact_ref"
+        ],
+        "properties": {
+          "sha256": {
+            "$ref": "#/$defs/sha256"
+          },
+          "artifact_ref": {
+            "$ref": "#/$defs/artifact_ref"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "trace_sha256": {
+      "$ref": "#/$defs/sha256"
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "artifact_ref": {
+      "type": "string",
+      "pattern": "^[a-z_][a-z0-9_]*#(/.*)?$"
+    },
+    "event_id": {
+      "type": "string",
+      "pattern": "^EV-[a-f0-9]{24}$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "finding": {
+      "type": "object",
+      "properties": {
+        "stage": {
+          "enum": [
+            "SAR2",
+            "RR2",
+            "VSG",
+            "GRAPH_LOCKS",
+            "SHADOW_COMPILER",
+            "OBSERVED_OUTPUT"
+          ]
+        },
+        "code": {
+          "type": "string"
+        },
+        "artifact_id": {
+          "type": "string"
+        },
+        "artifact_ref": {
+          "$ref": "#/$defs/artifact_ref"
+        },
+        "event_id": {
+          "$ref": "#/$defs/event_id"
+        },
+        "diagnostic_event": {
+          "$ref": "#/$defs/event_id"
+        },
+        "lock_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "lock_id": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "causal_path": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/event_id"
+          }
+        },
+        "caused_by": {
+          "$ref": "#/$defs/event_id"
+        }
+      },
+      "required": [
+        "stage",
+        "code",
+        "artifact_id",
+        "artifact_ref",
+        "event_id",
+        "diagnostic_event",
+        "lock_ids",
+        "confidence",
+        "causal_path"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "HEALTHY"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "root_cause": {
+            "type": "null"
+          },
+          "symptoms": {
+            "maxItems": 0
+          },
+          "independent_findings": {
+            "maxItems": 0
+          },
+          "unresolved_inputs": {
+            "maxItems": 0
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "FAILURE_LOCALIZED"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "root_cause": {
+            "$ref": "#/$defs/finding"
+          },
+          "unresolved_inputs": {
+            "maxItems": 0
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "INCOMPLETE"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "root_cause": {
+            "type": "null"
+          },
+          "unresolved_inputs": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ]
+}
