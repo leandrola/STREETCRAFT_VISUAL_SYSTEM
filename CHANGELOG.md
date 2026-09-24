@@ -1,3 +1,11 @@
+# VSG-2A — Generation Compiler Shadow · 2026-09-24
+
+- Added a deterministic non-governing VSG Generation Contract, explicit SAR2/policy inputs, schemas and content digests.
+- Added semantic comparison against stable CGC plus immutable source restrictions, with fail-closed P0/PR0/PR1/Graph Lock preservation and actionable lineage.
+- Added 25 controlled cases and 24 tests, including negative gates, reordering, verified Causal Trace and ready/blocked runtime isolation.
+- Full regression PASS; VSG-0.5 13/13 and VSG-1.5 19/19 preserved; R2b 91.0 / S3=0. Generation routing, CGC and readiness unchanged.
+- Added reproducible benchmark/QA verification; refreshed prior Causal Trace QA hashes after shared documentation and regression-runner updates.
+
 # VSG-1.5.0 — Causal Trace · 2026-09-22
 
 - Added an explicit diagnostic API over source expectations, SAR2, RR2, VSG, locks, shadow requirements and observed graphs.

@@ -77120,14 +77120,14 @@
     "visual_scene_graph/fixtures/kennys_rooftop_vsg0.json": "c5b09bfac4887c2a8f1c736570a46b3570a094123f6c375ca3fb16abe1cdcb60",
     "visual_scene_graph/fixtures/kennys_graph_locks_vsg1.json": "77e2e0d144f95de802cb0d943661d749c34084223a7eaaec9a30b7ec0f2f3ea7",
     "schemas/vsg-causal-trace.schema.json": "920ab4e2f177479e7f9a341cb21081d77c6ebb11f29d03893dabcec8ee3a4b68",
-    "benchmark/run_regression_suite.py": "5df8c4e87b91dd3485f02b285ed867e90619384dd733139a0b671edc47e99108",
+    "benchmark/run_regression_suite.py": "d4d60ce56c70238edd9f72c8ccc8db9f746fac295014e4c2d3314a2250090cf4",
     "integration/streetcraft_orchestrator.py": "61a4ea960e34d2e8b7c59f9c44eef8bc3e9027efaef50c57d36ba1f514773b5b",
     "reference_runtime/reference_reasoning.py": "6d057d9e8c4d34e70decf320bdc37e113a69deff868a086312fb55e32d5ef4a1",
-    "ROADMAP.md": "c804d75a5b241f3368c2cd855ddc5464665817d4f1344587eeaf7bb3397a7977",
-    "CHANGELOG.md": "85f32cd64d3bc566cb5e365a544a3c5ce1e93cefa47ac2df1a79c452fc11e787",
-    "README.md": "066d1d2a6d33c663ba685ad9ffa37e03fbf0d68e0e1a25f2e0c4c4aab4e60e13",
-    "STREETCRAFT.md": "b2073bb283bca74ec0449b432485e4c394d5084fdd288c90a796ae2532392a45",
-    "PACKAGE_MANIFEST.json": "47bb9f17ee2371837ed47c95dced903e9cbc6964e903532f45403dab2156f993"
+    "ROADMAP.md": "1e889704e92d1c0b43a1b14217e4a24d138748bd852b96a26281d52e74ea4473",
+    "CHANGELOG.md": "df4c2b2a5b584196c506ffb1eda8a6add2b94db8307df5d02b3250fb0be2a059",
+    "README.md": "4aecffa46ba314cdb06d1fe736b1afa40674344fe7ccbdb27589ea8f4994a6b9",
+    "STREETCRAFT.md": "8b179d4d6809443c2f066d0de5e20db23303df50fabcf9a4ddfcaef312c9b3bb",
+    "PACKAGE_MANIFEST.json": "46d3a29e8772c9826de9e99c9e8f83dc58aa7d78255f68b1587d9a812f1cbf3e"
   },
   "limitations": [
     "Controlled structured snapshots; no pixel-level image understanding or real-image graph extraction.",
@@ -77439,5 +77439,11 @@
         "stderr": ""
       }
     ]
+  },
+  "vsg2a_revalidation": {
+    "status": "PASS",
+    "cases": "19/19",
+    "unified_checks": 19,
+    "historical_final_validation_preserved": true
   }
 }

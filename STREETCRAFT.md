@@ -102,5 +102,13 @@ findings into CGC, preflight, adapter input or automatic regeneration. Existing
 orchestration is unchanged when this API is not called. The 19 controlled cases
 pass with deterministic hashes and no cycles/unresolved references.
 See [Causal Trace](visual_scene_graph/VSG_1_5_CAUSAL_TRACE.md).
-Next milestone: **VSG-2A Generation Compiler Shadow**; no production compiler or
-pixel-level output extraction is implemented.
+## VSG-2A · Generation Compiler Shadow
+
+Completed and validated as a separate compiler/comparator API. It produces a
+`VSG_GENERATION_CONTRACT` with `mode=SHADOW`, `governs_generation=false` and a
+canonical digest. Explicit SAR2 and generation-policy sidecars fill information
+that VSG-1 does not encode; unavailable mappings fail closed. Stable CGC and
+immutable source restrictions remain the preservation baseline. All 25 controlled
+cases pass with complete P0/PR0/PR1/Graph Lock coverage in the healthy control.
+Do not send the artifact to generation or use this gate to change readiness.
+See [architecture and verification](visual_scene_graph/VSG_2A_GENERATION_COMPILER_SHADOW.md).

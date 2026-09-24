@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VSG-2A semantic preservation report",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "mode",
+    "governs_generation",
+    "status",
+    "coverage",
+    "counts",
+    "unresolved_required_mappings",
+    "issues",
+    "results",
+    "stable_cgc_sha256",
+    "contract_sha256",
+    "report_sha256",
+    "source_vsg_semantic_sha256",
+    "sar2_semantic_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0.0"
+    },
+    "mode": {
+      "const": "SHADOW"
+    },
+    "governs_generation": {
+      "const": false
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL"
+      ]
+    },
+    "coverage": {
+      "type": "object",
+      "required": [
+        "P0",
+        "PR0",
+        "PR1",
+        "LOCK"
+      ],
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "required",
+          "preserved",
+          "ratio"
+        ],
+        "properties": {
+          "required": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "preserved": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "ratio": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "counts": {
+      "type": "object"
+    },
+    "unresolved_required_mappings": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "constraint_id",
+          "classification",
+          "priority",
+          "cgc_ref",
+          "source_value",
+          "target_value",
+          "source_refs",
+          "target_refs",
+          "trace_event_ids",
+          "expected_lock_ids",
+          "actual_lock_ids"
+        ],
+        "properties": {
+          "classification": {
+            "enum": [
+              "equivalent",
+              "omission",
+              "weakening",
+              "contradiction",
+              "unauthorized_addition"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "stable_cgc_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "contract_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "report_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_vsg_semantic_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "sar2_semantic_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": false
+}

@@ -32,6 +32,7 @@ checks += [
  run('visual_scene_graph/test_graph_locks.py',ROOT),
  run('visual_scene_graph/diagnostic_benchmark/test_diagnostic_engine.py',ROOT),
  run('visual_scene_graph/test_causal_trace.py',ROOT),
+ run('visual_scene_graph/test_generation_compiler.py',ROOT),
  run('integration/test_streetcraft_orchestrator.py',ROOT),
  run('validation/test_patch_1_9_1.py',ROOT),
  run('validation/test_single_client_1_10_0.py',ROOT),

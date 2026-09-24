@@ -174,4 +174,14 @@ The controlled corpus passes **19/19 cases**, with **100% causal accuracy**, zer
 cycles/unresolved references and no healthy-control false positives. Read the
 [Causal Trace contract](visual_scene_graph/VSG_1_5_CAUSAL_TRACE.md) and
 [reproducible QA evidence](validation/VSG_1_5_CAUSAL_TRACE_QA.json).
-Next milestone: **VSG-2A Generation Compiler Shadow**.
+## VSG-2A · Generation Compiler Shadow
+
+**Completed and validated:** deterministic shadow contracts are compared with
+stable CGC and immutable source restrictions. The 25 controlled cases pass;
+the healthy control preserves 100% of P0/PR0/PR1 and Graph Locks. Mode remains
+`SHADOW`, with `governs_generation=false`; generation and readiness are unchanged.
+See [architecture and verification](visual_scene_graph/VSG_2A_GENERATION_COMPILER_SHADOW.md)
+and [QA evidence](validation/VSG_2A_GENERATION_COMPILER_QA.json).
+
+Run `python -m visual_scene_graph.run_generation_benchmark`. Production adoption
+requires a separate milestone and authorization.

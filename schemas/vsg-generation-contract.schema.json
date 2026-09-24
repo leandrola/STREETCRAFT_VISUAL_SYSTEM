@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://streetcraft.local/schemas/vsg-generation-contract.schema.json",
+  "title": "VSG-2A non-governing Generation Contract",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "artifact_kind",
+    "mode",
+    "governs_generation",
+    "scene_id",
+    "status",
+    "constraints",
+    "issues",
+    "provenance",
+    "contract_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0.0"
+    },
+    "artifact_kind": {
+      "const": "VSG_GENERATION_CONTRACT"
+    },
+    "mode": {
+      "const": "SHADOW"
+    },
+    "governs_generation": {
+      "const": false
+    },
+    "scene_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "COMPILED",
+        "INCOMPLETE"
+      ]
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "priority",
+          "value",
+          "source_refs",
+          "lock_ids",
+          "trace_event_ids"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "priority": {
+            "type": "string"
+          },
+          "value": {},
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "artifact",
+                "collection",
+                "id"
+              ],
+              "properties": {
+                "artifact": {
+                  "type": "string"
+                },
+                "collection": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "lock_ids": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "trace_event_ids": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "vsg_semantic_sha256",
+        "sar2_semantic_sha256",
+        "context_sha256",
+        "causal_trace"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "vsg_semantic_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "sar2_semantic_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "context_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "causal_trace": {
+          "type": [
+            "object",
+            "null"
+          ]
+        }
+      }
+    },
+    "contract_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": false
+}

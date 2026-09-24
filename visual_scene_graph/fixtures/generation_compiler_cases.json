@@ -1,0 +1,164 @@
+{
+  "suite": "VSG-2A controlled preservation gates",
+  "cases": [
+    {
+      "case_id": "VSG2A-01",
+      "mutation": "healthy",
+      "expected_status": "PASS"
+    },
+    {
+      "case_id": "VSG2A-02",
+      "mutation": "missing_p0",
+      "expected_status": "FAIL",
+      "constraint_id": "node:sign_01",
+      "classification": "omission"
+    },
+    {
+      "case_id": "VSG2A-03",
+      "mutation": "weak_p0",
+      "expected_status": "FAIL",
+      "constraint_id": "node:sign_01",
+      "classification": "weakening"
+    },
+    {
+      "case_id": "VSG2A-04",
+      "mutation": "missing_pr0",
+      "expected_status": "FAIL",
+      "constraint_id": "edge:rel_sign_attached",
+      "classification": "omission"
+    },
+    {
+      "case_id": "VSG2A-05",
+      "mutation": "weak_pr1",
+      "expected_status": "FAIL",
+      "constraint_id": "edge:rel_hvac_behind",
+      "classification": "weakening"
+    },
+    {
+      "case_id": "VSG2A-06",
+      "mutation": "contradiction",
+      "expected_status": "FAIL",
+      "constraint_id": "node:sign_01",
+      "classification": "contradiction"
+    },
+    {
+      "case_id": "VSG2A-07",
+      "mutation": "addition",
+      "expected_status": "FAIL",
+      "constraint_id": "node:hvac_extra",
+      "classification": "unauthorized_addition"
+    },
+    {
+      "case_id": "VSG2A-08",
+      "mutation": "removed_lock",
+      "expected_status": "FAIL",
+      "constraint_id": "lock:GL-SEM-SIGN_01",
+      "classification": "omission"
+    },
+    {
+      "case_id": "VSG2A-09",
+      "mutation": "weak_lock",
+      "expected_status": "FAIL",
+      "constraint_id": "lock:GL-SEM-SIGN_01",
+      "classification": "weakening"
+    },
+    {
+      "case_id": "VSG2A-10",
+      "mutation": "locked_unknown",
+      "expected_status": "PASS"
+    },
+    {
+      "case_id": "VSG2A-11",
+      "mutation": "permissive_unknown",
+      "expected_status": "FAIL",
+      "constraint_id": "node:hidden_01",
+      "classification": "weakening"
+    },
+    {
+      "case_id": "VSG2A-12",
+      "mutation": "resolved_unknown",
+      "expected_status": "FAIL",
+      "constraint_id": "node:hidden_01",
+      "classification": "contradiction"
+    },
+    {
+      "case_id": "VSG2A-13",
+      "mutation": "reorder",
+      "expected_status": "PASS"
+    },
+    {
+      "case_id": "VSG2A-14",
+      "mutation": "many_to_one",
+      "expected_status": "PASS"
+    },
+    {
+      "case_id": "VSG2A-15",
+      "mutation": "one_to_many",
+      "expected_status": "PASS"
+    },
+    {
+      "case_id": "VSG2A-16",
+      "mutation": "trace",
+      "expected_status": "PASS"
+    },
+    {
+      "case_id": "VSG2A-17",
+      "mutation": "generator",
+      "expected_status": "PASS"
+    },
+    {
+      "case_id": "VSG2A-18",
+      "mutation": "weak_action",
+      "expected_status": "FAIL",
+      "constraint_id": "action:sign_01",
+      "classification": "weakening"
+    },
+    {
+      "case_id": "VSG2A-19",
+      "mutation": "detach_lock",
+      "expected_status": "FAIL",
+      "constraint_id": "node:sign_01",
+      "classification": "weakening"
+    },
+    {
+      "case_id": "VSG2A-20",
+      "mutation": "cardinality",
+      "expected_status": "FAIL",
+      "constraint_id": "topology:building_01",
+      "classification": "weakening"
+    },
+    {
+      "case_id": "VSG2A-21",
+      "mutation": "policy",
+      "expected_status": "FAIL",
+      "constraint_id": "policy:semantic_text_lock",
+      "classification": "weakening"
+    },
+    {
+      "case_id": "VSG2A-22",
+      "mutation": "topology",
+      "expected_status": "FAIL",
+      "constraint_id": "edge:rel_hvac_behind",
+      "classification": "contradiction"
+    },
+    {
+      "case_id": "VSG2A-23",
+      "mutation": "reference_leak",
+      "expected_status": "FAIL",
+      "constraint_id": "reference:N-ROOF",
+      "classification": "contradiction"
+    },
+    {
+      "case_id": "VSG2A-24",
+      "mutation": "ambiguous",
+      "expected_status": "FAIL",
+      "issue": "AMBIGUOUS_ID"
+    },
+    {
+      "case_id": "VSG2A-25",
+      "mutation": "tamper_lineage",
+      "expected_status": "FAIL",
+      "issue": "INVALID_CONTRACT"
+    }
+  ]
+}
