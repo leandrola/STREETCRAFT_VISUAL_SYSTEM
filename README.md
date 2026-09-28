@@ -185,3 +185,12 @@ and [QA evidence](validation/VSG_2A_GENERATION_COMPILER_QA.json).
 
 Run `python -m visual_scene_graph.run_generation_benchmark`. Production adoption
 requires a separate milestone and authorization.
+
+## BD01 / BD02 · Backdrop presets
+
+Opt-in compound presets on VP02: `/sc-bd01` reinterprets a photo into a panoramic
+urban backdrop within existing source locks; `/sc-bd02` preserves the recognizable
+layout with T08 and strict preservation. Defaults: CG-F, 16:9, nominal 1:64,
+architecture first, subordinate foreground and low narrative density.
+Command/CGC contracts are implemented; the specification remains proposed and
+visual/print acceptance is pending. [Specification and invocations](command_invocation/BACKDROP_PRESETS.md).

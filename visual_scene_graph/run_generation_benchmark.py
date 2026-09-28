@@ -30,6 +30,8 @@ HASHED_FILES = [
     'README.md', 'STREETCRAFT.md', 'ROADMAP.md', 'CHANGELOG.md', 'PACKAGE_MANIFEST.json',
 ]
 
+HASHED_FILES += ['command_invocation/resolve_commands.py', 'command_invocation/COMMANDS.json',
+                 'command_invocation/backdrop_presets.py', 'command_invocation/BACKDROP_PRESETS.json']
 HASHED_FILES += [f'validation/cgc_e2e/results/CGC-E2E-{i:02}.json' for i in range(1, 9)]
 
 def file_hashes():

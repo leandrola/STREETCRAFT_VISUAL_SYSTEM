@@ -1,0 +1,839 @@
+{
+  "suite": "BD01 / BD02 command and CGC contracts",
+  "status": "PASS",
+  "spec_status": "PROPOSED",
+  "visual_validation": "PENDING",
+  "physical_print_validation": "PENDING",
+  "tests": "15/15",
+  "baseline_commit": "1ffd58d",
+  "implementation_assumption": "BD01 recomposition is limited to unprotected regions; existing source locks take precedence.",
+  "validation": {
+    "status": "PASS",
+    "legacy_output_comparisons": 40,
+    "legacy_outputs_identical": true,
+    "legacy_outputs_sha256": "7276c808f0bcaa51950e0fe4ed0c015d762087783729f8bd4996b232ad267a46",
+    "baseline_regression_checks": 19,
+    "unified_regression": {
+      "suite": "SVS 1.10.0 Unified Client Regression",
+      "base_release": "SVS 1.9.1 / CIL 1.1",
+      "R0": "PASS",
+      "R1_current_embedded_assets": "PASS",
+      "R2b_visual": "PASS",
+      "R2b_global_score": 91.0,
+      "R2b_s3": 0,
+      "RR2_real_archive": "PASS",
+      "CGC_end_to_end": "PASS",
+      "promotion_ready": true,
+      "stable_promotion": true,
+      "release_status": "STABLE",
+      "pending": [],
+      "checks": [
+        {
+          "name": "json_integrity",
+          "status": "PASS",
+          "errors": []
+        },
+        {
+          "name": "python_syntax",
+          "status": "PASS",
+          "errors": []
+        },
+        {
+          "name": "command_invocation/test_commands.py",
+          "status": "PASS",
+          "stdout": "PASS 19/19 CIL 1.1 tests",
+          "stderr": ""
+        },
+        {
+          "name": "command_invocation/test_backdrop_presets.py",
+          "status": "PASS",
+          "stdout": "",
+          "stderr": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.576s\n\nOK"
+        },
+        {
+          "name": "hardening/test_operational_hardening.py",
+          "status": "PASS",
+          "stdout": "PASS 12/12 operational hardening tests",
+          "stderr": ""
+        },
+        {
+          "name": "reference_runtime/test_archive_aware_runtime.py",
+          "status": "PASS",
+          "stdout": "PASS 10/10 archive-aware runtime unit tests",
+          "stderr": ""
+        },
+        {
+          "name": "reference_runtime/test_reference_reasoning.py",
+          "status": "PASS",
+          "stdout": "",
+          "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.003s\n\nOK"
+        },
+        {
+          "name": "scene_intelligence/test_scene_intelligence.py",
+          "status": "PASS",
+          "stdout": "PASS 24/24 Scene Intelligence tests",
+          "stderr": ""
+        },
+        {
+          "name": "visual_scene_graph/test_vsg_observer.py",
+          "status": "PASS",
+          "stdout": "PASS 24/24 VSG-0 Observer tests",
+          "stderr": ""
+        },
+        {
+          "name": "visual_scene_graph/test_graph_locks.py",
+          "status": "PASS",
+          "stdout": "PASS 25/25 VSG-1 Graph Locks tests",
+          "stderr": ""
+        },
+        {
+          "name": "visual_scene_graph/diagnostic_benchmark/test_diagnostic_engine.py",
+          "status": "PASS",
+          "stdout": "PASS 9/9 VSG-0.5 diagnostic benchmark tests",
+          "stderr": ""
+        },
+        {
+          "name": "visual_scene_graph/test_causal_trace.py",
+          "status": "PASS",
+          "stdout": "",
+          "stderr": ".....................\n----------------------------------------------------------------------\nRan 21 tests in 3.304s\n\nOK"
+        },
+        {
+          "name": "visual_scene_graph/test_generation_compiler.py",
+          "status": "PASS",
+          "stdout": "",
+          "stderr": "........................\n----------------------------------------------------------------------\nRan 24 tests in 5.689s\n\nOK"
+        },
+        {
+          "name": "integration/test_streetcraft_orchestrator.py",
+          "status": "PASS",
+          "stdout": "",
+          "stderr": "............\n----------------------------------------------------------------------\nRan 12 tests in 0.004s\n\nOK"
+        },
+        {
+          "name": "validation/test_patch_1_9_1.py",
+          "status": "PASS",
+          "stdout": "PASS 24/24 SVS 1.9.1 patch tests",
+          "stderr": ""
+        },
+        {
+          "name": "validation/test_single_client_1_10_0.py",
+          "status": "PASS",
+          "stdout": "PASS single-client governance 1.10.0",
+          "stderr": ""
+        },
+        {
+          "name": "exact_embedded_asset_identity",
+          "status": "PASS",
+          "failures": []
+        },
+        {
+          "name": "historical_l2_embedded_identity",
+          "status": "PASS",
+          "fixture_count": 7,
+          "failures": []
+        },
+        {
+          "name": "golden_fixture_integrity",
+          "status": "PASS",
+          "fixtures_checked": 25,
+          "failures": []
+        },
+        {
+          "name": "benchmark/check_r2_baseline.py",
+          "status": "PASS",
+          "stdout": "{\n  \"result\": \"PASS\",\n  \"cases\": 14,\n  \"fixtures_checked\": 20,\n  \"errors\": []\n}",
+          "stderr": "/private/var/folders/4j/9wb2jw_12k9gvtcfjwqv58000000gn/T/streetcraft-backdrop-5bxeb4vn/final/benchmark/check_r2_baseline.py:12: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.\n  px=list(im.getdata())"
+        }
+      ]
+    },
+    "diagnostic_benchmark": {
+      "minimum_accuracy": 0.8,
+      "actual_accuracy": 1.0,
+      "cases_passed": 13,
+      "cases_total": 13,
+      "required_origins": [
+        "PERCEPTION",
+        "REFERENCE_REASONING",
+        "GRAPH_PROJECTION",
+        "COMPILER",
+        "GENERATION",
+        "NONE"
+      ],
+      "covered_origins": [
+        "COMPILER",
+        "GENERATION",
+        "GRAPH_PROJECTION",
+        "NONE",
+        "PERCEPTION",
+        "REFERENCE_REASONING"
+      ],
+      "missing_origins": [],
+      "healthy_control": "PASS"
+    },
+    "causal_cases": 19,
+    "generation_cases": 25,
+    "visual_validation": "PENDING",
+    "physical_print_validation": "PENDING"
+  },
+  "examples": [
+    {
+      "preset": "BD01",
+      "form": "short",
+      "command": "/sc-bd01",
+      "status": "GENERATION_READY",
+      "resolved_config": {
+        "profile": "VP02",
+        "mode": "T02",
+        "camera": "CG-F",
+        "fear_city_identity": null,
+        "preservation": null,
+        "uncertainty": "STRICT_UNKNOWN_PRESERVATION",
+        "explicit_fear_city_profile_override": false,
+        "identity_lock": "STRICT",
+        "occlusion_lock": "LOCKED_UNKNOWN",
+        "frontalization": "STRICT",
+        "aspect_ratio": "16:9",
+        "street_presence": "MINIMAL",
+        "backdrop_preset": "BD01"
+      },
+      "backdrop_contract": {
+        "schema_version": "1.0.0",
+        "preset": "BD01",
+        "base_profile": "VP02",
+        "mode": "T02",
+        "scene_id": "VSG1-KENNYS-GRAPH-LOCKS",
+        "source_identity": "KENNYS_SHOP_REFERENCE",
+        "visual_validation": "PENDING",
+        "framing": {
+          "orientation": "HORIZONTAL",
+          "preferred_aspect_ratios": [
+            "16:9",
+            "2:1"
+          ],
+          "lateral_continuity": "REQUIRED",
+          "aspect_ratio": "16:9"
+        },
+        "camera": {
+          "grammar": "CG-F",
+          "reading": "FRONTAL_OR_NEAR_FRONTAL",
+          "horizon": "STABLE",
+          "verticals": "UPRIGHT",
+          "dramatic_convergence": "FORBIDDEN",
+          "birds_eye": "FORBIDDEN",
+          "spatial_structure": "COMPRESSED_WITH_READABLE_DEPTH",
+          "facade_only_flattening": false
+        },
+        "subject_hierarchy": {
+          "primary": [
+            "architecture",
+            "urban massing",
+            "skyline layers",
+            "rooftops",
+            "painted walls",
+            "building rhythm",
+            "structural silhouettes"
+          ],
+          "secondary": [
+            "water towers",
+            "rooftop equipment",
+            "signage",
+            "low-density street information",
+            "industrial traces",
+            "distant towers"
+          ]
+        },
+        "narrative": {
+          "density": "LOW",
+          "people_as_subjects": false,
+          "vehicles_as_subjects": false,
+          "action_as_subject": false,
+          "excessive_clutter": false
+        },
+        "foreground": {
+          "dominance": "SUBORDINATE",
+          "accepted_bases": [
+            "neutral street edge",
+            "curb or sidewalk strip",
+            "rooftop edge",
+            "vacant lot edge",
+            "low-detail open foreground",
+            "unobtrusive infrastructure band"
+          ]
+        },
+        "print_readability": {
+          "large_masses": "READABLE",
+          "complexity": "CONTROLLED",
+          "tonal_hierarchy": "CONSISTENT",
+          "distance_legibility": "REQUIRED"
+        },
+        "internal_locks": [
+          "PANORAMIC_FRAMING",
+          "BACKDROP_CONTINUITY",
+          "ARCHITECTURAL_PRIORITY",
+          "NARRATIVE_REDUCTION",
+          "FOREGROUND_SUPPRESSION",
+          "PRINT_READABILITY",
+          "SOURCE_URBAN_CHARACTER"
+        ],
+        "forbidden_operations": [
+          "narrative street-scene composition",
+          "strong oblique perspective",
+          "corner-view streetscape",
+          "overpopulation",
+          "hero-shot framing",
+          "bird’s-eye transformation",
+          "foreground dominance",
+          "genericization that loses source identity"
+        ],
+        "name": "Urban Backdrop Reinterpretation",
+        "primary_priority": "BACKDROP_USABILITY",
+        "structural_fidelity": "MEDIUM",
+        "urban_character_fidelity": "HIGH",
+        "reference_role": "STARTING_POINT",
+        "allowed_operations": [
+          "reorganize unprotected masses",
+          "complete plausible continuity outside locked unknown regions",
+          "simplify urban forms",
+          "replace weak unprotected sections",
+          "adjust unprotected spacing",
+          "reinterpret unprotected skyline sections",
+          "remove authorized distracting details"
+        ],
+        "emphases": [
+          "PLAUSIBLE_RECOMPOSITION",
+          "SKYLINE_COMPLETION",
+          "CONTINUITY_OPTIMIZATION"
+        ],
+        "scope": {
+          "recomposition": "UNPROTECTED_REGIONS_ONLY",
+          "protected_node_ids": [
+            "building_01",
+            "roof_01",
+            "sign_01"
+          ],
+          "protected_relationship_ids": [
+            "rel_hvac_behind",
+            "rel_parapet_occludes",
+            "rel_parapet_part",
+            "rel_roof_part",
+            "rel_sign_attached"
+          ],
+          "locked_unknown_ids": [
+            "hidden_01"
+          ],
+          "source_locks_override_preset_allowances": true,
+          "unknown_resolution": "FORBIDDEN_WITHOUT_INDEPENDENT_EVIDENCE",
+          "detail_removal": "EXISTING_AUTHORIZATION_REQUIRED"
+        },
+        "print_target": {
+          "nominal_scale": "1:64",
+          "physical_dimensions_and_resolution": "NOT_SPECIFIED",
+          "print_readiness": "REQUIRES_OUTPUT_REVIEW"
+        },
+        "contract_sha256": "2c9fe10fdc66cdf0cfcacb17501843357a830d68a9b25a2aae0891c76292666b"
+      }
+    },
+    {
+      "preset": "BD01",
+      "form": "full",
+      "command": "/sc-vp02 /sc-t02 /sc-cg-f /sc-rdr2-elevation /sc-bd01",
+      "status": "GENERATION_READY",
+      "resolved_config": {
+        "profile": "VP02",
+        "mode": "T02",
+        "camera": "CG-F",
+        "fear_city_identity": null,
+        "preservation": null,
+        "uncertainty": "STRICT_UNKNOWN_PRESERVATION",
+        "explicit_fear_city_profile_override": false,
+        "identity_lock": "STRICT",
+        "occlusion_lock": "LOCKED_UNKNOWN",
+        "frontalization": "STRICT",
+        "aspect_ratio": "16:9",
+        "street_presence": "MINIMAL",
+        "backdrop_preset": "BD01"
+      },
+      "backdrop_contract": {
+        "schema_version": "1.0.0",
+        "preset": "BD01",
+        "base_profile": "VP02",
+        "mode": "T02",
+        "scene_id": "VSG1-KENNYS-GRAPH-LOCKS",
+        "source_identity": "KENNYS_SHOP_REFERENCE",
+        "visual_validation": "PENDING",
+        "framing": {
+          "orientation": "HORIZONTAL",
+          "preferred_aspect_ratios": [
+            "16:9",
+            "2:1"
+          ],
+          "lateral_continuity": "REQUIRED",
+          "aspect_ratio": "16:9"
+        },
+        "camera": {
+          "grammar": "CG-F",
+          "reading": "FRONTAL_OR_NEAR_FRONTAL",
+          "horizon": "STABLE",
+          "verticals": "UPRIGHT",
+          "dramatic_convergence": "FORBIDDEN",
+          "birds_eye": "FORBIDDEN",
+          "spatial_structure": "COMPRESSED_WITH_READABLE_DEPTH",
+          "facade_only_flattening": false
+        },
+        "subject_hierarchy": {
+          "primary": [
+            "architecture",
+            "urban massing",
+            "skyline layers",
+            "rooftops",
+            "painted walls",
+            "building rhythm",
+            "structural silhouettes"
+          ],
+          "secondary": [
+            "water towers",
+            "rooftop equipment",
+            "signage",
+            "low-density street information",
+            "industrial traces",
+            "distant towers"
+          ]
+        },
+        "narrative": {
+          "density": "LOW",
+          "people_as_subjects": false,
+          "vehicles_as_subjects": false,
+          "action_as_subject": false,
+          "excessive_clutter": false
+        },
+        "foreground": {
+          "dominance": "SUBORDINATE",
+          "accepted_bases": [
+            "neutral street edge",
+            "curb or sidewalk strip",
+            "rooftop edge",
+            "vacant lot edge",
+            "low-detail open foreground",
+            "unobtrusive infrastructure band"
+          ]
+        },
+        "print_readability": {
+          "large_masses": "READABLE",
+          "complexity": "CONTROLLED",
+          "tonal_hierarchy": "CONSISTENT",
+          "distance_legibility": "REQUIRED"
+        },
+        "internal_locks": [
+          "PANORAMIC_FRAMING",
+          "BACKDROP_CONTINUITY",
+          "ARCHITECTURAL_PRIORITY",
+          "NARRATIVE_REDUCTION",
+          "FOREGROUND_SUPPRESSION",
+          "PRINT_READABILITY",
+          "SOURCE_URBAN_CHARACTER"
+        ],
+        "forbidden_operations": [
+          "narrative street-scene composition",
+          "strong oblique perspective",
+          "corner-view streetscape",
+          "overpopulation",
+          "hero-shot framing",
+          "bird’s-eye transformation",
+          "foreground dominance",
+          "genericization that loses source identity"
+        ],
+        "name": "Urban Backdrop Reinterpretation",
+        "primary_priority": "BACKDROP_USABILITY",
+        "structural_fidelity": "MEDIUM",
+        "urban_character_fidelity": "HIGH",
+        "reference_role": "STARTING_POINT",
+        "allowed_operations": [
+          "reorganize unprotected masses",
+          "complete plausible continuity outside locked unknown regions",
+          "simplify urban forms",
+          "replace weak unprotected sections",
+          "adjust unprotected spacing",
+          "reinterpret unprotected skyline sections",
+          "remove authorized distracting details"
+        ],
+        "emphases": [
+          "PLAUSIBLE_RECOMPOSITION",
+          "SKYLINE_COMPLETION",
+          "CONTINUITY_OPTIMIZATION"
+        ],
+        "scope": {
+          "recomposition": "UNPROTECTED_REGIONS_ONLY",
+          "protected_node_ids": [
+            "building_01",
+            "roof_01",
+            "sign_01"
+          ],
+          "protected_relationship_ids": [
+            "rel_hvac_behind",
+            "rel_parapet_occludes",
+            "rel_parapet_part",
+            "rel_roof_part",
+            "rel_sign_attached"
+          ],
+          "locked_unknown_ids": [
+            "hidden_01"
+          ],
+          "source_locks_override_preset_allowances": true,
+          "unknown_resolution": "FORBIDDEN_WITHOUT_INDEPENDENT_EVIDENCE",
+          "detail_removal": "EXISTING_AUTHORIZATION_REQUIRED"
+        },
+        "print_target": {
+          "nominal_scale": "1:64",
+          "physical_dimensions_and_resolution": "NOT_SPECIFIED",
+          "print_readiness": "REQUIRES_OUTPUT_REVIEW"
+        },
+        "contract_sha256": "2c9fe10fdc66cdf0cfcacb17501843357a830d68a9b25a2aae0891c76292666b"
+      }
+    },
+    {
+      "preset": "BD02",
+      "form": "short",
+      "command": "/sc-bd02",
+      "status": "GENERATION_READY",
+      "resolved_config": {
+        "profile": "VP02",
+        "mode": "T08",
+        "camera": "CG-F",
+        "fear_city_identity": null,
+        "preservation": "STRICT_OBSERVED_EVIDENCE",
+        "uncertainty": "STRICT_UNKNOWN_PRESERVATION",
+        "explicit_fear_city_profile_override": false,
+        "identity_lock": "STRICT",
+        "occlusion_lock": "LOCKED_UNKNOWN",
+        "frontalization": "STRICT",
+        "aspect_ratio": "16:9",
+        "street_presence": "MINIMAL",
+        "backdrop_preset": "BD02"
+      },
+      "backdrop_contract": {
+        "schema_version": "1.0.0",
+        "preset": "BD02",
+        "base_profile": "VP02",
+        "mode": "T08",
+        "scene_id": "VSG1-KENNYS-GRAPH-LOCKS",
+        "source_identity": "KENNYS_SHOP_REFERENCE",
+        "visual_validation": "PENDING",
+        "framing": {
+          "orientation": "HORIZONTAL",
+          "preferred_aspect_ratios": [
+            "16:9",
+            "2:1"
+          ],
+          "lateral_continuity": "REQUIRED",
+          "aspect_ratio": "16:9"
+        },
+        "camera": {
+          "grammar": "CG-F",
+          "reading": "FRONTAL_OR_NEAR_FRONTAL",
+          "horizon": "STABLE",
+          "verticals": "UPRIGHT",
+          "dramatic_convergence": "FORBIDDEN",
+          "birds_eye": "FORBIDDEN",
+          "spatial_structure": "COMPRESSED_WITH_READABLE_DEPTH",
+          "facade_only_flattening": false
+        },
+        "subject_hierarchy": {
+          "primary": [
+            "architecture",
+            "urban massing",
+            "skyline layers",
+            "rooftops",
+            "painted walls",
+            "building rhythm",
+            "structural silhouettes"
+          ],
+          "secondary": [
+            "water towers",
+            "rooftop equipment",
+            "signage",
+            "low-density street information",
+            "industrial traces",
+            "distant towers"
+          ]
+        },
+        "narrative": {
+          "density": "LOW",
+          "people_as_subjects": false,
+          "vehicles_as_subjects": false,
+          "action_as_subject": false,
+          "excessive_clutter": false
+        },
+        "foreground": {
+          "dominance": "SUBORDINATE",
+          "accepted_bases": [
+            "neutral street edge",
+            "curb or sidewalk strip",
+            "rooftop edge",
+            "vacant lot edge",
+            "low-detail open foreground",
+            "unobtrusive infrastructure band"
+          ]
+        },
+        "print_readability": {
+          "large_masses": "READABLE",
+          "complexity": "CONTROLLED",
+          "tonal_hierarchy": "CONSISTENT",
+          "distance_legibility": "REQUIRED"
+        },
+        "internal_locks": [
+          "PANORAMIC_FRAMING",
+          "BACKDROP_CONTINUITY",
+          "ARCHITECTURAL_PRIORITY",
+          "NARRATIVE_REDUCTION",
+          "FOREGROUND_SUPPRESSION",
+          "PRINT_READABILITY",
+          "REFERENCE_LAYOUT",
+          "STRUCTURAL_FIDELITY",
+          "RECOGNITION_PRESERVATION"
+        ],
+        "forbidden_operations": [
+          "bird’s-eye transformation",
+          "corner-view streetscape",
+          "erase dominant layout relationships",
+          "foreground dominance",
+          "freely redesign skyline",
+          "genericize source identity",
+          "hero-shot framing",
+          "narrative street-scene composition",
+          "overpopulation",
+          "relocate major masses",
+          "strong oblique perspective",
+          "substitute key buildings"
+        ],
+        "name": "Urban Backdrop Preserve",
+        "primary_priority": "STRUCTURAL_FIDELITY",
+        "structural_fidelity": "HIGH",
+        "urban_character_fidelity": "HIGH",
+        "reference_role": "LAYOUT_CONTRACT",
+        "allowed_operations": [
+          "clean minor interference",
+          "stabilize geometry",
+          "improve silhouette clarity",
+          "simplify authorized clutter",
+          "correct small ambiguities using evidence",
+          "unify backdrop presentation"
+        ],
+        "emphases": [
+          "RECOGNITION_PRESERVATION"
+        ],
+        "scope": {
+          "recomposition": "NO_MAJOR_RECOMPOSITION",
+          "protected_node_ids": [
+            "building_01",
+            "hvac_01",
+            "parapet_01",
+            "roof_01",
+            "sign_01"
+          ],
+          "protected_relationship_ids": [
+            "rel_hvac_behind",
+            "rel_parapet_occludes",
+            "rel_parapet_part",
+            "rel_roof_part",
+            "rel_sign_attached"
+          ],
+          "locked_unknown_ids": [
+            "hidden_01"
+          ],
+          "source_locks_override_preset_allowances": true,
+          "unknown_resolution": "FORBIDDEN_WITHOUT_INDEPENDENT_EVIDENCE",
+          "detail_removal": "EXISTING_AUTHORIZATION_REQUIRED"
+        },
+        "print_target": {
+          "nominal_scale": "1:64",
+          "physical_dimensions_and_resolution": "NOT_SPECIFIED",
+          "print_readiness": "REQUIRES_OUTPUT_REVIEW"
+        },
+        "contract_sha256": "4d0a3065ecc931ee711f31fc02277890f372de63889e1c857fb822021e3066a7"
+      }
+    },
+    {
+      "preset": "BD02",
+      "form": "full",
+      "command": "/sc-vp02 /sc-t08 /sc-cg-f /sc-rdr2-elevation /sc-preserve /sc-bd02",
+      "status": "GENERATION_READY",
+      "resolved_config": {
+        "profile": "VP02",
+        "mode": "T08",
+        "camera": "CG-F",
+        "fear_city_identity": null,
+        "preservation": "STRICT_OBSERVED_EVIDENCE",
+        "uncertainty": "STRICT_UNKNOWN_PRESERVATION",
+        "explicit_fear_city_profile_override": false,
+        "identity_lock": "STRICT",
+        "occlusion_lock": "LOCKED_UNKNOWN",
+        "frontalization": "STRICT",
+        "aspect_ratio": "16:9",
+        "street_presence": "MINIMAL",
+        "backdrop_preset": "BD02"
+      },
+      "backdrop_contract": {
+        "schema_version": "1.0.0",
+        "preset": "BD02",
+        "base_profile": "VP02",
+        "mode": "T08",
+        "scene_id": "VSG1-KENNYS-GRAPH-LOCKS",
+        "source_identity": "KENNYS_SHOP_REFERENCE",
+        "visual_validation": "PENDING",
+        "framing": {
+          "orientation": "HORIZONTAL",
+          "preferred_aspect_ratios": [
+            "16:9",
+            "2:1"
+          ],
+          "lateral_continuity": "REQUIRED",
+          "aspect_ratio": "16:9"
+        },
+        "camera": {
+          "grammar": "CG-F",
+          "reading": "FRONTAL_OR_NEAR_FRONTAL",
+          "horizon": "STABLE",
+          "verticals": "UPRIGHT",
+          "dramatic_convergence": "FORBIDDEN",
+          "birds_eye": "FORBIDDEN",
+          "spatial_structure": "COMPRESSED_WITH_READABLE_DEPTH",
+          "facade_only_flattening": false
+        },
+        "subject_hierarchy": {
+          "primary": [
+            "architecture",
+            "urban massing",
+            "skyline layers",
+            "rooftops",
+            "painted walls",
+            "building rhythm",
+            "structural silhouettes"
+          ],
+          "secondary": [
+            "water towers",
+            "rooftop equipment",
+            "signage",
+            "low-density street information",
+            "industrial traces",
+            "distant towers"
+          ]
+        },
+        "narrative": {
+          "density": "LOW",
+          "people_as_subjects": false,
+          "vehicles_as_subjects": false,
+          "action_as_subject": false,
+          "excessive_clutter": false
+        },
+        "foreground": {
+          "dominance": "SUBORDINATE",
+          "accepted_bases": [
+            "neutral street edge",
+            "curb or sidewalk strip",
+            "rooftop edge",
+            "vacant lot edge",
+            "low-detail open foreground",
+            "unobtrusive infrastructure band"
+          ]
+        },
+        "print_readability": {
+          "large_masses": "READABLE",
+          "complexity": "CONTROLLED",
+          "tonal_hierarchy": "CONSISTENT",
+          "distance_legibility": "REQUIRED"
+        },
+        "internal_locks": [
+          "PANORAMIC_FRAMING",
+          "BACKDROP_CONTINUITY",
+          "ARCHITECTURAL_PRIORITY",
+          "NARRATIVE_REDUCTION",
+          "FOREGROUND_SUPPRESSION",
+          "PRINT_READABILITY",
+          "REFERENCE_LAYOUT",
+          "STRUCTURAL_FIDELITY",
+          "RECOGNITION_PRESERVATION"
+        ],
+        "forbidden_operations": [
+          "bird’s-eye transformation",
+          "corner-view streetscape",
+          "erase dominant layout relationships",
+          "foreground dominance",
+          "freely redesign skyline",
+          "genericize source identity",
+          "hero-shot framing",
+          "narrative street-scene composition",
+          "overpopulation",
+          "relocate major masses",
+          "strong oblique perspective",
+          "substitute key buildings"
+        ],
+        "name": "Urban Backdrop Preserve",
+        "primary_priority": "STRUCTURAL_FIDELITY",
+        "structural_fidelity": "HIGH",
+        "urban_character_fidelity": "HIGH",
+        "reference_role": "LAYOUT_CONTRACT",
+        "allowed_operations": [
+          "clean minor interference",
+          "stabilize geometry",
+          "improve silhouette clarity",
+          "simplify authorized clutter",
+          "correct small ambiguities using evidence",
+          "unify backdrop presentation"
+        ],
+        "emphases": [
+          "RECOGNITION_PRESERVATION"
+        ],
+        "scope": {
+          "recomposition": "NO_MAJOR_RECOMPOSITION",
+          "protected_node_ids": [
+            "building_01",
+            "hvac_01",
+            "parapet_01",
+            "roof_01",
+            "sign_01"
+          ],
+          "protected_relationship_ids": [
+            "rel_hvac_behind",
+            "rel_parapet_occludes",
+            "rel_parapet_part",
+            "rel_roof_part",
+            "rel_sign_attached"
+          ],
+          "locked_unknown_ids": [
+            "hidden_01"
+          ],
+          "source_locks_override_preset_allowances": true,
+          "unknown_resolution": "FORBIDDEN_WITHOUT_INDEPENDENT_EVIDENCE",
+          "detail_removal": "EXISTING_AUTHORIZATION_REQUIRED"
+        },
+        "print_target": {
+          "nominal_scale": "1:64",
+          "physical_dimensions_and_resolution": "NOT_SPECIFIED",
+          "print_readiness": "REQUIRES_OUTPUT_REVIEW"
+        },
+        "contract_sha256": "4d0a3065ecc931ee711f31fc02277890f372de63889e1c857fb822021e3066a7"
+      }
+    }
+  ],
+  "file_sha256": {
+    "command_invocation/COMMANDS.json": "a63d7b3c5f75bf5bd702801d84d51bec0817a5b9219ed40c5f1f73c15111fefb",
+    "command_invocation/resolve_commands.py": "d93d971f0e1085001adc217f7c147b356d106166b8c2e294e6a2c0717ad07e31",
+    "command_invocation/BACKDROP_PRESETS.json": "a96a0b99f27b8e593a4e7913c32b4dcb0d2be4ebba825b81bfa6dd28d6e08514",
+    "command_invocation/backdrop_presets.py": "d494e6aee692d0b63509a5f3d30e55acd1edd0af3684c06a2c590a8835cace47",
+    "command_invocation/test_backdrop_presets.py": "c79a5a2695116f873c98710cab8d24d079f422ab9b7b3f97c479c06ee6b29cf5",
+    "command_invocation/BACKDROP_PRESETS.md": "ca343318b9c92a3d44e7b8620f066d5dc334f63f5b8db6e102a277412ff8e886",
+    "command_invocation/COMMAND_INVOCATION_LAYER.md": "c2868458bcf326b8219a006d3525a4f783035e4015ab5f3334202e1ebc783058",
+    "schemas/backdrop-contract.schema.json": "245a8638b6999bb82c3d8ea558704e52f94a08674276556145cdfc61361d6121",
+    "integration/streetcraft_orchestrator.py": "808e1488c8f23791799a6ff2e8ce7f0151919e7559ac0f5a97bdf8ccce3a1ea0",
+    "visual_scene_graph/generation_compiler.py": "a673dd7a7ff92f9badca11575be240a7d804648a448dbfb1710dd4acc47ca1ab",
+    "visual_scene_graph/run_generation_benchmark.py": "dc255e61f3ff32c28856d2340919a2473def00dc78bb7935c357fdbe5029115f",
+    "benchmark/run_regression_suite.py": "75cdba7b55ae006872c52c625d77ba56a95b0a23c5a88f306682ff3f07430ed7",
+    "CHEAT_SHEET.md": "c7b49754fdc5a931c6a140eeaeac8fb5fbd0b6a23d1b2a4da4d3c5eeb5e6da6d",
+    "README.md": "acef47baf63b6fc73e06dcc1a870433eb5f0ce9e19357f9c3c45481d47d229ed",
+    "STREETCRAFT.md": "c0d3f20c4817a1d6e29014db1074f44f2d568d699200a5d3e77ed0bd66b19175",
+    "CHANGELOG.md": "2ca40ccd7c227d93e1291c6626a634e24e5a0a32f212aa5b8bd12750180db57d",
+    "PACKAGE_MANIFEST.json": "720ce5bc9a407fb70564bccd5c531e7702f151a6505535a69a66bc28e4fb0d71"
+  },
+  "qa_sha256": "d9966798f42d452253938fc85b6bbfa4a922330c21399541d85881340a940d09"
+}

@@ -1,3 +1,10 @@
+# BD01 / BD02 — Proposed backdrop presets · 2026-09-28
+
+- Implemented opt-in VP02 compound commands and explicit profile/mode/camera selectors, with deterministic conflict handling.
+- Added CGC backdrop contracts for panoramic framing, architectural primacy, restrained narrative/foreground and print-readability targets; configurable horizontal ratio and nominal scale.
+- BD01 recomposition stays within existing source locks; BD02 preserves layout. Protected geometry, relationships and unknowns remain constrained. Existing preflight is retained.
+- Added schema and automated contract tests. Visual/physical-print acceptance remains pending; no new visual profile or production VSG routing is introduced.
+
 # VSG-2A — Generation Compiler Shadow · 2026-09-24
 
 - Added a deterministic non-governing VSG Generation Contract, explicit SAR2/policy inputs, schemas and content digests.

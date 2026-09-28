@@ -24,6 +24,7 @@ checks.append({'name':'python_syntax','status':'PASS' if not syntax_errors else 
 # core deterministic tests
 checks += [
  run('command_invocation/test_commands.py',ROOT/'command_invocation'),
+ run('command_invocation/test_backdrop_presets.py',ROOT),
  run('hardening/test_operational_hardening.py',ROOT/'hardening'),
  run('reference_runtime/test_archive_aware_runtime.py',ROOT),
  run('reference_runtime/test_reference_reasoning.py',ROOT/'reference_runtime'),

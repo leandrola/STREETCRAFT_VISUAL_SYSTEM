@@ -17,7 +17,7 @@ for rel in ("command_invocation", "scene_intelligence", "visual_scene_graph", "h
         sys.path.insert(0, p)
 
 from resolve_commands import resolve as resolve_commands
-from backdrop_presets import build_backdrop_contract
+from backdrop_presets import build_backdrop_contract, resolve_backdrop_options
 from scene_intelligence import build_scene_analysis_record, project_scene_to_cgc
 from vsg_observer import build_visual_scene_graph
 from operational_hardening import build_contract, material_delta_allowed
@@ -55,6 +55,9 @@ def _resolved_config(request: dict) -> tuple[dict, dict]:
             cfg[key] = request.get(key) or scene.get(key)
     if not cfg.get("profile") or not cfg.get("mode") or not cfg.get("camera"):
         raise ValueError("Orchestration requires resolved profile, mode and camera")
+    if cfg.get("backdrop_preset"):
+        options = resolve_backdrop_options(request.get("backdrop"), cfg["aspect_ratio"])
+        cfg["aspect_ratio"] = options["aspect_ratio"]
     return command, cfg
 
 

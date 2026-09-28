@@ -15,13 +15,11 @@ def contract_sha256(contract):
                                      ensure_ascii=False, allow_nan=False).encode()).hexdigest()
 
 
-def build_backdrop_contract(config, sar2, options=None):
-    preset = config['backdrop_preset']
-    policy = deepcopy(CATALOG['presets'][preset])
+def resolve_backdrop_options(options=None, default_ratio='16:9'):
     options = {} if options is None else options
     if not isinstance(options, dict) or set(options)-{'aspect_ratio', 'target_scale'}:
         raise ValueError('INVALID_BACKDROP_OPTIONS')
-    ratio = options.get('aspect_ratio', config['aspect_ratio'])
+    ratio = options.get('aspect_ratio', default_ratio)
     if not isinstance(ratio, str) or not re.fullmatch(r'[1-9][0-9]*:[1-9][0-9]*', ratio):
         raise ValueError('INVALID_BACKDROP_ASPECT_RATIO')
     width, height = map(int, ratio.split(':'))
@@ -31,6 +29,13 @@ def build_backdrop_contract(config, sar2, options=None):
     scale = options.get('target_scale', '1:64')
     if not isinstance(scale, str) or not re.fullmatch(r'1:[1-9][0-9]*', scale):
         raise ValueError('INVALID_BACKDROP_TARGET_SCALE')
+    return {'aspect_ratio': f'{aspect.numerator}:{aspect.denominator}', 'target_scale': scale}
+
+
+def build_backdrop_contract(config, sar2, options=None):
+    preset = config['backdrop_preset']
+    policy = deepcopy(CATALOG['presets'][preset])
+    options = resolve_backdrop_options(options, config['aspect_ratio'])
     if (config['profile'], config['mode'], config['camera']) != ('VP02', policy['mode'], 'CG-F'):
         raise ValueError('BACKDROP_CONFIG_CONFLICT')
     if sar2['mode'] != policy['mode'] or sar2['profile'] != 'VP02':
@@ -43,7 +48,7 @@ def build_backdrop_contract(config, sar2, options=None):
         'base_profile': 'VP02', 'mode': policy.pop('mode'), 'scene_id': sar2['scene_id'],
         'source_identity': sar2['source_identity'], 'visual_validation': 'PENDING',
         **deepcopy(CATALOG['shared']), **{k:v for k,v in policy.items() if k not in {'additional_locks', 'forbidden_operations'}}}
-    contract['framing']['aspect_ratio'] = f'{aspect.numerator}:{aspect.denominator}'
+    contract['framing']['aspect_ratio'] = options['aspect_ratio']
     contract['internal_locks'] += policy['additional_locks']
     contract['forbidden_operations'] += policy['forbidden_operations']
     contract['scope'] = {'recomposition': 'UNPROTECTED_REGIONS_ONLY' if preset=='BD01' and not preserve else 'NO_MAJOR_RECOMPOSITION',
@@ -56,7 +61,7 @@ def build_backdrop_contract(config, sar2, options=None):
     if preserve:
         contract['allowed_operations'] = deepcopy(CATALOG['presets']['BD02']['allowed_operations'])
         contract['forbidden_operations'] = sorted(set(contract['forbidden_operations'] + CATALOG['presets']['BD02']['forbidden_operations']))
-    contract['print_target'] = {'nominal_scale': scale, 'physical_dimensions_and_resolution': 'NOT_SPECIFIED',
+    contract['print_target'] = {'nominal_scale': options['target_scale'], 'physical_dimensions_and_resolution': 'NOT_SPECIFIED',
                               'print_readiness': 'REQUIRES_OUTPUT_REVIEW'}
     contract['contract_sha256'] = contract_sha256(contract)
     return contract

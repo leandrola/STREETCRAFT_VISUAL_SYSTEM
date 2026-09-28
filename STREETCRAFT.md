@@ -112,3 +112,13 @@ immutable source restrictions remain the preservation baseline. All 25 controlle
 cases pass with complete P0/PR0/PR1/Graph Lock coverage in the healthy control.
 Do not send the artifact to generation or use this gate to change readiness.
 See [architecture and verification](visual_scene_graph/VSG_2A_GENERATION_COMPILER_SHADOW.md).
+
+## BD01 / BD02 · Reference-driven backdrop contracts
+
+These optional VP02 compound presets attach `backdrop_contract` to the stable CGC.
+BD01/T02 favors scenic usability in unprotected regions. BD02/T08 favors source
+layout and recognizability. Both select CG-F/elevation defaults and retain source,
+semantic, protected-relationship and unknown locks. Requests without the presets
+retain their behavior. VSG shadow remains non-governing; preflight still controls
+readiness. Implementation tests do not establish image or print quality.
+See [proposed specification and operational scope](command_invocation/BACKDROP_PRESETS.md).

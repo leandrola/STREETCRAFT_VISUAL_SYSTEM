@@ -17,7 +17,9 @@
       "horizon": "STABLE",
       "verticals": "UPRIGHT",
       "dramatic_convergence": "FORBIDDEN",
-      "birds_eye": "FORBIDDEN"
+      "birds_eye": "FORBIDDEN",
+      "spatial_structure": "COMPRESSED_WITH_READABLE_DEPTH",
+      "facade_only_flattening": false
     },
     "subject_hierarchy": {
       "primary": [

@@ -36,3 +36,14 @@ No extra command is needed for Semantic Token Freeze, Low-Confidence Text Mask, 
 - strict RDR 2.0 elevation: `/sc-rdr2-elevation`
 - documentary maximum fidelity: `/sc-core /sc-lock /sc-preserve /sc-noinvent`
 - Fear City: `/sc-fear`
+
+## Backdrop presets · visual validation pending
+
+- `/sc-bd01` — photo-based urban backdrop; recomposition within unprotected regions, preserving urban character.
+- `/sc-bd02` — recognizable source layout translated into a panoramic backdrop; no major recomposition.
+- Full BD01: `/sc-vp02 /sc-t02 /sc-cg-f /sc-rdr2-elevation /sc-bd01`
+- Full BD02: `/sc-vp02 /sc-t08 /sc-cg-f /sc-rdr2-elevation /sc-preserve /sc-bd02`
+
+Default 16:9, nominal 1:64; request `backdrop.aspect_ratio` can select 2:1 or
+another horizontal format. P0, protected relationships and locked unknowns remain
+protected. See [scope, options and print limitations](command_invocation/BACKDROP_PRESETS.md).

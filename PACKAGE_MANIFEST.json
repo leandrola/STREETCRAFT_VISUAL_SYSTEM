@@ -167,5 +167,22 @@
     }
   },
   "release_status": "STABLE",
-  "final_gate_report": "validation/RELEASE_GATE_1_10_0_FINAL.json"
+  "final_gate_report": "validation/RELEASE_GATE_1_10_0_FINAL.json",
+  "backdrop_presets": {
+    "version": "1.0.0",
+    "spec_status": "PROPOSED",
+    "implementation_status": "COMMAND_AND_CGC_CONTRACTS_IMPLEMENTED",
+    "visual_validation": "PENDING",
+    "presets": [
+      "BD01",
+      "BD02"
+    ],
+    "base_profile": "VP02",
+    "entry_point": "command_invocation/backdrop_presets.py",
+    "schema": "schemas/backdrop-contract.schema.json",
+    "specification": "command_invocation/BACKDROP_PRESETS.md",
+    "source_locks_override_preset_allowances": true,
+    "tests": "15/15",
+    "qa": "validation/BACKDROP_PRESETS_QA.json"
+  }
 }
