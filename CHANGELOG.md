@@ -1,3 +1,9 @@
+# BD01 / BD02 — Inferred Visual Promotion · 2026-09-28
+
+- Recorded the user-authorized ten-case visual promotion matrix as `PASS_INFERRED`, with five reference classes across BD01/BD02.
+- No new independent generation or output inspection is claimed; prior visual behavior is user-reported. Physical print validation remains pending.
+- Updated preset catalog and promotion metadata. Per-output CGC visual status, generation behavior and source locks remain unchanged.
+
 # BD01 / BD02 — Proposed backdrop presets · 2026-09-28
 
 - Implemented opt-in VP02 compound commands and explicit profile/mode/camera selectors, with deterministic conflict handling.

@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "spec_status": "PROPOSED",
-  "visual_validation": "PENDING",
+  "spec_status": "PROMOTED_BY_INFERENCE",
+  "visual_validation": "PASS_INFERRED",
   "shared": {
     "framing": {
       "orientation": "HORIZONTAL",
@@ -142,5 +142,8 @@
         "genericize source identity"
       ]
     }
-  }
+  },
+  "physical_print_validation": "PENDING",
+  "visual_promotion_report": "validation/BD_VISUAL_VALIDATION_BENCHMARK.json",
+  "independently_inspected_outputs": 0
 }

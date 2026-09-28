@@ -1,8 +1,10 @@
 # Backdrop Reinterpretation Presets · BD01 / BD02
 
-**Specification status: Proposed.** Command expansion and CGC contracts are
-implemented and tested. Generated-image quality and physical print utility remain
-**pending visual validation**. These are compound presets on **VP02**, not new
+**Preset promotion: PASS — Inferred Validation (`PASS_INFERRED`).** Command
+expansion and CGC contracts are implemented and tested. The ten-case visual
+promotion matrix is accepted by inference at the user’s direction; no ten new
+independently inspected outputs are claimed. Physical print validation remains
+**PENDING**. See the [promotion record](../validation/BD_VISUAL_VALIDATION_BENCHMARK.md). These are compound presets on **VP02**, not new
 visual profiles, Transformation Modes, camera grammars or a Build Kit mode.
 
 ## Purpose and invocation
@@ -161,7 +163,9 @@ behavior, preflight blocks and VSG shadow compatibility. Full regression also
 checks the existing VSG and stable R2b evidence. Results are recorded in
 [BACKDROP_PRESETS_QA.json](../validation/BACKDROP_PRESETS_QA.json).
 
-Image acceptance still requires human review of generated results:
+The preset promotion is inferred; acceptance of individual generated images still
+requires visual review. Each CGC output keeps `visual_validation=PENDING` until
+actual output evidence exists. Review criteria:
 
 | Gate | Shared | BD01 | BD02 |
 | --- | --- | --- | --- |

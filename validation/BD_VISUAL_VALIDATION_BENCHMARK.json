@@ -1,0 +1,182 @@
+{
+  "suite": "BD Visual Validation Benchmark",
+  "scope": "SVS / VP02 Compound Backdrop Presets",
+  "status": "PASS_INFERRED",
+  "promotion_decision": "PASS",
+  "validation_method": "INFERRED",
+  "promotion_authority": "Explicit user-supplied visual promotion decision",
+  "physical_print_validation": "PENDING",
+  "cases_total": 10,
+  "cases_pass_inferred": 10,
+  "independent_generation_runs": 0,
+  "independently_inspected_outputs": 0,
+  "empirical_visual_validation": "NOT_PERFORMED",
+  "reference_specification": "command_invocation/BACKDROP_PRESETS.md",
+  "technical_evidence": "validation/BACKDROP_PRESETS_QA.json",
+  "technical_baseline": {
+    "tests": "15/15",
+    "regression_checks": 20,
+    "previous_outputs_unchanged": 40,
+    "R2b": 91,
+    "S3": 0
+  },
+  "evidence_basis": [
+    {
+      "kind": "TECHNICAL_CONTRACT_AND_REGRESSION_EVIDENCE",
+      "independently_verified": true
+    },
+    {
+      "kind": "PRIOR_BACKDROP_BEHAVIOR_REPORTED_BY_USER",
+      "independently_verified": false
+    }
+  ],
+  "interpretation": "PASS applies to the authorized inferred promotion decision. No matrix row claims a new rendered or visually inspected output.",
+  "shared_acceptance": [
+    {
+      "criterion": "panoramic framing",
+      "status": "PASS_INFERRED",
+      "basis": "EXPECTED_CONTRACT_BEHAVIOR"
+    },
+    {
+      "criterion": "CG-F / elevation behavior",
+      "status": "PASS_INFERRED",
+      "basis": "EXPECTED_CONTRACT_BEHAVIOR"
+    },
+    {
+      "criterion": "architectural priority",
+      "status": "PASS_INFERRED",
+      "basis": "EXPECTED_CONTRACT_BEHAVIOR"
+    },
+    {
+      "criterion": "foreground suppression",
+      "status": "PASS_INFERRED",
+      "basis": "EXPECTED_CONTRACT_BEHAVIOR"
+    },
+    {
+      "criterion": "narrative reduction",
+      "status": "PASS_INFERRED",
+      "basis": "EXPECTED_CONTRACT_BEHAVIOR"
+    },
+    {
+      "criterion": "backdrop continuity",
+      "status": "PASS_INFERRED",
+      "basis": "EXPECTED_CONTRACT_BEHAVIOR"
+    }
+  ],
+  "results": [
+    {
+      "case_id": "BDV-01",
+      "reference_class": "Low-rise continuous street wall",
+      "preset": "BD01",
+      "expected_behavior": "Controlled backdrop recomposition",
+      "status": "PASS_INFERRED",
+      "generation_run_executed": false,
+      "output_independently_inspected": false,
+      "archived_generation_evidence": []
+    },
+    {
+      "case_id": "BDV-02",
+      "reference_class": "Low-rise continuous street wall",
+      "preset": "BD02",
+      "expected_behavior": "Layout and recognition preservation",
+      "status": "PASS_INFERRED",
+      "generation_run_executed": false,
+      "output_independently_inspected": false,
+      "archived_generation_evidence": []
+    },
+    {
+      "case_id": "BDV-03",
+      "reference_class": "Mixed urban skyline",
+      "preset": "BD01",
+      "expected_behavior": "Skyline reinterpretation with continuity",
+      "status": "PASS_INFERRED",
+      "generation_run_executed": false,
+      "output_independently_inspected": false,
+      "archived_generation_evidence": []
+    },
+    {
+      "case_id": "BDV-04",
+      "reference_class": "Mixed urban skyline",
+      "preset": "BD02",
+      "expected_behavior": "Skyline hierarchy preservation",
+      "status": "PASS_INFERRED",
+      "generation_run_executed": false,
+      "output_independently_inspected": false,
+      "archived_generation_evidence": []
+    },
+    {
+      "case_id": "BDV-05",
+      "reference_class": "Vacant lot + deep skyline",
+      "preset": "BD01",
+      "expected_behavior": "Foreground suppression and recomposition",
+      "status": "PASS_INFERRED",
+      "generation_run_executed": false,
+      "output_independently_inspected": false,
+      "archived_generation_evidence": []
+    },
+    {
+      "case_id": "BDV-06",
+      "reference_class": "Vacant lot + deep skyline",
+      "preset": "BD02",
+      "expected_behavior": "Foreground and layout preservation",
+      "status": "PASS_INFERRED",
+      "generation_run_executed": false,
+      "output_independently_inspected": false,
+      "archived_generation_evidence": []
+    },
+    {
+      "case_id": "BDV-07",
+      "reference_class": "Exposed construction / tower structures",
+      "preset": "BD01",
+      "expected_behavior": "Controlled structural reinterpretation",
+      "status": "PASS_INFERRED",
+      "generation_run_executed": false,
+      "output_independently_inspected": false,
+      "archived_generation_evidence": []
+    },
+    {
+      "case_id": "BDV-08",
+      "reference_class": "Exposed construction / tower structures",
+      "preset": "BD02",
+      "expected_behavior": "Structural recognition preservation",
+      "status": "PASS_INFERRED",
+      "generation_run_executed": false,
+      "output_independently_inspected": false,
+      "archived_generation_evidence": []
+    },
+    {
+      "case_id": "BDV-09",
+      "reference_class": "Institutional architecture + skyline",
+      "preset": "BD01",
+      "expected_behavior": "Backdrop-oriented recomposition",
+      "status": "PASS_INFERRED",
+      "generation_run_executed": false,
+      "output_independently_inspected": false,
+      "archived_generation_evidence": []
+    },
+    {
+      "case_id": "BDV-10",
+      "reference_class": "Institutional architecture + skyline",
+      "preset": "BD02",
+      "expected_behavior": "Landmark and layout preservation",
+      "status": "PASS_INFERRED",
+      "generation_run_executed": false,
+      "output_independently_inspected": false,
+      "archived_generation_evidence": []
+    }
+  ],
+  "request_sha256": "90522de4f0657c3f5846faf2a2364df10250c9e04f4e95a2d19785c597bea3b9",
+  "technical_recheck": {
+    "backdrop_tests": "15/15 PASS",
+    "generation_execution": "NOT_REQUESTED_OR_PERFORMED",
+    "runtime_code_changed": false
+  },
+  "file_sha256": {
+    "validation/BACKDROP_PRESETS_QA.json": "e215950f810f9a5d4d214f5b1b445fdffaccb6432f02f5d90ccd7bb291e66b92",
+    "validation/BD_VISUAL_VALIDATION_BENCHMARK.md": "4ea83b7e19977287bde1ba65256384fe2e672ee24103f55f6d97ea6a95d02262",
+    "command_invocation/BACKDROP_PRESETS.md": "c5037e28f9f6ad47178bf1fb1631a7badaf37803f6bb0326adecd693eed75e11",
+    "command_invocation/BACKDROP_PRESETS.json": "9c6ce9cba4e84a3781f7b9555ec245d68c81c9a2b93921af27809e12672a4957",
+    "PACKAGE_MANIFEST.json": "03506ddd7c10f8e7359520d18a735c12735d3b288fa02b7e8653f3d1a110ceb7"
+  },
+  "report_sha256": "1c84fbf7f20b44e1b2571d5ec9332eb048564196bba84c566f1d40095c6266c6"
+}

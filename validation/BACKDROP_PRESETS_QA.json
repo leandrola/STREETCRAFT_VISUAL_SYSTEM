@@ -819,21 +819,23 @@
   "file_sha256": {
     "command_invocation/COMMANDS.json": "a63d7b3c5f75bf5bd702801d84d51bec0817a5b9219ed40c5f1f73c15111fefb",
     "command_invocation/resolve_commands.py": "d93d971f0e1085001adc217f7c147b356d106166b8c2e294e6a2c0717ad07e31",
-    "command_invocation/BACKDROP_PRESETS.json": "a96a0b99f27b8e593a4e7913c32b4dcb0d2be4ebba825b81bfa6dd28d6e08514",
+    "command_invocation/BACKDROP_PRESETS.json": "9c6ce9cba4e84a3781f7b9555ec245d68c81c9a2b93921af27809e12672a4957",
     "command_invocation/backdrop_presets.py": "d494e6aee692d0b63509a5f3d30e55acd1edd0af3684c06a2c590a8835cace47",
     "command_invocation/test_backdrop_presets.py": "c79a5a2695116f873c98710cab8d24d079f422ab9b7b3f97c479c06ee6b29cf5",
-    "command_invocation/BACKDROP_PRESETS.md": "ca343318b9c92a3d44e7b8620f066d5dc334f63f5b8db6e102a277412ff8e886",
-    "command_invocation/COMMAND_INVOCATION_LAYER.md": "c2868458bcf326b8219a006d3525a4f783035e4015ab5f3334202e1ebc783058",
+    "command_invocation/BACKDROP_PRESETS.md": "c5037e28f9f6ad47178bf1fb1631a7badaf37803f6bb0326adecd693eed75e11",
+    "command_invocation/COMMAND_INVOCATION_LAYER.md": "a944f6158edb6f888dc9f752909e14b78e64d2a94639b0dad5d42c22b6e3f6e1",
     "schemas/backdrop-contract.schema.json": "245a8638b6999bb82c3d8ea558704e52f94a08674276556145cdfc61361d6121",
     "integration/streetcraft_orchestrator.py": "808e1488c8f23791799a6ff2e8ce7f0151919e7559ac0f5a97bdf8ccce3a1ea0",
     "visual_scene_graph/generation_compiler.py": "a673dd7a7ff92f9badca11575be240a7d804648a448dbfb1710dd4acc47ca1ab",
     "visual_scene_graph/run_generation_benchmark.py": "dc255e61f3ff32c28856d2340919a2473def00dc78bb7935c357fdbe5029115f",
     "benchmark/run_regression_suite.py": "75cdba7b55ae006872c52c625d77ba56a95b0a23c5a88f306682ff3f07430ed7",
-    "CHEAT_SHEET.md": "c7b49754fdc5a931c6a140eeaeac8fb5fbd0b6a23d1b2a4da4d3c5eeb5e6da6d",
-    "README.md": "acef47baf63b6fc73e06dcc1a870433eb5f0ce9e19357f9c3c45481d47d229ed",
-    "STREETCRAFT.md": "c0d3f20c4817a1d6e29014db1074f44f2d568d699200a5d3e77ed0bd66b19175",
-    "CHANGELOG.md": "2ca40ccd7c227d93e1291c6626a634e24e5a0a32f212aa5b8bd12750180db57d",
-    "PACKAGE_MANIFEST.json": "720ce5bc9a407fb70564bccd5c531e7702f151a6505535a69a66bc28e4fb0d71"
+    "CHEAT_SHEET.md": "23cb2b6c79548fb4717f32d89d8fc305b89e38e07072fd46ca8ec36110c5b4c3",
+    "README.md": "578dc0b1ee9ac003a26a66c9f930dcd40a1451a631899e8bacd4129d36e08fa2",
+    "STREETCRAFT.md": "006d9de30017d98ed8706a4efbc80b526160e35fef560e539079ce499cc5bd41",
+    "CHANGELOG.md": "28296d27c984cee0ba93fdd2951b01c1429b808e5955e440fd4cd21acc0be9ee",
+    "PACKAGE_MANIFEST.json": "03506ddd7c10f8e7359520d18a735c12735d3b288fa02b7e8653f3d1a110ceb7"
   },
-  "qa_sha256": "d9966798f42d452253938fc85b6bbfa4a922330c21399541d85881340a940d09"
+  "qa_sha256": "403375ceeb273f0f8b4602778bec4b558b652c88a28007543ba38c47758e883b",
+  "evidence_scope": "Historical technical baseline; preset-level inferred visual promotion is recorded separately.",
+  "visual_promotion_report": "validation/BD_VISUAL_VALIDATION_BENCHMARK.json"
 }

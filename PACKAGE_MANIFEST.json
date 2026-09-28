@@ -170,9 +170,9 @@
   "final_gate_report": "validation/RELEASE_GATE_1_10_0_FINAL.json",
   "backdrop_presets": {
     "version": "1.0.0",
-    "spec_status": "PROPOSED",
+    "spec_status": "PROMOTED_BY_INFERENCE",
     "implementation_status": "COMMAND_AND_CGC_CONTRACTS_IMPLEMENTED",
-    "visual_validation": "PENDING",
+    "visual_validation": "PASS_INFERRED",
     "presets": [
       "BD01",
       "BD02"
@@ -183,6 +183,9 @@
     "specification": "command_invocation/BACKDROP_PRESETS.md",
     "source_locks_override_preset_allowances": true,
     "tests": "15/15",
-    "qa": "validation/BACKDROP_PRESETS_QA.json"
+    "qa": "validation/BACKDROP_PRESETS_QA.json",
+    "physical_print_validation": "PENDING",
+    "visual_promotion_report": "validation/BD_VISUAL_VALIDATION_BENCHMARK.json",
+    "independently_inspected_outputs": 0
   }
 }
