@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "spec_status": "PROMOTED_BY_INFERENCE",
-  "visual_validation": "PASS_INFERRED",
+  "spec_status": "PROPOSED",
+  "visual_validation": "PENDING",
   "shared": {
     "framing": {
       "orientation": "HORIZONTAL",
@@ -145,5 +145,6 @@
   },
   "physical_print_validation": "PENDING",
   "visual_promotion_report": "validation/BD_VISUAL_VALIDATION_BENCHMARK.json",
-  "independently_inspected_outputs": 0
+  "independently_inspected_outputs": 0,
+  "visual_pass_policy": "No visual PASS may be inferred from technical, contract, matrix, regression, or hash validation. A generated output receives visual PASS only after that specific output has been inspected against the applicable BD01/BD02 visual acceptance criteria."
 }

@@ -34,7 +34,7 @@ Multiple profile macros are invalid. Use `/sc-fear2` for explicit VP02-on-Fear-C
 
 See `CG_F_FRONTAL_ELEVATION.md` for the operational camera contract.
 
-## Backdrop presets · inferred visual promotion
+## Backdrop presets · visual validation PENDING
 
 `/sc-bd01` selects VP02 + T02 + CG-F with a panoramic reinterpretation target
 inside existing source locks. `/sc-bd02` selects VP02 + T08 + CG-F + preserve
@@ -42,5 +42,7 @@ with a reference-layout target. Both inherit elevation defaults. The full
 forms with `/sc-vp02`, `/sc-t02` or `/sc-t08`, and `/sc-cg-f` are supported;
 the preset bundle resolves independently of token order and rejects conflicting
 overrides. Existing command behavior remains unchanged when no preset is used.
-See [BD01 / BD02 specification](BACKDROP_PRESETS.md). Preset promotion is `PASS_INFERRED`; per-output inspection and physical print
-validation remain pending. See [promotion record](../validation/BD_VISUAL_VALIDATION_BENCHMARK.md).
+See [BD01 / BD02 specification](BACKDROP_PRESETS.md). All ten visual benchmark cases remain PENDING. Visual PASS requires inspection
+of the specific output against BD01/BD02 criteria; it cannot be inferred from
+technical validation. Physical print validation remains pending.
+See [visual benchmark](../validation/BD_VISUAL_VALIDATION_BENCHMARK.md).

@@ -77124,10 +77124,10 @@
     "integration/streetcraft_orchestrator.py": "808e1488c8f23791799a6ff2e8ce7f0151919e7559ac0f5a97bdf8ccce3a1ea0",
     "reference_runtime/reference_reasoning.py": "6d057d9e8c4d34e70decf320bdc37e113a69deff868a086312fb55e32d5ef4a1",
     "ROADMAP.md": "1e889704e92d1c0b43a1b14217e4a24d138748bd852b96a26281d52e74ea4473",
-    "CHANGELOG.md": "28296d27c984cee0ba93fdd2951b01c1429b808e5955e440fd4cd21acc0be9ee",
-    "README.md": "578dc0b1ee9ac003a26a66c9f930dcd40a1451a631899e8bacd4129d36e08fa2",
-    "STREETCRAFT.md": "006d9de30017d98ed8706a4efbc80b526160e35fef560e539079ce499cc5bd41",
-    "PACKAGE_MANIFEST.json": "03506ddd7c10f8e7359520d18a735c12735d3b288fa02b7e8653f3d1a110ceb7"
+    "CHANGELOG.md": "a5cbdd80894754b13f9dd30d2c0c383d9fa92b04e8a7df16acef75ecd6b006ee",
+    "README.md": "383934ab62b41d0063784f688d3b389d48efff981d4f666466cf8aeb8cffb6da",
+    "STREETCRAFT.md": "d680f04dd932d38d4acd8fbd22fcde55d94f54dc3519e49af1bbec9bab2a938a",
+    "PACKAGE_MANIFEST.json": "22e2074b98ef28479834e63fb22fb120e077ce69f84500b87a799a860fba89ac"
   },
   "limitations": [
     "Controlled structured snapshots; no pixel-level image understanding or real-image graph extraction.",

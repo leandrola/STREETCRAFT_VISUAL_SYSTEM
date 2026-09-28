@@ -37,7 +37,7 @@ No extra command is needed for Semantic Token Freeze, Low-Confidence Text Mask, 
 - documentary maximum fidelity: `/sc-core /sc-lock /sc-preserve /sc-noinvent`
 - Fear City: `/sc-fear`
 
-## Backdrop presets · PASS by inferred validation
+## Backdrop presets · visual validation PENDING
 
 - `/sc-bd01` — photo-based urban backdrop; recomposition within unprotected regions, preserving urban character.
 - `/sc-bd02` — recognizable source layout translated into a panoramic backdrop; no major recomposition.
@@ -48,5 +48,7 @@ Default 16:9, nominal 1:64; request `backdrop.aspect_ratio` can select 2:1 or
 another horizontal format. P0, protected relationships and locked unknowns remain
 protected. See [scope, options and print limitations](command_invocation/BACKDROP_PRESETS.md).
 
-Preset promotion covers 10/10 inferred cases, not ten inspected outputs. Physical
-print validation remains pending. [Promotion record](validation/BD_VISUAL_VALIDATION_BENCHMARK.md).
+All ten visual benchmark cases are PENDING. Only inspection of a specific output
+against BD01/BD02 criteria can grant that output visual PASS. Technical checks
+cannot substitute for inspection. Physical print validation remains pending.
+[Visual benchmark](validation/BD_VISUAL_VALIDATION_BENCHMARK.md).

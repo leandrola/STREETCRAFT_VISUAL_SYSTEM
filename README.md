@@ -192,7 +192,9 @@ Opt-in compound presets on VP02: `/sc-bd01` reinterprets a photo into a panorami
 urban backdrop within existing source locks; `/sc-bd02` preserves the recognizable
 layout with T08 and strict preservation. Defaults: CG-F, 16:9, nominal 1:64,
 architecture first, subordinate foreground and low narrative density.
-Command/CGC contracts are implemented. Preset promotion is **PASS — Inferred
-Validation**, covering 10/10 inferred cases, with no ten new inspected outputs
-claimed. Physical print validation remains pending.
-[Promotion record](validation/BD_VISUAL_VALIDATION_BENCHMARK.md). [Specification and invocations](command_invocation/BACKDROP_PRESETS.md).
+Command/CGC contracts are technically validated. All ten defined visual benchmark
+cases remain **PENDING**. Visual PASS requires inspection of the specific output
+against BD01/BD02 acceptance criteria; it cannot be inferred from technical tests.
+Physical print validation remains pending.
+[Visual benchmark](validation/BD_VISUAL_VALIDATION_BENCHMARK.md) ·
+[Specification and invocations](command_invocation/BACKDROP_PRESETS.md).

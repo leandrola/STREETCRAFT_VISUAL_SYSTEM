@@ -121,7 +121,8 @@ layout and recognizability. Both select CG-F/elevation defaults and retain sourc
 semantic, protected-relationship and unknown locks. Requests without the presets
 retain their behavior. VSG shadow remains non-governing; preflight still controls
 readiness. Implementation tests do not establish image or print quality.
-Preset promotion is `PASS_INFERRED` (10/10 inferred cases); physical print
-validation is pending. Per-output visual validation remains pending until actual
-inspection. See [specification and operational scope](command_invocation/BACKDROP_PRESETS.md)
-and [promotion evidence scope](validation/BD_VISUAL_VALIDATION_BENCHMARK.md).
+All ten defined visual benchmark cases remain `PENDING`. Visual PASS requires
+inspection of the specific generated output against BD01/BD02 acceptance criteria;
+technical, contract, matrix, regression and hash checks cannot grant visual PASS.
+Physical print validation remains pending. See [specification](command_invocation/BACKDROP_PRESETS.md)
+and [visual benchmark](validation/BD_VISUAL_VALIDATION_BENCHMARK.md).

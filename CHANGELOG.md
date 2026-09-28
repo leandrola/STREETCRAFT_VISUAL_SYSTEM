@@ -1,4 +1,11 @@
-# BD01 / BD02 — Inferred Visual Promotion · 2026-09-28
+# BD01 / BD02 — Visual validation correction · 2026-09-28
+
+- Withdrew the inferred visual promotion. BDV-01 through BDV-10 are defined benchmark cases, all PENDING; visual PASS count is zero.
+- Visual PASS requires inspection of the specific generated output against applicable BD01/BD02 criteria. Technical, contract, matrix, regression and hash checks cannot establish it.
+- Physical print validation remains pending. Runtime and technically validated implementation are unchanged.
+- The historical inferred-promotion entry below is superseded by this correction.
+
+# BD01 / BD02 — Withdrawn inferred promotion · 2026-09-28
 
 - Recorded the user-authorized ten-case visual promotion matrix as `PASS_INFERRED`, with five reference classes across BD01/BD02.
 - No new independent generation or output inspection is claimed; prior visual behavior is user-reported. Physical print validation remains pending.
