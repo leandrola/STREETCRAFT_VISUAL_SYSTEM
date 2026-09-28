@@ -31,7 +31,7 @@ DIRECTIVES = ('preserve', 'transform', 'remove', 'infer', 'unknown', 'forbid')
 POLICIES = {'mode', 'profile', 'camera', 'semantic_text_lock', 'material_intensity_delta',
             'occlusion_locks', 'cil', 'aspect_ratio', 'street_presence',
             'reference_reasoning', 'reference_features', 'text_render_plan',
-            'pre_generation_gate'}
+            'pre_generation_gate', 'backdrop_contract'}
 
 
 def canonical_bytes(value):

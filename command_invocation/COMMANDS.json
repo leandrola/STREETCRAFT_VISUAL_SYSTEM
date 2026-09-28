@@ -139,6 +139,68 @@
       "expands_to": {
         "action": "SHOW_COMMAND_REFERENCE"
       }
+    },
+    {
+      "command": "/sc-vp02",
+      "type": "profile_selector",
+      "expands_to": {
+        "profile": "VP02"
+      }
+    },
+    {
+      "command": "/sc-t02",
+      "type": "mode_modifier",
+      "expands_to": {
+        "mode": "T02"
+      }
+    },
+    {
+      "command": "/sc-t08",
+      "type": "mode_modifier",
+      "expands_to": {
+        "mode": "T08"
+      }
+    },
+    {
+      "command": "/sc-cg-f",
+      "type": "camera_modifier",
+      "expands_to": {
+        "camera": "CG-F",
+        "frontalization": "STRICT"
+      }
+    },
+    {
+      "command": "/sc-bd01",
+      "type": "backdrop_preset",
+      "expands_to": {
+        "profile": "VP02",
+        "mode": "T02",
+        "camera": "CG-F",
+        "identity_lock": "STRICT",
+        "occlusion_lock": "LOCKED_UNKNOWN",
+        "frontalization": "STRICT",
+        "aspect_ratio": "16:9",
+        "street_presence": "MINIMAL",
+        "backdrop_preset": "BD01",
+        "uncertainty": "STRICT_UNKNOWN_PRESERVATION"
+      }
+    },
+    {
+      "command": "/sc-bd02",
+      "type": "backdrop_preset",
+      "expands_to": {
+        "profile": "VP02",
+        "mode": "T08",
+        "camera": "CG-F",
+        "identity_lock": "STRICT",
+        "occlusion_lock": "LOCKED_UNKNOWN",
+        "frontalization": "STRICT",
+        "aspect_ratio": "16:9",
+        "street_presence": "MINIMAL",
+        "backdrop_preset": "BD02",
+        "uncertainty": "STRICT_UNKNOWN_PRESERVATION",
+        "preservation": "STRICT_OBSERVED_EVIDENCE"
+      }
     }
   ],
   "aliases": {

@@ -1,0 +1,315 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Streetcraft opt-in backdrop contract",
+  "type": "object",
+  "required": [
+    "camera",
+    "subject_hierarchy",
+    "narrative",
+    "foreground",
+    "print_readability",
+    "schema_version",
+    "preset",
+    "base_profile",
+    "mode",
+    "scene_id",
+    "source_identity",
+    "visual_validation",
+    "name",
+    "primary_priority",
+    "structural_fidelity",
+    "urban_character_fidelity",
+    "reference_role",
+    "scope",
+    "print_target",
+    "framing",
+    "contract_sha256",
+    "internal_locks",
+    "forbidden_operations",
+    "allowed_operations",
+    "emphases"
+  ],
+  "properties": {
+    "camera": {
+      "const": {
+        "grammar": "CG-F",
+        "reading": "FRONTAL_OR_NEAR_FRONTAL",
+        "horizon": "STABLE",
+        "verticals": "UPRIGHT",
+        "dramatic_convergence": "FORBIDDEN",
+        "birds_eye": "FORBIDDEN"
+      }
+    },
+    "subject_hierarchy": {
+      "const": {
+        "primary": [
+          "architecture",
+          "urban massing",
+          "skyline layers",
+          "rooftops",
+          "painted walls",
+          "building rhythm",
+          "structural silhouettes"
+        ],
+        "secondary": [
+          "water towers",
+          "rooftop equipment",
+          "signage",
+          "low-density street information",
+          "industrial traces",
+          "distant towers"
+        ]
+      }
+    },
+    "narrative": {
+      "const": {
+        "density": "LOW",
+        "people_as_subjects": false,
+        "vehicles_as_subjects": false,
+        "action_as_subject": false,
+        "excessive_clutter": false
+      }
+    },
+    "foreground": {
+      "const": {
+        "dominance": "SUBORDINATE",
+        "accepted_bases": [
+          "neutral street edge",
+          "curb or sidewalk strip",
+          "rooftop edge",
+          "vacant lot edge",
+          "low-detail open foreground",
+          "unobtrusive infrastructure band"
+        ]
+      }
+    },
+    "print_readability": {
+      "const": {
+        "large_masses": "READABLE",
+        "complexity": "CONTROLLED",
+        "tonal_hierarchy": "CONSISTENT",
+        "distance_legibility": "REQUIRED"
+      }
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "preset": {
+      "enum": [
+        "BD01",
+        "BD02"
+      ]
+    },
+    "base_profile": {
+      "const": "VP02"
+    },
+    "mode": {
+      "enum": [
+        "T02",
+        "T08"
+      ]
+    },
+    "scene_id": {
+      "type": "string"
+    },
+    "source_identity": {
+      "type": "string"
+    },
+    "visual_validation": {
+      "const": "PENDING"
+    },
+    "name": {
+      "type": "string"
+    },
+    "primary_priority": {
+      "enum": [
+        "BACKDROP_USABILITY",
+        "STRUCTURAL_FIDELITY"
+      ]
+    },
+    "structural_fidelity": {
+      "enum": [
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    "urban_character_fidelity": {
+      "const": "HIGH"
+    },
+    "reference_role": {
+      "enum": [
+        "STARTING_POINT",
+        "LAYOUT_CONTRACT"
+      ]
+    },
+    "scope": {
+      "type": "object",
+      "required": [
+        "recomposition",
+        "protected_node_ids",
+        "protected_relationship_ids",
+        "locked_unknown_ids",
+        "source_locks_override_preset_allowances",
+        "unknown_resolution",
+        "detail_removal"
+      ],
+      "properties": {
+        "recomposition": {
+          "enum": [
+            "UNPROTECTED_REGIONS_ONLY",
+            "NO_MAJOR_RECOMPOSITION"
+          ]
+        },
+        "source_locks_override_preset_allowances": {
+          "const": true
+        },
+        "unknown_resolution": {
+          "const": "FORBIDDEN_WITHOUT_INDEPENDENT_EVIDENCE"
+        },
+        "detail_removal": {
+          "const": "EXISTING_AUTHORIZATION_REQUIRED"
+        },
+        "protected_node_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "protected_relationship_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "locked_unknown_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "print_target": {
+      "type": "object",
+      "required": [
+        "nominal_scale",
+        "physical_dimensions_and_resolution",
+        "print_readiness"
+      ],
+      "properties": {
+        "nominal_scale": {
+          "type": "string",
+          "pattern": "^1:[1-9][0-9]*$"
+        },
+        "physical_dimensions_and_resolution": {
+          "const": "NOT_SPECIFIED"
+        },
+        "print_readiness": {
+          "const": "REQUIRES_OUTPUT_REVIEW"
+        }
+      },
+      "additionalProperties": false
+    },
+    "framing": {
+      "type": "object",
+      "required": [
+        "orientation",
+        "preferred_aspect_ratios",
+        "lateral_continuity",
+        "aspect_ratio"
+      ],
+      "properties": {
+        "orientation": {
+          "const": "HORIZONTAL"
+        },
+        "preferred_aspect_ratios": {
+          "const": [
+            "16:9",
+            "2:1"
+          ]
+        },
+        "lateral_continuity": {
+          "const": "REQUIRED"
+        },
+        "aspect_ratio": {
+          "type": "string",
+          "pattern": "^[1-9][0-9]*:[1-9][0-9]*$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "contract_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "internal_locks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "forbidden_operations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "allowed_operations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "emphases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "preset": {
+            "const": "BD01"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "mode": {
+            "const": "T02"
+          },
+          "reference_role": {
+            "const": "STARTING_POINT"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "preset": {
+            "const": "BD02"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "mode": {
+            "const": "T08"
+          },
+          "reference_role": {
+            "const": "LAYOUT_CONTRACT"
+          }
+        }
+      }
+    }
+  ]
+}

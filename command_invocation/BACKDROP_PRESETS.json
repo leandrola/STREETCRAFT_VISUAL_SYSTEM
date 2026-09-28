@@ -1,0 +1,144 @@
+{
+  "version": "1.0.0",
+  "spec_status": "PROPOSED",
+  "visual_validation": "PENDING",
+  "shared": {
+    "framing": {
+      "orientation": "HORIZONTAL",
+      "preferred_aspect_ratios": [
+        "16:9",
+        "2:1"
+      ],
+      "lateral_continuity": "REQUIRED"
+    },
+    "camera": {
+      "grammar": "CG-F",
+      "reading": "FRONTAL_OR_NEAR_FRONTAL",
+      "horizon": "STABLE",
+      "verticals": "UPRIGHT",
+      "dramatic_convergence": "FORBIDDEN",
+      "birds_eye": "FORBIDDEN"
+    },
+    "subject_hierarchy": {
+      "primary": [
+        "architecture",
+        "urban massing",
+        "skyline layers",
+        "rooftops",
+        "painted walls",
+        "building rhythm",
+        "structural silhouettes"
+      ],
+      "secondary": [
+        "water towers",
+        "rooftop equipment",
+        "signage",
+        "low-density street information",
+        "industrial traces",
+        "distant towers"
+      ]
+    },
+    "narrative": {
+      "density": "LOW",
+      "people_as_subjects": false,
+      "vehicles_as_subjects": false,
+      "action_as_subject": false,
+      "excessive_clutter": false
+    },
+    "foreground": {
+      "dominance": "SUBORDINATE",
+      "accepted_bases": [
+        "neutral street edge",
+        "curb or sidewalk strip",
+        "rooftop edge",
+        "vacant lot edge",
+        "low-detail open foreground",
+        "unobtrusive infrastructure band"
+      ]
+    },
+    "print_readability": {
+      "large_masses": "READABLE",
+      "complexity": "CONTROLLED",
+      "tonal_hierarchy": "CONSISTENT",
+      "distance_legibility": "REQUIRED"
+    },
+    "internal_locks": [
+      "PANORAMIC_FRAMING",
+      "BACKDROP_CONTINUITY",
+      "ARCHITECTURAL_PRIORITY",
+      "NARRATIVE_REDUCTION",
+      "FOREGROUND_SUPPRESSION",
+      "PRINT_READABILITY"
+    ],
+    "forbidden_operations": [
+      "narrative street-scene composition",
+      "strong oblique perspective",
+      "corner-view streetscape",
+      "overpopulation",
+      "hero-shot framing",
+      "bird’s-eye transformation",
+      "foreground dominance"
+    ]
+  },
+  "presets": {
+    "BD01": {
+      "name": "Urban Backdrop Reinterpretation",
+      "mode": "T02",
+      "primary_priority": "BACKDROP_USABILITY",
+      "structural_fidelity": "MEDIUM",
+      "urban_character_fidelity": "HIGH",
+      "reference_role": "STARTING_POINT",
+      "allowed_operations": [
+        "reorganize unprotected masses",
+        "complete plausible continuity outside locked unknown regions",
+        "simplify urban forms",
+        "replace weak unprotected sections",
+        "adjust unprotected spacing",
+        "reinterpret unprotected skyline sections",
+        "remove authorized distracting details"
+      ],
+      "additional_locks": [
+        "SOURCE_URBAN_CHARACTER"
+      ],
+      "emphases": [
+        "PLAUSIBLE_RECOMPOSITION",
+        "SKYLINE_COMPLETION",
+        "CONTINUITY_OPTIMIZATION"
+      ],
+      "forbidden_operations": [
+        "genericization that loses source identity"
+      ]
+    },
+    "BD02": {
+      "name": "Urban Backdrop Preserve",
+      "mode": "T08",
+      "primary_priority": "STRUCTURAL_FIDELITY",
+      "structural_fidelity": "HIGH",
+      "urban_character_fidelity": "HIGH",
+      "reference_role": "LAYOUT_CONTRACT",
+      "allowed_operations": [
+        "clean minor interference",
+        "stabilize geometry",
+        "improve silhouette clarity",
+        "simplify authorized clutter",
+        "correct small ambiguities using evidence",
+        "unify backdrop presentation"
+      ],
+      "additional_locks": [
+        "REFERENCE_LAYOUT",
+        "STRUCTURAL_FIDELITY",
+        "RECOGNITION_PRESERVATION"
+      ],
+      "emphases": [
+        "RECOGNITION_PRESERVATION"
+      ],
+      "forbidden_operations": [
+        "relocate major masses",
+        "freely redesign skyline",
+        "substitute key buildings",
+        "erase dominant layout relationships",
+        "genericize source identity"
+      ]
+    }
+  }
+}

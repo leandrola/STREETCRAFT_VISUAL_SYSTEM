@@ -17,6 +17,7 @@ for rel in ("command_invocation", "scene_intelligence", "visual_scene_graph", "h
         sys.path.insert(0, p)
 
 from resolve_commands import resolve as resolve_commands
+from backdrop_presets import build_backdrop_contract
 from scene_intelligence import build_scene_analysis_record, project_scene_to_cgc
 from vsg_observer import build_visual_scene_graph
 from operational_hardening import build_contract, material_delta_allowed
@@ -128,6 +129,11 @@ def _draft_cgc(request: dict, cfg: dict, sar2: dict) -> dict:
         cgc["aspect_ratio"] = cfg["aspect_ratio"]
     if cfg.get("street_presence"):
         cgc["street_presence"] = cfg["street_presence"]
+    if cfg.get("backdrop_preset"):
+        backdrop = build_backdrop_contract(cfg, sar2, request.get("backdrop"))
+        cgc["backdrop_contract"] = backdrop
+        cgc["aspect_ratio"] = backdrop["framing"]["aspect_ratio"]
+        cgc["forbid"] = _uniq(cgc["forbid"] + backdrop["forbidden_operations"])
     return cgc
 
 
