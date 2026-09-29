@@ -1,0 +1,200 @@
+{
+  "command_text": "/sc-core /sc-lock",
+  "scene": {
+    "scene_id": "VSG2B-R2B-E-NEW-01",
+    "source_identity": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+    "mode": "T01",
+    "profile": "VP00",
+    "entities": [
+      {
+        "entity_id": "left_facades_01",
+        "label": "visible left building facades; clipped at image boundary",
+        "kind": "FACADE",
+        "roles": [
+          "STRUCTURAL_CORE",
+          "IDENTITY_ANCHOR"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {},
+        "region": [
+          0,
+          0,
+          0.438,
+          0.872
+        ],
+        "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+        "evidence_id": "E-OBS-left_facades_01"
+      },
+      {
+        "entity_id": "right_facades_01",
+        "label": "visible right building facades; clipped at image boundary",
+        "kind": "FACADE",
+        "roles": [
+          "STRUCTURAL_CORE",
+          "IDENTITY_ANCHOR"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {},
+        "region": [
+          0.638,
+          0,
+          1,
+          0.861
+        ],
+        "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+        "evidence_id": "E-OBS-right_facades_01"
+      },
+      {
+        "entity_id": "occluder_01",
+        "label": "dark textured foreground silhouette; physical identity unassigned",
+        "kind": "SURFACE",
+        "roles": [
+          "OCCLUDER",
+          "IDENTITY_ANCHOR"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {},
+        "region": [
+          0.496,
+          0.819,
+          0.79,
+          0.969
+        ],
+        "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+        "evidence_id": "E-OBS-occluder_01",
+        "geometry_lock": true,
+        "vsg_properties": {
+          "silhouette_polygon": [
+            [
+              0.5,
+              0.844
+            ],
+            [
+              0.53,
+              0.819
+            ],
+            [
+              0.55,
+              0.866
+            ],
+            [
+              0.606,
+              0.874
+            ],
+            [
+              0.646,
+              0.863
+            ],
+            [
+              0.692,
+              0.85
+            ],
+            [
+              0.752,
+              0.852
+            ],
+            [
+              0.784,
+              0.883
+            ],
+            [
+              0.768,
+              0.928
+            ],
+            [
+              0.738,
+              0.963
+            ],
+            [
+              0.518,
+              0.969
+            ],
+            [
+              0.496,
+              0.922
+            ]
+          ],
+          "physical_identity": "UNASSIGNED"
+        }
+      },
+      {
+        "entity_id": "hidden_01",
+        "label": "unseen content behind foreground silhouette; no object identity or geometry asserted",
+        "kind": "OCCLUDED_REGION",
+        "roles": [
+          "UNKNOWN_REGION"
+        ],
+        "preservation_level": "P5-D",
+        "epistemic_class": "UNKNOWN",
+        "confidence": "LOW",
+        "observed": false,
+        "salience": {},
+        "region": [
+          0.53,
+          0.874,
+          0.742,
+          0.949
+        ],
+        "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+        "evidence_id": "E-OBS-hidden_01",
+        "vsg_properties": {
+          "region_semantics": "screen-space non-revelation mask; not a claim about hidden geometry",
+          "exact_content": "UNKNOWN",
+          "reconstruction_authorized": false
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "relationship_id": "rel_foreground_occludes_unknown",
+        "subject": "occluder_01",
+        "predicate": "OCCLUDES",
+        "object": "hidden_01",
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.496,
+          0.819,
+          0.79,
+          0.969
+        ],
+        "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+        "evidence_id": "E-OBS-rel_foreground_occludes_unknown"
+      }
+    ]
+  },
+  "vsg": {
+    "mode": "OBSERVER"
+  },
+  "semantic_text_lock": "STRICT",
+  "reference_needs": [],
+  "query_budget": 0,
+  "allow_support": false,
+  "preserve": [
+    "Preserve source framing, camera, visible street corridor, building contours, visible vehicle and traffic lights only where supported by pixels.",
+    "Preserve occluder_01 screen position, approximate silhouette and textured visible surface; its physical identity remains unassigned."
+  ],
+  "transform": [],
+  "remove": [],
+  "infer": [],
+  "unknown": [
+    "hidden_01: no observed object identity, text, geometry or depth behind the foreground silhouette.",
+    "Dark distant surfaces and small text are unresolved due to illumination/resolution; image-border clipping is not classified as occlusion."
+  ],
+  "forbid": [
+    "Reveal or invent exact objects, text, vehicle, facade or geometry behind occluder_01.",
+    "Remove, move, shrink or make occluder_01 transparent; change camera to expose hidden_01.",
+    "Use Archive/reference evidence or generic continuity to fill hidden_01; no reconstruction or minimum-continuity synthesis is authorized.",
+    "Invent exact lettering from unreadable small source text or extrapolate architecture beyond the crop."
+  ]
+}

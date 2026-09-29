@@ -60,8 +60,8 @@
       "manifest_sha256": "d258f4784d7f27cabec9b6044142cdc809e19a9552e72924468e20d55dc3d3ec",
       "historical_recovery": false,
       "dry_run_review": {
-        "path": "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/delta_review.json",
-        "sha256": "33dc8541329eb6b36c10c91386719f26dd1673bdfa83cc20a9f8f6ea6389af65"
+        "path": "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/delta_review.json",
+        "sha256": "ca6ef9b20fb8127b1763528b308e2f89054550738ccd2b5cbe10d160ea84a364"
       }
     },
     {
@@ -71,15 +71,22 @@
       "phenomena": [
         "Occlusion Lock"
       ],
-      "status": "BLOCKED",
+      "status": "CORPUS_RECOVERY_DRY_RUN_PASS",
       "source": {
         "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-E_source.jpg",
         "sha256": "f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860"
       },
-      "source_status": "RECEIVED_UNBOUND",
-      "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING",
+      "source_status": "BOUND_PROSPECTIVELY",
+      "reason": "PENDING_VISUAL",
       "substitution": null,
-      "fresh_pairs": 0
+      "fresh_pairs": 0,
+      "manifest": "visual_scene_graph/pilot/fixtures/r2b_e_new_01/manifest.json",
+      "manifest_sha256": "6568570352087407c7f6f23955ffe6e4f6381c6861bdd674d78baaa16197b275",
+      "historical_recovery": false,
+      "dry_run_review": {
+        "path": "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/delta_review.json",
+        "sha256": "c5aaef887e9d5f95bd77e1e97f65d33ed4c5fe2a99705508d28154b2a939be10"
+      }
     },
     {
       "fixture_id": "R2B-191-F",
@@ -101,6 +108,6 @@
   ],
   "initial_image_budget": 8,
   "conditional_fifth_pair": "Requires a versioned budget change after coverage review",
-  "generator_capability": "No local provider bridge configured; D settings explicitly provisional and dry-run only.",
+  "generator_capability": "No local provider bridge configured; D/E settings explicitly provisional and dry-run only.",
   "user_confirmation": "Kenny source received 2026-09-29; user confirms no other rooftop view. New plausible rooftop design authorized, preserving observed facade."
 }

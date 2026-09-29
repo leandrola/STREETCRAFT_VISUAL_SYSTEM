@@ -1,19 +1,19 @@
 # VSG-2B controlled generation harness
 
-Status: **BLOCKED / PENDING_VISUAL** overall. D now has a prospective source binding and admitted dry-run-only manifest; see the [D runbook](fixtures/r2b_d_new_01/RUNBOOK.md) and [current QA](../../validation/VSG_2B_CONTROLLED_GENERATION_PILOT_QA.json) for `CORPUS_RECOVERY_DRY_RUN_PASS` evidence. This is new annotation of the existing photograph, not historical snapshot recovery. Zero pilot images or visual comparisons exist. Kenny’s JPEG is received and remains unbound; [its scope record](fixtures/kennys/reception.json) separates observed facade from authorized inferred rooftop design. C/E and conditional F remain unbound.
+Status: **BLOCKED / PENDING_VISUAL** overall. D and E now have prospective source bindings and admitted dry-run-only manifests; see the [D runbook](fixtures/r2b_d_new_01/RUNBOOK.md) and [E occlusion runbook](fixtures/r2b_e_new_01/RUNBOOK.md) and [current QA](../../validation/VSG_2B_CONTROLLED_GENERATION_PILOT_QA.json) for `CORPUS_RECOVERY_DRY_RUN_PASS` evidence. This is new annotation of the existing photograph, not historical snapshot recovery. Zero pilot images or visual comparisons exist. Kenny’s JPEG is received and remains unbound; [its scope record](fixtures/kennys/reception.json) separates observed facade from authorized inferred rooftop design. C and conditional F remain unbound.
 
-The stable client still ends at `GENERATION_READY`. Nothing in normal orchestration imports this package. Explicit invocation is `python -m visual_scene_graph.pilot`; the checked-in registry admits only the prospective D manifest. VSG-3A, 3B, correction and BK work are outside this implementation.
+The stable client still ends at `GENERATION_READY`. Nothing in normal orchestration imports this package. Explicit invocation is `python -m visual_scene_graph.pilot`; the checked-in registry admits only the prospective D and E manifests. VSG-3A, 3B, correction and BK work are outside this implementation.
 
 ## Frozen fixture contract
 
-To refresh technical evidence after an intentional change, run `.venv-sc/bin/python -m visual_scene_graph.pilot.run_validation`. This does not admit fixtures or generate images. After refreshing preconditions it replays D, saves a fresh real-source dry run and independently checks its persisted payload delta.
+To refresh technical evidence after an intentional change, run `.venv-sc/bin/python -m visual_scene_graph.pilot.run_validation`. This does not admit fixtures or generate images. After refreshing preconditions it replays explicitly selected D then E, saves separate fresh real-source dry runs and independently checks their persisted payload deltas. QA records each fixture under `dry_run.fixtures`; no prior UUID is overwritten.
 
 The strict [manifest schema](../../schemas/vsg-pilot-manifest.schema.json) requires:
 
 - A version, allowlisted fixture ID and explicit `pilot_enabled=true` (disabled unless supplied).
 - Separate, SHA-256-bound request, runtime, SAR2, RR2, final CGC, expected graph, candidate graph, policy/directive sidecar, compiled contract and original source image files. Every file has a provenance description. Paths stay inside the repository.
 - A source-identity attestation with author and evidence. A hash proves bytes; the attestation must establish that the snapshots describe this particular source. Historical generated outputs are not source photographs.
-- Required nonempty P0/PR0/PR1/LOCK denominators, generation provider/model/seed/size/quality/format and a frozen visual rubric. The rubric covers all protected constraints and required relations, identity, and unauthorized changes.
+- Required nonempty declared priority denominators (P0/PR0/PR1/LOCK), generation provider/model/seed/size/quality/format and a frozen visual rubric. The rubric covers all protected constraints and required relations, identity, and unauthorized changes.
 
 Admission requires adding the exact canonical manifest SHA-256 to `allowlist.json` with `status=ADMITTED`. Registry changes require rerunning controls and freezing preconditions. Expected and candidate graph files must be separate. The expected graph replays from frozen SAR2/RR2; SAR2 replays from the request and resolved configuration. Runtime status, CGC and sidecars must agree. VSG-2A validates schemas, replay, canonical ordering, mapping, policies, all constraint equivalences and preservation coverage. Neither shadow `governs_generation=false` nor a historical visual PASS grants admission.
 
@@ -29,17 +29,19 @@ There was no existing image-provider renderer in the stable runtime. This pilot 
 
 Both branches retain every constraint's ID, priority, value and lock IDs. The renderer compares the complete semantic projections, then parses A's relationship string back and requires exact equality with B's array. No additional facts, references or constraints are introduced. Unsupported fields or any loss fail closed. This tests a specific structured-expression delta; it does not compare against an undocumented historical prompting practice.
 
-A dry run writes both effective payloads, manifest, comparison, frozen artifact bytes and a `delta_sha256` binding the manifest and payloads. It makes no provider calls and reports `INCONCLUSIVE / DRY_RUN_NO_IMAGES`. The real D dry run is archived under `validation/vsg_2b/dry_runs/`; QA points to its exact report and delta review. The persisted control renderer preview remains synthetic and separate. Neither dry run is visual evidence.
+A dry run writes both effective payloads, manifest, comparison, frozen artifact bytes and a `delta_sha256` binding the manifest and payloads. It makes no provider calls and reports `INCONCLUSIVE / DRY_RUN_NO_IMAGES`. The real D/E dry runs are archived under `validation/vsg_2b/dry_runs/`; QA points to each exact report and delta review. The persisted control renderer preview remains synthetic and separate. Neither dry run is visual evidence.
 
 ```sh
 .venv-sc/bin/python -m visual_scene_graph.pilot path/to/frozen-manifest.json --output outputs/vsg-2b-campaign
 ```
 
+E preserves the foreground occluder and behind-content `UNKNOWN_LOCKED`; no physical hidden object, exact geometry or reference fill is authorized. Its P0 9/9, PR0 1/1 and LOCK 4/4 are exercised; PR1 0/0 is unexercised. RR2 records one blocked need and zero queryable needs or Archive calls. Original D artifacts/history are hash-checked and its delta remains unchanged. Controls now include 16 E mutation/replay checks in addition to the original 32; these are technical evidence only.
+
 ## Provider adapter and execution
 
 `CommandGenerator` runs an explicitly configured trusted local argv without a shell. No executable comes from a fixture. JSON on stdin contains exactly `source_base64`, `payload`, `provider`, `model`, `seed`, and `parameters`. A bridge must call a real image provider and return JSON with `image_base64` and `metadata`. Metadata must include provider, model, a fresh generation ID, seed (including null when unavailable), parameters and may include other provider receipts. It must report the provider's actual settings; unsupported parameters must fail rather than be silently dropped.
 
-The bridge is deliberately external: no API, credentials or provider model is invented. No local bridge is configured in this checkout. A valid, reviewed fixture without a bridge returns `BLOCKED: NO_GENERATOR`. The session image tool cannot bypass fixture admission. D’s `DRY_RUN_ONLY` provider/model identifiers are provisional; the harness rejects real execution until supported settings are versioned, re-admitted, revalidated and reviewed in a new dry run.
+The bridge is deliberately external: no API, credentials or provider model is invented. No local bridge is configured in this checkout. A valid, reviewed fixture without a bridge returns `BLOCKED: NO_GENERATOR`. The session image tool cannot bypass fixture admission. D/E `DRY_RUN_ONLY` provider/model identifiers are provisional; the harness rejects real execution until supported settings are versioned, re-admitted, revalidated and reviewed in a new dry run.
 
 ```sh
 .venv-sc/bin/python -m visual_scene_graph.pilot path/to/frozen-manifest.json \

@@ -1,0 +1,102 @@
+{
+  "policies": {
+    "mode": "T01",
+    "profile": "VP00",
+    "camera": "CG-S",
+    "semantic_text_lock": "STRICT",
+    "material_intensity_delta": 0,
+    "occlusion_locks": [],
+    "cil": {
+      "commands": "/sc-core /sc-lock",
+      "resolved": {
+        "profile": "VP00",
+        "mode": "T01",
+        "camera": "CG-S",
+        "fear_city_identity": null,
+        "preservation": null,
+        "uncertainty": null,
+        "explicit_fear_city_profile_override": false,
+        "identity_lock": null,
+        "occlusion_lock": null,
+        "frontalization": null,
+        "aspect_ratio": null,
+        "street_presence": null
+      }
+    },
+    "reference_reasoning": {
+      "version": "RR-2.0",
+      "status": "READY",
+      "queries": 0,
+      "query_budget": 4,
+      "need_results": {},
+      "unresolved_required": [],
+      "trace": [],
+      "admissions": [],
+      "generation_projection": [],
+      "locked_unknowns": []
+    },
+    "pre_generation_gate": {
+      "status": "PASS",
+      "findings": [],
+      "reference_preflight": {
+        "status": "PASS",
+        "admitted": [],
+        "rejected": []
+      }
+    },
+    "reference_features": [],
+    "text_render_plan": {
+      "tokens": [
+        {
+          "literal": "TERMINAL DINER",
+          "confidence": 0.99,
+          "state": "FROZEN_EXACT",
+          "preservation_level": "P0",
+          "identity_bearing": true,
+          "numeral": false,
+          "token_id": "sign_01"
+        },
+        {
+          "literal": "",
+          "confidence": 0.2,
+          "state": "MASK_GRAPHIC_ONLY",
+          "preservation_level": "P2",
+          "identity_bearing": false,
+          "numeral": false,
+          "token_id": "fascia_01"
+        },
+        {
+          "literal": "",
+          "confidence": 0.0,
+          "state": "MASK_GRAPHIC_ONLY",
+          "preservation_level": "P2",
+          "identity_bearing": false,
+          "numeral": false,
+          "token_id": "billboard_01"
+        }
+      ],
+      "proposed_text": {
+        "sign_01": "TERMINAL DINER",
+        "fascia_01": null,
+        "billboard_01": null
+      }
+    }
+  },
+  "directives": {
+    "preserve": [
+      "Source framing, oblique view, visible facade, diner storefront and graphic layouts.",
+      "sign_01: TERMINAL above DINER in two lines; preserve exact spelling."
+    ],
+    "transform": [],
+    "remove": [],
+    "infer": [],
+    "unknown": [
+      "Exact lettering on fascia_01 is uncertain; billboard_01 wording is not transcribed in this annotation.",
+      "Hidden interiors and unseen building surfaces are unannotated."
+    ],
+    "forbid": [
+      "Invent or complete exact text on fascia_01 or untranscribed billboard_01.",
+      "Add hidden architecture, rooftop equipment, geographic identity or documentary history."
+    ]
+  }
+}

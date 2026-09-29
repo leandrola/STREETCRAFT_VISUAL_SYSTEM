@@ -1,0 +1,2449 @@
+{
+  "schema_version": "2.0.0",
+  "mode": "SHADOW",
+  "governs_generation": false,
+  "status": "PASS",
+  "coverage": {
+    "P0": {
+      "required": 9,
+      "preserved": 9,
+      "ratio": 1.0
+    },
+    "PR0": {
+      "required": 1,
+      "preserved": 1,
+      "ratio": 1.0
+    },
+    "PR1": {
+      "required": 1,
+      "preserved": 1,
+      "ratio": 1.0
+    },
+    "LOCK": {
+      "required": 3,
+      "preserved": 3,
+      "ratio": 1.0
+    }
+  },
+  "counts": {
+    "equivalent": 39,
+    "omission": 0,
+    "weakening": 0,
+    "contradiction": 0,
+    "unauthorized_addition": 0
+  },
+  "unresolved_required_mappings": 0,
+  "issues": [],
+  "results": [
+    {
+      "constraint_id": "action:billboard_01",
+      "classification": "equivalent",
+      "priority": "P2",
+      "cgc_ref": "stable_cgc#/scene_intelligence",
+      "source_value": "PRESERVE_CONTEXT",
+      "target_value": "PRESERVE_CONTEXT",
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "billboard_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "billboard_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "billboard_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "billboard_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "billboard_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "billboard_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "action:diner_01",
+      "classification": "equivalent",
+      "priority": "P0",
+      "cgc_ref": "stable_cgc#/scene_intelligence",
+      "source_value": "PRESERVE_EXACT",
+      "target_value": "PRESERVE_EXACT",
+      "expected_lock_ids": [
+        "GL-GEO-DINER_01"
+      ],
+      "actual_lock_ids": [
+        "GL-GEO-DINER_01"
+      ],
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "diner_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "diner_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "action:facade_01",
+      "classification": "equivalent",
+      "priority": "P0",
+      "cgc_ref": "stable_cgc#/scene_intelligence",
+      "source_value": "PRESERVE_EXACT",
+      "target_value": "PRESERVE_EXACT",
+      "expected_lock_ids": [
+        "GL-GEO-FACADE_01"
+      ],
+      "actual_lock_ids": [
+        "GL-GEO-FACADE_01"
+      ],
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "facade_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "facade_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "facade_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "facade_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "facade_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "facade_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "action:fascia_01",
+      "classification": "equivalent",
+      "priority": "P2",
+      "cgc_ref": "stable_cgc#/scene_intelligence",
+      "source_value": "PRESERVE_CONTEXT",
+      "target_value": "PRESERVE_CONTEXT",
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "fascia_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "fascia_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "fascia_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "fascia_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "fascia_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "fascia_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "action:sign_01",
+      "classification": "equivalent",
+      "priority": "P0",
+      "cgc_ref": "stable_cgc#/scene_intelligence",
+      "source_value": "PRESERVE_EXACT",
+      "target_value": "PRESERVE_EXACT",
+      "expected_lock_ids": [
+        "GL-SEM-SIGN_01"
+      ],
+      "actual_lock_ids": [
+        "GL-SEM-SIGN_01"
+      ],
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "sign_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "sign_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "sign_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "sign_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "sign_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "sign_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "directive:forbid",
+      "classification": "equivalent",
+      "priority": "REQUIRED",
+      "cgc_ref": "stable_cgc#/forbid",
+      "source_value": [
+        "Add hidden architecture, rooftop equipment, geographic identity or documentary history.",
+        "Invent or complete exact text on fascia_01 or untranscribed billboard_01.",
+        "break_protected_relationships:diner_01",
+        "break_protected_relationships:facade_01",
+        "break_protected_relationships:sign_01"
+      ],
+      "target_value": [
+        "Add hidden architecture, rooftop equipment, geographic identity or documentary history.",
+        "Invent or complete exact text on fascia_01 or untranscribed billboard_01.",
+        "break_protected_relationships:diner_01",
+        "break_protected_relationships:facade_01",
+        "break_protected_relationships:sign_01"
+      ],
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [],
+      "target_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "directives"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "billboard_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "facade_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "fascia_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "sign_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "directive:infer",
+      "classification": "equivalent",
+      "priority": "REQUIRED",
+      "cgc_ref": "stable_cgc#/infer",
+      "source_value": [],
+      "target_value": [],
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [],
+      "target_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "directives"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "billboard_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "facade_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "fascia_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "sign_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "directive:preserve",
+      "classification": "equivalent",
+      "priority": "REQUIRED",
+      "cgc_ref": "stable_cgc#/preserve",
+      "source_value": [
+        "Source framing, oblique view, visible facade, diner storefront and graphic layouts.",
+        "billboard_01:upper advertising board; wording not transcribed:PRESERVE_CONTEXT",
+        "diner_01:visible street-level diner storefront with striped fascia:PRESERVE_EXACT",
+        "facade_01:visible left masonry facade and exterior fire escape:PRESERVE_EXACT",
+        "fascia_01:left storefront fascia; exact lettering uncertain:PRESERVE_CONTEXT",
+        "sign_01: TERMINAL above DINER in two lines; preserve exact spelling.",
+        "sign_01:yellow TERMINAL DINER sign:PRESERVE_EXACT"
+      ],
+      "target_value": [
+        "Source framing, oblique view, visible facade, diner storefront and graphic layouts.",
+        "billboard_01:upper advertising board; wording not transcribed:PRESERVE_CONTEXT",
+        "diner_01:visible street-level diner storefront with striped fascia:PRESERVE_EXACT",
+        "facade_01:visible left masonry facade and exterior fire escape:PRESERVE_EXACT",
+        "fascia_01:left storefront fascia; exact lettering uncertain:PRESERVE_CONTEXT",
+        "sign_01: TERMINAL above DINER in two lines; preserve exact spelling.",
+        "sign_01:yellow TERMINAL DINER sign:PRESERVE_EXACT"
+      ],
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [],
+      "target_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "directives"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "billboard_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "facade_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "fascia_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "sign_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "directive:remove",
+      "classification": "equivalent",
+      "priority": "REQUIRED",
+      "cgc_ref": "stable_cgc#/remove",
+      "source_value": [],
+      "target_value": [],
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [],
+      "target_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "directives"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "billboard_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "facade_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "fascia_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "sign_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "directive:transform",
+      "classification": "equivalent",
+      "priority": "REQUIRED",
+      "cgc_ref": "stable_cgc#/transform",
+      "source_value": [],
+      "target_value": [],
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [],
+      "target_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "directives"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "billboard_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "facade_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "fascia_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "sign_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "directive:unknown",
+      "classification": "equivalent",
+      "priority": "REQUIRED",
+      "cgc_ref": "stable_cgc#/unknown",
+      "source_value": [
+        "Exact lettering on fascia_01 is uncertain; billboard_01 wording is not transcribed in this annotation.",
+        "Hidden interiors and unseen building surfaces are unannotated."
+      ],
+      "target_value": [
+        "Exact lettering on fascia_01 is uncertain; billboard_01 wording is not transcribed in this annotation.",
+        "Hidden interiors and unseen building surfaces are unannotated."
+      ],
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [],
+      "target_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "directives"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "billboard_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "facade_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "fascia_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "sign_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "edge:rel_facade_left_of_diner",
+      "classification": "equivalent",
+      "priority": "PR1",
+      "cgc_ref": "stable_cgc#/scene_intelligence",
+      "source_value": {
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "D-OBS-rel_facade_left_of_diner",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.025,
+            0.065,
+            0.945,
+            0.956
+          ]
+        },
+        "from": "facade_01",
+        "protection": "PR1",
+        "to": "diner_01",
+        "type": "LEFT_OF"
+      },
+      "target_value": {
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "D-OBS-rel_facade_left_of_diner",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.025,
+            0.065,
+            0.945,
+            0.956
+          ]
+        },
+        "from": "facade_01",
+        "protection": "PR1",
+        "to": "diner_01",
+        "type": "LEFT_OF"
+      },
+      "expected_lock_ids": [
+        "GL-GEO-DINER_01",
+        "GL-GEO-FACADE_01"
+      ],
+      "actual_lock_ids": [
+        "GL-GEO-DINER_01",
+        "GL-GEO-FACADE_01"
+      ],
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "rel_facade_left_of_diner"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "facade_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "rel_facade_left_of_diner"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "facade_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "edge:rel_sign_above_diner",
+      "classification": "equivalent",
+      "priority": "PR0",
+      "cgc_ref": "stable_cgc#/scene_intelligence",
+      "source_value": {
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "D-OBS-rel_sign_above_diner",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.455,
+            0.527,
+            0.945,
+            0.951
+          ]
+        },
+        "from": "sign_01",
+        "protection": "PR0",
+        "to": "diner_01",
+        "type": "ABOVE"
+      },
+      "target_value": {
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "D-OBS-rel_sign_above_diner",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.455,
+            0.527,
+            0.945,
+            0.951
+          ]
+        },
+        "from": "sign_01",
+        "protection": "PR0",
+        "to": "diner_01",
+        "type": "ABOVE"
+      },
+      "expected_lock_ids": [
+        "GL-GEO-DINER_01"
+      ],
+      "actual_lock_ids": [
+        "GL-GEO-DINER_01"
+      ],
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "rel_sign_above_diner"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "sign_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "rel_sign_above_diner"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "sign_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "identity_anchors",
+      "classification": "equivalent",
+      "priority": "REQUIRED",
+      "cgc_ref": "stable_cgc#/scene_intelligence",
+      "source_value": [
+        "diner_01",
+        "sign_01"
+      ],
+      "target_value": [
+        "diner_01",
+        "sign_01"
+      ],
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "sign_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "sign_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "lock:GL-GEO-DINER_01",
+      "classification": "equivalent",
+      "priority": "LOCK",
+      "cgc_ref": "source_vsg (CGC source restriction)",
+      "source_value": {
+        "enforcement": "VALIDATE_ONLY",
+        "expected": {
+          "node_type": "storefront",
+          "protected_topology": [
+            {
+              "from": "facade_01",
+              "id": "rel_facade_left_of_diner",
+              "to": "diner_01",
+              "type": "LEFT_OF"
+            },
+            {
+              "from": "sign_01",
+              "id": "rel_sign_above_diner",
+              "to": "diner_01",
+              "type": "ABOVE"
+            }
+          ]
+        },
+        "provenance": {
+          "evidence": {
+            "evidence_id": "D-OBS-diner_01",
+            "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+            "region": [
+              0.478,
+              0.668,
+              0.945,
+              0.951
+            ]
+          },
+          "source": "VSG_NODE_LOCK"
+        },
+        "strength": "ABSOLUTE",
+        "target": {
+          "id": "diner_01",
+          "kind": "NODE"
+        },
+        "type": "GEOMETRY_LOCK"
+      },
+      "target_value": {
+        "enforcement": "VALIDATE_ONLY",
+        "expected": {
+          "node_type": "storefront",
+          "protected_topology": [
+            {
+              "from": "facade_01",
+              "id": "rel_facade_left_of_diner",
+              "to": "diner_01",
+              "type": "LEFT_OF"
+            },
+            {
+              "from": "sign_01",
+              "id": "rel_sign_above_diner",
+              "to": "diner_01",
+              "type": "ABOVE"
+            }
+          ]
+        },
+        "provenance": {
+          "evidence": {
+            "evidence_id": "D-OBS-diner_01",
+            "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+            "region": [
+              0.478,
+              0.668,
+              0.945,
+              0.951
+            ]
+          },
+          "source": "VSG_NODE_LOCK"
+        },
+        "strength": "ABSOLUTE",
+        "target": {
+          "id": "diner_01",
+          "kind": "NODE"
+        },
+        "type": "GEOMETRY_LOCK"
+      },
+      "expected_lock_ids": [
+        "GL-GEO-DINER_01"
+      ],
+      "actual_lock_ids": [
+        "GL-GEO-DINER_01"
+      ],
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "graph_locks",
+          "id": "GL-GEO-DINER_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "diner_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "graph_locks",
+          "id": "GL-GEO-DINER_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "diner_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "lock:GL-GEO-FACADE_01",
+      "classification": "equivalent",
+      "priority": "LOCK",
+      "cgc_ref": "source_vsg (CGC source restriction)",
+      "source_value": {
+        "enforcement": "VALIDATE_ONLY",
+        "expected": {
+          "node_type": "facade",
+          "protected_topology": [
+            {
+              "from": "facade_01",
+              "id": "rel_facade_left_of_diner",
+              "to": "diner_01",
+              "type": "LEFT_OF"
+            }
+          ]
+        },
+        "provenance": {
+          "evidence": {
+            "evidence_id": "D-OBS-facade_01",
+            "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+            "region": [
+              0.025,
+              0.065,
+              0.46,
+              0.956
+            ]
+          },
+          "source": "VSG_NODE_LOCK"
+        },
+        "strength": "ABSOLUTE",
+        "target": {
+          "id": "facade_01",
+          "kind": "NODE"
+        },
+        "type": "GEOMETRY_LOCK"
+      },
+      "target_value": {
+        "enforcement": "VALIDATE_ONLY",
+        "expected": {
+          "node_type": "facade",
+          "protected_topology": [
+            {
+              "from": "facade_01",
+              "id": "rel_facade_left_of_diner",
+              "to": "diner_01",
+              "type": "LEFT_OF"
+            }
+          ]
+        },
+        "provenance": {
+          "evidence": {
+            "evidence_id": "D-OBS-facade_01",
+            "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+            "region": [
+              0.025,
+              0.065,
+              0.46,
+              0.956
+            ]
+          },
+          "source": "VSG_NODE_LOCK"
+        },
+        "strength": "ABSOLUTE",
+        "target": {
+          "id": "facade_01",
+          "kind": "NODE"
+        },
+        "type": "GEOMETRY_LOCK"
+      },
+      "expected_lock_ids": [
+        "GL-GEO-FACADE_01"
+      ],
+      "actual_lock_ids": [
+        "GL-GEO-FACADE_01"
+      ],
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "graph_locks",
+          "id": "GL-GEO-FACADE_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "facade_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "graph_locks",
+          "id": "GL-GEO-FACADE_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "facade_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "lock:GL-SEM-SIGN_01",
+      "classification": "equivalent",
+      "priority": "LOCK",
+      "cgc_ref": "source_vsg (CGC source restriction)",
+      "source_value": {
+        "enforcement": "VALIDATE_ONLY",
+        "expected": {
+          "node_type": "sign",
+          "text": "TERMINAL DINER"
+        },
+        "provenance": {
+          "evidence": {
+            "evidence_id": "D-OBS-sign_01",
+            "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+            "region": [
+              0.455,
+              0.527,
+              0.6,
+              0.628
+            ]
+          },
+          "source": "VSG_NODE_LOCK"
+        },
+        "strength": "ABSOLUTE",
+        "target": {
+          "id": "sign_01",
+          "kind": "NODE"
+        },
+        "type": "SEMANTIC_TEXT_LOCK"
+      },
+      "target_value": {
+        "enforcement": "VALIDATE_ONLY",
+        "expected": {
+          "node_type": "sign",
+          "text": "TERMINAL DINER"
+        },
+        "provenance": {
+          "evidence": {
+            "evidence_id": "D-OBS-sign_01",
+            "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+            "region": [
+              0.455,
+              0.527,
+              0.6,
+              0.628
+            ]
+          },
+          "source": "VSG_NODE_LOCK"
+        },
+        "strength": "ABSOLUTE",
+        "target": {
+          "id": "sign_01",
+          "kind": "NODE"
+        },
+        "type": "SEMANTIC_TEXT_LOCK"
+      },
+      "expected_lock_ids": [
+        "GL-SEM-SIGN_01"
+      ],
+      "actual_lock_ids": [
+        "GL-SEM-SIGN_01"
+      ],
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "graph_locks",
+          "id": "GL-SEM-SIGN_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "sign_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "graph_locks",
+          "id": "GL-SEM-SIGN_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "sign_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "node:billboard_01",
+      "classification": "equivalent",
+      "priority": "P2",
+      "cgc_ref": "source_vsg (CGC source restriction)",
+      "source_value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "D-OBS-billboard_01",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.437,
+            0.018,
+            0.797,
+            0.37
+          ]
+        },
+        "label": "upper advertising board; wording not transcribed",
+        "locks": {
+          "geometry": false,
+          "identity": false,
+          "occlusion": false,
+          "semantic": false
+        },
+        "observed": true,
+        "source_attributes": {
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "D-OBS-billboard_01",
+          "kind": "SIGNAGE",
+          "observed": true,
+          "preservation_level": "P2",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.437,
+            0.018,
+            0.797,
+            0.37
+          ],
+          "roles": [
+            "CONTEXTUAL_SUPPORT"
+          ]
+        },
+        "source_kind": "SIGNAGE",
+        "type": "sign"
+      },
+      "target_value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "D-OBS-billboard_01",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.437,
+            0.018,
+            0.797,
+            0.37
+          ]
+        },
+        "label": "upper advertising board; wording not transcribed",
+        "locks": {
+          "geometry": false,
+          "identity": false,
+          "occlusion": false,
+          "semantic": false
+        },
+        "observed": true,
+        "source_attributes": {
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "D-OBS-billboard_01",
+          "kind": "SIGNAGE",
+          "observed": true,
+          "preservation_level": "P2",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.437,
+            0.018,
+            0.797,
+            0.37
+          ],
+          "roles": [
+            "CONTEXTUAL_SUPPORT"
+          ]
+        },
+        "source_kind": "SIGNAGE",
+        "type": "sign"
+      },
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "billboard_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "billboard_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "billboard_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "billboard_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "billboard_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "billboard_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "node:diner_01",
+      "classification": "equivalent",
+      "priority": "P0",
+      "cgc_ref": "source_vsg (CGC source restriction)",
+      "source_value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "D-OBS-diner_01",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.478,
+            0.668,
+            0.945,
+            0.951
+          ]
+        },
+        "label": "visible street-level diner storefront with striped fascia",
+        "locks": {
+          "geometry": true,
+          "identity": true,
+          "occlusion": false,
+          "semantic": false
+        },
+        "observed": true,
+        "source_attributes": {
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "D-OBS-diner_01",
+          "kind": "STOREFRONT",
+          "observed": true,
+          "preservation_level": "P0",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.478,
+            0.668,
+            0.945,
+            0.951
+          ],
+          "roles": [
+            "IDENTITY_ANCHOR",
+            "STRUCTURAL_CORE"
+          ]
+        },
+        "source_kind": "STOREFRONT",
+        "type": "storefront"
+      },
+      "target_value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "D-OBS-diner_01",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.478,
+            0.668,
+            0.945,
+            0.951
+          ]
+        },
+        "label": "visible street-level diner storefront with striped fascia",
+        "locks": {
+          "geometry": true,
+          "identity": true,
+          "occlusion": false,
+          "semantic": false
+        },
+        "observed": true,
+        "source_attributes": {
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "D-OBS-diner_01",
+          "kind": "STOREFRONT",
+          "observed": true,
+          "preservation_level": "P0",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.478,
+            0.668,
+            0.945,
+            0.951
+          ],
+          "roles": [
+            "IDENTITY_ANCHOR",
+            "STRUCTURAL_CORE"
+          ]
+        },
+        "source_kind": "STOREFRONT",
+        "type": "storefront"
+      },
+      "expected_lock_ids": [
+        "GL-GEO-DINER_01"
+      ],
+      "actual_lock_ids": [
+        "GL-GEO-DINER_01"
+      ],
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "diner_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "diner_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "node:facade_01",
+      "classification": "equivalent",
+      "priority": "P0",
+      "cgc_ref": "source_vsg (CGC source restriction)",
+      "source_value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "D-OBS-facade_01",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.025,
+            0.065,
+            0.46,
+            0.956
+          ]
+        },
+        "label": "visible left masonry facade and exterior fire escape",
+        "locks": {
+          "geometry": true,
+          "identity": false,
+          "occlusion": false,
+          "semantic": false
+        },
+        "observed": true,
+        "source_attributes": {
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "D-OBS-facade_01",
+          "kind": "FACADE",
+          "observed": true,
+          "preservation_level": "P0",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.025,
+            0.065,
+            0.46,
+            0.956
+          ],
+          "roles": [
+            "STRUCTURAL_CORE"
+          ]
+        },
+        "source_kind": "FACADE",
+        "type": "facade"
+      },
+      "target_value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "D-OBS-facade_01",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.025,
+            0.065,
+            0.46,
+            0.956
+          ]
+        },
+        "label": "visible left masonry facade and exterior fire escape",
+        "locks": {
+          "geometry": true,
+          "identity": false,
+          "occlusion": false,
+          "semantic": false
+        },
+        "observed": true,
+        "source_attributes": {
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "D-OBS-facade_01",
+          "kind": "FACADE",
+          "observed": true,
+          "preservation_level": "P0",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.025,
+            0.065,
+            0.46,
+            0.956
+          ],
+          "roles": [
+            "STRUCTURAL_CORE"
+          ]
+        },
+        "source_kind": "FACADE",
+        "type": "facade"
+      },
+      "expected_lock_ids": [
+        "GL-GEO-FACADE_01"
+      ],
+      "actual_lock_ids": [
+        "GL-GEO-FACADE_01"
+      ],
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "facade_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "facade_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "facade_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "facade_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "facade_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "facade_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "node:fascia_01",
+      "classification": "equivalent",
+      "priority": "P2",
+      "cgc_ref": "source_vsg (CGC source restriction)",
+      "source_value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "D-OBS-fascia_01",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.05,
+            0.622,
+            0.405,
+            0.725
+          ]
+        },
+        "label": "left storefront fascia; exact lettering uncertain",
+        "locks": {
+          "geometry": false,
+          "identity": false,
+          "occlusion": false,
+          "semantic": false
+        },
+        "observed": true,
+        "source_attributes": {
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "D-OBS-fascia_01",
+          "kind": "SIGNAGE",
+          "observed": true,
+          "preservation_level": "P2",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.05,
+            0.622,
+            0.405,
+            0.725
+          ],
+          "roles": [
+            "CONTEXTUAL_SUPPORT"
+          ]
+        },
+        "source_kind": "SIGNAGE",
+        "type": "sign"
+      },
+      "target_value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "D-OBS-fascia_01",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.05,
+            0.622,
+            0.405,
+            0.725
+          ]
+        },
+        "label": "left storefront fascia; exact lettering uncertain",
+        "locks": {
+          "geometry": false,
+          "identity": false,
+          "occlusion": false,
+          "semantic": false
+        },
+        "observed": true,
+        "source_attributes": {
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "D-OBS-fascia_01",
+          "kind": "SIGNAGE",
+          "observed": true,
+          "preservation_level": "P2",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.05,
+            0.622,
+            0.405,
+            0.725
+          ],
+          "roles": [
+            "CONTEXTUAL_SUPPORT"
+          ]
+        },
+        "source_kind": "SIGNAGE",
+        "type": "sign"
+      },
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "fascia_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "fascia_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "fascia_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "fascia_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "fascia_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "fascia_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "node:sign_01",
+      "classification": "equivalent",
+      "priority": "P0",
+      "cgc_ref": "source_vsg (CGC source restriction)",
+      "source_value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "D-OBS-sign_01",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.455,
+            0.527,
+            0.6,
+            0.628
+          ]
+        },
+        "label": "yellow TERMINAL DINER sign",
+        "locks": {
+          "geometry": false,
+          "identity": true,
+          "occlusion": false,
+          "semantic": true
+        },
+        "observed": true,
+        "properties": {
+          "text": "TERMINAL DINER"
+        },
+        "source_attributes": {
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "D-OBS-sign_01",
+          "kind": "SIGNAGE",
+          "observed": true,
+          "preservation_level": "P0",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.455,
+            0.527,
+            0.6,
+            0.628
+          ],
+          "roles": [
+            "IDENTITY_ANCHOR",
+            "RELATIONSHIP_ANCHOR"
+          ],
+          "semantic_lock": true
+        },
+        "source_kind": "SIGNAGE",
+        "type": "sign"
+      },
+      "target_value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "D-OBS-sign_01",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.455,
+            0.527,
+            0.6,
+            0.628
+          ]
+        },
+        "label": "yellow TERMINAL DINER sign",
+        "locks": {
+          "geometry": false,
+          "identity": true,
+          "occlusion": false,
+          "semantic": true
+        },
+        "observed": true,
+        "properties": {
+          "text": "TERMINAL DINER"
+        },
+        "source_attributes": {
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "D-OBS-sign_01",
+          "kind": "SIGNAGE",
+          "observed": true,
+          "preservation_level": "P0",
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.455,
+            0.527,
+            0.6,
+            0.628
+          ],
+          "roles": [
+            "IDENTITY_ANCHOR",
+            "RELATIONSHIP_ANCHOR"
+          ],
+          "semantic_lock": true
+        },
+        "source_kind": "SIGNAGE",
+        "type": "sign"
+      },
+      "expected_lock_ids": [
+        "GL-SEM-SIGN_01"
+      ],
+      "actual_lock_ids": [
+        "GL-SEM-SIGN_01"
+      ],
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "sign_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "sign_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "sign_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "sign_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "sign_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "sign_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "policy:camera",
+      "classification": "equivalent",
+      "priority": "POLICY",
+      "cgc_ref": "stable_cgc#/camera",
+      "source_value": "CG-S",
+      "target_value": "CG-S",
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [],
+      "target_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "policy:cil",
+      "classification": "equivalent",
+      "priority": "POLICY",
+      "cgc_ref": "stable_cgc#/cil",
+      "source_value": {
+        "commands": "/sc-core /sc-lock",
+        "resolved": {
+          "aspect_ratio": null,
+          "camera": "CG-S",
+          "explicit_fear_city_profile_override": false,
+          "fear_city_identity": null,
+          "frontalization": null,
+          "identity_lock": null,
+          "mode": "T01",
+          "occlusion_lock": null,
+          "preservation": null,
+          "profile": "VP00",
+          "street_presence": null,
+          "uncertainty": null
+        }
+      },
+      "target_value": {
+        "commands": "/sc-core /sc-lock",
+        "resolved": {
+          "aspect_ratio": null,
+          "camera": "CG-S",
+          "explicit_fear_city_profile_override": false,
+          "fear_city_identity": null,
+          "frontalization": null,
+          "identity_lock": null,
+          "mode": "T01",
+          "occlusion_lock": null,
+          "preservation": null,
+          "profile": "VP00",
+          "street_presence": null,
+          "uncertainty": null
+        }
+      },
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [],
+      "target_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "policy:material_intensity_delta",
+      "classification": "equivalent",
+      "priority": "POLICY",
+      "cgc_ref": "stable_cgc#/material_intensity_delta",
+      "source_value": 0,
+      "target_value": 0,
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [],
+      "target_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "policy:mode",
+      "classification": "equivalent",
+      "priority": "POLICY",
+      "cgc_ref": "stable_cgc#/mode",
+      "source_value": "T01",
+      "target_value": "T01",
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [],
+      "target_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "policy:occlusion_locks",
+      "classification": "equivalent",
+      "priority": "POLICY",
+      "cgc_ref": "stable_cgc#/occlusion_locks",
+      "source_value": [],
+      "target_value": [],
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [],
+      "target_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "policy:pre_generation_gate",
+      "classification": "equivalent",
+      "priority": "POLICY",
+      "cgc_ref": "stable_cgc#/pre_generation_gate",
+      "source_value": {
+        "findings": [],
+        "reference_preflight": {
+          "admitted": [],
+          "rejected": [],
+          "status": "PASS"
+        },
+        "status": "PASS"
+      },
+      "target_value": {
+        "findings": [],
+        "reference_preflight": {
+          "admitted": [],
+          "rejected": [],
+          "status": "PASS"
+        },
+        "status": "PASS"
+      },
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [],
+      "target_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "policy:profile",
+      "classification": "equivalent",
+      "priority": "POLICY",
+      "cgc_ref": "stable_cgc#/profile",
+      "source_value": "VP00",
+      "target_value": "VP00",
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [],
+      "target_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "policy:reference_features",
+      "classification": "equivalent",
+      "priority": "POLICY",
+      "cgc_ref": "stable_cgc#/reference_features",
+      "source_value": [],
+      "target_value": [],
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [],
+      "target_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "policy:reference_reasoning",
+      "classification": "equivalent",
+      "priority": "POLICY",
+      "cgc_ref": "stable_cgc#/reference_reasoning",
+      "source_value": {
+        "admissions": [],
+        "generation_projection": [],
+        "locked_unknowns": [],
+        "need_results": {},
+        "queries": 0,
+        "query_budget": 4,
+        "status": "READY",
+        "trace": [],
+        "unresolved_required": [],
+        "version": "RR-2.0"
+      },
+      "target_value": {
+        "admissions": [],
+        "generation_projection": [],
+        "locked_unknowns": [],
+        "need_results": {},
+        "queries": 0,
+        "query_budget": 4,
+        "status": "READY",
+        "trace": [],
+        "unresolved_required": [],
+        "version": "RR-2.0"
+      },
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [],
+      "target_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "policy:semantic_text_lock",
+      "classification": "equivalent",
+      "priority": "POLICY",
+      "cgc_ref": "stable_cgc#/semantic_text_lock",
+      "source_value": "STRICT",
+      "target_value": "STRICT",
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [],
+      "target_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "policy:text_render_plan",
+      "classification": "equivalent",
+      "priority": "POLICY",
+      "cgc_ref": "stable_cgc#/text_render_plan",
+      "source_value": {
+        "proposed_text": {
+          "billboard_01": null,
+          "fascia_01": null,
+          "sign_01": "TERMINAL DINER"
+        },
+        "tokens": [
+          {
+            "confidence": 0.99,
+            "identity_bearing": true,
+            "literal": "TERMINAL DINER",
+            "numeral": false,
+            "preservation_level": "P0",
+            "state": "FROZEN_EXACT",
+            "token_id": "sign_01"
+          },
+          {
+            "confidence": 0.2,
+            "identity_bearing": false,
+            "literal": "",
+            "numeral": false,
+            "preservation_level": "P2",
+            "state": "MASK_GRAPHIC_ONLY",
+            "token_id": "fascia_01"
+          },
+          {
+            "confidence": 0.0,
+            "identity_bearing": false,
+            "literal": "",
+            "numeral": false,
+            "preservation_level": "P2",
+            "state": "MASK_GRAPHIC_ONLY",
+            "token_id": "billboard_01"
+          }
+        ]
+      },
+      "target_value": {
+        "proposed_text": {
+          "billboard_01": null,
+          "fascia_01": null,
+          "sign_01": "TERMINAL DINER"
+        },
+        "tokens": [
+          {
+            "confidence": 0.99,
+            "identity_bearing": true,
+            "literal": "TERMINAL DINER",
+            "numeral": false,
+            "preservation_level": "P0",
+            "state": "FROZEN_EXACT",
+            "token_id": "sign_01"
+          },
+          {
+            "confidence": 0.2,
+            "identity_bearing": false,
+            "literal": "",
+            "numeral": false,
+            "preservation_level": "P2",
+            "state": "MASK_GRAPHIC_ONLY",
+            "token_id": "fascia_01"
+          },
+          {
+            "confidence": 0.0,
+            "identity_bearing": false,
+            "literal": "",
+            "numeral": false,
+            "preservation_level": "P2",
+            "state": "MASK_GRAPHIC_ONLY",
+            "token_id": "billboard_01"
+          }
+        ]
+      },
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [],
+      "target_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "source_identity",
+      "classification": "equivalent",
+      "priority": "REQUIRED",
+      "cgc_ref": "stable_cgc#/scene_intelligence",
+      "source_value": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+      "target_value": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "$",
+          "id": "source_identity"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "$",
+          "id": "source_identity"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "topology:billboard_01",
+      "classification": "equivalent",
+      "priority": "P2",
+      "cgc_ref": "source_vsg (CGC source restriction)",
+      "source_value": [],
+      "target_value": [],
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "billboard_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "billboard_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "billboard_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "billboard_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "billboard_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "billboard_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "topology:diner_01",
+      "classification": "equivalent",
+      "priority": "P0",
+      "cgc_ref": "source_vsg (CGC source restriction)",
+      "source_value": [
+        "rel_facade_left_of_diner",
+        "rel_sign_above_diner"
+      ],
+      "target_value": [
+        "rel_facade_left_of_diner",
+        "rel_sign_above_diner"
+      ],
+      "expected_lock_ids": [
+        "GL-GEO-DINER_01"
+      ],
+      "actual_lock_ids": [
+        "GL-GEO-DINER_01"
+      ],
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "rel_facade_left_of_diner"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "rel_sign_above_diner"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "diner_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "diner_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "rel_facade_left_of_diner"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "rel_sign_above_diner"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "diner_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "topology:facade_01",
+      "classification": "equivalent",
+      "priority": "P0",
+      "cgc_ref": "source_vsg (CGC source restriction)",
+      "source_value": [
+        "rel_facade_left_of_diner"
+      ],
+      "target_value": [
+        "rel_facade_left_of_diner"
+      ],
+      "expected_lock_ids": [
+        "GL-GEO-FACADE_01"
+      ],
+      "actual_lock_ids": [
+        "GL-GEO-FACADE_01"
+      ],
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "facade_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "facade_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "rel_facade_left_of_diner"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "facade_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "facade_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "facade_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "rel_facade_left_of_diner"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "facade_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "topology:fascia_01",
+      "classification": "equivalent",
+      "priority": "P2",
+      "cgc_ref": "source_vsg (CGC source restriction)",
+      "source_value": [],
+      "target_value": [],
+      "expected_lock_ids": [],
+      "actual_lock_ids": [],
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "fascia_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "fascia_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "fascia_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "fascia_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "fascia_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "fascia_01"
+        }
+      ],
+      "trace_event_ids": []
+    },
+    {
+      "constraint_id": "topology:sign_01",
+      "classification": "equivalent",
+      "priority": "P0",
+      "cgc_ref": "source_vsg (CGC source restriction)",
+      "source_value": [
+        "rel_sign_above_diner"
+      ],
+      "target_value": [
+        "rel_sign_above_diner"
+      ],
+      "expected_lock_ids": [
+        "GL-SEM-SIGN_01"
+      ],
+      "actual_lock_ids": [
+        "GL-SEM-SIGN_01"
+      ],
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "sign_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "sign_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "rel_sign_above_diner"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "sign_01"
+        }
+      ],
+      "target_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "sign_01"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "sign_01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "rel_sign_above_diner"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "sign_01"
+        }
+      ],
+      "trace_event_ids": []
+    }
+  ],
+  "stable_cgc_sha256": "44f6181ffcb2bdd253087f17aca9f9d18e31b77d2d8d61e0cc1249a59fae3ce0",
+  "source_vsg_semantic_sha256": "79ce1efeb4229895ebbd57b1a74734cdf504efce5d1a4cf28d76c6d55b018e1a",
+  "sar2_semantic_sha256": "efea5fc6b072c8c0693e0a0e988a486370194ccfa75517cce112e7ddd6d5d142",
+  "contract_sha256": "f473a6018ff03d8de6a0a72c037e10920168898a570caae22e303ae6339929ed",
+  "report_sha256": "fdf824a7e89352c66d7a4a42b41e222156357902a6d850ca1bb9c7aedcc5c8cb"
+}

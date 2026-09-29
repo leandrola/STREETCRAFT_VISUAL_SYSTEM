@@ -1,3 +1,10 @@
+# VSG-2B — Prospective E Occlusion Lock binding and dry run · 2026-09-29
+
+- Added E source-region provenance, conservative request, same-run snapshots, independent graphs, context, contract, frozen rubric and admitted manifest; no historical recovery claim. Unknown behind-content stays locked, with no exact reconstruction/reference fill.
+- Extended validation to replay/archive D and E explicitly with separate results, fresh preconditions and independent persisted-byte delta review. D snapshots, manifest, historical runs and delta remain unchanged.
+- Added 16 E mutation/replay controls to unified regression, including occluder loss/movement, unknown invention, lock loss/detachment, reference fill, zero coverage, tampering, blocked preflight and D preservation.
+- E PR1 is unexercised (0/0); one RN_BLOCKED hint produces zero Archive queries. Overall VSG-2B remains BLOCKED/PENDING_VISUAL, with zero generation calls, images or valid visual pairs.
+
 # VSG-2B — Prospective D corpus binding and real dry run · 2026-09-29
 
 - Added source-region attestation, frozen request and same-run SAR2/RR2/CGC snapshots, separate graphs, context, contract, rubric and admitted manifest for R2B-191-D. No historical snapshot recovery claim.

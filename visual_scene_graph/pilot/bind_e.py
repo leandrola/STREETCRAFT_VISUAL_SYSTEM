@@ -155,6 +155,16 @@ def verify_d_preserved():
     return baseline
 
 
+def verify():
+    verify_d_preserved()
+    manifest, comparison = verify_snapshots(FIXTURE, reconstruct)
+    snapshots = {k: json.loads((ROOT / r['path']).read_text()) for k, r in manifest['artifacts'].items()
+                 if k not in {'request', 'source'}}
+    if manifest != make_manifest(snapshots):
+        raise ValueError('E_MANIFEST_REPLAY_MISMATCH')
+    return manifest, comparison
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--freeze', action='store_true', help='Exclusive initial creation; never overwrite')
@@ -171,11 +181,7 @@ def main():
             with (FIXTURE / name).open('xb') as handle:
                 handle.write(raw)
     else:
-        manifest, comparison = verify_snapshots(FIXTURE, reconstruct)
-        snapshots = {k: json.loads((ROOT / r['path']).read_text()) for k, r in manifest['artifacts'].items()
-                     if k not in {'request', 'source'}}
-        if manifest != make_manifest(snapshots):
-            raise ValueError('E_MANIFEST_REPLAY_MISMATCH')
+        manifest, comparison = verify()
     print(json.dumps({'status': 'FROZEN' if args.freeze else 'PASS', 'manifest_sha256': digest(manifest),
                       'coverage': comparison['coverage'], 'reference_needs': 1, 'queryable_needs': 0,
                       'archive_calls': 0, 'd_preserved': True}))

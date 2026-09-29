@@ -1,11 +1,31 @@
 {
   "status": "PASS",
-  "tests": 32,
-  "evidence": {
-    "name": "visual_scene_graph/pilot/test_pilot.py",
-    "status": "PASS",
-    "stdout": "",
-    "stderr": "................................\n----------------------------------------------------------------------\nRan 32 tests in 5.638s\n\nOK"
-  },
-  "scope": "Synthetic deterministic controls only; not visual evidence"
+  "tests": 48,
+  "suites": [
+    {
+      "name": "visual_scene_graph/pilot/test_pilot.py",
+      "tests": 32,
+      "status": "PASS"
+    },
+    {
+      "name": "visual_scene_graph/pilot/test_e_binding.py",
+      "tests": 16,
+      "status": "PASS"
+    }
+  ],
+  "evidence": [
+    {
+      "name": "visual_scene_graph/pilot/test_pilot.py",
+      "status": "PASS",
+      "stdout": "",
+      "stderr": "................................\n----------------------------------------------------------------------\nRan 32 tests in 5.051s\n\nOK"
+    },
+    {
+      "name": "visual_scene_graph/pilot/test_e_binding.py",
+      "status": "PASS",
+      "stdout": "",
+      "stderr": "................\n----------------------------------------------------------------------\nRan 16 tests in 2.499s\n\nOK"
+    }
+  ],
+  "scope": "Deterministic controls and source-bound mutation checks only; not visual evidence"
 }

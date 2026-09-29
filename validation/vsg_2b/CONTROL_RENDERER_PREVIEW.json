@@ -2,7 +2,7 @@
   "status": "CONTROL_ONLY",
   "synthetic": true,
   "generation_authorized": false,
-  "limitation": "Synthetic source / mocked precondition check. Separate from real D dry-run evidence.",
+  "limitation": "Synthetic source / mocked precondition check. Separate from real D/E dry-run evidence.",
   "payloads": {
     "A": {
       "common": {
