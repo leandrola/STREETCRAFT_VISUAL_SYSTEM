@@ -1,0 +1,254 @@
+{
+  "schema_version": "1.0.0",
+  "fixture_id": "R2B-191-E",
+  "pilot_enabled": true,
+  "source_binding": {
+    "source_identity": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+    "attested_by": "Codex — current native-resolution inspection and prospective annotation, 2026-09-29",
+    "evidence": "New VSG2B-R2B-E-NEW-01; no historical recovery. Source benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-E_source.jpg SHA-256 f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860 (JPEG 500x454). Region-specific facts, uncertainties and checklist: visual_scene_graph/pilot/fixtures/r2b_e_new_01/source_provenance.json SHA-256 e0de4b9909bd42aa75bb0c195952bdac8a6fd8d30450cdb511b0c221a0eb9320. Observed dark foreground silhouette blocks behind-content visibility; physical identity unassigned, hidden content UNKNOWN. Photographer/capture date UNKNOWN."
+  },
+  "artifacts": {
+    "request": {
+      "path": "visual_scene_graph/pilot/fixtures/r2b_e_new_01/request.json",
+      "sha256": "8d5954d44f329decef46328046effa13b8e5373ca64ce56f2f14a1f6132c0d8b",
+      "provenance": "Prospective E annotation/orchestration of 2026-09-29; same new request, not recovered historical snapshots. RR2: one RN_BLOCKED hint, zero queryable needs, queries, admissions or projections. Candidate is equivalent input, not output-image evidence."
+    },
+    "runtime": {
+      "path": "visual_scene_graph/pilot/fixtures/r2b_e_new_01/runtime.json",
+      "sha256": "7e099e53c980735557e5d967bd4b25c92ece2ed2fe38274e8518a44bb63cf8a3",
+      "provenance": "Prospective E annotation/orchestration of 2026-09-29; same new request, not recovered historical snapshots. RR2: one RN_BLOCKED hint, zero queryable needs, queries, admissions or projections. Candidate is equivalent input, not output-image evidence."
+    },
+    "sar2": {
+      "path": "visual_scene_graph/pilot/fixtures/r2b_e_new_01/sar2.json",
+      "sha256": "4aad179a06df8566e95ecdb385151e0f62905aa1d1ceca3a03d4b5f1f690662b",
+      "provenance": "Prospective E annotation/orchestration of 2026-09-29; same new request, not recovered historical snapshots. RR2: one RN_BLOCKED hint, zero queryable needs, queries, admissions or projections. Candidate is equivalent input, not output-image evidence."
+    },
+    "rr2": {
+      "path": "visual_scene_graph/pilot/fixtures/r2b_e_new_01/rr2.json",
+      "sha256": "0cbdede2fff443d62dde992606e06b3a45a530743faaa6865e7233875a833f3b",
+      "provenance": "Prospective E annotation/orchestration of 2026-09-29; same new request, not recovered historical snapshots. RR2: one RN_BLOCKED hint, zero queryable needs, queries, admissions or projections. Candidate is equivalent input, not output-image evidence."
+    },
+    "cgc_final": {
+      "path": "visual_scene_graph/pilot/fixtures/r2b_e_new_01/cgc_final.json",
+      "sha256": "15ca3622fb44cd5125348699f4c1317d55f9c42fc339c745b38065e16127a90b",
+      "provenance": "Prospective E annotation/orchestration of 2026-09-29; same new request, not recovered historical snapshots. RR2: one RN_BLOCKED hint, zero queryable needs, queries, admissions or projections. Candidate is equivalent input, not output-image evidence."
+    },
+    "expected_graph": {
+      "path": "visual_scene_graph/pilot/fixtures/r2b_e_new_01/expected_graph.json",
+      "sha256": "c75510bf04dd03168e58d63a835cf4f95dc8ff5de0defcfb1bf1c8a09f8fb309",
+      "provenance": "Prospective E annotation/orchestration of 2026-09-29; same new request, not recovered historical snapshots. RR2: one RN_BLOCKED hint, zero queryable needs, queries, admissions or projections. Candidate is equivalent input, not output-image evidence."
+    },
+    "candidate_graph": {
+      "path": "visual_scene_graph/pilot/fixtures/r2b_e_new_01/candidate_graph.json",
+      "sha256": "c75510bf04dd03168e58d63a835cf4f95dc8ff5de0defcfb1bf1c8a09f8fb309",
+      "provenance": "Prospective E annotation/orchestration of 2026-09-29; same new request, not recovered historical snapshots. RR2: one RN_BLOCKED hint, zero queryable needs, queries, admissions or projections. Candidate is equivalent input, not output-image evidence."
+    },
+    "generation_context": {
+      "path": "visual_scene_graph/pilot/fixtures/r2b_e_new_01/generation_context.json",
+      "sha256": "4414c1b80f6e66dc257b1f520e4e947cd8c9b5b591542114860b57f4371cc263",
+      "provenance": "Prospective E annotation/orchestration of 2026-09-29; same new request, not recovered historical snapshots. RR2: one RN_BLOCKED hint, zero queryable needs, queries, admissions or projections. Candidate is equivalent input, not output-image evidence."
+    },
+    "contract": {
+      "path": "visual_scene_graph/pilot/fixtures/r2b_e_new_01/contract.json",
+      "sha256": "42db55f13f0e44f4c55161a05ce9f7dae1108a0cd426264c15321f2895edcf31",
+      "provenance": "Prospective E annotation/orchestration of 2026-09-29; same new request, not recovered historical snapshots. RR2: one RN_BLOCKED hint, zero queryable needs, queries, admissions or projections. Candidate is equivalent input, not output-image evidence."
+    },
+    "source": {
+      "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-E_source.jpg",
+      "sha256": "f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+      "provenance": "Original repository JPEG, unchanged; photographer/capture date UNKNOWN."
+    }
+  },
+  "required_priorities": [
+    "P0",
+    "PR0",
+    "LOCK"
+  ],
+  "generation": {
+    "provider": "DRY_RUN_ONLY_UNSELECTED_PROVIDER",
+    "model": "DRY_RUN_ONLY_UNSELECTED_MODEL",
+    "seed": null,
+    "parameters": {
+      "size": "500x454",
+      "quality": "DRY_RUN_ONLY_UNSELECTED",
+      "output_format": "png"
+    }
+  },
+  "rubric": [
+    {
+      "constraint_id": "action:hidden_01",
+      "category": "lock",
+      "priority": "P5-D",
+      "target": "hidden_01",
+      "criterion": "Keep behind-silhouette content UNKNOWN_LOCKED. No exact object, text, facade, vehicle or geometry may be revealed. Region is a screen-space review mask, not hidden geometry. Source region [0.53, 0.874, 0.742, 0.949]."
+    },
+    {
+      "constraint_id": "action:left_facades_01",
+      "category": "identity",
+      "priority": "P0",
+      "target": "left_facades_01",
+      "criterion": "Preserve visible left facade outlines, openings and camera placement; do not extrapolate beyond the crop. Source region [0, 0, 0.438, 0.872]."
+    },
+    {
+      "constraint_id": "action:occluder_01",
+      "category": "identity",
+      "priority": "P0",
+      "target": "occluder_01",
+      "criterion": "Preserve the observed dark textured foreground surface, silhouette and position. No removal, displacement, shrinking or transparency that reveals behind it; physical identity unassigned. Source region [0.496, 0.819, 0.79, 0.969]."
+    },
+    {
+      "constraint_id": "action:right_facades_01",
+      "category": "identity",
+      "priority": "P0",
+      "target": "right_facades_01",
+      "criterion": "Preserve visible right facade outlines, openings and camera placement; do not extrapolate beyond the crop. Source region [0.638, 0, 1, 0.861]."
+    },
+    {
+      "constraint_id": "directive:forbid",
+      "category": "unauthorized_change",
+      "priority": "REQUIRED",
+      "target": "whole source / hidden_01",
+      "criterion": "No exact hidden reconstruction, minimum-continuity synthesis or reference-derived fill is authorized. Keep ambiguous text unresolved; do not treat darkness, clipping or low resolution as observed hidden objects."
+    },
+    {
+      "constraint_id": "directive:infer",
+      "category": "unauthorized_change",
+      "priority": "REQUIRED",
+      "target": "whole source / hidden_01",
+      "criterion": "No exact hidden reconstruction, minimum-continuity synthesis or reference-derived fill is authorized. Keep ambiguous text unresolved; do not treat darkness, clipping or low resolution as observed hidden objects."
+    },
+    {
+      "constraint_id": "edge:rel_foreground_occludes_unknown",
+      "category": "relation",
+      "priority": "PR0",
+      "target": "edge:rel_foreground_occludes_unknown",
+      "criterion": "Preserve occluder_01 OCCLUDES hidden_01 within [0.496,0.819,0.790,0.969]; retain facade geometry where targeted. Preserve every protected endpoint; no specific hidden content or reference fill."
+    },
+    {
+      "constraint_id": "lock:GL-GEO-LEFT_FACADES_01",
+      "category": "lock",
+      "priority": "LOCK",
+      "target": "lock:GL-GEO-LEFT_FACADES_01",
+      "criterion": "Preserve occluder_01 OCCLUDES hidden_01 within [0.496,0.819,0.790,0.969]; retain facade geometry where targeted. Preserve every protected endpoint; no specific hidden content or reference fill."
+    },
+    {
+      "constraint_id": "lock:GL-GEO-OCCLUDER_01",
+      "category": "lock",
+      "priority": "LOCK",
+      "target": "lock:GL-GEO-OCCLUDER_01",
+      "criterion": "Preserve occluder_01 OCCLUDES hidden_01 within [0.496,0.819,0.790,0.969]; retain facade geometry where targeted. Preserve every protected endpoint; no specific hidden content or reference fill."
+    },
+    {
+      "constraint_id": "lock:GL-GEO-RIGHT_FACADES_01",
+      "category": "lock",
+      "priority": "LOCK",
+      "target": "lock:GL-GEO-RIGHT_FACADES_01",
+      "criterion": "Preserve occluder_01 OCCLUDES hidden_01 within [0.496,0.819,0.790,0.969]; retain facade geometry where targeted. Preserve every protected endpoint; no specific hidden content or reference fill."
+    },
+    {
+      "constraint_id": "lock:GL-OCC-REL_FOREGROUND_OCCLUDES_UNKNOWN",
+      "category": "lock",
+      "priority": "LOCK",
+      "target": "lock:GL-OCC-REL_FOREGROUND_OCCLUDES_UNKNOWN",
+      "criterion": "Preserve occluder_01 OCCLUDES hidden_01 within [0.496,0.819,0.790,0.969]; retain facade geometry where targeted. Preserve every protected endpoint; no specific hidden content or reference fill."
+    },
+    {
+      "constraint_id": "node:hidden_01",
+      "category": "lock",
+      "priority": "P5-D",
+      "target": "hidden_01",
+      "criterion": "Keep behind-silhouette content UNKNOWN_LOCKED. No exact object, text, facade, vehicle or geometry may be revealed. Region is a screen-space review mask, not hidden geometry. Source region [0.53, 0.874, 0.742, 0.949]."
+    },
+    {
+      "constraint_id": "node:left_facades_01",
+      "category": "identity",
+      "priority": "P0",
+      "target": "left_facades_01",
+      "criterion": "Preserve visible left facade outlines, openings and camera placement; do not extrapolate beyond the crop. Source region [0, 0, 0.438, 0.872]."
+    },
+    {
+      "constraint_id": "node:occluder_01",
+      "category": "identity",
+      "priority": "P0",
+      "target": "occluder_01",
+      "criterion": "Preserve the observed dark textured foreground surface, silhouette and position. No removal, displacement, shrinking or transparency that reveals behind it; physical identity unassigned. Source region [0.496, 0.819, 0.79, 0.969]."
+    },
+    {
+      "constraint_id": "node:right_facades_01",
+      "category": "identity",
+      "priority": "P0",
+      "target": "right_facades_01",
+      "criterion": "Preserve visible right facade outlines, openings and camera placement; do not extrapolate beyond the crop. Source region [0.638, 0, 1, 0.861]."
+    },
+    {
+      "constraint_id": "policy:occlusion_locks",
+      "category": "unauthorized_change",
+      "priority": "POLICY",
+      "target": "whole source / hidden_01",
+      "criterion": "No exact hidden reconstruction, minimum-continuity synthesis or reference-derived fill is authorized. Keep ambiguous text unresolved; do not treat darkness, clipping or low resolution as observed hidden objects."
+    },
+    {
+      "constraint_id": "policy:reference_reasoning",
+      "category": "unauthorized_change",
+      "priority": "POLICY",
+      "target": "whole source / hidden_01",
+      "criterion": "No exact hidden reconstruction, minimum-continuity synthesis or reference-derived fill is authorized. Keep ambiguous text unresolved; do not treat darkness, clipping or low resolution as observed hidden objects."
+    },
+    {
+      "constraint_id": "policy:semantic_text_lock",
+      "category": "unauthorized_change",
+      "priority": "POLICY",
+      "target": "whole source / hidden_01",
+      "criterion": "No exact hidden reconstruction, minimum-continuity synthesis or reference-derived fill is authorized. Keep ambiguous text unresolved; do not treat darkness, clipping or low resolution as observed hidden objects."
+    },
+    {
+      "constraint_id": "topology:hidden_01",
+      "category": "lock",
+      "priority": "P5-D",
+      "target": "hidden_01",
+      "criterion": "Keep behind-silhouette content UNKNOWN_LOCKED. No exact object, text, facade, vehicle or geometry may be revealed. Region is a screen-space review mask, not hidden geometry. Source region [0.53, 0.874, 0.742, 0.949]."
+    },
+    {
+      "constraint_id": "topology:left_facades_01",
+      "category": "identity",
+      "priority": "P0",
+      "target": "left_facades_01",
+      "criterion": "Preserve visible left facade outlines, openings and camera placement; do not extrapolate beyond the crop. Source region [0, 0, 0.438, 0.872]."
+    },
+    {
+      "constraint_id": "topology:occluder_01",
+      "category": "identity",
+      "priority": "P0",
+      "target": "occluder_01",
+      "criterion": "Preserve the observed dark textured foreground surface, silhouette and position. No removal, displacement, shrinking or transparency that reveals behind it; physical identity unassigned. Source region [0.496, 0.819, 0.79, 0.969]."
+    },
+    {
+      "constraint_id": "topology:right_facades_01",
+      "category": "identity",
+      "priority": "P0",
+      "target": "right_facades_01",
+      "criterion": "Preserve visible right facade outlines, openings and camera placement; do not extrapolate beyond the crop. Source region [0.638, 0, 1, 0.861]."
+    },
+    {
+      "constraint_id": "unknown:hidden_01",
+      "category": "lock",
+      "priority": "REQUIRED",
+      "target": "hidden_01",
+      "criterion": "Keep behind-silhouette content UNKNOWN_LOCKED. No exact object, text, facade, vehicle or geometry may be revealed. Region is a screen-space review mask, not hidden geometry. Source region [0.53, 0.874, 0.742, 0.949]."
+    },
+    {
+      "constraint_id": "identity",
+      "category": "identity",
+      "priority": "REQUIRED",
+      "target": "whole source",
+      "criterion": "Retain this street corridor, visible facade composition, lighting, vehicle and traffic lights; hold the source camera."
+    },
+    {
+      "constraint_id": "unauthorized_change",
+      "category": "unauthorized_change",
+      "priority": "REQUIRED",
+      "target": "whole source / hidden_01",
+      "criterion": "No new hidden content or reference fill (S3), invented readable microtext, camera change, occluder removal or unsupported extension beyond the crop."
+    }
+  ]
+}

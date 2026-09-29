@@ -1,0 +1,1102 @@
+{
+  "version": "SC-ORCH-1.0",
+  "command": {
+    "status": "OK",
+    "commands": [
+      "/sc-core",
+      "/sc-lock"
+    ],
+    "config": {
+      "profile": "VP00",
+      "mode": "T01",
+      "camera": "CG-S",
+      "fear_city_identity": null,
+      "preservation": null,
+      "uncertainty": null,
+      "explicit_fear_city_profile_override": false,
+      "identity_lock": null,
+      "occlusion_lock": null,
+      "frontalization": null,
+      "aspect_ratio": null,
+      "street_presence": null
+    },
+    "diagnostics": []
+  },
+  "resolved_config": {
+    "profile": "VP00",
+    "mode": "T01",
+    "camera": "CG-S",
+    "fear_city_identity": null,
+    "preservation": null,
+    "uncertainty": null,
+    "explicit_fear_city_profile_override": false,
+    "identity_lock": null,
+    "occlusion_lock": null,
+    "frontalization": null,
+    "aspect_ratio": null,
+    "street_presence": null
+  },
+  "sar2": {
+    "scene_id": "VSG2B-R2B-E-NEW-01",
+    "source_identity": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+    "mode": "T01",
+    "profile": "VP00",
+    "entities": [
+      {
+        "entity_id": "left_facades_01",
+        "label": "visible left building facades; clipped at image boundary",
+        "kind": "FACADE",
+        "roles": [
+          "STRUCTURAL_CORE",
+          "IDENTITY_ANCHOR"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {},
+        "region": [
+          0,
+          0,
+          0.438,
+          0.872
+        ],
+        "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+        "evidence_id": "E-OBS-left_facades_01"
+      },
+      {
+        "entity_id": "right_facades_01",
+        "label": "visible right building facades; clipped at image boundary",
+        "kind": "FACADE",
+        "roles": [
+          "STRUCTURAL_CORE",
+          "IDENTITY_ANCHOR"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {},
+        "region": [
+          0.638,
+          0,
+          1,
+          0.861
+        ],
+        "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+        "evidence_id": "E-OBS-right_facades_01"
+      },
+      {
+        "entity_id": "occluder_01",
+        "label": "dark textured foreground silhouette; physical identity unassigned",
+        "kind": "SURFACE",
+        "roles": [
+          "OCCLUDER",
+          "IDENTITY_ANCHOR"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {},
+        "region": [
+          0.496,
+          0.819,
+          0.79,
+          0.969
+        ],
+        "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+        "evidence_id": "E-OBS-occluder_01",
+        "geometry_lock": true,
+        "vsg_properties": {
+          "silhouette_polygon": [
+            [
+              0.5,
+              0.844
+            ],
+            [
+              0.53,
+              0.819
+            ],
+            [
+              0.55,
+              0.866
+            ],
+            [
+              0.606,
+              0.874
+            ],
+            [
+              0.646,
+              0.863
+            ],
+            [
+              0.692,
+              0.85
+            ],
+            [
+              0.752,
+              0.852
+            ],
+            [
+              0.784,
+              0.883
+            ],
+            [
+              0.768,
+              0.928
+            ],
+            [
+              0.738,
+              0.963
+            ],
+            [
+              0.518,
+              0.969
+            ],
+            [
+              0.496,
+              0.922
+            ]
+          ],
+          "physical_identity": "UNASSIGNED"
+        }
+      },
+      {
+        "entity_id": "hidden_01",
+        "label": "unseen content behind foreground silhouette; no object identity or geometry asserted",
+        "kind": "OCCLUDED_REGION",
+        "roles": [
+          "UNKNOWN_REGION"
+        ],
+        "preservation_level": "P5-D",
+        "epistemic_class": "UNKNOWN",
+        "confidence": "LOW",
+        "observed": false,
+        "salience": {},
+        "region": [
+          0.53,
+          0.874,
+          0.742,
+          0.949
+        ],
+        "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+        "evidence_id": "E-OBS-hidden_01",
+        "vsg_properties": {
+          "region_semantics": "screen-space non-revelation mask; not a claim about hidden geometry",
+          "exact_content": "UNKNOWN",
+          "reconstruction_authorized": false
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "relationship_id": "rel_foreground_occludes_unknown",
+        "subject": "occluder_01",
+        "predicate": "OCCLUDES",
+        "object": "hidden_01",
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.496,
+          0.819,
+          0.79,
+          0.969
+        ],
+        "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+        "evidence_id": "E-OBS-rel_foreground_occludes_unknown"
+      }
+    ],
+    "action_plan": [
+      {
+        "entity_id": "left_facades_01",
+        "action": "PRESERVE_EXACT",
+        "relationship_lock": false,
+        "protected_relationships": [],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      },
+      {
+        "entity_id": "right_facades_01",
+        "action": "PRESERVE_EXACT",
+        "relationship_lock": false,
+        "protected_relationships": [],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      },
+      {
+        "entity_id": "occluder_01",
+        "action": "PRESERVE_EXACT",
+        "relationship_lock": true,
+        "protected_relationships": [
+          "rel_foreground_occludes_unknown"
+        ],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      },
+      {
+        "entity_id": "hidden_01",
+        "action": "UNKNOWN_LOCKED",
+        "relationship_lock": true,
+        "protected_relationships": [
+          "rel_foreground_occludes_unknown"
+        ],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      }
+    ],
+    "identity_anchors": [
+      "left_facades_01",
+      "right_facades_01",
+      "occluder_01"
+    ],
+    "unknown_locks": [
+      "hidden_01"
+    ],
+    "reference_need_hints": [
+      {
+        "entity_id": "hidden_01",
+        "state": "RN_BLOCKED",
+        "reason": "Scene evidence is locked unknown; generic references cannot create exact content."
+      }
+    ],
+    "warnings": []
+  },
+  "reference_needs": [
+    {
+      "need_id": "SAR2-hidden_01",
+      "state": "RN_BLOCKED",
+      "target_domains": [],
+      "specific_problem": "Scene evidence is locked unknown; generic references cannot create exact content.",
+      "task_context": "SAR2 VSG2B-R2B-E-NEW-01",
+      "source_context": "unseen content behind foreground silhouette; no object identity or geometry asserted",
+      "min_provenance": "P2",
+      "max_transfer_risk": "MEDIUM",
+      "max_results": 3,
+      "source_invariants": [],
+      "forbidden_transfers": [],
+      "region": [
+        0.53,
+        0.874,
+        0.742,
+        0.949
+      ],
+      "period": null,
+      "target_entity_id": "hidden_01"
+    }
+  ],
+  "reference_reasoning": {
+    "version": "RR-2.0",
+    "status": "READY",
+    "queries": 0,
+    "query_budget": 0,
+    "need_results": {
+      "SAR2-hidden_01": "LOCKED_UNKNOWN"
+    },
+    "unresolved_required": [],
+    "trace": [
+      {
+        "need_id": "SAR2-hidden_01",
+        "reason": "NO_QUERY_LOCKED_UNKNOWN"
+      }
+    ],
+    "admissions": [],
+    "generation_projection": [],
+    "locked_unknowns": [
+      "SAR2-hidden_01"
+    ]
+  },
+  "cgc_draft": {
+    "source_identity": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+    "mode": "T01",
+    "profile": "VP00",
+    "camera": "CG-S",
+    "preserve": [
+      "Preserve source framing, camera, visible street corridor, building contours, visible vehicle and traffic lights only where supported by pixels.",
+      "Preserve occluder_01 screen position, approximate silhouette and textured visible surface; its physical identity remains unassigned.",
+      "left_facades_01:visible left building facades; clipped at image boundary:PRESERVE_EXACT",
+      "right_facades_01:visible right building facades; clipped at image boundary:PRESERVE_EXACT",
+      "occluder_01:dark textured foreground silhouette; physical identity unassigned:PRESERVE_EXACT"
+    ],
+    "transform": [],
+    "remove": [],
+    "infer": [],
+    "unknown": [
+      "hidden_01: no observed object identity, text, geometry or depth behind the foreground silhouette.",
+      "Dark distant surfaces and small text are unresolved due to illumination/resolution; image-border clipping is not classified as occlusion.",
+      "hidden_01:unseen content behind foreground silhouette; no object identity or geometry asserted"
+    ],
+    "forbid": [
+      "Reveal or invent exact objects, text, vehicle, facade or geometry behind occluder_01.",
+      "Remove, move, shrink or make occluder_01 transparent; change camera to expose hidden_01.",
+      "Use Archive/reference evidence or generic continuity to fill hidden_01; no reconstruction or minimum-continuity synthesis is authorized.",
+      "Invent exact lettering from unreadable small source text or extrapolate architecture beyond the crop.",
+      "break_protected_relationships:occluder_01",
+      "resolve_exact_unknown:hidden_01",
+      "break_protected_relationships:hidden_01"
+    ],
+    "semantic_text_lock": "STRICT",
+    "material_intensity_delta": 0,
+    "occlusion_locks": [
+      "hidden_01"
+    ],
+    "scene_intelligence": {
+      "scene_id": "VSG2B-R2B-E-NEW-01",
+      "identity_anchors": [
+        "left_facades_01",
+        "right_facades_01",
+        "occluder_01"
+      ],
+      "protected_relationships": [
+        {
+          "relationship_id": "rel_foreground_occludes_unknown",
+          "subject": "occluder_01",
+          "predicate": "OCCLUDES",
+          "object": "hidden_01",
+          "protection": "PR0",
+          "epistemic_class": "OBSERVED",
+          "confidence": "HIGH",
+          "region": [
+            0.496,
+            0.819,
+            0.79,
+            0.969
+          ],
+          "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+          "evidence_id": "E-OBS-rel_foreground_occludes_unknown"
+        }
+      ],
+      "entity_actions": [
+        {
+          "entity_id": "left_facades_01",
+          "action": "PRESERVE_EXACT",
+          "relationship_lock": false,
+          "protected_relationships": [],
+          "salience": {
+            "score": 0.0,
+            "band": "MINOR_ATTENTION",
+            "axes": {
+              "identity_salience": 0.0,
+              "structural_dependency": 0.0,
+              "task_relevance": 0.0,
+              "relationship_centrality": 0.0,
+              "temporal_relevance": 0.0
+            }
+          }
+        },
+        {
+          "entity_id": "right_facades_01",
+          "action": "PRESERVE_EXACT",
+          "relationship_lock": false,
+          "protected_relationships": [],
+          "salience": {
+            "score": 0.0,
+            "band": "MINOR_ATTENTION",
+            "axes": {
+              "identity_salience": 0.0,
+              "structural_dependency": 0.0,
+              "task_relevance": 0.0,
+              "relationship_centrality": 0.0,
+              "temporal_relevance": 0.0
+            }
+          }
+        },
+        {
+          "entity_id": "occluder_01",
+          "action": "PRESERVE_EXACT",
+          "relationship_lock": true,
+          "protected_relationships": [
+            "rel_foreground_occludes_unknown"
+          ],
+          "salience": {
+            "score": 0.0,
+            "band": "MINOR_ATTENTION",
+            "axes": {
+              "identity_salience": 0.0,
+              "structural_dependency": 0.0,
+              "task_relevance": 0.0,
+              "relationship_centrality": 0.0,
+              "temporal_relevance": 0.0
+            }
+          }
+        },
+        {
+          "entity_id": "hidden_01",
+          "action": "UNKNOWN_LOCKED",
+          "relationship_lock": true,
+          "protected_relationships": [
+            "rel_foreground_occludes_unknown"
+          ],
+          "salience": {
+            "score": 0.0,
+            "band": "MINOR_ATTENTION",
+            "axes": {
+              "identity_salience": 0.0,
+              "structural_dependency": 0.0,
+              "task_relevance": 0.0,
+              "relationship_centrality": 0.0,
+              "temporal_relevance": 0.0
+            }
+          }
+        }
+      ],
+      "unknown_locks": [
+        "hidden_01"
+      ],
+      "reference_need_hints": [
+        {
+          "entity_id": "hidden_01",
+          "state": "RN_BLOCKED",
+          "reason": "Scene evidence is locked unknown; generic references cannot create exact content."
+        }
+      ]
+    },
+    "cil": {
+      "commands": "/sc-core /sc-lock",
+      "resolved": {
+        "profile": "VP00",
+        "mode": "T01",
+        "camera": "CG-S",
+        "fear_city_identity": null,
+        "preservation": null,
+        "uncertainty": null,
+        "explicit_fear_city_profile_override": false,
+        "identity_lock": null,
+        "occlusion_lock": null,
+        "frontalization": null,
+        "aspect_ratio": null,
+        "street_presence": null
+      }
+    }
+  },
+  "generation_ready": true,
+  "visual_scene_graph": {
+    "schema_version": "1.0.0",
+    "mode": "OBSERVER",
+    "governs_generation": false,
+    "scene_id": "VSG2B-R2B-E-NEW-01",
+    "source_identity": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+    "nodes": [
+      {
+        "id": "hidden_01",
+        "type": "unknown_region",
+        "source_kind": "OCCLUDED_REGION",
+        "label": "unseen content behind foreground silhouette; no object identity or geometry asserted",
+        "confidence": 0.35,
+        "epistemic_class": "UNKNOWN",
+        "observed": false,
+        "locks": {
+          "identity": false,
+          "semantic": false,
+          "geometry": false,
+          "occlusion": true
+        },
+        "evidence": {
+          "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+          "region": [
+            0.53,
+            0.874,
+            0.742,
+            0.949
+          ],
+          "evidence_id": "E-OBS-hidden_01"
+        },
+        "properties": {
+          "region_semantics": "screen-space non-revelation mask; not a claim about hidden geometry",
+          "exact_content": "UNKNOWN",
+          "reconstruction_authorized": false
+        }
+      },
+      {
+        "id": "left_facades_01",
+        "type": "facade",
+        "source_kind": "FACADE",
+        "label": "visible left building facades; clipped at image boundary",
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "observed": true,
+        "locks": {
+          "identity": true,
+          "semantic": false,
+          "geometry": true,
+          "occlusion": false
+        },
+        "evidence": {
+          "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+          "region": [
+            0,
+            0,
+            0.438,
+            0.872
+          ],
+          "evidence_id": "E-OBS-left_facades_01"
+        }
+      },
+      {
+        "id": "occluder_01",
+        "type": "unclassified",
+        "source_kind": "SURFACE",
+        "label": "dark textured foreground silhouette; physical identity unassigned",
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "observed": true,
+        "locks": {
+          "identity": true,
+          "semantic": false,
+          "geometry": true,
+          "occlusion": true
+        },
+        "evidence": {
+          "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+          "region": [
+            0.496,
+            0.819,
+            0.79,
+            0.969
+          ],
+          "evidence_id": "E-OBS-occluder_01"
+        },
+        "properties": {
+          "silhouette_polygon": [
+            [
+              0.5,
+              0.844
+            ],
+            [
+              0.53,
+              0.819
+            ],
+            [
+              0.55,
+              0.866
+            ],
+            [
+              0.606,
+              0.874
+            ],
+            [
+              0.646,
+              0.863
+            ],
+            [
+              0.692,
+              0.85
+            ],
+            [
+              0.752,
+              0.852
+            ],
+            [
+              0.784,
+              0.883
+            ],
+            [
+              0.768,
+              0.928
+            ],
+            [
+              0.738,
+              0.963
+            ],
+            [
+              0.518,
+              0.969
+            ],
+            [
+              0.496,
+              0.922
+            ]
+          ],
+          "physical_identity": "UNASSIGNED"
+        }
+      },
+      {
+        "id": "right_facades_01",
+        "type": "facade",
+        "source_kind": "FACADE",
+        "label": "visible right building facades; clipped at image boundary",
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "observed": true,
+        "locks": {
+          "identity": true,
+          "semantic": false,
+          "geometry": true,
+          "occlusion": false
+        },
+        "evidence": {
+          "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+          "region": [
+            0.638,
+            0,
+            1,
+            0.861
+          ],
+          "evidence_id": "E-OBS-right_facades_01"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "rel_foreground_occludes_unknown",
+        "type": "OCCLUDES",
+        "from": "occluder_01",
+        "to": "hidden_01",
+        "confidence": 0.9,
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+          "region": [
+            0.496,
+            0.819,
+            0.79,
+            0.969
+          ],
+          "evidence_id": "E-OBS-rel_foreground_occludes_unknown"
+        }
+      }
+    ],
+    "reference_observations": [
+      {
+        "need_id": "SAR2-hidden_01",
+        "target_node_id": "hidden_01",
+        "result": "NO_QUERY_LOCKED_UNKNOWN",
+        "evidence_unit_ids": [],
+        "evidence_bundle_ids": [],
+        "permitted_learning": [],
+        "forbidden_transfer": [],
+        "applied_transfers": []
+      }
+    ],
+    "functional_subgraphs": [
+      {
+        "name": "semantic_text",
+        "nodes": [],
+        "edges": []
+      },
+      {
+        "name": "rooftop",
+        "nodes": [],
+        "edges": []
+      },
+      {
+        "name": "geometry",
+        "nodes": [
+          "left_facades_01",
+          "right_facades_01"
+        ],
+        "edges": []
+      },
+      {
+        "name": "occlusion",
+        "nodes": [
+          "hidden_01",
+          "occluder_01"
+        ],
+        "edges": [
+          "rel_foreground_occludes_unknown"
+        ]
+      }
+    ],
+    "diagnostics": {
+      "unclassified_nodes": [
+        "occluder_01"
+      ],
+      "unsupported_relations": [],
+      "dangling_relations": []
+    },
+    "provenance": {
+      "producer": "Streetcraft VSG-0 Observer",
+      "sar_version": "SAR2",
+      "rr_version": "RR2",
+      "rr_status": "READY",
+      "input_sha256": "92d4c158bbece87a2476f657a495bd5ac29f2a0b5a1dddd0fce4ccdc155544e7",
+      "node_count": 4,
+      "edge_count": 1
+    },
+    "graph_locks": {
+      "version": "1.0.0",
+      "mode": "VALIDATE_ONLY",
+      "governs_generation": false,
+      "items": [
+        {
+          "id": "GL-GEO-LEFT_FACADES_01",
+          "type": "GEOMETRY_LOCK",
+          "target": {
+            "kind": "NODE",
+            "id": "left_facades_01"
+          },
+          "strength": "ABSOLUTE",
+          "enforcement": "VALIDATE_ONLY",
+          "expected": {
+            "node_type": "facade",
+            "protected_topology": []
+          },
+          "provenance": {
+            "source": "VSG_NODE_LOCK",
+            "evidence": {
+              "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+              "region": [
+                0,
+                0,
+                0.438,
+                0.872
+              ],
+              "evidence_id": "E-OBS-left_facades_01"
+            }
+          }
+        },
+        {
+          "id": "GL-GEO-OCCLUDER_01",
+          "type": "GEOMETRY_LOCK",
+          "target": {
+            "kind": "NODE",
+            "id": "occluder_01"
+          },
+          "strength": "ABSOLUTE",
+          "enforcement": "VALIDATE_ONLY",
+          "expected": {
+            "node_type": "unclassified",
+            "protected_topology": [
+              {
+                "id": "rel_foreground_occludes_unknown",
+                "type": "OCCLUDES",
+                "from": "occluder_01",
+                "to": "hidden_01"
+              }
+            ]
+          },
+          "provenance": {
+            "source": "VSG_NODE_LOCK",
+            "evidence": {
+              "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+              "region": [
+                0.496,
+                0.819,
+                0.79,
+                0.969
+              ],
+              "evidence_id": "E-OBS-occluder_01"
+            }
+          }
+        },
+        {
+          "id": "GL-GEO-RIGHT_FACADES_01",
+          "type": "GEOMETRY_LOCK",
+          "target": {
+            "kind": "NODE",
+            "id": "right_facades_01"
+          },
+          "strength": "ABSOLUTE",
+          "enforcement": "VALIDATE_ONLY",
+          "expected": {
+            "node_type": "facade",
+            "protected_topology": []
+          },
+          "provenance": {
+            "source": "VSG_NODE_LOCK",
+            "evidence": {
+              "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+              "region": [
+                0.638,
+                0,
+                1,
+                0.861
+              ],
+              "evidence_id": "E-OBS-right_facades_01"
+            }
+          }
+        },
+        {
+          "id": "GL-OCC-REL_FOREGROUND_OCCLUDES_UNKNOWN",
+          "type": "OCCLUSION_LOCK",
+          "target": {
+            "kind": "EDGE",
+            "id": "rel_foreground_occludes_unknown"
+          },
+          "strength": "ABSOLUTE",
+          "enforcement": "VALIDATE_ONLY",
+          "expected": {
+            "edge": {
+              "id": "rel_foreground_occludes_unknown",
+              "type": "OCCLUDES",
+              "from": "occluder_01",
+              "to": "hidden_01"
+            },
+            "protection": "PR0"
+          },
+          "provenance": {
+            "source": "VSG_PROTECTED_RELATION",
+            "evidence": {
+              "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+              "region": [
+                0.496,
+                0.819,
+                0.79,
+                0.969
+              ],
+              "evidence_id": "E-OBS-rel_foreground_occludes_unknown"
+            }
+          }
+        }
+      ],
+      "summary": {
+        "total": 4,
+        "by_type": {
+          "GEOMETRY_LOCK": 3,
+          "OCCLUSION_LOCK": 1,
+          "REFERENCE_ISOLATION_LOCK": 0,
+          "SEMANTIC_TEXT_LOCK": 0
+        },
+        "warnings": []
+      },
+      "ledger_sha256": "3a7f179e4387885c11ee69f5e8f55e0bc9252ec2c92f066a72187860c7e8b149"
+    }
+  },
+  "cgc_final": {
+    "source_identity": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+    "mode": "T01",
+    "profile": "VP00",
+    "camera": "CG-S",
+    "preserve": [
+      "Preserve source framing, camera, visible street corridor, building contours, visible vehicle and traffic lights only where supported by pixels.",
+      "Preserve occluder_01 screen position, approximate silhouette and textured visible surface; its physical identity remains unassigned.",
+      "left_facades_01:visible left building facades; clipped at image boundary:PRESERVE_EXACT",
+      "right_facades_01:visible right building facades; clipped at image boundary:PRESERVE_EXACT",
+      "occluder_01:dark textured foreground silhouette; physical identity unassigned:PRESERVE_EXACT"
+    ],
+    "transform": [],
+    "remove": [],
+    "infer": [],
+    "unknown": [
+      "hidden_01: no observed object identity, text, geometry or depth behind the foreground silhouette.",
+      "Dark distant surfaces and small text are unresolved due to illumination/resolution; image-border clipping is not classified as occlusion.",
+      "hidden_01:unseen content behind foreground silhouette; no object identity or geometry asserted"
+    ],
+    "forbid": [
+      "Reveal or invent exact objects, text, vehicle, facade or geometry behind occluder_01.",
+      "Remove, move, shrink or make occluder_01 transparent; change camera to expose hidden_01.",
+      "Use Archive/reference evidence or generic continuity to fill hidden_01; no reconstruction or minimum-continuity synthesis is authorized.",
+      "Invent exact lettering from unreadable small source text or extrapolate architecture beyond the crop.",
+      "break_protected_relationships:occluder_01",
+      "resolve_exact_unknown:hidden_01",
+      "break_protected_relationships:hidden_01"
+    ],
+    "semantic_text_lock": "STRICT",
+    "material_intensity_delta": 0,
+    "occlusion_locks": [
+      "hidden_01"
+    ],
+    "scene_intelligence": {
+      "scene_id": "VSG2B-R2B-E-NEW-01",
+      "identity_anchors": [
+        "left_facades_01",
+        "right_facades_01",
+        "occluder_01"
+      ],
+      "protected_relationships": [
+        {
+          "relationship_id": "rel_foreground_occludes_unknown",
+          "subject": "occluder_01",
+          "predicate": "OCCLUDES",
+          "object": "hidden_01",
+          "protection": "PR0",
+          "epistemic_class": "OBSERVED",
+          "confidence": "HIGH",
+          "region": [
+            0.496,
+            0.819,
+            0.79,
+            0.969
+          ],
+          "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+          "evidence_id": "E-OBS-rel_foreground_occludes_unknown"
+        }
+      ],
+      "entity_actions": [
+        {
+          "entity_id": "left_facades_01",
+          "action": "PRESERVE_EXACT",
+          "relationship_lock": false,
+          "protected_relationships": [],
+          "salience": {
+            "score": 0.0,
+            "band": "MINOR_ATTENTION",
+            "axes": {
+              "identity_salience": 0.0,
+              "structural_dependency": 0.0,
+              "task_relevance": 0.0,
+              "relationship_centrality": 0.0,
+              "temporal_relevance": 0.0
+            }
+          }
+        },
+        {
+          "entity_id": "right_facades_01",
+          "action": "PRESERVE_EXACT",
+          "relationship_lock": false,
+          "protected_relationships": [],
+          "salience": {
+            "score": 0.0,
+            "band": "MINOR_ATTENTION",
+            "axes": {
+              "identity_salience": 0.0,
+              "structural_dependency": 0.0,
+              "task_relevance": 0.0,
+              "relationship_centrality": 0.0,
+              "temporal_relevance": 0.0
+            }
+          }
+        },
+        {
+          "entity_id": "occluder_01",
+          "action": "PRESERVE_EXACT",
+          "relationship_lock": true,
+          "protected_relationships": [
+            "rel_foreground_occludes_unknown"
+          ],
+          "salience": {
+            "score": 0.0,
+            "band": "MINOR_ATTENTION",
+            "axes": {
+              "identity_salience": 0.0,
+              "structural_dependency": 0.0,
+              "task_relevance": 0.0,
+              "relationship_centrality": 0.0,
+              "temporal_relevance": 0.0
+            }
+          }
+        },
+        {
+          "entity_id": "hidden_01",
+          "action": "UNKNOWN_LOCKED",
+          "relationship_lock": true,
+          "protected_relationships": [
+            "rel_foreground_occludes_unknown"
+          ],
+          "salience": {
+            "score": 0.0,
+            "band": "MINOR_ATTENTION",
+            "axes": {
+              "identity_salience": 0.0,
+              "structural_dependency": 0.0,
+              "task_relevance": 0.0,
+              "relationship_centrality": 0.0,
+              "temporal_relevance": 0.0
+            }
+          }
+        }
+      ],
+      "unknown_locks": [
+        "hidden_01"
+      ],
+      "reference_need_hints": [
+        {
+          "entity_id": "hidden_01",
+          "state": "RN_BLOCKED",
+          "reason": "Scene evidence is locked unknown; generic references cannot create exact content."
+        }
+      ]
+    },
+    "cil": {
+      "commands": "/sc-core /sc-lock",
+      "resolved": {
+        "profile": "VP00",
+        "mode": "T01",
+        "camera": "CG-S",
+        "fear_city_identity": null,
+        "preservation": null,
+        "uncertainty": null,
+        "explicit_fear_city_profile_override": false,
+        "identity_lock": null,
+        "occlusion_lock": null,
+        "frontalization": null,
+        "aspect_ratio": null,
+        "street_presence": null
+      }
+    },
+    "reference_reasoning": {
+      "version": "RR-2.0",
+      "status": "READY",
+      "queries": 0,
+      "query_budget": 0,
+      "need_results": {
+        "SAR2-hidden_01": "LOCKED_UNKNOWN"
+      },
+      "unresolved_required": [],
+      "trace": [
+        {
+          "need_id": "SAR2-hidden_01",
+          "reason": "NO_QUERY_LOCKED_UNKNOWN"
+        }
+      ],
+      "admissions": [],
+      "generation_projection": [],
+      "locked_unknowns": [
+        "SAR2-hidden_01"
+      ]
+    },
+    "pre_generation_gate": {
+      "status": "PASS",
+      "findings": [],
+      "reference_preflight": {
+        "status": "PASS",
+        "admitted": [],
+        "rejected": []
+      }
+    },
+    "reference_features": [],
+    "text_render_plan": {
+      "tokens": [],
+      "proposed_text": {}
+    }
+  },
+  "pre_generation_gate": {
+    "status": "PASS",
+    "findings": [],
+    "reference_preflight": {
+      "status": "PASS",
+      "admitted": [],
+      "rejected": []
+    }
+  },
+  "status": "GENERATION_READY"
+}

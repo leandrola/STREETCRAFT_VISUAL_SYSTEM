@@ -1,0 +1,198 @@
+{
+  "source_identity": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+  "mode": "T01",
+  "profile": "VP00",
+  "camera": "CG-S",
+  "preserve": [
+    "Preserve source framing, camera, visible street corridor, building contours, visible vehicle and traffic lights only where supported by pixels.",
+    "Preserve occluder_01 screen position, approximate silhouette and textured visible surface; its physical identity remains unassigned.",
+    "left_facades_01:visible left building facades; clipped at image boundary:PRESERVE_EXACT",
+    "right_facades_01:visible right building facades; clipped at image boundary:PRESERVE_EXACT",
+    "occluder_01:dark textured foreground silhouette; physical identity unassigned:PRESERVE_EXACT"
+  ],
+  "transform": [],
+  "remove": [],
+  "infer": [],
+  "unknown": [
+    "hidden_01: no observed object identity, text, geometry or depth behind the foreground silhouette.",
+    "Dark distant surfaces and small text are unresolved due to illumination/resolution; image-border clipping is not classified as occlusion.",
+    "hidden_01:unseen content behind foreground silhouette; no object identity or geometry asserted"
+  ],
+  "forbid": [
+    "Reveal or invent exact objects, text, vehicle, facade or geometry behind occluder_01.",
+    "Remove, move, shrink or make occluder_01 transparent; change camera to expose hidden_01.",
+    "Use Archive/reference evidence or generic continuity to fill hidden_01; no reconstruction or minimum-continuity synthesis is authorized.",
+    "Invent exact lettering from unreadable small source text or extrapolate architecture beyond the crop.",
+    "break_protected_relationships:occluder_01",
+    "resolve_exact_unknown:hidden_01",
+    "break_protected_relationships:hidden_01"
+  ],
+  "semantic_text_lock": "STRICT",
+  "material_intensity_delta": 0,
+  "occlusion_locks": [
+    "hidden_01"
+  ],
+  "scene_intelligence": {
+    "scene_id": "VSG2B-R2B-E-NEW-01",
+    "identity_anchors": [
+      "left_facades_01",
+      "right_facades_01",
+      "occluder_01"
+    ],
+    "protected_relationships": [
+      {
+        "relationship_id": "rel_foreground_occludes_unknown",
+        "subject": "occluder_01",
+        "predicate": "OCCLUDES",
+        "object": "hidden_01",
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.496,
+          0.819,
+          0.79,
+          0.969
+        ],
+        "reference_id": "R2B-191-E_SOURCE_SHA256_f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+        "evidence_id": "E-OBS-rel_foreground_occludes_unknown"
+      }
+    ],
+    "entity_actions": [
+      {
+        "entity_id": "left_facades_01",
+        "action": "PRESERVE_EXACT",
+        "relationship_lock": false,
+        "protected_relationships": [],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      },
+      {
+        "entity_id": "right_facades_01",
+        "action": "PRESERVE_EXACT",
+        "relationship_lock": false,
+        "protected_relationships": [],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      },
+      {
+        "entity_id": "occluder_01",
+        "action": "PRESERVE_EXACT",
+        "relationship_lock": true,
+        "protected_relationships": [
+          "rel_foreground_occludes_unknown"
+        ],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      },
+      {
+        "entity_id": "hidden_01",
+        "action": "UNKNOWN_LOCKED",
+        "relationship_lock": true,
+        "protected_relationships": [
+          "rel_foreground_occludes_unknown"
+        ],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      }
+    ],
+    "unknown_locks": [
+      "hidden_01"
+    ],
+    "reference_need_hints": [
+      {
+        "entity_id": "hidden_01",
+        "state": "RN_BLOCKED",
+        "reason": "Scene evidence is locked unknown; generic references cannot create exact content."
+      }
+    ]
+  },
+  "cil": {
+    "commands": "/sc-core /sc-lock",
+    "resolved": {
+      "profile": "VP00",
+      "mode": "T01",
+      "camera": "CG-S",
+      "fear_city_identity": null,
+      "preservation": null,
+      "uncertainty": null,
+      "explicit_fear_city_profile_override": false,
+      "identity_lock": null,
+      "occlusion_lock": null,
+      "frontalization": null,
+      "aspect_ratio": null,
+      "street_presence": null
+    }
+  },
+  "reference_reasoning": {
+    "version": "RR-2.0",
+    "status": "READY",
+    "queries": 0,
+    "query_budget": 0,
+    "need_results": {
+      "SAR2-hidden_01": "LOCKED_UNKNOWN"
+    },
+    "unresolved_required": [],
+    "trace": [
+      {
+        "need_id": "SAR2-hidden_01",
+        "reason": "NO_QUERY_LOCKED_UNKNOWN"
+      }
+    ],
+    "admissions": [],
+    "generation_projection": [],
+    "locked_unknowns": [
+      "SAR2-hidden_01"
+    ]
+  },
+  "pre_generation_gate": {
+    "status": "PASS",
+    "findings": [],
+    "reference_preflight": {
+      "status": "PASS",
+      "admitted": [],
+      "rejected": []
+    }
+  },
+  "reference_features": [],
+  "text_render_plan": {
+    "tokens": [],
+    "proposed_text": {}
+  }
+}

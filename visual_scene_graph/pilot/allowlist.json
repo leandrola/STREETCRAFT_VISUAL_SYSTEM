@@ -19,9 +19,9 @@
       "reason": "PROSPECTIVE_SOURCE_BINDING_REVIEWED_DRY_RUN_ONLY"
     },
     "R2B-191-E": {
-      "status": "PENDING_EVIDENCE",
-      "manifest_sha256": null,
-      "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING"
+      "status": "ADMITTED",
+      "manifest_sha256": "6568570352087407c7f6f23955ffe6e4f6381c6861bdd674d78baaa16197b275",
+      "reason": "PROSPECTIVE_OCCLUSION_ANNOTATION_AND_REPLAY_REVIEWED_DRY_RUN_ONLY"
     },
     "R2B-191-F": {
       "status": "PENDING_EVIDENCE",

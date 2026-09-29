@@ -2,6 +2,7 @@
 import json
 from .harness import ROOT, sha
 from ..generation_compiler import digest
+from .fixture_replay import FIXTURE_PATHS
 
 
 def audit(*, include_dry_runs=True):
@@ -20,12 +21,12 @@ def audit(*, include_dry_runs=True):
                'source':{'path':str(source.relative_to(ROOT)), 'sha256':sha(source.read_bytes())} if source.exists() else None,
                'source_status':'RECEIVED_UNBOUND' if source.exists() else 'MISSING',
                'reason':'MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING', 'substitution':None, 'fresh_pairs':0}
-        if ident == 'R2B-191-D':
-            path = ROOT/'visual_scene_graph/pilot/fixtures/r2b_d_new_01/manifest.json'
+        if ident in FIXTURE_PATHS:
+            path = FIXTURE_PATHS[ident] / 'manifest.json'
             if path.exists():
                 manifest = json.loads(path.read_text())
                 entry = registry['fixtures'][ident]
-                intact = all(sha((ROOT/r['path']).read_bytes()) == r['sha256'] for r in manifest['artifacts'].values())
+                intact = all((ROOT/r['path']).is_file() and sha((ROOT/r['path']).read_bytes()) == r['sha256'] for r in manifest['artifacts'].values())
                 if intact and entry['status'] == 'ADMITTED' and entry['manifest_sha256'] == digest(manifest):
                     row.update(status='ADMITTED_PENDING_DRY_RUN', source_status='BOUND_PROSPECTIVELY',
                                reason='PENDING_VISUAL', manifest=str(path.relative_to(ROOT)),
@@ -37,7 +38,8 @@ def audit(*, include_dry_runs=True):
                             try:
                                 recorded = json.loads(evidence.read_text())
                                 verified = review(evidence.parent)
-                                if recorded['manifest_sha256'] == digest(manifest) and recorded['delta_sha256'] == verified['delta_sha256']:
+                                if (recorded['status'] == 'PASS' and recorded['manifest_sha256'] == verified['manifest_sha256'] == digest(manifest)
+                                        and recorded['delta_sha256'] == verified['delta_sha256']):
                                     row.update(status='CORPUS_RECOVERY_DRY_RUN_PASS',
                                                dry_run_review={'path':str(evidence.relative_to(ROOT)), 'sha256':sha(evidence.read_bytes())})
                                     break
@@ -49,7 +51,7 @@ def audit(*, include_dry_runs=True):
         rows.append(row)
     return {'status':'BLOCKED','reason':'PENDING_VISUAL_AND_REMAINING_SOURCE_BINDINGS','fixtures':rows,
             'initial_image_budget':8,'conditional_fifth_pair':'Requires a versioned budget change after coverage review',
-            'generator_capability':'No local provider bridge configured; D settings explicitly provisional and dry-run only.',
+            'generator_capability':'No local provider bridge configured; D/E settings explicitly provisional and dry-run only.',
             'user_confirmation':'Kenny source received 2026-09-29; user confirms no other rooftop view. New plausible rooftop design authorized, preserving observed facade.'}
 
 

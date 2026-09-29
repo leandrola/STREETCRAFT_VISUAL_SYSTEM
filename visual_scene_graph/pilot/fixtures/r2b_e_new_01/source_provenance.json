@@ -1,0 +1,225 @@
+{
+  "schema_version": "1.0.0",
+  "binding_kind": "PROSPECTIVE_NEW_ANNOTATION",
+  "fixture_id": "VSG2B-R2B-E-NEW-01",
+  "registry_key": "R2B-191-E",
+  "annotation_date": "2026-09-29",
+  "annotator": "Codex (current photographic inspection and annotation; not photographer)",
+  "source": {
+    "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-E_source.jpg",
+    "sha256": "f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+    "format": "JPEG",
+    "width": 500,
+    "height": 454,
+    "available_provenance": "Repository R2B evidence directory dated 2026-09-21; original source, not candidate_PASS output",
+    "photographer": "UNKNOWN",
+    "capture_date": "UNKNOWN"
+  },
+  "head_at_start": "0cb920c95b3f3f20814b376bbf3a7bf086733c03",
+  "spec_baseline": "0cb920c",
+  "quota": {
+    "checked_at": "2026-09-29T17:44:57Z",
+    "five_hour": "UNKNOWN",
+    "weekly_remaining": "UNKNOWN",
+    "reason": "No current quota counters exposed; historical percentages not reused."
+  },
+  "authorization": "User requested E spec implementation, then replied go after the mandatory High-reasoning recommendation/pause. Scope ends at dry run; zero image calls.",
+  "historical_claim": false,
+  "observations": [
+    {
+      "evidence_id": "E-OBS-left_facades_01",
+      "entity_id": "left_facades_01",
+      "region": [
+        0,
+        0,
+        0.438,
+        0.872
+      ],
+      "provenance": "OBSERVED_SOURCE",
+      "visible_fact": "visible left building facades; clipped at image boundary",
+      "forbidden_inference": "No hidden object class, exact geometry, text, depth or documentary identity.",
+      "uncertainty": "Bounding boxes are approximate support regions, not segmentation or inferred complete geometry."
+    },
+    {
+      "evidence_id": "E-OBS-right_facades_01",
+      "entity_id": "right_facades_01",
+      "region": [
+        0.638,
+        0,
+        1,
+        0.861
+      ],
+      "provenance": "OBSERVED_SOURCE",
+      "visible_fact": "visible right building facades; clipped at image boundary",
+      "forbidden_inference": "No hidden object class, exact geometry, text, depth or documentary identity.",
+      "uncertainty": "Bounding boxes are approximate support regions, not segmentation or inferred complete geometry."
+    },
+    {
+      "evidence_id": "E-OBS-occluder_01",
+      "entity_id": "occluder_01",
+      "region": [
+        0.496,
+        0.819,
+        0.79,
+        0.969
+      ],
+      "provenance": "OBSERVED_SOURCE",
+      "visible_fact": "dark textured foreground silhouette; physical identity unassigned",
+      "forbidden_inference": "No hidden object class, exact geometry, text, depth or documentary identity.",
+      "uncertainty": "Bounding boxes are approximate support regions, not segmentation or inferred complete geometry."
+    },
+    {
+      "evidence_id": "E-OBS-hidden_01",
+      "entity_id": "hidden_01",
+      "region": [
+        0.53,
+        0.874,
+        0.742,
+        0.949
+      ],
+      "provenance": "UNKNOWN_BEHIND_OBSERVED_OCCLUDER",
+      "visible_fact": "No pixels of behind-silhouette content are available within this screen-space review mask.",
+      "forbidden_inference": "No hidden object class, exact geometry, text, depth or documentary identity.",
+      "uncertainty": "Hidden extent and content UNKNOWN; mask is not object geometry."
+    },
+    {
+      "evidence_id": "E-OBS-rel_foreground_occludes_unknown",
+      "relationship_id": "rel_foreground_occludes_unknown",
+      "region": [
+        0.496,
+        0.819,
+        0.79,
+        0.969
+      ],
+      "provenance": "OBSERVED_SOURCE",
+      "visible_fact": "Dark textured foreground surface has a visible edge against lighter pavement and pale horizontal forms; background visibility terminates at its silhouette.",
+      "forbidden_inference": "OCCLUDES names a visibility restriction, not a particular object or street structure behind it.",
+      "uncertainty": "Physical identity and exact silhouette boundary are not established; preserve source evidence without semantic reconstruction.",
+      "protection_reason": "PR0 protects the directly inspected visibility barrier central to the Occlusion Lock task. No PR1 relationship is added for coverage."
+    }
+  ],
+  "occluder_polygon": [
+    [
+      0.5,
+      0.844
+    ],
+    [
+      0.53,
+      0.819
+    ],
+    [
+      0.55,
+      0.866
+    ],
+    [
+      0.606,
+      0.874
+    ],
+    [
+      0.646,
+      0.863
+    ],
+    [
+      0.692,
+      0.85
+    ],
+    [
+      0.752,
+      0.852
+    ],
+    [
+      0.784,
+      0.883
+    ],
+    [
+      0.768,
+      0.928
+    ],
+    [
+      0.738,
+      0.963
+    ],
+    [
+      0.518,
+      0.969
+    ],
+    [
+      0.496,
+      0.922
+    ]
+  ],
+  "distinctions": [
+    {
+      "state": "OCCLUDED",
+      "region": [
+        0.53,
+        0.874,
+        0.742,
+        0.949
+      ],
+      "meaning": "Visibility behind foreground silhouette unavailable; no hidden physical object claimed."
+    },
+    {
+      "state": "SHADOW_OR_LOW_LIGHT",
+      "region": [
+        0.556,
+        0.502,
+        0.634,
+        0.769
+      ],
+      "meaning": "Darker distant corridor surfaces are not automatically new occluders."
+    },
+    {
+      "state": "LOW_RESOLUTION",
+      "region": [
+        0.29,
+        0.764,
+        0.33,
+        0.806
+      ],
+      "meaning": "Small distant lettering/details unresolved; no exact text transcription."
+    },
+    {
+      "state": "CROPPED",
+      "region": [
+        0,
+        0,
+        1,
+        0.025
+      ],
+      "meaning": "Buildings extend to upper image boundary; outside crop is not classified as occluded."
+    },
+    {
+      "state": "ABSENCE_OF_EVIDENCE",
+      "region": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "meaning": "No other view, hidden-content evidence or authorized reconstruction is available."
+    }
+  ],
+  "annotation_checklist": {
+    "original_jpeg_opened_at_native_resolution": true,
+    "hash_dimensions_verified": true,
+    "occluder_surface_and_edge_inspected": true,
+    "physical_occluder_identity_unassigned": true,
+    "hidden_object_not_invented": true,
+    "darkness_and_crop_not_automatically_occlusion": true,
+    "each_fact_has_source_region": true,
+    "PR0_visibility_protection_justified": true,
+    "PR1_not_exercised": true,
+    "no_historical_recovery_claim": true
+  },
+  "d_preservation_baseline": {
+    "path": "visual_scene_graph/pilot/fixtures/r2b_e_new_01/d_preservation_baseline.json",
+    "sha256": "b852fefc8f88b8f58f815842a2b48cb864afa95c84a29c0d8ce2b45bdf7fd269"
+  },
+  "limitations": [
+    "Approximate manual polygons/bboxes; no pixel segmentation claim.",
+    "The review mask identifies screen area that must not reveal content; it is not measured hidden geometry.",
+    "No exact text, rooftop, reference-isolation admission or PR1 coverage claimed.",
+    "One automatic RN_BLOCKED hint is expected for hidden_01; zero queryable needs and zero Archive calls."
+  ]
+}

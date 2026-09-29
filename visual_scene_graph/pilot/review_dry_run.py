@@ -44,7 +44,8 @@ def review(path):
     }
     if not all(checks.values()):
         raise ValueError('DRY_RUN_REVIEW_FAILED:' + repr(checks))
-    return {'status': 'PASS', 'reviewer': 'Codex / independent persisted-byte review',
+    return {'status': 'PASS', 'fixture_id': manifest['fixture_id'],
+            'reviewer': 'Codex / independent persisted-byte review',
             'review_method': 'Separate review implementation; does not invoke or import the harness renderer. Automated technical review, not human or blind visual review.',
             'reviewed_at': datetime.now(timezone.utc).isoformat(),
             'head': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(),
