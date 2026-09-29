@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0.0",
+  "fixture_id": "R2B-191-D",
+  "pilot_enabled": true,
+  "source_binding": {
+    "source_identity": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+    "attested_by": "Codex — current photographic inspection and prospective annotation, 2026-09-29",
+    "evidence": "New fixture VSG2B-R2B-D-NEW-01 of the existing D photograph; not recovered historical orchestration. Region-specific observations/checklist: visual_scene_graph/pilot/fixtures/r2b_d_new_01/source_provenance.json SHA-256 59251bf802566cdeb6c385bf8ac463125f2e993f7aee5bd64342c1ef2ae8613f. Inspected JPEG 347x389; TERMINAL DINER legible in region [0.455,0.527,0.600,0.628], above diner; left facade lies left of diner. Author of photograph unknown. User authorized implementing prospective dry-run spec; conservative VP00/T01/CG-S source preservation. "
+  },
+  "artifacts": {
+    "request": {
+      "path": "visual_scene_graph/pilot/fixtures/r2b_d_new_01/request.json",
+      "sha256": "2fe53ee2713d3077491b19875e3e0d3342d4f7ee6f1903f11e34703f42900ab0",
+      "provenance": "New prospective observation by Codex on 2026-09-29, not historical recovery."
+    },
+    "runtime": {
+      "path": "visual_scene_graph/pilot/fixtures/r2b_d_new_01/runtime.json",
+      "sha256": "3987220126c2af9302abc34e72afab0a070b5cc825259fcc701e60d08d834e09",
+      "provenance": "Derived from the same prospective request/orchestration by bind_d.py; replayable; no historical snapshot claim."
+    },
+    "sar2": {
+      "path": "visual_scene_graph/pilot/fixtures/r2b_d_new_01/sar2.json",
+      "sha256": "6f1586703a6fe7fc53a4f980e22406dfaa5deb54645b43b02938bd2a3f05d9b5",
+      "provenance": "Derived from the same prospective request/orchestration by bind_d.py; replayable; no historical snapshot claim."
+    },
+    "rr2": {
+      "path": "visual_scene_graph/pilot/fixtures/r2b_d_new_01/rr2.json",
+      "sha256": "8f22c4e7e3bee1c303699117a7225d8d816964e88aea01803512938af3010169",
+      "provenance": "Same new orchestration run; zero reference needs, queries, admissions or projections. No Archive evidence required."
+    },
+    "cgc_final": {
+      "path": "visual_scene_graph/pilot/fixtures/r2b_d_new_01/cgc_final.json",
+      "sha256": "06bcde8b726ceeab1d2b823b2a25761ab44f9a9d0c9035d70bf08db8d8aad462",
+      "provenance": "Derived from the same prospective request/orchestration by bind_d.py; replayable; no historical snapshot claim."
+    },
+    "expected_graph": {
+      "path": "visual_scene_graph/pilot/fixtures/r2b_d_new_01/expected_graph.json",
+      "sha256": "cea40cb4fccc9c47037301c6304b3b99853e8c10be7512a215a59b8e2882ac43",
+      "provenance": "Derived from the same prospective request/orchestration by bind_d.py; replayable; no historical snapshot claim."
+    },
+    "candidate_graph": {
+      "path": "visual_scene_graph/pilot/fixtures/r2b_d_new_01/candidate_graph.json",
+      "sha256": "cea40cb4fccc9c47037301c6304b3b99853e8c10be7512a215a59b8e2882ac43",
+      "provenance": "Independent file, equivalent input graph by construction; not a generated-image observation."
+    },
+    "generation_context": {
+      "path": "visual_scene_graph/pilot/fixtures/r2b_d_new_01/generation_context.json",
+      "sha256": "26140b016abc6d40a30e3763816cdf947d6a040643340d6c5b2f68f25ac367c2",
+      "provenance": "Derived from the same prospective request/orchestration by bind_d.py; replayable; no historical snapshot claim."
+    },
+    "contract": {
+      "path": "visual_scene_graph/pilot/fixtures/r2b_d_new_01/contract.json",
+      "sha256": "c9ece946ae08533d2487d55c717a149caab7e8cc3e4c1eb388fdf927be9e58f8",
+      "provenance": "Derived from the same prospective request/orchestration by bind_d.py; replayable; no historical snapshot claim."
+    },
+    "source": {
+      "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_source.jpg",
+      "sha256": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+      "provenance": "Original R2B evidence JPEG, 2026-09-21 directory; unchanged bytes; photographer/capture date unknown."
+    }
+  },
+  "required_priorities": [
+    "P0",
+    "PR0",
+    "PR1",
+    "LOCK"
+  ],
+  "generation": {
+    "provider": "DRY_RUN_ONLY_UNSELECTED_PROVIDER",
+    "model": "DRY_RUN_ONLY_UNSELECTED_MODEL",
+    "seed": null,
+    "parameters": {
+      "size": "347x389",
+      "quality": "DRY_RUN_ONLY_UNSELECTED",
+      "output_format": "png"
+    }
+  },
+  "rubric": [
+    {
+      "constraint_id": "action:diner_01",
+      "category": "identity",
+      "priority": "P0",
+      "target": "diner_01",
+      "criterion": "Preserve the striped diner fascia, street-level glazing and storefront outline without adding or removing openings. Source region [0.478, 0.668, 0.945, 0.951]."
+    },
+    {
+      "constraint_id": "action:facade_01",
+      "category": "identity",
+      "priority": "P0",
+      "target": "facade_01",
+      "criterion": "Preserve the visible left masonry facade, windows and exterior fire escape arrangement. Source region [0.025, 0.065, 0.46, 0.956]."
+    },
+    {
+      "constraint_id": "action:sign_01",
+      "category": "identity",
+      "priority": "P0",
+      "target": "sign_01",
+      "criterion": "Preserve literal TERMINAL DINER, TERMINAL above DINER, on the yellow sign; no substituted or additional letters. Source region [0.455, 0.527, 0.6, 0.628]."
+    },
+    {
+      "constraint_id": "edge:rel_facade_left_of_diner",
+      "category": "relation",
+      "priority": "PR1",
+      "target": "rel_facade_left_of_diner",
+      "criterion": "Preserve facade_01 LEFT_OF diner_01 in source region [0.025, 0.065, 0.945, 0.956]; no inversion or relocation."
+    },
+    {
+      "constraint_id": "edge:rel_sign_above_diner",
+      "category": "relation",
+      "priority": "PR0",
+      "target": "rel_sign_above_diner",
+      "criterion": "Preserve sign_01 ABOVE diner_01 in source region [0.455, 0.527, 0.945, 0.951]; no inversion or relocation."
+    },
+    {
+      "constraint_id": "lock:GL-GEO-DINER_01",
+      "category": "lock",
+      "priority": "LOCK",
+      "target": "diner_01",
+      "criterion": "Preserve the striped diner fascia, street-level glazing and storefront outline without adding or removing openings. Source region [0.478, 0.668, 0.945, 0.951]."
+    },
+    {
+      "constraint_id": "lock:GL-GEO-FACADE_01",
+      "category": "lock",
+      "priority": "LOCK",
+      "target": "facade_01",
+      "criterion": "Preserve the visible left masonry facade, windows and exterior fire escape arrangement. Source region [0.025, 0.065, 0.46, 0.956]."
+    },
+    {
+      "constraint_id": "lock:GL-SEM-SIGN_01",
+      "category": "lock",
+      "priority": "LOCK",
+      "target": "sign_01",
+      "criterion": "Preserve literal TERMINAL DINER, TERMINAL above DINER, on the yellow sign; no substituted or additional letters. Source region [0.455, 0.527, 0.6, 0.628]."
+    },
+    {
+      "constraint_id": "node:diner_01",
+      "category": "identity",
+      "priority": "P0",
+      "target": "diner_01",
+      "criterion": "Preserve the striped diner fascia, street-level glazing and storefront outline without adding or removing openings. Source region [0.478, 0.668, 0.945, 0.951]."
+    },
+    {
+      "constraint_id": "node:facade_01",
+      "category": "identity",
+      "priority": "P0",
+      "target": "facade_01",
+      "criterion": "Preserve the visible left masonry facade, windows and exterior fire escape arrangement. Source region [0.025, 0.065, 0.46, 0.956]."
+    },
+    {
+      "constraint_id": "node:sign_01",
+      "category": "identity",
+      "priority": "P0",
+      "target": "sign_01",
+      "criterion": "Preserve literal TERMINAL DINER, TERMINAL above DINER, on the yellow sign; no substituted or additional letters. Source region [0.455, 0.527, 0.6, 0.628]."
+    },
+    {
+      "constraint_id": "topology:diner_01",
+      "category": "relation",
+      "priority": "P0",
+      "target": "diner_01",
+      "criterion": "Preserve the striped diner fascia, street-level glazing and storefront outline without adding or removing openings. Source region [0.478, 0.668, 0.945, 0.951]. Preserve incident relations: rel_facade_left_of_diner, rel_sign_above_diner."
+    },
+    {
+      "constraint_id": "topology:facade_01",
+      "category": "relation",
+      "priority": "P0",
+      "target": "facade_01",
+      "criterion": "Preserve the visible left masonry facade, windows and exterior fire escape arrangement. Source region [0.025, 0.065, 0.46, 0.956]. Preserve incident relations: rel_facade_left_of_diner."
+    },
+    {
+      "constraint_id": "topology:sign_01",
+      "category": "relation",
+      "priority": "P0",
+      "target": "sign_01",
+      "criterion": "Preserve literal TERMINAL DINER, TERMINAL above DINER, on the yellow sign; no substituted or additional letters. Source region [0.455, 0.527, 0.6, 0.628]. Preserve incident relations: rel_sign_above_diner."
+    },
+    {
+      "constraint_id": "identity",
+      "category": "identity",
+      "priority": "REQUIRED",
+      "target": "whole source",
+      "criterion": "Retain this source facade/diner composition, oblique camera and source identity; no substitute building or sign."
+    },
+    {
+      "constraint_id": "unauthorized_change",
+      "category": "unauthorized_change",
+      "priority": "REQUIRED",
+      "target": "whole source; fascia_01 and billboard_01",
+      "criterion": "No new architecture, roof equipment, geographic tokens or completed invented text. Preserve uncertain left fascia lettering as graphic evidence in [0.050,0.622,0.405,0.725]; do not supply an exact reading. Billboard wording in [0.437,0.018,0.797,0.370] is untranscribed, not asserted illegible; preserve graphic layout without inventing a transcription."
+    }
+  ]
+}

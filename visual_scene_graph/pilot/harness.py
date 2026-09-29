@@ -207,7 +207,9 @@ def _execute(prepared, output_root, *, generator=None, dry_run=True, reviewed_de
               'images': [], 'technical_failures': [], 'visual_verdict': 'INDETERMINATE',
               'seed_controlled': m['generation']['seed'] is not None}
     if not dry_run:
-        if reviewed_delta != delta_hash:
+        if any(m['generation'][key].startswith('DRY_RUN_ONLY') for key in ('provider', 'model')):
+            report.update(status='BLOCKED', reason='PROVISIONAL_GENERATION_CONFIGURATION')
+        elif reviewed_delta != delta_hash:
             report.update(status='BLOCKED', reason='DELTA_REVIEW_REQUIRED')
         elif generator is None:
             report.update(status='BLOCKED', reason='NO_GENERATOR')

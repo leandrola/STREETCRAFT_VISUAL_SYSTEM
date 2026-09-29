@@ -33,7 +33,7 @@
       "name": "command_invocation/test_backdrop_presets.py",
       "status": "PASS",
       "stdout": "",
-      "stderr": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.471s\n\nOK"
+      "stderr": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.425s\n\nOK"
     },
     {
       "name": "hardening/test_operational_hardening.py",
@@ -51,7 +51,7 @@
       "name": "reference_runtime/test_reference_reasoning.py",
       "status": "PASS",
       "stdout": "",
-      "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.003s\n\nOK"
+      "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.004s\n\nOK"
     },
     {
       "name": "scene_intelligence/test_scene_intelligence.py",
@@ -81,25 +81,25 @@
       "name": "visual_scene_graph/test_causal_trace.py",
       "status": "PASS",
       "stdout": "",
-      "stderr": ".....................\n----------------------------------------------------------------------\nRan 21 tests in 3.120s\n\nOK"
+      "stderr": ".....................\n----------------------------------------------------------------------\nRan 21 tests in 3.181s\n\nOK"
     },
     {
       "name": "visual_scene_graph/test_generation_compiler.py",
       "status": "PASS",
       "stdout": "",
-      "stderr": "........................\n----------------------------------------------------------------------\nRan 24 tests in 5.753s\n\nOK"
+      "stderr": "........................\n----------------------------------------------------------------------\nRan 24 tests in 7.021s\n\nOK"
     },
     {
       "name": "visual_scene_graph/pilot/test_pilot.py",
       "status": "PASS",
       "stdout": "",
-      "stderr": "................................\n----------------------------------------------------------------------\nRan 32 tests in 4.799s\n\nOK"
+      "stderr": "................................\n----------------------------------------------------------------------\nRan 32 tests in 5.638s\n\nOK"
     },
     {
       "name": "integration/test_streetcraft_orchestrator.py",
       "status": "PASS",
       "stdout": "",
-      "stderr": "............\n----------------------------------------------------------------------\nRan 12 tests in 0.004s\n\nOK"
+      "stderr": "............\n----------------------------------------------------------------------\nRan 12 tests in 0.005s\n\nOK"
     },
     {
       "name": "validation/test_patch_1_9_1.py",

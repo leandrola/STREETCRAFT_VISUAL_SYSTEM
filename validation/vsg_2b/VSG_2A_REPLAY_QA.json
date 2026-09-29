@@ -129828,10 +129828,10 @@
     "reference_runtime/reference_reasoning.py": "6d057d9e8c4d34e70decf320bdc37e113a69deff868a086312fb55e32d5ef4a1",
     "benchmark/run_regression_suite.py": "58761a5a12bd8a3708889aa2bf29b4f63fbcac48f1f3db05c7a348723451294a",
     "benchmark/r2b_1_9_1/RUN_STATUS.json": "a27153dd4ffed177fd3ba7a5f82cd079ffe1157b46ac85043c04e3939f4e9200",
-    "README.md": "a647d665407387bec21c0f1f6c456c805a543f8814ee1c2fa8b11634678b9fb2",
+    "README.md": "4c8c2a666c316f2089f19e4281539d71d9163b261c805acf845267729c3d2770",
     "STREETCRAFT.md": "d680f04dd932d38d4acd8fbd22fcde55d94f54dc3519e49af1bbec9bab2a938a",
-    "ROADMAP.md": "9ad6bbb4cf0067454d0980d6d36d5d0d35a5b6fef7138a6df720ace51f5fa8cc",
-    "CHANGELOG.md": "1638ff227ab6ecf8855ecc7b942ee2cbd4dac37a97634d1faff00630cfcab3e6",
+    "ROADMAP.md": "3bd35a7b3daf569babb6f6295a67c42517559e055131c518165eeed395e64301",
+    "CHANGELOG.md": "0677cde0730363178f30ab829e34cfc7cd086f3a2028b3d72ff3a4cb16a95c7f",
     "PACKAGE_MANIFEST.json": "22e2074b98ef28479834e63fb22fb120e077ce69f84500b87a799a860fba89ac",
     "command_invocation/resolve_commands.py": "d93d971f0e1085001adc217f7c147b356d106166b8c2e294e6a2c0717ad07e31",
     "command_invocation/COMMANDS.json": "a63d7b3c5f75bf5bd702801d84d51bec0817a5b9219ed40c5f1f73c15111fefb",
@@ -129854,5 +129854,5 @@
     "Opaque/free-text policies require exact content. Unsupported CGC fields and ambiguous mappings fail closed.",
     "Cardinality 1..1 denotes each unique source node occurrence; explicit property cardinalities are also retained."
   ],
-  "qa_sha256": "887cb8ab7bdb0e3de5fb40aa6c93085bba2cbb45b3270af0af1df00630d05c46"
+  "qa_sha256": "2ce4fbe63832d2674224b9e27685db0e72da8bfd9a5edc917121383f1bae9026"
 }

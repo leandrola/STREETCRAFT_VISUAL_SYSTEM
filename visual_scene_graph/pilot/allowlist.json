@@ -6,7 +6,7 @@
     "KENNYS-ROOFTOP": {
       "status": "PENDING_EVIDENCE",
       "manifest_sha256": null,
-      "reason": "MISSING_SOURCE_IMAGE_BINDING"
+      "reason": "RECEIVED_UNBOUND; ROOFTOP_IS_AUTHORIZED_INFERENCE"
     },
     "R2B-191-C": {
       "status": "PENDING_EVIDENCE",
@@ -14,9 +14,9 @@
       "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING"
     },
     "R2B-191-D": {
-      "status": "PENDING_EVIDENCE",
-      "manifest_sha256": null,
-      "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING"
+      "status": "ADMITTED",
+      "manifest_sha256": "d258f4784d7f27cabec9b6044142cdc809e19a9552e72924468e20d55dc3d3ec",
+      "reason": "PROSPECTIVE_SOURCE_BINDING_REVIEWED_DRY_RUN_ONLY"
     },
     "R2B-191-E": {
       "status": "PENDING_EVIDENCE",

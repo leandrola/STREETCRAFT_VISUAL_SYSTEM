@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0.0",
+  "binding_kind": "PROSPECTIVE_NEW_ANNOTATION",
+  "fixture_id": "VSG2B-R2B-D-NEW-01",
+  "registry_key": "R2B-191-D",
+  "annotation_date": "2026-09-29",
+  "annotator": "Codex (current source inspection and annotation; not photographer)",
+  "source": {
+    "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_source.jpg",
+    "sha256": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+    "inventory": "validation/vsg_2b/corpus_audit.json (initial inventory)",
+    "available_provenance": "R2B evidence directory dated 2026-09-21",
+    "photographer": "UNKNOWN",
+    "capture_date": "UNKNOWN"
+  },
+  "head_at_start": "ab04e1af0f5f7bf5e4ceed9431d02bc7977ce24d",
+  "spec_baseline": "ede34f6418dba617ab0b613046f9be2a6e9c5997",
+  "baseline_difference": "ab04e1a adds Kenny JPEG; no stable runtime changes",
+  "quota": {
+    "checked_at": "2026-09-29T17:01:09.859868+00:00",
+    "five_hour": "UNKNOWN",
+    "weekly_remaining": "UNKNOWN",
+    "reason": "No quota counters exposed in this session"
+  },
+  "authorization": "User requested implementation of VSG_2B_CORPUS_BINDING_DRY_RUN_SPEC.md. Conservative prospective operation /sc-core /sc-lock resolves VP00/T01/CG-S; no image generation authorized in this advance.",
+  "historical_claim": false,
+  "observations": [
+    {
+      "evidence_id": "D-OBS-facade_01",
+      "entity_id": "facade_01",
+      "region": [
+        0.025,
+        0.065,
+        0.46,
+        0.956
+      ],
+      "provenance": "OBSERVED_SOURCE",
+      "finding": "visible left masonry facade and exterior fire escape",
+      "text": null,
+      "limitation": "Bounding boxes are approximate normalized source regions, not segmentation. Untranscribed advertising text is outside exact-text coverage."
+    },
+    {
+      "evidence_id": "D-OBS-diner_01",
+      "entity_id": "diner_01",
+      "region": [
+        0.478,
+        0.668,
+        0.945,
+        0.951
+      ],
+      "provenance": "OBSERVED_SOURCE",
+      "finding": "visible street-level diner storefront with striped fascia",
+      "text": null,
+      "limitation": "Bounding boxes are approximate normalized source regions, not segmentation. Untranscribed advertising text is outside exact-text coverage."
+    },
+    {
+      "evidence_id": "D-OBS-sign_01",
+      "entity_id": "sign_01",
+      "region": [
+        0.455,
+        0.527,
+        0.6,
+        0.628
+      ],
+      "provenance": "OBSERVED_SOURCE",
+      "finding": "yellow TERMINAL DINER sign",
+      "text": "TERMINAL DINER",
+      "limitation": "Bounding boxes are approximate normalized source regions, not segmentation. Untranscribed advertising text is outside exact-text coverage."
+    },
+    {
+      "evidence_id": "D-OBS-billboard_01",
+      "entity_id": "billboard_01",
+      "region": [
+        0.437,
+        0.018,
+        0.797,
+        0.37
+      ],
+      "provenance": "OBSERVED_SOURCE",
+      "finding": "upper advertising board; wording not transcribed",
+      "text": null,
+      "limitation": "Bounding boxes are approximate normalized source regions, not segmentation. Untranscribed advertising text is outside exact-text coverage."
+    },
+    {
+      "evidence_id": "D-OBS-fascia_01",
+      "entity_id": "fascia_01",
+      "region": [
+        0.05,
+        0.622,
+        0.405,
+        0.725
+      ],
+      "provenance": "OBSERVED_SOURCE",
+      "finding": "left storefront fascia; exact lettering uncertain",
+      "text": null,
+      "limitation": "Bounding boxes are approximate normalized source regions, not segmentation. Untranscribed advertising text is outside exact-text coverage."
+    },
+    {
+      "evidence_id": "D-OBS-rel_sign_above_diner",
+      "relationship_id": "rel_sign_above_diner",
+      "region": [
+        0.455,
+        0.527,
+        0.945,
+        0.951
+      ],
+      "provenance": "OBSERVED_SOURCE",
+      "finding": "sign_01 ABOVE diner_01"
+    },
+    {
+      "evidence_id": "D-OBS-rel_facade_left_of_diner",
+      "relationship_id": "rel_facade_left_of_diner",
+      "region": [
+        0.025,
+        0.065,
+        0.945,
+        0.956
+      ],
+      "provenance": "OBSERVED_SOURCE",
+      "finding": "facade_01 LEFT_OF diner_01"
+    }
+  ],
+  "annotation_checklist": {
+    "jpeg_opened_and_visually_inspected": true,
+    "inventory_hash_matches": true,
+    "terminal_diner_legible": true,
+    "no_historical_snapshot_claim": true,
+    "no_hidden_architecture_claim": true,
+    "source_regions_bound_to_identity": true,
+    "other_text_not_completed": true
+  },
+  "limitations": [
+    "No historical request or snapshots recovered.",
+    "No photograph author or capture date established.",
+    "Coverage: Semantic Text Lock, visible geometry, ABOVE PR0 and LEFT_OF PR1 only; no rooftop, Archive transfer or occlusion claim."
+  ]
+}

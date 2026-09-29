@@ -70,6 +70,18 @@ class ControlTests(unittest.TestCase):
         self.assertEqual(p['comparison']['status'],'PASS')
         self.assertEqual(p['payloads']['A']['common'],p['payloads']['B']['common'])
         self.assertEqual([json.loads(x) for x in p['payloads']['A']['relations_and_locks'].splitlines()],p['payloads']['B']['relations_and_locks'])
+        from visual_scene_graph.pilot.review_dry_run import review
+        out, report = execute(p, self.root/'review')
+        self.assertEqual(review(out)['status'], 'PASS')
+        # Equal branches and a recomputed delta must not conceal shared CGC loss.
+        payloads = json.loads((out/'payloads.json').read_text())
+        for branch in ('A', 'B'):
+            payloads[branch]['common']['stable_cgc']['source_identity'] = 'OTHER_SOURCE'
+        (out/'payloads.json').write_text(json.dumps(payloads))
+        report['delta_sha256'] = digest({'manifest':p['manifest'], 'payloads':payloads})
+        (out/'report.json').write_text(json.dumps(report))
+        with self.assertRaisesRegex(ValueError, 'DRY_RUN_REVIEW_FAILED'):
+            review(out)
 
     def test_disabled(self):
         self.manifest['pilot_enabled']=False
@@ -135,6 +147,15 @@ class ControlTests(unittest.TestCase):
         self.assertEqual(r['images'],[])
         self.assertEqual(r['reason'],'DRY_RUN_NO_IMAGES')
         self.assertEqual(r['delta_sha256'],s['delta_sha256'])
+        self.manifest['generation']['provider'] = 'DRY_RUN_ONLY_UNSELECTED'
+        self.authorize()
+        provisional = self.prepare()
+        _, dry = execute(provisional, self.root/'provisional')
+        fake = self.fake()
+        _, blocked = execute(provisional, self.root/'provisional', generator=fake,
+                             dry_run=False, reviewed_delta=dry['delta_sha256'])
+        self.assertEqual(blocked['reason'], 'PROVISIONAL_GENERATION_CONFIGURATION')
+        self.assertEqual(fake.calls, 0)
 
     def test_provider_absent(self):
         p=self.prepare()

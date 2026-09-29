@@ -1,12 +1,12 @@
 # VSG-2B controlled generation harness
 
-Status: **BLOCKED: MISSING_FROZEN_SOURCE_BINDINGS**. Infrastructure and deterministic controls are implemented. Zero pilot images and zero visual comparisons have been produced. The user confirmed on 2026-09-29 that the missing snapshots / Kenny source are unavailable. The session has image-generation capability, so this is not a claim of `NO_GENERATOR`.
+Status: **BLOCKED / PENDING_VISUAL** overall. D now has a prospective source binding and admitted dry-run-only manifest; see the [D runbook](fixtures/r2b_d_new_01/RUNBOOK.md) and [current QA](../../validation/VSG_2B_CONTROLLED_GENERATION_PILOT_QA.json) for `CORPUS_RECOVERY_DRY_RUN_PASS` evidence. This is new annotation of the existing photograph, not historical snapshot recovery. Zero pilot images or visual comparisons exist. Kenny’s JPEG is received and remains unbound; [its scope record](fixtures/kennys/reception.json) separates observed facade from authorized inferred rooftop design. C/E and conditional F remain unbound.
 
-The stable client still ends at `GENERATION_READY`. Nothing in normal orchestration imports this package. Explicit invocation is `python -m visual_scene_graph.pilot`; the checked-in registry admits no fixtures. VSG-3A, 3B, correction and BK work are outside this implementation.
+The stable client still ends at `GENERATION_READY`. Nothing in normal orchestration imports this package. Explicit invocation is `python -m visual_scene_graph.pilot`; the checked-in registry admits only the prospective D manifest. VSG-3A, 3B, correction and BK work are outside this implementation.
 
 ## Frozen fixture contract
 
-To refresh technical evidence after an intentional change, run `.venv-sc/bin/python -m visual_scene_graph.pilot.run_validation`. This does not admit fixtures or generate images.
+To refresh technical evidence after an intentional change, run `.venv-sc/bin/python -m visual_scene_graph.pilot.run_validation`. This does not admit fixtures or generate images. After refreshing preconditions it replays D, saves a fresh real-source dry run and independently checks its persisted payload delta.
 
 The strict [manifest schema](../../schemas/vsg-pilot-manifest.schema.json) requires:
 
@@ -29,7 +29,7 @@ There was no existing image-provider renderer in the stable runtime. This pilot 
 
 Both branches retain every constraint's ID, priority, value and lock IDs. The renderer compares the complete semantic projections, then parses A's relationship string back and requires exact equality with B's array. No additional facts, references or constraints are introduced. Unsupported fields or any loss fail closed. This tests a specific structured-expression delta; it does not compare against an undocumented historical prompting practice.
 
-A dry run writes both effective payloads, manifest, comparison, frozen artifact bytes and a `delta_sha256` binding the manifest and payloads. It makes no provider calls and reports `INCONCLUSIVE / DRY_RUN_NO_IMAGES`. A real corpus dry run is currently blocked; the persisted control renderer preview uses a synthetic test fixture and is not visual evidence.
+A dry run writes both effective payloads, manifest, comparison, frozen artifact bytes and a `delta_sha256` binding the manifest and payloads. It makes no provider calls and reports `INCONCLUSIVE / DRY_RUN_NO_IMAGES`. The real D dry run is archived under `validation/vsg_2b/dry_runs/`; QA points to its exact report and delta review. The persisted control renderer preview remains synthetic and separate. Neither dry run is visual evidence.
 
 ```sh
 .venv-sc/bin/python -m visual_scene_graph.pilot path/to/frozen-manifest.json --output outputs/vsg-2b-campaign
@@ -39,7 +39,7 @@ A dry run writes both effective payloads, manifest, comparison, frozen artifact 
 
 `CommandGenerator` runs an explicitly configured trusted local argv without a shell. No executable comes from a fixture. JSON on stdin contains exactly `source_base64`, `payload`, `provider`, `model`, `seed`, and `parameters`. A bridge must call a real image provider and return JSON with `image_base64` and `metadata`. Metadata must include provider, model, a fresh generation ID, seed (including null when unavailable), parameters and may include other provider receipts. It must report the provider's actual settings; unsupported parameters must fail rather than be silently dropped.
 
-The bridge is deliberately external: no API, credentials or provider model is invented. No local bridge is configured in this checkout. A valid, reviewed fixture without a bridge returns `BLOCKED: NO_GENERATOR`. The session image tool cannot bypass fixture admission; its availability does not cure missing source bindings.
+The bridge is deliberately external: no API, credentials or provider model is invented. No local bridge is configured in this checkout. A valid, reviewed fixture without a bridge returns `BLOCKED: NO_GENERATOR`. The session image tool cannot bypass fixture admission. D’s `DRY_RUN_ONLY` provider/model identifiers are provisional; the harness rejects real execution until supported settings are versioned, re-admitted, revalidated and reviewed in a new dry run.
 
 ```sh
 .venv-sc/bin/python -m visual_scene_graph.pilot path/to/frozen-manifest.json \

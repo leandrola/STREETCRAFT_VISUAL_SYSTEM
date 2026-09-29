@@ -1,20 +1,26 @@
 {
   "status": "BLOCKED",
-  "reason": "MISSING_FROZEN_SOURCE_BINDINGS",
+  "reason": "PENDING_VISUAL_AND_REMAINING_SOURCE_BINDINGS",
   "fixtures": [
     {
       "fixture_id": "KENNYS-ROOFTOP",
       "critical": true,
       "conditional": false,
       "phenomena": [
-        "topology",
-        "Geometry Lock"
+        "observed facade preservation",
+        "authorized rooftop design (pending graph)"
       ],
       "status": "BLOCKED",
-      "source": null,
-      "reason": "MISSING_SOURCE_IMAGE_BINDING",
+      "source": {
+        "path": "visual_scene_graph/pilot/fixtures/kennys/source/kennys-shop.jpg",
+        "sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2"
+      },
+      "source_status": "RECEIVED_UNBOUND",
+      "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING",
       "substitution": null,
-      "fresh_pairs": 0
+      "fresh_pairs": 0,
+      "scope_record": "visual_scene_graph/pilot/fixtures/kennys/reception.json",
+      "rooftop_provenance": "AUTHORIZED_INFERENCE; not observed in source"
     },
     {
       "fixture_id": "R2B-191-C",
@@ -29,6 +35,7 @@
         "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-C_source.jpg",
         "sha256": "2130500a09548d4f9c1991a210de3cfa13d8ef63406dd0c3a78c257c68858a09"
       },
+      "source_status": "RECEIVED_UNBOUND",
       "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING",
       "substitution": null,
       "fresh_pairs": 0
@@ -40,14 +47,22 @@
       "phenomena": [
         "Semantic Text Lock"
       ],
-      "status": "BLOCKED",
+      "status": "CORPUS_RECOVERY_DRY_RUN_PASS",
       "source": {
         "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_source.jpg",
         "sha256": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc"
       },
-      "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING",
+      "source_status": "BOUND_PROSPECTIVELY",
+      "reason": "PENDING_VISUAL",
       "substitution": null,
-      "fresh_pairs": 0
+      "fresh_pairs": 0,
+      "manifest": "visual_scene_graph/pilot/fixtures/r2b_d_new_01/manifest.json",
+      "manifest_sha256": "d258f4784d7f27cabec9b6044142cdc809e19a9552e72924468e20d55dc3d3ec",
+      "historical_recovery": false,
+      "dry_run_review": {
+        "path": "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/delta_review.json",
+        "sha256": "33dc8541329eb6b36c10c91386719f26dd1673bdfa83cc20a9f8f6ea6389af65"
+      }
     },
     {
       "fixture_id": "R2B-191-E",
@@ -61,6 +76,7 @@
         "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-E_source.jpg",
         "sha256": "f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860"
       },
+      "source_status": "RECEIVED_UNBOUND",
       "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING",
       "substitution": null,
       "fresh_pairs": 0
@@ -77,6 +93,7 @@
         "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-F_source.png",
         "sha256": "dc21c48d695cf3d14efa57365b246a765cec770792f173c47a1da1748d38f5bf"
       },
+      "source_status": "RECEIVED_UNBOUND",
       "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING",
       "substitution": null,
       "fresh_pairs": 0
@@ -84,6 +101,6 @@
   ],
   "initial_image_budget": 8,
   "conditional_fifth_pair": "Requires a versioned budget change after coverage review",
-  "generator_capability": "Session image generation exists; corpus gate prevents its use. No local provider bridge configured.",
-  "user_confirmation": "User confirmed no additional snapshots or Kenny source image on 2026-09-29."
+  "generator_capability": "No local provider bridge configured; D settings explicitly provisional and dry-run only.",
+  "user_confirmation": "Kenny source received 2026-09-29; user confirms no other rooftop view. New plausible rooftop design authorized, preserving observed facade."
 }

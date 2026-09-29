@@ -1,3 +1,10 @@
+# VSG-2B — Prospective D corpus binding and real dry run · 2026-09-29
+
+- Added source-region attestation, frozen request and same-run SAR2/RR2/CGC snapshots, separate graphs, context, contract, rubric and admitted manifest for R2B-191-D. No historical snapshot recovery claim.
+- Added reproducible snapshot replay and independent persisted-payload delta review; validation archives a real-source dry run after refreshing preconditions.
+- Provisional provider settings explicitly block real generation. Kenny JPEG recorded as RECEIVED_UNBOUND; observed facade and authorized inferred rooftop scope remain separate.
+- Overall pilot remains BLOCKED/PENDING_VISUAL; zero generation calls, new images or valid visual pairs.
+
 # VSG-2B — Controlled generation infrastructure · 2026-09-29
 
 - Added an explicitly invoked fixture harness, strict manifest/review schemas, frozen artifact checks, equivalent A/B renderers, provider bridge protocol, eight-call campaign budget and blind-review workflow.

@@ -83,12 +83,26 @@
     "visual_scene_graph/graph_locks.py": "4884c055dee36bd4740bf63cb063cc862057b052b86c93f1b17800f20b98aa8d",
     "visual_scene_graph/pilot/__init__.py": "939b89c28b2d8d2ded0ddc31a5e2ea6a3a80bc1f686858fe9b46592538104bf3",
     "visual_scene_graph/pilot/__main__.py": "6da460889763ab05b9708eb64cd31046d1b5624b42b3bf35d499e1bbe68d60c7",
-    "visual_scene_graph/pilot/allowlist.json": "6c2a6567aad6ffcec17418777307547b1ff3815b229947393dfe2e930b0b41cf",
-    "visual_scene_graph/pilot/audit_corpus.py": "7f611f456f560dd937ac73a93fd7d8c7c9fd9b32f962be38cbeda0d860265e03",
+    "visual_scene_graph/pilot/allowlist.json": "a643ab02f5a2ea0b9a1cd91094a20f9679ade4ce706fd600dea916d10347d8ae",
+    "visual_scene_graph/pilot/audit_corpus.py": "5790dbd443df1b499fc84bdeae5bdc06925df618afe316e69d986e22cb395eb2",
+    "visual_scene_graph/pilot/bind_d.py": "368d0860202c585451711ce8c6aaeed336426ce64e7956f9ee2d1cb785f3dc70",
     "visual_scene_graph/pilot/evaluation.py": "da52875a8bfe3debc8617f000229c550dbc8c9a42b800375fdf86e50d824ab7d",
-    "visual_scene_graph/pilot/harness.py": "6c5adfc3fc6d837d1e9d3a03062334fee74de9c51055fe7b3ca00314a8d8fef1",
-    "visual_scene_graph/pilot/run_validation.py": "e5d8f59a2bdae6db95e08e8554040d23374e3716d81743b16e31c90fa73f9da6",
-    "visual_scene_graph/pilot/test_pilot.py": "5797f33bb804178d8eefda9f8502cb1acdaf7e57b8f70403f34350f00822e76b",
+    "visual_scene_graph/pilot/fixtures/kennys/reception.json": "9ef38ea1a63d5d31f6542c888b336b4356dcdbf43822cfb5055b73d0604fb456",
+    "visual_scene_graph/pilot/fixtures/r2b_d_new_01/candidate_graph.json": "cea40cb4fccc9c47037301c6304b3b99853e8c10be7512a215a59b8e2882ac43",
+    "visual_scene_graph/pilot/fixtures/r2b_d_new_01/cgc_final.json": "06bcde8b726ceeab1d2b823b2a25761ab44f9a9d0c9035d70bf08db8d8aad462",
+    "visual_scene_graph/pilot/fixtures/r2b_d_new_01/contract.json": "c9ece946ae08533d2487d55c717a149caab7e8cc3e4c1eb388fdf927be9e58f8",
+    "visual_scene_graph/pilot/fixtures/r2b_d_new_01/expected_graph.json": "cea40cb4fccc9c47037301c6304b3b99853e8c10be7512a215a59b8e2882ac43",
+    "visual_scene_graph/pilot/fixtures/r2b_d_new_01/generation_context.json": "26140b016abc6d40a30e3763816cdf947d6a040643340d6c5b2f68f25ac367c2",
+    "visual_scene_graph/pilot/fixtures/r2b_d_new_01/manifest.json": "da3c021fea39eafb972a34876786cecc648f95359c32dbbffd232ad504f14895",
+    "visual_scene_graph/pilot/fixtures/r2b_d_new_01/request.json": "2fe53ee2713d3077491b19875e3e0d3342d4f7ee6f1903f11e34703f42900ab0",
+    "visual_scene_graph/pilot/fixtures/r2b_d_new_01/rr2.json": "8f22c4e7e3bee1c303699117a7225d8d816964e88aea01803512938af3010169",
+    "visual_scene_graph/pilot/fixtures/r2b_d_new_01/runtime.json": "3987220126c2af9302abc34e72afab0a070b5cc825259fcc701e60d08d834e09",
+    "visual_scene_graph/pilot/fixtures/r2b_d_new_01/sar2.json": "6f1586703a6fe7fc53a4f980e22406dfaa5deb54645b43b02938bd2a3f05d9b5",
+    "visual_scene_graph/pilot/fixtures/r2b_d_new_01/source_provenance.json": "59251bf802566cdeb6c385bf8ac463125f2e993f7aee5bd64342c1ef2ae8613f",
+    "visual_scene_graph/pilot/harness.py": "380b9c64d5c2c5b6d00a801387ef833327f996a176613c3e0cd295d3b8099417",
+    "visual_scene_graph/pilot/review_dry_run.py": "ba8229dae2644d4aff0ef6cb86bd3e4ef7f5e0d32950ff66bc25eda8bf81d87d",
+    "visual_scene_graph/pilot/run_validation.py": "77f9d11fd69e3244513174b251cd1cea37974643df76cc7fd9321556569a5d5c",
+    "visual_scene_graph/pilot/test_pilot.py": "3da98a5f251d9e05d5e45c26522696e6e5a2c4a0b7a7777ebae81c4aebcfb8ff",
     "visual_scene_graph/run_causal_benchmark.py": "7b3f43d30a993ea505289325448b4c3fb59acaeca774ca98061be5ba72f3bf7f",
     "visual_scene_graph/run_generation_benchmark.py": "dc255e61f3ff32c28856d2340919a2473def00dc78bb7935c357fdbe5029115f",
     "visual_scene_graph/test_causal_trace.py": "6d06ed894ac1f3a5005f1fa61268ecae1c9e38e4d4ebf5df3906f44ad8da3510",
@@ -99,14 +113,14 @@
   },
   "vsg2a": {
     "path": "validation/vsg_2b/VSG_2A_REPLAY_QA.json",
-    "sha256": "3ac6e5b0b7903b908a1b9425969563b12ebf58089188af6bc6dd35734583fb77"
+    "sha256": "ae93e7749c535ff0156b1c18a1e0a4bf5ed5ad3044ebcf3bb62fa5b0990b420e"
   },
   "regression": {
     "path": "validation/vsg_2b/regression.json",
-    "sha256": "c2d4370f72ef670b3fd357f08a1f197ee37b3dfe4fff1fd44645614eea88d216"
+    "sha256": "b525edf60c2a57ed5b2a117246e6f35b2f7660d1c1ffe24ce93377a5bcac6fcc"
   },
   "pilot_controls": {
     "path": "validation/vsg_2b/controls.json",
-    "sha256": "2076d1a6549ebc2958574603c3f2dd3999790a04e28f8552c2bcd5664b5ef71e"
+    "sha256": "998ae51cdac96d00eff12b7f4a96bbe878ce8c26a4bc1222e02d301215a7b874"
   }
 }

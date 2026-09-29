@@ -1,0 +1,1091 @@
+{
+  "version": "SC-ORCH-1.0",
+  "command": {
+    "status": "OK",
+    "commands": [
+      "/sc-core",
+      "/sc-lock"
+    ],
+    "config": {
+      "profile": "VP00",
+      "mode": "T01",
+      "camera": "CG-S",
+      "fear_city_identity": null,
+      "preservation": null,
+      "uncertainty": null,
+      "explicit_fear_city_profile_override": false,
+      "identity_lock": null,
+      "occlusion_lock": null,
+      "frontalization": null,
+      "aspect_ratio": null,
+      "street_presence": null
+    },
+    "diagnostics": []
+  },
+  "resolved_config": {
+    "profile": "VP00",
+    "mode": "T01",
+    "camera": "CG-S",
+    "fear_city_identity": null,
+    "preservation": null,
+    "uncertainty": null,
+    "explicit_fear_city_profile_override": false,
+    "identity_lock": null,
+    "occlusion_lock": null,
+    "frontalization": null,
+    "aspect_ratio": null,
+    "street_presence": null
+  },
+  "sar2": {
+    "scene_id": "VSG2B-R2B-D-NEW-01",
+    "source_identity": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+    "mode": "T01",
+    "profile": "VP00",
+    "entities": [
+      {
+        "entity_id": "facade_01",
+        "label": "visible left masonry facade and exterior fire escape",
+        "kind": "FACADE",
+        "roles": [
+          "STRUCTURAL_CORE"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {},
+        "region": [
+          0.025,
+          0.065,
+          0.46,
+          0.956
+        ],
+        "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+        "evidence_id": "D-OBS-facade_01"
+      },
+      {
+        "entity_id": "diner_01",
+        "label": "visible street-level diner storefront with striped fascia",
+        "kind": "STOREFRONT",
+        "roles": [
+          "STRUCTURAL_CORE",
+          "IDENTITY_ANCHOR"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {},
+        "region": [
+          0.478,
+          0.668,
+          0.945,
+          0.951
+        ],
+        "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+        "evidence_id": "D-OBS-diner_01"
+      },
+      {
+        "entity_id": "sign_01",
+        "label": "yellow TERMINAL DINER sign",
+        "kind": "SIGNAGE",
+        "roles": [
+          "IDENTITY_ANCHOR",
+          "RELATIONSHIP_ANCHOR"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {},
+        "region": [
+          0.455,
+          0.527,
+          0.6,
+          0.628
+        ],
+        "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+        "evidence_id": "D-OBS-sign_01",
+        "text": "TERMINAL DINER",
+        "semantic_lock": true
+      },
+      {
+        "entity_id": "billboard_01",
+        "label": "upper advertising board; wording not transcribed",
+        "kind": "SIGNAGE",
+        "roles": [
+          "CONTEXTUAL_SUPPORT"
+        ],
+        "preservation_level": "P2",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {},
+        "region": [
+          0.437,
+          0.018,
+          0.797,
+          0.37
+        ],
+        "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+        "evidence_id": "D-OBS-billboard_01"
+      },
+      {
+        "entity_id": "fascia_01",
+        "label": "left storefront fascia; exact lettering uncertain",
+        "kind": "SIGNAGE",
+        "roles": [
+          "CONTEXTUAL_SUPPORT"
+        ],
+        "preservation_level": "P2",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {},
+        "region": [
+          0.05,
+          0.622,
+          0.405,
+          0.725
+        ],
+        "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+        "evidence_id": "D-OBS-fascia_01"
+      }
+    ],
+    "relationships": [
+      {
+        "relationship_id": "rel_sign_above_diner",
+        "subject": "sign_01",
+        "predicate": "ABOVE",
+        "object": "diner_01",
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.455,
+          0.527,
+          0.945,
+          0.951
+        ],
+        "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+        "evidence_id": "D-OBS-rel_sign_above_diner"
+      },
+      {
+        "relationship_id": "rel_facade_left_of_diner",
+        "subject": "facade_01",
+        "predicate": "LEFT_OF",
+        "object": "diner_01",
+        "protection": "PR1",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.025,
+          0.065,
+          0.945,
+          0.956
+        ],
+        "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+        "evidence_id": "D-OBS-rel_facade_left_of_diner"
+      }
+    ],
+    "action_plan": [
+      {
+        "entity_id": "facade_01",
+        "action": "PRESERVE_EXACT",
+        "relationship_lock": true,
+        "protected_relationships": [
+          "rel_facade_left_of_diner"
+        ],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      },
+      {
+        "entity_id": "diner_01",
+        "action": "PRESERVE_EXACT",
+        "relationship_lock": true,
+        "protected_relationships": [
+          "rel_sign_above_diner",
+          "rel_facade_left_of_diner"
+        ],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      },
+      {
+        "entity_id": "sign_01",
+        "action": "PRESERVE_EXACT",
+        "relationship_lock": true,
+        "protected_relationships": [
+          "rel_sign_above_diner"
+        ],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      },
+      {
+        "entity_id": "billboard_01",
+        "action": "PRESERVE_CONTEXT",
+        "relationship_lock": false,
+        "protected_relationships": [],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      },
+      {
+        "entity_id": "fascia_01",
+        "action": "PRESERVE_CONTEXT",
+        "relationship_lock": false,
+        "protected_relationships": [],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      }
+    ],
+    "identity_anchors": [
+      "diner_01",
+      "sign_01"
+    ],
+    "unknown_locks": [],
+    "reference_need_hints": [],
+    "warnings": []
+  },
+  "reference_needs": [],
+  "reference_reasoning": {
+    "version": "RR-2.0",
+    "status": "READY",
+    "queries": 0,
+    "query_budget": 4,
+    "need_results": {},
+    "unresolved_required": [],
+    "trace": [],
+    "admissions": [],
+    "generation_projection": [],
+    "locked_unknowns": []
+  },
+  "cgc_draft": {
+    "source_identity": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+    "mode": "T01",
+    "profile": "VP00",
+    "camera": "CG-S",
+    "preserve": [
+      "Source framing, oblique view, visible facade, diner storefront and graphic layouts.",
+      "sign_01: TERMINAL above DINER in two lines; preserve exact spelling.",
+      "facade_01:visible left masonry facade and exterior fire escape:PRESERVE_EXACT",
+      "diner_01:visible street-level diner storefront with striped fascia:PRESERVE_EXACT",
+      "sign_01:yellow TERMINAL DINER sign:PRESERVE_EXACT",
+      "billboard_01:upper advertising board; wording not transcribed:PRESERVE_CONTEXT",
+      "fascia_01:left storefront fascia; exact lettering uncertain:PRESERVE_CONTEXT"
+    ],
+    "transform": [],
+    "remove": [],
+    "infer": [],
+    "unknown": [
+      "Exact lettering on fascia_01 is uncertain; billboard_01 wording is not transcribed in this annotation.",
+      "Hidden interiors and unseen building surfaces are unannotated."
+    ],
+    "forbid": [
+      "Invent or complete exact text on fascia_01 or untranscribed billboard_01.",
+      "Add hidden architecture, rooftop equipment, geographic identity or documentary history.",
+      "break_protected_relationships:facade_01",
+      "break_protected_relationships:diner_01",
+      "break_protected_relationships:sign_01"
+    ],
+    "semantic_text_lock": "STRICT",
+    "material_intensity_delta": 0,
+    "occlusion_locks": [],
+    "scene_intelligence": {
+      "scene_id": "VSG2B-R2B-D-NEW-01",
+      "identity_anchors": [
+        "diner_01",
+        "sign_01"
+      ],
+      "protected_relationships": [
+        {
+          "relationship_id": "rel_sign_above_diner",
+          "subject": "sign_01",
+          "predicate": "ABOVE",
+          "object": "diner_01",
+          "protection": "PR0",
+          "epistemic_class": "OBSERVED",
+          "confidence": "HIGH",
+          "region": [
+            0.455,
+            0.527,
+            0.945,
+            0.951
+          ],
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "evidence_id": "D-OBS-rel_sign_above_diner"
+        },
+        {
+          "relationship_id": "rel_facade_left_of_diner",
+          "subject": "facade_01",
+          "predicate": "LEFT_OF",
+          "object": "diner_01",
+          "protection": "PR1",
+          "epistemic_class": "OBSERVED",
+          "confidence": "HIGH",
+          "region": [
+            0.025,
+            0.065,
+            0.945,
+            0.956
+          ],
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "evidence_id": "D-OBS-rel_facade_left_of_diner"
+        }
+      ],
+      "entity_actions": [
+        {
+          "entity_id": "facade_01",
+          "action": "PRESERVE_EXACT",
+          "relationship_lock": true,
+          "protected_relationships": [
+            "rel_facade_left_of_diner"
+          ],
+          "salience": {
+            "score": 0.0,
+            "band": "MINOR_ATTENTION",
+            "axes": {
+              "identity_salience": 0.0,
+              "structural_dependency": 0.0,
+              "task_relevance": 0.0,
+              "relationship_centrality": 0.0,
+              "temporal_relevance": 0.0
+            }
+          }
+        },
+        {
+          "entity_id": "diner_01",
+          "action": "PRESERVE_EXACT",
+          "relationship_lock": true,
+          "protected_relationships": [
+            "rel_sign_above_diner",
+            "rel_facade_left_of_diner"
+          ],
+          "salience": {
+            "score": 0.0,
+            "band": "MINOR_ATTENTION",
+            "axes": {
+              "identity_salience": 0.0,
+              "structural_dependency": 0.0,
+              "task_relevance": 0.0,
+              "relationship_centrality": 0.0,
+              "temporal_relevance": 0.0
+            }
+          }
+        },
+        {
+          "entity_id": "sign_01",
+          "action": "PRESERVE_EXACT",
+          "relationship_lock": true,
+          "protected_relationships": [
+            "rel_sign_above_diner"
+          ],
+          "salience": {
+            "score": 0.0,
+            "band": "MINOR_ATTENTION",
+            "axes": {
+              "identity_salience": 0.0,
+              "structural_dependency": 0.0,
+              "task_relevance": 0.0,
+              "relationship_centrality": 0.0,
+              "temporal_relevance": 0.0
+            }
+          }
+        },
+        {
+          "entity_id": "billboard_01",
+          "action": "PRESERVE_CONTEXT",
+          "relationship_lock": false,
+          "protected_relationships": [],
+          "salience": {
+            "score": 0.0,
+            "band": "MINOR_ATTENTION",
+            "axes": {
+              "identity_salience": 0.0,
+              "structural_dependency": 0.0,
+              "task_relevance": 0.0,
+              "relationship_centrality": 0.0,
+              "temporal_relevance": 0.0
+            }
+          }
+        },
+        {
+          "entity_id": "fascia_01",
+          "action": "PRESERVE_CONTEXT",
+          "relationship_lock": false,
+          "protected_relationships": [],
+          "salience": {
+            "score": 0.0,
+            "band": "MINOR_ATTENTION",
+            "axes": {
+              "identity_salience": 0.0,
+              "structural_dependency": 0.0,
+              "task_relevance": 0.0,
+              "relationship_centrality": 0.0,
+              "temporal_relevance": 0.0
+            }
+          }
+        }
+      ],
+      "unknown_locks": [],
+      "reference_need_hints": []
+    },
+    "cil": {
+      "commands": "/sc-core /sc-lock",
+      "resolved": {
+        "profile": "VP00",
+        "mode": "T01",
+        "camera": "CG-S",
+        "fear_city_identity": null,
+        "preservation": null,
+        "uncertainty": null,
+        "explicit_fear_city_profile_override": false,
+        "identity_lock": null,
+        "occlusion_lock": null,
+        "frontalization": null,
+        "aspect_ratio": null,
+        "street_presence": null
+      }
+    }
+  },
+  "generation_ready": true,
+  "visual_scene_graph": {
+    "schema_version": "1.0.0",
+    "mode": "OBSERVER",
+    "governs_generation": false,
+    "scene_id": "VSG2B-R2B-D-NEW-01",
+    "source_identity": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+    "nodes": [
+      {
+        "id": "billboard_01",
+        "type": "sign",
+        "source_kind": "SIGNAGE",
+        "label": "upper advertising board; wording not transcribed",
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "observed": true,
+        "locks": {
+          "identity": false,
+          "semantic": false,
+          "geometry": false,
+          "occlusion": false
+        },
+        "evidence": {
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.437,
+            0.018,
+            0.797,
+            0.37
+          ],
+          "evidence_id": "D-OBS-billboard_01"
+        }
+      },
+      {
+        "id": "diner_01",
+        "type": "storefront",
+        "source_kind": "STOREFRONT",
+        "label": "visible street-level diner storefront with striped fascia",
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "observed": true,
+        "locks": {
+          "identity": true,
+          "semantic": false,
+          "geometry": true,
+          "occlusion": false
+        },
+        "evidence": {
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.478,
+            0.668,
+            0.945,
+            0.951
+          ],
+          "evidence_id": "D-OBS-diner_01"
+        }
+      },
+      {
+        "id": "facade_01",
+        "type": "facade",
+        "source_kind": "FACADE",
+        "label": "visible left masonry facade and exterior fire escape",
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "observed": true,
+        "locks": {
+          "identity": false,
+          "semantic": false,
+          "geometry": true,
+          "occlusion": false
+        },
+        "evidence": {
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.025,
+            0.065,
+            0.46,
+            0.956
+          ],
+          "evidence_id": "D-OBS-facade_01"
+        }
+      },
+      {
+        "id": "fascia_01",
+        "type": "sign",
+        "source_kind": "SIGNAGE",
+        "label": "left storefront fascia; exact lettering uncertain",
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "observed": true,
+        "locks": {
+          "identity": false,
+          "semantic": false,
+          "geometry": false,
+          "occlusion": false
+        },
+        "evidence": {
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.05,
+            0.622,
+            0.405,
+            0.725
+          ],
+          "evidence_id": "D-OBS-fascia_01"
+        }
+      },
+      {
+        "id": "sign_01",
+        "type": "sign",
+        "source_kind": "SIGNAGE",
+        "label": "yellow TERMINAL DINER sign",
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "observed": true,
+        "locks": {
+          "identity": true,
+          "semantic": true,
+          "geometry": false,
+          "occlusion": false
+        },
+        "evidence": {
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.455,
+            0.527,
+            0.6,
+            0.628
+          ],
+          "evidence_id": "D-OBS-sign_01"
+        },
+        "properties": {
+          "text": "TERMINAL DINER"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "rel_facade_left_of_diner",
+        "type": "LEFT_OF",
+        "from": "facade_01",
+        "to": "diner_01",
+        "confidence": 0.9,
+        "protection": "PR1",
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.025,
+            0.065,
+            0.945,
+            0.956
+          ],
+          "evidence_id": "D-OBS-rel_facade_left_of_diner"
+        }
+      },
+      {
+        "id": "rel_sign_above_diner",
+        "type": "ABOVE",
+        "from": "sign_01",
+        "to": "diner_01",
+        "confidence": 0.9,
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "region": [
+            0.455,
+            0.527,
+            0.945,
+            0.951
+          ],
+          "evidence_id": "D-OBS-rel_sign_above_diner"
+        }
+      }
+    ],
+    "reference_observations": [],
+    "functional_subgraphs": [
+      {
+        "name": "semantic_text",
+        "nodes": [
+          "sign_01"
+        ],
+        "edges": []
+      },
+      {
+        "name": "rooftop",
+        "nodes": [],
+        "edges": []
+      },
+      {
+        "name": "geometry",
+        "nodes": [
+          "diner_01",
+          "facade_01"
+        ],
+        "edges": [
+          "rel_facade_left_of_diner"
+        ]
+      },
+      {
+        "name": "occlusion",
+        "nodes": [],
+        "edges": []
+      }
+    ],
+    "diagnostics": {
+      "unclassified_nodes": [],
+      "unsupported_relations": [],
+      "dangling_relations": []
+    },
+    "provenance": {
+      "producer": "Streetcraft VSG-0 Observer",
+      "sar_version": "SAR2",
+      "rr_version": "RR2",
+      "rr_status": "READY",
+      "input_sha256": "7f54370380537e50a7bcf64760c263dd6ecef7c7c3093342f133145de7c3376c",
+      "node_count": 5,
+      "edge_count": 2
+    },
+    "graph_locks": {
+      "version": "1.0.0",
+      "mode": "VALIDATE_ONLY",
+      "governs_generation": false,
+      "items": [
+        {
+          "id": "GL-GEO-DINER_01",
+          "type": "GEOMETRY_LOCK",
+          "target": {
+            "kind": "NODE",
+            "id": "diner_01"
+          },
+          "strength": "ABSOLUTE",
+          "enforcement": "VALIDATE_ONLY",
+          "expected": {
+            "node_type": "storefront",
+            "protected_topology": [
+              {
+                "id": "rel_facade_left_of_diner",
+                "type": "LEFT_OF",
+                "from": "facade_01",
+                "to": "diner_01"
+              },
+              {
+                "id": "rel_sign_above_diner",
+                "type": "ABOVE",
+                "from": "sign_01",
+                "to": "diner_01"
+              }
+            ]
+          },
+          "provenance": {
+            "source": "VSG_NODE_LOCK",
+            "evidence": {
+              "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+              "region": [
+                0.478,
+                0.668,
+                0.945,
+                0.951
+              ],
+              "evidence_id": "D-OBS-diner_01"
+            }
+          }
+        },
+        {
+          "id": "GL-GEO-FACADE_01",
+          "type": "GEOMETRY_LOCK",
+          "target": {
+            "kind": "NODE",
+            "id": "facade_01"
+          },
+          "strength": "ABSOLUTE",
+          "enforcement": "VALIDATE_ONLY",
+          "expected": {
+            "node_type": "facade",
+            "protected_topology": [
+              {
+                "id": "rel_facade_left_of_diner",
+                "type": "LEFT_OF",
+                "from": "facade_01",
+                "to": "diner_01"
+              }
+            ]
+          },
+          "provenance": {
+            "source": "VSG_NODE_LOCK",
+            "evidence": {
+              "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+              "region": [
+                0.025,
+                0.065,
+                0.46,
+                0.956
+              ],
+              "evidence_id": "D-OBS-facade_01"
+            }
+          }
+        },
+        {
+          "id": "GL-SEM-SIGN_01",
+          "type": "SEMANTIC_TEXT_LOCK",
+          "target": {
+            "kind": "NODE",
+            "id": "sign_01"
+          },
+          "strength": "ABSOLUTE",
+          "enforcement": "VALIDATE_ONLY",
+          "expected": {
+            "text": "TERMINAL DINER",
+            "node_type": "sign"
+          },
+          "provenance": {
+            "source": "VSG_NODE_LOCK",
+            "evidence": {
+              "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+              "region": [
+                0.455,
+                0.527,
+                0.6,
+                0.628
+              ],
+              "evidence_id": "D-OBS-sign_01"
+            }
+          }
+        }
+      ],
+      "summary": {
+        "total": 3,
+        "by_type": {
+          "GEOMETRY_LOCK": 2,
+          "OCCLUSION_LOCK": 0,
+          "REFERENCE_ISOLATION_LOCK": 0,
+          "SEMANTIC_TEXT_LOCK": 1
+        },
+        "warnings": []
+      },
+      "ledger_sha256": "b46160770d17db0d1bff49077104e78d14e6caae03117bc44be6ee1daccbbd9e"
+    }
+  },
+  "cgc_final": {
+    "source_identity": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+    "mode": "T01",
+    "profile": "VP00",
+    "camera": "CG-S",
+    "preserve": [
+      "Source framing, oblique view, visible facade, diner storefront and graphic layouts.",
+      "sign_01: TERMINAL above DINER in two lines; preserve exact spelling.",
+      "facade_01:visible left masonry facade and exterior fire escape:PRESERVE_EXACT",
+      "diner_01:visible street-level diner storefront with striped fascia:PRESERVE_EXACT",
+      "sign_01:yellow TERMINAL DINER sign:PRESERVE_EXACT",
+      "billboard_01:upper advertising board; wording not transcribed:PRESERVE_CONTEXT",
+      "fascia_01:left storefront fascia; exact lettering uncertain:PRESERVE_CONTEXT"
+    ],
+    "transform": [],
+    "remove": [],
+    "infer": [],
+    "unknown": [
+      "Exact lettering on fascia_01 is uncertain; billboard_01 wording is not transcribed in this annotation.",
+      "Hidden interiors and unseen building surfaces are unannotated."
+    ],
+    "forbid": [
+      "Invent or complete exact text on fascia_01 or untranscribed billboard_01.",
+      "Add hidden architecture, rooftop equipment, geographic identity or documentary history.",
+      "break_protected_relationships:facade_01",
+      "break_protected_relationships:diner_01",
+      "break_protected_relationships:sign_01"
+    ],
+    "semantic_text_lock": "STRICT",
+    "material_intensity_delta": 0,
+    "occlusion_locks": [],
+    "scene_intelligence": {
+      "scene_id": "VSG2B-R2B-D-NEW-01",
+      "identity_anchors": [
+        "diner_01",
+        "sign_01"
+      ],
+      "protected_relationships": [
+        {
+          "relationship_id": "rel_sign_above_diner",
+          "subject": "sign_01",
+          "predicate": "ABOVE",
+          "object": "diner_01",
+          "protection": "PR0",
+          "epistemic_class": "OBSERVED",
+          "confidence": "HIGH",
+          "region": [
+            0.455,
+            0.527,
+            0.945,
+            0.951
+          ],
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "evidence_id": "D-OBS-rel_sign_above_diner"
+        },
+        {
+          "relationship_id": "rel_facade_left_of_diner",
+          "subject": "facade_01",
+          "predicate": "LEFT_OF",
+          "object": "diner_01",
+          "protection": "PR1",
+          "epistemic_class": "OBSERVED",
+          "confidence": "HIGH",
+          "region": [
+            0.025,
+            0.065,
+            0.945,
+            0.956
+          ],
+          "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+          "evidence_id": "D-OBS-rel_facade_left_of_diner"
+        }
+      ],
+      "entity_actions": [
+        {
+          "entity_id": "facade_01",
+          "action": "PRESERVE_EXACT",
+          "relationship_lock": true,
+          "protected_relationships": [
+            "rel_facade_left_of_diner"
+          ],
+          "salience": {
+            "score": 0.0,
+            "band": "MINOR_ATTENTION",
+            "axes": {
+              "identity_salience": 0.0,
+              "structural_dependency": 0.0,
+              "task_relevance": 0.0,
+              "relationship_centrality": 0.0,
+              "temporal_relevance": 0.0
+            }
+          }
+        },
+        {
+          "entity_id": "diner_01",
+          "action": "PRESERVE_EXACT",
+          "relationship_lock": true,
+          "protected_relationships": [
+            "rel_sign_above_diner",
+            "rel_facade_left_of_diner"
+          ],
+          "salience": {
+            "score": 0.0,
+            "band": "MINOR_ATTENTION",
+            "axes": {
+              "identity_salience": 0.0,
+              "structural_dependency": 0.0,
+              "task_relevance": 0.0,
+              "relationship_centrality": 0.0,
+              "temporal_relevance": 0.0
+            }
+          }
+        },
+        {
+          "entity_id": "sign_01",
+          "action": "PRESERVE_EXACT",
+          "relationship_lock": true,
+          "protected_relationships": [
+            "rel_sign_above_diner"
+          ],
+          "salience": {
+            "score": 0.0,
+            "band": "MINOR_ATTENTION",
+            "axes": {
+              "identity_salience": 0.0,
+              "structural_dependency": 0.0,
+              "task_relevance": 0.0,
+              "relationship_centrality": 0.0,
+              "temporal_relevance": 0.0
+            }
+          }
+        },
+        {
+          "entity_id": "billboard_01",
+          "action": "PRESERVE_CONTEXT",
+          "relationship_lock": false,
+          "protected_relationships": [],
+          "salience": {
+            "score": 0.0,
+            "band": "MINOR_ATTENTION",
+            "axes": {
+              "identity_salience": 0.0,
+              "structural_dependency": 0.0,
+              "task_relevance": 0.0,
+              "relationship_centrality": 0.0,
+              "temporal_relevance": 0.0
+            }
+          }
+        },
+        {
+          "entity_id": "fascia_01",
+          "action": "PRESERVE_CONTEXT",
+          "relationship_lock": false,
+          "protected_relationships": [],
+          "salience": {
+            "score": 0.0,
+            "band": "MINOR_ATTENTION",
+            "axes": {
+              "identity_salience": 0.0,
+              "structural_dependency": 0.0,
+              "task_relevance": 0.0,
+              "relationship_centrality": 0.0,
+              "temporal_relevance": 0.0
+            }
+          }
+        }
+      ],
+      "unknown_locks": [],
+      "reference_need_hints": []
+    },
+    "cil": {
+      "commands": "/sc-core /sc-lock",
+      "resolved": {
+        "profile": "VP00",
+        "mode": "T01",
+        "camera": "CG-S",
+        "fear_city_identity": null,
+        "preservation": null,
+        "uncertainty": null,
+        "explicit_fear_city_profile_override": false,
+        "identity_lock": null,
+        "occlusion_lock": null,
+        "frontalization": null,
+        "aspect_ratio": null,
+        "street_presence": null
+      }
+    },
+    "reference_reasoning": {
+      "version": "RR-2.0",
+      "status": "READY",
+      "queries": 0,
+      "query_budget": 4,
+      "need_results": {},
+      "unresolved_required": [],
+      "trace": [],
+      "admissions": [],
+      "generation_projection": [],
+      "locked_unknowns": []
+    },
+    "pre_generation_gate": {
+      "status": "PASS",
+      "findings": [],
+      "reference_preflight": {
+        "status": "PASS",
+        "admitted": [],
+        "rejected": []
+      }
+    },
+    "reference_features": [],
+    "text_render_plan": {
+      "tokens": [
+        {
+          "literal": "TERMINAL DINER",
+          "confidence": 0.99,
+          "state": "FROZEN_EXACT",
+          "preservation_level": "P0",
+          "identity_bearing": true,
+          "numeral": false,
+          "token_id": "sign_01"
+        },
+        {
+          "literal": "",
+          "confidence": 0.2,
+          "state": "MASK_GRAPHIC_ONLY",
+          "preservation_level": "P2",
+          "identity_bearing": false,
+          "numeral": false,
+          "token_id": "fascia_01"
+        },
+        {
+          "literal": "",
+          "confidence": 0.0,
+          "state": "MASK_GRAPHIC_ONLY",
+          "preservation_level": "P2",
+          "identity_bearing": false,
+          "numeral": false,
+          "token_id": "billboard_01"
+        }
+      ],
+      "proposed_text": {
+        "sign_01": "TERMINAL DINER",
+        "fascia_01": null,
+        "billboard_01": null
+      }
+    }
+  },
+  "pre_generation_gate": {
+    "status": "PASS",
+    "findings": [],
+    "reference_preflight": {
+      "status": "PASS",
+      "admitted": [],
+      "rejected": []
+    }
+  },
+  "status": "GENERATION_READY"
+}

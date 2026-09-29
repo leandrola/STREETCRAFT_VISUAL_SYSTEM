@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "reviewer": "Codex / independent persisted-byte review",
+  "review_method": "Separate review implementation; does not invoke or import the harness renderer. Automated technical review, not human or blind visual review.",
+  "reviewed_at": "2026-09-29T17:08:20.881166+00:00",
+  "head": "ab04e1af0f5f7bf5e4ceed9431d02bc7977ce24d",
+  "run_path": "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c",
+  "manifest_sha256": "d258f4784d7f27cabec9b6044142cdc809e19a9552e72924468e20d55dc3d3ec",
+  "delta_sha256": "6159ef5f5666afb9037f5ba9512cf6a3d3c89a778f376961c9c570391ce59282",
+  "checks": {
+    "common_equal": true,
+    "shared_cgc_matches_frozen_snapshot": true,
+    "parsed_A_equals_B": true,
+    "relations_locks_match_frozen_contract": true,
+    "shared_restrictions_match_frozen_contract": true,
+    "delta_digest": true,
+    "comparison_pass": true,
+    "nonempty_required_coverage": true,
+    "no_images_or_calls": true,
+    "dry_run_only": true,
+    "no_technical_failures": true,
+    "snapshot_bytes": true
+  },
+  "payloads_file_sha256": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d",
+  "generation_attempts": 0,
+  "fresh_images": 0,
+  "valid_pairs": 0,
+  "limitations": [
+    "Prospective annotation, not historical recovery.",
+    "Provisional provider settings; not an operational selection.",
+    "No visual quality/improvement finding; VSG-2B remains BLOCKED/PENDING_VISUAL."
+  ],
+  "command": ".venv-sc/bin/python -m visual_scene_graph.pilot.run_validation",
+  "source_binding_replay": "PASS: runtime/SAR2/RR2/CGC/graphs/context/contract from frozen request",
+  "coverage": {
+    "P0": {
+      "required": 9,
+      "preserved": 9,
+      "ratio": 1.0
+    },
+    "PR0": {
+      "required": 1,
+      "preserved": 1,
+      "ratio": 1.0
+    },
+    "PR1": {
+      "required": 1,
+      "preserved": 1,
+      "ratio": 1.0
+    },
+    "LOCK": {
+      "required": 3,
+      "preserved": 3,
+      "ratio": 1.0
+    }
+  }
+}

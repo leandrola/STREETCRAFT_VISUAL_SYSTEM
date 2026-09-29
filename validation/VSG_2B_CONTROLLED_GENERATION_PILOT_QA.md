@@ -1,18 +1,15 @@
 # VSG-2B controlled generation pilot · 2026-09-29
 
-**BLOCKED: MISSING_FROZEN_SOURCE_BINDINGS.** The user confirmed that the missing snapshots / Kenny source are unavailable. The isolated harness is implemented; the visual pilot is not complete and production is not authorized.
+**General status: BLOCKED / PENDING_VISUAL.** The technical D milestone is **CORPUS_RECOVERY_DRY_RUN_PASS**. The visual pilot is incomplete.
 
-- Deterministic pilot controls: **32/32 PASS**.
-- VSG-2A replay: **25/25 PASS**, current 42-file manifest verified. Original baseline also verified before edits; historical QA retained unchanged.
+- Deterministic controls: **32/32 PASS**, synthetic only.
+- Current VSG-2A replay: **25/25 PASS**, 42 files verified; historical suite unchanged.
 - Unified regression: **PASS** (21 checks).
-- Dependencies: Python 3.14.5, jsonschema 4.26.0, Pillow 12.3.0.
-- Generation attempts / fresh images / valid pairs: **0 / 0 / 0**. Technical failure rate and visual scores are not applicable.
-- Real-corpus dry run: **BLOCKED**. Synthetic control renderer preview: **PASS**, no generation authorization or visual evidence.
+- Generation attempts / fresh images / valid pairs: **0 / 0 / 0**.
+- Real D dry run: **INCONCLUSIVE / DRY_RUN_NO_IMAGES**; payload equality, snapshot hashes and delta reviewed separately from the renderer. No visual improvement claim.
 
-R2B C/D/E/F original source files have recorded SHA-256 hashes, but lack frozen request/SAR2/RR2/CGC bindings. Kenny has structured fixtures but no traceable source image. No defensible substitution was found. All five registry entries remain `PENDING_EVIDENCE`.
+D now has a new prospective source-bound annotation, replayable snapshots and an admitted manifest. P0, PR0, PR1 and LOCK coverage is nonempty and preserved. No historical request was recovered. Kenny's original JPEG is received and unbound; its observed facade must be separated from any authorized inferred rooftop design before admission. C/E remain unbound; F depends on coverage and budget review.
 
-The session has image-generation capability. Missing corpus evidence is the primary blocker; `NO_GENERATOR` is only the harness result for an otherwise admissible run without a configured local bridge.
+Provider/model/quality are explicit dry-run placeholders. Before future image generation, choose supported operational settings, version and re-admit the manifest, refresh controls, repeat the dry run and review its delta. This advance authorizes no image calls.
 
-The provider adapter uses an explicit local JSON protocol; it has not been exercised against a real image provider. Blind review and closure controls have deterministic tests only. Resume by supplying source-bound snapshots and an attested manifest, admitting its hash, refreshing preconditions, reviewing the dry-run payload delta, configuring a real provider bridge, then generating and reviewing each pair within the eight-image budget. Do not infer visual PASS from the technical checks.
-
-[Harness / operational specification](../visual_scene_graph/pilot/README.md) · [Full QA](VSG_2B_CONTROLLED_GENERATION_PILOT_QA.json) · [Corpus audit](vsg_2b/corpus_audit.json) · [Controls](vsg_2b/controls.json) · [Regression](vsg_2b/regression.json) · [Current VSG-2A replay](vsg_2b/VSG_2A_REPLAY_QA.json) · [Control-only payload preview](vsg_2b/CONTROL_RENDERER_PREVIEW.json).
+[Runbook](../visual_scene_graph/pilot/fixtures/r2b_d_new_01/RUNBOOK.md) · [Full QA](VSG_2B_CONTROLLED_GENERATION_PILOT_QA.json) · [Corpus audit](vsg_2b/corpus_audit.json) · [Controls](vsg_2b/controls.json) · [Regression](vsg_2b/regression.json).
