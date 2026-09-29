@@ -33,7 +33,7 @@
       "name": "command_invocation/test_backdrop_presets.py",
       "status": "PASS",
       "stdout": "",
-      "stderr": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.471s\n\nOK"
+      "stderr": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.421s\n\nOK"
     },
     {
       "name": "hardening/test_operational_hardening.py",
@@ -51,7 +51,7 @@
       "name": "reference_runtime/test_reference_reasoning.py",
       "status": "PASS",
       "stdout": "",
-      "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.003s\n\nOK"
+      "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.005s\n\nOK"
     },
     {
       "name": "scene_intelligence/test_scene_intelligence.py",
@@ -81,19 +81,13 @@
       "name": "visual_scene_graph/test_causal_trace.py",
       "status": "PASS",
       "stdout": "",
-      "stderr": ".....................\n----------------------------------------------------------------------\nRan 21 tests in 3.120s\n\nOK"
+      "stderr": ".....................\n----------------------------------------------------------------------\nRan 21 tests in 3.114s\n\nOK"
     },
     {
       "name": "visual_scene_graph/test_generation_compiler.py",
       "status": "PASS",
       "stdout": "",
-      "stderr": "........................\n----------------------------------------------------------------------\nRan 24 tests in 5.753s\n\nOK"
-    },
-    {
-      "name": "visual_scene_graph/pilot/test_pilot.py",
-      "status": "PASS",
-      "stdout": "",
-      "stderr": "................................\n----------------------------------------------------------------------\nRan 32 tests in 4.799s\n\nOK"
+      "stderr": "........................\n----------------------------------------------------------------------\nRan 24 tests in 5.932s\n\nOK"
     },
     {
       "name": "integration/test_streetcraft_orchestrator.py",

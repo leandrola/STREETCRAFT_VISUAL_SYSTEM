@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "tests": 32,
+  "evidence": {
+    "name": "visual_scene_graph/pilot/test_pilot.py",
+    "status": "PASS",
+    "stdout": "",
+    "stderr": "................................\n----------------------------------------------------------------------\nRan 32 tests in 4.799s\n\nOK"
+  },
+  "scope": "Synthetic deterministic controls only; not visual evidence"
+}

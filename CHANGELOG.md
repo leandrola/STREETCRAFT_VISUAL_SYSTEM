@@ -1,3 +1,10 @@
+# VSG-2B — Controlled generation infrastructure · 2026-09-29
+
+- Added an explicitly invoked fixture harness, strict manifest/review schemas, frozen artifact checks, equivalent A/B renderers, provider bridge protocol, eight-call campaign budget and blind-review workflow.
+- Added deterministic negative routing and stable-client regression checks.
+- Pilot result: **BLOCKED: MISSING_FROZEN_SOURCE_BINDINGS**. No new images or visual comparisons; no production promotion. The user confirmed the missing source/snapshots are unavailable.
+- Preserved historical VSG-2A QA and recorded fresh baseline verification plus current-checkout replay evidence. [Details](visual_scene_graph/pilot/README.md).
+
 # BD01 / BD02 — Visual validation correction · 2026-09-28
 
 - Withdrew the inferred visual promotion. BDV-01 through BDV-10 are defined benchmark cases, all PENDING; visual PASS count is zero.

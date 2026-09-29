@@ -1,0 +1,89 @@
+{
+  "status": "BLOCKED",
+  "reason": "MISSING_FROZEN_SOURCE_BINDINGS",
+  "fixtures": [
+    {
+      "fixture_id": "KENNYS-ROOFTOP",
+      "critical": true,
+      "conditional": false,
+      "phenomena": [
+        "topology",
+        "Geometry Lock"
+      ],
+      "status": "BLOCKED",
+      "source": null,
+      "reason": "MISSING_SOURCE_IMAGE_BINDING",
+      "substitution": null,
+      "fresh_pairs": 0
+    },
+    {
+      "fixture_id": "R2B-191-C",
+      "critical": true,
+      "conditional": false,
+      "phenomena": [
+        "Reference Isolation",
+        "authored geography"
+      ],
+      "status": "BLOCKED",
+      "source": {
+        "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-C_source.jpg",
+        "sha256": "2130500a09548d4f9c1991a210de3cfa13d8ef63406dd0c3a78c257c68858a09"
+      },
+      "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING",
+      "substitution": null,
+      "fresh_pairs": 0
+    },
+    {
+      "fixture_id": "R2B-191-D",
+      "critical": true,
+      "conditional": false,
+      "phenomena": [
+        "Semantic Text Lock"
+      ],
+      "status": "BLOCKED",
+      "source": {
+        "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_source.jpg",
+        "sha256": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc"
+      },
+      "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING",
+      "substitution": null,
+      "fresh_pairs": 0
+    },
+    {
+      "fixture_id": "R2B-191-E",
+      "critical": true,
+      "conditional": false,
+      "phenomena": [
+        "Occlusion Lock"
+      ],
+      "status": "BLOCKED",
+      "source": {
+        "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-E_source.jpg",
+        "sha256": "f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860"
+      },
+      "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING",
+      "substitution": null,
+      "fresh_pairs": 0
+    },
+    {
+      "fixture_id": "R2B-191-F",
+      "critical": true,
+      "conditional": true,
+      "phenomena": [
+        "CG-F camera"
+      ],
+      "status": "BLOCKED",
+      "source": {
+        "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-F_source.png",
+        "sha256": "dc21c48d695cf3d14efa57365b246a765cec770792f173c47a1da1748d38f5bf"
+      },
+      "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING",
+      "substitution": null,
+      "fresh_pairs": 0
+    }
+  ],
+  "initial_image_budget": 8,
+  "conditional_fifth_pair": "Requires a versioned budget change after coverage review",
+  "generator_capability": "Session image generation exists; corpus gate prevents its use. No local provider bridge configured.",
+  "user_confirmation": "User confirmed no additional snapshots or Kenny source image on 2026-09-29."
+}

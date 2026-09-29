@@ -1,0 +1,140 @@
+{
+  "suite": "VSG-2B Controlled Generation Pilot",
+  "date": "2026-09-29",
+  "status": "BLOCKED",
+  "reason": "MISSING_FROZEN_SOURCE_BINDINGS",
+  "infrastructure_status": "IMPLEMENTED",
+  "control_tests": 32,
+  "control_status": "PASS",
+  "vsg2a_verification": {
+    "status": "PASS",
+    "errors": [],
+    "files_verified": 42,
+    "cases_verified": 25
+  },
+  "unified_regression": "PASS",
+  "dependencies": {
+    "python": "3.14.5",
+    "jsonschema": "4.26.0",
+    "Pillow": "12.3.0"
+  },
+  "production_authorized": false,
+  "stable_client_changed": false,
+  "image_budget": 8,
+  "generation_attempts": 0,
+  "fresh_images": 0,
+  "valid_pairs": 0,
+  "technical_failures": 0,
+  "technical_failure_rate": null,
+  "visual_verdict": "INDETERMINATE",
+  "visual_findings": [],
+  "dry_run": {
+    "real_corpus": "BLOCKED",
+    "control_renderer": "PASS",
+    "control_preview": {
+      "path": "validation/vsg_2b/CONTROL_RENDERER_PREVIEW.json",
+      "sha256": "07a101b6257d1b8a23e29ad6b27a93f0b3df85477575b939bab5cfffe77d05e3"
+    }
+  },
+  "corpus": {
+    "status": "BLOCKED",
+    "reason": "MISSING_FROZEN_SOURCE_BINDINGS",
+    "fixtures": [
+      {
+        "fixture_id": "KENNYS-ROOFTOP",
+        "critical": true,
+        "conditional": false,
+        "phenomena": [
+          "topology",
+          "Geometry Lock"
+        ],
+        "status": "BLOCKED",
+        "source": null,
+        "reason": "MISSING_SOURCE_IMAGE_BINDING",
+        "substitution": null,
+        "fresh_pairs": 0
+      },
+      {
+        "fixture_id": "R2B-191-C",
+        "critical": true,
+        "conditional": false,
+        "phenomena": [
+          "Reference Isolation",
+          "authored geography"
+        ],
+        "status": "BLOCKED",
+        "source": {
+          "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-C_source.jpg",
+          "sha256": "2130500a09548d4f9c1991a210de3cfa13d8ef63406dd0c3a78c257c68858a09"
+        },
+        "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING",
+        "substitution": null,
+        "fresh_pairs": 0
+      },
+      {
+        "fixture_id": "R2B-191-D",
+        "critical": true,
+        "conditional": false,
+        "phenomena": [
+          "Semantic Text Lock"
+        ],
+        "status": "BLOCKED",
+        "source": {
+          "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_source.jpg",
+          "sha256": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc"
+        },
+        "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING",
+        "substitution": null,
+        "fresh_pairs": 0
+      },
+      {
+        "fixture_id": "R2B-191-E",
+        "critical": true,
+        "conditional": false,
+        "phenomena": [
+          "Occlusion Lock"
+        ],
+        "status": "BLOCKED",
+        "source": {
+          "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-E_source.jpg",
+          "sha256": "f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860"
+        },
+        "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING",
+        "substitution": null,
+        "fresh_pairs": 0
+      },
+      {
+        "fixture_id": "R2B-191-F",
+        "critical": true,
+        "conditional": true,
+        "phenomena": [
+          "CG-F camera"
+        ],
+        "status": "BLOCKED",
+        "source": {
+          "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-F_source.png",
+          "sha256": "dc21c48d695cf3d14efa57365b246a765cec770792f173c47a1da1748d38f5bf"
+        },
+        "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING",
+        "substitution": null,
+        "fresh_pairs": 0
+      }
+    ],
+    "initial_image_budget": 8,
+    "conditional_fifth_pair": "Requires a versioned budget change after coverage review",
+    "generator_capability": "Session image generation exists; corpus gate prevents its use. No local provider bridge configured.",
+    "user_confirmation": "User confirmed no additional snapshots or Kenny source image on 2026-09-29."
+  },
+  "preconditions": {
+    "path": "validation/vsg_2b/preconditions.json",
+    "sha256": "a41e0f7807896afb207c08bcfed0e682e5756312f221793fd64a6b7c2dd51f37"
+  },
+  "limitations": [
+    "No frozen source-to-snapshot bindings; user confirmed unavailable.",
+    "No local provider bridge configured; session image tool exists but source gate blocks generation.",
+    "No independent visual review or output comparison performed.",
+    "No historical candidate reused as a fresh output.",
+    "Fifth pair and retries require a versioned plan/budget change.",
+    "Synthetic tests establish controls only, not visual merit."
+  ]
+}

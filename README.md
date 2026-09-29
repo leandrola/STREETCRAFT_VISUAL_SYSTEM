@@ -4,6 +4,8 @@ Streetcraft turns visual intent and reference evidence into a controlled generat
 
 **Current release: SVS 1.10.0 STABLE · one Streetcraft client.**
 
+**VSG-2B controlled pilot: BLOCKED — missing frozen source/snapshot bindings.** The isolated harness and deterministic controls are implemented; no new images or visual PASS are claimed. [Harness and reproduction](visual_scene_graph/pilot/README.md) · [QA report](validation/VSG_2B_CONTROLLED_GENERATION_PILOT_QA.md).
+
 ## What Streetcraft is
 
 Streetcraft is a visual system and orchestrator, not a generative image model, a single prompt or a collection of styles. Free-form generation leaves many decisions to an image model. Streetcraft makes those decisions explicit first: what must survive, what may change, what evidence can help, and what must remain unknown.

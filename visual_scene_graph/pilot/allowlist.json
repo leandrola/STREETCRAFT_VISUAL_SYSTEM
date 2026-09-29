@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "pilot_enabled_default": false,
+  "initial_image_budget": 8,
+  "fixtures": {
+    "KENNYS-ROOFTOP": {
+      "status": "PENDING_EVIDENCE",
+      "manifest_sha256": null,
+      "reason": "MISSING_SOURCE_IMAGE_BINDING"
+    },
+    "R2B-191-C": {
+      "status": "PENDING_EVIDENCE",
+      "manifest_sha256": null,
+      "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING"
+    },
+    "R2B-191-D": {
+      "status": "PENDING_EVIDENCE",
+      "manifest_sha256": null,
+      "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING"
+    },
+    "R2B-191-E": {
+      "status": "PENDING_EVIDENCE",
+      "manifest_sha256": null,
+      "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING"
+    },
+    "R2B-191-F": {
+      "status": "PENDING_EVIDENCE",
+      "manifest_sha256": null,
+      "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING"
+    }
+  }
+}
