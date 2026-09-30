@@ -52,7 +52,7 @@ no presupone un código Unicode presente en una imagen raster.
 | KOBS-05 | `ks_left_display`, [0.160,0.493,0.423,0.824] | Vidriera izquierda con instrumentos y batería; conservar disposición visible sin completar objetos ocultos. | — | HIGH; detalles pequeños UNKNOWN | S |
 | KOBS-06 | `ks_door`, [0.425,0.503,0.606,0.906] | Acceso central acristalado entre las dos vidrieras; divisiones y carteles pequeños visibles. | No congelado en K0 | HIGH para geometría | S |
 | KOBS-07 | `ks_right_display`, [0.606,0.493,0.861,0.821] | Vidriera derecha con instrumentos colgados y carteles; preservar distribución visible. | No congelado en K0 | HIGH para conjunto | S |
-| KOBS-08 | `ks_sale_strip`, [0.185,0.500,0.418,0.626] | Franja amarilla inclinada dentro de la vidriera izquierda. | EVERYTHING MUST GO!! | MEDIUM para puntuación; HIGH para palabras | S |
+| KOBS-08 | `ks_sale_strip`, [0.185,0.500,0.418,0.626] | Franja amarilla inclinada dentro de la vidriera izquierda. | EVERYTHING MUST GO; puntuación final no congelada | HIGH para palabras; puntuación pendiente | S |
 | KOBS-09 | `ks_lower_panels`, [0.156,0.807,0.868,0.915] | Zócalos/paneles oscuros bajo vidrieras; inscripción clara a la derecha. | No congelado en K0 | HIGH para forma; texto pendiente | S |
 | KOBS-10 | `ks_context`, [0,0,0.147,0.915] y [0.878,0,1,0.915] | Fragmentos de frentes vecinos, carteles laterales y poste a la derecha; no son componentes de Kenny. | Fuera del inventario literal K0 | HIGH para presencia | S |
 | KOBS-11 | `ks_sidewalk`, [0,0.906,1,1] | Acera, borde y franja de calzada delante del frente. | — | HIGH | S |
