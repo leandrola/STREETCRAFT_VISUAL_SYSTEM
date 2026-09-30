@@ -1,0 +1,553 @@
+{
+  "command_text": "/sc-preserve /sc-noinvent",
+  "mode": "T04",
+  "profile": "VP00",
+  "camera": "CG-B",
+  "scene": {
+    "scene_id": "VSG2B-KENNYS-NEW-01",
+    "source_identity": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+    "mode": "T04",
+    "profile": "VP00",
+    "entities": [
+      {
+        "entity_id": "ks_facade",
+        "label": "Frente de tienda casi frontal; fábrica, montantes y ritmo de vanos visibles; su parte superior está cortada.",
+        "kind": "FACADE",
+        "roles": [
+          "IDENTITY_ANCHOR"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "observed": true,
+        "confidence": "HIGH",
+        "salience": {},
+        "region": [
+          0.147,
+          0,
+          0.878,
+          0.915
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KOBS-01",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "entity_id": "ks_upper_windows",
+        "label": "Grupo de vanos superiores y divisiones visibles; se corta su continuidad superior.",
+        "kind": "WINDOW",
+        "roles": [
+          "CONTEXTUAL_SUPPORT"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "observed": true,
+        "confidence": "HIGH",
+        "salience": {},
+        "region": [
+          0.295,
+          0,
+          0.798,
+          0.166
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KOBS-02",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "entity_id": "ks_main_sign",
+        "label": "Letrero horizontal oscuro con letras claras y motivos musicales encima del banner.",
+        "kind": "SIGNAGE",
+        "roles": [
+          "IDENTITY_ANCHOR"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "observed": true,
+        "confidence": "HIGH",
+        "salience": {},
+        "region": [
+          0.149,
+          0.174,
+          0.861,
+          0.355
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KOBS-03",
+        "authority": "OBSERVED_SOURCE",
+        "text": "Kenny’s Music Shop",
+        "semantic_lock": true
+      },
+      {
+        "entity_id": "ks_banner",
+        "label": "Banner claro, palabras grandes rojas y frase central manuscrita.",
+        "kind": "SIGNAGE",
+        "roles": [
+          "IDENTITY_ANCHOR"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "observed": true,
+        "confidence": "HIGH",
+        "salience": {},
+        "region": [
+          0.174,
+          0.357,
+          0.849,
+          0.483
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KOBS-04",
+        "authority": "OBSERVED_SOURCE",
+        "text": "GOING out of BUSINESS",
+        "semantic_lock": true
+      },
+      {
+        "entity_id": "ks_left_display",
+        "label": "Vidriera izquierda con instrumentos y batería; conservar disposición visible sin completar objetos ocultos.",
+        "kind": "STOREFRONT",
+        "roles": [
+          "CONTEXTUAL_SUPPORT"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "observed": true,
+        "confidence": "HIGH",
+        "salience": {},
+        "region": [
+          0.16,
+          0.493,
+          0.423,
+          0.824
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KOBS-05",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "entity_id": "ks_door",
+        "label": "Acceso central acristalado entre las dos vidrieras; divisiones y carteles pequeños visibles.",
+        "kind": "DOOR",
+        "roles": [
+          "CONTEXTUAL_SUPPORT"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "observed": true,
+        "confidence": "HIGH",
+        "salience": {},
+        "region": [
+          0.425,
+          0.503,
+          0.606,
+          0.906
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KOBS-06",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "entity_id": "ks_right_display",
+        "label": "Vidriera derecha con instrumentos colgados y carteles; preservar distribución visible.",
+        "kind": "STOREFRONT",
+        "roles": [
+          "CONTEXTUAL_SUPPORT"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "observed": true,
+        "confidence": "HIGH",
+        "salience": {},
+        "region": [
+          0.606,
+          0.493,
+          0.861,
+          0.821
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KOBS-07",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "entity_id": "ks_sale_strip",
+        "label": "Franja amarilla inclinada dentro de la vidriera izquierda.",
+        "kind": "SURFACE",
+        "roles": [
+          "CONTEXTUAL_SUPPORT"
+        ],
+        "preservation_level": "P1",
+        "epistemic_class": "OBSERVED",
+        "observed": true,
+        "confidence": "HIGH",
+        "salience": {},
+        "region": [
+          0.185,
+          0.5,
+          0.418,
+          0.626
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KOBS-08",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "entity_id": "ks_lower_panels",
+        "label": "Zócalos/paneles oscuros bajo vidrieras; inscripción clara a la derecha.",
+        "kind": "FACADE",
+        "roles": [
+          "CONTEXTUAL_SUPPORT"
+        ],
+        "preservation_level": "P1",
+        "epistemic_class": "OBSERVED",
+        "observed": true,
+        "confidence": "HIGH",
+        "salience": {},
+        "region": [
+          0.156,
+          0.807,
+          0.868,
+          0.915
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KOBS-09",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "entity_id": "ks_context",
+        "label": "Fragmentos de frentes vecinos, carteles laterales y poste a la derecha; no son componentes de Kenny.",
+        "kind": "SURFACE",
+        "roles": [
+          "CONTEXTUAL_SUPPORT"
+        ],
+        "preservation_level": "P2",
+        "epistemic_class": "OBSERVED",
+        "observed": true,
+        "confidence": "HIGH",
+        "salience": {},
+        "region": [
+          0,
+          0,
+          0.147,
+          0.915
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KOBS-10",
+        "authority": "OBSERVED_SOURCE",
+        "vsg_properties": {
+          "visible_regions": [
+            [
+              0,
+              0,
+              0.147,
+              0.915
+            ],
+            [
+              0.878,
+              0,
+              1,
+              0.915
+            ]
+          ]
+        }
+      },
+      {
+        "entity_id": "ks_sidewalk",
+        "label": "Acera, borde y franja de calzada delante del frente.",
+        "kind": "SURFACE",
+        "roles": [
+          "CONTEXTUAL_SUPPORT"
+        ],
+        "preservation_level": "P2",
+        "epistemic_class": "OBSERVED",
+        "observed": true,
+        "confidence": "HIGH",
+        "salience": {},
+        "region": [
+          0,
+          0.906,
+          1,
+          1
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KOBS-11",
+        "authority": "OBSERVED_SOURCE"
+      }
+    ],
+    "relationships": [
+      {
+        "relationship_id": "KSR-01",
+        "subject": "ks_main_sign",
+        "predicate": "ABOVE",
+        "object": "ks_banner",
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.149,
+          0.174,
+          0.861,
+          0.483
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KSR-01",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "relationship_id": "KSR-02",
+        "subject": "ks_banner",
+        "predicate": "ABOVE",
+        "object": "ks_door",
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.174,
+          0.357,
+          0.849,
+          0.906
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KSR-02",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "relationship_id": "KSR-03",
+        "subject": "ks_left_display",
+        "predicate": "LEFT_OF",
+        "object": "ks_door",
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.16,
+          0.493,
+          0.606,
+          0.906
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KSR-03",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "relationship_id": "KSR-04",
+        "subject": "ks_right_display",
+        "predicate": "RIGHT_OF",
+        "object": "ks_door",
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.425,
+          0.493,
+          0.861,
+          0.906
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KSR-04",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "relationship_id": "KSR-05",
+        "subject": "ks_upper_windows",
+        "predicate": "ABOVE",
+        "object": "ks_main_sign",
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.149,
+          0,
+          0.861,
+          0.355
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KSR-05",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "relationship_id": "KSR-06",
+        "subject": "ks_main_sign",
+        "predicate": "PART_OF",
+        "object": "ks_facade",
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.147,
+          0,
+          0.878,
+          0.915
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KSR-06",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "relationship_id": "KSR-07",
+        "subject": "ks_door",
+        "predicate": "PART_OF",
+        "object": "ks_facade",
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.147,
+          0,
+          0.878,
+          0.915
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KSR-07",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "relationship_id": "KSR-08",
+        "subject": "ks_sale_strip",
+        "predicate": "INSIDE",
+        "object": "ks_left_display",
+        "protection": "PR1",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.16,
+          0.493,
+          0.423,
+          0.824
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KSR-08",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "relationship_id": "KSR-09",
+        "subject": "ks_lower_panels",
+        "predicate": "BELOW",
+        "object": "ks_left_display",
+        "protection": "PR1",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.156,
+          0.493,
+          0.868,
+          0.915
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KSR-09",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "relationship_id": "KSR-10",
+        "subject": "ks_lower_panels",
+        "predicate": "BELOW",
+        "object": "ks_right_display",
+        "protection": "PR1",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.156,
+          0.493,
+          0.868,
+          0.915
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KSR-10",
+        "authority": "OBSERVED_SOURCE"
+      }
+    ]
+  },
+  "k1_binding": {
+    "k0.md": {
+      "path": "visual_scene_graph/pilot/fixtures/kennys/K0_OBSERVED_INFERRED_DESIGN.md",
+      "sha256": "ed8f17f1204d041d47f0618378e7056b9d0d95fc4b67aa9d4203003b75194f90"
+    },
+    "reception.json": {
+      "path": "visual_scene_graph/pilot/fixtures/kennys/reception.json",
+      "sha256": "9ef38ea1a63d5d31f6542c888b336b4356dcdbf43822cfb5055b73d0604fb456"
+    },
+    "observations.json": {
+      "path": "visual_scene_graph/pilot/fixtures/kennys_new_01/observations.json",
+      "sha256": "d9fd45e27f5ae76c4ce0de39ae732031077d1e776e3c2c0fad1d45d5763779b2"
+    },
+    "design.json": {
+      "path": "visual_scene_graph/pilot/fixtures/kennys_new_01/design.json",
+      "sha256": "c09e93d07aebd51203e08d385a82c49918f318e47f60f51f3b672077cd98ee4e"
+    },
+    "source_provenance.json": {
+      "path": "visual_scene_graph/pilot/fixtures/kennys_new_01/source_provenance.json",
+      "sha256": "ed153e4ea87eaa031a483e8ae12d670b6e5c2d142924e4d944dc511425a92adc"
+    },
+    "preservation_baseline.json": {
+      "path": "visual_scene_graph/pilot/fixtures/kennys_new_01/preservation_baseline.json",
+      "sha256": "c2ea9832a4705caafb6b07564235996a7da90c8e97c498b6c2fd797ccc9e83d7"
+    }
+  },
+  "vsg": {
+    "mode": "OBSERVER"
+  },
+  "semantic_text_lock": "STRICT",
+  "reference_needs": [],
+  "query_budget": 0,
+  "allow_support": false,
+  "material_intensity_delta": 0,
+  "preserve": [
+    "Preserve observed facade proportions, opening rhythm, signs and all KSR relationships; source scope only.",
+    "ks_sale_strip: preserve known words EVERYTHING MUST GO; punctuation unresolved, graphic appearance retained."
+  ],
+  "transform": [
+    "Extend framing upward; moderately elevated controlled oblique presentation explicitly authorized by K0 (CG-B source/mode-authority exception). Preserve facade proportions and relationships; no aerial overview, detailed side walls or hidden historical reconstruction."
+  ],
+  "remove": [],
+  "infer": [
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:node:{\"epistemic_class\":\"AUTHORIZED_INFERENCE\",\"id\":\"kd_roof\",\"observed\":false,\"requirement\":\"REQUIRED\"}",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:node:{\"epistemic_class\":\"AUTHORIZED_INFERENCE\",\"id\":\"kd_parapet\",\"observed\":false,\"requirement\":\"REQUIRED\"}",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:node:{\"epistemic_class\":\"AUTHORIZED_INFERENCE\",\"id\":\"kd_hvac\",\"observed\":false,\"requirement\":\"REQUIRED\"}",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:relation:{\"authority\":\"AUTHORIZED_INFERENCE\",\"id\":\"KDR-01\",\"object\":\"ks_facade\",\"predicate\":\"ABOVE\",\"requirement\":\"REQUIRED\",\"subject\":\"kd_roof\"}",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:relation:{\"authority\":\"AUTHORIZED_INFERENCE\",\"id\":\"KDR-02\",\"object\":\"kd_roof\",\"predicate\":\"PART_OF\",\"requirement\":\"REQUIRED\",\"subject\":\"kd_parapet\"}",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:relation:{\"authority\":\"AUTHORIZED_INFERENCE\",\"id\":\"KDR-03\",\"object\":\"kd_roof\",\"predicate\":\"PART_OF\",\"requirement\":\"REQUIRED\",\"subject\":\"kd_hvac\"}",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:relation:{\"authority\":\"AUTHORIZED_INFERENCE\",\"id\":\"KDR-04\",\"object\":\"kd_parapet\",\"predicate\":\"BEHIND\",\"requirement\":\"REQUIRED\",\"subject\":\"kd_hvac\"}",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:KDES-01:kd_roof: REQUIRED volumetric roof with distinguishable plane and edge, plausible continuity above facade width; no extra inhabited storey.",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:KDES-02:kd_parapet: REQUIRED low perimeter parapet with visible thickness, compatible masonry character; no displaced sign, banner or openings.",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:KDES-03:kd_hvac: REQUIRED single compact unbranded HVAC supported on roof, behind parapet but partly visible; subordinate scale, no floating/interpenetration.",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:presentation:{\"authority\":\"AUTHORIZED_INFERENCE\",\"camera\":\"CG-B\",\"mode\":\"T04\",\"profile\":\"VP00\",\"scope\":\"Extend framing upward; moderately elevated controlled oblique presentation explicitly authorized by K0 (CG-B source/mode-authority exception). Preserve facade proportions and relationships; no aerial overview, detailed side walls or hidden historical reconstruction.\"}"
+  ],
+  "unknown": [
+    "KOBS-12: original rooftop, total height, rear depth and unseen lateral geometry UNKNOWN; prospective design does not recover them.",
+    "KOBS-08: preserve known words EVERYTHING MUST GO; final punctuation PARTIAL_OR_UNKNOWN; no completed literal lock.",
+    "KOBS-05/06/07/09/10: small signs, panels and shop-window microtext PARTIAL_OR_UNKNOWN; preserve graphic placement; no completion.",
+    "Hidden interiors and cropped architectural continuity UNKNOWN; do not reconstruct historical geometry."
+  ],
+  "forbid": [
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not label any design component or KDR relationship as observed source or fidelity to the unknown original rooftop.",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not redesign, resize or move source facade openings, door, identity signs or protected source relationships to accommodate rooftop.",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not add excluded components, extra storeys, brands, literal signage, invented microtext, real geography or reference architecture.",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not resolve original hidden geometry, unseen interiors, detailed side/rear facades or urban continuation.",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not replace the volumetric design with roof texture only or hide required components completely.",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not remove observed contextual elements or change weather, wetness, wear intensity or source material identity.",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:excluded:[\"kd_skylight\",\"chimney\",\"water_tank\",\"access_bulkhead\"]",
+    "replace_observed_evidence",
+    "resolve_locked_unknown_without_evidence"
+  ],
+  "text_tokens": [
+    {
+      "token_id": "ks_main_sign",
+      "literal": "Kenny’s Music Shop",
+      "confidence": 0.99,
+      "preservation_level": "P0",
+      "identity_bearing": true
+    },
+    {
+      "token_id": "ks_banner",
+      "literal": "GOING out of BUSINESS",
+      "confidence": 0.99,
+      "preservation_level": "P0",
+      "identity_bearing": true
+    },
+    {
+      "token_id": "ks_sale_strip_partial",
+      "literal": "EVERYTHING MUST GO",
+      "confidence": 0.7,
+      "preservation_level": "P1",
+      "identity_bearing": false
+    }
+  ]
+}

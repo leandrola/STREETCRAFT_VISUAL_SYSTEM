@@ -36,6 +36,7 @@ checks += [
  run('visual_scene_graph/test_generation_compiler.py',ROOT),
  run('visual_scene_graph/pilot/test_pilot.py',ROOT),
  run('visual_scene_graph/pilot/test_e_binding.py',ROOT),
+ run('visual_scene_graph/pilot/test_kenny_binding.py',ROOT),
  run('integration/test_streetcraft_orchestrator.py',ROOT),
  run('validation/test_patch_1_9_1.py',ROOT),
  run('validation/test_single_client_1_10_0.py',ROOT),

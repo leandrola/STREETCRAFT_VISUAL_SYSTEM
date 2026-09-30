@@ -4,9 +4,9 @@
   "initial_image_budget": 8,
   "fixtures": {
     "KENNYS-ROOFTOP": {
-      "status": "PENDING_EVIDENCE",
-      "manifest_sha256": null,
-      "reason": "RECEIVED_UNBOUND; ROOFTOP_IS_AUTHORIZED_INFERENCE"
+      "status": "ADMITTED",
+      "manifest_sha256": "f628730fb1dd043c6df5cdf2d47d76002b3266be21b8a97204d54914674b5c79",
+      "reason": "K1_SOURCE_DESIGN_SEPARATION_VERIFIED_DRY_RUN_ONLY"
     },
     "R2B-191-C": {
       "status": "PENDING_EVIDENCE",

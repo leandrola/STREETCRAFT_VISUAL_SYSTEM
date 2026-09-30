@@ -1,0 +1,125 @@
+{
+  "policies": {
+    "mode": "T04",
+    "profile": "VP00",
+    "camera": "CG-B",
+    "semantic_text_lock": "STRICT",
+    "material_intensity_delta": 0,
+    "occlusion_locks": [],
+    "cil": {
+      "commands": "/sc-preserve /sc-noinvent",
+      "resolved": {
+        "profile": "VP00",
+        "mode": "T04",
+        "camera": "CG-B",
+        "fear_city_identity": null,
+        "preservation": "STRICT_OBSERVED_EVIDENCE",
+        "uncertainty": "STRICT_UNKNOWN_PRESERVATION",
+        "explicit_fear_city_profile_override": false,
+        "identity_lock": null,
+        "occlusion_lock": null,
+        "frontalization": null,
+        "aspect_ratio": null,
+        "street_presence": null
+      }
+    },
+    "reference_reasoning": {
+      "version": "RR-2.0",
+      "status": "READY",
+      "queries": 0,
+      "query_budget": 0,
+      "need_results": {},
+      "unresolved_required": [],
+      "trace": [],
+      "admissions": [],
+      "generation_projection": [],
+      "locked_unknowns": []
+    },
+    "pre_generation_gate": {
+      "status": "PASS",
+      "findings": [],
+      "reference_preflight": {
+        "status": "PASS",
+        "admitted": [],
+        "rejected": []
+      }
+    },
+    "reference_features": [],
+    "text_render_plan": {
+      "tokens": [
+        {
+          "literal": "Kenny’s Music Shop",
+          "confidence": 0.99,
+          "state": "FROZEN_EXACT",
+          "preservation_level": "P0",
+          "identity_bearing": true,
+          "numeral": false,
+          "token_id": "ks_main_sign"
+        },
+        {
+          "literal": "GOING out of BUSINESS",
+          "confidence": 0.99,
+          "state": "FROZEN_EXACT",
+          "preservation_level": "P0",
+          "identity_bearing": true,
+          "numeral": false,
+          "token_id": "ks_banner"
+        },
+        {
+          "literal": "EVERYTHING MUST GO",
+          "confidence": 0.7,
+          "state": "MASK_PARTIAL",
+          "preservation_level": "P1",
+          "identity_bearing": false,
+          "numeral": false,
+          "token_id": "ks_sale_strip_partial"
+        }
+      ],
+      "proposed_text": {
+        "ks_main_sign": "Kenny’s Music Shop",
+        "ks_banner": "GOING out of BUSINESS",
+        "ks_sale_strip_partial": "EVERYTHING MUST GO"
+      }
+    }
+  },
+  "directives": {
+    "preserve": [
+      "Preserve observed facade proportions, opening rhythm, signs and all KSR relationships; source scope only.",
+      "ks_sale_strip: preserve known words EVERYTHING MUST GO; punctuation unresolved, graphic appearance retained."
+    ],
+    "transform": [
+      "Extend framing upward; moderately elevated controlled oblique presentation explicitly authorized by K0 (CG-B source/mode-authority exception). Preserve facade proportions and relationships; no aerial overview, detailed side walls or hidden historical reconstruction."
+    ],
+    "remove": [],
+    "infer": [
+      "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:node:{\"epistemic_class\":\"AUTHORIZED_INFERENCE\",\"id\":\"kd_roof\",\"observed\":false,\"requirement\":\"REQUIRED\"}",
+      "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:node:{\"epistemic_class\":\"AUTHORIZED_INFERENCE\",\"id\":\"kd_parapet\",\"observed\":false,\"requirement\":\"REQUIRED\"}",
+      "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:node:{\"epistemic_class\":\"AUTHORIZED_INFERENCE\",\"id\":\"kd_hvac\",\"observed\":false,\"requirement\":\"REQUIRED\"}",
+      "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:relation:{\"authority\":\"AUTHORIZED_INFERENCE\",\"id\":\"KDR-01\",\"object\":\"ks_facade\",\"predicate\":\"ABOVE\",\"requirement\":\"REQUIRED\",\"subject\":\"kd_roof\"}",
+      "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:relation:{\"authority\":\"AUTHORIZED_INFERENCE\",\"id\":\"KDR-02\",\"object\":\"kd_roof\",\"predicate\":\"PART_OF\",\"requirement\":\"REQUIRED\",\"subject\":\"kd_parapet\"}",
+      "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:relation:{\"authority\":\"AUTHORIZED_INFERENCE\",\"id\":\"KDR-03\",\"object\":\"kd_roof\",\"predicate\":\"PART_OF\",\"requirement\":\"REQUIRED\",\"subject\":\"kd_hvac\"}",
+      "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:relation:{\"authority\":\"AUTHORIZED_INFERENCE\",\"id\":\"KDR-04\",\"object\":\"kd_parapet\",\"predicate\":\"BEHIND\",\"requirement\":\"REQUIRED\",\"subject\":\"kd_hvac\"}",
+      "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:KDES-01:kd_roof: REQUIRED volumetric roof with distinguishable plane and edge, plausible continuity above facade width; no extra inhabited storey.",
+      "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:KDES-02:kd_parapet: REQUIRED low perimeter parapet with visible thickness, compatible masonry character; no displaced sign, banner or openings.",
+      "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:KDES-03:kd_hvac: REQUIRED single compact unbranded HVAC supported on roof, behind parapet but partly visible; subordinate scale, no floating/interpenetration.",
+      "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:presentation:{\"authority\":\"AUTHORIZED_INFERENCE\",\"camera\":\"CG-B\",\"mode\":\"T04\",\"profile\":\"VP00\",\"scope\":\"Extend framing upward; moderately elevated controlled oblique presentation explicitly authorized by K0 (CG-B source/mode-authority exception). Preserve facade proportions and relationships; no aerial overview, detailed side walls or hidden historical reconstruction.\"}"
+    ],
+    "unknown": [
+      "KOBS-12: original rooftop, total height, rear depth and unseen lateral geometry UNKNOWN; prospective design does not recover them.",
+      "KOBS-08: preserve known words EVERYTHING MUST GO; final punctuation PARTIAL_OR_UNKNOWN; no completed literal lock.",
+      "KOBS-05/06/07/09/10: small signs, panels and shop-window microtext PARTIAL_OR_UNKNOWN; preserve graphic placement; no completion.",
+      "Hidden interiors and cropped architectural continuity UNKNOWN; do not reconstruct historical geometry."
+    ],
+    "forbid": [
+      "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not label any design component or KDR relationship as observed source or fidelity to the unknown original rooftop.",
+      "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not redesign, resize or move source facade openings, door, identity signs or protected source relationships to accommodate rooftop.",
+      "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not add excluded components, extra storeys, brands, literal signage, invented microtext, real geography or reference architecture.",
+      "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not resolve original hidden geometry, unseen interiors, detailed side/rear facades or urban continuation.",
+      "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not replace the volumetric design with roof texture only or hide required components completely.",
+      "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not remove observed contextual elements or change weather, wetness, wear intensity or source material identity.",
+      "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:excluded:[\"kd_skylight\",\"chimney\",\"water_tank\",\"access_bulkhead\"]",
+      "replace_observed_evidence",
+      "resolve_locked_unknown_without_evidence"
+    ]
+  }
+}

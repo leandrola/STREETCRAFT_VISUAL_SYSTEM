@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "89bca550-75b4-4274-ba40-b38ea924990f",
+  "fixture_id": "KENNYS-ROOFTOP",
+  "status": "INCONCLUSIVE",
+  "reason": "DRY_RUN_NO_IMAGES",
+  "delta_sha256": "d04d58135715c95be089344674a99f51b78d8bb4a6ebd08da2194e2b97cc0e17",
+  "images": [],
+  "technical_failures": [],
+  "visual_verdict": "INDETERMINATE",
+  "seed_controlled": false
+}

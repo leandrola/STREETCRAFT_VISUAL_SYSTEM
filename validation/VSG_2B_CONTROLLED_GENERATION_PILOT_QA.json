@@ -4,7 +4,7 @@
   "status": "BLOCKED",
   "reason": "PENDING_VISUAL_AND_REMAINING_SOURCE_BINDINGS",
   "infrastructure_status": "IMPLEMENTED",
-  "control_tests": 48,
+  "control_tests": 74,
   "control_status": "PASS",
   "control_suites": [
     {
@@ -15,6 +15,11 @@
     {
       "name": "visual_scene_graph/pilot/test_e_binding.py",
       "tests": 16,
+      "status": "PASS"
+    },
+    {
+      "name": "visual_scene_graph/pilot/test_kenny_binding.py",
+      "tests": 26,
       "status": "PASS"
     }
   ],
@@ -46,12 +51,12 @@
       "R2B-191-D": {
         "status": "CORPUS_RECOVERY_DRY_RUN_PASS",
         "report": {
-          "path": "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/report.json",
-          "sha256": "2f41f392074a5930e4028134f5bed32496baf98182dcf41da6964198dbd76f29"
+          "path": "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/report.json",
+          "sha256": "bd4c412813fc5866034b09b2fa9056e6d128dd2a7d465e533ebe1042fd294853"
         },
         "review": {
-          "path": "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/delta_review.json",
-          "sha256": "ca6ef9b20fb8127b1763528b308e2f89054550738ccd2b5cbe10d160ea84a364"
+          "path": "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/delta_review.json",
+          "sha256": "f6e384ea6a853e4b1b71f4b44ef6fc49a2649c5f8dda746817b5f84a917a0c87"
         },
         "manifest_sha256": "d258f4784d7f27cabec9b6044142cdc809e19a9552e72924468e20d55dc3d3ec",
         "delta_sha256": "6159ef5f5666afb9037f5ba9512cf6a3d3c89a778f376961c9c570391ce59282",
@@ -81,12 +86,12 @@
       "R2B-191-E": {
         "status": "CORPUS_RECOVERY_DRY_RUN_PASS",
         "report": {
-          "path": "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/report.json",
-          "sha256": "494b48ac0399fc4f1a31716711b504409f7b84eabb6615201f80824ab5b74cef"
+          "path": "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/report.json",
+          "sha256": "b9731612dc39aa579bbab4d9a23b939852297d079732bff5510c7ec1ec51227c"
         },
         "review": {
-          "path": "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/delta_review.json",
-          "sha256": "c5aaef887e9d5f95bd77e1e97f65d33ed4c5fe2a99705508d28154b2a939be10"
+          "path": "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/delta_review.json",
+          "sha256": "57abee2c6aef8ada92295638cfddb9714906fe5fbe97b51c573240eb09f67e15"
         },
         "manifest_sha256": "6568570352087407c7f6f23955ffe6e4f6381c6861bdd674d78baaa16197b275",
         "delta_sha256": "a282bbee73b6613ce2d5ad0737065f3e2332ebce020e664161f38cc43fd17458",
@@ -112,12 +117,72 @@
             "ratio": 1.0
           }
         }
+      },
+      "KENNYS-ROOFTOP": {
+        "status": "CORPUS_RECOVERY_DRY_RUN_PASS",
+        "report": {
+          "path": "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/report.json",
+          "sha256": "91d9247760d5e13d3409422b8a3993f2242dedd3c1bbb90a1b17d776baaf0d3e"
+        },
+        "review": {
+          "path": "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/delta_review.json",
+          "sha256": "4065e5070b95ee18798e42d0d2e8660214e546f806064c5a71ca83bc02ae7805"
+        },
+        "manifest_sha256": "f628730fb1dd043c6df5cdf2d47d76002b3266be21b8a97204d54914674b5c79",
+        "delta_sha256": "d04d58135715c95be089344674a99f51b78d8bb4a6ebd08da2194e2b97cc0e17",
+        "coverage": {
+          "P0": {
+            "required": 21,
+            "preserved": 21,
+            "ratio": 1.0
+          },
+          "PR0": {
+            "required": 7,
+            "preserved": 7,
+            "ratio": 1.0
+          },
+          "PR1": {
+            "required": 3,
+            "preserved": 3,
+            "ratio": 1.0
+          },
+          "LOCK": {
+            "required": 7,
+            "preserved": 7,
+            "ratio": 1.0
+          }
+        },
+        "k1_status": "K1_CORPUS_RECOVERY_DRY_RUN_PASS",
+        "source_design_review": {
+          "status": "PASS",
+          "source_vsg2a": "PASS",
+          "design_authority": "PASS",
+          "design_nodes_required": 3,
+          "design_relations_required": 4,
+          "source_entities": 11,
+          "source_relations": 10,
+          "rooftop_graph_locks": {
+            "required": 0,
+            "preserved": 0,
+            "exercised": false
+          },
+          "visual_rubric": "PENDING",
+          "archive_calls": 0,
+          "sidecar_sha256": {
+            "k0.md": "ed8f17f1204d041d47f0618378e7056b9d0d95fc4b67aa9d4203003b75194f90",
+            "reception.json": "9ef38ea1a63d5d31f6542c888b336b4356dcdbf43822cfb5055b73d0604fb456",
+            "observations.json": "d9fd45e27f5ae76c4ce0de39ae732031077d1e776e3c2c0fad1d45d5763779b2",
+            "design.json": "c09e93d07aebd51203e08d385a82c49918f318e47f60f51f3b672077cd98ee4e",
+            "source_provenance.json": "ed153e4ea87eaa031a483e8ae12d670b6e5c2d142924e4d944dc511425a92adc",
+            "preservation_baseline.json": "c2ea9832a4705caafb6b07564235996a7da90c8e97c498b6c2fd797ccc9e83d7"
+          }
+        }
       }
     },
     "control_renderer": "PASS",
     "control_preview": {
       "path": "validation/vsg_2b/CONTROL_RENDERER_PREVIEW.json",
-      "sha256": "0b9c2fd61e9fe3e760bc3d69c33f2cbcbb7c947f8bd7863d609da2961d6ce5b1"
+      "sha256": "457e2e732809a3a87902875b13d31037bc04f7502014cb11d4d3b36af0a7c943"
     }
   },
   "corpus": {
@@ -130,19 +195,50 @@
         "conditional": false,
         "phenomena": [
           "observed facade preservation",
-          "authorized rooftop design (pending graph)"
+          "separate authorized rooftop design V1"
         ],
-        "status": "BLOCKED",
+        "status": "CORPUS_RECOVERY_DRY_RUN_PASS",
         "source": {
           "path": "visual_scene_graph/pilot/fixtures/kennys/source/kennys-shop.jpg",
           "sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2"
         },
-        "source_status": "RECEIVED_UNBOUND",
-        "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING",
+        "source_status": "BOUND_PROSPECTIVELY",
+        "reason": "PENDING_VISUAL",
         "substitution": null,
         "fresh_pairs": 0,
+        "source_design_gate": {
+          "status": "PASS",
+          "source_vsg2a": "PASS",
+          "design_authority": "PASS",
+          "design_nodes_required": 3,
+          "design_relations_required": 4,
+          "source_entities": 11,
+          "source_relations": 10,
+          "rooftop_graph_locks": {
+            "required": 0,
+            "preserved": 0,
+            "exercised": false
+          },
+          "visual_rubric": "PENDING",
+          "archive_calls": 0,
+          "sidecar_sha256": {
+            "k0.md": "ed8f17f1204d041d47f0618378e7056b9d0d95fc4b67aa9d4203003b75194f90",
+            "reception.json": "9ef38ea1a63d5d31f6542c888b336b4356dcdbf43822cfb5055b73d0604fb456",
+            "observations.json": "d9fd45e27f5ae76c4ce0de39ae732031077d1e776e3c2c0fad1d45d5763779b2",
+            "design.json": "c09e93d07aebd51203e08d385a82c49918f318e47f60f51f3b672077cd98ee4e",
+            "source_provenance.json": "ed153e4ea87eaa031a483e8ae12d670b6e5c2d142924e4d944dc511425a92adc",
+            "preservation_baseline.json": "c2ea9832a4705caafb6b07564235996a7da90c8e97c498b6c2fd797ccc9e83d7"
+          }
+        },
+        "manifest": "visual_scene_graph/pilot/fixtures/kennys_new_01/manifest.json",
+        "manifest_sha256": "f628730fb1dd043c6df5cdf2d47d76002b3266be21b8a97204d54914674b5c79",
+        "historical_recovery": false,
         "scope_record": "visual_scene_graph/pilot/fixtures/kennys/reception.json",
-        "rooftop_provenance": "AUTHORIZED_INFERENCE; not observed in source"
+        "rooftop_provenance": "AUTHORIZED_INFERENCE; not observed in source",
+        "dry_run_review": {
+          "path": "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/delta_review.json",
+          "sha256": "4065e5070b95ee18798e42d0d2e8660214e546f806064c5a71ca83bc02ae7805"
+        }
       },
       {
         "fixture_id": "R2B-191-C",
@@ -160,7 +256,9 @@
         "source_status": "RECEIVED_UNBOUND",
         "reason": "MISSING_FROZEN_REQUEST_SAR2_RR2_CGC_BINDING",
         "substitution": null,
-        "fresh_pairs": 0
+        "fresh_pairs": 0,
+        "c1_decision": "NO_GO_C0_UNVERIFIED",
+        "decision_record": "visual_scene_graph/pilot/fixtures/r2b_c_new_01/C1_NO_GO.md"
       },
       {
         "fixture_id": "R2B-191-D",
@@ -182,8 +280,8 @@
         "manifest_sha256": "d258f4784d7f27cabec9b6044142cdc809e19a9552e72924468e20d55dc3d3ec",
         "historical_recovery": false,
         "dry_run_review": {
-          "path": "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/delta_review.json",
-          "sha256": "ca6ef9b20fb8127b1763528b308e2f89054550738ccd2b5cbe10d160ea84a364"
+          "path": "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/delta_review.json",
+          "sha256": "f6e384ea6a853e4b1b71f4b44ef6fc49a2649c5f8dda746817b5f84a917a0c87"
         }
       },
       {
@@ -206,8 +304,8 @@
         "manifest_sha256": "6568570352087407c7f6f23955ffe6e4f6381c6861bdd674d78baaa16197b275",
         "historical_recovery": false,
         "dry_run_review": {
-          "path": "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/delta_review.json",
-          "sha256": "c5aaef887e9d5f95bd77e1e97f65d33ed4c5fe2a99705508d28154b2a939be10"
+          "path": "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/delta_review.json",
+          "sha256": "57abee2c6aef8ada92295638cfddb9714906fe5fbe97b51c573240eb09f67e15"
         }
       },
       {
@@ -235,14 +333,24 @@
   },
   "preconditions": {
     "path": "validation/vsg_2b/preconditions.json",
-    "sha256": "25e4cd7877a0e0c8d80c59f4944a4579f38547bf1e8524c2b4fb83174464fc82"
+    "sha256": "1f505c0f81fcda24018992bc019073ed4ad3e095ac5ba940420644954713d5e8"
+  },
+  "k1_status": "K1_CORPUS_RECOVERY_DRY_RUN_PASS",
+  "plan_limits": {
+    "five_hour_initial": "UNKNOWN",
+    "five_hour_final": "UNKNOWN",
+    "weekly_initial": "UNKNOWN",
+    "weekly_final": "UNKNOWN",
+    "observed_consumption": "UNKNOWN",
+    "numeric_cap_compliance_certified": false
   },
   "limitations": [
-    "D/E are prospective annotations of existing sources, not historical snapshot recovery.",
+    "D/E/Kenny are prospective annotations of existing sources, not historical snapshot recovery.",
     "E PR1 denominator is zero; no PR1 coverage is claimed.",
     "E has one RN_BLOCKED hint, zero queryable needs, zero Archive calls and no reconstruction authorization.",
-    "Other fixtures remain unbound; Kenny roof is authorized design, never observed source.",
-    "D/E provider/model/quality are provisional; no operational provider selection.",
+    "C remains RECEIVED_UNBOUND / NO_GO_C0_UNVERIFIED; F remains conditional.",
+    "Kenny source VSG-2A, design authority/integrity and visual PENDING are separate gates; rooftop Graph Locks 0/0 NOT_EXERCISED.",
+    "D/E/Kenny provider/model/quality are provisional; no operational provider selection.",
     "Automated technical delta review is not human or visual review.",
     "Controls establish no visual merit; zero fresh images or valid pairs."
   ]

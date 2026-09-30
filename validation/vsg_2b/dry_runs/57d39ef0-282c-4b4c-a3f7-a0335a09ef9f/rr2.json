@@ -1,0 +1,12 @@
+{
+  "version": "RR-2.0",
+  "status": "READY",
+  "queries": 0,
+  "query_budget": 4,
+  "need_results": {},
+  "unresolved_required": [],
+  "trace": [],
+  "admissions": [],
+  "generation_projection": [],
+  "locked_unknowns": []
+}

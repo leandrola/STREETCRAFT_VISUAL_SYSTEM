@@ -1,0 +1,552 @@
+{
+  "source_identity": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+  "mode": "T04",
+  "profile": "VP00",
+  "camera": "CG-B",
+  "preserve": [
+    "Preserve observed facade proportions, opening rhythm, signs and all KSR relationships; source scope only.",
+    "ks_sale_strip: preserve known words EVERYTHING MUST GO; punctuation unresolved, graphic appearance retained.",
+    "ks_facade:Frente de tienda casi frontal; fábrica, montantes y ritmo de vanos visibles; su parte superior está cortada.:PRESERVE_EXACT",
+    "ks_upper_windows:Grupo de vanos superiores y divisiones visibles; se corta su continuidad superior.:PRESERVE_EXACT",
+    "ks_main_sign:Letrero horizontal oscuro con letras claras y motivos musicales encima del banner.:PRESERVE_EXACT",
+    "ks_banner:Banner claro, palabras grandes rojas y frase central manuscrita.:PRESERVE_EXACT",
+    "ks_left_display:Vidriera izquierda con instrumentos y batería; conservar disposición visible sin completar objetos ocultos.:PRESERVE_EXACT",
+    "ks_door:Acceso central acristalado entre las dos vidrieras; divisiones y carteles pequeños visibles.:PRESERVE_EXACT",
+    "ks_right_display:Vidriera derecha con instrumentos colgados y carteles; preservar distribución visible.:PRESERVE_EXACT",
+    "ks_sale_strip:Franja amarilla inclinada dentro de la vidriera izquierda.:PRESERVE_CHARACTER",
+    "ks_lower_panels:Zócalos/paneles oscuros bajo vidrieras; inscripción clara a la derecha.:PRESERVE_CHARACTER",
+    "ks_context:Fragmentos de frentes vecinos, carteles laterales y poste a la derecha; no son componentes de Kenny.:PRESERVE_CONTEXT",
+    "ks_sidewalk:Acera, borde y franja de calzada delante del frente.:PRESERVE_CONTEXT"
+  ],
+  "transform": [
+    "Extend framing upward; moderately elevated controlled oblique presentation explicitly authorized by K0 (CG-B source/mode-authority exception). Preserve facade proportions and relationships; no aerial overview, detailed side walls or hidden historical reconstruction."
+  ],
+  "remove": [],
+  "infer": [
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:node:{\"epistemic_class\":\"AUTHORIZED_INFERENCE\",\"id\":\"kd_roof\",\"observed\":false,\"requirement\":\"REQUIRED\"}",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:node:{\"epistemic_class\":\"AUTHORIZED_INFERENCE\",\"id\":\"kd_parapet\",\"observed\":false,\"requirement\":\"REQUIRED\"}",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:node:{\"epistemic_class\":\"AUTHORIZED_INFERENCE\",\"id\":\"kd_hvac\",\"observed\":false,\"requirement\":\"REQUIRED\"}",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:relation:{\"authority\":\"AUTHORIZED_INFERENCE\",\"id\":\"KDR-01\",\"object\":\"ks_facade\",\"predicate\":\"ABOVE\",\"requirement\":\"REQUIRED\",\"subject\":\"kd_roof\"}",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:relation:{\"authority\":\"AUTHORIZED_INFERENCE\",\"id\":\"KDR-02\",\"object\":\"kd_roof\",\"predicate\":\"PART_OF\",\"requirement\":\"REQUIRED\",\"subject\":\"kd_parapet\"}",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:relation:{\"authority\":\"AUTHORIZED_INFERENCE\",\"id\":\"KDR-03\",\"object\":\"kd_roof\",\"predicate\":\"PART_OF\",\"requirement\":\"REQUIRED\",\"subject\":\"kd_hvac\"}",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:relation:{\"authority\":\"AUTHORIZED_INFERENCE\",\"id\":\"KDR-04\",\"object\":\"kd_parapet\",\"predicate\":\"BEHIND\",\"requirement\":\"REQUIRED\",\"subject\":\"kd_hvac\"}",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:KDES-01:kd_roof: REQUIRED volumetric roof with distinguishable plane and edge, plausible continuity above facade width; no extra inhabited storey.",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:KDES-02:kd_parapet: REQUIRED low perimeter parapet with visible thickness, compatible masonry character; no displaced sign, banner or openings.",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:KDES-03:kd_hvac: REQUIRED single compact unbranded HVAC supported on roof, behind parapet but partly visible; subordinate scale, no floating/interpenetration.",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:presentation:{\"authority\":\"AUTHORIZED_INFERENCE\",\"camera\":\"CG-B\",\"mode\":\"T04\",\"profile\":\"VP00\",\"scope\":\"Extend framing upward; moderately elevated controlled oblique presentation explicitly authorized by K0 (CG-B source/mode-authority exception). Preserve facade proportions and relationships; no aerial overview, detailed side walls or hidden historical reconstruction.\"}"
+  ],
+  "unknown": [
+    "KOBS-12: original rooftop, total height, rear depth and unseen lateral geometry UNKNOWN; prospective design does not recover them.",
+    "KOBS-08: preserve known words EVERYTHING MUST GO; final punctuation PARTIAL_OR_UNKNOWN; no completed literal lock.",
+    "KOBS-05/06/07/09/10: small signs, panels and shop-window microtext PARTIAL_OR_UNKNOWN; preserve graphic placement; no completion.",
+    "Hidden interiors and cropped architectural continuity UNKNOWN; do not reconstruct historical geometry."
+  ],
+  "forbid": [
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not label any design component or KDR relationship as observed source or fidelity to the unknown original rooftop.",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not redesign, resize or move source facade openings, door, identity signs or protected source relationships to accommodate rooftop.",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not add excluded components, extra storeys, brands, literal signage, invented microtext, real geography or reference architecture.",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not resolve original hidden geometry, unseen interiors, detailed side/rear facades or urban continuation.",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not replace the volumetric design with roof texture only or hide required components completely.",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not remove observed contextual elements or change weather, wetness, wear intensity or source material identity.",
+    "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:excluded:[\"kd_skylight\",\"chimney\",\"water_tank\",\"access_bulkhead\"]",
+    "replace_observed_evidence",
+    "resolve_locked_unknown_without_evidence",
+    "break_protected_relationships:ks_facade",
+    "break_protected_relationships:ks_upper_windows",
+    "break_protected_relationships:ks_main_sign",
+    "break_protected_relationships:ks_banner",
+    "break_protected_relationships:ks_left_display",
+    "break_protected_relationships:ks_door",
+    "break_protected_relationships:ks_right_display",
+    "break_protected_relationships:ks_sale_strip",
+    "break_protected_relationships:ks_lower_panels"
+  ],
+  "semantic_text_lock": "STRICT",
+  "material_intensity_delta": 0,
+  "occlusion_locks": [],
+  "scene_intelligence": {
+    "scene_id": "VSG2B-KENNYS-NEW-01",
+    "identity_anchors": [
+      "ks_facade",
+      "ks_main_sign",
+      "ks_banner"
+    ],
+    "protected_relationships": [
+      {
+        "relationship_id": "KSR-01",
+        "subject": "ks_main_sign",
+        "predicate": "ABOVE",
+        "object": "ks_banner",
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.149,
+          0.174,
+          0.861,
+          0.483
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KSR-01",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "relationship_id": "KSR-02",
+        "subject": "ks_banner",
+        "predicate": "ABOVE",
+        "object": "ks_door",
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.174,
+          0.357,
+          0.849,
+          0.906
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KSR-02",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "relationship_id": "KSR-03",
+        "subject": "ks_left_display",
+        "predicate": "LEFT_OF",
+        "object": "ks_door",
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.16,
+          0.493,
+          0.606,
+          0.906
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KSR-03",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "relationship_id": "KSR-04",
+        "subject": "ks_right_display",
+        "predicate": "RIGHT_OF",
+        "object": "ks_door",
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.425,
+          0.493,
+          0.861,
+          0.906
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KSR-04",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "relationship_id": "KSR-05",
+        "subject": "ks_upper_windows",
+        "predicate": "ABOVE",
+        "object": "ks_main_sign",
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.149,
+          0,
+          0.861,
+          0.355
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KSR-05",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "relationship_id": "KSR-06",
+        "subject": "ks_main_sign",
+        "predicate": "PART_OF",
+        "object": "ks_facade",
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.147,
+          0,
+          0.878,
+          0.915
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KSR-06",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "relationship_id": "KSR-07",
+        "subject": "ks_door",
+        "predicate": "PART_OF",
+        "object": "ks_facade",
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.147,
+          0,
+          0.878,
+          0.915
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KSR-07",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "relationship_id": "KSR-08",
+        "subject": "ks_sale_strip",
+        "predicate": "INSIDE",
+        "object": "ks_left_display",
+        "protection": "PR1",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.16,
+          0.493,
+          0.423,
+          0.824
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KSR-08",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "relationship_id": "KSR-09",
+        "subject": "ks_lower_panels",
+        "predicate": "BELOW",
+        "object": "ks_left_display",
+        "protection": "PR1",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.156,
+          0.493,
+          0.868,
+          0.915
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KSR-09",
+        "authority": "OBSERVED_SOURCE"
+      },
+      {
+        "relationship_id": "KSR-10",
+        "subject": "ks_lower_panels",
+        "predicate": "BELOW",
+        "object": "ks_right_display",
+        "protection": "PR1",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.156,
+          0.493,
+          0.868,
+          0.915
+        ],
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "evidence_id": "KSR-10",
+        "authority": "OBSERVED_SOURCE"
+      }
+    ],
+    "entity_actions": [
+      {
+        "entity_id": "ks_facade",
+        "action": "PRESERVE_EXACT",
+        "relationship_lock": true,
+        "protected_relationships": [
+          "KSR-06",
+          "KSR-07"
+        ],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      },
+      {
+        "entity_id": "ks_upper_windows",
+        "action": "PRESERVE_EXACT",
+        "relationship_lock": true,
+        "protected_relationships": [
+          "KSR-05"
+        ],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      },
+      {
+        "entity_id": "ks_main_sign",
+        "action": "PRESERVE_EXACT",
+        "relationship_lock": true,
+        "protected_relationships": [
+          "KSR-01",
+          "KSR-05",
+          "KSR-06"
+        ],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      },
+      {
+        "entity_id": "ks_banner",
+        "action": "PRESERVE_EXACT",
+        "relationship_lock": true,
+        "protected_relationships": [
+          "KSR-01",
+          "KSR-02"
+        ],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      },
+      {
+        "entity_id": "ks_left_display",
+        "action": "PRESERVE_EXACT",
+        "relationship_lock": true,
+        "protected_relationships": [
+          "KSR-03",
+          "KSR-08",
+          "KSR-09"
+        ],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      },
+      {
+        "entity_id": "ks_door",
+        "action": "PRESERVE_EXACT",
+        "relationship_lock": true,
+        "protected_relationships": [
+          "KSR-02",
+          "KSR-03",
+          "KSR-04",
+          "KSR-07"
+        ],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      },
+      {
+        "entity_id": "ks_right_display",
+        "action": "PRESERVE_EXACT",
+        "relationship_lock": true,
+        "protected_relationships": [
+          "KSR-04",
+          "KSR-10"
+        ],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      },
+      {
+        "entity_id": "ks_sale_strip",
+        "action": "PRESERVE_CHARACTER",
+        "relationship_lock": true,
+        "protected_relationships": [
+          "KSR-08"
+        ],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      },
+      {
+        "entity_id": "ks_lower_panels",
+        "action": "PRESERVE_CHARACTER",
+        "relationship_lock": true,
+        "protected_relationships": [
+          "KSR-09",
+          "KSR-10"
+        ],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      },
+      {
+        "entity_id": "ks_context",
+        "action": "PRESERVE_CONTEXT",
+        "relationship_lock": false,
+        "protected_relationships": [],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      },
+      {
+        "entity_id": "ks_sidewalk",
+        "action": "PRESERVE_CONTEXT",
+        "relationship_lock": false,
+        "protected_relationships": [],
+        "salience": {
+          "score": 0.0,
+          "band": "MINOR_ATTENTION",
+          "axes": {
+            "identity_salience": 0.0,
+            "structural_dependency": 0.0,
+            "task_relevance": 0.0,
+            "relationship_centrality": 0.0,
+            "temporal_relevance": 0.0
+          }
+        }
+      }
+    ],
+    "unknown_locks": [],
+    "reference_need_hints": []
+  },
+  "cil": {
+    "commands": "/sc-preserve /sc-noinvent",
+    "resolved": {
+      "profile": "VP00",
+      "mode": "T04",
+      "camera": "CG-B",
+      "fear_city_identity": null,
+      "preservation": "STRICT_OBSERVED_EVIDENCE",
+      "uncertainty": "STRICT_UNKNOWN_PRESERVATION",
+      "explicit_fear_city_profile_override": false,
+      "identity_lock": null,
+      "occlusion_lock": null,
+      "frontalization": null,
+      "aspect_ratio": null,
+      "street_presence": null
+    }
+  },
+  "reference_reasoning": {
+    "version": "RR-2.0",
+    "status": "READY",
+    "queries": 0,
+    "query_budget": 0,
+    "need_results": {},
+    "unresolved_required": [],
+    "trace": [],
+    "admissions": [],
+    "generation_projection": [],
+    "locked_unknowns": []
+  },
+  "pre_generation_gate": {
+    "status": "PASS",
+    "findings": [],
+    "reference_preflight": {
+      "status": "PASS",
+      "admitted": [],
+      "rejected": []
+    }
+  },
+  "reference_features": [],
+  "text_render_plan": {
+    "tokens": [
+      {
+        "literal": "Kenny’s Music Shop",
+        "confidence": 0.99,
+        "state": "FROZEN_EXACT",
+        "preservation_level": "P0",
+        "identity_bearing": true,
+        "numeral": false,
+        "token_id": "ks_main_sign"
+      },
+      {
+        "literal": "GOING out of BUSINESS",
+        "confidence": 0.99,
+        "state": "FROZEN_EXACT",
+        "preservation_level": "P0",
+        "identity_bearing": true,
+        "numeral": false,
+        "token_id": "ks_banner"
+      },
+      {
+        "literal": "EVERYTHING MUST GO",
+        "confidence": 0.7,
+        "state": "MASK_PARTIAL",
+        "preservation_level": "P1",
+        "identity_bearing": false,
+        "numeral": false,
+        "token_id": "ks_sale_strip_partial"
+      }
+    ],
+    "proposed_text": {
+      "ks_main_sign": "Kenny’s Music Shop",
+      "ks_banner": "GOING out of BUSINESS",
+      "ks_sale_strip_partial": "EVERYTHING MUST GO"
+    }
+  }
+}

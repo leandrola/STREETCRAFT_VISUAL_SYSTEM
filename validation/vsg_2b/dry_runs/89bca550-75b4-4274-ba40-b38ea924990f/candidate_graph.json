@@ -1,0 +1,841 @@
+{
+  "schema_version": "1.0.0",
+  "mode": "OBSERVER",
+  "governs_generation": false,
+  "scene_id": "VSG2B-KENNYS-NEW-01",
+  "source_identity": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+  "nodes": [
+    {
+      "id": "ks_banner",
+      "type": "sign",
+      "source_kind": "SIGNAGE",
+      "label": "Banner claro, palabras grandes rojas y frase central manuscrita.",
+      "confidence": 0.9,
+      "epistemic_class": "OBSERVED",
+      "observed": true,
+      "locks": {
+        "identity": true,
+        "semantic": true,
+        "geometry": false,
+        "occlusion": false
+      },
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0.174,
+          0.357,
+          0.849,
+          0.483
+        ],
+        "evidence_id": "KOBS-04"
+      },
+      "properties": {
+        "text": "GOING out of BUSINESS"
+      }
+    },
+    {
+      "id": "ks_context",
+      "type": "unclassified",
+      "source_kind": "SURFACE",
+      "label": "Fragmentos de frentes vecinos, carteles laterales y poste a la derecha; no son componentes de Kenny.",
+      "confidence": 0.9,
+      "epistemic_class": "OBSERVED",
+      "observed": true,
+      "locks": {
+        "identity": false,
+        "semantic": false,
+        "geometry": false,
+        "occlusion": false
+      },
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0,
+          0,
+          0.147,
+          0.915
+        ],
+        "evidence_id": "KOBS-10"
+      },
+      "properties": {
+        "visible_regions": [
+          [
+            0,
+            0,
+            0.147,
+            0.915
+          ],
+          [
+            0.878,
+            0,
+            1,
+            0.915
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ks_door",
+      "type": "door",
+      "source_kind": "DOOR",
+      "label": "Acceso central acristalado entre las dos vidrieras; divisiones y carteles pequeños visibles.",
+      "confidence": 0.9,
+      "epistemic_class": "OBSERVED",
+      "observed": true,
+      "locks": {
+        "identity": false,
+        "semantic": false,
+        "geometry": true,
+        "occlusion": false
+      },
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0.425,
+          0.503,
+          0.606,
+          0.906
+        ],
+        "evidence_id": "KOBS-06"
+      }
+    },
+    {
+      "id": "ks_facade",
+      "type": "facade",
+      "source_kind": "FACADE",
+      "label": "Frente de tienda casi frontal; fábrica, montantes y ritmo de vanos visibles; su parte superior está cortada.",
+      "confidence": 0.9,
+      "epistemic_class": "OBSERVED",
+      "observed": true,
+      "locks": {
+        "identity": true,
+        "semantic": false,
+        "geometry": true,
+        "occlusion": false
+      },
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0.147,
+          0,
+          0.878,
+          0.915
+        ],
+        "evidence_id": "KOBS-01"
+      }
+    },
+    {
+      "id": "ks_left_display",
+      "type": "storefront",
+      "source_kind": "STOREFRONT",
+      "label": "Vidriera izquierda con instrumentos y batería; conservar disposición visible sin completar objetos ocultos.",
+      "confidence": 0.9,
+      "epistemic_class": "OBSERVED",
+      "observed": true,
+      "locks": {
+        "identity": false,
+        "semantic": false,
+        "geometry": true,
+        "occlusion": false
+      },
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0.16,
+          0.493,
+          0.423,
+          0.824
+        ],
+        "evidence_id": "KOBS-05"
+      }
+    },
+    {
+      "id": "ks_lower_panels",
+      "type": "facade",
+      "source_kind": "FACADE",
+      "label": "Zócalos/paneles oscuros bajo vidrieras; inscripción clara a la derecha.",
+      "confidence": 0.9,
+      "epistemic_class": "OBSERVED",
+      "observed": true,
+      "locks": {
+        "identity": false,
+        "semantic": false,
+        "geometry": false,
+        "occlusion": false
+      },
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0.156,
+          0.807,
+          0.868,
+          0.915
+        ],
+        "evidence_id": "KOBS-09"
+      }
+    },
+    {
+      "id": "ks_main_sign",
+      "type": "sign",
+      "source_kind": "SIGNAGE",
+      "label": "Letrero horizontal oscuro con letras claras y motivos musicales encima del banner.",
+      "confidence": 0.9,
+      "epistemic_class": "OBSERVED",
+      "observed": true,
+      "locks": {
+        "identity": true,
+        "semantic": true,
+        "geometry": false,
+        "occlusion": false
+      },
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0.149,
+          0.174,
+          0.861,
+          0.355
+        ],
+        "evidence_id": "KOBS-03"
+      },
+      "properties": {
+        "text": "Kenny’s Music Shop"
+      }
+    },
+    {
+      "id": "ks_right_display",
+      "type": "storefront",
+      "source_kind": "STOREFRONT",
+      "label": "Vidriera derecha con instrumentos colgados y carteles; preservar distribución visible.",
+      "confidence": 0.9,
+      "epistemic_class": "OBSERVED",
+      "observed": true,
+      "locks": {
+        "identity": false,
+        "semantic": false,
+        "geometry": true,
+        "occlusion": false
+      },
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0.606,
+          0.493,
+          0.861,
+          0.821
+        ],
+        "evidence_id": "KOBS-07"
+      }
+    },
+    {
+      "id": "ks_sale_strip",
+      "type": "unclassified",
+      "source_kind": "SURFACE",
+      "label": "Franja amarilla inclinada dentro de la vidriera izquierda.",
+      "confidence": 0.9,
+      "epistemic_class": "OBSERVED",
+      "observed": true,
+      "locks": {
+        "identity": false,
+        "semantic": false,
+        "geometry": false,
+        "occlusion": false
+      },
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0.185,
+          0.5,
+          0.418,
+          0.626
+        ],
+        "evidence_id": "KOBS-08"
+      }
+    },
+    {
+      "id": "ks_sidewalk",
+      "type": "unclassified",
+      "source_kind": "SURFACE",
+      "label": "Acera, borde y franja de calzada delante del frente.",
+      "confidence": 0.9,
+      "epistemic_class": "OBSERVED",
+      "observed": true,
+      "locks": {
+        "identity": false,
+        "semantic": false,
+        "geometry": false,
+        "occlusion": false
+      },
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0,
+          0.906,
+          1,
+          1
+        ],
+        "evidence_id": "KOBS-11"
+      }
+    },
+    {
+      "id": "ks_upper_windows",
+      "type": "window",
+      "source_kind": "WINDOW",
+      "label": "Grupo de vanos superiores y divisiones visibles; se corta su continuidad superior.",
+      "confidence": 0.9,
+      "epistemic_class": "OBSERVED",
+      "observed": true,
+      "locks": {
+        "identity": false,
+        "semantic": false,
+        "geometry": true,
+        "occlusion": false
+      },
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0.295,
+          0,
+          0.798,
+          0.166
+        ],
+        "evidence_id": "KOBS-02"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "KSR-01",
+      "type": "ABOVE",
+      "from": "ks_main_sign",
+      "to": "ks_banner",
+      "confidence": 0.9,
+      "protection": "PR0",
+      "epistemic_class": "OBSERVED",
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0.149,
+          0.174,
+          0.861,
+          0.483
+        ],
+        "evidence_id": "KSR-01"
+      }
+    },
+    {
+      "id": "KSR-02",
+      "type": "ABOVE",
+      "from": "ks_banner",
+      "to": "ks_door",
+      "confidence": 0.9,
+      "protection": "PR0",
+      "epistemic_class": "OBSERVED",
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0.174,
+          0.357,
+          0.849,
+          0.906
+        ],
+        "evidence_id": "KSR-02"
+      }
+    },
+    {
+      "id": "KSR-03",
+      "type": "LEFT_OF",
+      "from": "ks_left_display",
+      "to": "ks_door",
+      "confidence": 0.9,
+      "protection": "PR0",
+      "epistemic_class": "OBSERVED",
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0.16,
+          0.493,
+          0.606,
+          0.906
+        ],
+        "evidence_id": "KSR-03"
+      }
+    },
+    {
+      "id": "KSR-04",
+      "type": "RIGHT_OF",
+      "from": "ks_right_display",
+      "to": "ks_door",
+      "confidence": 0.9,
+      "protection": "PR0",
+      "epistemic_class": "OBSERVED",
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0.425,
+          0.493,
+          0.861,
+          0.906
+        ],
+        "evidence_id": "KSR-04"
+      }
+    },
+    {
+      "id": "KSR-05",
+      "type": "ABOVE",
+      "from": "ks_upper_windows",
+      "to": "ks_main_sign",
+      "confidence": 0.9,
+      "protection": "PR0",
+      "epistemic_class": "OBSERVED",
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0.149,
+          0,
+          0.861,
+          0.355
+        ],
+        "evidence_id": "KSR-05"
+      }
+    },
+    {
+      "id": "KSR-06",
+      "type": "PART_OF",
+      "from": "ks_main_sign",
+      "to": "ks_facade",
+      "confidence": 0.9,
+      "protection": "PR0",
+      "epistemic_class": "OBSERVED",
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0.147,
+          0,
+          0.878,
+          0.915
+        ],
+        "evidence_id": "KSR-06"
+      }
+    },
+    {
+      "id": "KSR-07",
+      "type": "PART_OF",
+      "from": "ks_door",
+      "to": "ks_facade",
+      "confidence": 0.9,
+      "protection": "PR0",
+      "epistemic_class": "OBSERVED",
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0.147,
+          0,
+          0.878,
+          0.915
+        ],
+        "evidence_id": "KSR-07"
+      }
+    },
+    {
+      "id": "KSR-08",
+      "type": "INSIDE",
+      "from": "ks_sale_strip",
+      "to": "ks_left_display",
+      "confidence": 0.9,
+      "protection": "PR1",
+      "epistemic_class": "OBSERVED",
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0.16,
+          0.493,
+          0.423,
+          0.824
+        ],
+        "evidence_id": "KSR-08"
+      }
+    },
+    {
+      "id": "KSR-09",
+      "type": "BELOW",
+      "from": "ks_lower_panels",
+      "to": "ks_left_display",
+      "confidence": 0.9,
+      "protection": "PR1",
+      "epistemic_class": "OBSERVED",
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0.156,
+          0.493,
+          0.868,
+          0.915
+        ],
+        "evidence_id": "KSR-09"
+      }
+    },
+    {
+      "id": "KSR-10",
+      "type": "BELOW",
+      "from": "ks_lower_panels",
+      "to": "ks_right_display",
+      "confidence": 0.9,
+      "protection": "PR1",
+      "epistemic_class": "OBSERVED",
+      "evidence": {
+        "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+        "region": [
+          0.156,
+          0.493,
+          0.868,
+          0.915
+        ],
+        "evidence_id": "KSR-10"
+      }
+    }
+  ],
+  "reference_observations": [],
+  "functional_subgraphs": [
+    {
+      "name": "semantic_text",
+      "nodes": [
+        "ks_banner",
+        "ks_main_sign"
+      ],
+      "edges": [
+        "KSR-01"
+      ]
+    },
+    {
+      "name": "rooftop",
+      "nodes": [],
+      "edges": []
+    },
+    {
+      "name": "geometry",
+      "nodes": [
+        "ks_door",
+        "ks_facade",
+        "ks_left_display",
+        "ks_lower_panels",
+        "ks_right_display",
+        "ks_upper_windows"
+      ],
+      "edges": [
+        "KSR-03",
+        "KSR-04",
+        "KSR-07",
+        "KSR-09",
+        "KSR-10"
+      ]
+    },
+    {
+      "name": "occlusion",
+      "nodes": [],
+      "edges": []
+    }
+  ],
+  "diagnostics": {
+    "unclassified_nodes": [
+      "ks_context",
+      "ks_sale_strip",
+      "ks_sidewalk"
+    ],
+    "unsupported_relations": [],
+    "dangling_relations": []
+  },
+  "provenance": {
+    "producer": "Streetcraft VSG-0 Observer",
+    "sar_version": "SAR2",
+    "rr_version": "RR2",
+    "rr_status": "READY",
+    "input_sha256": "1d307642437983a52205a20f131ddad4f537ad581d880c966f78da0fdcffa405",
+    "node_count": 11,
+    "edge_count": 10
+  },
+  "graph_locks": {
+    "version": "1.0.0",
+    "mode": "VALIDATE_ONLY",
+    "governs_generation": false,
+    "items": [
+      {
+        "id": "GL-GEO-KS_DOOR",
+        "type": "GEOMETRY_LOCK",
+        "target": {
+          "kind": "NODE",
+          "id": "ks_door"
+        },
+        "strength": "ABSOLUTE",
+        "enforcement": "VALIDATE_ONLY",
+        "expected": {
+          "node_type": "door",
+          "protected_topology": [
+            {
+              "id": "KSR-02",
+              "type": "ABOVE",
+              "from": "ks_banner",
+              "to": "ks_door"
+            },
+            {
+              "id": "KSR-03",
+              "type": "LEFT_OF",
+              "from": "ks_left_display",
+              "to": "ks_door"
+            },
+            {
+              "id": "KSR-04",
+              "type": "RIGHT_OF",
+              "from": "ks_right_display",
+              "to": "ks_door"
+            },
+            {
+              "id": "KSR-07",
+              "type": "PART_OF",
+              "from": "ks_door",
+              "to": "ks_facade"
+            }
+          ]
+        },
+        "provenance": {
+          "source": "VSG_NODE_LOCK",
+          "evidence": {
+            "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+            "region": [
+              0.425,
+              0.503,
+              0.606,
+              0.906
+            ],
+            "evidence_id": "KOBS-06"
+          }
+        }
+      },
+      {
+        "id": "GL-GEO-KS_FACADE",
+        "type": "GEOMETRY_LOCK",
+        "target": {
+          "kind": "NODE",
+          "id": "ks_facade"
+        },
+        "strength": "ABSOLUTE",
+        "enforcement": "VALIDATE_ONLY",
+        "expected": {
+          "node_type": "facade",
+          "protected_topology": [
+            {
+              "id": "KSR-06",
+              "type": "PART_OF",
+              "from": "ks_main_sign",
+              "to": "ks_facade"
+            },
+            {
+              "id": "KSR-07",
+              "type": "PART_OF",
+              "from": "ks_door",
+              "to": "ks_facade"
+            }
+          ]
+        },
+        "provenance": {
+          "source": "VSG_NODE_LOCK",
+          "evidence": {
+            "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+            "region": [
+              0.147,
+              0,
+              0.878,
+              0.915
+            ],
+            "evidence_id": "KOBS-01"
+          }
+        }
+      },
+      {
+        "id": "GL-GEO-KS_LEFT_DISPLAY",
+        "type": "GEOMETRY_LOCK",
+        "target": {
+          "kind": "NODE",
+          "id": "ks_left_display"
+        },
+        "strength": "ABSOLUTE",
+        "enforcement": "VALIDATE_ONLY",
+        "expected": {
+          "node_type": "storefront",
+          "protected_topology": [
+            {
+              "id": "KSR-03",
+              "type": "LEFT_OF",
+              "from": "ks_left_display",
+              "to": "ks_door"
+            },
+            {
+              "id": "KSR-08",
+              "type": "INSIDE",
+              "from": "ks_sale_strip",
+              "to": "ks_left_display"
+            },
+            {
+              "id": "KSR-09",
+              "type": "BELOW",
+              "from": "ks_lower_panels",
+              "to": "ks_left_display"
+            }
+          ]
+        },
+        "provenance": {
+          "source": "VSG_NODE_LOCK",
+          "evidence": {
+            "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+            "region": [
+              0.16,
+              0.493,
+              0.423,
+              0.824
+            ],
+            "evidence_id": "KOBS-05"
+          }
+        }
+      },
+      {
+        "id": "GL-GEO-KS_RIGHT_DISPLAY",
+        "type": "GEOMETRY_LOCK",
+        "target": {
+          "kind": "NODE",
+          "id": "ks_right_display"
+        },
+        "strength": "ABSOLUTE",
+        "enforcement": "VALIDATE_ONLY",
+        "expected": {
+          "node_type": "storefront",
+          "protected_topology": [
+            {
+              "id": "KSR-04",
+              "type": "RIGHT_OF",
+              "from": "ks_right_display",
+              "to": "ks_door"
+            },
+            {
+              "id": "KSR-10",
+              "type": "BELOW",
+              "from": "ks_lower_panels",
+              "to": "ks_right_display"
+            }
+          ]
+        },
+        "provenance": {
+          "source": "VSG_NODE_LOCK",
+          "evidence": {
+            "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+            "region": [
+              0.606,
+              0.493,
+              0.861,
+              0.821
+            ],
+            "evidence_id": "KOBS-07"
+          }
+        }
+      },
+      {
+        "id": "GL-GEO-KS_UPPER_WINDOWS",
+        "type": "GEOMETRY_LOCK",
+        "target": {
+          "kind": "NODE",
+          "id": "ks_upper_windows"
+        },
+        "strength": "ABSOLUTE",
+        "enforcement": "VALIDATE_ONLY",
+        "expected": {
+          "node_type": "window",
+          "protected_topology": [
+            {
+              "id": "KSR-05",
+              "type": "ABOVE",
+              "from": "ks_upper_windows",
+              "to": "ks_main_sign"
+            }
+          ]
+        },
+        "provenance": {
+          "source": "VSG_NODE_LOCK",
+          "evidence": {
+            "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+            "region": [
+              0.295,
+              0,
+              0.798,
+              0.166
+            ],
+            "evidence_id": "KOBS-02"
+          }
+        }
+      },
+      {
+        "id": "GL-SEM-KS_BANNER",
+        "type": "SEMANTIC_TEXT_LOCK",
+        "target": {
+          "kind": "NODE",
+          "id": "ks_banner"
+        },
+        "strength": "ABSOLUTE",
+        "enforcement": "VALIDATE_ONLY",
+        "expected": {
+          "text": "GOING out of BUSINESS",
+          "node_type": "sign"
+        },
+        "provenance": {
+          "source": "VSG_NODE_LOCK",
+          "evidence": {
+            "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+            "region": [
+              0.174,
+              0.357,
+              0.849,
+              0.483
+            ],
+            "evidence_id": "KOBS-04"
+          }
+        }
+      },
+      {
+        "id": "GL-SEM-KS_MAIN_SIGN",
+        "type": "SEMANTIC_TEXT_LOCK",
+        "target": {
+          "kind": "NODE",
+          "id": "ks_main_sign"
+        },
+        "strength": "ABSOLUTE",
+        "enforcement": "VALIDATE_ONLY",
+        "expected": {
+          "text": "Kenny’s Music Shop",
+          "node_type": "sign"
+        },
+        "provenance": {
+          "source": "VSG_NODE_LOCK",
+          "evidence": {
+            "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+            "region": [
+              0.149,
+              0.174,
+              0.861,
+              0.355
+            ],
+            "evidence_id": "KOBS-03"
+          }
+        }
+      }
+    ],
+    "summary": {
+      "total": 7,
+      "by_type": {
+        "GEOMETRY_LOCK": 5,
+        "OCCLUSION_LOCK": 0,
+        "REFERENCE_ISOLATION_LOCK": 0,
+        "SEMANTIC_TEXT_LOCK": 2
+      },
+      "warnings": []
+    },
+    "ledger_sha256": "86c077bd67f3573422c4af8f8fa6d705bea180115ea6462ec401e1572e4ec73b"
+  }
+}

@@ -1,3 +1,10 @@
+# VSG-2B — K1 Kenny source/design binding and dry run · 2026-09-29
+
+- Kenny closes `K1_CORPUS_RECOVERY_DRY_RUN_PASS`: observed source graphs and separately authorized rooftop sidecar, linked to the original JPEG and current K0.
+- Added blocking frozen-byte authority checks in replay, prepare, execution and persisted review; six sidecars archived with the ten manifest artifacts. No central SAR2/VSG/Compiler contract changes.
+- Added 26 mutation/bypass controls; 74 pilot controls, 23 unified checks and 25 VSG-2A cases pass. D/E fixtures, historical runs and deltas are unchanged; C remains RECEIVED_UNBOUND / NO_GO_C0_UNVERIFIED.
+- A/B differs only in source relationship/lock serialization. Design integrity (3 nodes / 4 relations) is separate; rooftop Graph Locks 0/0 unexercised. Global BLOCKED / PENDING_VISUAL; zero Archive/generator calls, images or visual pairs.
+
 # VSG-2B — Prospective E Occlusion Lock binding and dry run · 2026-09-29
 
 - Added E source-region provenance, conservative request, same-run snapshots, independent graphs, context, contract, frozen rubric and admitted manifest; no historical recovery claim. Unknown behind-content stays locked, with no exact reconstruction/reference fill.

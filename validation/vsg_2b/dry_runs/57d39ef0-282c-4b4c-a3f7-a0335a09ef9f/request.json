@@ -1,0 +1,196 @@
+{
+  "command_text": "/sc-core /sc-lock",
+  "scene": {
+    "scene_id": "VSG2B-R2B-D-NEW-01",
+    "source_identity": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+    "mode": "T01",
+    "profile": "VP00",
+    "entities": [
+      {
+        "entity_id": "facade_01",
+        "label": "visible left masonry facade and exterior fire escape",
+        "kind": "FACADE",
+        "roles": [
+          "STRUCTURAL_CORE"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {},
+        "region": [
+          0.025,
+          0.065,
+          0.46,
+          0.956
+        ],
+        "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+        "evidence_id": "D-OBS-facade_01"
+      },
+      {
+        "entity_id": "diner_01",
+        "label": "visible street-level diner storefront with striped fascia",
+        "kind": "STOREFRONT",
+        "roles": [
+          "STRUCTURAL_CORE",
+          "IDENTITY_ANCHOR"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {},
+        "region": [
+          0.478,
+          0.668,
+          0.945,
+          0.951
+        ],
+        "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+        "evidence_id": "D-OBS-diner_01"
+      },
+      {
+        "entity_id": "sign_01",
+        "label": "yellow TERMINAL DINER sign",
+        "kind": "SIGNAGE",
+        "roles": [
+          "IDENTITY_ANCHOR",
+          "RELATIONSHIP_ANCHOR"
+        ],
+        "preservation_level": "P0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {},
+        "region": [
+          0.455,
+          0.527,
+          0.6,
+          0.628
+        ],
+        "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+        "evidence_id": "D-OBS-sign_01",
+        "text": "TERMINAL DINER",
+        "semantic_lock": true
+      },
+      {
+        "entity_id": "billboard_01",
+        "label": "upper advertising board; wording not transcribed",
+        "kind": "SIGNAGE",
+        "roles": [
+          "CONTEXTUAL_SUPPORT"
+        ],
+        "preservation_level": "P2",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {},
+        "region": [
+          0.437,
+          0.018,
+          0.797,
+          0.37
+        ],
+        "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+        "evidence_id": "D-OBS-billboard_01"
+      },
+      {
+        "entity_id": "fascia_01",
+        "label": "left storefront fascia; exact lettering uncertain",
+        "kind": "SIGNAGE",
+        "roles": [
+          "CONTEXTUAL_SUPPORT"
+        ],
+        "preservation_level": "P2",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "observed": true,
+        "salience": {},
+        "region": [
+          0.05,
+          0.622,
+          0.405,
+          0.725
+        ],
+        "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+        "evidence_id": "D-OBS-fascia_01"
+      }
+    ],
+    "relationships": [
+      {
+        "relationship_id": "rel_sign_above_diner",
+        "subject": "sign_01",
+        "predicate": "ABOVE",
+        "object": "diner_01",
+        "protection": "PR0",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.455,
+          0.527,
+          0.945,
+          0.951
+        ],
+        "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+        "evidence_id": "D-OBS-rel_sign_above_diner"
+      },
+      {
+        "relationship_id": "rel_facade_left_of_diner",
+        "subject": "facade_01",
+        "predicate": "LEFT_OF",
+        "object": "diner_01",
+        "protection": "PR1",
+        "epistemic_class": "OBSERVED",
+        "confidence": "HIGH",
+        "region": [
+          0.025,
+          0.065,
+          0.945,
+          0.956
+        ],
+        "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+        "evidence_id": "D-OBS-rel_facade_left_of_diner"
+      }
+    ]
+  },
+  "vsg": {
+    "mode": "OBSERVER"
+  },
+  "reference_needs": [],
+  "preserve": [
+    "Source framing, oblique view, visible facade, diner storefront and graphic layouts.",
+    "sign_01: TERMINAL above DINER in two lines; preserve exact spelling."
+  ],
+  "transform": [],
+  "remove": [],
+  "infer": [],
+  "unknown": [
+    "Exact lettering on fascia_01 is uncertain; billboard_01 wording is not transcribed in this annotation.",
+    "Hidden interiors and unseen building surfaces are unannotated."
+  ],
+  "forbid": [
+    "Invent or complete exact text on fascia_01 or untranscribed billboard_01.",
+    "Add hidden architecture, rooftop equipment, geographic identity or documentary history."
+  ],
+  "text_tokens": [
+    {
+      "token_id": "sign_01",
+      "literal": "TERMINAL DINER",
+      "confidence": 0.99,
+      "preservation_level": "P0",
+      "identity_bearing": true
+    },
+    {
+      "token_id": "fascia_01",
+      "literal": null,
+      "confidence": 0.2,
+      "preservation_level": "P2"
+    },
+    {
+      "token_id": "billboard_01",
+      "literal": null,
+      "confidence": null,
+      "preservation_level": "P2"
+    }
+  ]
+}

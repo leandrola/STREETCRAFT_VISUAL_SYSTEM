@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "fixture_id": "KENNYS-ROOFTOP",
+  "reviewer": "Codex / independent persisted-byte review",
+  "review_method": "Separate review implementation; does not invoke or import the harness renderer. Automated technical review, not human or blind visual review.",
+  "reviewed_at": "2026-09-30T01:03:16.008259+00:00",
+  "head": "8009c2f5ef625a45ace132b02bfb8ac5f28e718a",
+  "run_path": "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c",
+  "manifest_sha256": "f628730fb1dd043c6df5cdf2d47d76002b3266be21b8a97204d54914674b5c79",
+  "delta_sha256": "d04d58135715c95be089344674a99f51b78d8bb4a6ebd08da2194e2b97cc0e17",
+  "checks": {
+    "common_equal": true,
+    "shared_cgc_matches_frozen_snapshot": true,
+    "parsed_A_equals_B": true,
+    "relations_locks_match_frozen_contract": true,
+    "shared_restrictions_match_frozen_contract": true,
+    "delta_digest": true,
+    "comparison_pass": true,
+    "nonempty_required_coverage": true,
+    "no_images_or_calls": true,
+    "dry_run_only": true,
+    "no_technical_failures": true,
+    "snapshot_bytes": true
+  },
+  "payloads_file_sha256": "f8ea1131d393e0cdd4ed7bfe4ce4b841a798f15f476305275c15bc12ae8ffb1a",
+  "generation_attempts": 0,
+  "fresh_images": 0,
+  "valid_pairs": 0,
+  "source_design_review": {
+    "status": "PASS",
+    "source_vsg2a": "PASS",
+    "design_authority": "PASS",
+    "design_nodes_required": 3,
+    "design_relations_required": 4,
+    "source_entities": 11,
+    "source_relations": 10,
+    "rooftop_graph_locks": {
+      "required": 0,
+      "preserved": 0,
+      "exercised": false
+    },
+    "visual_rubric": "PENDING",
+    "archive_calls": 0,
+    "sidecar_sha256": {
+      "k0.md": "ed8f17f1204d041d47f0618378e7056b9d0d95fc4b67aa9d4203003b75194f90",
+      "reception.json": "9ef38ea1a63d5d31f6542c888b336b4356dcdbf43822cfb5055b73d0604fb456",
+      "observations.json": "d9fd45e27f5ae76c4ce0de39ae732031077d1e776e3c2c0fad1d45d5763779b2",
+      "design.json": "c09e93d07aebd51203e08d385a82c49918f318e47f60f51f3b672077cd98ee4e",
+      "source_provenance.json": "ed153e4ea87eaa031a483e8ae12d670b6e5c2d142924e4d944dc511425a92adc",
+      "preservation_baseline.json": "c2ea9832a4705caafb6b07564235996a7da90c8e97c498b6c2fd797ccc9e83d7"
+    }
+  },
+  "limitations": [
+    "Prospective annotation, not historical recovery.",
+    "Provisional provider settings; not an operational selection.",
+    "No visual quality/improvement finding; VSG-2B remains BLOCKED/PENDING_VISUAL."
+  ],
+  "command": ".venv-sc/bin/python -m visual_scene_graph.pilot.run_validation",
+  "source_binding_replay": "PASS: frozen request reproduces runtime/SAR2/RR2/CGC/graphs/context/contract",
+  "coverage": {
+    "P0": {
+      "required": 21,
+      "preserved": 21,
+      "ratio": 1.0
+    },
+    "PR0": {
+      "required": 7,
+      "preserved": 7,
+      "ratio": 1.0
+    },
+    "PR1": {
+      "required": 3,
+      "preserved": 3,
+      "ratio": 1.0
+    },
+    "LOCK": {
+      "required": 7,
+      "preserved": 7,
+      "ratio": 1.0
+    }
+  },
+  "unexercised_priorities": [],
+  "reference_needs": 0,
+  "queryable_needs": 0,
+  "archive_calls": 0,
+  "preconditions": {
+    "path": "validation/vsg_2b/preconditions.json",
+    "sha256": "1f505c0f81fcda24018992bc019073ed4ad3e095ac5ba940420644954713d5e8"
+  },
+  "reproduction_command": ".venv-sc/bin/python -m visual_scene_graph.pilot visual_scene_graph/pilot/fixtures/kennys_new_01/manifest.json --output outputs/vsg-2b-campaign"
+}

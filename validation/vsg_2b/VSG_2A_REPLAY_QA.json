@@ -129826,12 +129826,12 @@
     "hardening/operational_hardening.py": "819cdabffbaf45f16bc2e04fc80786248151742cd85507210312c2029ad3b11b",
     "integration/streetcraft_orchestrator.py": "808e1488c8f23791799a6ff2e8ce7f0151919e7559ac0f5a97bdf8ccce3a1ea0",
     "reference_runtime/reference_reasoning.py": "6d057d9e8c4d34e70decf320bdc37e113a69deff868a086312fb55e32d5ef4a1",
-    "benchmark/run_regression_suite.py": "9edf47ac70e2b27c3f5ba8e6072c378ac43d6f7e4cca69f5dd5b0cdf48b693d5",
+    "benchmark/run_regression_suite.py": "c6e8a5f9516b38768c93233c1f759a9ec0fe73bde3bdf9bec872d30ed72740bc",
     "benchmark/r2b_1_9_1/RUN_STATUS.json": "a27153dd4ffed177fd3ba7a5f82cd079ffe1157b46ac85043c04e3939f4e9200",
-    "README.md": "611fd8809062f95ab3875ea13e5a6815d219dcb7d3cfc0c294c10309199964ad",
+    "README.md": "d7d78e3d3e8cf2a2527df8e4be1748bac0082abf7cfcbce529da4a3800e8509d",
     "STREETCRAFT.md": "d680f04dd932d38d4acd8fbd22fcde55d94f54dc3519e49af1bbec9bab2a938a",
-    "ROADMAP.md": "71838510b62801fc654abae955cc7069be51d9e1a7fdbf61d34ea3d32330ff17",
-    "CHANGELOG.md": "4843aef7e98bd4f7510dd4a1bc1acc81221dd1c2b8ca0d0885fcbd5f02e4f852",
+    "ROADMAP.md": "93ac102e583ca7a8fbfe6cbbd476a4710d350d515746dd6ae345a8d561079c6e",
+    "CHANGELOG.md": "f66e53d518853a2b5b7b694cef1378998ef313a43bf5a8d875a5fbd8bc6e79da",
     "PACKAGE_MANIFEST.json": "22e2074b98ef28479834e63fb22fb120e077ce69f84500b87a799a860fba89ac",
     "command_invocation/resolve_commands.py": "d93d971f0e1085001adc217f7c147b356d106166b8c2e294e6a2c0717ad07e31",
     "command_invocation/COMMANDS.json": "a63d7b3c5f75bf5bd702801d84d51bec0817a5b9219ed40c5f1f73c15111fefb",
@@ -129854,5 +129854,5 @@
     "Opaque/free-text policies require exact content. Unsupported CGC fields and ambiguous mappings fail closed.",
     "Cardinality 1..1 denotes each unique source node occurrence; explicit property cardinalities are also retained."
   ],
-  "qa_sha256": "ef147cb2e3851adb294a3c14367d406cdd6f0029411d8506c21ef4cd83235237"
+  "qa_sha256": "6be8da3b922529a3179f934fcded77292da9dbb21ec3169254e7a9e1d5797b3e"
 }

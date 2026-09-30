@@ -6,7 +6,7 @@ from .fixture_replay import FIXTURE_PATHS
 
 
 def audit(*, include_dry_runs=True):
-    specs = [('KENNYS-ROOFTOP', None, ['observed facade preservation', 'authorized rooftop design (pending graph)']),
+    specs = [('KENNYS-ROOFTOP', None, ['observed facade preservation', 'separate authorized rooftop design V1']),
              ('R2B-191-C','jpg',['Reference Isolation','authored geography']),
              ('R2B-191-D','jpg',['Semantic Text Lock']),
              ('R2B-191-E','jpg',['Occlusion Lock']),
@@ -27,6 +27,14 @@ def audit(*, include_dry_runs=True):
                 manifest = json.loads(path.read_text())
                 entry = registry['fixtures'][ident]
                 intact = all((ROOT/r['path']).is_file() and sha((ROOT/r['path']).read_bytes()) == r['sha256'] for r in manifest['artifacts'].values())
+                if intact and ident == 'KENNYS-ROOFTOP':
+                    from . import kenny_binding as k1
+                    try:
+                        blobs = {name: (ROOT/rec['path']).read_bytes() for name, rec in manifest['artifacts'].items()}
+                        row['source_design_gate'] = k1.verify_bundle(manifest, blobs, k1.load_sidecars(json.loads(blobs['request'])))
+                    except (ValueError, OSError, KeyError, TypeError) as exc:
+                        intact = False
+                        row['reason'] = str(exc)
                 if intact and entry['status'] == 'ADMITTED' and entry['manifest_sha256'] == digest(manifest):
                     row.update(status='ADMITTED_PENDING_DRY_RUN', source_status='BOUND_PROSPECTIVELY',
                                reason='PENDING_VISUAL', manifest=str(path.relative_to(ROOT)),
@@ -48,6 +56,9 @@ def audit(*, include_dry_runs=True):
         if ident == 'KENNYS-ROOFTOP':
             row['scope_record'] = 'visual_scene_graph/pilot/fixtures/kennys/reception.json'
             row['rooftop_provenance'] = 'AUTHORIZED_INFERENCE; not observed in source'
+        if ident == 'R2B-191-C':
+            row['c1_decision'] = 'NO_GO_C0_UNVERIFIED'
+            row['decision_record'] = 'visual_scene_graph/pilot/fixtures/r2b_c_new_01/C1_NO_GO.md'
         rows.append(row)
     return {'status':'BLOCKED','reason':'PENDING_VISUAL_AND_REMAINING_SOURCE_BINDINGS','fixtures':rows,
             'initial_image_budget':8,'conditional_fifth_pair':'Requires a versioned budget change after coverage review',

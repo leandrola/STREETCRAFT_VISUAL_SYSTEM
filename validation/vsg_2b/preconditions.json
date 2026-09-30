@@ -14,7 +14,7 @@
     "benchmark/fixtures/REMOTE_BINARY_FIXTURES.json": "19075ba5e16ee0cbe91a560db922cb76050470db088185c2644cc44d47680d3c",
     "benchmark/r2b_1_9_1/RUN_STATUS.json": "a27153dd4ffed177fd3ba7a5f82cd079ffe1157b46ac85043c04e3939f4e9200",
     "benchmark/r2b_1_9_1/SOURCE_INVENTORY.json": "f41cdea8b59f9e61a418d63cec25f2fc9d919daa0c4023b0caf8c0f68c85246c",
-    "benchmark/run_regression_suite.py": "9edf47ac70e2b27c3f5ba8e6072c378ac43d6f7e4cca69f5dd5b0cdf48b693d5",
+    "benchmark/run_regression_suite.py": "c6e8a5f9516b38768c93233c1f759a9ec0fe73bde3bdf9bec872d30ed72740bc",
     "benchmark/score_visual_results.py": "fa90c5cedae401205689312af588801fdddfc2c248f0d8bac85c13bd303165f2",
     "benchmark/visual_results_template.json": "0b0ca9dcfd5528163035019d85323c1cfff8fc7a219d6eb925f5b91f791e7eac",
     "command_invocation/BACKDROP_PRESETS.json": "4ef159f88dbe473b27ac65880745e10713a26cbb2bf7f7f396974b3e0953ca08",
@@ -83,13 +83,28 @@
     "visual_scene_graph/graph_locks.py": "4884c055dee36bd4740bf63cb063cc862057b052b86c93f1b17800f20b98aa8d",
     "visual_scene_graph/pilot/__init__.py": "939b89c28b2d8d2ded0ddc31a5e2ea6a3a80bc1f686858fe9b46592538104bf3",
     "visual_scene_graph/pilot/__main__.py": "6da460889763ab05b9708eb64cd31046d1b5624b42b3bf35d499e1bbe68d60c7",
-    "visual_scene_graph/pilot/allowlist.json": "f70e924cedaa97ecd030ff923d2d5f946734a954c7faa4b16fd106eddbf4b8e2",
-    "visual_scene_graph/pilot/audit_corpus.py": "4e031ae49930353ecf09313c3aabb9b53e2c66af85ffbf4fe429bfb756779b41",
+    "visual_scene_graph/pilot/allowlist.json": "6adde5e6bf3d3284627cb6b9b4ecb3dc88e2db244c6304a376992609144c377c",
+    "visual_scene_graph/pilot/audit_corpus.py": "a7052ece5b55e3aec3ae055f0c054fc1d8f6ed18737195b21461c4860aa641da",
     "visual_scene_graph/pilot/bind_d.py": "368d0860202c585451711ce8c6aaeed336426ce64e7956f9ee2d1cb785f3dc70",
     "visual_scene_graph/pilot/bind_e.py": "2565837384284deb5145358e26a922f55c28acb01f0849e8bc9bc1dad6332f99",
+    "visual_scene_graph/pilot/bind_kenny.py": "c8adb93804be1fb744106849805a27906b9b68a114cc83427fb078994a085284",
     "visual_scene_graph/pilot/evaluation.py": "da52875a8bfe3debc8617f000229c550dbc8c9a42b800375fdf86e50d824ab7d",
-    "visual_scene_graph/pilot/fixture_replay.py": "a2427240735859fe54f00d4ae48a1fed4a217d6c41aad5fa9be2567f6ded20f6",
+    "visual_scene_graph/pilot/fixture_replay.py": "5b1f9a0223b489dee6f74691692017bb44d73a53403b49c90225c9e80f26fce3",
     "visual_scene_graph/pilot/fixtures/kennys/reception.json": "9ef38ea1a63d5d31f6542c888b336b4356dcdbf43822cfb5055b73d0604fb456",
+    "visual_scene_graph/pilot/fixtures/kennys_new_01/candidate_graph.json": "3fc9811743f86f70bce17764ad70d0a438f2e53685975596b4707da5127bb75b",
+    "visual_scene_graph/pilot/fixtures/kennys_new_01/cgc_final.json": "55d76e27242f56485ca6dffe6771697ef397f1d1e1e7fd35b66a3f7625c2fe7c",
+    "visual_scene_graph/pilot/fixtures/kennys_new_01/contract.json": "37dd0f143288ade92bfb80bd8ef670b4c5f54850a5e882387cb68267214ddb5b",
+    "visual_scene_graph/pilot/fixtures/kennys_new_01/design.json": "c09e93d07aebd51203e08d385a82c49918f318e47f60f51f3b672077cd98ee4e",
+    "visual_scene_graph/pilot/fixtures/kennys_new_01/expected_graph.json": "3fc9811743f86f70bce17764ad70d0a438f2e53685975596b4707da5127bb75b",
+    "visual_scene_graph/pilot/fixtures/kennys_new_01/generation_context.json": "66ec147bea5260b2536a4f1a13d0c703d7b34a717abc9e1f5edf648089ed08d5",
+    "visual_scene_graph/pilot/fixtures/kennys_new_01/manifest.json": "e34f4fa417b637a3fa21c582497ae6cd2c3bf7e02c9a61c0414176087ca01408",
+    "visual_scene_graph/pilot/fixtures/kennys_new_01/observations.json": "d9fd45e27f5ae76c4ce0de39ae732031077d1e776e3c2c0fad1d45d5763779b2",
+    "visual_scene_graph/pilot/fixtures/kennys_new_01/preservation_baseline.json": "c2ea9832a4705caafb6b07564235996a7da90c8e97c498b6c2fd797ccc9e83d7",
+    "visual_scene_graph/pilot/fixtures/kennys_new_01/request.json": "a143f7ca3da6f2a12f5d7879cb2c650311ae8ab474daf5c26c21b5e96825e1ba",
+    "visual_scene_graph/pilot/fixtures/kennys_new_01/rr2.json": "8bfd19dd29069057ec881fd77e78e5fcb087c905fe6f27057cf93932c0cd1fe2",
+    "visual_scene_graph/pilot/fixtures/kennys_new_01/runtime.json": "2df2651a4730cd6d88ef467f5d76891dd7fabe28ab266c7de74621a28bf16827",
+    "visual_scene_graph/pilot/fixtures/kennys_new_01/sar2.json": "185285dc65b9e66bba8112c9c3597317eae62782a7402d5979efe2c1bdcad420",
+    "visual_scene_graph/pilot/fixtures/kennys_new_01/source_provenance.json": "ed153e4ea87eaa031a483e8ae12d670b6e5c2d142924e4d944dc511425a92adc",
     "visual_scene_graph/pilot/fixtures/r2b_d_new_01/candidate_graph.json": "cea40cb4fccc9c47037301c6304b3b99853e8c10be7512a215a59b8e2882ac43",
     "visual_scene_graph/pilot/fixtures/r2b_d_new_01/cgc_final.json": "06bcde8b726ceeab1d2b823b2a25761ab44f9a9d0c9035d70bf08db8d8aad462",
     "visual_scene_graph/pilot/fixtures/r2b_d_new_01/contract.json": "c9ece946ae08533d2487d55c717a149caab7e8cc3e4c1eb388fdf927be9e58f8",
@@ -113,10 +128,12 @@
     "visual_scene_graph/pilot/fixtures/r2b_e_new_01/runtime.json": "7e099e53c980735557e5d967bd4b25c92ece2ed2fe38274e8518a44bb63cf8a3",
     "visual_scene_graph/pilot/fixtures/r2b_e_new_01/sar2.json": "4aad179a06df8566e95ecdb385151e0f62905aa1d1ceca3a03d4b5f1f690662b",
     "visual_scene_graph/pilot/fixtures/r2b_e_new_01/source_provenance.json": "e0de4b9909bd42aa75bb0c195952bdac8a6fd8d30450cdb511b0c221a0eb9320",
-    "visual_scene_graph/pilot/harness.py": "380b9c64d5c2c5b6d00a801387ef833327f996a176613c3e0cd295d3b8099417",
-    "visual_scene_graph/pilot/review_dry_run.py": "57c5a2ce08837e709b079ec65a0d0092397e2117fc68918f3668851e9f90ea84",
-    "visual_scene_graph/pilot/run_validation.py": "326875d264f7692a8615e60ed1ba60c7b7ddcd93dd802601312deb7e6a8fcfe8",
+    "visual_scene_graph/pilot/harness.py": "899e325b881ec3fa8350d632395614d1da3b631f0e155379aec895a1840720ac",
+    "visual_scene_graph/pilot/kenny_binding.py": "f72596a4e55ed24628bd114852548e642ad50af11399ef9c0520d066d308638a",
+    "visual_scene_graph/pilot/review_dry_run.py": "2d9681eb3d0de89436db62d27afca4e401a64228a31cc11351bce8625dda7599",
+    "visual_scene_graph/pilot/run_validation.py": "897a47b02724dc37f533c0bf4bd9a523599926727c5c93a8dea5bcb48431d38e",
     "visual_scene_graph/pilot/test_e_binding.py": "2905cbf176495eeb08d3d568b0432a13a7ae892c913df4439cec07f5b93fa8f7",
+    "visual_scene_graph/pilot/test_kenny_binding.py": "f5e643186502795011f197588f23efe451e081ef2680acef7d3c689027059b4f",
     "visual_scene_graph/pilot/test_pilot.py": "3da98a5f251d9e05d5e45c26522696e6e5a2c4a0b7a7777ebae81c4aebcfb8ff",
     "visual_scene_graph/run_causal_benchmark.py": "7b3f43d30a993ea505289325448b4c3fb59acaeca774ca98061be5ba72f3bf7f",
     "visual_scene_graph/run_generation_benchmark.py": "dc255e61f3ff32c28856d2340919a2473def00dc78bb7935c357fdbe5029115f",
@@ -128,14 +145,14 @@
   },
   "vsg2a": {
     "path": "validation/vsg_2b/VSG_2A_REPLAY_QA.json",
-    "sha256": "7909ba23d7b351d403fe4bf76333723e4512c110935dc9f37287e2172b98c7f6"
+    "sha256": "ce2ae566fdf64b9ad17aa00a387fc4c4c02b529f4960ae6888d4c29af0fa1018"
   },
   "regression": {
     "path": "validation/vsg_2b/regression.json",
-    "sha256": "2ad35e540ecb0b3df75d43721da11e88093494c80408c5081639e536b89a9cf8"
+    "sha256": "575b9f9bf3d79da9e359e0e1c3e978e41d95350fd1211463e04962eecc1476ce"
   },
   "pilot_controls": {
     "path": "validation/vsg_2b/controls.json",
-    "sha256": "409b3ef910141680f949966b19e6c14d6c8b039c7113da5782b6e4fd5e18be96"
+    "sha256": "cfd7f2ee58fb93879ff91beb54946ea0841f018c6ad221051a25ec712e823ef7"
   }
 }

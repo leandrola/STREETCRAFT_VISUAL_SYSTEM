@@ -1,0 +1,3062 @@
+{
+  "artifact_kind": "VSG_GENERATION_CONTRACT",
+  "constraints": [
+    {
+      "id": "action:ks_banner",
+      "lock_ids": [
+        "GL-SEM-KS_BANNER"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_banner"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_banner"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_banner"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": "PRESERVE_EXACT"
+    },
+    {
+      "id": "action:ks_context",
+      "lock_ids": [],
+      "priority": "P2",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_context"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_context"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_context"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": "PRESERVE_CONTEXT"
+    },
+    {
+      "id": "action:ks_door",
+      "lock_ids": [
+        "GL-GEO-KS_DOOR"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_door"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_door"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_door"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": "PRESERVE_EXACT"
+    },
+    {
+      "id": "action:ks_facade",
+      "lock_ids": [
+        "GL-GEO-KS_FACADE"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_facade"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_facade"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_facade"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": "PRESERVE_EXACT"
+    },
+    {
+      "id": "action:ks_left_display",
+      "lock_ids": [
+        "GL-GEO-KS_LEFT_DISPLAY"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_left_display"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_left_display"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_left_display"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": "PRESERVE_EXACT"
+    },
+    {
+      "id": "action:ks_lower_panels",
+      "lock_ids": [],
+      "priority": "P1",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_lower_panels"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_lower_panels"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_lower_panels"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": "PRESERVE_CHARACTER"
+    },
+    {
+      "id": "action:ks_main_sign",
+      "lock_ids": [
+        "GL-SEM-KS_MAIN_SIGN"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_main_sign"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_main_sign"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_main_sign"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": "PRESERVE_EXACT"
+    },
+    {
+      "id": "action:ks_right_display",
+      "lock_ids": [
+        "GL-GEO-KS_RIGHT_DISPLAY"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_right_display"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_right_display"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_right_display"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": "PRESERVE_EXACT"
+    },
+    {
+      "id": "action:ks_sale_strip",
+      "lock_ids": [],
+      "priority": "P1",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_sale_strip"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_sale_strip"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_sale_strip"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": "PRESERVE_CHARACTER"
+    },
+    {
+      "id": "action:ks_sidewalk",
+      "lock_ids": [],
+      "priority": "P2",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_sidewalk"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_sidewalk"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_sidewalk"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": "PRESERVE_CONTEXT"
+    },
+    {
+      "id": "action:ks_upper_windows",
+      "lock_ids": [
+        "GL-GEO-KS_UPPER_WINDOWS"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_upper_windows"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_upper_windows"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_upper_windows"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": "PRESERVE_EXACT"
+    },
+    {
+      "id": "directive:forbid",
+      "lock_ids": [],
+      "priority": "REQUIRED",
+      "source_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "directives"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_banner"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_context"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_door"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_facade"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_left_display"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_lower_panels"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_main_sign"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_right_display"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_sale_strip"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_sidewalk"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_upper_windows"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": [
+        "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:excluded:[\"kd_skylight\",\"chimney\",\"water_tank\",\"access_bulkhead\"]",
+        "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not add excluded components, extra storeys, brands, literal signage, invented microtext, real geography or reference architecture.",
+        "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not label any design component or KDR relationship as observed source or fidelity to the unknown original rooftop.",
+        "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not redesign, resize or move source facade openings, door, identity signs or protected source relationships to accommodate rooftop.",
+        "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not remove observed contextual elements or change weather, wetness, wear intensity or source material identity.",
+        "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not replace the volumetric design with roof texture only or hide required components completely.",
+        "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:forbid:Do not resolve original hidden geometry, unseen interiors, detailed side/rear facades or urban continuation.",
+        "break_protected_relationships:ks_banner",
+        "break_protected_relationships:ks_door",
+        "break_protected_relationships:ks_facade",
+        "break_protected_relationships:ks_left_display",
+        "break_protected_relationships:ks_lower_panels",
+        "break_protected_relationships:ks_main_sign",
+        "break_protected_relationships:ks_right_display",
+        "break_protected_relationships:ks_sale_strip",
+        "break_protected_relationships:ks_upper_windows",
+        "replace_observed_evidence",
+        "resolve_locked_unknown_without_evidence"
+      ]
+    },
+    {
+      "id": "directive:infer",
+      "lock_ids": [],
+      "priority": "REQUIRED",
+      "source_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "directives"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_banner"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_context"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_door"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_facade"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_left_display"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_lower_panels"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_main_sign"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_right_display"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_sale_strip"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_sidewalk"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_upper_windows"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": [
+        "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:KDES-01:kd_roof: REQUIRED volumetric roof with distinguishable plane and edge, plausible continuity above facade width; no extra inhabited storey.",
+        "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:KDES-02:kd_parapet: REQUIRED low perimeter parapet with visible thickness, compatible masonry character; no displaced sign, banner or openings.",
+        "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:KDES-03:kd_hvac: REQUIRED single compact unbranded HVAC supported on roof, behind parapet but partly visible; subordinate scale, no floating/interpenetration.",
+        "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:node:{\"epistemic_class\":\"AUTHORIZED_INFERENCE\",\"id\":\"kd_hvac\",\"observed\":false,\"requirement\":\"REQUIRED\"}",
+        "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:node:{\"epistemic_class\":\"AUTHORIZED_INFERENCE\",\"id\":\"kd_parapet\",\"observed\":false,\"requirement\":\"REQUIRED\"}",
+        "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:node:{\"epistemic_class\":\"AUTHORIZED_INFERENCE\",\"id\":\"kd_roof\",\"observed\":false,\"requirement\":\"REQUIRED\"}",
+        "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:presentation:{\"authority\":\"AUTHORIZED_INFERENCE\",\"camera\":\"CG-B\",\"mode\":\"T04\",\"profile\":\"VP00\",\"scope\":\"Extend framing upward; moderately elevated controlled oblique presentation explicitly authorized by K0 (CG-B source/mode-authority exception). Preserve facade proportions and relationships; no aerial overview, detailed side walls or hidden historical reconstruction.\"}",
+        "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:relation:{\"authority\":\"AUTHORIZED_INFERENCE\",\"id\":\"KDR-01\",\"object\":\"ks_facade\",\"predicate\":\"ABOVE\",\"requirement\":\"REQUIRED\",\"subject\":\"kd_roof\"}",
+        "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:relation:{\"authority\":\"AUTHORIZED_INFERENCE\",\"id\":\"KDR-02\",\"object\":\"kd_roof\",\"predicate\":\"PART_OF\",\"requirement\":\"REQUIRED\",\"subject\":\"kd_parapet\"}",
+        "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:relation:{\"authority\":\"AUTHORIZED_INFERENCE\",\"id\":\"KDR-03\",\"object\":\"kd_roof\",\"predicate\":\"PART_OF\",\"requirement\":\"REQUIRED\",\"subject\":\"kd_hvac\"}",
+        "KENNYS_ROOFTOP_DESIGN_V1:AUTHORIZED_INFERENCE:relation:{\"authority\":\"AUTHORIZED_INFERENCE\",\"id\":\"KDR-04\",\"object\":\"kd_parapet\",\"predicate\":\"BEHIND\",\"requirement\":\"REQUIRED\",\"subject\":\"kd_hvac\"}"
+      ]
+    },
+    {
+      "id": "directive:preserve",
+      "lock_ids": [],
+      "priority": "REQUIRED",
+      "source_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "directives"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_banner"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_context"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_door"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_facade"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_left_display"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_lower_panels"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_main_sign"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_right_display"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_sale_strip"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_sidewalk"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_upper_windows"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": [
+        "Preserve observed facade proportions, opening rhythm, signs and all KSR relationships; source scope only.",
+        "ks_banner:Banner claro, palabras grandes rojas y frase central manuscrita.:PRESERVE_EXACT",
+        "ks_context:Fragmentos de frentes vecinos, carteles laterales y poste a la derecha; no son componentes de Kenny.:PRESERVE_CONTEXT",
+        "ks_door:Acceso central acristalado entre las dos vidrieras; divisiones y carteles pequeños visibles.:PRESERVE_EXACT",
+        "ks_facade:Frente de tienda casi frontal; fábrica, montantes y ritmo de vanos visibles; su parte superior está cortada.:PRESERVE_EXACT",
+        "ks_left_display:Vidriera izquierda con instrumentos y batería; conservar disposición visible sin completar objetos ocultos.:PRESERVE_EXACT",
+        "ks_lower_panels:Zócalos/paneles oscuros bajo vidrieras; inscripción clara a la derecha.:PRESERVE_CHARACTER",
+        "ks_main_sign:Letrero horizontal oscuro con letras claras y motivos musicales encima del banner.:PRESERVE_EXACT",
+        "ks_right_display:Vidriera derecha con instrumentos colgados y carteles; preservar distribución visible.:PRESERVE_EXACT",
+        "ks_sale_strip: preserve known words EVERYTHING MUST GO; punctuation unresolved, graphic appearance retained.",
+        "ks_sale_strip:Franja amarilla inclinada dentro de la vidriera izquierda.:PRESERVE_CHARACTER",
+        "ks_sidewalk:Acera, borde y franja de calzada delante del frente.:PRESERVE_CONTEXT",
+        "ks_upper_windows:Grupo de vanos superiores y divisiones visibles; se corta su continuidad superior.:PRESERVE_EXACT"
+      ]
+    },
+    {
+      "id": "directive:remove",
+      "lock_ids": [],
+      "priority": "REQUIRED",
+      "source_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "directives"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_banner"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_context"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_door"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_facade"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_left_display"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_lower_panels"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_main_sign"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_right_display"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_sale_strip"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_sidewalk"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_upper_windows"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": []
+    },
+    {
+      "id": "directive:transform",
+      "lock_ids": [],
+      "priority": "REQUIRED",
+      "source_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "directives"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_banner"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_context"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_door"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_facade"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_left_display"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_lower_panels"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_main_sign"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_right_display"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_sale_strip"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_sidewalk"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_upper_windows"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": [
+        "Extend framing upward; moderately elevated controlled oblique presentation explicitly authorized by K0 (CG-B source/mode-authority exception). Preserve facade proportions and relationships; no aerial overview, detailed side walls or hidden historical reconstruction."
+      ]
+    },
+    {
+      "id": "directive:unknown",
+      "lock_ids": [],
+      "priority": "REQUIRED",
+      "source_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "directives"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_banner"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_context"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_door"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_facade"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_left_display"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_lower_panels"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_main_sign"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_right_display"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_sale_strip"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_sidewalk"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_upper_windows"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": [
+        "Hidden interiors and cropped architectural continuity UNKNOWN; do not reconstruct historical geometry.",
+        "KOBS-05/06/07/09/10: small signs, panels and shop-window microtext PARTIAL_OR_UNKNOWN; preserve graphic placement; no completion.",
+        "KOBS-08: preserve known words EVERYTHING MUST GO; final punctuation PARTIAL_OR_UNKNOWN; no completed literal lock.",
+        "KOBS-12: original rooftop, total height, rear depth and unseen lateral geometry UNKNOWN; prospective design does not recover them."
+      ]
+    },
+    {
+      "id": "edge:KSR-01",
+      "lock_ids": [],
+      "priority": "PR0",
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_banner"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_main_sign"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KSR-01",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.149,
+            0.174,
+            0.861,
+            0.483
+          ]
+        },
+        "from": "ks_main_sign",
+        "protection": "PR0",
+        "to": "ks_banner",
+        "type": "ABOVE"
+      }
+    },
+    {
+      "id": "edge:KSR-02",
+      "lock_ids": [
+        "GL-GEO-KS_DOOR"
+      ],
+      "priority": "PR0",
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-02"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_banner"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_door"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KSR-02",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.174,
+            0.357,
+            0.849,
+            0.906
+          ]
+        },
+        "from": "ks_banner",
+        "protection": "PR0",
+        "to": "ks_door",
+        "type": "ABOVE"
+      }
+    },
+    {
+      "id": "edge:KSR-03",
+      "lock_ids": [
+        "GL-GEO-KS_DOOR",
+        "GL-GEO-KS_LEFT_DISPLAY"
+      ],
+      "priority": "PR0",
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-03"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_door"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_left_display"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KSR-03",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.16,
+            0.493,
+            0.606,
+            0.906
+          ]
+        },
+        "from": "ks_left_display",
+        "protection": "PR0",
+        "to": "ks_door",
+        "type": "LEFT_OF"
+      }
+    },
+    {
+      "id": "edge:KSR-04",
+      "lock_ids": [
+        "GL-GEO-KS_DOOR",
+        "GL-GEO-KS_RIGHT_DISPLAY"
+      ],
+      "priority": "PR0",
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-04"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_door"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_right_display"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KSR-04",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.425,
+            0.493,
+            0.861,
+            0.906
+          ]
+        },
+        "from": "ks_right_display",
+        "protection": "PR0",
+        "to": "ks_door",
+        "type": "RIGHT_OF"
+      }
+    },
+    {
+      "id": "edge:KSR-05",
+      "lock_ids": [
+        "GL-GEO-KS_UPPER_WINDOWS"
+      ],
+      "priority": "PR0",
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-05"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_main_sign"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_upper_windows"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KSR-05",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.149,
+            0,
+            0.861,
+            0.355
+          ]
+        },
+        "from": "ks_upper_windows",
+        "protection": "PR0",
+        "to": "ks_main_sign",
+        "type": "ABOVE"
+      }
+    },
+    {
+      "id": "edge:KSR-06",
+      "lock_ids": [
+        "GL-GEO-KS_FACADE"
+      ],
+      "priority": "PR0",
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-06"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_facade"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_main_sign"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KSR-06",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.147,
+            0,
+            0.878,
+            0.915
+          ]
+        },
+        "from": "ks_main_sign",
+        "protection": "PR0",
+        "to": "ks_facade",
+        "type": "PART_OF"
+      }
+    },
+    {
+      "id": "edge:KSR-07",
+      "lock_ids": [
+        "GL-GEO-KS_DOOR",
+        "GL-GEO-KS_FACADE"
+      ],
+      "priority": "PR0",
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-07"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_door"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_facade"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KSR-07",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.147,
+            0,
+            0.878,
+            0.915
+          ]
+        },
+        "from": "ks_door",
+        "protection": "PR0",
+        "to": "ks_facade",
+        "type": "PART_OF"
+      }
+    },
+    {
+      "id": "edge:KSR-08",
+      "lock_ids": [
+        "GL-GEO-KS_LEFT_DISPLAY"
+      ],
+      "priority": "PR1",
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-08"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_left_display"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_sale_strip"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KSR-08",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.16,
+            0.493,
+            0.423,
+            0.824
+          ]
+        },
+        "from": "ks_sale_strip",
+        "protection": "PR1",
+        "to": "ks_left_display",
+        "type": "INSIDE"
+      }
+    },
+    {
+      "id": "edge:KSR-09",
+      "lock_ids": [
+        "GL-GEO-KS_LEFT_DISPLAY"
+      ],
+      "priority": "PR1",
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-09"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_left_display"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_lower_panels"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KSR-09",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.156,
+            0.493,
+            0.868,
+            0.915
+          ]
+        },
+        "from": "ks_lower_panels",
+        "protection": "PR1",
+        "to": "ks_left_display",
+        "type": "BELOW"
+      }
+    },
+    {
+      "id": "edge:KSR-10",
+      "lock_ids": [
+        "GL-GEO-KS_RIGHT_DISPLAY"
+      ],
+      "priority": "PR1",
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-10"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_lower_panels"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_right_display"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KSR-10",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.156,
+            0.493,
+            0.868,
+            0.915
+          ]
+        },
+        "from": "ks_lower_panels",
+        "protection": "PR1",
+        "to": "ks_right_display",
+        "type": "BELOW"
+      }
+    },
+    {
+      "id": "identity_anchors",
+      "lock_ids": [],
+      "priority": "REQUIRED",
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_banner"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_facade"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_main_sign"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": [
+        "ks_banner",
+        "ks_facade",
+        "ks_main_sign"
+      ]
+    },
+    {
+      "id": "lock:GL-GEO-KS_DOOR",
+      "lock_ids": [
+        "GL-GEO-KS_DOOR"
+      ],
+      "priority": "LOCK",
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "graph_locks",
+          "id": "GL-GEO-KS_DOOR"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_door"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "enforcement": "VALIDATE_ONLY",
+        "expected": {
+          "node_type": "door",
+          "protected_topology": [
+            {
+              "from": "ks_banner",
+              "id": "KSR-02",
+              "to": "ks_door",
+              "type": "ABOVE"
+            },
+            {
+              "from": "ks_door",
+              "id": "KSR-07",
+              "to": "ks_facade",
+              "type": "PART_OF"
+            },
+            {
+              "from": "ks_left_display",
+              "id": "KSR-03",
+              "to": "ks_door",
+              "type": "LEFT_OF"
+            },
+            {
+              "from": "ks_right_display",
+              "id": "KSR-04",
+              "to": "ks_door",
+              "type": "RIGHT_OF"
+            }
+          ]
+        },
+        "provenance": {
+          "evidence": {
+            "evidence_id": "KOBS-06",
+            "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+            "region": [
+              0.425,
+              0.503,
+              0.606,
+              0.906
+            ]
+          },
+          "source": "VSG_NODE_LOCK"
+        },
+        "strength": "ABSOLUTE",
+        "target": {
+          "id": "ks_door",
+          "kind": "NODE"
+        },
+        "type": "GEOMETRY_LOCK"
+      }
+    },
+    {
+      "id": "lock:GL-GEO-KS_FACADE",
+      "lock_ids": [
+        "GL-GEO-KS_FACADE"
+      ],
+      "priority": "LOCK",
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "graph_locks",
+          "id": "GL-GEO-KS_FACADE"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_facade"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "enforcement": "VALIDATE_ONLY",
+        "expected": {
+          "node_type": "facade",
+          "protected_topology": [
+            {
+              "from": "ks_door",
+              "id": "KSR-07",
+              "to": "ks_facade",
+              "type": "PART_OF"
+            },
+            {
+              "from": "ks_main_sign",
+              "id": "KSR-06",
+              "to": "ks_facade",
+              "type": "PART_OF"
+            }
+          ]
+        },
+        "provenance": {
+          "evidence": {
+            "evidence_id": "KOBS-01",
+            "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+            "region": [
+              0.147,
+              0,
+              0.878,
+              0.915
+            ]
+          },
+          "source": "VSG_NODE_LOCK"
+        },
+        "strength": "ABSOLUTE",
+        "target": {
+          "id": "ks_facade",
+          "kind": "NODE"
+        },
+        "type": "GEOMETRY_LOCK"
+      }
+    },
+    {
+      "id": "lock:GL-GEO-KS_LEFT_DISPLAY",
+      "lock_ids": [
+        "GL-GEO-KS_LEFT_DISPLAY"
+      ],
+      "priority": "LOCK",
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "graph_locks",
+          "id": "GL-GEO-KS_LEFT_DISPLAY"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_left_display"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "enforcement": "VALIDATE_ONLY",
+        "expected": {
+          "node_type": "storefront",
+          "protected_topology": [
+            {
+              "from": "ks_left_display",
+              "id": "KSR-03",
+              "to": "ks_door",
+              "type": "LEFT_OF"
+            },
+            {
+              "from": "ks_lower_panels",
+              "id": "KSR-09",
+              "to": "ks_left_display",
+              "type": "BELOW"
+            },
+            {
+              "from": "ks_sale_strip",
+              "id": "KSR-08",
+              "to": "ks_left_display",
+              "type": "INSIDE"
+            }
+          ]
+        },
+        "provenance": {
+          "evidence": {
+            "evidence_id": "KOBS-05",
+            "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+            "region": [
+              0.16,
+              0.493,
+              0.423,
+              0.824
+            ]
+          },
+          "source": "VSG_NODE_LOCK"
+        },
+        "strength": "ABSOLUTE",
+        "target": {
+          "id": "ks_left_display",
+          "kind": "NODE"
+        },
+        "type": "GEOMETRY_LOCK"
+      }
+    },
+    {
+      "id": "lock:GL-GEO-KS_RIGHT_DISPLAY",
+      "lock_ids": [
+        "GL-GEO-KS_RIGHT_DISPLAY"
+      ],
+      "priority": "LOCK",
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "graph_locks",
+          "id": "GL-GEO-KS_RIGHT_DISPLAY"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_right_display"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "enforcement": "VALIDATE_ONLY",
+        "expected": {
+          "node_type": "storefront",
+          "protected_topology": [
+            {
+              "from": "ks_lower_panels",
+              "id": "KSR-10",
+              "to": "ks_right_display",
+              "type": "BELOW"
+            },
+            {
+              "from": "ks_right_display",
+              "id": "KSR-04",
+              "to": "ks_door",
+              "type": "RIGHT_OF"
+            }
+          ]
+        },
+        "provenance": {
+          "evidence": {
+            "evidence_id": "KOBS-07",
+            "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+            "region": [
+              0.606,
+              0.493,
+              0.861,
+              0.821
+            ]
+          },
+          "source": "VSG_NODE_LOCK"
+        },
+        "strength": "ABSOLUTE",
+        "target": {
+          "id": "ks_right_display",
+          "kind": "NODE"
+        },
+        "type": "GEOMETRY_LOCK"
+      }
+    },
+    {
+      "id": "lock:GL-GEO-KS_UPPER_WINDOWS",
+      "lock_ids": [
+        "GL-GEO-KS_UPPER_WINDOWS"
+      ],
+      "priority": "LOCK",
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "graph_locks",
+          "id": "GL-GEO-KS_UPPER_WINDOWS"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_upper_windows"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "enforcement": "VALIDATE_ONLY",
+        "expected": {
+          "node_type": "window",
+          "protected_topology": [
+            {
+              "from": "ks_upper_windows",
+              "id": "KSR-05",
+              "to": "ks_main_sign",
+              "type": "ABOVE"
+            }
+          ]
+        },
+        "provenance": {
+          "evidence": {
+            "evidence_id": "KOBS-02",
+            "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+            "region": [
+              0.295,
+              0,
+              0.798,
+              0.166
+            ]
+          },
+          "source": "VSG_NODE_LOCK"
+        },
+        "strength": "ABSOLUTE",
+        "target": {
+          "id": "ks_upper_windows",
+          "kind": "NODE"
+        },
+        "type": "GEOMETRY_LOCK"
+      }
+    },
+    {
+      "id": "lock:GL-SEM-KS_BANNER",
+      "lock_ids": [
+        "GL-SEM-KS_BANNER"
+      ],
+      "priority": "LOCK",
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "graph_locks",
+          "id": "GL-SEM-KS_BANNER"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_banner"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "enforcement": "VALIDATE_ONLY",
+        "expected": {
+          "node_type": "sign",
+          "text": "GOING out of BUSINESS"
+        },
+        "provenance": {
+          "evidence": {
+            "evidence_id": "KOBS-04",
+            "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+            "region": [
+              0.174,
+              0.357,
+              0.849,
+              0.483
+            ]
+          },
+          "source": "VSG_NODE_LOCK"
+        },
+        "strength": "ABSOLUTE",
+        "target": {
+          "id": "ks_banner",
+          "kind": "NODE"
+        },
+        "type": "SEMANTIC_TEXT_LOCK"
+      }
+    },
+    {
+      "id": "lock:GL-SEM-KS_MAIN_SIGN",
+      "lock_ids": [
+        "GL-SEM-KS_MAIN_SIGN"
+      ],
+      "priority": "LOCK",
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "graph_locks",
+          "id": "GL-SEM-KS_MAIN_SIGN"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_main_sign"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "enforcement": "VALIDATE_ONLY",
+        "expected": {
+          "node_type": "sign",
+          "text": "Kenny’s Music Shop"
+        },
+        "provenance": {
+          "evidence": {
+            "evidence_id": "KOBS-03",
+            "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+            "region": [
+              0.149,
+              0.174,
+              0.861,
+              0.355
+            ]
+          },
+          "source": "VSG_NODE_LOCK"
+        },
+        "strength": "ABSOLUTE",
+        "target": {
+          "id": "ks_main_sign",
+          "kind": "NODE"
+        },
+        "type": "SEMANTIC_TEXT_LOCK"
+      }
+    },
+    {
+      "id": "node:ks_banner",
+      "lock_ids": [
+        "GL-SEM-KS_BANNER"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_banner"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_banner"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_banner"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KOBS-04",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.174,
+            0.357,
+            0.849,
+            0.483
+          ]
+        },
+        "label": "Banner claro, palabras grandes rojas y frase central manuscrita.",
+        "locks": {
+          "geometry": false,
+          "identity": true,
+          "occlusion": false,
+          "semantic": true
+        },
+        "observed": true,
+        "properties": {
+          "text": "GOING out of BUSINESS"
+        },
+        "source_attributes": {
+          "authority": "OBSERVED_SOURCE",
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "KOBS-04",
+          "kind": "SIGNAGE",
+          "observed": true,
+          "preservation_level": "P0",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.174,
+            0.357,
+            0.849,
+            0.483
+          ],
+          "roles": [
+            "IDENTITY_ANCHOR"
+          ],
+          "semantic_lock": true
+        },
+        "source_kind": "SIGNAGE",
+        "type": "sign"
+      }
+    },
+    {
+      "id": "node:ks_context",
+      "lock_ids": [],
+      "priority": "P2",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_context"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_context"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_context"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KOBS-10",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0,
+            0,
+            0.147,
+            0.915
+          ]
+        },
+        "label": "Fragmentos de frentes vecinos, carteles laterales y poste a la derecha; no son componentes de Kenny.",
+        "locks": {
+          "geometry": false,
+          "identity": false,
+          "occlusion": false,
+          "semantic": false
+        },
+        "observed": true,
+        "properties": {
+          "visible_regions": [
+            [
+              0,
+              0,
+              0.147,
+              0.915
+            ],
+            [
+              0.878,
+              0,
+              1,
+              0.915
+            ]
+          ]
+        },
+        "source_attributes": {
+          "authority": "OBSERVED_SOURCE",
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "KOBS-10",
+          "kind": "SURFACE",
+          "observed": true,
+          "preservation_level": "P2",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0,
+            0,
+            0.147,
+            0.915
+          ],
+          "roles": [
+            "CONTEXTUAL_SUPPORT"
+          ]
+        },
+        "source_kind": "SURFACE",
+        "type": "unclassified"
+      }
+    },
+    {
+      "id": "node:ks_door",
+      "lock_ids": [
+        "GL-GEO-KS_DOOR"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_door"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_door"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_door"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KOBS-06",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.425,
+            0.503,
+            0.606,
+            0.906
+          ]
+        },
+        "label": "Acceso central acristalado entre las dos vidrieras; divisiones y carteles pequeños visibles.",
+        "locks": {
+          "geometry": true,
+          "identity": false,
+          "occlusion": false,
+          "semantic": false
+        },
+        "observed": true,
+        "source_attributes": {
+          "authority": "OBSERVED_SOURCE",
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "KOBS-06",
+          "kind": "DOOR",
+          "observed": true,
+          "preservation_level": "P0",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.425,
+            0.503,
+            0.606,
+            0.906
+          ],
+          "roles": [
+            "CONTEXTUAL_SUPPORT"
+          ]
+        },
+        "source_kind": "DOOR",
+        "type": "door"
+      }
+    },
+    {
+      "id": "node:ks_facade",
+      "lock_ids": [
+        "GL-GEO-KS_FACADE"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_facade"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_facade"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_facade"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KOBS-01",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.147,
+            0,
+            0.878,
+            0.915
+          ]
+        },
+        "label": "Frente de tienda casi frontal; fábrica, montantes y ritmo de vanos visibles; su parte superior está cortada.",
+        "locks": {
+          "geometry": true,
+          "identity": true,
+          "occlusion": false,
+          "semantic": false
+        },
+        "observed": true,
+        "source_attributes": {
+          "authority": "OBSERVED_SOURCE",
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "KOBS-01",
+          "kind": "FACADE",
+          "observed": true,
+          "preservation_level": "P0",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.147,
+            0,
+            0.878,
+            0.915
+          ],
+          "roles": [
+            "IDENTITY_ANCHOR"
+          ]
+        },
+        "source_kind": "FACADE",
+        "type": "facade"
+      }
+    },
+    {
+      "id": "node:ks_left_display",
+      "lock_ids": [
+        "GL-GEO-KS_LEFT_DISPLAY"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_left_display"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_left_display"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_left_display"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KOBS-05",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.16,
+            0.493,
+            0.423,
+            0.824
+          ]
+        },
+        "label": "Vidriera izquierda con instrumentos y batería; conservar disposición visible sin completar objetos ocultos.",
+        "locks": {
+          "geometry": true,
+          "identity": false,
+          "occlusion": false,
+          "semantic": false
+        },
+        "observed": true,
+        "source_attributes": {
+          "authority": "OBSERVED_SOURCE",
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "KOBS-05",
+          "kind": "STOREFRONT",
+          "observed": true,
+          "preservation_level": "P0",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.16,
+            0.493,
+            0.423,
+            0.824
+          ],
+          "roles": [
+            "CONTEXTUAL_SUPPORT"
+          ]
+        },
+        "source_kind": "STOREFRONT",
+        "type": "storefront"
+      }
+    },
+    {
+      "id": "node:ks_lower_panels",
+      "lock_ids": [],
+      "priority": "P1",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_lower_panels"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_lower_panels"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_lower_panels"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KOBS-09",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.156,
+            0.807,
+            0.868,
+            0.915
+          ]
+        },
+        "label": "Zócalos/paneles oscuros bajo vidrieras; inscripción clara a la derecha.",
+        "locks": {
+          "geometry": false,
+          "identity": false,
+          "occlusion": false,
+          "semantic": false
+        },
+        "observed": true,
+        "source_attributes": {
+          "authority": "OBSERVED_SOURCE",
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "KOBS-09",
+          "kind": "FACADE",
+          "observed": true,
+          "preservation_level": "P1",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.156,
+            0.807,
+            0.868,
+            0.915
+          ],
+          "roles": [
+            "CONTEXTUAL_SUPPORT"
+          ]
+        },
+        "source_kind": "FACADE",
+        "type": "facade"
+      }
+    },
+    {
+      "id": "node:ks_main_sign",
+      "lock_ids": [
+        "GL-SEM-KS_MAIN_SIGN"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_main_sign"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_main_sign"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_main_sign"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KOBS-03",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.149,
+            0.174,
+            0.861,
+            0.355
+          ]
+        },
+        "label": "Letrero horizontal oscuro con letras claras y motivos musicales encima del banner.",
+        "locks": {
+          "geometry": false,
+          "identity": true,
+          "occlusion": false,
+          "semantic": true
+        },
+        "observed": true,
+        "properties": {
+          "text": "Kenny’s Music Shop"
+        },
+        "source_attributes": {
+          "authority": "OBSERVED_SOURCE",
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "KOBS-03",
+          "kind": "SIGNAGE",
+          "observed": true,
+          "preservation_level": "P0",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.149,
+            0.174,
+            0.861,
+            0.355
+          ],
+          "roles": [
+            "IDENTITY_ANCHOR"
+          ],
+          "semantic_lock": true
+        },
+        "source_kind": "SIGNAGE",
+        "type": "sign"
+      }
+    },
+    {
+      "id": "node:ks_right_display",
+      "lock_ids": [
+        "GL-GEO-KS_RIGHT_DISPLAY"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_right_display"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_right_display"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_right_display"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KOBS-07",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.606,
+            0.493,
+            0.861,
+            0.821
+          ]
+        },
+        "label": "Vidriera derecha con instrumentos colgados y carteles; preservar distribución visible.",
+        "locks": {
+          "geometry": true,
+          "identity": false,
+          "occlusion": false,
+          "semantic": false
+        },
+        "observed": true,
+        "source_attributes": {
+          "authority": "OBSERVED_SOURCE",
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "KOBS-07",
+          "kind": "STOREFRONT",
+          "observed": true,
+          "preservation_level": "P0",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.606,
+            0.493,
+            0.861,
+            0.821
+          ],
+          "roles": [
+            "CONTEXTUAL_SUPPORT"
+          ]
+        },
+        "source_kind": "STOREFRONT",
+        "type": "storefront"
+      }
+    },
+    {
+      "id": "node:ks_sale_strip",
+      "lock_ids": [],
+      "priority": "P1",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_sale_strip"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_sale_strip"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_sale_strip"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KOBS-08",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.185,
+            0.5,
+            0.418,
+            0.626
+          ]
+        },
+        "label": "Franja amarilla inclinada dentro de la vidriera izquierda.",
+        "locks": {
+          "geometry": false,
+          "identity": false,
+          "occlusion": false,
+          "semantic": false
+        },
+        "observed": true,
+        "source_attributes": {
+          "authority": "OBSERVED_SOURCE",
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "KOBS-08",
+          "kind": "SURFACE",
+          "observed": true,
+          "preservation_level": "P1",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.185,
+            0.5,
+            0.418,
+            0.626
+          ],
+          "roles": [
+            "CONTEXTUAL_SUPPORT"
+          ]
+        },
+        "source_kind": "SURFACE",
+        "type": "unclassified"
+      }
+    },
+    {
+      "id": "node:ks_sidewalk",
+      "lock_ids": [],
+      "priority": "P2",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_sidewalk"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_sidewalk"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_sidewalk"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KOBS-11",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0,
+            0.906,
+            1,
+            1
+          ]
+        },
+        "label": "Acera, borde y franja de calzada delante del frente.",
+        "locks": {
+          "geometry": false,
+          "identity": false,
+          "occlusion": false,
+          "semantic": false
+        },
+        "observed": true,
+        "source_attributes": {
+          "authority": "OBSERVED_SOURCE",
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "KOBS-11",
+          "kind": "SURFACE",
+          "observed": true,
+          "preservation_level": "P2",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0,
+            0.906,
+            1,
+            1
+          ],
+          "roles": [
+            "CONTEXTUAL_SUPPORT"
+          ]
+        },
+        "source_kind": "SURFACE",
+        "type": "unclassified"
+      }
+    },
+    {
+      "id": "node:ks_upper_windows",
+      "lock_ids": [
+        "GL-GEO-KS_UPPER_WINDOWS"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_upper_windows"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_upper_windows"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_upper_windows"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "cardinality": {
+          "max": 1,
+          "min": 1
+        },
+        "confidence": 0.9,
+        "epistemic_class": "OBSERVED",
+        "evidence": {
+          "evidence_id": "KOBS-02",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.295,
+            0,
+            0.798,
+            0.166
+          ]
+        },
+        "label": "Grupo de vanos superiores y divisiones visibles; se corta su continuidad superior.",
+        "locks": {
+          "geometry": true,
+          "identity": false,
+          "occlusion": false,
+          "semantic": false
+        },
+        "observed": true,
+        "source_attributes": {
+          "authority": "OBSERVED_SOURCE",
+          "epistemic_class": "OBSERVED",
+          "evidence_id": "KOBS-02",
+          "kind": "WINDOW",
+          "observed": true,
+          "preservation_level": "P0",
+          "reference_id": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+          "region": [
+            0.295,
+            0,
+            0.798,
+            0.166
+          ],
+          "roles": [
+            "CONTEXTUAL_SUPPORT"
+          ]
+        },
+        "source_kind": "WINDOW",
+        "type": "window"
+      }
+    },
+    {
+      "id": "policy:camera",
+      "lock_ids": [],
+      "priority": "POLICY",
+      "source_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": "CG-B"
+    },
+    {
+      "id": "policy:cil",
+      "lock_ids": [],
+      "priority": "POLICY",
+      "source_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "commands": "/sc-preserve /sc-noinvent",
+        "resolved": {
+          "aspect_ratio": null,
+          "camera": "CG-B",
+          "explicit_fear_city_profile_override": false,
+          "fear_city_identity": null,
+          "frontalization": null,
+          "identity_lock": null,
+          "mode": "T04",
+          "occlusion_lock": null,
+          "preservation": "STRICT_OBSERVED_EVIDENCE",
+          "profile": "VP00",
+          "street_presence": null,
+          "uncertainty": "STRICT_UNKNOWN_PRESERVATION"
+        }
+      }
+    },
+    {
+      "id": "policy:material_intensity_delta",
+      "lock_ids": [],
+      "priority": "POLICY",
+      "source_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": 0
+    },
+    {
+      "id": "policy:mode",
+      "lock_ids": [],
+      "priority": "POLICY",
+      "source_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": "T04"
+    },
+    {
+      "id": "policy:occlusion_locks",
+      "lock_ids": [],
+      "priority": "POLICY",
+      "source_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": []
+    },
+    {
+      "id": "policy:pre_generation_gate",
+      "lock_ids": [],
+      "priority": "POLICY",
+      "source_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "findings": [],
+        "reference_preflight": {
+          "admitted": [],
+          "rejected": [],
+          "status": "PASS"
+        },
+        "status": "PASS"
+      }
+    },
+    {
+      "id": "policy:profile",
+      "lock_ids": [],
+      "priority": "POLICY",
+      "source_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": "VP00"
+    },
+    {
+      "id": "policy:reference_features",
+      "lock_ids": [],
+      "priority": "POLICY",
+      "source_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": []
+    },
+    {
+      "id": "policy:reference_reasoning",
+      "lock_ids": [],
+      "priority": "POLICY",
+      "source_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "admissions": [],
+        "generation_projection": [],
+        "locked_unknowns": [],
+        "need_results": {},
+        "queries": 0,
+        "query_budget": 0,
+        "status": "READY",
+        "trace": [],
+        "unresolved_required": [],
+        "version": "RR-2.0"
+      }
+    },
+    {
+      "id": "policy:semantic_text_lock",
+      "lock_ids": [],
+      "priority": "POLICY",
+      "source_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": "STRICT"
+    },
+    {
+      "id": "policy:text_render_plan",
+      "lock_ids": [],
+      "priority": "POLICY",
+      "source_refs": [
+        {
+          "artifact": "generation_context",
+          "collection": "$",
+          "id": "policies"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": {
+        "proposed_text": {
+          "ks_banner": "GOING out of BUSINESS",
+          "ks_main_sign": "Kenny’s Music Shop",
+          "ks_sale_strip_partial": "EVERYTHING MUST GO"
+        },
+        "tokens": [
+          {
+            "confidence": 0.99,
+            "identity_bearing": true,
+            "literal": "Kenny’s Music Shop",
+            "numeral": false,
+            "preservation_level": "P0",
+            "state": "FROZEN_EXACT",
+            "token_id": "ks_main_sign"
+          },
+          {
+            "confidence": 0.99,
+            "identity_bearing": true,
+            "literal": "GOING out of BUSINESS",
+            "numeral": false,
+            "preservation_level": "P0",
+            "state": "FROZEN_EXACT",
+            "token_id": "ks_banner"
+          },
+          {
+            "confidence": 0.7,
+            "identity_bearing": false,
+            "literal": "EVERYTHING MUST GO",
+            "numeral": false,
+            "preservation_level": "P1",
+            "state": "MASK_PARTIAL",
+            "token_id": "ks_sale_strip_partial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "source_identity",
+      "lock_ids": [],
+      "priority": "REQUIRED",
+      "source_refs": [
+        {
+          "artifact": "vsg",
+          "collection": "$",
+          "id": "source_identity"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": "KENNYS_SOURCE_SHA256_45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2"
+    },
+    {
+      "id": "topology:ks_banner",
+      "lock_ids": [
+        "GL-SEM-KS_BANNER"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_banner"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_banner"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-02"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_banner"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": [
+        "KSR-01",
+        "KSR-02"
+      ]
+    },
+    {
+      "id": "topology:ks_context",
+      "lock_ids": [],
+      "priority": "P2",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_context"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_context"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_context"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": []
+    },
+    {
+      "id": "topology:ks_door",
+      "lock_ids": [
+        "GL-GEO-KS_DOOR"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_door"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_door"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-02"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-03"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-04"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-07"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_door"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": [
+        "KSR-02",
+        "KSR-03",
+        "KSR-04",
+        "KSR-07"
+      ]
+    },
+    {
+      "id": "topology:ks_facade",
+      "lock_ids": [
+        "GL-GEO-KS_FACADE"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_facade"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_facade"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-06"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-07"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_facade"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": [
+        "KSR-06",
+        "KSR-07"
+      ]
+    },
+    {
+      "id": "topology:ks_left_display",
+      "lock_ids": [
+        "GL-GEO-KS_LEFT_DISPLAY"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_left_display"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_left_display"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-03"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-08"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-09"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_left_display"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": [
+        "KSR-03",
+        "KSR-08",
+        "KSR-09"
+      ]
+    },
+    {
+      "id": "topology:ks_lower_panels",
+      "lock_ids": [],
+      "priority": "P1",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_lower_panels"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_lower_panels"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-09"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-10"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_lower_panels"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": [
+        "KSR-09",
+        "KSR-10"
+      ]
+    },
+    {
+      "id": "topology:ks_main_sign",
+      "lock_ids": [
+        "GL-SEM-KS_MAIN_SIGN"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_main_sign"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_main_sign"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-01"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-05"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-06"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_main_sign"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": [
+        "KSR-01",
+        "KSR-05",
+        "KSR-06"
+      ]
+    },
+    {
+      "id": "topology:ks_right_display",
+      "lock_ids": [
+        "GL-GEO-KS_RIGHT_DISPLAY"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_right_display"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_right_display"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-04"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-10"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_right_display"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": [
+        "KSR-04",
+        "KSR-10"
+      ]
+    },
+    {
+      "id": "topology:ks_sale_strip",
+      "lock_ids": [],
+      "priority": "P1",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_sale_strip"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_sale_strip"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-08"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_sale_strip"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": [
+        "KSR-08"
+      ]
+    },
+    {
+      "id": "topology:ks_sidewalk",
+      "lock_ids": [],
+      "priority": "P2",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_sidewalk"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_sidewalk"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_sidewalk"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": []
+    },
+    {
+      "id": "topology:ks_upper_windows",
+      "lock_ids": [
+        "GL-GEO-KS_UPPER_WINDOWS"
+      ],
+      "priority": "P0",
+      "source_refs": [
+        {
+          "artifact": "sar2",
+          "collection": "action_plan",
+          "id": "ks_upper_windows"
+        },
+        {
+          "artifact": "sar2",
+          "collection": "entities",
+          "id": "ks_upper_windows"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "edges",
+          "id": "KSR-05"
+        },
+        {
+          "artifact": "vsg",
+          "collection": "nodes",
+          "id": "ks_upper_windows"
+        }
+      ],
+      "trace_event_ids": [],
+      "value": [
+        "KSR-05"
+      ]
+    }
+  ],
+  "governs_generation": false,
+  "issues": [],
+  "mode": "SHADOW",
+  "provenance": {
+    "causal_trace": null,
+    "context_sha256": "9dc6f03007105949d2f704cec334a5f7f00098c702b79f9600295e7813651918",
+    "sar2_semantic_sha256": "802fb9b1bc18596bc4b2b35ad438be4ef9a05429e6c75e2c5e882f8198b534a0",
+    "vsg_semantic_sha256": "df60736f5b0c043b1e71bed40912bf4ea7fbb4244283a22c705ff720dbf9bc22"
+  },
+  "scene_id": "VSG2B-KENNYS-NEW-01",
+  "schema_version": "2.0.0",
+  "status": "COMPILED",
+  "contract_sha256": "6a2491e88c2aeb7fc7b2a9e0b397970faf9ec0b022575e8e3eaf2f8df955d54d"
+}

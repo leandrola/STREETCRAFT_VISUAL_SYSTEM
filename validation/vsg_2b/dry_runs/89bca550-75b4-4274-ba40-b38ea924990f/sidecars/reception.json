@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "source_status": "RECEIVED_UNBOUND",
+  "received_date": "2026-09-29",
+  "source": {
+    "path": "visual_scene_graph/pilot/fixtures/kennys/source/kennys-shop.jpg",
+    "sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+    "format": "JPEG",
+    "width": 736,
+    "height": 414
+  },
+  "provenance": "User identifies this as the original Kenny project source and confirms no other rooftop view exists; photographer and capture date UNKNOWN.",
+  "inspection": "Codex opened the repository JPEG. Nearly frontal facade; top edge cuts the building before rooftop visibility.",
+  "observed_source": {
+    "provenance": "OBSERVED_SOURCE",
+    "features": [
+      "facade",
+      "storefront windows",
+      "central doorway",
+      "upper windows"
+    ],
+    "legible_text": [
+      "Kenny’s Music Shop",
+      "GOING out of BUSINESS"
+    ],
+    "small_ambiguous_text": "PARTIAL_OR_UNKNOWN; transcribe only with region-specific evidence at binding time"
+  },
+  "authorized_design": {
+    "provenance": "AUTHORIZED_INFERENCE",
+    "scope": "A plausible rooftop preserving the observed facade is authorized by the project decision recorded in the supplied spec.",
+    "prescribed_components": [],
+    "restriction": "No rooftop component is observed in this JPEG. Freeze a separate expected design graph before selecting any components."
+  },
+  "future_rubric": "Measure observed facade/text preservation and execution of a separately authorized rooftop design graph, never fidelity to an unknown original rooftop.",
+  "admission_requirements": [
+    "New source-bound request/SAR2/RR2/CGC and replay",
+    "Explicit versioned observation/design sidecar with separation tests before admission",
+    "Manifest, graphs, rubric and allowlist admission"
+  ],
+  "historical_synthetic_fixture_warning": "Existing kennys_graph_locks_vsg1.json is a historical control fixture, not observations attested to this JPG."
+}

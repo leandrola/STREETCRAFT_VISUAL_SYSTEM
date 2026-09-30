@@ -4,7 +4,7 @@ Streetcraft turns visual intent and reference evidence into a controlled generat
 
 **Current release: SVS 1.10.0 STABLE · one Streetcraft client.**
 
-**VSG-2B controlled pilot: BLOCKED / PENDING_VISUAL.** D and E have prospective source bindings and admitted dry-run-only manifests; E locks unknown content behind its observed foreground occluder. D artifacts/delta are preserved. Technical recovery evidence is separate from visual validation. Kenny’s source is received and unbound, with rooftop design explicitly inferred. No new images or visual PASS are claimed. [Harness and reproduction](visual_scene_graph/pilot/README.md) · [QA report](validation/VSG_2B_CONTROLLED_GENERATION_PILOT_QA.md).
+**VSG-2B controlled pilot: BLOCKED / PENDING_VISUAL.** D and E have prospective source bindings and admitted dry-run-only manifests; E locks unknown content behind its observed foreground occluder. D artifacts/delta are preserved. Technical recovery evidence is separate from visual validation. Kenny is technically admitted with **K1_CORPUS_RECOVERY_DRY_RUN_PASS**, separate observed facade and inferred rooftop design, and blocking verification of persisted authority bytes. C remains RECEIVED_UNBOUND / NO_GO_C0_UNVERIFIED. No new images or visual PASS are claimed. [Harness and reproduction](visual_scene_graph/pilot/README.md) · [QA report](validation/VSG_2B_CONTROLLED_GENERATION_PILOT_QA.md).
 
 ## What Streetcraft is
 
