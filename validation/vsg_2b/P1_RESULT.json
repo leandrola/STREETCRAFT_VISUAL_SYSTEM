@@ -1,0 +1,218 @@
+{
+  "spec": "VSG-2B / P1",
+  "timestamp_utc": "2026-09-30T03:54:02.941404+00:00",
+  "status": "P1_NEEDS_PROVIDER_SELECTION",
+  "head_initial": "beecfc9a71f6efa9ccd4e125d4eae1de143d93b3",
+  "head_final": "beecfc9a71f6efa9ccd4e125d4eae1de143d93b3",
+  "entry_tree": "CLEAN",
+  "production_authorized": false,
+  "vsg_2b_status": "BLOCKED / PENDING_VISUAL",
+  "blocking_inputs": [
+    "authorized provider and exact model/version",
+    "authorized local authentication mechanism and configuration reference; no secret values",
+    "existing executable argv if any; otherwise provider-specific implementation required"
+  ],
+  "provider": {
+    "provider": null,
+    "model": null,
+    "version": null,
+    "configured_bridge_argv": null,
+    "authentication_mechanism": null,
+    "official_capability_sources": [],
+    "documentation_status": "PENDING_PROVIDER_SELECTION",
+    "seed_support": "UNKNOWN",
+    "ready": false,
+    "inventory_scope": "Checkout implementation and explicit CLI adapter-command; no supplied argv. No secret inspection or authentication probe."
+  },
+  "gates": {
+    "A": "INVENTORY_AND_DESIGN_COMPLETE / BLOCKED_ON_OPERATOR_SELECTION",
+    "B": "NOT_RUN / PROVIDER_SETTINGS_UNVERIFIED",
+    "C": "DOCUMENTED / C_REMAINS_BLOCKED"
+  },
+  "bridge_design": {
+    "path": "visual_scene_graph/pilot/P1_RUNBOOK.md",
+    "implemented": false,
+    "identity_proposal": "R2B-191-D-P1 replaces D in the operational four-fixture selection; original admission preserved for K1",
+    "critical_integration_finding": "kenny_binding.verify_preserved pins original D/E registry entries; replacing original D hash would fail K1_OTHER_ADMISSION_CHANGED"
+  },
+  "executed_now": [
+    {
+      "argv": [
+        "/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2/.venv-sc/bin/python",
+        "-c",
+        "from visual_scene_graph.pilot.harness import check_preconditions; check_preconditions(); print(\"CURRENT_PRECONDITIONS_PASS\")"
+      ],
+      "exit_code": 0,
+      "stdout": "CURRENT_PRECONDITIONS_PASS",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2/.venv-sc/bin/python",
+        "-m",
+        "unittest",
+        "visual_scene_graph.pilot.test_campaign.CommandBridgeTests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_bridge_must_report_seed_even_when_null_and_exact_parameters (visual_scene_graph.pilot.test_campaign.CommandBridgeTests.test_bridge_must_report_seed_even_when_null_and_exact_parameters) ... ok\ntest_invalid_bridge_response_is_rejected (visual_scene_graph.pilot.test_campaign.CommandBridgeTests.test_invalid_bridge_response_is_rejected) ... ok\ntest_json_stdio_fake_bridge_contract_only (visual_scene_graph.pilot.test_campaign.CommandBridgeTests.test_json_stdio_fake_bridge_contract_only) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.314s\n\nOK"
+    },
+    {
+      "argv": [
+        "/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2/.venv-sc/bin/python",
+        "-c",
+        "import json\nfrom visual_scene_graph.pilot.run_validation import BINDERS\nfrom visual_scene_graph.pilot.review_dry_run import review\nfrom visual_scene_graph.generation_compiler import digest\nfrom pathlib import Path\nqa=json.loads(Path('validation/VSG_2B_CONTROLLED_GENERATION_PILOT_QA.json').read_text())\nresults={}\nfor ident,verify in BINDERS:\n    manifest,comparison=verify()\n    historic=qa['dry_run']['fixtures'][ident]\n    path=Path(historic['report']['path']).parent\n    checked=review(path)\n    assert comparison['status']=='PASS'\n    assert digest(manifest)==historic['manifest_sha256']==checked['manifest_sha256']\n    assert historic['delta_sha256']==checked['delta_sha256']\n    results[ident]={'replay':'PASS','comparison':comparison['status'],'existing_persisted_review':'PASS','generation':manifest['generation'],'manifest_sha256':digest(manifest),'historical_delta_sha256':checked['delta_sha256'],'existing_run_path':str(path),'new_operational_dry_run':False}\nprint(json.dumps(results,indent=2))"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"R2B-191-D\": {\n    \"replay\": \"PASS\",\n    \"comparison\": \"PASS\",\n    \"existing_persisted_review\": \"PASS\",\n    \"generation\": {\n      \"provider\": \"DRY_RUN_ONLY_UNSELECTED_PROVIDER\",\n      \"model\": \"DRY_RUN_ONLY_UNSELECTED_MODEL\",\n      \"seed\": null,\n      \"parameters\": {\n        \"size\": \"347x389\",\n        \"quality\": \"DRY_RUN_ONLY_UNSELECTED\",\n        \"output_format\": \"png\"\n      }\n    },\n    \"manifest_sha256\": \"d258f4784d7f27cabec9b6044142cdc809e19a9552e72924468e20d55dc3d3ec\",\n    \"historical_delta_sha256\": \"6159ef5f5666afb9037f5ba9512cf6a3d3c89a778f376961c9c570391ce59282\",\n    \"existing_run_path\": \"validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f\",\n    \"new_operational_dry_run\": false\n  },\n  \"R2B-191-E\": {\n    \"replay\": \"PASS\",\n    \"comparison\": \"PASS\",\n    \"existing_persisted_review\": \"PASS\",\n    \"generation\": {\n      \"provider\": \"DRY_RUN_ONLY_UNSELECTED_PROVIDER\",\n      \"model\": \"DRY_RUN_ONLY_UNSELECTED_MODEL\",\n      \"seed\": null,\n      \"parameters\": {\n        \"size\": \"500x454\",\n        \"quality\": \"DRY_RUN_ONLY_UNSELECTED\",\n        \"output_format\": \"png\"\n      }\n    },\n    \"manifest_sha256\": \"6568570352087407c7f6f23955ffe6e4f6381c6861bdd674d78baaa16197b275\",\n    \"historical_delta_sha256\": \"a282bbee73b6613ce2d5ad0737065f3e2332ebce020e664161f38cc43fd17458\",\n    \"existing_run_path\": \"validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4\",\n    \"new_operational_dry_run\": false\n  },\n  \"KENNYS-ROOFTOP\": {\n    \"replay\": \"PASS\",\n    \"comparison\": \"PASS\",\n    \"existing_persisted_review\": \"PASS\",\n    \"generation\": {\n      \"provider\": \"DRY_RUN_ONLY_UNSELECTED_PROVIDER\",\n      \"model\": \"DRY_RUN_ONLY_UNSELECTED_MODEL\",\n      \"seed\": null,\n      \"parameters\": {\n        \"size\": \"736x736\",\n        \"quality\": \"DRY_RUN_ONLY_UNSELECTED\",\n        \"output_format\": \"png\"\n      }\n    },\n    \"manifest_sha256\": \"f628730fb1dd043c6df5cdf2d47d76002b3266be21b8a97204d54914674b5c79\",\n    \"historical_delta_sha256\": \"d04d58135715c95be089344674a99f51b78d8bb4a6ebd08da2194e2b97cc0e17\",\n    \"existing_run_path\": \"validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d\",\n    \"new_operational_dry_run\": false\n  }\n}",
+      "stderr": ""
+    }
+  ],
+  "fresh_checks": {
+    "preconditions": "PASS",
+    "existing_fake_protocol_tests": 3,
+    "fake_protocol_status": "PASS / NOT_REAL_PROVIDER_SUPPORT",
+    "D_E_Kenny_replay_and_existing_package_review": "PASS",
+    "full_regression_rerun": false,
+    "new_dry_runs": 0
+  },
+  "historical_entry_qa": {
+    "control_tests": 100,
+    "vsg2a_cases": 25,
+    "regression_checks": 24,
+    "rerun_full_suite_in_P1": false
+  },
+  "fixtures": {
+    "R2B-191-D": {
+      "replay": "PASS",
+      "comparison": "PASS",
+      "existing_persisted_review": "PASS",
+      "generation": {
+        "provider": "DRY_RUN_ONLY_UNSELECTED_PROVIDER",
+        "model": "DRY_RUN_ONLY_UNSELECTED_MODEL",
+        "seed": null,
+        "parameters": {
+          "size": "347x389",
+          "quality": "DRY_RUN_ONLY_UNSELECTED",
+          "output_format": "png"
+        }
+      },
+      "manifest_sha256": "d258f4784d7f27cabec9b6044142cdc809e19a9552e72924468e20d55dc3d3ec",
+      "historical_delta_sha256": "6159ef5f5666afb9037f5ba9512cf6a3d3c89a778f376961c9c570391ce59282",
+      "existing_run_path": "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f",
+      "new_operational_dry_run": false
+    },
+    "R2B-191-E": {
+      "replay": "PASS",
+      "comparison": "PASS",
+      "existing_persisted_review": "PASS",
+      "generation": {
+        "provider": "DRY_RUN_ONLY_UNSELECTED_PROVIDER",
+        "model": "DRY_RUN_ONLY_UNSELECTED_MODEL",
+        "seed": null,
+        "parameters": {
+          "size": "500x454",
+          "quality": "DRY_RUN_ONLY_UNSELECTED",
+          "output_format": "png"
+        }
+      },
+      "manifest_sha256": "6568570352087407c7f6f23955ffe6e4f6381c6861bdd674d78baaa16197b275",
+      "historical_delta_sha256": "a282bbee73b6613ce2d5ad0737065f3e2332ebce020e664161f38cc43fd17458",
+      "existing_run_path": "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4",
+      "new_operational_dry_run": false
+    },
+    "KENNYS-ROOFTOP": {
+      "replay": "PASS",
+      "comparison": "PASS",
+      "existing_persisted_review": "PASS",
+      "generation": {
+        "provider": "DRY_RUN_ONLY_UNSELECTED_PROVIDER",
+        "model": "DRY_RUN_ONLY_UNSELECTED_MODEL",
+        "seed": null,
+        "parameters": {
+          "size": "736x736",
+          "quality": "DRY_RUN_ONLY_UNSELECTED",
+          "output_format": "png"
+        }
+      },
+      "manifest_sha256": "f628730fb1dd043c6df5cdf2d47d76002b3266be21b8a97204d54914674b5c79",
+      "historical_delta_sha256": "d04d58135715c95be089344674a99f51b78d8bb4a6ebd08da2194e2b97cc0e17",
+      "existing_run_path": "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d",
+      "new_operational_dry_run": false
+    }
+  },
+  "C": {
+    "status": "RECEIVED_UNBOUND / NO_GO_C0_UNVERIFIED",
+    "source_sha256": "2130500a09548d4f9c1991a210de3cfa13d8ef63406dd0c3a78c257c68858a09",
+    "needed": "Source-hash-bound authored Fear City and CG-FC documentary link, then binding and admissible Archive evidence"
+  },
+  "F": "CONDITIONAL / DOES_NOT_REPLACE_REFERENCE_ISOLATION",
+  "new_operational_D": {
+    "manifest_sha256": null,
+    "delta_sha256": null,
+    "admitted": false,
+    "reason": "No selected provider/model/authentication and no verified controlled seed/settings"
+  },
+  "invariance": {
+    "existing_tracked_files_checked": 732,
+    "changed_existing_tracked_files": [],
+    "policy_allowlist_preconditions_and_historical_artifacts": "UNCHANGED"
+  },
+  "inspected_file_hashes": {
+    "visual_scene_graph/pilot/G0_RUNBOOK.md": "1a51ea03c57ce3330ec72298ff42ef3d67119b75df0605edbc0aec0470a71bb7",
+    "visual_scene_graph/pilot/P1_RUNBOOK.md": "d29fd64b2e89804741eedf8a3fc2f1049d6ec2cee0b95411dc942e25403194ed",
+    "visual_scene_graph/pilot/campaign_policy.json": "241204469fb84da8835621f953964d8c887fb91442fd55aeda1a07b89cfc0285",
+    "visual_scene_graph/pilot/allowlist.json": "6adde5e6bf3d3284627cb6b9b4ecb3dc88e2db244c6304a376992609144c377c",
+    "adapters/README.md": "84378e5ad076e8877962ef8ef506d44c7904025fbaa576e92cf7c0c01f5c3f5a",
+    "visual_scene_graph/pilot/__main__.py": "6da460889763ab05b9708eb64cd31046d1b5624b42b3bf35d499e1bbe68d60c7",
+    "visual_scene_graph/pilot/harness.py": "99b886d03317639912c828d80620ae9340a148232de6ad4569ab0cc895b3ede3",
+    "schemas/vsg-pilot-manifest.schema.json": "f3bca26adc6a8625a83509715940e83cda5573f9a3927d9d8948720a8ce7d2c2",
+    "visual_scene_graph/pilot/fixture_replay.py": "5b1f9a0223b489dee6f74691692017bb44d73a53403b49c90225c9e80f26fce3",
+    "visual_scene_graph/pilot/run_validation.py": "8afd6c8de7d2c6a754ff72c26f561a6fb8000b47110abad893e4cd62f9f7865f",
+    "visual_scene_graph/pilot/review_dry_run.py": "2d9681eb3d0de89436db62d27afca4e401a64228a31cc11351bce8625dda7599",
+    "visual_scene_graph/pilot/kenny_binding.py": "f72596a4e55ed24628bd114852548e642ad50af11399ef9c0520d066d308638a",
+    "visual_scene_graph/pilot/fixtures/r2b_c_new_01/C1_NO_GO.md": "4ff5e7630c91eb738521bcca554cd4bdc7891cc05ace3bcc4da343161a96c001",
+    "validation/vsg_2b/preconditions.json": "40d7f1ba41603df6cfecb07bb9d8d924abd127f39aca12318d09cd29a1e29557",
+    "validation/VSG_2B_CONTROLLED_GENERATION_PILOT_QA.json": "6a4201a43c45d146376ef141aa78d1be1a9345715fa3848a0aad1eac44d4c68e",
+    "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_source.jpg": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+    "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-C_source.jpg": "2130500a09548d4f9c1991a210de3cfa13d8ef63406dd0c3a78c257c68858a09"
+  },
+  "plan_limits": {
+    "checkpoints": {
+      "initial": {
+        "five_hour": "UNKNOWN",
+        "weekly": "UNKNOWN",
+        "observed_consumption": "UNKNOWN"
+      },
+      "after_inventory_and_design": {
+        "five_hour": "UNKNOWN",
+        "weekly": "UNKNOWN",
+        "observed_consumption": "UNKNOWN"
+      },
+      "after_local_checks": {
+        "five_hour": "UNKNOWN",
+        "weekly": "UNKNOWN",
+        "observed_consumption": "UNKNOWN"
+      },
+      "final": {
+        "five_hour": "UNKNOWN",
+        "weekly": "UNKNOWN",
+        "observed_consumption": "UNKNOWN"
+      }
+    },
+    "max_five_hour_percentage_points": 40,
+    "numeric_cap_compliance_certified": false
+  },
+  "real_activity_counts": {
+    "archive_calls": 0,
+    "generation_calls": 0,
+    "generated_images": 0,
+    "new_visual_pairs": 0
+  },
+  "synthetic_activity": {
+    "existing_fake_bridge_subprocess_invocations": 6,
+    "scope": "3 existing protocol tests using fake bytes; no real provider or visual evidence"
+  },
+  "reopen_condition": "Operator supplies provider/model and authorized local auth/config reference; verify official seed/image/settings/receipt support without live calls before implementing and admitting operational D."
+}
