@@ -1,0 +1,320 @@
+{
+  "version": "KENNYS_SOURCE_OBS_V1",
+  "authority": "OBSERVED_SOURCE",
+  "source_sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+  "claims": [
+    {
+      "claim_id": "KOBS-01",
+      "entity_id": "ks_facade",
+      "regions": [
+        [
+          0.147,
+          0,
+          0.878,
+          0.915
+        ]
+      ],
+      "boundary": null,
+      "visible_fact": "Frente de tienda casi frontal; fábrica, montantes y ritmo de vanos visibles; su parte superior está cortada.",
+      "literal_record": "—",
+      "confidence": "HIGH",
+      "authority": "OBSERVED_SOURCE",
+      "source_sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2"
+    },
+    {
+      "claim_id": "KOBS-02",
+      "entity_id": "ks_upper_windows",
+      "regions": [
+        [
+          0.295,
+          0,
+          0.798,
+          0.166
+        ]
+      ],
+      "boundary": null,
+      "visible_fact": "Grupo de vanos superiores y divisiones visibles; se corta su continuidad superior.",
+      "literal_record": "—",
+      "confidence": "HIGH para lo visible",
+      "authority": "OBSERVED_SOURCE",
+      "source_sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2"
+    },
+    {
+      "claim_id": "KOBS-03",
+      "entity_id": "ks_main_sign",
+      "regions": [
+        [
+          0.149,
+          0.174,
+          0.861,
+          0.355
+        ]
+      ],
+      "boundary": null,
+      "visible_fact": "Letrero horizontal oscuro con letras claras y motivos musicales encima del banner.",
+      "literal_record": "Kenny’s Music Shop",
+      "confidence": "HIGH",
+      "authority": "OBSERVED_SOURCE",
+      "source_sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2"
+    },
+    {
+      "claim_id": "KOBS-04",
+      "entity_id": "ks_banner",
+      "regions": [
+        [
+          0.174,
+          0.357,
+          0.849,
+          0.483
+        ]
+      ],
+      "boundary": null,
+      "visible_fact": "Banner claro, palabras grandes rojas y frase central manuscrita.",
+      "literal_record": "GOING out of BUSINESS",
+      "confidence": "HIGH",
+      "authority": "OBSERVED_SOURCE",
+      "source_sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2"
+    },
+    {
+      "claim_id": "KOBS-05",
+      "entity_id": "ks_left_display",
+      "regions": [
+        [
+          0.16,
+          0.493,
+          0.423,
+          0.824
+        ]
+      ],
+      "boundary": null,
+      "visible_fact": "Vidriera izquierda con instrumentos y batería; conservar disposición visible sin completar objetos ocultos.",
+      "literal_record": "—",
+      "confidence": "HIGH; detalles pequeños UNKNOWN",
+      "authority": "OBSERVED_SOURCE",
+      "source_sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2"
+    },
+    {
+      "claim_id": "KOBS-06",
+      "entity_id": "ks_door",
+      "regions": [
+        [
+          0.425,
+          0.503,
+          0.606,
+          0.906
+        ]
+      ],
+      "boundary": null,
+      "visible_fact": "Acceso central acristalado entre las dos vidrieras; divisiones y carteles pequeños visibles.",
+      "literal_record": "No congelado en K0",
+      "confidence": "HIGH para geometría",
+      "authority": "OBSERVED_SOURCE",
+      "source_sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2"
+    },
+    {
+      "claim_id": "KOBS-07",
+      "entity_id": "ks_right_display",
+      "regions": [
+        [
+          0.606,
+          0.493,
+          0.861,
+          0.821
+        ]
+      ],
+      "boundary": null,
+      "visible_fact": "Vidriera derecha con instrumentos colgados y carteles; preservar distribución visible.",
+      "literal_record": "No congelado en K0",
+      "confidence": "HIGH para conjunto",
+      "authority": "OBSERVED_SOURCE",
+      "source_sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2"
+    },
+    {
+      "claim_id": "KOBS-08",
+      "entity_id": "ks_sale_strip",
+      "regions": [
+        [
+          0.185,
+          0.5,
+          0.418,
+          0.626
+        ]
+      ],
+      "boundary": null,
+      "visible_fact": "Franja amarilla inclinada dentro de la vidriera izquierda.",
+      "literal_record": "EVERYTHING MUST GO; puntuación final no congelada",
+      "confidence": "HIGH para palabras; puntuación pendiente",
+      "authority": "OBSERVED_SOURCE",
+      "source_sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2"
+    },
+    {
+      "claim_id": "KOBS-09",
+      "entity_id": "ks_lower_panels",
+      "regions": [
+        [
+          0.156,
+          0.807,
+          0.868,
+          0.915
+        ]
+      ],
+      "boundary": null,
+      "visible_fact": "Zócalos/paneles oscuros bajo vidrieras; inscripción clara a la derecha.",
+      "literal_record": "No congelado en K0",
+      "confidence": "HIGH para forma; texto pendiente",
+      "authority": "OBSERVED_SOURCE",
+      "source_sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2"
+    },
+    {
+      "claim_id": "KOBS-10",
+      "entity_id": "ks_context",
+      "regions": [
+        [
+          0,
+          0,
+          0.147,
+          0.915
+        ],
+        [
+          0.878,
+          0,
+          1,
+          0.915
+        ]
+      ],
+      "boundary": null,
+      "visible_fact": "Fragmentos de frentes vecinos, carteles laterales y poste a la derecha; no son componentes de Kenny.",
+      "literal_record": "Fuera del inventario literal K0",
+      "confidence": "HIGH para presencia",
+      "authority": "OBSERVED_SOURCE",
+      "source_sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2"
+    },
+    {
+      "claim_id": "KOBS-11",
+      "entity_id": "ks_sidewalk",
+      "regions": [
+        [
+          0,
+          0.906,
+          1,
+          1
+        ]
+      ],
+      "boundary": null,
+      "visible_fact": "Acera, borde y franja de calzada delante del frente.",
+      "literal_record": "—",
+      "confidence": "HIGH",
+      "authority": "OBSERVED_SOURCE",
+      "source_sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2"
+    },
+    {
+      "claim_id": "KOBS-12",
+      "entity_id": null,
+      "regions": [],
+      "boundary": "límite de evidencia, y=0; laterales y profundidad no expuestos",
+      "visible_fact": "El encuadre termina antes de mostrar techo; no hay observación de altura total, fondo, planta ni caras ocultas.",
+      "literal_record": "—",
+      "confidence": "HIGH para el límite; geometría UNKNOWN",
+      "authority": "OBSERVED_SOURCE",
+      "source_sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "KSR-01",
+      "subject": "ks_main_sign",
+      "predicate": "ABOVE",
+      "object": "ks_banner",
+      "protection": "PR0",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH"
+    },
+    {
+      "relationship_id": "KSR-02",
+      "subject": "ks_banner",
+      "predicate": "ABOVE",
+      "object": "ks_door",
+      "protection": "PR0",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH"
+    },
+    {
+      "relationship_id": "KSR-03",
+      "subject": "ks_left_display",
+      "predicate": "LEFT_OF",
+      "object": "ks_door",
+      "protection": "PR0",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH"
+    },
+    {
+      "relationship_id": "KSR-04",
+      "subject": "ks_right_display",
+      "predicate": "RIGHT_OF",
+      "object": "ks_door",
+      "protection": "PR0",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH"
+    },
+    {
+      "relationship_id": "KSR-05",
+      "subject": "ks_upper_windows",
+      "predicate": "ABOVE",
+      "object": "ks_main_sign",
+      "protection": "PR0",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH"
+    },
+    {
+      "relationship_id": "KSR-06",
+      "subject": "ks_main_sign",
+      "predicate": "PART_OF",
+      "object": "ks_facade",
+      "protection": "PR0",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH"
+    },
+    {
+      "relationship_id": "KSR-07",
+      "subject": "ks_door",
+      "predicate": "PART_OF",
+      "object": "ks_facade",
+      "protection": "PR0",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH"
+    },
+    {
+      "relationship_id": "KSR-08",
+      "subject": "ks_sale_strip",
+      "predicate": "INSIDE",
+      "object": "ks_left_display",
+      "protection": "PR1",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH"
+    },
+    {
+      "relationship_id": "KSR-09",
+      "subject": "ks_lower_panels",
+      "predicate": "BELOW",
+      "object": "ks_left_display",
+      "protection": "PR1",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH"
+    },
+    {
+      "relationship_id": "KSR-10",
+      "subject": "ks_lower_panels",
+      "predicate": "BELOW",
+      "object": "ks_right_display",
+      "protection": "PR1",
+      "epistemic_class": "OBSERVED",
+      "confidence": "HIGH"
+    }
+  ],
+  "uncertainties": [
+    "KOBS-12: original rooftop, total height, rear depth and unseen lateral geometry UNKNOWN; prospective design does not recover them.",
+    "KOBS-08: preserve known words EVERYTHING MUST GO; final punctuation PARTIAL_OR_UNKNOWN; no completed literal lock.",
+    "KOBS-05/06/07/09/10: small signs, panels and shop-window microtext PARTIAL_OR_UNKNOWN; preserve graphic placement; no completion.",
+    "Hidden interiors and cropped architectural continuity UNKNOWN; do not reconstruct historical geometry."
+  ]
+}

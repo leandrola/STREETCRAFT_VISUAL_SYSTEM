@@ -21,6 +21,13 @@ def review(path):
     read = lambda name: json.loads((path / (name + '.json')).read_text())
     manifest, payloads, report = read('manifest'), read('payloads'), read('report')
     comparison, contract = read('comparison'), read('contract')
+    from . import kenny_binding as k1
+    blobs = {name: (path / (name + ('.image' if name == 'source' else '.json'))).read_bytes()
+             for name in manifest['artifacts']}
+    design_review = None
+    if k1.applies(manifest, blobs):
+        sidecars = k1.load_sidecars(json.loads(blobs['request']), persisted=path)
+        design_review = k1.verify_bundle(manifest, blobs, sidecars)
     a, b = payloads['A'], payloads['B']
     records = [json.loads(line) for line in a['relations_and_locks'].splitlines()]
     expected = sorted([{k: c[k] for k in ('id', 'priority', 'value', 'lock_ids')}
@@ -54,6 +61,7 @@ def review(path):
             'delta_sha256': report['delta_sha256'], 'checks': checks,
             'payloads_file_sha256': hashlib.sha256((path/'payloads.json').read_bytes()).hexdigest(),
             'generation_attempts': 0, 'fresh_images': 0, 'valid_pairs': 0,
+            **({'source_design_review': design_review} if design_review else {}),
             'limitations': ['Prospective annotation, not historical recovery.',
                             'Provisional provider settings; not an operational selection.',
                             'No visual quality/improvement finding; VSG-2B remains BLOCKED/PENDING_VISUAL.']}

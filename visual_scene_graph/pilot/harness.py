@@ -102,6 +102,11 @@ def prepare(manifest, allowlist, root=ROOT):
         blobs[name] = data
     image_valid(blobs['source'])
     a = {k: json.loads(v) for k, v in blobs.items() if k != 'source'}
+    from . import kenny_binding as k1
+    sidecars = {}
+    if k1.applies(manifest, blobs):
+        sidecars = k1.load_sidecars(a['request'], root)
+        k1.verify_bundle(manifest, blobs, sidecars)
     runtime = a['runtime']
     if runtime.get('status') != 'GENERATION_READY' or runtime.get('generation_ready') is not True:
         raise PilotBlocked('NOT_GENERATION_READY')
@@ -165,7 +170,7 @@ def prepare(manifest, allowlist, root=ROOT):
     if not constraint_ids <= rubric_ids or not {'identity', 'unauthorized_change'} <= {c['category'] for c in manifest['rubric']}:
         raise PilotBlocked('INCOMPLETE_VISUAL_RUBRIC')
     return {'manifest': deepcopy(manifest), 'comparison': comparison, 'payloads': payloads,
-            'blobs': blobs, 'source': blobs['source']}
+            'blobs': blobs, 'source': blobs['source'], 'sidecars': sidecars}
 
 
 class CommandGenerator:
@@ -193,11 +198,21 @@ class CommandGenerator:
 def _execute(prepared, output_root, *, generator=None, dry_run=True, reviewed_delta=None):
     """Persist effective inputs before calls; any technical failure stops the pair."""
     m = prepared['manifest']
+    from . import kenny_binding as k1
+    if k1.applies(m, prepared['blobs']):
+        k1.verify_bundle(m, prepared['blobs'], prepared.get('sidecars', {}))
+        expected_cgc = normalize(json.loads(prepared['blobs']['cgc_final']))
+        if any(prepared['payloads'][branch]['common']['stable_cgc'] != expected_cgc for branch in ('A', 'B')):
+            raise PilotBlocked('K1_EXECUTION_DIRECTIVE_BYPASS')
     run_id = str(uuid.uuid4())
     out = Path(output_root) / run_id
     out.mkdir(parents=True, exist_ok=False)
     for name, data in prepared['blobs'].items():
         (out / (name + ('.image' if name == 'source' else '.json'))).write_bytes(data)
+    if prepared.get('sidecars'):
+        (out / 'sidecars').mkdir()
+        for name, data in prepared['sidecars'].items():
+            (out / 'sidecars' / name).write_bytes(data)
     save(out / 'manifest.json', m)
     save(out / 'comparison.json', prepared['comparison'])
     save(out / 'payloads.json', prepared['payloads'])

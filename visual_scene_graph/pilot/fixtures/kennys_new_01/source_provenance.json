@@ -1,0 +1,48 @@
+{
+  "version": "VSG2B-KENNYS-NEW-01",
+  "binding_kind": "PROSPECTIVE_SOURCE_AND_DESIGN_SEPARATED",
+  "head_at_start": "b36afe7dec67ee5a1778757011d7af89297f3645",
+  "date": "2026-09-29",
+  "annotator": "Codex; native-resolution source inspection",
+  "source": {
+    "path": "visual_scene_graph/pilot/fixtures/kennys/source/kennys-shop.jpg",
+    "sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+    "format": "JPEG",
+    "width": 736,
+    "height": 414,
+    "photographer": "UNKNOWN",
+    "capture_date": "UNKNOWN"
+  },
+  "authority_records": {
+    "k0": {
+      "path": "visual_scene_graph/pilot/fixtures/kennys/K0_OBSERVED_INFERRED_DESIGN.md",
+      "sha256": "ed8f17f1204d041d47f0618378e7056b9d0d95fc4b67aa9d4203003b75194f90"
+    },
+    "reception": {
+      "path": "visual_scene_graph/pilot/fixtures/kennys/reception.json",
+      "sha256": "9ef38ea1a63d5d31f6542c888b336b4356dcdbf43822cfb5055b73d0604fb456"
+    }
+  },
+  "observation_record": {
+    "path": "visual_scene_graph/pilot/fixtures/kennys_new_01/observations.json",
+    "sha256": "d9fd45e27f5ae76c4ce0de39ae732031077d1e776e3c2c0fad1d45d5763779b2"
+  },
+  "design_record": {
+    "path": "visual_scene_graph/pilot/fixtures/kennys_new_01/design.json",
+    "sha256": "c09e93d07aebd51203e08d385a82c49918f318e47f60f51f3b672077cd98ee4e"
+  },
+  "baseline": {
+    "path": "visual_scene_graph/pilot/fixtures/kennys_new_01/preservation_baseline.json",
+    "sha256": "c2ea9832a4705caafb6b07564235996a7da90c8e97c498b6c2fd797ccc9e83d7"
+  },
+  "head_delta": "K0 authored at f6aa069; committed at 3393c24; b36afe7 freezes uncertain sale-strip punctuation. Current K0 compatible; use current ed8f17f hash, not earlier draft.",
+  "historical_snapshots_recovered": false,
+  "source_design_boundary": "Original rooftop remains UNKNOWN; only proposed kd_* design is authorized. No design nodes enter source SAR2/VSG.",
+  "quota": {
+    "five_hour_initial": "UNKNOWN",
+    "weekly_initial": "UNKNOWN",
+    "cap_percentage_points": 40,
+    "numeric_compliance_certified": false
+  },
+  "runtime_scope": "T04 explicit scene extension; no source camera lock removed. CG-B elevated exception is prospective project authority, not photographic camera evidence."
+}

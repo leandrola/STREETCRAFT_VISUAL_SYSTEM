@@ -6,6 +6,7 @@ from .harness import ROOT, sha, validate
 FIXTURE_PATHS = {
     'R2B-191-D': ROOT / 'visual_scene_graph/pilot/fixtures/r2b_d_new_01',
     'R2B-191-E': ROOT / 'visual_scene_graph/pilot/fixtures/r2b_e_new_01',
+    'KENNYS-ROOFTOP': ROOT / 'visual_scene_graph/pilot/fixtures/kennys_new_01',
 }
 
 
@@ -20,4 +21,8 @@ def verify_snapshots(fixture, reconstruct):
         path = (ROOT / record['path']).resolve()
         if not path.is_relative_to(ROOT) or sha(path.read_bytes()) != record['sha256']:
             raise ValueError('ARTIFACT_HASH_MISMATCH:' + name)
+    from . import kenny_binding as k1
+    blobs = {name: (ROOT / record['path']).read_bytes() for name, record in manifest['artifacts'].items()}
+    if k1.applies(manifest, blobs):
+        k1.verify_bundle(manifest, blobs, k1.load_sidecars(json.loads(blobs['request'])))
     return manifest, comparison
