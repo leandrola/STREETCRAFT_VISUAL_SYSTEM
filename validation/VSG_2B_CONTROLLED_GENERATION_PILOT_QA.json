@@ -1,10 +1,10 @@
 {
   "suite": "VSG-2B Controlled Generation Pilot",
-  "date": "2026-09-29",
+  "date": "2026-09-30",
   "status": "BLOCKED",
   "reason": "PENDING_VISUAL_AND_REMAINING_SOURCE_BINDINGS",
   "infrastructure_status": "IMPLEMENTED",
-  "control_tests": 74,
+  "control_tests": 100,
   "control_status": "PASS",
   "control_suites": [
     {
@@ -19,6 +19,11 @@
     },
     {
       "name": "visual_scene_graph/pilot/test_kenny_binding.py",
+      "tests": 26,
+      "status": "PASS"
+    },
+    {
+      "name": "visual_scene_graph/pilot/test_campaign.py",
       "tests": 26,
       "status": "PASS"
     }
@@ -51,12 +56,12 @@
       "R2B-191-D": {
         "status": "CORPUS_RECOVERY_DRY_RUN_PASS",
         "report": {
-          "path": "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/report.json",
-          "sha256": "bd4c412813fc5866034b09b2fa9056e6d128dd2a7d465e533ebe1042fd294853"
+          "path": "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/report.json",
+          "sha256": "3afb7f5ba8485a432f52e5d434bdce08e77bc8e3099371bc43e94bbba61d72a4"
         },
         "review": {
-          "path": "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/delta_review.json",
-          "sha256": "f6e384ea6a853e4b1b71f4b44ef6fc49a2649c5f8dda746817b5f84a917a0c87"
+          "path": "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/delta_review.json",
+          "sha256": "d60d68e318880fd34c498576ac696ea90b1496c3323833e49d667b5497988c69"
         },
         "manifest_sha256": "d258f4784d7f27cabec9b6044142cdc809e19a9552e72924468e20d55dc3d3ec",
         "delta_sha256": "6159ef5f5666afb9037f5ba9512cf6a3d3c89a778f376961c9c570391ce59282",
@@ -86,12 +91,12 @@
       "R2B-191-E": {
         "status": "CORPUS_RECOVERY_DRY_RUN_PASS",
         "report": {
-          "path": "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/report.json",
-          "sha256": "b9731612dc39aa579bbab4d9a23b939852297d079732bff5510c7ec1ec51227c"
+          "path": "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/report.json",
+          "sha256": "de26f63f3f0100dbe55dbfb61e6585d7142899d7a52e0c20e129867fefda377b"
         },
         "review": {
-          "path": "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/delta_review.json",
-          "sha256": "57abee2c6aef8ada92295638cfddb9714906fe5fbe97b51c573240eb09f67e15"
+          "path": "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/delta_review.json",
+          "sha256": "d9a7d396115927e1dc62a10d259552a9213f5254035fd45906d5f3116b3ed074"
         },
         "manifest_sha256": "6568570352087407c7f6f23955ffe6e4f6381c6861bdd674d78baaa16197b275",
         "delta_sha256": "a282bbee73b6613ce2d5ad0737065f3e2332ebce020e664161f38cc43fd17458",
@@ -121,12 +126,12 @@
       "KENNYS-ROOFTOP": {
         "status": "CORPUS_RECOVERY_DRY_RUN_PASS",
         "report": {
-          "path": "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/report.json",
-          "sha256": "91d9247760d5e13d3409422b8a3993f2242dedd3c1bbb90a1b17d776baaf0d3e"
+          "path": "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/report.json",
+          "sha256": "abb29af81576fedeb8d9d84ff213ca132dd3837064df39612b5e5b416bc7f09a"
         },
         "review": {
-          "path": "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/delta_review.json",
-          "sha256": "4065e5070b95ee18798e42d0d2e8660214e546f806064c5a71ca83bc02ae7805"
+          "path": "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/delta_review.json",
+          "sha256": "b3842058f7c560bf5d0ac91d7eef0c222ef68e985647810f6df895dd327fab0a"
         },
         "manifest_sha256": "f628730fb1dd043c6df5cdf2d47d76002b3266be21b8a97204d54914674b5c79",
         "delta_sha256": "d04d58135715c95be089344674a99f51b78d8bb4a6ebd08da2194e2b97cc0e17",
@@ -236,8 +241,8 @@
         "scope_record": "visual_scene_graph/pilot/fixtures/kennys/reception.json",
         "rooftop_provenance": "AUTHORIZED_INFERENCE; not observed in source",
         "dry_run_review": {
-          "path": "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/delta_review.json",
-          "sha256": "4065e5070b95ee18798e42d0d2e8660214e546f806064c5a71ca83bc02ae7805"
+          "path": "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/delta_review.json",
+          "sha256": "b3842058f7c560bf5d0ac91d7eef0c222ef68e985647810f6df895dd327fab0a"
         }
       },
       {
@@ -280,8 +285,8 @@
         "manifest_sha256": "d258f4784d7f27cabec9b6044142cdc809e19a9552e72924468e20d55dc3d3ec",
         "historical_recovery": false,
         "dry_run_review": {
-          "path": "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/delta_review.json",
-          "sha256": "f6e384ea6a853e4b1b71f4b44ef6fc49a2649c5f8dda746817b5f84a917a0c87"
+          "path": "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/delta_review.json",
+          "sha256": "d60d68e318880fd34c498576ac696ea90b1496c3323833e49d667b5497988c69"
         }
       },
       {
@@ -304,8 +309,8 @@
         "manifest_sha256": "6568570352087407c7f6f23955ffe6e4f6381c6861bdd674d78baaa16197b275",
         "historical_recovery": false,
         "dry_run_review": {
-          "path": "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/delta_review.json",
-          "sha256": "57abee2c6aef8ada92295638cfddb9714906fe5fbe97b51c573240eb09f67e15"
+          "path": "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/delta_review.json",
+          "sha256": "d9a7d396115927e1dc62a10d259552a9213f5254035fd45906d5f3116b3ed074"
         }
       },
       {
@@ -333,9 +338,37 @@
   },
   "preconditions": {
     "path": "validation/vsg_2b/preconditions.json",
-    "sha256": "1f505c0f81fcda24018992bc019073ed4ad3e095ac5ba940420644954713d5e8"
+    "sha256": "40d7f1ba41603df6cfecb07bb9d8d924abd127f39aca12318d09cd29a1e29557"
   },
   "k1_status": "K1_CORPUS_RECOVERY_DRY_RUN_PASS",
+  "campaign_gate": {
+    "policy_version": "1.0.0",
+    "policy_sha256": "013bc27313a7c650b71ee3bb4193559ad0c5e6bdd13f3b8d4cdaadf15a5d89ef",
+    "policy": {
+      "path": "visual_scene_graph/pilot/campaign_policy.json",
+      "sha256": "241204469fb84da8835621f953964d8c887fb91442fd55aeda1a07b89cfc0285"
+    },
+    "required_phenomena": [
+      "semantic_text_lock",
+      "occlusion_lock",
+      "source_preservation",
+      "authorized_design",
+      "reference_isolation"
+    ],
+    "global_selection": [
+      "R2B-191-D",
+      "R2B-191-E",
+      "KENNYS-ROOFTOP",
+      "R2B-191-C"
+    ],
+    "partial_selection": [
+      "R2B-191-D",
+      "R2B-191-E",
+      "KENNYS-ROOFTOP"
+    ],
+    "critical_blocker": "Reference Isolation / C: NO_GO_C0_UNVERIFIED",
+    "visual_status": "BLOCKED / PENDING_VISUAL"
+  },
   "plan_limits": {
     "five_hour_initial": "UNKNOWN",
     "five_hour_final": "UNKNOWN",

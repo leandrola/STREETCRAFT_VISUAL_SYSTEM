@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "tests": 74,
+  "tests": 100,
   "suites": [
     {
       "name": "visual_scene_graph/pilot/test_pilot.py",
@@ -16,6 +16,11 @@
       "name": "visual_scene_graph/pilot/test_kenny_binding.py",
       "tests": 26,
       "status": "PASS"
+    },
+    {
+      "name": "visual_scene_graph/pilot/test_campaign.py",
+      "tests": 26,
+      "status": "PASS"
     }
   ],
   "evidence": [
@@ -23,19 +28,25 @@
       "name": "visual_scene_graph/pilot/test_pilot.py",
       "status": "PASS",
       "stdout": "",
-      "stderr": "................................\n----------------------------------------------------------------------\nRan 32 tests in 5.575s\n\nOK"
+      "stderr": "................................\n----------------------------------------------------------------------\nRan 32 tests in 5.654s\n\nOK"
     },
     {
       "name": "visual_scene_graph/pilot/test_e_binding.py",
       "status": "PASS",
       "stdout": "",
-      "stderr": "................\n----------------------------------------------------------------------\nRan 16 tests in 2.661s\n\nOK"
+      "stderr": "................\n----------------------------------------------------------------------\nRan 16 tests in 2.474s\n\nOK"
     },
     {
       "name": "visual_scene_graph/pilot/test_kenny_binding.py",
       "status": "PASS",
       "stdout": "",
-      "stderr": "..........................\n----------------------------------------------------------------------\nRan 26 tests in 4.850s\n\nOK"
+      "stderr": "..........................\n----------------------------------------------------------------------\nRan 26 tests in 4.645s\n\nOK"
+    },
+    {
+      "name": "visual_scene_graph/pilot/test_campaign.py",
+      "status": "PASS",
+      "stdout": "",
+      "stderr": "..........................\n----------------------------------------------------------------------\nRan 26 tests in 35.433s\n\nOK"
     }
   ],
   "scope": "Deterministic controls and source-bound mutation checks only; not visual evidence"

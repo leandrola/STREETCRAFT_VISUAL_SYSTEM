@@ -6,11 +6,14 @@ from .harness import PilotBlocked, save, sha, validate
 from ..generation_compiler import digest
 
 
-def evaluate(run_dir, review):
+def assess_review(run_dir, review):
+    """Recompute a review without writing or trusting a cached evaluation."""
     run_dir = Path(run_dir)
     validate(review, 'review')
     report = json.loads((run_dir / 'report.json').read_text())
     manifest = json.loads((run_dir / 'manifest.json').read_text())
+    validate(report, 'report')
+    validate(manifest, 'manifest')
     mapping = json.loads((run_dir / 'private_branch_map.json').read_text())
     if report['technical_failures'] or len(report['images']) != 2:
         raise PilotBlocked('NOT_A_VALID_PAIR')
@@ -55,26 +58,23 @@ def evaluate(run_dir, review):
               'verdict': verdict, 'improvements': improvements, 'regressions': regressions,
               'protected_loss': protected_loss, 'unauthorized_changes': unauthorized, 's3': s3, 'review_sha256': sha(json.dumps(review,sort_keys=True).encode()),
               'limitation': None if report['seed_controlled'] else 'UNCONTROLLED_VARIATION'}
+    return result
+
+
+def evaluate(run_dir, review):
+    run_dir = Path(run_dir)
+    result = assess_review(run_dir, review)
     save(run_dir / 'review.submitted.json', review)
     save(run_dir / 'evaluation.json', result)
-    if failure:
+    if result['status'] == 'FAIL':
         # Campaign execution checks this stop marker before any subsequent call.
         marker = run_dir.parent / 'STOP'
         if not marker.exists():
-            marker.write_text('Critical visual failure in ' + report['run_id'] + '\n')
+            marker.write_text('Critical visual failure in ' + result['run_id'] + '\n')
     return result
 
 
 def close_campaign(run_dirs, selected_fixtures, regression_passed):
-    """All selected fixtures must have valid evidence; at least one improvement."""
-    results = [json.loads((Path(p) / 'evaluation.json').read_text()) for p in run_dirs]
-    complete = (len(selected_fixtures) >= 4 and len(set(selected_fixtures)) == len(selected_fixtures)
-                and sorted(r['fixture_id'] for r in results) == sorted(selected_fixtures))
-    if any(r['status'] == 'FAIL' for r in results):
-        status = 'FAIL'
-    elif (complete and regression_passed and any(r['status'] == 'PASS' for r in results)
-          and all(r['verdict'] in {'BETTER','TIE'} and not r['limitation'] for r in results)):
-        status = 'PASS'
-    else:
-        status = 'INCONCLUSIVE'
-    return {'status': status, 'results': results, 'production_authorized': False}
+    """Apply the versioned campaign policy and revalidate persisted pair evidence."""
+    from .campaign import close
+    return close(run_dirs, selected_fixtures, regression_passed)

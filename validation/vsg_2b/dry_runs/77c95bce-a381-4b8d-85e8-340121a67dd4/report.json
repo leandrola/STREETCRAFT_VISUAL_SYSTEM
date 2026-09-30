@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "77c95bce-a381-4b8d-85e8-340121a67dd4",
+  "fixture_id": "R2B-191-E",
+  "status": "INCONCLUSIVE",
+  "reason": "DRY_RUN_NO_IMAGES",
+  "delta_sha256": "a282bbee73b6613ce2d5ad0737065f3e2332ebce020e664161f38cc43fd17458",
+  "images": [],
+  "technical_failures": [],
+  "visual_verdict": "INDETERMINATE",
+  "seed_controlled": false
+}

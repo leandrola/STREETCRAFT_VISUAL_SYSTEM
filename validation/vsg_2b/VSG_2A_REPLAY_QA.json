@@ -129826,7 +129826,7 @@
     "hardening/operational_hardening.py": "819cdabffbaf45f16bc2e04fc80786248151742cd85507210312c2029ad3b11b",
     "integration/streetcraft_orchestrator.py": "808e1488c8f23791799a6ff2e8ce7f0151919e7559ac0f5a97bdf8ccce3a1ea0",
     "reference_runtime/reference_reasoning.py": "6d057d9e8c4d34e70decf320bdc37e113a69deff868a086312fb55e32d5ef4a1",
-    "benchmark/run_regression_suite.py": "c6e8a5f9516b38768c93233c1f759a9ec0fe73bde3bdf9bec872d30ed72740bc",
+    "benchmark/run_regression_suite.py": "fdecc7cb712e655b56d400d001b35625131f6d0c39912057a5eab94b2b2635dd",
     "benchmark/r2b_1_9_1/RUN_STATUS.json": "a27153dd4ffed177fd3ba7a5f82cd079ffe1157b46ac85043c04e3939f4e9200",
     "README.md": "d7d78e3d3e8cf2a2527df8e4be1748bac0082abf7cfcbce529da4a3800e8509d",
     "STREETCRAFT.md": "d680f04dd932d38d4acd8fbd22fcde55d94f54dc3519e49af1bbec9bab2a938a",
@@ -129854,5 +129854,5 @@
     "Opaque/free-text policies require exact content. Unsupported CGC fields and ambiguous mappings fail closed.",
     "Cardinality 1..1 denotes each unique source node occurrence; explicit property cardinalities are also retained."
   ],
-  "qa_sha256": "6be8da3b922529a3179f934fcded77292da9dbb21ec3169254e7a9e1d5797b3e"
+  "qa_sha256": "6326a76e99346cedc02a59ee2410b4f905fe7807e13661ff82c1acedf4753861"
 }

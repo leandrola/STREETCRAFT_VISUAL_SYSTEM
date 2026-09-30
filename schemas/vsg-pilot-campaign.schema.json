@@ -1,0 +1,128 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "campaign_id": {
+      "const": "VSG-2B-G0"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "production_authorized": {
+      "const": false
+    },
+    "required_phenomena": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "semantic_text_lock",
+          "occlusion_lock",
+          "source_preservation",
+          "authorized_design",
+          "reference_isolation"
+        ]
+      },
+      "uniqueItems": true,
+      "minItems": 5
+    },
+    "global_selection": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "partial_selection": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "minItems": 1,
+      "maxItems": 3
+    },
+    "minimum_pairs": {
+      "const": 4
+    },
+    "maximum_generation_attempts": {
+      "const": 8
+    },
+    "fixtures": {
+      "type": "object",
+      "minProperties": 4,
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "status": {
+            "enum": [
+              "ADMITTED",
+              "BLOCKED",
+              "CONDITIONAL"
+            ]
+          },
+          "manifest_sha256": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "phenomena": {
+            "type": "object",
+            "minProperties": 1,
+            "propertyNames": {
+              "enum": [
+                "semantic_text_lock",
+                "occlusion_lock",
+                "source_preservation",
+                "authorized_design",
+                "reference_isolation",
+                "cg_f_camera"
+              ]
+            },
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            }
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "status",
+          "manifest_sha256",
+          "phenomena",
+          "reason"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "version",
+    "production_authorized",
+    "required_phenomena",
+    "global_selection",
+    "partial_selection",
+    "minimum_pairs",
+    "maximum_generation_attempts",
+    "fixtures"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

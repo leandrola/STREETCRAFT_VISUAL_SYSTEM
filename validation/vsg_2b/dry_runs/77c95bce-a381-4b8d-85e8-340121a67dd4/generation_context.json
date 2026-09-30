@@ -1,0 +1,83 @@
+{
+  "policies": {
+    "mode": "T01",
+    "profile": "VP00",
+    "camera": "CG-S",
+    "semantic_text_lock": "STRICT",
+    "material_intensity_delta": 0,
+    "occlusion_locks": [
+      "hidden_01"
+    ],
+    "cil": {
+      "commands": "/sc-core /sc-lock",
+      "resolved": {
+        "profile": "VP00",
+        "mode": "T01",
+        "camera": "CG-S",
+        "fear_city_identity": null,
+        "preservation": null,
+        "uncertainty": null,
+        "explicit_fear_city_profile_override": false,
+        "identity_lock": null,
+        "occlusion_lock": null,
+        "frontalization": null,
+        "aspect_ratio": null,
+        "street_presence": null
+      }
+    },
+    "reference_reasoning": {
+      "version": "RR-2.0",
+      "status": "READY",
+      "queries": 0,
+      "query_budget": 0,
+      "need_results": {
+        "SAR2-hidden_01": "LOCKED_UNKNOWN"
+      },
+      "unresolved_required": [],
+      "trace": [
+        {
+          "need_id": "SAR2-hidden_01",
+          "reason": "NO_QUERY_LOCKED_UNKNOWN"
+        }
+      ],
+      "admissions": [],
+      "generation_projection": [],
+      "locked_unknowns": [
+        "SAR2-hidden_01"
+      ]
+    },
+    "pre_generation_gate": {
+      "status": "PASS",
+      "findings": [],
+      "reference_preflight": {
+        "status": "PASS",
+        "admitted": [],
+        "rejected": []
+      }
+    },
+    "reference_features": [],
+    "text_render_plan": {
+      "tokens": [],
+      "proposed_text": {}
+    }
+  },
+  "directives": {
+    "preserve": [
+      "Preserve source framing, camera, visible street corridor, building contours, visible vehicle and traffic lights only where supported by pixels.",
+      "Preserve occluder_01 screen position, approximate silhouette and textured visible surface; its physical identity remains unassigned."
+    ],
+    "transform": [],
+    "remove": [],
+    "infer": [],
+    "unknown": [
+      "hidden_01: no observed object identity, text, geometry or depth behind the foreground silhouette.",
+      "Dark distant surfaces and small text are unresolved due to illumination/resolution; image-border clipping is not classified as occlusion."
+    ],
+    "forbid": [
+      "Reveal or invent exact objects, text, vehicle, facade or geometry behind occluder_01.",
+      "Remove, move, shrink or make occluder_01 transparent; change camera to expose hidden_01.",
+      "Use Archive/reference evidence or generic continuity to fill hidden_01; no reconstruction or minimum-continuity synthesis is authorized.",
+      "Invent exact lettering from unreadable small source text or extrapolate architecture beyond the crop."
+    ]
+  }
+}

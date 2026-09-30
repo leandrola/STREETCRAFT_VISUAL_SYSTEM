@@ -1,0 +1,21 @@
+{
+  "version": "RR-2.0",
+  "status": "READY",
+  "queries": 0,
+  "query_budget": 0,
+  "need_results": {
+    "SAR2-hidden_01": "LOCKED_UNKNOWN"
+  },
+  "unresolved_required": [],
+  "trace": [
+    {
+      "need_id": "SAR2-hidden_01",
+      "reason": "NO_QUERY_LOCKED_UNKNOWN"
+    }
+  ],
+  "admissions": [],
+  "generation_projection": [],
+  "locked_unknowns": [
+    "SAR2-hidden_01"
+  ]
+}

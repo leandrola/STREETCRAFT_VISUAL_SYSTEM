@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "campaign_id": "VSG-2B-G0",
+  "version": "1.0.0",
+  "production_authorized": false,
+  "required_phenomena": [
+    "semantic_text_lock",
+    "occlusion_lock",
+    "source_preservation",
+    "authorized_design",
+    "reference_isolation"
+  ],
+  "global_selection": [
+    "R2B-191-D",
+    "R2B-191-E",
+    "KENNYS-ROOFTOP",
+    "R2B-191-C"
+  ],
+  "partial_selection": [
+    "R2B-191-D",
+    "R2B-191-E",
+    "KENNYS-ROOFTOP"
+  ],
+  "minimum_pairs": 4,
+  "maximum_generation_attempts": 8,
+  "fixtures": {
+    "R2B-191-D": {
+      "status": "ADMITTED",
+      "manifest_sha256": "d258f4784d7f27cabec9b6044142cdc809e19a9552e72924468e20d55dc3d3ec",
+      "phenomena": {
+        "semantic_text_lock": [
+          "lock:GL-SEM-SIGN_01"
+        ]
+      },
+      "reason": "Prospective binding; DRY_RUN_ONLY settings. Pair exploration requires separately versioned provider settings and admission."
+    },
+    "R2B-191-E": {
+      "status": "ADMITTED",
+      "manifest_sha256": "6568570352087407c7f6f23955ffe6e4f6381c6861bdd674d78baaa16197b275",
+      "phenomena": {
+        "occlusion_lock": [
+          "lock:GL-OCC-REL_FOREGROUND_OCCLUDES_UNKNOWN"
+        ]
+      },
+      "reason": "Prospective binding; DRY_RUN_ONLY settings. Pair exploration requires separately versioned provider settings and admission."
+    },
+    "KENNYS-ROOFTOP": {
+      "status": "ADMITTED",
+      "manifest_sha256": "f628730fb1dd043c6df5cdf2d47d76002b3266be21b8a97204d54914674b5c79",
+      "phenomena": {
+        "source_preservation": [
+          "identity"
+        ],
+        "authorized_design": [
+          "design:kd_roof",
+          "design:kd_parapet",
+          "design:kd_hvac",
+          "design:KDR-01",
+          "design:KDR-02",
+          "design:KDR-03",
+          "design:KDR-04",
+          "design:KDES-01",
+          "design:KDES-02",
+          "design:KDES-03"
+        ]
+      },
+      "reason": "Prospective binding; DRY_RUN_ONLY settings. Pair exploration requires separately versioned provider settings and admission."
+    },
+    "R2B-191-C": {
+      "status": "BLOCKED",
+      "manifest_sha256": null,
+      "phenomena": {
+        "reference_isolation": []
+      },
+      "reason": "RECEIVED_UNBOUND / NO_GO_C0_UNVERIFIED; missing documented Fear City to CG-FC source binding. Hash alone is insufficient."
+    },
+    "R2B-191-F": {
+      "status": "CONDITIONAL",
+      "manifest_sha256": null,
+      "phenomena": {
+        "cg_f_camera": []
+      },
+      "reason": "Not selected or admitted. Does not substitute for Reference Isolation; fifth pair needs a new budget policy."
+    }
+  }
+}

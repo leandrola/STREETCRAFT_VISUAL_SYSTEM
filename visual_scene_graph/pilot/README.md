@@ -67,7 +67,13 @@ result = evaluate(run_directory, independently_authored_blind_review)
 summary = close_campaign(run_directories, selected_fixture_ids, regression_passed=True)
 ```
 
-The evaluator checks the review evidence, unmasks A/B afterward and returns `BETTER`, `TIE`, `WORSE` or `INDETERMINATE`. S3, protected loss or regression fails. Unknown findings and uncontrolled seeds conservatively prevent PASS. Ties cannot establish improvement. Campaign PASS requires all selected fixtures, a verified improvement, no failures or unresolved results, and stable regression PASS. Human visual findings, not contract similarity, determine these results. Technical errors never count as valid pairs.
+The evaluator checks the review evidence, unmasks A/B afterward and returns `BETTER`, `TIE`, `WORSE` or `INDETERMINATE`. S3, protected loss or regression fails. Unknown findings and uncontrolled seeds conservatively prevent PASS. Ties cannot establish improvement. Human visual findings, not contract similarity, determine these results. Technical errors never count as valid pairs.
+
+Global closure applies [campaign policy 1.0.0](campaign_policy.json), validated by the [campaign schema](../../schemas/vsg-pilot-campaign.schema.json). Its selection is D/E/Kenny/C, at least four distinct valid pairs and at most eight attempted calls in one campaign directory. Required phenomena are Semantic Text Lock, Occlusion Lock, source preservation, authorized design and **Reference Isolation**. Each phenomenon maps to nonempty frozen rubric criteria observed in both images and preserved in B. A 0/0 priority or an empty criterion list cannot establish exercised coverage. C remains blocked pending provenance and admission. F is conditional and does not replace C or automatically become a fifth pair.
+
+`close_campaign` replays fixture admission/preconditions and persisted inputs, provider receipts, output hashes, submitted reviews and evaluations. It includes all attempted calls in the directory, rejects omitted/unreviewed pairs and repeated fixtures, and honors STOP. A global PASS additionally requires a verified improvement, no failures or unresolved results, controlled seeds and stable regression PASS; `production_authorized` remains false. D/E/Kenny alone return `INCONCLUSIVE` with scope `PARTIAL_D_E_KENNY`, even with favorable hypothetical reviews. Admission is technical eligibility to explore a pair after provider configuration; it does not close the campaign.
+
+Any provider/model/size/seed/parameter change requires a versioned manifest, exact re-admission in both the allowlist and campaign policy, refreshed preconditions and a new dry run with a newly reviewed delta. Existing deltas do not authorize changed settings. See [G0 runbook](G0_RUNBOOK.md) for provider readiness and the proposed first D pair.
 
 ## Reproduction and evidence
 

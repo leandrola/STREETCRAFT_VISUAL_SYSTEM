@@ -1,5 +1,6 @@
 """Refresh technical evidence and explicit admitted D/E/Kenny dry runs; no generation."""
 import importlib.metadata
+from datetime import datetime, timezone
 import json
 import platform
 import re
@@ -13,6 +14,7 @@ from .fixture_replay import verify_snapshots, FIXTURE_PATHS
 from .review_dry_run import review
 from ..generation_compiler import digest
 from ..run_generation_benchmark import build_report, verify_report
+from .campaign import load_policy
 
 # Ordered and explicit. Admission alone never selects another corpus fixture.
 BINDERS = (
@@ -69,7 +71,7 @@ def main():
     write(out/'regression.json', regression)
     checks = [next(c for c in regression['checks'] if c['name']==name) for name in
               ('visual_scene_graph/pilot/test_pilot.py', 'visual_scene_graph/pilot/test_e_binding.py',
-               'visual_scene_graph/pilot/test_kenny_binding.py')]
+               'visual_scene_graph/pilot/test_kenny_binding.py', 'visual_scene_graph/pilot/test_campaign.py')]
     suites = []
     for check in checks:
         match = re.search(r'Ran (\d+) tests', check['stderr'])
@@ -122,7 +124,9 @@ def main():
     dry_run = {'real_corpus':'CORPUS_RECOVERY_DRY_RUN_PASS' if passed else 'BLOCKED',
                'fixtures':results, 'control_renderer':'PASS', 'control_preview':artifact(out/'CONTROL_RENDERER_PREVIEW.json')}
     write(out/'corpus_audit.json', corpus)
-    qa = {'suite':'VSG-2B Controlled Generation Pilot', 'date':'2026-09-29',
+    policy = load_policy()
+    today = datetime.now(timezone.utc).date().isoformat()
+    qa = {'suite':'VSG-2B Controlled Generation Pilot', 'date':today,
           'status':'BLOCKED', 'reason':'PENDING_VISUAL_AND_REMAINING_SOURCE_BINDINGS',
           'infrastructure_status':'IMPLEMENTED', 'control_tests':controls['tests'], 'control_status':controls['status'],
           'control_suites':suites, 'vsg2a_verification':verification, 'unified_regression':regression['R0'], 'dependencies':dependencies,
@@ -132,6 +136,13 @@ def main():
           'visual_verdict':'INDETERMINATE', 'visual_findings':[], 'dry_run':dry_run,
           'corpus':corpus, 'preconditions':artifact(out/'preconditions.json'),
           'k1_status':results['KENNYS-ROOFTOP'].get('k1_status', 'K1_NO_GO_VALIDATION'),
+          'campaign_gate':{'policy_version':policy['version'], 'policy_sha256':digest(policy),
+                           'policy':artifact(ROOT/'visual_scene_graph/pilot/campaign_policy.json'),
+                           'required_phenomena':policy['required_phenomena'],
+                           'global_selection':policy['global_selection'],
+                           'partial_selection':policy['partial_selection'],
+                           'critical_blocker':'Reference Isolation / C: NO_GO_C0_UNVERIFIED',
+                           'visual_status':'BLOCKED / PENDING_VISUAL'},
           'plan_limits':{'five_hour_initial':'UNKNOWN','five_hour_final':'UNKNOWN',
                          'weekly_initial':'UNKNOWN','weekly_final':'UNKNOWN','observed_consumption':'UNKNOWN',
                          'numeric_cap_compliance_certified':False},
@@ -145,13 +156,13 @@ def main():
                         'Controls establish no visual merit; zero fresh images or valid pairs.']}
     write(ROOT/'validation/VSG_2B_CONTROLLED_GENERATION_PILOT_QA.json', qa)
     fixture_lines = '\n'.join(f"- **{ident}: {r['status']}**" + (f"; delta `{r['delta_sha256']}`." if 'delta_sha256' in r else ': '+r['reason']) for ident,r in results.items())
-    summary = f'''# VSG-2B controlled generation pilot · 2026-09-29
+    summary = f'''# VSG-2B controlled generation pilot · {today}
 
 **General status: BLOCKED / PENDING_VISUAL.** Technical dry-run results are separate by fixture:
 
 {fixture_lines}
 
-- Deterministic controls: **{controls['tests']}/{controls['tests']} PASS** ({suites[0]['tests']} original + {suites[1]['tests']} E + {suites[2]['tests']} Kenny controls).
+- Deterministic controls: **{controls['tests']}/{controls['tests']} PASS** ({suites[0]['tests']} original + {suites[1]['tests']} E + {suites[2]['tests']} Kenny + {suites[3]['tests']} G0 controls).
 - Current VSG-2A replay: **{verification['cases_verified']}/25 PASS**, {verification['files_verified']} files verified; historical suite unchanged.
 - Unified regression: **{regression['R0']}** ({len(regression['checks'])} checks).
 - Dependencies: Python {dependencies['python']}, jsonschema {dependencies['jsonschema']}, Pillow {dependencies['Pillow']}.
@@ -166,6 +177,8 @@ D/E original fixtures and historical UUID directories remain byte-for-byte intac
 Kenny: **{qa['k1_status']}**. Source VSG-2A and separate design authority/integrity are checked by the blocking verifier and persisted-byte review. Visual rubric remains **PENDING**. Source coverage: P0 21/21, PR0 7/7, PR1 3/3, LOCK 7/7; design: 3 required nodes and 4 required relations. Rooftop Graph Locks **0/0 NOT_EXERCISED**. Identical design directives travel in A/B common; only source topology/locks differ in serialization. Six sidecars (including K0, reception and design) are frozen and revalidated without checkout fallback. Plan Limits initial/final and consumption **UNKNOWN**; no numeric budget compliance claim.
 
 [Kenny runbook](../visual_scene_graph/pilot/fixtures/kennys_new_01/RUNBOOK.md).
+
+G0 campaign policy **{policy['version']}** requires nonempty reviewed coverage of Semantic Text Lock, Occlusion Lock, source preservation, authorized design and Reference Isolation. D/E/Kenny are partial evidence only; C remains blocked and F cannot substitute automatically. Closure replays reviews, admission, receipts and campaign attempts before a global PASS. All positive G0 closure tests are synthetic; see [G0 runbook](../visual_scene_graph/pilot/G0_RUNBOOK.md).
 
 [E runbook](../visual_scene_graph/pilot/fixtures/r2b_e_new_01/RUNBOOK.md) · [D runbook](../visual_scene_graph/pilot/fixtures/r2b_d_new_01/RUNBOOK.md) · [Full QA](VSG_2B_CONTROLLED_GENERATION_PILOT_QA.json) · [Corpus audit](vsg_2b/corpus_audit.json) · [Controls](vsg_2b/controls.json) · [Regression](vsg_2b/regression.json).
 '''

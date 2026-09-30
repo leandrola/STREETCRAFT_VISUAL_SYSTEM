@@ -1,0 +1,571 @@
+{
+  "spec": "VSG-2B / G0",
+  "date": "2026-09-30",
+  "status": "G0_CAMPAIGN_GATE_READY_PROVIDER_UNCONFIGURED",
+  "vsg_2b_status": "BLOCKED / PENDING_VISUAL",
+  "production_authorized": false,
+  "head_initial": "14641922fc185a809885730899f1e1cb80d8fc42",
+  "head_final": "14641922fc185a809885730899f1e1cb80d8fc42",
+  "entry_tree": "CLEAN",
+  "delivery": "UNCOMMITTED_WORKING_TREE",
+  "entry_preconditions": "PASS against original HEAD bytes; 74 historical controls, 25 replay cases, 23 regression checks",
+  "campaign_policy": {
+    "path": "visual_scene_graph/pilot/campaign_policy.json",
+    "sha256": "241204469fb84da8835621f953964d8c887fb91442fd55aeda1a07b89cfc0285"
+  },
+  "policy_canonical_sha256": "013bc27313a7c650b71ee3bb4193559ad0c5e6bdd13f3b8d4cdaadf15a5d89ef",
+  "policy_version": "1.0.0",
+  "current_campaign_closure": {
+    "status": "INCONCLUSIVE",
+    "scope": "GLOBAL",
+    "results": [],
+    "production_authorized": false,
+    "reasons": [
+      "FIXTURE_NOT_ADMITTED_FOR_CAMPAIGN:R2B-191-C",
+      "INCOMPLETE_OR_REPEATED_FIXTURES",
+      "MINIMUM_PAIRS_NOT_MET",
+      "MISSING_REQUIRED_PHENOMENA",
+      "NO_VERIFIED_IMPROVEMENT"
+    ],
+    "policy_version": "1.0.0",
+    "policy_sha256": "013bc27313a7c650b71ee3bb4193559ad0c5e6bdd13f3b8d4cdaadf15a5d89ef",
+    "generation_attempts": 0,
+    "covered_phenomena": [],
+    "missing_phenomena": [
+      "authorized_design",
+      "occlusion_lock",
+      "reference_isolation",
+      "semantic_text_lock",
+      "source_preservation"
+    ]
+  },
+  "validation": {
+    "focused": {
+      "command": ".venv-sc/bin/python -m unittest visual_scene_graph.pilot.test_campaign visual_scene_graph.pilot.test_pilot",
+      "tests": 58,
+      "status": "PASS"
+    },
+    "refresh": {
+      "command": ".venv-sc/bin/python -m visual_scene_graph.pilot.run_validation",
+      "status": "PASS",
+      "controls": 100,
+      "g0_controls": 26,
+      "regression_checks": 24,
+      "regression_status": "PASS",
+      "vsg2a": {
+        "status": "PASS",
+        "errors": [],
+        "files_verified": 42,
+        "cases_verified": 25
+      }
+    },
+    "final_preconditions": "PASS",
+    "technical_tests_only": true
+  },
+  "evidence": [
+    {
+      "path": "validation/vsg_2b/controls.json",
+      "sha256": "14fb968798463185c878b35092f0ac3cccd3de3b22a35a752e9d3fe03ce90afc"
+    },
+    {
+      "path": "validation/vsg_2b/regression.json",
+      "sha256": "eb952d7f8b943784d913f3f9432b02f1288d19ea0066dd0fe956537755488e7b"
+    },
+    {
+      "path": "validation/vsg_2b/preconditions.json",
+      "sha256": "40d7f1ba41603df6cfecb07bb9d8d924abd127f39aca12318d09cd29a1e29557"
+    },
+    {
+      "path": "validation/VSG_2B_CONTROLLED_GENERATION_PILOT_QA.json",
+      "sha256": "6a4201a43c45d146376ef141aa78d1be1a9345715fa3848a0aad1eac44d4c68e"
+    }
+  ],
+  "fresh_dry_runs": {
+    "R2B-191-D": {
+      "status": "CORPUS_RECOVERY_DRY_RUN_PASS",
+      "report": {
+        "path": "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/report.json",
+        "sha256": "3afb7f5ba8485a432f52e5d434bdce08e77bc8e3099371bc43e94bbba61d72a4"
+      },
+      "review": {
+        "path": "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/delta_review.json",
+        "sha256": "d60d68e318880fd34c498576ac696ea90b1496c3323833e49d667b5497988c69"
+      },
+      "manifest_sha256": "d258f4784d7f27cabec9b6044142cdc809e19a9552e72924468e20d55dc3d3ec",
+      "delta_sha256": "6159ef5f5666afb9037f5ba9512cf6a3d3c89a778f376961c9c570391ce59282",
+      "coverage": {
+        "P0": {
+          "required": 9,
+          "preserved": 9,
+          "ratio": 1.0
+        },
+        "PR0": {
+          "required": 1,
+          "preserved": 1,
+          "ratio": 1.0
+        },
+        "PR1": {
+          "required": 1,
+          "preserved": 1,
+          "ratio": 1.0
+        },
+        "LOCK": {
+          "required": 3,
+          "preserved": 3,
+          "ratio": 1.0
+        }
+      }
+    },
+    "R2B-191-E": {
+      "status": "CORPUS_RECOVERY_DRY_RUN_PASS",
+      "report": {
+        "path": "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/report.json",
+        "sha256": "de26f63f3f0100dbe55dbfb61e6585d7142899d7a52e0c20e129867fefda377b"
+      },
+      "review": {
+        "path": "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/delta_review.json",
+        "sha256": "d9a7d396115927e1dc62a10d259552a9213f5254035fd45906d5f3116b3ed074"
+      },
+      "manifest_sha256": "6568570352087407c7f6f23955ffe6e4f6381c6861bdd674d78baaa16197b275",
+      "delta_sha256": "a282bbee73b6613ce2d5ad0737065f3e2332ebce020e664161f38cc43fd17458",
+      "coverage": {
+        "P0": {
+          "required": 9,
+          "preserved": 9,
+          "ratio": 1.0
+        },
+        "PR0": {
+          "required": 1,
+          "preserved": 1,
+          "ratio": 1.0
+        },
+        "PR1": {
+          "required": 0,
+          "preserved": 0,
+          "ratio": 1.0
+        },
+        "LOCK": {
+          "required": 4,
+          "preserved": 4,
+          "ratio": 1.0
+        }
+      }
+    },
+    "KENNYS-ROOFTOP": {
+      "status": "CORPUS_RECOVERY_DRY_RUN_PASS",
+      "report": {
+        "path": "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/report.json",
+        "sha256": "abb29af81576fedeb8d9d84ff213ca132dd3837064df39612b5e5b416bc7f09a"
+      },
+      "review": {
+        "path": "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/delta_review.json",
+        "sha256": "b3842058f7c560bf5d0ac91d7eef0c222ef68e985647810f6df895dd327fab0a"
+      },
+      "manifest_sha256": "f628730fb1dd043c6df5cdf2d47d76002b3266be21b8a97204d54914674b5c79",
+      "delta_sha256": "d04d58135715c95be089344674a99f51b78d8bb4a6ebd08da2194e2b97cc0e17",
+      "coverage": {
+        "P0": {
+          "required": 21,
+          "preserved": 21,
+          "ratio": 1.0
+        },
+        "PR0": {
+          "required": 7,
+          "preserved": 7,
+          "ratio": 1.0
+        },
+        "PR1": {
+          "required": 3,
+          "preserved": 3,
+          "ratio": 1.0
+        },
+        "LOCK": {
+          "required": 7,
+          "preserved": 7,
+          "ratio": 1.0
+        }
+      },
+      "k1_status": "K1_CORPUS_RECOVERY_DRY_RUN_PASS",
+      "source_design_review": {
+        "status": "PASS",
+        "source_vsg2a": "PASS",
+        "design_authority": "PASS",
+        "design_nodes_required": 3,
+        "design_relations_required": 4,
+        "source_entities": 11,
+        "source_relations": 10,
+        "rooftop_graph_locks": {
+          "required": 0,
+          "preserved": 0,
+          "exercised": false
+        },
+        "visual_rubric": "PENDING",
+        "archive_calls": 0,
+        "sidecar_sha256": {
+          "k0.md": "ed8f17f1204d041d47f0618378e7056b9d0d95fc4b67aa9d4203003b75194f90",
+          "reception.json": "9ef38ea1a63d5d31f6542c888b336b4356dcdbf43822cfb5055b73d0604fb456",
+          "observations.json": "d9fd45e27f5ae76c4ce0de39ae732031077d1e776e3c2c0fad1d45d5763779b2",
+          "design.json": "c09e93d07aebd51203e08d385a82c49918f318e47f60f51f3b672077cd98ee4e",
+          "source_provenance.json": "ed153e4ea87eaa031a483e8ae12d670b6e5c2d142924e4d944dc511425a92adc",
+          "preservation_baseline.json": "c2ea9832a4705caafb6b07564235996a7da90c8e97c498b6c2fd797ccc9e83d7"
+        }
+      }
+    }
+  },
+  "invariance": {
+    "status": "PASS",
+    "protected_existing_files_checked": 263,
+    "changed_protected_files": [],
+    "protected_file_sha256": {
+      "command_invocation/AGENT_INTEGRATION.md": "146b04098d137ce12bc57e73e71985b88b86f25b8fcaadfc723dfbb8ffe70abd",
+      "command_invocation/BACKDROP_PRESETS.json": "4ef159f88dbe473b27ac65880745e10713a26cbb2bf7f7f396974b3e0953ca08",
+      "command_invocation/BACKDROP_PRESETS.md": "19c30e7d576a975a270f9ca396d482058ad6a71eb8f972cb9489c3e993145a1e",
+      "command_invocation/CG_F_FRONTAL_ELEVATION.md": "262348736eb027ec23870c03588e5b3e173b85f0444015166f5ed0292a50090a",
+      "command_invocation/COMMANDS.json": "a63d7b3c5f75bf5bd702801d84d51bec0817a5b9219ed40c5f1f73c15111fefb",
+      "command_invocation/COMMAND_INVOCATION_LAYER.md": "cb0064b98fe235f10c0b84cc5129155483aa38e8c840d3fb2989ef7aff4078f7",
+      "command_invocation/backdrop_presets.py": "d494e6aee692d0b63509a5f3d30e55acd1edd0af3684c06a2c590a8835cace47",
+      "command_invocation/resolve_commands.py": "d93d971f0e1085001adc217f7c147b356d106166b8c2e294e6a2c0717ad07e31",
+      "command_invocation/test_backdrop_presets.py": "c79a5a2695116f873c98710cab8d24d079f422ab9b7b3f97c479c06ee6b29cf5",
+      "command_invocation/test_commands.py": "94d0e1ff3d79b4932a38b6e7988fc9b794e321a5cd10462dafc7335743e4ab8a",
+      "hardening/COMPACT_GENERATION_CONTRACT.md": "a52c2566f25e94948650149568a63afc7e40c45a2b8f4e54de8cd990fb7a0521",
+      "hardening/MATERIAL_INTENSITY_DELTA.md": "3df30c2e229b01bd0167bb4864fad2ad0b2be911b9f5a798960a55c2c3ba37ec",
+      "hardening/MICRO_DRIFT_CRITIC.md": "daba60aa5abf250d5199628a6f1fe14b0c9d86e108638e57d575552bcf0afd35",
+      "hardening/OCCLUSION_LOCKS.md": "8d01e13b397f0a38a80a2df8524a4f426e608495e2ae85c4504169fe62005fd1",
+      "hardening/OPERATIONAL_HARDENING.md": "091913a12a699b1190819109aa9c37e61cde49088d082ba0dcc8174fe6670598",
+      "hardening/PROFILE_DELTA_MATRIX.md": "fb9f839fb9534df4a31218ac918718e4bd0f7561fdf6b901a58f2cffa372fcc2",
+      "hardening/SEMANTIC_TEXT_LOCK.md": "d894cbd40ccafa81f76cce711f4d741a518045e7f98c28f2cde127e216e9a09a",
+      "hardening/operational_hardening.py": "819cdabffbaf45f16bc2e04fc80786248151742cd85507210312c2029ad3b11b",
+      "hardening/test_operational_hardening.py": "97db3ebc67a122a7a463b773f0d8fc45f681bed8c634ef64bfbefe1e09a3688b",
+      "integration/PATCH_HOOKS_1_9_1.md": "f16669f6c202a4ad57fb25b96b329008f0eddf630b34e49180938c4738d19f8a",
+      "integration/run_streetcraft_orchestration.py": "7cc1fe7b43cbe9a2f9ef64dae9597a93f42bc78ae846689c1f7e8656042a826f",
+      "integration/streetcraft_orchestrator.py": "808e1488c8f23791799a6ff2e8ce7f0151919e7559ac0f5a97bdf8ccce3a1ea0",
+      "integration/test_streetcraft_orchestrator.py": "36a3be7e7440b03bd1b5cd4cce2cf713d2639d461ed39fe6f1e6c94178883f49",
+      "reference_runtime/ARCHIVE_AWARE_REFERENCE_RUNTIME.md": "f2a2cf2180a62e4f816ff30ce7757c37e40f158bc7e13ae5a06e0aec65a3f6fc",
+      "reference_runtime/ARCHIVE_FAILURE_POLICY.md": "7161afee021fbc537e620b3ca7f5c884a10d6099400a459b2cca608e523da6c9",
+      "reference_runtime/CGC_ENRICHMENT.md": "2d7d348d63d1e43f68b289cd0421073160d2b6fcc9161ae9a9dbf771b2d0ff01",
+      "reference_runtime/DOMAIN_POLICY.md": "01176364cb888d2de28c8eb3382f58be0673114bc00ce02a9bfe868830c56ab8",
+      "reference_runtime/EVIDENCE_ADMISSION_POLICY.md": "1639a94f4e3ff6b676a35bb4c49a659f7c73c28f6c307710a85ba2df4aa22941",
+      "reference_runtime/REFERENCE_AUTHORITY_MAP.md": "6ba505765b569945e83312d949db4d5178e0f0a59283062e4e96baecbba92fae",
+      "reference_runtime/REFERENCE_NEED_MODEL.md": "9e3e26e9800813de354cefbf5eb820721697be792a3c0cc9a0d41001ed3be3d5",
+      "reference_runtime/REFERENCE_REASONING_2.md": "4892fc118211d1bf4a8dc42fb59c7010e773d4ea8b26d9992282e13d1a52cfc3",
+      "reference_runtime/archive_aware_runtime.py": "5da1a007eb3c77b5f4fef373f2f9dc9048b77c74a92434e5702603fa83422e48",
+      "reference_runtime/archive_v1_adapter.py": "6c3dbceba168bb285baa31943cac011a19260c55c9e20ddf4970536ddda6035e",
+      "reference_runtime/check_archive_v1_integration.py": "14f957aca6effbfd85acd2e47d50bf3d47e1536463a92a70fd509b8098c7a008",
+      "reference_runtime/check_reference_archive_integration.py": "63b4a92aff35d7178a6347a4a513f65b5959806cad20184c435bc344d010a1c2",
+      "reference_runtime/real_catalog/README.md": "e3bc41b321ab5bea40f31d4a255bb6cca8519ec7e6a4cb7266fef41ced57e541",
+      "reference_runtime/real_catalog/REAL_CASES_V1.json": "808b4cea9081936998bb1f1778eadb458f07b8224e87a3b348231c214eded490",
+      "reference_runtime/real_catalog/REAL_EVIDENCE_CATALOG_V1.json": "27d1dc9a0a76eb1940c069f15a2712dc0c075cf387c775ab04b547a2e8341a39",
+      "reference_runtime/reference_reasoning.py": "6d057d9e8c4d34e70decf320bdc37e113a69deff868a086312fb55e32d5ef4a1",
+      "reference_runtime/run_reference_archive.py": "4cac1ab55640cf3daf35f6806df9e30d6d171dbac78fda9164d2670567f2b950",
+      "reference_runtime/test_archive_aware_runtime.py": "0b6b47385b78f29f26923b481a2e2cc2b05b1c665bf82dc8fa0229ba68b22e4a",
+      "reference_runtime/test_reference_reasoning.py": "0f44d82bd303e4fcf30f93bd98a921b4c9a2f35c03b251a43396f5e488e5476b",
+      "scene_intelligence/FEAR_CITY_SCENE_POLICY.md": "e745b7a57f59fcc8697377b8407dff638036f8b5cc6178ddea08b54b3f5050a2",
+      "scene_intelligence/SCENE_ACTION_RESOLVER.md": "a5035a3506cdf8a39b3ffe5d2f543f953ca9478f067532c8439adbf26f5d3010",
+      "scene_intelligence/SCENE_ANALYSIS_RECORD_V2.md": "97c6a3290ed286a16e761b583a48b0bc5ce6d390d1617c2dcab349272aec1d67",
+      "scene_intelligence/SCENE_ENTITY_MODEL.md": "82918c4f432d7376ff4bec89bedf977a1155ababece3b2b6a837162656ba2d8c",
+      "scene_intelligence/SCENE_INTELLIGENCE.md": "94f662bb6896f346f586228a4dc6533b742f9de6722f6a34190d7ffa4b6311e8",
+      "scene_intelligence/SCENE_RELATIONSHIP_GRAPH.md": "68b166aba8c10c0097e08cb2511d2d14ba93b11d4551be2f6f5b5ad926c09c2c",
+      "scene_intelligence/SCENE_SALIENCE_MODEL.md": "2bde33fa96e657ebd61410140b42d38aeaf29270dd289078f88d5891ba14e7a2",
+      "scene_intelligence/SCENE_TO_CGC.md": "49df469a9ac49b61c51b7329782fe28aa9331e5aff5d1197beba18702f12eed7",
+      "scene_intelligence/fixtures/fear_city_scene_001.json": "1c8f8cc27517ffe19e50c8137cc9888a96be24c7504b548c37c8396c6a74fb4a",
+      "scene_intelligence/fixtures/storefront_t01.json": "60bea36f23a97df85ea4304b2e9c7a97c6fefa4c8a85497ef014234961438186",
+      "scene_intelligence/fixtures/storefront_t03_clean.json": "c6842d9a02f14e063d4481e3f7d0e4d702d8a33fe5591a23e3f17f156af5776c",
+      "scene_intelligence/scene_intelligence.py": "f42525096e507c70b842a83b5aaf8a0b9bfc440ba956edf7ad64669f16b93342",
+      "scene_intelligence/test_scene_intelligence.py": "5d5ce352d8f53d9ff3019e7f16fc8a52e96c95307a91c048540e7fc52f191830",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/candidate_graph.json": "c75510bf04dd03168e58d63a835cf4f95dc8ff5de0defcfb1bf1c8a09f8fb309",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/cgc_final.json": "15ca3622fb44cd5125348699f4c1317d55f9c42fc339c745b38065e16127a90b",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/comparison.json": "497177561603f75516a1a06ac820ac336d048f595dd85f3a18998639e29ed896",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/contract.json": "42db55f13f0e44f4c55161a05ce9f7dae1108a0cd426264c15321f2895edcf31",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/delta_review.json": "c5aaef887e9d5f95bd77e1e97f65d33ed4c5fe2a99705508d28154b2a939be10",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/expected_graph.json": "c75510bf04dd03168e58d63a835cf4f95dc8ff5de0defcfb1bf1c8a09f8fb309",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/generation_context.json": "4414c1b80f6e66dc257b1f520e4e947cd8c9b5b591542114860b57f4371cc263",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/manifest.json": "9d25a10d38ff1354cc3831a1771ae6af76418de9dd1901dbc9c2a6e4cca8fc68",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/payloads.json": "5197f955e2e3f335cd40298b0cf07564f2f2168d1d2446380df8a78b516d90f2",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/report.json": "494b48ac0399fc4f1a31716711b504409f7b84eabb6615201f80824ab5b74cef",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/request.json": "8d5954d44f329decef46328046effa13b8e5373ca64ce56f2f14a1f6132c0d8b",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/rr2.json": "0cbdede2fff443d62dde992606e06b3a45a530743faaa6865e7233875a833f3b",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/runtime.json": "7e099e53c980735557e5d967bd4b25c92ece2ed2fe38274e8518a44bb63cf8a3",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/sar2.json": "4aad179a06df8566e95ecdb385151e0f62905aa1d1ceca3a03d4b5f1f690662b",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/source.image": "f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/candidate_graph.json": "cea40cb4fccc9c47037301c6304b3b99853e8c10be7512a215a59b8e2882ac43",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/cgc_final.json": "06bcde8b726ceeab1d2b823b2a25761ab44f9a9d0c9035d70bf08db8d8aad462",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/comparison.json": "02035dd9e8250d75282a20fd6b6b9fd163e70d87aed4998283cf9a6ad918a56a",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/contract.json": "c9ece946ae08533d2487d55c717a149caab7e8cc3e4c1eb388fdf927be9e58f8",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/delta_review.json": "f6e384ea6a853e4b1b71f4b44ef6fc49a2649c5f8dda746817b5f84a917a0c87",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/expected_graph.json": "cea40cb4fccc9c47037301c6304b3b99853e8c10be7512a215a59b8e2882ac43",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/generation_context.json": "26140b016abc6d40a30e3763816cdf947d6a040643340d6c5b2f68f25ac367c2",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/manifest.json": "da3c021fea39eafb972a34876786cecc648f95359c32dbbffd232ad504f14895",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/payloads.json": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/report.json": "bd4c412813fc5866034b09b2fa9056e6d128dd2a7d465e533ebe1042fd294853",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/request.json": "2fe53ee2713d3077491b19875e3e0d3342d4f7ee6f1903f11e34703f42900ab0",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/rr2.json": "8f22c4e7e3bee1c303699117a7225d8d816964e88aea01803512938af3010169",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/runtime.json": "3987220126c2af9302abc34e72afab0a070b5cc825259fcc701e60d08d834e09",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/sar2.json": "6f1586703a6fe7fc53a4f980e22406dfaa5deb54645b43b02938bd2a3f05d9b5",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/source.image": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/candidate_graph.json": "3fc9811743f86f70bce17764ad70d0a438f2e53685975596b4707da5127bb75b",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/cgc_final.json": "55d76e27242f56485ca6dffe6771697ef397f1d1e1e7fd35b66a3f7625c2fe7c",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/comparison.json": "7903de5367dbd076fa4bb6face3bf3d9a0aac99a8a5b3f7aa8ed44a0643949c3",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/contract.json": "37dd0f143288ade92bfb80bd8ef670b4c5f54850a5e882387cb68267214ddb5b",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/delta_review.json": "b63e1443e98c5c1b16e3e527f2f8a071dd2c8a815b74f2e6287314ea0717c500",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/expected_graph.json": "3fc9811743f86f70bce17764ad70d0a438f2e53685975596b4707da5127bb75b",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/generation_context.json": "66ec147bea5260b2536a4f1a13d0c703d7b34a717abc9e1f5edf648089ed08d5",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/manifest.json": "e34f4fa417b637a3fa21c582497ae6cd2c3bf7e02c9a61c0414176087ca01408",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/payloads.json": "f8ea1131d393e0cdd4ed7bfe4ce4b841a798f15f476305275c15bc12ae8ffb1a",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/report.json": "abfb0fc92c7943b1f3f4a06e39ae118317f2b95a10f366efcf4a8f3bb47a16e4",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/request.json": "a143f7ca3da6f2a12f5d7879cb2c650311ae8ab474daf5c26c21b5e96825e1ba",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/rr2.json": "8bfd19dd29069057ec881fd77e78e5fcb087c905fe6f27057cf93932c0cd1fe2",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/runtime.json": "2df2651a4730cd6d88ef467f5d76891dd7fabe28ab266c7de74621a28bf16827",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sar2.json": "185285dc65b9e66bba8112c9c3597317eae62782a7402d5979efe2c1bdcad420",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sidecars/design.json": "c09e93d07aebd51203e08d385a82c49918f318e47f60f51f3b672077cd98ee4e",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sidecars/k0.md": "ed8f17f1204d041d47f0618378e7056b9d0d95fc4b67aa9d4203003b75194f90",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sidecars/observations.json": "d9fd45e27f5ae76c4ce0de39ae732031077d1e776e3c2c0fad1d45d5763779b2",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sidecars/preservation_baseline.json": "c2ea9832a4705caafb6b07564235996a7da90c8e97c498b6c2fd797ccc9e83d7",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sidecars/reception.json": "9ef38ea1a63d5d31f6542c888b336b4356dcdbf43822cfb5055b73d0604fb456",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sidecars/source_provenance.json": "ed153e4ea87eaa031a483e8ae12d670b6e5c2d142924e4d944dc511425a92adc",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/source.image": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/candidate_graph.json": "cea40cb4fccc9c47037301c6304b3b99853e8c10be7512a215a59b8e2882ac43",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/cgc_final.json": "06bcde8b726ceeab1d2b823b2a25761ab44f9a9d0c9035d70bf08db8d8aad462",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/comparison.json": "02035dd9e8250d75282a20fd6b6b9fd163e70d87aed4998283cf9a6ad918a56a",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/contract.json": "c9ece946ae08533d2487d55c717a149caab7e8cc3e4c1eb388fdf927be9e58f8",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/delta_review.json": "3aebeee4f3e9c2bd248b650a10f00a16ff6ee306cf6a0890d87b846edbfc51c4",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/expected_graph.json": "cea40cb4fccc9c47037301c6304b3b99853e8c10be7512a215a59b8e2882ac43",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/generation_context.json": "26140b016abc6d40a30e3763816cdf947d6a040643340d6c5b2f68f25ac367c2",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/manifest.json": "da3c021fea39eafb972a34876786cecc648f95359c32dbbffd232ad504f14895",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/payloads.json": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/report.json": "4b15d151c7d8b9ae64aaff33eb32fe53e7048f4c6b126e2160060d7d7cfd1dc4",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/request.json": "2fe53ee2713d3077491b19875e3e0d3342d4f7ee6f1903f11e34703f42900ab0",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/rr2.json": "8f22c4e7e3bee1c303699117a7225d8d816964e88aea01803512938af3010169",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/runtime.json": "3987220126c2af9302abc34e72afab0a070b5cc825259fcc701e60d08d834e09",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/sar2.json": "6f1586703a6fe7fc53a4f980e22406dfaa5deb54645b43b02938bd2a3f05d9b5",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/source.image": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/candidate_graph.json": "cea40cb4fccc9c47037301c6304b3b99853e8c10be7512a215a59b8e2882ac43",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/cgc_final.json": "06bcde8b726ceeab1d2b823b2a25761ab44f9a9d0c9035d70bf08db8d8aad462",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/comparison.json": "02035dd9e8250d75282a20fd6b6b9fd163e70d87aed4998283cf9a6ad918a56a",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/contract.json": "c9ece946ae08533d2487d55c717a149caab7e8cc3e4c1eb388fdf927be9e58f8",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/delta_review.json": "ca6ef9b20fb8127b1763528b308e2f89054550738ccd2b5cbe10d160ea84a364",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/expected_graph.json": "cea40cb4fccc9c47037301c6304b3b99853e8c10be7512a215a59b8e2882ac43",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/generation_context.json": "26140b016abc6d40a30e3763816cdf947d6a040643340d6c5b2f68f25ac367c2",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/manifest.json": "da3c021fea39eafb972a34876786cecc648f95359c32dbbffd232ad504f14895",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/payloads.json": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/report.json": "2f41f392074a5930e4028134f5bed32496baf98182dcf41da6964198dbd76f29",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/request.json": "2fe53ee2713d3077491b19875e3e0d3342d4f7ee6f1903f11e34703f42900ab0",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/rr2.json": "8f22c4e7e3bee1c303699117a7225d8d816964e88aea01803512938af3010169",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/runtime.json": "3987220126c2af9302abc34e72afab0a070b5cc825259fcc701e60d08d834e09",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/sar2.json": "6f1586703a6fe7fc53a4f980e22406dfaa5deb54645b43b02938bd2a3f05d9b5",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/source.image": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/candidate_graph.json": "c75510bf04dd03168e58d63a835cf4f95dc8ff5de0defcfb1bf1c8a09f8fb309",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/cgc_final.json": "15ca3622fb44cd5125348699f4c1317d55f9c42fc339c745b38065e16127a90b",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/comparison.json": "497177561603f75516a1a06ac820ac336d048f595dd85f3a18998639e29ed896",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/contract.json": "42db55f13f0e44f4c55161a05ce9f7dae1108a0cd426264c15321f2895edcf31",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/delta_review.json": "6d04c0af9fa20c439651f00a7b9f7688a1489487a40285cbe2224bcbcdb3f8b9",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/expected_graph.json": "c75510bf04dd03168e58d63a835cf4f95dc8ff5de0defcfb1bf1c8a09f8fb309",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/generation_context.json": "4414c1b80f6e66dc257b1f520e4e947cd8c9b5b591542114860b57f4371cc263",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/manifest.json": "9d25a10d38ff1354cc3831a1771ae6af76418de9dd1901dbc9c2a6e4cca8fc68",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/payloads.json": "5197f955e2e3f335cd40298b0cf07564f2f2168d1d2446380df8a78b516d90f2",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/report.json": "95484688bf9c1d9827961fa8206205c60ff595381676baceb3246701a390b790",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/request.json": "8d5954d44f329decef46328046effa13b8e5373ca64ce56f2f14a1f6132c0d8b",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/rr2.json": "0cbdede2fff443d62dde992606e06b3a45a530743faaa6865e7233875a833f3b",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/runtime.json": "7e099e53c980735557e5d967bd4b25c92ece2ed2fe38274e8518a44bb63cf8a3",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/sar2.json": "4aad179a06df8566e95ecdb385151e0f62905aa1d1ceca3a03d4b5f1f690662b",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/source.image": "f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/candidate_graph.json": "cea40cb4fccc9c47037301c6304b3b99853e8c10be7512a215a59b8e2882ac43",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/cgc_final.json": "06bcde8b726ceeab1d2b823b2a25761ab44f9a9d0c9035d70bf08db8d8aad462",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/comparison.json": "02035dd9e8250d75282a20fd6b6b9fd163e70d87aed4998283cf9a6ad918a56a",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/contract.json": "c9ece946ae08533d2487d55c717a149caab7e8cc3e4c1eb388fdf927be9e58f8",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/delta_review.json": "2629374093db748f682e888d8c641d580b51a1e04dba7bb69226505ec4302cab",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/expected_graph.json": "cea40cb4fccc9c47037301c6304b3b99853e8c10be7512a215a59b8e2882ac43",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/generation_context.json": "26140b016abc6d40a30e3763816cdf947d6a040643340d6c5b2f68f25ac367c2",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/manifest.json": "da3c021fea39eafb972a34876786cecc648f95359c32dbbffd232ad504f14895",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/payloads.json": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/report.json": "2b1177dce0221398f80401c04f11a1934aa71fcb16a9237ecf2e437e8049efa6",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/request.json": "2fe53ee2713d3077491b19875e3e0d3342d4f7ee6f1903f11e34703f42900ab0",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/rr2.json": "8f22c4e7e3bee1c303699117a7225d8d816964e88aea01803512938af3010169",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/runtime.json": "3987220126c2af9302abc34e72afab0a070b5cc825259fcc701e60d08d834e09",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/sar2.json": "6f1586703a6fe7fc53a4f980e22406dfaa5deb54645b43b02938bd2a3f05d9b5",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/source.image": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/candidate_graph.json": "cea40cb4fccc9c47037301c6304b3b99853e8c10be7512a215a59b8e2882ac43",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/cgc_final.json": "06bcde8b726ceeab1d2b823b2a25761ab44f9a9d0c9035d70bf08db8d8aad462",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/comparison.json": "02035dd9e8250d75282a20fd6b6b9fd163e70d87aed4998283cf9a6ad918a56a",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/contract.json": "c9ece946ae08533d2487d55c717a149caab7e8cc3e4c1eb388fdf927be9e58f8",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/delta_review.json": "33dc8541329eb6b36c10c91386719f26dd1673bdfa83cc20a9f8f6ea6389af65",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/expected_graph.json": "cea40cb4fccc9c47037301c6304b3b99853e8c10be7512a215a59b8e2882ac43",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/generation_context.json": "26140b016abc6d40a30e3763816cdf947d6a040643340d6c5b2f68f25ac367c2",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/manifest.json": "da3c021fea39eafb972a34876786cecc648f95359c32dbbffd232ad504f14895",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/payloads.json": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/report.json": "2a16954c9c8f6f459acc460ad9865fbaaf28081a32a785c57c6e57f1de2b4507",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/request.json": "2fe53ee2713d3077491b19875e3e0d3342d4f7ee6f1903f11e34703f42900ab0",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/rr2.json": "8f22c4e7e3bee1c303699117a7225d8d816964e88aea01803512938af3010169",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/runtime.json": "3987220126c2af9302abc34e72afab0a070b5cc825259fcc701e60d08d834e09",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/sar2.json": "6f1586703a6fe7fc53a4f980e22406dfaa5deb54645b43b02938bd2a3f05d9b5",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/source.image": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/candidate_graph.json": "c75510bf04dd03168e58d63a835cf4f95dc8ff5de0defcfb1bf1c8a09f8fb309",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/cgc_final.json": "15ca3622fb44cd5125348699f4c1317d55f9c42fc339c745b38065e16127a90b",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/comparison.json": "497177561603f75516a1a06ac820ac336d048f595dd85f3a18998639e29ed896",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/contract.json": "42db55f13f0e44f4c55161a05ce9f7dae1108a0cd426264c15321f2895edcf31",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/delta_review.json": "57abee2c6aef8ada92295638cfddb9714906fe5fbe97b51c573240eb09f67e15",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/expected_graph.json": "c75510bf04dd03168e58d63a835cf4f95dc8ff5de0defcfb1bf1c8a09f8fb309",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/generation_context.json": "4414c1b80f6e66dc257b1f520e4e947cd8c9b5b591542114860b57f4371cc263",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/manifest.json": "9d25a10d38ff1354cc3831a1771ae6af76418de9dd1901dbc9c2a6e4cca8fc68",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/payloads.json": "5197f955e2e3f335cd40298b0cf07564f2f2168d1d2446380df8a78b516d90f2",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/report.json": "b9731612dc39aa579bbab4d9a23b939852297d079732bff5510c7ec1ec51227c",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/request.json": "8d5954d44f329decef46328046effa13b8e5373ca64ce56f2f14a1f6132c0d8b",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/rr2.json": "0cbdede2fff443d62dde992606e06b3a45a530743faaa6865e7233875a833f3b",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/runtime.json": "7e099e53c980735557e5d967bd4b25c92ece2ed2fe38274e8518a44bb63cf8a3",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/sar2.json": "4aad179a06df8566e95ecdb385151e0f62905aa1d1ceca3a03d4b5f1f690662b",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/source.image": "f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/candidate_graph.json": "3fc9811743f86f70bce17764ad70d0a438f2e53685975596b4707da5127bb75b",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/cgc_final.json": "55d76e27242f56485ca6dffe6771697ef397f1d1e1e7fd35b66a3f7625c2fe7c",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/comparison.json": "7903de5367dbd076fa4bb6face3bf3d9a0aac99a8a5b3f7aa8ed44a0643949c3",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/contract.json": "37dd0f143288ade92bfb80bd8ef670b4c5f54850a5e882387cb68267214ddb5b",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/delta_review.json": "4065e5070b95ee18798e42d0d2e8660214e546f806064c5a71ca83bc02ae7805",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/expected_graph.json": "3fc9811743f86f70bce17764ad70d0a438f2e53685975596b4707da5127bb75b",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/generation_context.json": "66ec147bea5260b2536a4f1a13d0c703d7b34a717abc9e1f5edf648089ed08d5",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/manifest.json": "e34f4fa417b637a3fa21c582497ae6cd2c3bf7e02c9a61c0414176087ca01408",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/payloads.json": "f8ea1131d393e0cdd4ed7bfe4ce4b841a798f15f476305275c15bc12ae8ffb1a",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/report.json": "91d9247760d5e13d3409422b8a3993f2242dedd3c1bbb90a1b17d776baaf0d3e",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/request.json": "a143f7ca3da6f2a12f5d7879cb2c650311ae8ab474daf5c26c21b5e96825e1ba",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/rr2.json": "8bfd19dd29069057ec881fd77e78e5fcb087c905fe6f27057cf93932c0cd1fe2",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/runtime.json": "2df2651a4730cd6d88ef467f5d76891dd7fabe28ab266c7de74621a28bf16827",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sar2.json": "185285dc65b9e66bba8112c9c3597317eae62782a7402d5979efe2c1bdcad420",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sidecars/design.json": "c09e93d07aebd51203e08d385a82c49918f318e47f60f51f3b672077cd98ee4e",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sidecars/k0.md": "ed8f17f1204d041d47f0618378e7056b9d0d95fc4b67aa9d4203003b75194f90",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sidecars/observations.json": "d9fd45e27f5ae76c4ce0de39ae732031077d1e776e3c2c0fad1d45d5763779b2",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sidecars/preservation_baseline.json": "c2ea9832a4705caafb6b07564235996a7da90c8e97c498b6c2fd797ccc9e83d7",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sidecars/reception.json": "9ef38ea1a63d5d31f6542c888b336b4356dcdbf43822cfb5055b73d0604fb456",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sidecars/source_provenance.json": "ed153e4ea87eaa031a483e8ae12d670b6e5c2d142924e4d944dc511425a92adc",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/source.image": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+      "visual_scene_graph/pilot/allowlist.json": "6adde5e6bf3d3284627cb6b9b4ecb3dc88e2db244c6304a376992609144c377c",
+      "visual_scene_graph/pilot/fixtures/kennys/K0_OBSERVED_INFERRED_DESIGN.md": "ed8f17f1204d041d47f0618378e7056b9d0d95fc4b67aa9d4203003b75194f90",
+      "visual_scene_graph/pilot/fixtures/kennys/reception.json": "9ef38ea1a63d5d31f6542c888b336b4356dcdbf43822cfb5055b73d0604fb456",
+      "visual_scene_graph/pilot/fixtures/kennys/source/kennys-shop.jpg": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/RUNBOOK.md": "5eb3be4e9144aabbdc3fcc2eab1677f7d50d7ab644fcb84263c87dd09a29cbeb",
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/candidate_graph.json": "3fc9811743f86f70bce17764ad70d0a438f2e53685975596b4707da5127bb75b",
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/cgc_final.json": "55d76e27242f56485ca6dffe6771697ef397f1d1e1e7fd35b66a3f7625c2fe7c",
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/contract.json": "37dd0f143288ade92bfb80bd8ef670b4c5f54850a5e882387cb68267214ddb5b",
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/design.json": "c09e93d07aebd51203e08d385a82c49918f318e47f60f51f3b672077cd98ee4e",
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/expected_graph.json": "3fc9811743f86f70bce17764ad70d0a438f2e53685975596b4707da5127bb75b",
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/generation_context.json": "66ec147bea5260b2536a4f1a13d0c703d7b34a717abc9e1f5edf648089ed08d5",
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/manifest.json": "e34f4fa417b637a3fa21c582497ae6cd2c3bf7e02c9a61c0414176087ca01408",
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/observations.json": "d9fd45e27f5ae76c4ce0de39ae732031077d1e776e3c2c0fad1d45d5763779b2",
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/preservation_baseline.json": "c2ea9832a4705caafb6b07564235996a7da90c8e97c498b6c2fd797ccc9e83d7",
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/request.json": "a143f7ca3da6f2a12f5d7879cb2c650311ae8ab474daf5c26c21b5e96825e1ba",
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/rr2.json": "8bfd19dd29069057ec881fd77e78e5fcb087c905fe6f27057cf93932c0cd1fe2",
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/runtime.json": "2df2651a4730cd6d88ef467f5d76891dd7fabe28ab266c7de74621a28bf16827",
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/sar2.json": "185285dc65b9e66bba8112c9c3597317eae62782a7402d5979efe2c1bdcad420",
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/source_provenance.json": "ed153e4ea87eaa031a483e8ae12d670b6e5c2d142924e4d944dc511425a92adc",
+      "visual_scene_graph/pilot/fixtures/r2b_c_new_01/C0_REFERENCE_ISOLATION_SCOPE.md": "50a6cd1e771cf3baf87b8e59e3cead7b47de24243a4e968000fa6ce1516f8c81",
+      "visual_scene_graph/pilot/fixtures/r2b_c_new_01/C1_NO_GO.md": "4ff5e7630c91eb738521bcca554cd4bdc7891cc05ace3bcc4da343161a96c001",
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/RUNBOOK.md": "81dcd08c54510e95b45e89025202aad96a7843e24f29008c4c208a0d0df5eeb3",
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/candidate_graph.json": "cea40cb4fccc9c47037301c6304b3b99853e8c10be7512a215a59b8e2882ac43",
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/cgc_final.json": "06bcde8b726ceeab1d2b823b2a25761ab44f9a9d0c9035d70bf08db8d8aad462",
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/contract.json": "c9ece946ae08533d2487d55c717a149caab7e8cc3e4c1eb388fdf927be9e58f8",
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/expected_graph.json": "cea40cb4fccc9c47037301c6304b3b99853e8c10be7512a215a59b8e2882ac43",
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/generation_context.json": "26140b016abc6d40a30e3763816cdf947d6a040643340d6c5b2f68f25ac367c2",
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/manifest.json": "da3c021fea39eafb972a34876786cecc648f95359c32dbbffd232ad504f14895",
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/request.json": "2fe53ee2713d3077491b19875e3e0d3342d4f7ee6f1903f11e34703f42900ab0",
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/rr2.json": "8f22c4e7e3bee1c303699117a7225d8d816964e88aea01803512938af3010169",
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/runtime.json": "3987220126c2af9302abc34e72afab0a070b5cc825259fcc701e60d08d834e09",
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/sar2.json": "6f1586703a6fe7fc53a4f980e22406dfaa5deb54645b43b02938bd2a3f05d9b5",
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/source_provenance.json": "59251bf802566cdeb6c385bf8ac463125f2e993f7aee5bd64342c1ef2ae8613f",
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/RUNBOOK.md": "578ba7adc03ffeec2cba8d9365820e3bcb2f3f6d7132a0b5839126f2f4d81e44",
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/candidate_graph.json": "c75510bf04dd03168e58d63a835cf4f95dc8ff5de0defcfb1bf1c8a09f8fb309",
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/cgc_final.json": "15ca3622fb44cd5125348699f4c1317d55f9c42fc339c745b38065e16127a90b",
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/contract.json": "42db55f13f0e44f4c55161a05ce9f7dae1108a0cd426264c15321f2895edcf31",
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/d_preservation_baseline.json": "b852fefc8f88b8f58f815842a2b48cb864afa95c84a29c0d8ce2b45bdf7fd269",
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/expected_graph.json": "c75510bf04dd03168e58d63a835cf4f95dc8ff5de0defcfb1bf1c8a09f8fb309",
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/generation_context.json": "4414c1b80f6e66dc257b1f520e4e947cd8c9b5b591542114860b57f4371cc263",
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/manifest.json": "9d25a10d38ff1354cc3831a1771ae6af76418de9dd1901dbc9c2a6e4cca8fc68",
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/request.json": "8d5954d44f329decef46328046effa13b8e5373ca64ce56f2f14a1f6132c0d8b",
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/rr2.json": "0cbdede2fff443d62dde992606e06b3a45a530743faaa6865e7233875a833f3b",
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/runtime.json": "7e099e53c980735557e5d967bd4b25c92ece2ed2fe38274e8518a44bb63cf8a3",
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/sar2.json": "4aad179a06df8566e95ecdb385151e0f62905aa1d1ceca3a03d4b5f1f690662b",
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/source_provenance.json": "e0de4b9909bd42aa75bb0c195952bdac8a6fd8d30450cdb511b0c221a0eb9320"
+    },
+    "D_E_Kenny_deltas_unchanged": true,
+    "allowlist_unchanged": true,
+    "C_decision": "UNCHANGED / RECEIVED_UNBOUND / NO_GO_C0_UNVERIFIED",
+    "K0_and_K1_sidecars": "BYTE_IDENTICAL",
+    "stable_client": "BYTE_IDENTICAL",
+    "previous_dry_run_UUIDs": "BYTE_IDENTICAL"
+  },
+  "provider": {
+    "status": "PROVIDER_UNCONFIGURED",
+    "real_bridge_calls": 0,
+    "configured_argv": false,
+    "inventory_scope": "Explicit CLI adapter-command configuration and checkout implementation only; no secret search.",
+    "proof": "CLI accepts a supplied bridge argv; none supplied. Checkout has only CommandGenerator interface and all admitted manifests remain DRY_RUN_ONLY.",
+    "real_capabilities_verified": false,
+    "fake_adapter_contract": "PASS / SYNTHETIC TECHNICAL TEST ONLY",
+    "missing_inputs": [
+      "provider",
+      "model",
+      "trusted executable absolute path and argv",
+      "local authentication mechanism without credential values",
+      "source image and A/B payload support",
+      "supported size/aspect/output_format/quality/parameters",
+      "actual seed reproducibility or explicit null",
+      "generation IDs and actual settings receipts"
+    ]
+  },
+  "plan_limits": {
+    "checkpoints": {
+      "initial": {
+        "five_hour": "UNKNOWN",
+        "weekly": "UNKNOWN",
+        "observed_consumption": "UNKNOWN"
+      },
+      "after_audit": {
+        "five_hour": "UNKNOWN",
+        "weekly": "UNKNOWN",
+        "observed_consumption": "UNKNOWN"
+      },
+      "after_policy_and_gate": {
+        "five_hour": "UNKNOWN",
+        "weekly": "UNKNOWN",
+        "observed_consumption": "UNKNOWN"
+      },
+      "after_validation": {
+        "five_hour": "UNKNOWN",
+        "weekly": "UNKNOWN",
+        "observed_consumption": "UNKNOWN"
+      },
+      "final": {
+        "five_hour": "UNKNOWN",
+        "weekly": "UNKNOWN",
+        "observed_consumption": "UNKNOWN"
+      }
+    },
+    "maximum_five_hour_percentage_points": 40,
+    "numeric_cap_compliance_certified": false
+  },
+  "real_activity_counts": {
+    "archive_calls": 0,
+    "generator_calls": 0,
+    "generated_images": 0,
+    "visual_pairs": 0
+  },
+  "count_scope": "Actual G0/corpus activity. Synthetic test fakes and copied frozen source images are not pilot generation or visual evidence.",
+  "next_pair": {
+    "fixture": "R2B-191-D",
+    "proposed_manifest": "visual_scene_graph/pilot/fixtures/r2b_d_provider_v1/manifest.json",
+    "proposed_campaign": "outputs/vsg-2b-g0-provider-v1",
+    "generation_authorized": false,
+    "operational_manifest_sha256": "PENDING_REAL_CONFIGURATION",
+    "reviewed_delta_sha256": "PENDING_NEW_DRY_RUN_AND_REVIEW"
+  },
+  "changed_existing_files": [
+    "benchmark/run_regression_suite.py",
+    "validation/INTEGRATION_QA.json",
+    "validation/VSG_2B_CONTROLLED_GENERATION_PILOT_QA.json",
+    "validation/VSG_2B_CONTROLLED_GENERATION_PILOT_QA.md",
+    "validation/vsg_2b/VSG_2A_REPLAY_QA.json",
+    "validation/vsg_2b/controls.json",
+    "validation/vsg_2b/corpus_audit.json",
+    "validation/vsg_2b/preconditions.json",
+    "validation/vsg_2b/regression.json",
+    "visual_scene_graph/pilot/README.md",
+    "visual_scene_graph/pilot/evaluation.py",
+    "visual_scene_graph/pilot/harness.py",
+    "visual_scene_graph/pilot/run_validation.py"
+  ]
+}

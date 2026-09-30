@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "fixture_id": "R2B-191-D",
+  "reviewer": "Codex / independent persisted-byte review",
+  "review_method": "Separate review implementation; does not invoke or import the harness renderer. Automated technical review, not human or blind visual review.",
+  "reviewed_at": "2026-09-30T03:39:19.813181+00:00",
+  "head": "14641922fc185a809885730899f1e1cb80d8fc42",
+  "run_path": "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f",
+  "manifest_sha256": "d258f4784d7f27cabec9b6044142cdc809e19a9552e72924468e20d55dc3d3ec",
+  "delta_sha256": "6159ef5f5666afb9037f5ba9512cf6a3d3c89a778f376961c9c570391ce59282",
+  "checks": {
+    "common_equal": true,
+    "shared_cgc_matches_frozen_snapshot": true,
+    "parsed_A_equals_B": true,
+    "relations_locks_match_frozen_contract": true,
+    "shared_restrictions_match_frozen_contract": true,
+    "delta_digest": true,
+    "comparison_pass": true,
+    "nonempty_required_coverage": true,
+    "no_images_or_calls": true,
+    "dry_run_only": true,
+    "no_technical_failures": true,
+    "snapshot_bytes": true
+  },
+  "payloads_file_sha256": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d",
+  "generation_attempts": 0,
+  "fresh_images": 0,
+  "valid_pairs": 0,
+  "limitations": [
+    "Prospective annotation, not historical recovery.",
+    "Provisional provider settings; not an operational selection.",
+    "No visual quality/improvement finding; VSG-2B remains BLOCKED/PENDING_VISUAL."
+  ],
+  "command": ".venv-sc/bin/python -m visual_scene_graph.pilot.run_validation",
+  "source_binding_replay": "PASS: frozen request reproduces runtime/SAR2/RR2/CGC/graphs/context/contract",
+  "coverage": {
+    "P0": {
+      "required": 9,
+      "preserved": 9,
+      "ratio": 1.0
+    },
+    "PR0": {
+      "required": 1,
+      "preserved": 1,
+      "ratio": 1.0
+    },
+    "PR1": {
+      "required": 1,
+      "preserved": 1,
+      "ratio": 1.0
+    },
+    "LOCK": {
+      "required": 3,
+      "preserved": 3,
+      "ratio": 1.0
+    }
+  },
+  "unexercised_priorities": [],
+  "reference_needs": 0,
+  "queryable_needs": 0,
+  "archive_calls": 0,
+  "preconditions": {
+    "path": "validation/vsg_2b/preconditions.json",
+    "sha256": "40d7f1ba41603df6cfecb07bb9d8d924abd127f39aca12318d09cd29a1e29557"
+  },
+  "reproduction_command": ".venv-sc/bin/python -m visual_scene_graph.pilot visual_scene_graph/pilot/fixtures/r2b_d_new_01/manifest.json --output outputs/vsg-2b-campaign"
+}

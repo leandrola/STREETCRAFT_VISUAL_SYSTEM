@@ -190,8 +190,11 @@ class CommandGenerator:
         if set(response) != {'image_base64', 'metadata'} or not isinstance(response['metadata'], dict):
             raise ValueError('INVALID_PROVIDER_RESPONSE')
         metadata = response['metadata']
-        if metadata.get('provider') != self.provider or metadata.get('model') != self.model or not metadata.get('generation_id'):
+        if metadata.get('provider') != self.provider or metadata.get('model') != self.model or not isinstance(metadata.get('generation_id'), str) or not metadata['generation_id']:
             raise ValueError('UNVERIFIED_PROVIDER_METADATA')
+        if any(key not in metadata or metadata[key] != request[key]
+               for key in ('provider', 'model', 'seed', 'parameters')):
+            raise ValueError('PROVIDER_SETTINGS_MISMATCH')
         return base64.b64decode(response['image_base64'], validate=True), metadata
 
 
@@ -247,7 +250,7 @@ def _execute(prepared, output_root, *, generator=None, dry_run=True, reviewed_de
                     (out / filename).write_bytes(data)
                     save(out / (branch + '.output.json'), {'sha256': sha(data), 'input_sha256': digest(request), 'metadata': metadata, 'path': filename})
                     for key in ('provider', 'model', 'seed', 'parameters'):
-                        if metadata.get(key) != request[key]:
+                        if key not in metadata or metadata[key] != request[key]:
                             raise ValueError('PROVIDER_SETTINGS_MISMATCH:' + key)
                     if not metadata.get('generation_id'):
                         raise ValueError('MISSING_GENERATION_ID')

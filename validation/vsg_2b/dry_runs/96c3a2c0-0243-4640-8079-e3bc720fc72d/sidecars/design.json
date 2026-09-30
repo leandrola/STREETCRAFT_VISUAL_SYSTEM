@@ -1,0 +1,103 @@
+{
+  "design_version": "KENNYS_ROOFTOP_DESIGN_V1",
+  "authority": "AUTHORIZED_INFERENCE",
+  "source_binding": {
+    "path": "visual_scene_graph/pilot/fixtures/kennys/source/kennys-shop.jpg",
+    "sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+    "purpose": "preserve_observed_facade; not_rooftop_observation"
+  },
+  "external_anchors": [
+    "ks_facade"
+  ],
+  "nodes": [
+    {
+      "id": "kd_roof",
+      "epistemic_class": "AUTHORIZED_INFERENCE",
+      "observed": false,
+      "requirement": "REQUIRED"
+    },
+    {
+      "id": "kd_parapet",
+      "epistemic_class": "AUTHORIZED_INFERENCE",
+      "observed": false,
+      "requirement": "REQUIRED"
+    },
+    {
+      "id": "kd_hvac",
+      "epistemic_class": "AUTHORIZED_INFERENCE",
+      "observed": false,
+      "requirement": "REQUIRED"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "KDR-01",
+      "subject": "kd_roof",
+      "predicate": "ABOVE",
+      "object": "ks_facade",
+      "authority": "AUTHORIZED_INFERENCE",
+      "requirement": "REQUIRED"
+    },
+    {
+      "id": "KDR-02",
+      "subject": "kd_parapet",
+      "predicate": "PART_OF",
+      "object": "kd_roof",
+      "authority": "AUTHORIZED_INFERENCE",
+      "requirement": "REQUIRED"
+    },
+    {
+      "id": "KDR-03",
+      "subject": "kd_hvac",
+      "predicate": "PART_OF",
+      "object": "kd_roof",
+      "authority": "AUTHORIZED_INFERENCE",
+      "requirement": "REQUIRED"
+    },
+    {
+      "id": "KDR-04",
+      "subject": "kd_hvac",
+      "predicate": "BEHIND",
+      "object": "kd_parapet",
+      "authority": "AUTHORIZED_INFERENCE",
+      "requirement": "REQUIRED"
+    }
+  ],
+  "authority_records": {
+    "k0": {
+      "path": "visual_scene_graph/pilot/fixtures/kennys/K0_OBSERVED_INFERRED_DESIGN.md",
+      "sha256": "ed8f17f1204d041d47f0618378e7056b9d0d95fc4b67aa9d4203003b75194f90"
+    },
+    "reception": {
+      "path": "visual_scene_graph/pilot/fixtures/kennys/reception.json",
+      "sha256": "9ef38ea1a63d5d31f6542c888b336b4356dcdbf43822cfb5055b73d0604fb456"
+    }
+  },
+  "external_anchor_policy": "ks_facade:read_only; only KDR-01 crosses source/design boundary",
+  "excluded_components": [
+    "kd_skylight",
+    "chimney",
+    "water_tank",
+    "access_bulkhead"
+  ],
+  "visual_rules": {
+    "KDES-01": "kd_roof: REQUIRED volumetric roof with distinguishable plane and edge, plausible continuity above facade width; no extra inhabited storey.",
+    "KDES-02": "kd_parapet: REQUIRED low perimeter parapet with visible thickness, compatible masonry character; no displaced sign, banner or openings.",
+    "KDES-03": "kd_hvac: REQUIRED single compact unbranded HVAC supported on roof, behind parapet but partly visible; subordinate scale, no floating/interpenetration."
+  },
+  "prohibitions": [
+    "Do not label any design component or KDR relationship as observed source or fidelity to the unknown original rooftop.",
+    "Do not redesign, resize or move source facade openings, door, identity signs or protected source relationships to accommodate rooftop.",
+    "Do not add excluded components, extra storeys, brands, literal signage, invented microtext, real geography or reference architecture.",
+    "Do not resolve original hidden geometry, unseen interiors, detailed side/rear facades or urban continuation.",
+    "Do not replace the volumetric design with roof texture only or hide required components completely.",
+    "Do not remove observed contextual elements or change weather, wetness, wear intensity or source material identity."
+  ],
+  "presentation": {
+    "mode": "T04",
+    "profile": "VP00",
+    "camera": "CG-B",
+    "authority": "AUTHORIZED_INFERENCE",
+    "scope": "Extend framing upward; moderately elevated controlled oblique presentation explicitly authorized by K0 (CG-B source/mode-authority exception). Preserve facade proportions and relationships; no aerial overview, detailed side walls or hidden historical reconstruction."
+  }
+}

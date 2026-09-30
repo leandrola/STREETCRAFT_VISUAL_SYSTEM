@@ -14,7 +14,7 @@
     "benchmark/fixtures/REMOTE_BINARY_FIXTURES.json": "19075ba5e16ee0cbe91a560db922cb76050470db088185c2644cc44d47680d3c",
     "benchmark/r2b_1_9_1/RUN_STATUS.json": "a27153dd4ffed177fd3ba7a5f82cd079ffe1157b46ac85043c04e3939f4e9200",
     "benchmark/r2b_1_9_1/SOURCE_INVENTORY.json": "f41cdea8b59f9e61a418d63cec25f2fc9d919daa0c4023b0caf8c0f68c85246c",
-    "benchmark/run_regression_suite.py": "c6e8a5f9516b38768c93233c1f759a9ec0fe73bde3bdf9bec872d30ed72740bc",
+    "benchmark/run_regression_suite.py": "fdecc7cb712e655b56d400d001b35625131f6d0c39912057a5eab94b2b2635dd",
     "benchmark/score_visual_results.py": "fa90c5cedae401205689312af588801fdddfc2c248f0d8bac85c13bd303165f2",
     "benchmark/visual_results_template.json": "0b0ca9dcfd5528163035019d85323c1cfff8fc7a219d6eb925f5b91f791e7eac",
     "command_invocation/BACKDROP_PRESETS.json": "4ef159f88dbe473b27ac65880745e10713a26cbb2bf7f7f396974b3e0953ca08",
@@ -64,6 +64,7 @@
     "schemas/vsg-causal-trace.schema.json": "920ab4e2f177479e7f9a341cb21081d77c6ebb11f29d03893dabcec8ee3a4b68",
     "schemas/vsg-generation-comparison.schema.json": "96f978638278bded5a6cca9e37104e878f4b777ff726f0714017fc809b0e6754",
     "schemas/vsg-generation-contract.schema.json": "e880308a048c812a7fd2729391e07a4c67c992e7542ea92979b765546864556e",
+    "schemas/vsg-pilot-campaign.schema.json": "47a013ba8efba59864aa2c828e8a0da9d8d933d7d17d3691b905cc7ae3267a9b",
     "schemas/vsg-pilot-manifest.schema.json": "f3bca26adc6a8625a83509715940e83cda5573f9a3927d9d8948720a8ce7d2c2",
     "schemas/vsg-pilot-report.schema.json": "77a22c863530a2cfe8746e5cfffa48549d76711a21ca5e981e8e71d3c73abf4d",
     "schemas/vsg-pilot-review.schema.json": "5509ff1d5c4656969158728a16abc84da8091e40f4d60f36b20e1534a099fc0b",
@@ -88,7 +89,9 @@
     "visual_scene_graph/pilot/bind_d.py": "368d0860202c585451711ce8c6aaeed336426ce64e7956f9ee2d1cb785f3dc70",
     "visual_scene_graph/pilot/bind_e.py": "2565837384284deb5145358e26a922f55c28acb01f0849e8bc9bc1dad6332f99",
     "visual_scene_graph/pilot/bind_kenny.py": "c8adb93804be1fb744106849805a27906b9b68a114cc83427fb078994a085284",
-    "visual_scene_graph/pilot/evaluation.py": "da52875a8bfe3debc8617f000229c550dbc8c9a42b800375fdf86e50d824ab7d",
+    "visual_scene_graph/pilot/campaign.py": "8ed19f98f25c8b0c7632b82831bb5418e19f9d14b37fface4fa4ef4322e99e13",
+    "visual_scene_graph/pilot/campaign_policy.json": "241204469fb84da8835621f953964d8c887fb91442fd55aeda1a07b89cfc0285",
+    "visual_scene_graph/pilot/evaluation.py": "e51a0c977ffb07fd45a3ed146c48a9d1145101a903694bd15ff519b57ff8bade",
     "visual_scene_graph/pilot/fixture_replay.py": "5b1f9a0223b489dee6f74691692017bb44d73a53403b49c90225c9e80f26fce3",
     "visual_scene_graph/pilot/fixtures/kennys/reception.json": "9ef38ea1a63d5d31f6542c888b336b4356dcdbf43822cfb5055b73d0604fb456",
     "visual_scene_graph/pilot/fixtures/kennys_new_01/candidate_graph.json": "3fc9811743f86f70bce17764ad70d0a438f2e53685975596b4707da5127bb75b",
@@ -128,10 +131,11 @@
     "visual_scene_graph/pilot/fixtures/r2b_e_new_01/runtime.json": "7e099e53c980735557e5d967bd4b25c92ece2ed2fe38274e8518a44bb63cf8a3",
     "visual_scene_graph/pilot/fixtures/r2b_e_new_01/sar2.json": "4aad179a06df8566e95ecdb385151e0f62905aa1d1ceca3a03d4b5f1f690662b",
     "visual_scene_graph/pilot/fixtures/r2b_e_new_01/source_provenance.json": "e0de4b9909bd42aa75bb0c195952bdac8a6fd8d30450cdb511b0c221a0eb9320",
-    "visual_scene_graph/pilot/harness.py": "899e325b881ec3fa8350d632395614d1da3b631f0e155379aec895a1840720ac",
+    "visual_scene_graph/pilot/harness.py": "99b886d03317639912c828d80620ae9340a148232de6ad4569ab0cc895b3ede3",
     "visual_scene_graph/pilot/kenny_binding.py": "f72596a4e55ed24628bd114852548e642ad50af11399ef9c0520d066d308638a",
     "visual_scene_graph/pilot/review_dry_run.py": "2d9681eb3d0de89436db62d27afca4e401a64228a31cc11351bce8625dda7599",
-    "visual_scene_graph/pilot/run_validation.py": "897a47b02724dc37f533c0bf4bd9a523599926727c5c93a8dea5bcb48431d38e",
+    "visual_scene_graph/pilot/run_validation.py": "8afd6c8de7d2c6a754ff72c26f561a6fb8000b47110abad893e4cd62f9f7865f",
+    "visual_scene_graph/pilot/test_campaign.py": "2ca96346dc88d8f211a21f4edc3d828bac95cc0693f60d02a19983927f5534a1",
     "visual_scene_graph/pilot/test_e_binding.py": "2905cbf176495eeb08d3d568b0432a13a7ae892c913df4439cec07f5b93fa8f7",
     "visual_scene_graph/pilot/test_kenny_binding.py": "f5e643186502795011f197588f23efe451e081ef2680acef7d3c689027059b4f",
     "visual_scene_graph/pilot/test_pilot.py": "3da98a5f251d9e05d5e45c26522696e6e5a2c4a0b7a7777ebae81c4aebcfb8ff",
@@ -145,14 +149,14 @@
   },
   "vsg2a": {
     "path": "validation/vsg_2b/VSG_2A_REPLAY_QA.json",
-    "sha256": "ce2ae566fdf64b9ad17aa00a387fc4c4c02b529f4960ae6888d4c29af0fa1018"
+    "sha256": "d5d8a557f69f5735f91d97a90ce90865618ed295f94867ff40551ddc5c4c4cc2"
   },
   "regression": {
     "path": "validation/vsg_2b/regression.json",
-    "sha256": "575b9f9bf3d79da9e359e0e1c3e978e41d95350fd1211463e04962eecc1476ce"
+    "sha256": "eb952d7f8b943784d913f3f9432b02f1288d19ea0066dd0fe956537755488e7b"
   },
   "pilot_controls": {
     "path": "validation/vsg_2b/controls.json",
-    "sha256": "cfd7f2ee58fb93879ff91beb54946ea0841f018c6ad221051a25ec712e823ef7"
+    "sha256": "14fb968798463185c878b35092f0ac3cccd3de3b22a35a752e9d3fe03ce90afc"
   }
 }
