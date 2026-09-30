@@ -1,0 +1,301 @@
+{
+  "spec": "VSG-2B / P1R",
+  "timestamp_utc": "2026-09-30T04:23:53.092845+00:00",
+  "status": "P1R_SCOPE_DECISION_REQUIRED",
+  "head_initial": "7545774349d078b0c1dc36c5d9a54d1059456165",
+  "head_final": "7545774349d078b0c1dc36c5d9a54d1059456165",
+  "entry_tree": "CLEAN",
+  "delivery": "UNCOMMITTED_NEW_EVIDENCE_AND_PROPOSAL_ONLY",
+  "production_authorized": false,
+  "vsg_2b_status": "BLOCKED / PENDING_VISUAL",
+  "provider_selection": {
+    "provider": "Replicate",
+    "model": "black-forest-labs/flux-kontext-pro",
+    "authorization": "Explicit operator selection in P1R request; no paid prediction authorized",
+    "documentation_candidate_version": "569705b35f79b1160d51de1d0e3955626af86c77a034a16e89010dbdde5ad312",
+    "operational_version": null,
+    "version_evidence": "Concrete version page available; runtime pinning and account availability unverified",
+    "latest_selected": false,
+    "bridge_implemented": false,
+    "provider_ready": false
+  },
+  "representation": {
+    "decision": "TEXT_SERIALIZED_AB",
+    "native_structured_AB": false,
+    "reason": "Published provider schema takes prompt as string and has no native typed relations array field. B JSON inside prompt is text.",
+    "operator_scope_approval": "PENDING",
+    "scope_proposal": {
+      "path": "validation/vsg_2b/p1r/PROPOSED_SCOPE.diff",
+      "sha256": "9d69063f81dda41ec201f474a971d00eb1a96d567fd990bb517274c4204def67"
+    }
+  },
+  "official_documentation": [
+    {
+      "id": "pinned_schema",
+      "url": "https://replicate.com/black-forest-labs/flux-kontext-pro/versions/569705b35f79b1160d51de1d0e3955626af86c77a034a16e89010dbdde5ad312/api",
+      "verification": "Official version page opened via web navigation after search; rendered input table inspected. Raw authenticated OpenAPI and invocability not verified.",
+      "consulted_date": "2026-09-30"
+    },
+    {
+      "id": "current_schema",
+      "url": "https://replicate.com/black-forest-labs/flux-kontext-pro/api/schema",
+      "verification": "Official schema text retrieved by search; opened page dynamic body incomplete. Consistent with concrete version table.",
+      "consulted_date": "2026-09-30"
+    },
+    {
+      "id": "http_api",
+      "url": "https://replicate.com/docs/reference/http/",
+      "verification": "Official reference opened; version identifiers, data URLs and prediction object inspected.",
+      "consulted_date": "2026-09-30"
+    },
+    {
+      "id": "input_files",
+      "url": "https://replicate.com/docs/topics/predictions/input-files",
+      "verification": "Official guide opened; data URI documented. File <1 MB recommendation differs from <=256 KB in HTTP docs; D satisfies both.",
+      "consulted_date": "2026-09-30"
+    },
+    {
+      "id": "official_models",
+      "url": "https://replicate.com/docs/topics/models/official-models",
+      "verification": "Official guide opened; model-name invocation does not require version and is not evidence of immutable backend pinning.",
+      "consulted_date": "2026-09-30"
+    },
+    {
+      "id": "versions",
+      "url": "https://replicate.com/docs/topics/models/versions",
+      "verification": "Official versioning guide opened; general versioning semantics, not account-specific availability.",
+      "consulted_date": "2026-09-30"
+    },
+    {
+      "id": "tokens",
+      "url": "https://replicate.com/docs/topics/security/api-tokens",
+      "verification": "Official token guide opened during setup turn; revoke exposed token, configure replacement only locally.",
+      "consulted_date": "2026-09-30"
+    }
+  ],
+  "direct_unauthenticated_document_fetches": [
+    {
+      "name": "model_schema",
+      "url": "https://replicate.com/black-forest-labs/flux-kontext-pro/api/schema",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "pinned_version",
+      "url": "https://replicate.com/black-forest-labs/flux-kontext-pro/versions/569705b35f79b1160d51de1d0e3955626af86c77a034a16e89010dbdde5ad312/api",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "input_files",
+      "url": "https://replicate.com/docs/topics/predictions/input-files",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "http_api",
+      "url": "https://replicate.com/docs/reference/http/",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "official_models",
+      "url": "https://replicate.com/docs/topics/models/official-models",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "tokens",
+      "url": "https://replicate.com/docs/topics/security/api-tokens",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    }
+  ],
+  "auth": {
+    "mechanism": "REPLICATE_API_TOKEN",
+    "local_presence": "NOT_CHECKED_SCOPE_GATE",
+    "state": "ROTATION_REQUIRED",
+    "chat_credential_used": false,
+    "credential_saved": false,
+    "authenticated_API_calls": 0,
+    "note": "Replacement must be created and configured locally. Chat export text does not configure local process environment. No credential value, length, prefix or suffix recorded."
+  },
+  "offline_mapping": {
+    "artifact": {
+      "path": "validation/vsg_2b/p1r/UNSENT_REQUESTS.json",
+      "sha256": "26e418f38ddc0fcfccd25013f76ed45d152c3a47c08f8bef5e90bd5cf78ca4af"
+    },
+    "serialization": "json.dumps(payload, sort_keys=True, separators=(',', ':'), ensure_ascii=False, allow_nan=False)",
+    "source_sha256": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+    "source_bytes": 33183,
+    "same_source_common_seed_parameters": true,
+    "records": 10,
+    "relation_ids_in_order": [
+      "edge:rel_facade_left_of_diner",
+      "edge:rel_sign_above_diner",
+      "lock:GL-GEO-DINER_01",
+      "lock:GL-GEO-FACADE_01",
+      "lock:GL-SEM-SIGN_01",
+      "topology:billboard_01",
+      "topology:diner_01",
+      "topology:facade_01",
+      "topology:fascia_01",
+      "topology:sign_01"
+    ],
+    "priorities": {
+      "PR1": 1,
+      "PR0": 1,
+      "LOCK": 3,
+      "P2": 2,
+      "P0": 3
+    },
+    "locks": [
+      "GL-GEO-DINER_01",
+      "GL-GEO-FACADE_01",
+      "GL-SEM-SIGN_01"
+    ],
+    "branches": {
+      "A": {
+        "provider_prompt_type": "str",
+        "prompt_sha256": "b838211d700c2f19e35f9e5d6e471aa845fdb9fb2eecedada44692fe85376beb",
+        "prompt_utf8_bytes": 16999,
+        "prompt_characters": 16999,
+        "quotes": 1878,
+        "backslashes": 417,
+        "json_lexical_token_count": 2254,
+        "model_token_count": "UNKNOWN",
+        "full_unsent_body_sha256": "d50dbc1123bdedf230e03e3840451a6ba5266b9b61ffc460c04eb1517de6c790",
+        "full_unsent_body_utf8_bytes": 63798
+      },
+      "B": {
+        "provider_prompt_type": "str",
+        "prompt_sha256": "c467d525fd8a5f8e643367fef42f6541b5fe82069e2d10be8cd04a500d02e20a",
+        "prompt_utf8_bytes": 16582,
+        "prompt_characters": 16582,
+        "quotes": 1876,
+        "backslashes": 0,
+        "json_lexical_token_count": 2818,
+        "model_token_count": "UNKNOWN",
+        "full_unsent_body_sha256": "17fdd303ebe349ebf151abe3ba8e8f52835892fc7474df0ef465ba20f5ecb844",
+        "full_unsent_body_utf8_bytes": 62962
+      }
+    },
+    "model_token_count": "UNKNOWN",
+    "settings": {
+      "seed": 20260930,
+      "aspect_ratio": "match_input_image",
+      "output_format": "png",
+      "prompt_upsampling": false,
+      "safety_tolerance": 2
+    },
+    "settings_authority": "Feasibility proposal only; seed chosen locally for unsent bodies.",
+    "full_bodies_persisted": false,
+    "requests_sent": 0,
+    "new_operational_delta": null
+  },
+  "fresh_validation": {
+    "offline_checks": {
+      "current_preconditions_and_D_replay": true,
+      "D_source_hash": true,
+      "source_identical_to_persisted_package": true,
+      "historical_delta_unchanged": true,
+      "historical_manifest_unchanged": true,
+      "AB_common_identical": true,
+      "A_is_string_B_is_array": true,
+      "relation_values_order_ids_priorities_locks_equal": true,
+      "A_prompt_lossless_roundtrip": true,
+      "A_source_roundtrip": true,
+      "A_forbid_preserve_unknown_unchanged": true,
+      "B_prompt_lossless_roundtrip": true,
+      "B_source_roundtrip": true,
+      "B_forbid_preserve_unknown_unchanged": true,
+      "same_version_seed_source_settings": true,
+      "both_provider_prompts_are_text": true,
+      "AB_serializations_distinct": true,
+      "source_below_stricter_256KB_doc_recommendation": true
+    },
+    "offline_check_count": 18,
+    "local_fake_protocol_tests": 3,
+    "local_fake_protocol_status": "PASS",
+    "local_fake_protocol_output": "test_bridge_must_report_seed_even_when_null_and_exact_parameters (visual_scene_graph.pilot.test_campaign.CommandBridgeTests.test_bridge_must_report_seed_even_when_null_and_exact_parameters) ... ok\ntest_invalid_bridge_response_is_rejected (visual_scene_graph.pilot.test_campaign.CommandBridgeTests.test_invalid_bridge_response_is_rejected) ... ok\ntest_json_stdio_fake_bridge_contract_only (visual_scene_graph.pilot.test_campaign.CommandBridgeTests.test_json_stdio_fake_bridge_contract_only) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.285s\n\nOK\n",
+    "proposed_patch_check": "PASS / NOT_APPLIED",
+    "new_bridge_tests": "NOT_RUN / NO_BRIDGE_IMPLEMENTED",
+    "full_regression_rerun": false,
+    "preconditions_refresh": false
+  },
+  "commands_executed_now": [
+    ".venv-sc/bin/python validation/vsg_2b/p1r/inspect_unsent_requests.py > /tmp/p1r_offline.json",
+    ".venv-sc/bin/python -m unittest visual_scene_graph.pilot.test_campaign.CommandBridgeTests -v",
+    "git apply --check validation/vsg_2b/p1r/PROPOSED_SCOPE.diff",
+    "git diff --check"
+  ],
+  "unchanged": {
+    "existing_tracked_files_checked": 734,
+    "changed_existing_tracked_files": [],
+    "D_E_Kenny_manifests_and_deltas": "UNCHANGED",
+    "G0_P1_results": "UNCHANGED",
+    "allowlist_campaign_policy_preconditions": "UNCHANGED",
+    "stable_client": "UNCHANGED",
+    "C": "NO_GO_C0_UNVERIFIED / documentary Fear City to CG-FC link missing",
+    "F": "CONDITIONAL / NOT_REFERENCE_ISOLATION"
+  },
+  "remaining_before_operational_D": [
+    "explicit scope decision for TEXT_SERIALIZED_AB",
+    "rotated local credential and presence check after scope gate",
+    "exact version availability and effective immutable pin semantics",
+    "full-length prompt/tokenizer/truncation support",
+    "provider-specific manifest settings schema and honest receipt attribution",
+    "isolated bridge and mocked HTTP/asynchronous/timeout/output tests",
+    "single operational D representative preserving K1 admission baseline",
+    "current preconditions and new persisted operational dry run with expanded reviewed delta binding bridge/serializer/provider bodies"
+  ],
+  "plan_limits": {
+    "checkpoints": {
+      "initial": {
+        "five_hour": "UNKNOWN",
+        "weekly": "UNKNOWN",
+        "observed_consumption": "UNKNOWN"
+      },
+      "after_semantic_gate": {
+        "five_hour": "UNKNOWN",
+        "weekly": "UNKNOWN",
+        "observed_consumption": "UNKNOWN"
+      },
+      "after_offline_checks": {
+        "five_hour": "UNKNOWN",
+        "weekly": "UNKNOWN",
+        "observed_consumption": "UNKNOWN"
+      },
+      "final": {
+        "five_hour": "UNKNOWN",
+        "weekly": "UNKNOWN",
+        "observed_consumption": "UNKNOWN"
+      }
+    },
+    "maximum_five_hour_percentage_points": 40,
+    "numeric_cap_compliance_certified": false
+  },
+  "real_activity_counts": {
+    "archive_calls": 0,
+    "predictions": 0,
+    "generated_images": 0,
+    "visual_pairs": 0
+  },
+  "synthetic_activity": {
+    "fake_bridge_subprocess_calls": 6,
+    "new_generated_images": 0,
+    "visual_evidence": false
+  },
+  "new_artifacts": [
+    {
+      "path": "visual_scene_graph/pilot/P1R_RUNBOOK.md",
+      "sha256": "cc0073a82fa83493f6fb7fdc26273ae031d6e160382b34181e798a9cb6197d43"
+    },
+    {
+      "path": "validation/vsg_2b/p1r/inspect_unsent_requests.py",
+      "sha256": "0d7ae1869c93374323b290e5d2b1317e42a2e1a429626440c3e9e6448de993fe"
+    },
+    {
+      "path": "validation/vsg_2b/p1r/UNSENT_REQUESTS.json",
+      "sha256": "26e418f38ddc0fcfccd25013f76ed45d152c3a47c08f8bef5e90bd5cf78ca4af"
+    },
+    {
+      "path": "validation/vsg_2b/p1r/PROPOSED_SCOPE.diff",
+      "sha256": "9d69063f81dda41ec201f474a971d00eb1a96d567fd990bb517274c4204def67"
+    }
+  ]
+}

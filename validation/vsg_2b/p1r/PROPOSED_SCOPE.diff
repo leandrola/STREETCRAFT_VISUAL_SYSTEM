@@ -1,0 +1,287 @@
+--- a/visual_scene_graph/pilot/campaign_policy.json
++++ b/visual_scene_graph/pilot/campaign_policy.json
+@@ -1,7 +1,7 @@
+ {
+   "schema_version": "1.0.0",
+   "campaign_id": "VSG-2B-G0",
+-  "version": "1.0.0",
++  "version": "1.1.0",
+   "production_authorized": false,
+   "required_phenomena": [
+     "semantic_text_lock",
+@@ -82,5 +82,12 @@
+       },
+       "reason": "Not selected or admitted. Does not substitute for Reference Isolation; fifth pair needs a new budget policy."
+     }
++  },
++  "experiment": {
++    "id": "VSG-2B-TEXT-SERIALIZED-AB-1",
++    "representation": "TEXT_SERIALIZED_AB",
++    "serializer": "PYTHON_JSON_SORTED_COMPACT_UTF8_V1",
++    "scope_contract": "visual_scene_graph/pilot/EXPERIMENT_TEXT_SERIALIZED_V1.md",
++    "native_structured_evidence": false
+   }
+ }
+--- a/schemas/vsg-pilot-campaign.schema.json
++++ b/schemas/vsg-pilot-campaign.schema.json
+@@ -110,6 +110,15 @@
+           "reason"
+         ]
+       }
++    },
++    "experiment": {
++      "const": {
++        "id": "VSG-2B-TEXT-SERIALIZED-AB-1",
++        "representation": "TEXT_SERIALIZED_AB",
++        "serializer": "PYTHON_JSON_SORTED_COMPACT_UTF8_V1",
++        "scope_contract": "visual_scene_graph/pilot/EXPERIMENT_TEXT_SERIALIZED_V1.md",
++        "native_structured_evidence": false
++      }
+     }
+   },
+   "required": [
+@@ -122,7 +131,8 @@
+     "partial_selection",
+     "minimum_pairs",
+     "maximum_generation_attempts",
+-    "fixtures"
++    "fixtures",
++    "experiment"
+   ],
+   "$schema": "https://json-schema.org/draft/2020-12/schema"
+ }
+--- a/schemas/vsg-pilot-manifest.schema.json
++++ b/schemas/vsg-pilot-manifest.schema.json
+@@ -3,7 +3,10 @@
+   "additionalProperties": false,
+   "properties": {
+     "schema_version": {
+-      "const": "1.0.0"
++      "enum": [
++        "1.0.0",
++        "1.1.0"
++      ]
+     },
+     "fixture_id": {
+       "type": "string",
+@@ -315,29 +318,57 @@
+           ]
+         },
+         "parameters": {
+-          "type": "object",
+-          "additionalProperties": false,
+-          "properties": {
+-            "size": {
+-              "type": "string",
+-              "minLength": 1
+-            },
+-            "quality": {
+-              "type": "string",
+-              "minLength": 1
+-            },
+-            "output_format": {
+-              "enum": [
+-                "png",
+-                "jpeg",
+-                "webp"
++          "oneOf": [
++            {
++              "type": "object",
++              "additionalProperties": false,
++              "properties": {
++                "size": {
++                  "type": "string",
++                  "minLength": 1
++                },
++                "quality": {
++                  "type": "string",
++                  "minLength": 1
++                },
++                "output_format": {
++                  "enum": [
++                    "png",
++                    "jpeg",
++                    "webp"
++                  ]
++                }
++              },
++              "required": [
++                "size",
++                "quality",
++                "output_format"
+               ]
+-            }
+-          },
+-          "required": [
+-            "size",
+-            "quality",
+-            "output_format"
++            },
++            {
++              "type": "object",
++              "additionalProperties": false,
++              "properties": {
++                "aspect_ratio": {
++                  "const": "match_input_image"
++                },
++                "output_format": {
++                  "const": "png"
++                },
++                "prompt_upsampling": {
++                  "const": false
++                },
++                "safety_tolerance": {
++                  "const": 2
++                }
++              },
++              "required": [
++                "aspect_ratio",
++                "output_format",
++                "prompt_upsampling",
++                "safety_tolerance"
++              ]
++            }
+           ]
+         }
+       },
+@@ -400,5 +431,91 @@
+     "generation",
+     "rubric"
+   ],
+-  "$schema": "https://json-schema.org/draft/2020-12/schema"
++  "$schema": "https://json-schema.org/draft/2020-12/schema",
++  "allOf": [
++    {
++      "if": {
++        "properties": {
++          "schema_version": {
++            "const": "1.1.0"
++          }
++        }
++      },
++      "then": {
++        "properties": {
++          "generation": {
++            "properties": {
++              "provider": {
++                "const": "replicate"
++              },
++              "model": {
++                "const": "black-forest-labs/flux-kontext-pro:569705b35f79b1160d51de1d0e3955626af86c77a034a16e89010dbdde5ad312"
++              },
++              "seed": {
++                "type": "integer"
++              },
++              "parameters": {
++                "type": "object",
++                "additionalProperties": false,
++                "properties": {
++                  "aspect_ratio": {
++                    "const": "match_input_image"
++                  },
++                  "output_format": {
++                    "const": "png"
++                  },
++                  "prompt_upsampling": {
++                    "const": false
++                  },
++                  "safety_tolerance": {
++                    "const": 2
++                  }
++                },
++                "required": [
++                  "aspect_ratio",
++                  "output_format",
++                  "prompt_upsampling",
++                  "safety_tolerance"
++                ]
++              }
++            }
++          }
++        }
++      },
++      "else": {
++        "properties": {
++          "generation": {
++            "properties": {
++              "parameters": {
++                "type": "object",
++                "additionalProperties": false,
++                "properties": {
++                  "size": {
++                    "type": "string",
++                    "minLength": 1
++                  },
++                  "quality": {
++                    "type": "string",
++                    "minLength": 1
++                  },
++                  "output_format": {
++                    "enum": [
++                      "png",
++                      "jpeg",
++                      "webp"
++                    ]
++                  }
++                },
++                "required": [
++                  "size",
++                  "quality",
++                  "output_format"
++                ]
++              }
++            }
++          }
++        }
++      }
++    }
++  ]
+ }
+--- /dev/null
++++ b/visual_scene_graph/pilot/EXPERIMENT_TEXT_SERIALIZED_V1.md
+@@ -0,0 +1,45 @@
++# VSG-2B-TEXT-SERIALIZED-AB-1
++
++This contract limits any result to a comparison of two textual serializations of
++identical frozen scene constraints in the provider's prompt string. It does not
++measure a native typed-array interface or establish a native structured-input gain.
++
++A: canonical JSON of the entire existing payload, retaining relations_and_locks as
++its original JSON-lines string. B: canonical JSON of the entire existing payload,
++retaining relations_and_locks as an array inside that text. Serialize with
++json.dumps(payload, sort_keys=True, separators=(',', ':'), ensure_ascii=False,
++allow_nan=False), UTF-8, without prefix, suffix or trailing newline. Preserve all
++array order, IDs, priorities, locks, common content and prohibitions. Do not parse
++A into an array before serialization. Do not truncate, summarize, pad or add hidden
++instructions to either branch. Provider prompt upsampling is false in both.
++
++The source remains its original JPEG bytes in an in-memory data URI. Both requests
++must use the same pinned model, explicit seed, aspect policy, format and safety
++setting. No retries, local cropping, resizing, compression, postprocessing or other
++branch-specific transformation is permitted. Pin the serializer implementation,
++provider version and parameters and bind exact provider-body hashes into the new
++delta review; the legacy manifest-plus-payload delta alone cannot bind a new bridge.
++
++Visual rubric: retain every original source-relative criterion, region, severity,
++priority, identity and unauthorized-change rule. Keep branch identity, prompts and
++provider settings hidden from the independent reviewer. Findings still score images
++against the source. Technical JSON equality or prediction IDs are not visual scores.
++S3, protected loss, regression, UNKNOWN, uncontrolled seed and STOP keep blocking.
++
++Interpretation rubric: an improvement may only be reported as an improvement for
++TEXT_SERIALIZED_AB under the pinned configuration. Prompt length and escaping differ
++and are part of this treatment; do not attribute outcomes to a native array API.
++All reports must carry this experiment ID and native_structured_evidence=false.
++
++Campaign scope stays D/E/Kenny/C, four distinct representative fixtures and eight
++attempts maximum; Reference Isolation remains mandatory and C remains blocked.
++A later operational migration may replace the D representative with R2B-191-D-P1,
++preserving the old fixture/admission for K1. Old D plus new D must never count as
++two representatives or permit a second D attempt under a different ID. F does not
++replace C. production_authorized remains false.
++
++Before admission, require exact version availability and pin semantics, full-length
++prompt acceptance and truncation behavior, source data-URI support, reproducible
++seed semantics, safe receipt attribution, a tested provider bridge, coherent
++manifest/policy/schema migration, fresh preconditions and a newly reviewed delta.
++Approval of this scope contract does not authorize a prediction or spend image calls.
