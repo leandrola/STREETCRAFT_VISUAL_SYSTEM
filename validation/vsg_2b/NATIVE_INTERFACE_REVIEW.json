@@ -1,0 +1,260 @@
+{
+  "review_id": "VSG-2B-P1R-NATIVE-INTERFACE-REVIEW",
+  "reviewed_at": "2026-09-30T18:24:40.174965+00:00",
+  "head": "73ee86dc351f879113bc85d4ccd26a428c303f5a",
+  "status": "NO_COMPATIBLE_BACKEND_VERIFIED",
+  "decision": {
+    "authority": "Subsequent explicit user instruction",
+    "scope": "ORIGINAL_SCOPE_RETAINED",
+    "proposed_scope_diff": "REJECTED_FOR_ORIGINAL_CAMPAIGN_UNAPPLIED",
+    "operational_TEXT_SERIALIZED_AB_manifest_admitted": false,
+    "P1R": "FEASIBILITY_ONLY_HISTORICAL_ARTIFACTS_PRESERVED",
+    "supersedes_pending_scope_question": true,
+    "predictions_authorized": false,
+    "production_authorized": false
+  },
+  "campaign": {
+    "policy_version": "1.0.0",
+    "selection": [
+      "R2B-191-D",
+      "R2B-191-E",
+      "KENNYS-ROOFTOP",
+      "R2B-191-C"
+    ],
+    "minimum_pairs": 4,
+    "maximum_generation_attempts": 8,
+    "required_phenomena": [
+      "semantic_text_lock",
+      "occlusion_lock",
+      "source_preservation",
+      "authorized_design",
+      "reference_isolation"
+    ],
+    "status": "BLOCKED / PENDING_VISUAL",
+    "reference_isolation_C": "BLOCKED"
+  },
+  "interface_design": {
+    "status": "DOCUMENTED_NOT_IMPLEMENTED",
+    "A": "string",
+    "B": "array<EdgeRecord | LockRecord | TopologyRecord>",
+    "record_fields": [
+      "id",
+      "priority",
+      "value",
+      "lock_ids"
+    ],
+    "runtime_validation": "REQUIRED_NOT_IMPLEMENTED",
+    "real_structural_consumer": "REQUIRED_NOT_VERIFIED",
+    "same_backend_A_text_B_structure": "REQUIRED_NOT_VERIFIED",
+    "no_list_to_prompt_fallback": true,
+    "preserve_VALIDATE_ONLY": true,
+    "model_execution_performed": false
+  },
+  "candidates": [
+    {
+      "name": "sg2im Sg2ImModel",
+      "source": "https://github.com/google/sg2im/blob/master/sg2im/model.py",
+      "scope": "Public master source inspected; not operationally pinned",
+      "typed_input": "objs LongTensor[O], triples LongTensor[T,3]",
+      "structural_consumption": "GraphTripleConv path when graph convolution enabled",
+      "verdict": "INCOMPLETE_FOR_VSG_2B",
+      "gaps": [
+        "No source-JPEG editing parameter in inspected forward interface",
+        "No matching textual A branch",
+        "No complete VSG lock/priority/provenance interface",
+        "Vocabulary mapping and added image-node edges require audit"
+      ]
+    },
+    {
+      "name": "GLIGEN Diffusers v0.29.0",
+      "source": "https://huggingface.co/docs/diffusers/v0.29.0/en/api/pipelines/stable_diffusion/gligen",
+      "typed_input": "gligen_phrases List[str], gligen_boxes List[List[float]], gligen_inpaint_image PIL.Image.Image",
+      "verdict": "SPATIAL_CONTROLS_NOT_COMPLETE_VSG_RELATION_INTERFACE",
+      "gaps": [
+        "No complete B-record input",
+        "Evidence regions cannot silently become intervention boxes"
+      ]
+    },
+    {
+      "name": "ComfyUI custom datatype",
+      "source": "https://docs.comfy.org/custom-nodes/backend/more_on_inputs#custom-datatypes",
+      "typed_input": "Named port carrying a Python object",
+      "verdict": "TRANSPORT_CANDIDATE_ONLY",
+      "gaps": [
+        "Custom type name does not establish record validation",
+        "No complete graph-aware generator consumer verified",
+        "Serializing records into prompt is excluded"
+      ]
+    }
+  ],
+  "D_input": {
+    "run_directory": "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f",
+    "source_sha256": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+    "payloads_file_sha256": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d",
+    "manifest_sha256": "d258f4784d7f27cabec9b6044142cdc809e19a9552e72924468e20d55dc3d3ec",
+    "delta_sha256": "6159ef5f5666afb9037f5ba9512cf6a3d3c89a778f376961c9c570391ce59282",
+    "record_count": 10,
+    "record_kinds": {
+      "edge": 2,
+      "lock": 3,
+      "topology": 5
+    },
+    "records": [
+      {
+        "id": "edge:rel_facade_left_of_diner",
+        "priority": "PR1",
+        "lock_ids": [
+          "GL-GEO-DINER_01",
+          "GL-GEO-FACADE_01"
+        ],
+        "value_type": "object"
+      },
+      {
+        "id": "edge:rel_sign_above_diner",
+        "priority": "PR0",
+        "lock_ids": [
+          "GL-GEO-DINER_01"
+        ],
+        "value_type": "object"
+      },
+      {
+        "id": "lock:GL-GEO-DINER_01",
+        "priority": "LOCK",
+        "lock_ids": [
+          "GL-GEO-DINER_01"
+        ],
+        "value_type": "object"
+      },
+      {
+        "id": "lock:GL-GEO-FACADE_01",
+        "priority": "LOCK",
+        "lock_ids": [
+          "GL-GEO-FACADE_01"
+        ],
+        "value_type": "object"
+      },
+      {
+        "id": "lock:GL-SEM-SIGN_01",
+        "priority": "LOCK",
+        "lock_ids": [
+          "GL-SEM-SIGN_01"
+        ],
+        "value_type": "object"
+      },
+      {
+        "id": "topology:billboard_01",
+        "priority": "P2",
+        "lock_ids": [],
+        "value_type": "array"
+      },
+      {
+        "id": "topology:diner_01",
+        "priority": "P0",
+        "lock_ids": [
+          "GL-GEO-DINER_01"
+        ],
+        "value_type": "array"
+      },
+      {
+        "id": "topology:facade_01",
+        "priority": "P0",
+        "lock_ids": [
+          "GL-GEO-FACADE_01"
+        ],
+        "value_type": "array"
+      },
+      {
+        "id": "topology:fascia_01",
+        "priority": "P2",
+        "lock_ids": [],
+        "value_type": "array"
+      },
+      {
+        "id": "topology:sign_01",
+        "priority": "P0",
+        "lock_ids": [
+          "GL-SEM-SIGN_01"
+        ],
+        "value_type": "array"
+      }
+    ]
+  },
+  "verification": {
+    "preconditions": "PASS",
+    "persisted_D_review": {
+      "status": "PASS",
+      "fixture_id": "R2B-191-D",
+      "reviewer": "Codex / independent persisted-byte review",
+      "review_method": "Separate review implementation; does not invoke or import the harness renderer. Automated technical review, not human or blind visual review.",
+      "reviewed_at": "2026-09-30T18:24:40.127244+00:00",
+      "head": "73ee86dc351f879113bc85d4ccd26a428c303f5a",
+      "run_path": "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f",
+      "manifest_sha256": "d258f4784d7f27cabec9b6044142cdc809e19a9552e72924468e20d55dc3d3ec",
+      "delta_sha256": "6159ef5f5666afb9037f5ba9512cf6a3d3c89a778f376961c9c570391ce59282",
+      "checks": {
+        "common_equal": true,
+        "shared_cgc_matches_frozen_snapshot": true,
+        "parsed_A_equals_B": true,
+        "relations_locks_match_frozen_contract": true,
+        "shared_restrictions_match_frozen_contract": true,
+        "delta_digest": true,
+        "comparison_pass": true,
+        "nonempty_required_coverage": true,
+        "no_images_or_calls": true,
+        "dry_run_only": true,
+        "no_technical_failures": true,
+        "snapshot_bytes": true
+      },
+      "payloads_file_sha256": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d",
+      "generation_attempts": 0,
+      "fresh_images": 0,
+      "valid_pairs": 0,
+      "limitations": [
+        "Prospective annotation, not historical recovery.",
+        "Provisional provider settings; not an operational selection.",
+        "No visual quality/improvement finding; VSG-2B remains BLOCKED/PENDING_VISUAL."
+      ]
+    },
+    "all_previously_tracked_files_unchanged": true,
+    "previously_tracked_file_count": 739,
+    "changed_previously_tracked_files": [],
+    "policy_unchanged": "PASS",
+    "historical_file_sha256": {
+      "visual_scene_graph/pilot/P1R_RUNBOOK.md": "cc0073a82fa83493f6fb7fdc26273ae031d6e160382b34181e798a9cb6197d43",
+      "validation/vsg_2b/P1R_RESULT.json": "9f39f1ed21ddcaba1056cfa8553cca56614431580d1a78677dc3eb556164ebe8",
+      "validation/vsg_2b/p1r/PROPOSED_SCOPE.diff": "9d69063f81dda41ec201f474a971d00eb1a96d567fd990bb517274c4204def67",
+      "validation/vsg_2b/p1r/UNSENT_REQUESTS.json": "26e418f38ddc0fcfccd25013f76ed45d152c3a47c08f8bef5e90bd5cf78ca4af",
+      "visual_scene_graph/pilot/campaign_policy.json": "241204469fb84da8835621f953964d8c887fb91442fd55aeda1a07b89cfc0285",
+      "visual_scene_graph/pilot/allowlist.json": "6adde5e6bf3d3284627cb6b9b4ecb3dc88e2db244c6304a376992609144c377c",
+      "schemas/vsg-pilot-manifest.schema.json": "f3bca26adc6a8625a83509715940e83cda5573f9a3927d9d8948720a8ce7d2c2",
+      "schemas/vsg-pilot-campaign.schema.json": "47a013ba8efba59864aa2c828e8a0da9d8d933d7d17d3691b905cc7ae3267a9b",
+      "validation/vsg_2b/preconditions.json": "40d7f1ba41603df6cfecb07bb9d8d924abd127f39aca12318d09cd29a1e29557"
+    }
+  },
+  "actions": {
+    "prediction_calls": 0,
+    "generation_attempts": 0,
+    "fresh_images": 0,
+    "new_valid_pairs": 0,
+    "authenticated_provider_calls": 0,
+    "token_presence_checked": false,
+    "new_operational_manifests": 0,
+    "dependencies_installed": false
+  },
+  "future_replicate_experiment": {
+    "authorized": false,
+    "created": false,
+    "requires_separate_id_contract_budget_manifests_evidence": true,
+    "eligible_for_original_gate": false
+  },
+  "limitations": [
+    "Documentary evaluation only; no candidate model executed",
+    "No compatible provider or operational manifest admitted",
+    "Candidate survey is bounded, not proof that no compatible backend exists",
+    "No visual preservation or improvement established"
+  ],
+  "decision_document": {
+    "path": "visual_scene_graph/pilot/P1R_SCOPE_DECISION.md",
+    "sha256": "782ad19c7e242960199604cc2f29d81ac4f616f2a6797e16c6cbe94711ab9354"
+  }
+}
