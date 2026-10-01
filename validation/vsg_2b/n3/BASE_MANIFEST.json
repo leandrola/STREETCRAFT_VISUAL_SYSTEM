@@ -1,0 +1,480 @@
+{
+  "milestone": "VSG-2B-N3",
+  "manifest_kind": "RESEARCH_BASE_NOT_CAMPAIGN_ADMISSION",
+  "selected_base_count": 1,
+  "selected_base": "GLIGEN StableDiffusionGLIGENPipeline",
+  "code": {
+    "repository": "huggingface/diffusers",
+    "release": "v0.29.0",
+    "commit": "39aa3909e8e2dfe30f4807aedaadf42c1d8b1a8f",
+    "license": "Apache-2.0",
+    "pin_method": "Public GitHub tag resolved to commit"
+  },
+  "checkpoint": {
+    "id": "masterful/gligen-1-4-inpainting-text-box",
+    "revision": "d6d957f8d27c40889c0d570a616571a5645c8be3",
+    "variant": "fp16",
+    "license_declared_in_pinned_card": "CreativeML OpenRAIL-M",
+    "access_metadata": {
+      "private": false,
+      "gated": false,
+      "anonymous_metadata_GET": "PASS",
+      "weight_download_test": "NOT_RUN"
+    },
+    "weights": [
+      {
+        "path": "safety_checker/pytorch_model.fp16.bin",
+        "declared_size_bytes": 608099969,
+        "declared_lfs_sha256": "f41eecee002f00a2a0d3686a12667c43c7d93d09609b7f718571c45659ab6502",
+        "git_blob_id": "50a88cd698dd2cf12abbd4f8a588017851311925",
+        "local_weight_bytes_verified": false,
+        "downloaded": false
+      },
+      {
+        "path": "text_encoder/pytorch_model.fp16.bin",
+        "declared_size_bytes": 246185569,
+        "declared_lfs_sha256": "114f61d643c6057572b501d4d4f493d69b8fd728ce6cea3d32eb5fe0227222e7",
+        "git_blob_id": "f522926a6060f10e30ddd4cfa205e15d96030c15",
+        "local_weight_bytes_verified": false,
+        "downloaded": false
+      },
+      {
+        "path": "unet/diffusion_pytorch_model.fp16.bin",
+        "declared_size_bytes": 2137593973,
+        "declared_lfs_sha256": "1cb5ce5cdbe85bef14a8b2d1548c39be39f7631c6c3b2f28d8023aeb8e6aff61",
+        "git_blob_id": "1f6d5dcab89517f64f9cda6ddc57ce4c4b27393e",
+        "local_weight_bytes_verified": false,
+        "downloaded": false
+      },
+      {
+        "path": "vae/diffusion_pytorch_model.fp16.bin",
+        "declared_size_bytes": 167390385,
+        "declared_lfs_sha256": "ec86d0b16ac278a29bac3e4021fd6cefdf6928007bd69cb097745a3f8dc1a9fe",
+        "git_blob_id": "585cc56d9515e0b1a9550c668f1d5e780a42fba3",
+        "local_weight_bytes_verified": false,
+        "downloaded": false
+      }
+    ],
+    "weight_file_bytes_total": 3159269896,
+    "hashes_are_remote_declarations_not_local_weight_verification": true,
+    "model_index_class": "StableDiffusionPipeline",
+    "load_method_required": "Explicit StableDiffusionGLIGENPipeline with pinned revision; auto-detected historical StableDiffusionPipeline is not compatibility proof"
+  },
+  "sources": [
+    {
+      "kind": "code",
+      "path": "src/diffusers/pipelines/stable_diffusion_gligen/pipeline_stable_diffusion_gligen.py",
+      "url": "https://raw.githubusercontent.com/huggingface/diffusers/39aa3909e8e2dfe30f4807aedaadf42c1d8b1a8f/src/diffusers/pipelines/stable_diffusion_gligen/pipeline_stable_diffusion_gligen.py",
+      "sha256": "12516f8c8d708a468e978f18a7e975fe82d591f218bdaec440f37631082a7ab7",
+      "bytes": 43067
+    },
+    {
+      "kind": "code",
+      "path": "src/diffusers/models/attention.py",
+      "url": "https://raw.githubusercontent.com/huggingface/diffusers/39aa3909e8e2dfe30f4807aedaadf42c1d8b1a8f/src/diffusers/models/attention.py",
+      "sha256": "142b3cc0ee4250479800eeda574831d8847c4d331ca2f21408b0e32487245ba8",
+      "bytes": 33375
+    },
+    {
+      "kind": "code",
+      "path": "src/diffusers/models/embeddings.py",
+      "url": "https://raw.githubusercontent.com/huggingface/diffusers/39aa3909e8e2dfe30f4807aedaadf42c1d8b1a8f/src/diffusers/models/embeddings.py",
+      "sha256": "42115b87ed38e527366ab9be777aba15a130184884606c2013fe7acfd3d85333",
+      "bytes": 49643
+    },
+    {
+      "kind": "code",
+      "path": "src/diffusers/models/unets/unet_2d_condition.py",
+      "url": "https://raw.githubusercontent.com/huggingface/diffusers/39aa3909e8e2dfe30f4807aedaadf42c1d8b1a8f/src/diffusers/models/unets/unet_2d_condition.py",
+      "sha256": "98d51ed46737644113ec272258ccf0699a3b01c1d00830787bd5754f185055c3",
+      "bytes": 66773
+    },
+    {
+      "kind": "code",
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/huggingface/diffusers/39aa3909e8e2dfe30f4807aedaadf42c1d8b1a8f/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    {
+      "kind": "checkpoint_metadata",
+      "path": "model_index.json",
+      "url": "https://huggingface.co/masterful/gligen-1-4-inpainting-text-box/raw/d6d957f8d27c40889c0d570a616571a5645c8be3/model_index.json",
+      "sha256": "03039784faa9ac77f813833046820f4800cb205988edadd4d3e0477e307d532d",
+      "bytes": 543
+    },
+    {
+      "kind": "checkpoint_metadata",
+      "path": "unet/config.json",
+      "url": "https://huggingface.co/masterful/gligen-1-4-inpainting-text-box/raw/d6d957f8d27c40889c0d570a616571a5645c8be3/unet/config.json",
+      "sha256": "377afbc341a30acef90c98dc712ec1b42b1c125790655a3c7e99518ba9a7258a",
+      "bytes": 772
+    },
+    {
+      "kind": "checkpoint_metadata",
+      "path": "text_encoder/config.json",
+      "url": "https://huggingface.co/masterful/gligen-1-4-inpainting-text-box/raw/d6d957f8d27c40889c0d570a616571a5645c8be3/text_encoder/config.json",
+      "sha256": "aa210e6d6abd239a466af57a1dadb62d5ced63295064d295a549e08a6c4a2020",
+      "bytes": 592
+    },
+    {
+      "kind": "checkpoint_metadata",
+      "path": "tokenizer/tokenizer_config.json",
+      "url": "https://huggingface.co/masterful/gligen-1-4-inpainting-text-box/raw/d6d957f8d27c40889c0d570a616571a5645c8be3/tokenizer/tokenizer_config.json",
+      "sha256": "00439066fcba73de57644cf41e4e3b9f2dbb09d7f3fc2005898ba52399045882",
+      "bytes": 806
+    },
+    {
+      "kind": "checkpoint_metadata",
+      "path": "scheduler/scheduler_config.json",
+      "url": "https://huggingface.co/masterful/gligen-1-4-inpainting-text-box/raw/d6d957f8d27c40889c0d570a616571a5645c8be3/scheduler/scheduler_config.json",
+      "sha256": "8335df29b53da12e9aeca35b1c2e60d88b23eae4cc5ad3d07efdcd7f003cc343",
+      "bytes": 313
+    },
+    {
+      "kind": "checkpoint_metadata",
+      "path": "vae/config.json",
+      "url": "https://huggingface.co/masterful/gligen-1-4-inpainting-text-box/raw/d6d957f8d27c40889c0d570a616571a5645c8be3/vae/config.json",
+      "sha256": "0e5966d4d52c8077648754ffd2c14ab5e0b26a4bdfa6af1d207c27550fa6d2af",
+      "bytes": 551
+    },
+    {
+      "kind": "checkpoint_metadata",
+      "path": "README.md",
+      "url": "https://huggingface.co/masterful/gligen-1-4-inpainting-text-box/raw/d6d957f8d27c40889c0d570a616571a5645c8be3/README.md",
+      "sha256": "0cb1cc9d850ca8f4f3cefa2ae6198277288db8f6d48f74cc194549bb91f93acd",
+      "bytes": 10394
+    }
+  ],
+  "checkpoint_configs": {
+    "model_index.json": {
+      "_class_name": "StableDiffusionPipeline",
+      "_diffusers_version": "0.2.2",
+      "feature_extractor": [
+        "transformers",
+        "CLIPFeatureExtractor"
+      ],
+      "safety_checker": [
+        "stable_diffusion",
+        "StableDiffusionSafetyChecker"
+      ],
+      "scheduler": [
+        "diffusers",
+        "PNDMScheduler"
+      ],
+      "text_encoder": [
+        "transformers",
+        "CLIPTextModel"
+      ],
+      "tokenizer": [
+        "transformers",
+        "CLIPTokenizer"
+      ],
+      "unet": [
+        "diffusers",
+        "UNet2DConditionModel"
+      ],
+      "vae": [
+        "diffusers",
+        "AutoencoderKL"
+      ]
+    },
+    "tokenizer/tokenizer_config.json": {
+      "add_prefix_space": false,
+      "bos_token": {
+        "__type": "AddedToken",
+        "content": "<|startoftext|>",
+        "lstrip": false,
+        "normalized": true,
+        "rstrip": false,
+        "single_word": false
+      },
+      "do_lower_case": true,
+      "eos_token": {
+        "__type": "AddedToken",
+        "content": "<|endoftext|>",
+        "lstrip": false,
+        "normalized": true,
+        "rstrip": false,
+        "single_word": false
+      },
+      "errors": "replace",
+      "model_max_length": 77,
+      "name_or_path": "openai/clip-vit-large-patch14",
+      "pad_token": "<|endoftext|>",
+      "special_tokens_map_file": "./special_tokens_map.json",
+      "tokenizer_class": "CLIPTokenizer",
+      "unk_token": {
+        "__type": "AddedToken",
+        "content": "<|endoftext|>",
+        "lstrip": false,
+        "normalized": true,
+        "rstrip": false,
+        "single_word": false
+      }
+    },
+    "scheduler/scheduler_config.json": {
+      "_class_name": "PNDMScheduler",
+      "_diffusers_version": "0.7.0.dev0",
+      "beta_end": 0.012,
+      "beta_schedule": "scaled_linear",
+      "beta_start": 0.00085,
+      "num_train_timesteps": 1000,
+      "set_alpha_to_one": false,
+      "skip_prk_steps": true,
+      "steps_offset": 1,
+      "trained_betas": null,
+      "clip_sample": false
+    },
+    "text_encoder/config.json": {
+      "_name_or_path": "openai/clip-vit-large-patch14",
+      "architectures": [
+        "CLIPTextModel"
+      ],
+      "attention_dropout": 0.0,
+      "bos_token_id": 0,
+      "dropout": 0.0,
+      "eos_token_id": 2,
+      "hidden_act": "quick_gelu",
+      "hidden_size": 768,
+      "initializer_factor": 1.0,
+      "initializer_range": 0.02,
+      "intermediate_size": 3072,
+      "layer_norm_eps": 1e-05,
+      "max_position_embeddings": 77,
+      "model_type": "clip_text_model",
+      "num_attention_heads": 12,
+      "num_hidden_layers": 12,
+      "pad_token_id": 1,
+      "torch_dtype": "float32",
+      "transformers_version": "4.21.0.dev0",
+      "vocab_size": 49408
+    },
+    "unet/config.json": {
+      "_class_name": "UNet2DConditionModel",
+      "_diffusers_version": "0.2.2",
+      "act_fn": "silu",
+      "attention_head_dim": 8,
+      "block_out_channels": [
+        320,
+        640,
+        1280,
+        1280
+      ],
+      "center_input_sample": false,
+      "cross_attention_dim": 768,
+      "down_block_types": [
+        "CrossAttnDownBlock2D",
+        "CrossAttnDownBlock2D",
+        "CrossAttnDownBlock2D",
+        "DownBlock2D"
+      ],
+      "downsample_padding": 1,
+      "attention_type": "gated",
+      "flip_sin_to_cos": true,
+      "freq_shift": 0,
+      "in_channels": 9,
+      "layers_per_block": 2,
+      "mid_block_scale_factor": 1,
+      "norm_eps": 1e-05,
+      "norm_num_groups": 32,
+      "out_channels": 4,
+      "sample_size": 64,
+      "up_block_types": [
+        "UpBlock2D",
+        "CrossAttnUpBlock2D",
+        "CrossAttnUpBlock2D",
+        "CrossAttnUpBlock2D"
+      ]
+    },
+    "vae/config.json": {
+      "_class_name": "AutoencoderKL",
+      "_diffusers_version": "0.2.2",
+      "act_fn": "silu",
+      "block_out_channels": [
+        128,
+        256,
+        512,
+        512
+      ],
+      "down_block_types": [
+        "DownEncoderBlock2D",
+        "DownEncoderBlock2D",
+        "DownEncoderBlock2D",
+        "DownEncoderBlock2D"
+      ],
+      "in_channels": 3,
+      "latent_channels": 4,
+      "layers_per_block": 2,
+      "out_channels": 3,
+      "sample_size": 512,
+      "scaling_factor": 0.18215,
+      "up_block_types": [
+        "UpDecoderBlock2D",
+        "UpDecoderBlock2D",
+        "UpDecoderBlock2D",
+        "UpDecoderBlock2D"
+      ]
+    }
+  },
+  "verified_code_symbols": [
+    {
+      "symbol": "StableDiffusionGLIGENPipeline.encode_prompt",
+      "path": "src/diffusers/pipelines/stable_diffusion_gligen/pipeline_stable_diffusion_gligen.py",
+      "line": 209,
+      "end_line": 389,
+      "source_sha256": "12516f8c8d708a468e978f18a7e975fe82d591f218bdaec440f37631082a7ab7",
+      "code_commit": "39aa3909e8e2dfe30f4807aedaadf42c1d8b1a8f",
+      "verification": "STATIC_AST_ONLY"
+    },
+    {
+      "symbol": "StableDiffusionGLIGENPipeline.__call__",
+      "path": "src/diffusers/pipelines/stable_diffusion_gligen/pipeline_stable_diffusion_gligen.py",
+      "line": 530,
+      "end_line": 851,
+      "source_sha256": "12516f8c8d708a468e978f18a7e975fe82d591f218bdaec440f37631082a7ab7",
+      "code_commit": "39aa3909e8e2dfe30f4807aedaadf42c1d8b1a8f",
+      "verification": "STATIC_AST_ONLY"
+    },
+    {
+      "symbol": "GatedSelfAttentionDense.forward",
+      "path": "src/diffusers/models/attention.py",
+      "line": 75,
+      "end_line": 85,
+      "source_sha256": "142b3cc0ee4250479800eeda574831d8847c4d331ca2f21408b0e32487245ba8",
+      "code_commit": "39aa3909e8e2dfe30f4807aedaadf42c1d8b1a8f",
+      "verification": "STATIC_AST_ONLY"
+    },
+    {
+      "symbol": "GLIGENTextBoundingboxProjection.forward",
+      "path": "src/diffusers/models/embeddings.py",
+      "line": 952,
+      "end_line": 1000,
+      "source_sha256": "42115b87ed38e527366ab9be777aba15a130184884606c2013fe7acfd3d85333",
+      "code_commit": "39aa3909e8e2dfe30f4807aedaadf42c1d8b1a8f",
+      "verification": "STATIC_AST_ONLY"
+    },
+    {
+      "symbol": "UNet2DConditionModel._set_pos_net_if_use_gligen",
+      "path": "src/diffusers/models/unets/unet_2d_condition.py",
+      "line": 683,
+      "end_line": 694,
+      "source_sha256": "98d51ed46737644113ec272258ccf0699a3b01c1d00830787bd5754f185055c3",
+      "code_commit": "39aa3909e8e2dfe30f4807aedaadf42c1d8b1a8f",
+      "verification": "STATIC_AST_ONLY"
+    },
+    {
+      "symbol": "UNet2DConditionModel.forward",
+      "path": "src/diffusers/models/unets/unet_2d_condition.py",
+      "line": 1032,
+      "end_line": 1305,
+      "source_sha256": "98d51ed46737644113ec272258ccf0699a3b01c1d00830787bd5754f185055c3",
+      "code_commit": "39aa3909e8e2dfe30f4807aedaadf42c1d8b1a8f",
+      "verification": "STATIC_AST_ONLY"
+    }
+  ],
+  "capabilities": [
+    {
+      "capability": "text_conditioning",
+      "status": "VERIFIED_EXISTING",
+      "evidence": "Pipeline encode_prompt/__call__; CLIPTextModel configured",
+      "limitation": "Full D JSONL/common capacity not established"
+    },
+    {
+      "capability": "source_pixels",
+      "status": "VERIFIED_EXISTING",
+      "evidence": "Pipeline preprocess/VAE encode lines 744-761",
+      "limitation": "Crop/mask authority and identical approved preprocessing require adaptation"
+    },
+    {
+      "capability": "typed_box_phrase_grounding",
+      "status": "VERIFIED_EXISTING",
+      "evidence": "pipeline gligen kwargs -> UNet position_net -> fuser",
+      "limitation": "Not VSG graph input"
+    },
+    {
+      "capability": "real_feature_consumer",
+      "status": "VERIFIED_EXISTING",
+      "evidence": "GatedSelfAttentionDense.forward",
+      "limitation": "Only static operator identified; no learned relational compatibility or execution"
+    },
+    {
+      "capability": "VSG_edge_topology_channel",
+      "status": "ADAPTATION_REQUIRED",
+      "evidence": "Box/phrase projection has no endpoint/predicate/incidence interface",
+      "limitation": "Relational projector and trained fusion adaptation required"
+    },
+    {
+      "capability": "complete_A_text",
+      "status": "ADAPTATION_REQUIRED",
+      "evidence": "max_position_embeddings and tokenizer limit 77; truncation in pipeline",
+      "limitation": "Long-text path cannot be certified by config change"
+    },
+    {
+      "capability": "original_AB_same_model",
+      "status": "UNVERIFIED",
+      "evidence": "Common backbone has text and grounding paths",
+      "limitation": "No learned VSG channel/checkpoint or causal probe"
+    },
+    {
+      "capability": "full_seed_RNG",
+      "status": "ADAPTATION_REQUIRED",
+      "evidence": "generator for latents, VAE sample without request generator",
+      "limitation": "Need global/component RNG restore and audited determinism"
+    },
+    {
+      "capability": "source_preprocessing_contract",
+      "status": "ADAPTATION_REQUIRED",
+      "evidence": "9-channel inpainting model; crop/masks in pipeline",
+      "limitation": "No authorized conversion of evidence regions/VALIDATE_ONLY to masks"
+    },
+    {
+      "capability": "weights_load_execution",
+      "status": "UNVERIFIED",
+      "evidence": "Pinned metadata and published LFS SHA256",
+      "limitation": "No downloaded bytes, load or forwards"
+    }
+  ],
+  "verification_level": "STATIC_CODE_AND_CHECKPOINT_METADATA_ONLY",
+  "environment": {
+    "OS": "Darwin",
+    "architecture": "x86_64",
+    "python": "3.14.5",
+    "packages": {
+      "torch": "NOT_INSTALLED_IN_VENV_SC",
+      "diffusers": "NOT_INSTALLED_IN_VENV_SC",
+      "transformers": "NOT_INSTALLED_IN_VENV_SC"
+    },
+    "host_RAM_bytes": 17179869184
+  },
+  "resources": {
+    "download_weight_bytes_documented": 3159269896,
+    "weights_downloaded": 0,
+    "local_GPU_VRAM": "UNKNOWN",
+    "measured_runtime_RAM_VRAM": "NOT_RUN",
+    "proposed_GPU_VRAM_GiB": [
+      24,
+      48
+    ],
+    "proposed_host_RAM_GiB": [
+      32,
+      64
+    ],
+    "proposed_storage_GB": [
+      100,
+      250
+    ],
+    "hardware_ranges": "Planning assumptions, not measured requirements",
+    "proposed_GPU_hours": [
+      50,
+      200
+    ],
+    "proposed_GPU_hour_ceiling": 200,
+    "GPU_hour_price": "UNKNOWN",
+    "training_cost": "UNKNOWN",
+    "cost_formula": "approved GPU hours * quoted hourly rate + storage + data costs",
+    "approved_compute_hours": 0
+  },
+  "compatibility": "VSG_RELATIONAL_MODEL_DEVELOPMENT_REQUIRED",
+  "provider_READY": false
+}

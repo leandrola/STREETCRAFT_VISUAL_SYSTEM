@@ -1,0 +1,659 @@
+{
+  "milestone": "VSG-2B-N3",
+  "status": "N3_MODEL_DEVELOPMENT_REQUIRED",
+  "created_at": "2026-10-01T04:43:24.821878+00:00",
+  "head_initial": "8009b66700f9f125a5e9ad8992ffd074425aa500",
+  "head_final": "8009b66700f9f125a5e9ad8992ffd074425aa500",
+  "changes_previous": [],
+  "initial_git_status": "CLEAN",
+  "reasoning": {
+    "recommendation": "Alta",
+    "selected_model_changed": false,
+    "UI_reasoning_setting": "UNKNOWN",
+    "routine_reconfirmation_requested": false
+  },
+  "subgates": {
+    "inputs": "PASS",
+    "code_checkpoint_metadata": "VERIFIED_EXISTING",
+    "weights_load": "UNVERIFIED",
+    "VSG_structural_channel": "ADAPTATION_REQUIRED",
+    "integration": "NOT_RUN_MODEL_DEVELOPMENT_REQUIRED",
+    "causal_probe": "NOT_RUN",
+    "base_execution_verified": false
+  },
+  "base_manifest": "validation/vsg_2b/n3/BASE_MANIFEST.json",
+  "input_manifest": "validation/vsg_2b/n3/INPUT_MANIFEST.json",
+  "record_map": "validation/vsg_2b/n3/RECORD_CONSUMPTION_MAP.json",
+  "selected_base_count": 1,
+  "model_development": {
+    "proposal_id": "VSG-2B-RELATIONAL-MODEL-DEVELOPMENT-PROPOSAL",
+    "separate_from_X1": true,
+    "approved": false,
+    "executed": false,
+    "base_checkpoint_revision": "d6d957f8d27c40889c0d570a616571a5645c8be3",
+    "modules_to_learn": [
+      "RelationalConditionProjector",
+      "predicate embeddings",
+      "optional separately approved fuser LoRA/deltas",
+      "long-text conditioner/resampler if retained after feasibility audit"
+    ],
+    "frozen_weights": [
+      "VAE",
+      "base CLIP text encoder",
+      "base UNet; adaptation deltas separate"
+    ],
+    "same_composite_checkpoint_both_branches": true,
+    "dataset": {
+      "available_and_licensed": "UNVERIFIED",
+      "proposed_pairs": [
+        5000,
+        20000
+      ],
+      "source_target_and_graph_annotations": true,
+      "requirements": [
+        "rights/provenance per image and annotation",
+        "authorized source/target edit or no-edit pairs",
+        "LEFT_OF/ABOVE and inverse/negative coverage",
+        "scene-level split; exclude D/E/Kenny/C from training/tuning"
+      ],
+      "estimated_image_storage_GB": [
+        10,
+        80
+      ],
+      "storage_assumption": "5k-20k pairs * 2 images * 1-2 MB/image"
+    },
+    "objective": [
+      "denoising loss on authorized targets",
+      "relation/layout supervision from annotated graphs",
+      "preservation regularization for no-edit controls"
+    ],
+    "acceptance": [
+      "held-out relational advantage over ablation with preregistered metrics",
+      "no protected degradation under predefined review",
+      "actual consumer causal trace and numerical repeatability",
+      "no text truncation or source-authority changes"
+    ],
+    "semantic_thresholds": "PENDING_CORPUS_DEFINITION; not claimed passed",
+    "engineering_days_range": [
+      25,
+      59
+    ],
+    "compute": {
+      "download_weight_bytes_documented": 3159269896,
+      "weights_downloaded": 0,
+      "local_GPU_VRAM": "UNKNOWN",
+      "measured_runtime_RAM_VRAM": "NOT_RUN",
+      "proposed_GPU_VRAM_GiB": [
+        24,
+        48
+      ],
+      "proposed_host_RAM_GiB": [
+        32,
+        64
+      ],
+      "proposed_storage_GB": [
+        100,
+        250
+      ],
+      "hardware_ranges": "Planning assumptions, not measured requirements",
+      "proposed_GPU_hours": [
+        50,
+        200
+      ],
+      "proposed_GPU_hour_ceiling": 200,
+      "GPU_hour_price": "UNKNOWN",
+      "training_cost": "UNKNOWN",
+      "cost_formula": "approved GPU hours * quoted hourly rate + storage + data costs",
+      "approved_compute_hours": 0
+    },
+    "deliverables": [
+      "locked environment and code patch",
+      "licensed corpus manifest and split hashes",
+      "strictly loaded base/adapter weight SHA256",
+      "vocabulary and full record validator",
+      "actual-consumer hooks and reproducible probe receipts"
+    ],
+    "rollback": "Disable external adapter/checkpoint; untouched pilot retains original policy and evidence",
+    "additional_authorization_required": [
+      "training/fine-tuning",
+      "large weight download",
+      "licensed dataset acquisition",
+      "GPU/monetary budget",
+      "counter treatment of local model forwards"
+    ],
+    "first_step": "Audit complete-text and source/mask feasibility before committing training resources"
+  },
+  "tasks_performed": [
+    "preflight/N2/D agreement",
+    "public code/checkpoint metadata pinning",
+    "published weight hash/size inventory",
+    "static consumer path inspection",
+    "ten-record role mapping",
+    "counter policy inspection and baseline measurement",
+    "bounded development and causal protocol"
+  ],
+  "tasks_not_performed": [
+    "model integration",
+    "training",
+    "model forward",
+    "weight download",
+    "provider calls",
+    "campaign admission",
+    "X1 implementation"
+  ],
+  "source_payload_sha256": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d",
+  "source_image_sha256": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+  "actual_consumer_symbol": "GatedSelfAttentionDense.forward",
+  "new_channel_connected": false,
+  "test_results": [
+    {
+      "test": "D_REAL_COMPLETE",
+      "status": "NOT_RUN",
+      "reason": "No learned compatible consumer/weights loaded"
+    },
+    {
+      "test": "IDENTICAL_REPEAT",
+      "status": "NOT_RUN",
+      "reason": "No real forward; numerical noise not measured"
+    },
+    {
+      "test": "VALID_EDGE_MUTATION",
+      "status": "NOT_RUN",
+      "reason": "Requires learned consumer; schema-valid diagnostic is not admitted source truth"
+    },
+    {
+      "test": "INVALID_TOPOLOGY",
+      "status": "NOT_RUN",
+      "reason": "No new strict consumer validator implemented"
+    },
+    {
+      "test": "MISSING_LOCK",
+      "status": "NOT_RUN",
+      "reason": "No new strict consumer validator implemented"
+    },
+    {
+      "test": "B_STRING_COERCION",
+      "status": "NOT_RUN",
+      "reason": "No new strict consumer validator implemented"
+    },
+    {
+      "test": "A_TEXT_ROUTE",
+      "status": "NOT_RUN",
+      "reason": "No complete long-text path/model loaded"
+    },
+    {
+      "test": "B_CHANNEL_ABLATION",
+      "status": "NOT_RUN",
+      "reason": "No trained channel to ablate"
+    }
+  ],
+  "tolerances": {
+    "status": "PROPOSED_UNCALIBRATED_NOT_EXECUTED",
+    "fp32_repeat": {
+      "atol": 1e-06,
+      "rtol": 1e-05
+    },
+    "fp16_repeat": {
+      "atol": 0.001,
+      "rtol": 0.001
+    },
+    "mutation_ablation": "Normalized effect > max(10 * measured repeat noise, 1e-4); preregister after hardware choice and before test; no visual claim"
+  },
+  "failures": {
+    "fresh_preflight_failures": [],
+    "blocking_dependencies": [
+      "untrained relational channel",
+      "complete text beyond configured 77 positions not supported yet",
+      "authorized source preprocessing/mask path unresolved",
+      "weights/dependencies/compute not loaded",
+      "local forward counter policy unspecified"
+    ]
+  },
+  "fresh_checks": {
+    "preconditions": "PASS",
+    "D_review": {
+      "status": "PASS",
+      "fixture_id": "R2B-191-D",
+      "reviewer": "Codex / independent persisted-byte review",
+      "review_method": "Separate review implementation; does not invoke or import the harness renderer. Automated technical review, not human or blind visual review.",
+      "reviewed_at": "2026-10-01T04:37:49.953961+00:00",
+      "head": "8009b66700f9f125a5e9ad8992ffd074425aa500",
+      "run_path": "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f",
+      "manifest_sha256": "d258f4784d7f27cabec9b6044142cdc809e19a9552e72924468e20d55dc3d3ec",
+      "delta_sha256": "6159ef5f5666afb9037f5ba9512cf6a3d3c89a778f376961c9c570391ce59282",
+      "checks": {
+        "common_equal": true,
+        "shared_cgc_matches_frozen_snapshot": true,
+        "parsed_A_equals_B": true,
+        "relations_locks_match_frozen_contract": true,
+        "shared_restrictions_match_frozen_contract": true,
+        "delta_digest": true,
+        "comparison_pass": true,
+        "nonempty_required_coverage": true,
+        "no_images_or_calls": true,
+        "dry_run_only": true,
+        "no_technical_failures": true,
+        "snapshot_bytes": true
+      },
+      "payloads_file_sha256": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d",
+      "generation_attempts": 0,
+      "fresh_images": 0,
+      "valid_pairs": 0,
+      "limitations": [
+        "Prospective annotation, not historical recovery.",
+        "Provisional provider settings; not an operational selection.",
+        "No visual quality/improvement finding; VSG-2B remains BLOCKED/PENDING_VISUAL."
+      ]
+    },
+    "N2_contract_consistent": true,
+    "D_records": 10,
+    "environment": {
+      "OS": "Darwin",
+      "architecture": "x86_64",
+      "python": "3.14.5",
+      "packages": {
+        "torch": "NOT_INSTALLED_IN_VENV_SC",
+        "diffusers": "NOT_INSTALLED_IN_VENV_SC",
+        "transformers": "NOT_INSTALLED_IN_VENV_SC"
+      },
+      "host_RAM_bytes": 17179869184
+    },
+    "evidence_consistency": "PASS: records, slots, source pin metadata, all NOT_RUN results and links",
+    "final_hash_and_counter_verification": {
+      "exit_code": 0,
+      "result": "PASS: 745 prior files invariant; same zero counters before/after; exactly 5 allowed files"
+    }
+  },
+  "commands": [
+    {
+      "command": "git status --short; git rev-parse HEAD (separate commands)",
+      "exit_code": 0,
+      "result": "CLEAN; recorded HEAD"
+    },
+    {
+      "command": "python3 - (public metadata GET and pinned small source/config reads)",
+      "exit_code": 0,
+      "result": "tag and model revision resolved; 12 code/config/license documents; no weight bytes fetched"
+    },
+    {
+      "command": ".venv-sc/bin/python - (check_preconditions, review(D), N2 payload equality, environment metadata)",
+      "exit_code": 0,
+      "result": "PASS; code not imported from provider; no model forward"
+    },
+    {
+      "command": "python3 - (counter scan in outputs and validation/vsg_2b)",
+      "exit_code": 0,
+      "result": "0 attempts; 0 image records; 0 evaluations; 15 run reports"
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "result": "PASS_NO_WHITESPACE_DIAGNOSTICS",
+      "exit_1_means_new_file_difference": false
+    },
+    {
+      "command": "git diff --no-index --check /dev/null validation/vsg_2b/N3_RESULT.json",
+      "exit_code": 1,
+      "result": "PASS_NO_WHITESPACE_DIAGNOSTICS",
+      "exit_1_means_new_file_difference": true
+    },
+    {
+      "command": "git diff --no-index --check /dev/null validation/vsg_2b/n3/BASE_MANIFEST.json",
+      "exit_code": 1,
+      "result": "PASS_NO_WHITESPACE_DIAGNOSTICS",
+      "exit_1_means_new_file_difference": true
+    },
+    {
+      "command": "git diff --no-index --check /dev/null validation/vsg_2b/n3/INPUT_MANIFEST.json",
+      "exit_code": 1,
+      "result": "PASS_NO_WHITESPACE_DIAGNOSTICS",
+      "exit_1_means_new_file_difference": true
+    },
+    {
+      "command": "git diff --no-index --check /dev/null validation/vsg_2b/n3/RECORD_CONSUMPTION_MAP.json",
+      "exit_code": 1,
+      "result": "PASS_NO_WHITESPACE_DIAGNOSTICS",
+      "exit_1_means_new_file_difference": true
+    },
+    {
+      "command": "git diff --no-index --check /dev/null visual_scene_graph/pilot/N3_STRUCTURAL_CONSUMER_RUNBOOK.md",
+      "exit_code": 1,
+      "result": "PASS_NO_WHITESPACE_DIAGNOSTICS",
+      "exit_1_means_new_file_difference": true
+    }
+  ],
+  "counters": {
+    "policy_version": "1.0.0",
+    "attempt_definition": "One *.attempt.json saved before generator.generate; failed call also counts",
+    "attempt_limit": 8,
+    "policy_sources": [
+      "visual_scene_graph/pilot/harness.py:245",
+      "visual_scene_graph/pilot/harness.py:301",
+      "visual_scene_graph/pilot/campaign.py:136"
+    ],
+    "standalone_local_forward_policy": "UNDEFINED_NOT_EXEMPT; do not execute until explicitly classified",
+    "before": {
+      "roots": [
+        "outputs",
+        "validation/vsg_2b"
+      ],
+      "attempt_paths": [],
+      "generation_attempts": 0,
+      "run_reports": [
+        {
+          "path": "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/report.json",
+          "run_id": "a96c2545-04d4-4133-a943-0032d082060f",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/report.json",
+          "run_id": "055ca103-57e3-4f8c-9231-aa73d3dbbedf",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/report.json",
+          "run_id": "9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/report.json",
+          "run_id": "77c95bce-a381-4b8d-85e8-340121a67dd4",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/report.json",
+          "run_id": "dba94160-719b-4b3e-83eb-84697454a9f8",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/report.json",
+          "run_id": "a241770d-ffad-4bd6-b6fd-6a82eb1c18e7",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/report.json",
+          "run_id": "f4231e08-419b-4df6-a790-054130cbb50c",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/report.json",
+          "run_id": "89bca550-75b4-4274-ba40-b38ea924990f",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/report.json",
+          "run_id": "ed04d917-c5d3-4fe3-b6de-62c13f532f7f",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/report.json",
+          "run_id": "96c3a2c0-0243-4640-8079-e3bc720fc72d",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/report.json",
+          "run_id": "1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/report.json",
+          "run_id": "cef0c18e-8e9f-4bcc-a391-e1daabcd4450",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/report.json",
+          "run_id": "57d39ef0-282c-4b4c-a3f7-a0335a09ef9f",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/report.json",
+          "run_id": "ffec337b-31af-471a-bb9b-9a0c91413c7c",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/report.json",
+          "run_id": "fe57659e-9fb4-4314-8957-da39998aeab2",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        }
+      ],
+      "persisted_image_records": 0,
+      "evaluation_paths": [],
+      "valid_visual_pairs": 0,
+      "offline_forward_count_this_run": 0,
+      "account_prediction_total": "UNKNOWN_NOT_QUERIED"
+    },
+    "after": {
+      "roots": [
+        "outputs",
+        "validation/vsg_2b"
+      ],
+      "attempt_paths": [],
+      "generation_attempts": 0,
+      "run_reports": [
+        {
+          "path": "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/report.json",
+          "run_id": "a96c2545-04d4-4133-a943-0032d082060f",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/report.json",
+          "run_id": "055ca103-57e3-4f8c-9231-aa73d3dbbedf",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/report.json",
+          "run_id": "9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/report.json",
+          "run_id": "77c95bce-a381-4b8d-85e8-340121a67dd4",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/report.json",
+          "run_id": "dba94160-719b-4b3e-83eb-84697454a9f8",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/report.json",
+          "run_id": "a241770d-ffad-4bd6-b6fd-6a82eb1c18e7",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/report.json",
+          "run_id": "f4231e08-419b-4df6-a790-054130cbb50c",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/report.json",
+          "run_id": "89bca550-75b4-4274-ba40-b38ea924990f",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/report.json",
+          "run_id": "ed04d917-c5d3-4fe3-b6de-62c13f532f7f",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/report.json",
+          "run_id": "96c3a2c0-0243-4640-8079-e3bc720fc72d",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/report.json",
+          "run_id": "1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/report.json",
+          "run_id": "cef0c18e-8e9f-4bcc-a391-e1daabcd4450",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/report.json",
+          "run_id": "57d39ef0-282c-4b4c-a3f7-a0335a09ef9f",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/report.json",
+          "run_id": "ffec337b-31af-471a-bb9b-9a0c91413c7c",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "path": "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/report.json",
+          "run_id": "fe57659e-9fb4-4314-8957-da39998aeab2",
+          "image_records": 0,
+          "status": "INCONCLUSIVE"
+        }
+      ],
+      "persisted_image_records": 0,
+      "evaluation_paths": [],
+      "valid_visual_pairs": 0,
+      "offline_forward_count_this_run": 0,
+      "account_prediction_total": "UNKNOWN_NOT_QUERIED"
+    },
+    "delta": {
+      "generation_attempts": 0,
+      "persisted_image_records": 0,
+      "valid_visual_pairs": 0,
+      "offline_forwards": 0
+    },
+    "offline_forward_count": 0,
+    "N3_actions": {
+      "archive_calls": 0,
+      "provider_predictions": 0,
+      "generated_images": 0,
+      "new_visual_pairs": 0,
+      "training_runs": 0,
+      "weights_downloaded_bytes": 0,
+      "paid_compute": 0,
+      "public_metadata_reads_not_predictions": true
+    },
+    "account_prediction_total": "UNKNOWN_NOT_QUERIED"
+  },
+  "plan_limits": {
+    "ceiling_5hour_percentage_points": 40,
+    "numeric_compliance_certified": false,
+    "stages": [
+      {
+        "name": "preflight",
+        "indicative_points": 4,
+        "5hour_before": "UNKNOWN",
+        "5hour_after": "UNKNOWN",
+        "weekly_before": "UNKNOWN",
+        "weekly_after": "UNKNOWN"
+      },
+      {
+        "name": "base",
+        "indicative_points": 10,
+        "5hour_before": "UNKNOWN",
+        "5hour_after": "UNKNOWN",
+        "weekly_before": "UNKNOWN",
+        "weekly_after": "UNKNOWN"
+      },
+      {
+        "name": "integration_probe_NOT_RUN",
+        "indicative_points": 20,
+        "5hour_before": "UNKNOWN",
+        "5hour_after": "UNKNOWN",
+        "weekly_before": "UNKNOWN",
+        "weekly_after": "UNKNOWN"
+      },
+      {
+        "name": "closure",
+        "indicative_points": 6,
+        "5hour_before": "UNKNOWN",
+        "5hour_after": "UNKNOWN",
+        "weekly_before": "UNKNOWN",
+        "weekly_after": "UNKNOWN"
+      }
+    ]
+  },
+  "resources": {
+    "download_weight_bytes_documented": 3159269896,
+    "weights_downloaded": 0,
+    "local_GPU_VRAM": "UNKNOWN",
+    "measured_runtime_RAM_VRAM": "NOT_RUN",
+    "proposed_GPU_VRAM_GiB": [
+      24,
+      48
+    ],
+    "proposed_host_RAM_GiB": [
+      32,
+      64
+    ],
+    "proposed_storage_GB": [
+      100,
+      250
+    ],
+    "hardware_ranges": "Planning assumptions, not measured requirements",
+    "proposed_GPU_hours": [
+      50,
+      200
+    ],
+    "proposed_GPU_hour_ceiling": 200,
+    "GPU_hour_price": "UNKNOWN",
+    "training_cost": "UNKNOWN",
+    "cost_formula": "approved GPU hours * quoted hourly rate + storage + data costs",
+    "approved_compute_hours": 0
+  },
+  "new_files": [
+    "visual_scene_graph/pilot/N3_STRUCTURAL_CONSUMER_RUNBOOK.md",
+    "validation/vsg_2b/N3_RESULT.json",
+    "validation/vsg_2b/n3/BASE_MANIFEST.json",
+    "validation/vsg_2b/n3/INPUT_MANIFEST.json",
+    "validation/vsg_2b/n3/RECORD_CONSUMPTION_MAP.json"
+  ],
+  "CAUSAL_TRACE_created": false,
+  "vsg_2b_status": "BLOCKED / PENDING_VISUAL",
+  "production_authorized": false,
+  "C_status": "NO_GO_C0_UNVERIFIED",
+  "X1_status": "PROPOSED_NOT_APPROVED",
+  "provider_READY": false,
+  "next_step": "Audit complete-text and source/mask feasibility before committing training resources",
+  "preservation": {
+    "before_manifest": "validation/vsg_2b/n3/INPUT_MANIFEST.json",
+    "final_check": "PASS",
+    "files_checked": 745,
+    "changed": [],
+    "D_E_Kenny_C": "UNCHANGED_IN_FULL_INPUT_HASH_INVENTORY",
+    "only_allowed_new_files": true
+  },
+  "runbook_sha256": "e847331887a94a969aaa300494af8a2e5a7a535438b15d2a737419e905b6c675",
+  "artifact_sha256": {
+    "validation/vsg_2b/n3/BASE_MANIFEST.json": "c5c2a9c8ec2d158f4984413eac511f3bb3d55060ad6d1c719e09edf2a28eac53",
+    "validation/vsg_2b/n3/INPUT_MANIFEST.json": "9a517cc9cfde353c4516504311405ad40a14660547aee7158c964d675cd9c7a1",
+    "validation/vsg_2b/n3/RECORD_CONSUMPTION_MAP.json": "0953960710fd39d2e4c8701ea147ca16022d22a120a9ad41bff09de9e7468555",
+    "visual_scene_graph/pilot/N3_STRUCTURAL_CONSUMER_RUNBOOK.md": "e847331887a94a969aaa300494af8a2e5a7a535438b15d2a737419e905b6c675"
+  }
+}

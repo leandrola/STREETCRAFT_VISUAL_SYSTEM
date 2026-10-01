@@ -1,0 +1,382 @@
+{
+  "milestone": "VSG-2B-N3",
+  "status": "DESIGN_NOT_EXECUTION_TRACE",
+  "source_payloads_sha256": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d",
+  "records": [
+    {
+      "id": "edge:rel_facade_left_of_diner",
+      "frozen_record": {
+        "id": "edge:rel_facade_left_of_diner",
+        "priority": "PR1",
+        "value": {
+          "confidence": 0.9,
+          "epistemic_class": "OBSERVED",
+          "evidence": {
+            "evidence_id": "D-OBS-rel_facade_left_of_diner",
+            "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+            "region": [
+              0.025,
+              0.065,
+              0.945,
+              0.956
+            ]
+          },
+          "from": "facade_01",
+          "protection": "PR1",
+          "to": "diner_01",
+          "type": "LEFT_OF"
+        },
+        "lock_ids": [
+          "GL-GEO-DINER_01",
+          "GL-GEO-FACADE_01"
+        ]
+      },
+      "record_sha256": "31192c65fd64d18bfc46f4b61851293a1eaa5b65f1ea9278549598ab40c5f1f7",
+      "role": "GENERATIVE_RELATION_PROPOSED",
+      "proposed_slot": 5,
+      "proposed_destination": "RelationalConditionProjector -> same UNet fuser",
+      "field_preservation": "Entire original record retained by ledger, including ID/priority/authority/provenance/lock_ids/empty lists",
+      "actual_model_consumption": "NOT_RUN",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "effective_feature_hash": null
+    },
+    {
+      "id": "edge:rel_sign_above_diner",
+      "frozen_record": {
+        "id": "edge:rel_sign_above_diner",
+        "priority": "PR0",
+        "value": {
+          "confidence": 0.9,
+          "epistemic_class": "OBSERVED",
+          "evidence": {
+            "evidence_id": "D-OBS-rel_sign_above_diner",
+            "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+            "region": [
+              0.455,
+              0.527,
+              0.945,
+              0.951
+            ]
+          },
+          "from": "sign_01",
+          "protection": "PR0",
+          "to": "diner_01",
+          "type": "ABOVE"
+        },
+        "lock_ids": [
+          "GL-GEO-DINER_01"
+        ]
+      },
+      "record_sha256": "a5a1b29bbcf905a42b0c375ad7a068f8035e11f49d3f87f96f5a827e34ed2678",
+      "role": "GENERATIVE_RELATION_PROPOSED",
+      "proposed_slot": 6,
+      "proposed_destination": "RelationalConditionProjector -> same UNet fuser",
+      "field_preservation": "Entire original record retained by ledger, including ID/priority/authority/provenance/lock_ids/empty lists",
+      "actual_model_consumption": "NOT_RUN",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "effective_feature_hash": null
+    },
+    {
+      "id": "lock:GL-GEO-DINER_01",
+      "frozen_record": {
+        "id": "lock:GL-GEO-DINER_01",
+        "priority": "LOCK",
+        "value": {
+          "enforcement": "VALIDATE_ONLY",
+          "expected": {
+            "node_type": "storefront",
+            "protected_topology": [
+              {
+                "from": "facade_01",
+                "id": "rel_facade_left_of_diner",
+                "to": "diner_01",
+                "type": "LEFT_OF"
+              },
+              {
+                "from": "sign_01",
+                "id": "rel_sign_above_diner",
+                "to": "diner_01",
+                "type": "ABOVE"
+              }
+            ]
+          },
+          "provenance": {
+            "evidence": {
+              "evidence_id": "D-OBS-diner_01",
+              "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+              "region": [
+                0.478,
+                0.668,
+                0.945,
+                0.951
+              ]
+            },
+            "source": "VSG_NODE_LOCK"
+          },
+          "strength": "ABSOLUTE",
+          "target": {
+            "id": "diner_01",
+            "kind": "NODE"
+          },
+          "type": "GEOMETRY_LOCK"
+        },
+        "lock_ids": [
+          "GL-GEO-DINER_01"
+        ]
+      },
+      "record_sha256": "6c41e89d1d48bbf1d2618c41b7bd319f86918c2fb0c61c35b01b3466787ffd0f",
+      "role": "VALIDATE_ONLY_AUDIT_PRE_POST",
+      "proposed_slot": null,
+      "proposed_destination": "Preservation validator and ledger; no mask/forced-geometry feature",
+      "field_preservation": "Entire original record retained by ledger, including ID/priority/authority/provenance/lock_ids/empty lists",
+      "actual_model_consumption": "NOT_RUN",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "effective_feature_hash": null
+    },
+    {
+      "id": "lock:GL-GEO-FACADE_01",
+      "frozen_record": {
+        "id": "lock:GL-GEO-FACADE_01",
+        "priority": "LOCK",
+        "value": {
+          "enforcement": "VALIDATE_ONLY",
+          "expected": {
+            "node_type": "facade",
+            "protected_topology": [
+              {
+                "from": "facade_01",
+                "id": "rel_facade_left_of_diner",
+                "to": "diner_01",
+                "type": "LEFT_OF"
+              }
+            ]
+          },
+          "provenance": {
+            "evidence": {
+              "evidence_id": "D-OBS-facade_01",
+              "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+              "region": [
+                0.025,
+                0.065,
+                0.46,
+                0.956
+              ]
+            },
+            "source": "VSG_NODE_LOCK"
+          },
+          "strength": "ABSOLUTE",
+          "target": {
+            "id": "facade_01",
+            "kind": "NODE"
+          },
+          "type": "GEOMETRY_LOCK"
+        },
+        "lock_ids": [
+          "GL-GEO-FACADE_01"
+        ]
+      },
+      "record_sha256": "80867b97875cdb941129b3f3488db90d6d3407bb688b7a3972758ea25dfa818d",
+      "role": "VALIDATE_ONLY_AUDIT_PRE_POST",
+      "proposed_slot": null,
+      "proposed_destination": "Preservation validator and ledger; no mask/forced-geometry feature",
+      "field_preservation": "Entire original record retained by ledger, including ID/priority/authority/provenance/lock_ids/empty lists",
+      "actual_model_consumption": "NOT_RUN",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "effective_feature_hash": null
+    },
+    {
+      "id": "lock:GL-SEM-SIGN_01",
+      "frozen_record": {
+        "id": "lock:GL-SEM-SIGN_01",
+        "priority": "LOCK",
+        "value": {
+          "enforcement": "VALIDATE_ONLY",
+          "expected": {
+            "node_type": "sign",
+            "text": "TERMINAL DINER"
+          },
+          "provenance": {
+            "evidence": {
+              "evidence_id": "D-OBS-sign_01",
+              "reference_id": "R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+              "region": [
+                0.455,
+                0.527,
+                0.6,
+                0.628
+              ]
+            },
+            "source": "VSG_NODE_LOCK"
+          },
+          "strength": "ABSOLUTE",
+          "target": {
+            "id": "sign_01",
+            "kind": "NODE"
+          },
+          "type": "SEMANTIC_TEXT_LOCK"
+        },
+        "lock_ids": [
+          "GL-SEM-SIGN_01"
+        ]
+      },
+      "record_sha256": "9c92bf973668899a270fb9eead3b1d7ea3698ccfddba4290b28a7326ebac0c6c",
+      "role": "VALIDATE_ONLY_AUDIT_PRE_POST",
+      "proposed_slot": null,
+      "proposed_destination": "Preservation validator and ledger; no mask/forced-geometry feature",
+      "field_preservation": "Entire original record retained by ledger, including ID/priority/authority/provenance/lock_ids/empty lists",
+      "actual_model_consumption": "NOT_RUN",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "effective_feature_hash": null
+    },
+    {
+      "id": "topology:billboard_01",
+      "frozen_record": {
+        "id": "topology:billboard_01",
+        "priority": "P2",
+        "value": [],
+        "lock_ids": []
+      },
+      "record_sha256": "81ba2f6349b8014a9d75d7b5693529cb2e8ed7b0d7516f6ca096149df328528c",
+      "role": "NODE_PRESENCE_AND_INCIDENCE_PROPOSED",
+      "proposed_slot": 0,
+      "proposed_destination": "RelationalConditionProjector -> same UNet fuser",
+      "field_preservation": "Entire original record retained by ledger, including ID/priority/authority/provenance/lock_ids/empty lists",
+      "actual_model_consumption": "NOT_RUN",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "effective_feature_hash": null
+    },
+    {
+      "id": "topology:diner_01",
+      "frozen_record": {
+        "id": "topology:diner_01",
+        "priority": "P0",
+        "value": [
+          "rel_facade_left_of_diner",
+          "rel_sign_above_diner"
+        ],
+        "lock_ids": [
+          "GL-GEO-DINER_01"
+        ]
+      },
+      "record_sha256": "a5a8162351595adda107eba034431d73c68bee6666d9c68a876bfedbd6554913",
+      "role": "NODE_PRESENCE_AND_INCIDENCE_PROPOSED",
+      "proposed_slot": 1,
+      "proposed_destination": "RelationalConditionProjector -> same UNet fuser",
+      "field_preservation": "Entire original record retained by ledger, including ID/priority/authority/provenance/lock_ids/empty lists",
+      "actual_model_consumption": "NOT_RUN",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "effective_feature_hash": null
+    },
+    {
+      "id": "topology:facade_01",
+      "frozen_record": {
+        "id": "topology:facade_01",
+        "priority": "P0",
+        "value": [
+          "rel_facade_left_of_diner"
+        ],
+        "lock_ids": [
+          "GL-GEO-FACADE_01"
+        ]
+      },
+      "record_sha256": "808c000655c40cf9e4c918507fb89556a1bdebc762d4c12b0b126669f29feff4",
+      "role": "NODE_PRESENCE_AND_INCIDENCE_PROPOSED",
+      "proposed_slot": 2,
+      "proposed_destination": "RelationalConditionProjector -> same UNet fuser",
+      "field_preservation": "Entire original record retained by ledger, including ID/priority/authority/provenance/lock_ids/empty lists",
+      "actual_model_consumption": "NOT_RUN",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "effective_feature_hash": null
+    },
+    {
+      "id": "topology:fascia_01",
+      "frozen_record": {
+        "id": "topology:fascia_01",
+        "priority": "P2",
+        "value": [],
+        "lock_ids": []
+      },
+      "record_sha256": "6ece25828684df62518e473916596302eefef7a95228c7c6ab07d66035545c2a",
+      "role": "NODE_PRESENCE_AND_INCIDENCE_PROPOSED",
+      "proposed_slot": 3,
+      "proposed_destination": "RelationalConditionProjector -> same UNet fuser",
+      "field_preservation": "Entire original record retained by ledger, including ID/priority/authority/provenance/lock_ids/empty lists",
+      "actual_model_consumption": "NOT_RUN",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "effective_feature_hash": null
+    },
+    {
+      "id": "topology:sign_01",
+      "frozen_record": {
+        "id": "topology:sign_01",
+        "priority": "P0",
+        "value": [
+          "rel_sign_above_diner"
+        ],
+        "lock_ids": [
+          "GL-SEM-SIGN_01"
+        ]
+      },
+      "record_sha256": "8c278305cff205f4183b438cca231b0f2e7036d68383645cb68aa24e3085ec25",
+      "role": "NODE_PRESENCE_AND_INCIDENCE_PROPOSED",
+      "proposed_slot": 4,
+      "proposed_destination": "RelationalConditionProjector -> same UNet fuser",
+      "field_preservation": "Entire original record retained by ledger, including ID/priority/authority/provenance/lock_ids/empty lists",
+      "actual_model_consumption": "NOT_RUN",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "effective_feature_hash": null
+    }
+  ],
+  "proposed_features": {
+    "shape": [
+      "batch",
+      7,
+      768
+    ],
+    "dtype": "float32 validation, model compute precision to be pinned",
+    "device": "future CUDA; no tensor created now",
+    "indices": "int64",
+    "masks": "bool",
+    "node_order": [
+      "billboard_01",
+      "diner_01",
+      "facade_01",
+      "fascia_01",
+      "sign_01"
+    ],
+    "edge_order": [
+      "edge:rel_facade_left_of_diner",
+      "edge:rel_sign_above_diner"
+    ],
+    "vocabulary": [
+      "LEFT_OF",
+      "ABOVE",
+      "RIGHT_OF",
+      "BELOW"
+    ],
+    "other_relations": "REJECT_UNTIL_VERSIONED_SUPPORT",
+    "valid_empty_topology": "Preserve node slot and empty incidence; do not drop node"
+  },
+  "A_route": "Frozen JSONL text -> same model textual conditioner; no parsing into B model input",
+  "B_route": "Validated typed records -> learned relational features -> real fuser; no serialization to prompt",
+  "shared": [
+    "checkpoint base and adapter weights",
+    "source JPEG/preprocessing",
+    "common",
+    "seed and RNG state",
+    "settings"
+  ],
+  "locks": "All three remain VALIDATE_ONLY; no pixel guarantees",
+  "existing_operator": {
+    "symbol": "GatedSelfAttentionDense.forward",
+    "path": "src/diffusers/models/attention.py",
+    "line": 75,
+    "code_commit": "39aa3909e8e2dfe30f4807aedaadf42c1d8b1a8f"
+  },
+  "planned_insertion": {
+    "path": "src/diffusers/models/unets/unet_2d_condition.py",
+    "region": "forward, alongside GLIGEN processing lines 1165-1168",
+    "new_relational_port": "Requires separately versioned external model patch, not payload schema edits",
+    "implemented": false
+  }
+}
