@@ -3,12 +3,12 @@
   "completed_by": "VSG-2B-N4R",
   "created_at": "2026-10-02T03:30:37.779028+00:00",
   "status": "N4_SCOPE_CHANGE_REQUIRED",
-  "closeout_marker": "PENDING_FINAL_CHECK",
+  "closeout_marker": "N4R_CLOSEOUT_COMPLETE",
   "confidence": "STATIC_ONLY",
   "prior_N4_state": "IN_PROGRESS_AUDITOR_ONLY_NO_SIX_DOCUMENT_CLOSURE",
   "N4R_evaluation": "New decision and fresh tokenizer/symbolic/geometry checks; no retrospective successful N4 claim",
   "head_initial": "1ef2e344c71d446a508d94e2813b4f4bdb30ee90",
-  "head_final": "PENDING",
+  "head_final": "6c238b24685117c1e9d6442e33a830fbe7606baf",
   "initial_git_status": "CLEAN",
   "specs": [
     {
@@ -201,7 +201,28 @@
       "evaluations": [],
       "images": 0
     },
-    "after": "PENDING_FINAL_SCAN"
+    "after": {
+      "attempts": [],
+      "reports": [
+        "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/report.json",
+        "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/report.json",
+        "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/report.json",
+        "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/report.json",
+        "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/report.json",
+        "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/report.json",
+        "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/report.json",
+        "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/report.json",
+        "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/report.json",
+        "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/report.json",
+        "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/report.json",
+        "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/report.json",
+        "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/report.json",
+        "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/report.json",
+        "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/report.json"
+      ],
+      "evaluations": [],
+      "images": 0
+    }
   },
   "downloads": {
     "cap_bytes": 10000000,
@@ -268,9 +289,9 @@
       "result": "1ef2e344...; CLEAN; no applicable AGENTS"
     },
     {
-      "command": "N4 initial inspection (relations_locks key / providers*.py glob)",
+      "command": "N4 initial Python payload-key inspection",
       "exit_code": 1,
-      "result": "Exploratory lookup errors corrected to relations_and_locks and actual files; no inputs changed"
+      "result": "KeyError for relations_locks corrected to actual relations_and_locks; no inputs changed. Separate zsh providers*.py no-match diagnostic was corrected with explicit file discovery."
     },
     {
       "command": "python3 /tmp/vsg_n4/fetch.py first annotated-tag assumption",
@@ -296,6 +317,26 @@
       "command": "python3 /tmp/vsg_n4/write_closeout.py (input hashing before artifact creation)",
       "exit_code": 0,
       "result": "751 prior files and N3 artifacts rehashed; D source/payload verified"
+    },
+    {
+      "command": "python3 /tmp/vsg_n4/write_closeout.py initial compile",
+      "exit_code": 1,
+      "result": "Temporary authoring script SyntaxError corrected before any artifact writes; no prior evidence modified"
+    },
+    {
+      "command": "python3 /tmp/vsg_n4/write_closeout.py corrected",
+      "exit_code": 0,
+      "result": "Five JSON documents created; authoring error not a model failure"
+    },
+    {
+      "command": "git diff --check + per-allowed-file git diff --no-index --check /dev/null path",
+      "exit_code": 0,
+      "result": "PASS; per-file exit1 means differences, no whitespace diagnostics"
+    },
+    {
+      "command": "python3 /tmp/vsg_n4/finalize.py",
+      "exit_code": 0,
+      "result": "751 prior hashes,9 allowed new files, JSON/string/source/link consistency and before/after counters PASS"
     }
   ],
   "files_new": [
@@ -309,7 +350,12 @@
     "validation/vsg_2b/n4/closeout_checks.py",
     "visual_scene_graph/pilot/N4R_SETTINGS_AMENDMENT_PROPOSAL.md"
   ],
-  "prior_files_preservation": "PENDING_FINAL_SCAN",
+  "prior_files_preservation": {
+    "status": "PASS",
+    "count": 751,
+    "bytes": 67994332,
+    "method": "Fresh SHA-256 of each pre-N4R tracked/nonignored file; no whole-machine claim"
+  },
   "CAUSAL_TRACE_created": false,
   "operational_manifest_created": false,
   "scope_applied": false,
@@ -319,5 +365,88 @@
   "C_status": "NO_GO_C0_UNVERIFIED",
   "X1_status": "PROPOSED_NOT_APPROVED",
   "N3_status": "N3_MODEL_DEVELOPMENT_REQUIRED",
-  "next_step": "Decide the narrow settings amendment or independently audit temporal proof; use N4R_WORK_MODE_NEXT_STEPS.md. Neither authorizes training, weights or image generation."
+  "next_step": "Decide the narrow settings amendment or independently audit temporal proof; use N4R_WORK_MODE_NEXT_STEPS.md. Neither authorizes training, weights or image generation.",
+  "concurrent_HEAD_change": {
+    "observed": true,
+    "initial": "1ef2e344c71d446a508d94e2813b4f4bdb30ee90",
+    "final": "6c238b24685117c1e9d6442e33a830fbe7606baf",
+    "agent_commit_commands": 0,
+    "interpretation": "External commit incorporated in-progress new artifacts; initial751 prior files remain byte-identical. Only task-created allowlisted artifacts finalized."
+  },
+  "artifact_sha256": {
+    "validation/vsg_2b/n4/AB_CONTROL_MATRIX.json": "3b21efdde421a8b36d172c58fe5e5e7596e957373fde7f1c53554973fc11ef25",
+    "validation/vsg_2b/n4/INPUT_MANIFEST.json": "711c2829491f489c66599ff8c22a810d0d6fb16141c8c5d89aa7de9c9288684a",
+    "validation/vsg_2b/n4/SOURCE_CONDITIONING_DECISION.json": "ef84d5730e7bd31ff95f781ec5097f74daaaf8831521ddedae36be5c423de6ab",
+    "validation/vsg_2b/n4/TEXT_CAPACITY_AUDIT.json": "9e3159e3139e301b61d397474b33faed6eed1e1ca3bd242f9e4bb588509fb8d7",
+    "validation/vsg_2b/n4/closeout_checks.py": "d7131b73659e5c757359f70caaba24624622a06347c88e58e1aea8ea81ce9349",
+    "visual_scene_graph/pilot/N4R_SETTINGS_AMENDMENT_PROPOSAL.md": "936c83b1c2564924deaad01cbec92ef01fecc54b9976efe3ce4e4f5aa8fd626c",
+    "visual_scene_graph/pilot/N4R_WORK_MODE_NEXT_STEPS.md": "4f7421574e092b0c884b94998653b7ae4e9111eac7035f220b6be6087dea0f84",
+    "visual_scene_graph/pilot/N4_GLIGEN_FEASIBILITY_RUNBOOK.md": "5773ff0adf4fe1f85e3b8ab0c4ebba99dcd22ea95c303705d51bdc98eb30e238"
+  },
+  "final_verification": {
+    "status": "PASS",
+    "new_files": 9,
+    "allowed_new_files_only": true,
+    "JSON_links_and_consistency": "PASS",
+    "original_auditor_unchanged": true,
+    "counters_unchanged": true,
+    "whitespace": [
+      {
+        "path": "validation/vsg_2b/N4_RESULT.json",
+        "exit_code": 1,
+        "result": "PASS_NO_WHITESPACE_DIAGNOSTICS;1 means new-file difference"
+      },
+      {
+        "path": "validation/vsg_2b/n4/AB_CONTROL_MATRIX.json",
+        "exit_code": 1,
+        "result": "PASS_NO_WHITESPACE_DIAGNOSTICS;1 means new-file difference"
+      },
+      {
+        "path": "validation/vsg_2b/n4/INPUT_MANIFEST.json",
+        "exit_code": 1,
+        "result": "PASS_NO_WHITESPACE_DIAGNOSTICS;1 means new-file difference"
+      },
+      {
+        "path": "validation/vsg_2b/n4/SOURCE_CONDITIONING_DECISION.json",
+        "exit_code": 1,
+        "result": "PASS_NO_WHITESPACE_DIAGNOSTICS;1 means new-file difference"
+      },
+      {
+        "path": "validation/vsg_2b/n4/TEXT_CAPACITY_AUDIT.json",
+        "exit_code": 1,
+        "result": "PASS_NO_WHITESPACE_DIAGNOSTICS;1 means new-file difference"
+      },
+      {
+        "path": "validation/vsg_2b/n4/closeout_checks.py",
+        "exit_code": 1,
+        "result": "PASS_NO_WHITESPACE_DIAGNOSTICS;1 means new-file difference"
+      },
+      {
+        "path": "visual_scene_graph/pilot/N4R_SETTINGS_AMENDMENT_PROPOSAL.md",
+        "exit_code": 1,
+        "result": "PASS_NO_WHITESPACE_DIAGNOSTICS;1 means new-file difference"
+      },
+      {
+        "path": "visual_scene_graph/pilot/N4R_WORK_MODE_NEXT_STEPS.md",
+        "exit_code": 1,
+        "result": "PASS_NO_WHITESPACE_DIAGNOSTICS;1 means new-file difference"
+      },
+      {
+        "path": "visual_scene_graph/pilot/N4_GLIGEN_FEASIBILITY_RUNBOOK.md",
+        "exit_code": 1,
+        "result": "PASS_NO_WHITESPACE_DIAGNOSTICS;1 means new-file difference"
+      }
+    ]
+  },
+  "resources": {
+    "approved_model_calls": 0,
+    "approved_training_GPU_hours": 0,
+    "weights_downloaded_bytes": 0,
+    "future_base_weight_bytes_remote_declared": 3159269896,
+    "new_module_weight_bytes": "UNKNOWN_NOT_IMPLEMENTED",
+    "engineering_time_GPU_hours_data_volume": "UNKNOWN; N3 ranges not validated for expanded architecture",
+    "cost": "UNKNOWN",
+    "plan_and_counter_proposal": "visual_scene_graph/pilot/N4_GLIGEN_FEASIBILITY_RUNBOOK.md"
+  },
+  "recommendations_file": "visual_scene_graph/pilot/N4R_WORK_MODE_NEXT_STEPS.md"
 }
