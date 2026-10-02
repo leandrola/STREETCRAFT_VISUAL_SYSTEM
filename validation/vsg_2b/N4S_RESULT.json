@@ -1,0 +1,495 @@
+{
+  "milestone": "VSG-2B-N4S",
+  "status": "N4S_SETTINGS_DECISION_READY",
+  "confidence": "STATIC_ONLY",
+  "created_at": "2026-10-02T03:45:59.512416+00:00",
+  "head_initial": "6c238b24685117c1e9d6442e33a830fbe7606baf",
+  "head_final": "a58ffac363f851f4313beb47740f8c51e41d6577",
+  "initial_git_status": " M validation/vsg_2b/N4_RESULT.json\n?? visual_scene_graph/pilot/N4R_SETTINGS_AMENDMENT_PROPOSAL.md\n?? visual_scene_graph/pilot/N4R_WORK_MODE_NEXT_STEPS.md\n?? visual_scene_graph/pilot/N4_GLIGEN_FEASIBILITY_RUNBOOK.md\n",
+  "spec": {
+    "path": "/Users/macbookpro/Documents/STREETCRAFT_specs VSG/VSG_2B_N4S_CLOSURE_AND_SETTINGS_DECISION_SPEC.md",
+    "sha256": "157029d47c72a0d866bc24cd68ede8e2533f58e8970ff4b6fa88882fed102f2c"
+  },
+  "sources_and_inputs_sha256": {
+    "validation/vsg_2b/N3_RESULT.json": "67749a6568d50dd457897147daaa5eb9bb3cb4fcccdd70b86ad818caeca15083",
+    "visual_scene_graph/pilot/N3_STRUCTURAL_CONSUMER_RUNBOOK.md": "e847331887a94a969aaa300494af8a2e5a7a535438b15d2a737419e905b6c675",
+    "validation/vsg_2b/n3/BASE_MANIFEST.json": "c5c2a9c8ec2d158f4984413eac511f3bb3d55060ad6d1c719e09edf2a28eac53",
+    "validation/vsg_2b/N4_RESULT.json": "5d63dfc961eaeb5293311b91bebfc43202644ed86d474ce722da24d55e116469",
+    "visual_scene_graph/pilot/N4_GLIGEN_FEASIBILITY_RUNBOOK.md": "5773ff0adf4fe1f85e3b8ab0c4ebba99dcd22ea95c303705d51bdc98eb30e238",
+    "visual_scene_graph/pilot/N4R_SETTINGS_AMENDMENT_PROPOSAL.md": "936c83b1c2564924deaad01cbec92ef01fecc54b9976efe3ce4e4f5aa8fd626c",
+    "validation/vsg_2b/n4/TEXT_CAPACITY_AUDIT.json": "9e3159e3139e301b61d397474b33faed6eed1e1ca3bd242f9e4bb588509fb8d7",
+    "validation/vsg_2b/n4/SOURCE_CONDITIONING_DECISION.json": "ef84d5730e7bd31ff95f781ec5097f74daaaf8831521ddedae36be5c423de6ab",
+    "validation/vsg_2b/n4/AB_CONTROL_MATRIX.json": "3b21efdde421a8b36d172c58fe5e5e7596e957373fde7f1c53554973fc11ef25",
+    "validation/vsg_2b/n4/INPUT_MANIFEST.json": "711c2829491f489c66599ff8c22a810d0d6fb16141c8c5d89aa7de9c9288684a",
+    "validation/vsg_2b/n4/audit_static.py": "0294bbefba9a1db38eb97a716327803bd79be2805e3e4670e988297446fbbfbc",
+    "validation/vsg_2b/n4/closeout_checks.py": "d7131b73659e5c757359f70caaba24624622a06347c88e58e1aea8ea81ce9349",
+    "visual_scene_graph/pilot/harness.py": "99b886d03317639912c828d80620ae9340a148232de6ad4569ab0cc895b3ede3",
+    "visual_scene_graph/pilot/campaign.py": "8ed19f98f25c8b0c7632b82831bb5418e19f9d14b37fface4fa4ef4322e99e13",
+    "visual_scene_graph/pilot/campaign_policy.json": "241204469fb84da8835621f953964d8c887fb91442fd55aeda1a07b89cfc0285",
+    "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/manifest.json": "da3c021fea39eafb972a34876786cecc648f95359c32dbbffd232ad504f14895",
+    "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/payloads.json": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d",
+    "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/source.image": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc"
+  },
+  "proposal": {
+    "path": "validation/vsg_2b/n4s/SETTINGS_AMENDMENT_PROPOSAL.json",
+    "proposal_id": "VSG-2B-N4R-GLIGEN-FULL-SCHEDULE",
+    "version": "0.1.0",
+    "technical_recommendation": "ACCEPT_DESIGN_FOR_IMPLEMENTATION_AND_RESOURCE_PLANNING_ONLY",
+    "approval_status": "PROPOSED_NOT_APPROVED",
+    "explicit_approval_found": false,
+    "applied": false
+  },
+  "closure_consolidation": {
+    "local_N4_status": "N4_SCOPE_CHANGE_REQUIRED",
+    "local_N4_marker": "N4R_CLOSEOUT_COMPLETE",
+    "local_N4_final_head": "6c238b24685117c1e9d6442e33a830fbe7606baf",
+    "HEAD_snapshot_N4_marker": "PENDING_FINAL_CHECK (historical value observed; not an unresolved N4S field)",
+    "HEAD_snapshot_N4_head": "PENDING (historical value observed)",
+    "resolution": "All six local closure documents exist;8 N4 referenced hashes match. Local completion differs from committed draft. Existing files preserved; incremental N4S does not rewrite N4_RESULT.",
+    "availability": [
+      {
+        "path": "validation/vsg_2b/N4_RESULT.json",
+        "local": true,
+        "in_local_HEAD_snapshot": true,
+        "git_show_exit_code": 0,
+        "snapshot_sha256": "de9f196e101c04162332f1cd5d974fc6b10e2c52d96fc8522287cddc076213d7",
+        "remote_live_status": "UNKNOWN_NOT_QUERIED"
+      },
+      {
+        "path": "visual_scene_graph/pilot/N4_GLIGEN_FEASIBILITY_RUNBOOK.md",
+        "local": true,
+        "in_local_HEAD_snapshot": false,
+        "git_show_exit_code": 128,
+        "snapshot_sha256": null,
+        "remote_live_status": "UNKNOWN_NOT_QUERIED"
+      },
+      {
+        "path": "visual_scene_graph/pilot/N4R_SETTINGS_AMENDMENT_PROPOSAL.md",
+        "local": true,
+        "in_local_HEAD_snapshot": false,
+        "git_show_exit_code": 128,
+        "snapshot_sha256": null,
+        "remote_live_status": "UNKNOWN_NOT_QUERIED"
+      }
+    ],
+    "reconstruction_needed": false,
+    "historical_inventory": {
+      "authentic_inventory": "validation/vsg_2b/n4/INPUT_MANIFEST.json#/existing_files",
+      "count": 751,
+      "all_hashes_match_current": true,
+      "meaning": "Fresh N4S comparison against preserved historical inventory, not a fabricated earlier scan"
+    }
+  },
+  "fresh_checks": {
+    "tokenization": "ACCREDITED_EXISTING_OUTPUT_AND_PINNED_ASSETS_NOT_RERUN",
+    "12_string_integrity_checks": "PASS",
+    "temporal_trace_consistency": "PASS_FRESH_READ_STATIC_ONLY",
+    "availability": [
+      {
+        "path": "validation/vsg_2b/N4_RESULT.json",
+        "local": true,
+        "in_local_HEAD_snapshot": true,
+        "git_show_exit_code": 0,
+        "snapshot_sha256": "de9f196e101c04162332f1cd5d974fc6b10e2c52d96fc8522287cddc076213d7",
+        "remote_live_status": "UNKNOWN_NOT_QUERIED"
+      },
+      {
+        "path": "visual_scene_graph/pilot/N4_GLIGEN_FEASIBILITY_RUNBOOK.md",
+        "local": true,
+        "in_local_HEAD_snapshot": false,
+        "git_show_exit_code": 128,
+        "snapshot_sha256": null,
+        "remote_live_status": "UNKNOWN_NOT_QUERIED"
+      },
+      {
+        "path": "visual_scene_graph/pilot/N4R_SETTINGS_AMENDMENT_PROPOSAL.md",
+        "local": true,
+        "in_local_HEAD_snapshot": false,
+        "git_show_exit_code": 128,
+        "snapshot_sha256": null,
+        "remote_live_status": "UNKNOWN_NOT_QUERIED"
+      }
+    ],
+    "counts": {
+      "attempts": 0,
+      "reports": 15,
+      "evaluations": 0,
+      "image_records": 0
+    }
+  },
+  "text_evidence": {
+    "source": "validation/vsg_2b/n4/TEXT_CAPACITY_AUDIT.json",
+    "A_content_tokens": 7305,
+    "A_including_BOS_EOS": 7307,
+    "B_content_tokens": 5686,
+    "B_including_BOS_EOS": 5688,
+    "mechanism": "75-token blocks,128shared slots",
+    "scope": "ASCII verified domain,slow BasicTokenizer fix_text=None; proposed assembly, not bridge receipt",
+    "semantic_understanding": "NOT_RUN",
+    "tokenization_rerun": false
+  },
+  "model_tests": [
+    {
+      "id": "DEFAULT_SCHEDULE_NEGATIVE_CONTROL",
+      "status": "NOT_RUN",
+      "prerequisites": "same trained composite/patch/RNG; explicit beta0.3 diagnostic config",
+      "observable": "B full vs B ablated: early fuser, PNDM ets and final latent",
+      "success": "early possible effect disappears after PLMS flush; final equality within repeat tolerance under stated assumptions",
+      "failure": "persistent final structural dependence requires investigating hidden state/RNG/source/schedule; no positive pilot score",
+      "future_budget": {
+        "maximum_trajectories_proposed": 2,
+        "UNet_call_ceiling_proposed": 102,
+        "maximum_decoded_outputs_proposed": 0,
+        "auxiliary_learned_call_ceiling": "UNKNOWN_REQUIRES_VERSIONED_EXECUTION_PLAN",
+        "wall_GPU_money_ceiling": "UNKNOWN_REQUIRES_RESOURCE_APPROVAL",
+        "approved_calls": 0,
+        "notes": "These are per-test proposals, not additive approved quota or exemption from campaign attempts. Shared runs may be referenced once by receipt ID; no implicit retries."
+      }
+    },
+    {
+      "id": "EXPLICIT_FULL_SCHEDULE",
+      "status": "NOT_RUN",
+      "prerequisites": "same compiled setting resolver/patch; beta1 explicit in both branches",
+      "observable": "resolved per-call schedule indices0..50, same configs/weights/RNG and final latent",
+      "success": "R active on all51 conditional B calls; no hidden beta fallback or asymmetry; actual final sensitivity assessed separately",
+      "failure": "missing final step, branch-specific config or changed non-treatment input",
+      "future_budget": {
+        "maximum_trajectories_proposed": 2,
+        "UNet_call_ceiling_proposed": 102,
+        "maximum_decoded_outputs_proposed": 0,
+        "auxiliary_learned_call_ceiling": "UNKNOWN_REQUIRES_VERSIONED_EXECUTION_PLAN",
+        "wall_GPU_money_ceiling": "UNKNOWN_REQUIRES_RESOURCE_APPROVAL",
+        "approved_calls": 0,
+        "notes": "These are per-test proposals, not additive approved quota or exemption from campaign attempts. Shared runs may be referenced once by receipt ID; no implicit retries."
+      }
+    },
+    {
+      "id": "RELATIONAL_NEUTRALIZATION_ABLATION",
+      "status": "NOT_RUN",
+      "prerequisites": "same model and shared S; eval dropout0",
+      "observable": "fuser attention/FF call hooks and outputs with R absent",
+      "success": "F(x,S) exactly defines neutral route; never enabled=false for A alone; R keys removed, not zero-filled",
+      "failure": "shared transform removed or zero keys remain altering softmax",
+      "future_budget": {
+        "maximum_trajectories_proposed": 0,
+        "UNet_call_ceiling_proposed": 0,
+        "maximum_decoded_outputs_proposed": 0,
+        "auxiliary_learned_call_ceiling": "UNKNOWN_REQUIRES_VERSIONED_EXECUTION_PLAN",
+        "wall_GPU_money_ceiling": "UNKNOWN_REQUIRES_RESOURCE_APPROVAL",
+        "approved_calls": 0,
+        "notes": "These are per-test proposals, not additive approved quota or exemption from campaign attempts. Shared runs may be referenced once by receipt ID; no implicit retries.",
+        "direct_fuser_calls_proposed": 4
+      }
+    },
+    {
+      "id": "VALID_ISOLATED_MUTATION",
+      "status": "NOT_RUN",
+      "prerequisites": "typed enum LEFT_OF->RIGHT_OF; same endpoints; learned R; campaign validation still enabled",
+      "observable": "R input/output, real fuser, final latent with B text/common/source fixed",
+      "success": "isolated consumer path shows directed effect above repeat noise; campaign rejects altered frozen payload hash",
+      "failure": "mutation admitted as original D, silent invalidinput accepted or only JSON hash changes",
+      "future_budget": {
+        "maximum_trajectories_proposed": 2,
+        "UNet_call_ceiling_proposed": 102,
+        "maximum_decoded_outputs_proposed": 0,
+        "auxiliary_learned_call_ceiling": "UNKNOWN_REQUIRES_VERSIONED_EXECUTION_PLAN",
+        "wall_GPU_money_ceiling": "UNKNOWN_REQUIRES_RESOURCE_APPROVAL",
+        "approved_calls": 0,
+        "notes": "These are per-test proposals, not additive approved quota or exemption from campaign attempts. Shared runs may be referenced once by receipt ID; no implicit retries."
+      }
+    },
+    {
+      "id": "TEMPORAL_TO_DECODED_OBSERVABLE",
+      "status": "NOT_RUN",
+      "prerequisites": "approved full loop/decode budget and output classification; same model state",
+      "observable": "all51 UNet calls, PNDM state, final latent, decoded float pixels, safety/postprocess final image",
+      "success": "non-erased structural path and measurable effect at final latent/image; reject copy-source final compositing; keep safety handling",
+      "failure": "only early hook differs, decode residue with no semantics, safety blocked or quantization erases relevant effect",
+      "future_budget": {
+        "maximum_trajectories_proposed": 2,
+        "UNet_call_ceiling_proposed": 102,
+        "maximum_decoded_outputs_proposed": 2,
+        "auxiliary_learned_call_ceiling": "UNKNOWN_REQUIRES_VERSIONED_EXECUTION_PLAN",
+        "wall_GPU_money_ceiling": "UNKNOWN_REQUIRES_RESOURCE_APPROVAL",
+        "approved_calls": 0,
+        "notes": "These are per-test proposals, not additive approved quota or exemption from campaign attempts. Shared runs may be referenced once by receipt ID; no implicit retries."
+      }
+    },
+    {
+      "id": "NUMERICAL_REPEAT",
+      "status": "NOT_RUN",
+      "prerequisites": "pinned environment, deterministic ops, RNG tapes and fresh PNDM",
+      "observable": "source/initial/per-step hashes; repeat operator/final latents",
+      "success": "fp32 atol1e-6 rtol1e-5; fp16 if later chosen atol1e-3 rtol1e-3; no widening after result",
+      "failure": "nondeterminism, changed cache/config or tolerance exceeded",
+      "future_budget": {
+        "maximum_trajectories_proposed": 2,
+        "UNet_call_ceiling_proposed": 102,
+        "maximum_decoded_outputs_proposed": 0,
+        "auxiliary_learned_call_ceiling": "UNKNOWN_REQUIRES_VERSIONED_EXECUTION_PLAN",
+        "wall_GPU_money_ceiling": "UNKNOWN_REQUIRES_RESOURCE_APPROVAL",
+        "approved_calls": 0,
+        "notes": "These are per-test proposals, not additive approved quota or exemption from campaign attempts. Shared runs may be referenced once by receipt ID; no implicit retries."
+      }
+    },
+    {
+      "id": "SEMANTIC_AND_PRESERVATION_REVIEW",
+      "status": "NOT_RUN",
+      "prerequisites": "licensed heldout corpus/split and independent reviewers; generation separately approved",
+      "observable": "frozen rubric: relations, literal TERMINAL DINER, identity, P0/PR0/PR1, source preservation; record uncertainty",
+      "success": "no protected regression/S3/unauthorized change; rubric complete; preregister corpus-level useful-effect criterion before outputs",
+      "failure": "mere numeric sensitivity, unreadable/substituted literal, altered source identity or unreviewed UNKNOWN",
+      "future_budget": {
+        "maximum_trajectories_proposed": 2,
+        "UNet_call_ceiling_proposed": 102,
+        "maximum_decoded_outputs_proposed": 2,
+        "auxiliary_learned_call_ceiling": "UNKNOWN_REQUIRES_VERSIONED_EXECUTION_PLAN",
+        "wall_GPU_money_ceiling": "UNKNOWN_REQUIRES_RESOURCE_APPROVAL",
+        "approved_calls": 0,
+        "notes": "These are per-test proposals, not additive approved quota or exemption from campaign attempts. Shared runs may be referenced once by receipt ID; no implicit retries."
+      }
+    },
+    {
+      "id": "FULL_TEXT_AND_INPUT_VALIDATION",
+      "status": "NOT_RUN",
+      "prerequisites": "exact tokenizer path/assets; trained shared resampler and strict validator",
+      "observable": "A7305/B5686 content-token coverage; masks/128slots; invalidinputs",
+      "success": "every token covered; no B prompt/A graph parsing; reject unsupporteddomain/overflow/missinglocks/topology before learned call",
+      "failure": "truncation, field loss, silent coercion or semantic claim based only on hashes",
+      "future_budget": {
+        "maximum_trajectories_proposed": 0,
+        "UNet_call_ceiling_proposed": 0,
+        "maximum_decoded_outputs_proposed": 0,
+        "auxiliary_learned_call_ceiling": "UNKNOWN_REQUIRES_VERSIONED_EXECUTION_PLAN",
+        "wall_GPU_money_ceiling": "UNKNOWN_REQUIRES_RESOURCE_APPROVAL",
+        "approved_calls": 0,
+        "notes": "These are per-test proposals, not additive approved quota or exemption from campaign attempts. Shared runs may be referenced once by receipt ID; no implicit retries.",
+        "text_encoding_planning_units": "98 A chunks+76 B chunks+1 negative+5 shared labels=180 CLIP calls if processed separately; batching/caching must be explicit; shared resampler3 calls; not current execution"
+      }
+    }
+  ],
+  "future_dependencies": [
+    "explicit design decision for identified amendment",
+    "versioned model patch,trained weights and strict same-artifact load",
+    "data rights/corpus,semantic quality thresholds and numerical budget",
+    "approved classification of weighted diagnostics and visual attempts",
+    "separate campaign readiness/admission;C remainsblocked"
+  ],
+  "counters": {
+    "before": {
+      "attempts": [],
+      "reports": [
+        "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/report.json",
+        "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/report.json",
+        "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/report.json",
+        "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/report.json",
+        "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/report.json",
+        "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/report.json",
+        "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/report.json",
+        "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/report.json",
+        "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/report.json",
+        "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/report.json",
+        "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/report.json",
+        "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/report.json",
+        "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/report.json",
+        "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/report.json",
+        "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/report.json"
+      ],
+      "evaluations": [],
+      "image_records": 0
+    },
+    "after": {
+      "attempts": [],
+      "reports": [
+        "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/report.json",
+        "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/report.json",
+        "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/report.json",
+        "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/report.json",
+        "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/report.json",
+        "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/report.json",
+        "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/report.json",
+        "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/report.json",
+        "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/report.json",
+        "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/report.json",
+        "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/report.json",
+        "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/report.json",
+        "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/report.json",
+        "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/report.json",
+        "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/report.json"
+      ],
+      "evaluations": [],
+      "image_records": 0
+    },
+    "Archive": 0,
+    "provider_predictions": 0,
+    "images": 0,
+    "new_pairs": 0,
+    "weighted_forwards": 0,
+    "training_runs": 0,
+    "tokenizations_this_milestone": 0,
+    "new_download_bytes": 0,
+    "provider_account_history": "UNKNOWN_NOT_QUERIED"
+  },
+  "plan_limits": {
+    "ceiling_percentage_points": 40,
+    "stage_allocation": [
+      6,
+      10,
+      12,
+      6,
+      6
+    ],
+    "observations": {
+      "preflight": {
+        "five_hour": "UNKNOWN",
+        "Weekly": "UNKNOWN"
+      },
+      "closure": {
+        "five_hour": "UNKNOWN",
+        "Weekly": "UNKNOWN"
+      },
+      "amendment": {
+        "five_hour": "UNKNOWN",
+        "Weekly": "UNKNOWN"
+      },
+      "protocol": {
+        "five_hour": "UNKNOWN",
+        "Weekly": "UNKNOWN"
+      },
+      "final": {
+        "five_hour": "UNKNOWN",
+        "Weekly": "UNKNOWN"
+      }
+    },
+    "numeric_compliance_certified": false
+  },
+  "reasoning": {
+    "model_changed": false,
+    "client_effort": "UNKNOWN",
+    "recommendation": "HIGH; optional medium for mechanical verification"
+  },
+  "commands": [
+    {
+      "command": "git rev-parse HEAD; git status --short; AGENTS scan",
+      "exit_code": 0,
+      "result": "baseline frozen,760 files; existing modifications preserved"
+    },
+    {
+      "command": "Python read/hash all N4/N3 references,751-file historical inventory and26 small primary assets",
+      "exit_code": 0,
+      "result": "PASS; no source execution or download"
+    },
+    {
+      "command": "git show HEAD:path availability checks",
+      "exit_codes": [
+        0,
+        128,
+        128
+      ],
+      "result": "N4 draft exists inHEAD;local runbook/amendment absent fromHEAD,not absent fromdisk; expected missing snapshot paths"
+    },
+    {
+      "command": "Python persisted string/trace checks and counter scan",
+      "exit_code": 0,
+      "result": "PASS;12 string integrity checks; PLMS trace consistent;0attempts/0images/15reports"
+    },
+    {
+      "command": "sed read pinned pipeline/fuser/PNDM source",
+      "exit_code": 0,
+      "result": "temporal and fuser reasoning reviewed without importing model code"
+    },
+    {
+      "command": "python3 /tmp/vsg_n4s/build.py",
+      "exit_code": 0,
+      "result": "New incremental JSON evidence and inert versioned proposal; no previous files changed"
+    },
+    {
+      "command": "python3 /tmp/vsg_n4s/verify_finalize.py",
+      "exit_code": 0,
+      "result": "760 previous hashes plus751 historical hashes,5 allowed new files,JSON/links/configdelta and counters PASS"
+    },
+    {
+      "command": "git diff --check; per-new-file git diff --no-index --check",
+      "exit_code": 0,
+      "result": "PASS; individual new-file exit1 with no diagnostics recorded in final_checks"
+    }
+  ],
+  "files_new": [
+    "visual_scene_graph/pilot/N4S_CLOSURE_AND_SETTINGS_DECISION.md",
+    "validation/vsg_2b/N4S_RESULT.json",
+    "validation/vsg_2b/n4s/INPUT_MANIFEST.json",
+    "validation/vsg_2b/n4s/SETTINGS_AMENDMENT_PROPOSAL.json",
+    "visual_scene_graph/pilot/N4S_WORK_MODE_NEXT_STEPS.md"
+  ],
+  "preservation_since_N4S": {
+    "status": "PASS_FRESH_SHA256",
+    "count": 760,
+    "bytes": 68374293,
+    "all_initial_user_changes_preserved": true
+  },
+  "verification_scope": "Incremental documentary closeout, no model or causal pass",
+  "states_preserved": {
+    "N4": "N4_SCOPE_CHANGE_REQUIRED",
+    "N3": "N3_MODEL_DEVELOPMENT_REQUIRED",
+    "VSG-2B": "BLOCKED / PENDING_VISUAL",
+    "C": "NO_GO_C0_UNVERIFIED",
+    "X1": "PROPOSED_NOT_APPROVED",
+    "production_authorized": false,
+    "provider_READY": false
+  },
+  "next_decision": {
+    "options": [
+      "ACCEPT_DESIGN_FOR_PLANNING_ONLY",
+      "REJECT",
+      "REQUEST_SPECIFIC_CORRECTION"
+    ],
+    "acceptance_effect": "Only permission to prepare a bounded implementation/resources spec; no implementation, weights, forwards, training, images, policy change or admission",
+    "approval_evidence": "NONE_FOUND; request to execute N4S is not amendment approval"
+  },
+  "recommendations": "visual_scene_graph/pilot/N4S_WORK_MODE_NEXT_STEPS.md",
+  "commit_push_branch_zip_performed": false,
+  "HEAD_changed_during_N4S": true,
+  "final_checks": {
+    "status": "PASS",
+    "historical_N4_inventory_hashes_verified": 751,
+    "current_N4S_inventory_hashes_verified": 760,
+    "new_files_allowed_only": 5,
+    "settings_config_delta_only_beta": true,
+    "JSON_references_and_input_hashes": "PASS",
+    "counters_unchanged": true,
+    "whitespace": [
+      {
+        "path": "validation/vsg_2b/N4S_RESULT.json",
+        "exit_code": 1,
+        "result": "PASS_NO_WHITESPACE_DIAGNOSTICS;1 means new-file difference"
+      },
+      {
+        "path": "validation/vsg_2b/n4s/INPUT_MANIFEST.json",
+        "exit_code": 1,
+        "result": "PASS_NO_WHITESPACE_DIAGNOSTICS;1 means new-file difference"
+      },
+      {
+        "path": "validation/vsg_2b/n4s/SETTINGS_AMENDMENT_PROPOSAL.json",
+        "exit_code": 1,
+        "result": "PASS_NO_WHITESPACE_DIAGNOSTICS;1 means new-file difference"
+      },
+      {
+        "path": "visual_scene_graph/pilot/N4S_CLOSURE_AND_SETTINGS_DECISION.md",
+        "exit_code": 1,
+        "result": "PASS_NO_WHITESPACE_DIAGNOSTICS;1 means new-file difference"
+      },
+      {
+        "path": "visual_scene_graph/pilot/N4S_WORK_MODE_NEXT_STEPS.md",
+        "exit_code": 1,
+        "result": "PASS_NO_WHITESPACE_DIAGNOSTICS;1 means new-file difference"
+      }
+    ],
+    "model_execution": "NOT_RUN"
+  },
+  "artifact_sha256": {
+    "validation/vsg_2b/n4s/INPUT_MANIFEST.json": "cb830178cdbc265510aa0238912589e4ca69f5740a2a8e6442292ce37cc9b678",
+    "validation/vsg_2b/n4s/SETTINGS_AMENDMENT_PROPOSAL.json": "aeee1d9d03dfea555f980904556e429e304d788a09b78834e3996927eb6c10e3",
+    "visual_scene_graph/pilot/N4S_CLOSURE_AND_SETTINGS_DECISION.md": "28f78f0f84184185fc163488f5ada1311c014b13d4bbfa4eb563c17406e05622",
+    "visual_scene_graph/pilot/N4S_WORK_MODE_NEXT_STEPS.md": "e43c476a42a671a9bbd6dc651b71b9a67f92abca198dc095b2216f26d1d4c002"
+  }
+}

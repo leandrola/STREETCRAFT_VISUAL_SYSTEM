@@ -1,0 +1,506 @@
+{
+  "proposal_id": "VSG-2B-N4R-GLIGEN-FULL-SCHEDULE",
+  "version": "0.1.0",
+  "title": "N4R full-schedule GLIGEN proposal, concretized by N4S",
+  "proposal_kind": "INERT_REVIEW_DOCUMENT_NOT_OPERATIONAL_MANIFEST",
+  "approval_status": "PROPOSED_NOT_APPROVED",
+  "applied": false,
+  "explicit_approval_found": false,
+  "technical_recommendation": "ACCEPT_DESIGN_FOR_IMPLEMENTATION_AND_RESOURCE_PLANNING_ONLY",
+  "recommendation_is_approval": false,
+  "identity_provenance": {
+    "prior_document": "visual_scene_graph/pilot/N4R_SETTINGS_AMENDMENT_PROPOSAL.md",
+    "sha256": "936c83b1c2564924deaad01cbec92ef01fecc54b9976efe3ce4e4f5aa8fd626c",
+    "prior_machine_ID": "ABSENT; existing N4R title retained, this unique identifier assigned by N4S; no competing amendment or X1 reuse"
+  },
+  "scope": "D-only design decision, no generalized E/Kenny/C admission; no changes to source facts, edit authority or original typed-vs-text experiment",
+  "hypothesis": "Same composite model, full relation schedule and same source/noise may retain learned B influence to final output; no assertion of useful semantics/preservation or trained resampler success",
+  "pins": {
+    "diffusers": {
+      "version": "0.29.0",
+      "commit": "39aa3909e8e2dfe30f4807aedaadf42c1d8b1a8f"
+    },
+    "checkpoint": {
+      "id": "masterful/gligen-1-4-inpainting-text-box",
+      "revision": "d6d957f8d27c40889c0d570a616571a5645c8be3",
+      "variant": "fp16",
+      "weights_loaded": false
+    },
+    "transformers": {
+      "version": "4.41.2",
+      "commit": "573565e35a5cc68f6cfb6337f5a93753ab16c65b"
+    }
+  },
+  "input_hashes": {
+    "validation/vsg_2b/N3_RESULT.json": "67749a6568d50dd457897147daaa5eb9bb3cb4fcccdd70b86ad818caeca15083",
+    "visual_scene_graph/pilot/N3_STRUCTURAL_CONSUMER_RUNBOOK.md": "e847331887a94a969aaa300494af8a2e5a7a535438b15d2a737419e905b6c675",
+    "validation/vsg_2b/n3/BASE_MANIFEST.json": "c5c2a9c8ec2d158f4984413eac511f3bb3d55060ad6d1c719e09edf2a28eac53",
+    "validation/vsg_2b/N4_RESULT.json": "5d63dfc961eaeb5293311b91bebfc43202644ed86d474ce722da24d55e116469",
+    "visual_scene_graph/pilot/N4_GLIGEN_FEASIBILITY_RUNBOOK.md": "5773ff0adf4fe1f85e3b8ab0c4ebba99dcd22ea95c303705d51bdc98eb30e238",
+    "visual_scene_graph/pilot/N4R_SETTINGS_AMENDMENT_PROPOSAL.md": "936c83b1c2564924deaad01cbec92ef01fecc54b9976efe3ce4e4f5aa8fd626c",
+    "validation/vsg_2b/n4/TEXT_CAPACITY_AUDIT.json": "9e3159e3139e301b61d397474b33faed6eed1e1ca3bd242f9e4bb588509fb8d7",
+    "validation/vsg_2b/n4/SOURCE_CONDITIONING_DECISION.json": "ef84d5730e7bd31ff95f781ec5097f74daaaf8831521ddedae36be5c423de6ab",
+    "validation/vsg_2b/n4/AB_CONTROL_MATRIX.json": "3b21efdde421a8b36d172c58fe5e5e7596e957373fde7f1c53554973fc11ef25",
+    "validation/vsg_2b/n4/INPUT_MANIFEST.json": "711c2829491f489c66599ff8c22a810d0d6fb16141c8c5d89aa7de9c9288684a",
+    "validation/vsg_2b/n4/audit_static.py": "0294bbefba9a1db38eb97a716327803bd79be2805e3e4670e988297446fbbfbc",
+    "validation/vsg_2b/n4/closeout_checks.py": "d7131b73659e5c757359f70caaba24624622a06347c88e58e1aea8ea81ce9349",
+    "visual_scene_graph/pilot/harness.py": "99b886d03317639912c828d80620ae9340a148232de6ad4569ab0cc895b3ede3",
+    "visual_scene_graph/pilot/campaign.py": "8ed19f98f25c8b0c7632b82831bb5418e19f9d14b37fface4fa4ef4322e99e13",
+    "visual_scene_graph/pilot/campaign_policy.json": "241204469fb84da8835621f953964d8c887fb91442fd55aeda1a07b89cfc0285",
+    "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/manifest.json": "da3c021fea39eafb972a34876786cecc648f95359c32dbbffd232ad504f14895",
+    "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/payloads.json": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d",
+    "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/source.image": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc"
+  },
+  "baseline": {
+    "real_current_generation": {
+      "provider": "DRY_RUN_ONLY_UNSELECTED_PROVIDER",
+      "model": "DRY_RUN_ONLY_UNSELECTED_MODEL",
+      "seed": null,
+      "parameters": {
+        "size": "347x389",
+        "quality": "DRY_RUN_ONLY_UNSELECTED",
+        "output_format": "png"
+      }
+    },
+    "manifest_sha256": "da3c021fea39eafb972a34876786cecc648f95359c32dbbffd232ad504f14895",
+    "real_operational_beta": "NOT_CONFIGURED_NO_ADMITTED_GLIGEN_BACKEND",
+    "upstream_reference": {
+      "beta_default": 0.3,
+      "steps_default": 50,
+      "guidance_default": 7.5,
+      "eta_default": 0.0,
+      "fuser": "enable_fuser(false) bypasses visual attention and FF as well as objects",
+      "code_commit": "39aa3909e8e2dfe30f4807aedaadf42c1d8b1a8f"
+    },
+    "important": "The new matched negative control uses the SAME future symmetric patch as candidate. It is not a claimed historical/admitted run of the unmodified upstream pipeline."
+  },
+  "proposed_configurations": {
+    "negative_control": {
+      "id": "VSG-2B-GLIGEN-M1-B030-CONTROL",
+      "version": "0.1.0",
+      "kind": "PROPOSED_DIAGNOSTIC_ONLY_NOT_ADMITTED",
+      "settings": {
+        "num_inference_steps": 50,
+        "guidance_scale": 7.5,
+        "eta": 0.0,
+        "num_images_per_prompt": 1,
+        "negative_prompt": "",
+        "internal_width": 512,
+        "internal_height": 512,
+        "output_width": 347,
+        "output_height": 389,
+        "output_format": "png",
+        "root_seed": 20261002,
+        "seed_provenance": "NEW_PROPOSAL_ONLY; original null untouched",
+        "RNG": {
+          "source": 20261003,
+          "initial": 20261004,
+          "reinject": 20261005,
+          "global_eval": 20261002,
+          "method": "torch.Generator(device=cpu) in future pinned runtime; initial/source/per-loop draws cached once for both branches; full CPU/CUDA/Python state restored; no RNG run in N4S"
+        },
+        "dtype": "float32 reference for first validation; fp16 only after separate preregistered repeatability decision",
+        "checkpoint_storage_variant": "fp16; casting to float32 reference changes compute dtype, not branch weights",
+        "scheduler_config_sha256": "8335df29b53da12e9aeca35b1c2e60d88b23eae4cc5ad3d07efdcd7f003cc343",
+        "scheduler": "PNDM skip_prk_steps=true, steps_offset1, leading; fresh ets/counter/cur_sample per branch; 51 actual calls",
+        "source_mask": "M_KEEP=1 [1,1,64,64]",
+        "source_transform": "native347x389 RGB, edge pad L82/T61/R83/B62 to512; no resize; normalize pixel/127.5-1; remove padding only at output",
+        "shared_fuser_schedule": "attention/FF/S enabled for all51 calls in both branches; only R presence scheduled",
+        "source_side_features": "same5 observed node labels/regions from common and same cached source latent; no mask from regions",
+        "text": "same75-token chunks/128slots resampler for A/B/negative; A JSONL exact; B typed port only",
+        "gligen_scheduled_sampling_beta": 0.3
+      },
+      "relation_active_loop_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "candidate": {
+      "id": "VSG-2B-GLIGEN-M1-B100-CANDIDATE",
+      "version": "0.1.0",
+      "kind": "PROPOSED_CONFIGURATION_NOT_ADMITTED",
+      "settings": {
+        "num_inference_steps": 50,
+        "guidance_scale": 7.5,
+        "eta": 0.0,
+        "num_images_per_prompt": 1,
+        "negative_prompt": "",
+        "internal_width": 512,
+        "internal_height": 512,
+        "output_width": 347,
+        "output_height": 389,
+        "output_format": "png",
+        "root_seed": 20261002,
+        "seed_provenance": "NEW_PROPOSAL_ONLY; original null untouched",
+        "RNG": {
+          "source": 20261003,
+          "initial": 20261004,
+          "reinject": 20261005,
+          "global_eval": 20261002,
+          "method": "torch.Generator(device=cpu) in future pinned runtime; initial/source/per-loop draws cached once for both branches; full CPU/CUDA/Python state restored; no RNG run in N4S"
+        },
+        "dtype": "float32 reference for first validation; fp16 only after separate preregistered repeatability decision",
+        "checkpoint_storage_variant": "fp16; casting to float32 reference changes compute dtype, not branch weights",
+        "scheduler_config_sha256": "8335df29b53da12e9aeca35b1c2e60d88b23eae4cc5ad3d07efdcd7f003cc343",
+        "scheduler": "PNDM skip_prk_steps=true, steps_offset1, leading; fresh ets/counter/cur_sample per branch; 51 actual calls",
+        "source_mask": "M_KEEP=1 [1,1,64,64]",
+        "source_transform": "native347x389 RGB, edge pad L82/T61/R83/B62 to512; no resize; normalize pixel/127.5-1; remove padding only at output",
+        "shared_fuser_schedule": "attention/FF/S enabled for all51 calls in both branches; only R presence scheduled",
+        "source_side_features": "same5 observed node labels/regions from common and same cached source latent; no mask from regions",
+        "text": "same75-token chunks/128slots resampler for A/B/negative; A JSONL exact; B typed port only",
+        "gligen_scheduled_sampling_beta": 1.0
+      },
+      "relation_active_loop_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ]
+    }
+  },
+  "delta": [
+    {
+      "variable": "gligen_scheduled_sampling_beta",
+      "current_campaign": "NOT_CONFIGURED",
+      "upstream_default": 0.3,
+      "matched_control": 0.3,
+      "candidate": 1.0,
+      "kind": "EXPLICIT_INFERENCE_SETTING; same within A/B"
+    },
+    {
+      "variable": "fuser_semantics",
+      "upstream": "global enabled switch bypasses whole fuser",
+      "proposed": "shared attention/FF/S always active; only typed R presence follows beta; A/ablation use empty R",
+      "kind": "FUTURE_EXTERNAL_MODEL_PATCH; not accomplished by beta alone"
+    },
+    {
+      "variable": "source_mask_RNG_text",
+      "current": "frozen D source/common and null seed; N4 documented design",
+      "proposed": "concrete common_settings shared in both controlled configs; values newly proposed, not edits of frozen manifest",
+      "kind": "NEW_EXPLICIT_DESIGN_CONFIGURATION_PENDING_DECISION"
+    }
+  ],
+  "A_B_control": {
+    "same_composite_checkpoint": true,
+    "A": "canonical common + newline + exact JSONL via text conditioner; R absent",
+    "B": "canonical common text;10 typed records -> validated learned R; no prompt serialization",
+    "shared": "5 source-node features S from existing common observations; same masks/RNG/settings/weights",
+    "CFG": "negative half no R, S common; conditional B only has R",
+    "neutral": "F(x,S); B active F(x,concat(S,R)); same visual attention and FF; absent R has no keys",
+    "common_redundancy": "Original common already contains protected relations; effect is incremental channel representation, not exclusive access to relation facts."
+  },
+  "authority": {
+    "locks": "VALIDATE_ONLY",
+    "mask": "constantM1, no boxes inferred for editing; ROI regions observational association only",
+    "pixel_preservation": "NOT_PROVEN; latent reinjection is not exact pixel preservation",
+    "source_final_compositing": false,
+    "new_design_content_allowed": false,
+    "PROPOSED_SCOPE_diff_applied": false
+  },
+  "future_change_points": [
+    {
+      "file": "external diffusers pipeline_stable_diffusion_gligen.py",
+      "symbols": [
+        "__call__",
+        "encode_prompt",
+        "enable_fuser",
+        "prepare_latents"
+      ],
+      "change": "strict settings resolver; complete-text embeddings; no center crop; separate mask/association; explicit4channel draws; scheduled R without bypassing shared transforms"
+    },
+    {
+      "file": "external diffusers models/unets/unet_2d_condition.py",
+      "symbol": "forward near GLIGEN conditioning",
+      "change": "versioned typed-relational port; same model forA/B"
+    },
+    {
+      "file": "external diffusers models/attention.py",
+      "symbol": "GatedSelfAttentionDense.forward/caller",
+      "change": "preserve shared attention/FF/S; require identical learned deltas bothbranches"
+    },
+    {
+      "file": "new external modules, paths to fix in implementation plan",
+      "change": "trained text resampler, shared source projector, relational projector, validator/logging; no stable-client edits now"
+    },
+    {
+      "file": "future separately versioned configuration/manifest",
+      "change": "only after explicit decision and later readiness/admission; no historical manifest overwrite"
+    }
+  ],
+  "temporal_analysis": {
+    "status": "STATIC_ONLY_REVIEWED_EXISTING_PROOF",
+    "reference": "validation/vsg_2b/n4/SOURCE_CONDITIONING_DECISION.json",
+    "M1_effect": "overwrite spatial latent recurrence before each UNet call",
+    "PNDM_memory": "up to4 epsilon predictions plus counter1 cur_sample exception, then cleared",
+    "default_51_calls": "R active0..14; last possible output dependency17; output18..50 independent of R under matched inputs/stateless eval assumptions",
+    "full_51_calls": "beta1 keeps R through index50; last step beforedecode has possible influence; no later source blend",
+    "limitations": [
+      "numeric cancellation/zero learned gates/quantization may erase effect",
+      "same seed alone insufficient; immutable draw tapes and reset scheduler required",
+      "safety suppression cannot be bypassed",
+      "A/B textual difference is not proof of structural channel",
+      "usefulness/literalpreservation need independent visual evidence"
+    ]
+  },
+  "validation": [
+    {
+      "id": "DEFAULT_SCHEDULE_NEGATIVE_CONTROL",
+      "status": "NOT_RUN",
+      "prerequisites": "same trained composite/patch/RNG; explicit beta0.3 diagnostic config",
+      "observable": "B full vs B ablated: early fuser, PNDM ets and final latent",
+      "success": "early possible effect disappears after PLMS flush; final equality within repeat tolerance under stated assumptions",
+      "failure": "persistent final structural dependence requires investigating hidden state/RNG/source/schedule; no positive pilot score",
+      "future_budget": {
+        "maximum_trajectories_proposed": 2,
+        "UNet_call_ceiling_proposed": 102,
+        "maximum_decoded_outputs_proposed": 0,
+        "auxiliary_learned_call_ceiling": "UNKNOWN_REQUIRES_VERSIONED_EXECUTION_PLAN",
+        "wall_GPU_money_ceiling": "UNKNOWN_REQUIRES_RESOURCE_APPROVAL",
+        "approved_calls": 0,
+        "notes": "These are per-test proposals, not additive approved quota or exemption from campaign attempts. Shared runs may be referenced once by receipt ID; no implicit retries."
+      }
+    },
+    {
+      "id": "EXPLICIT_FULL_SCHEDULE",
+      "status": "NOT_RUN",
+      "prerequisites": "same compiled setting resolver/patch; beta1 explicit in both branches",
+      "observable": "resolved per-call schedule indices0..50, same configs/weights/RNG and final latent",
+      "success": "R active on all51 conditional B calls; no hidden beta fallback or asymmetry; actual final sensitivity assessed separately",
+      "failure": "missing final step, branch-specific config or changed non-treatment input",
+      "future_budget": {
+        "maximum_trajectories_proposed": 2,
+        "UNet_call_ceiling_proposed": 102,
+        "maximum_decoded_outputs_proposed": 0,
+        "auxiliary_learned_call_ceiling": "UNKNOWN_REQUIRES_VERSIONED_EXECUTION_PLAN",
+        "wall_GPU_money_ceiling": "UNKNOWN_REQUIRES_RESOURCE_APPROVAL",
+        "approved_calls": 0,
+        "notes": "These are per-test proposals, not additive approved quota or exemption from campaign attempts. Shared runs may be referenced once by receipt ID; no implicit retries."
+      }
+    },
+    {
+      "id": "RELATIONAL_NEUTRALIZATION_ABLATION",
+      "status": "NOT_RUN",
+      "prerequisites": "same model and shared S; eval dropout0",
+      "observable": "fuser attention/FF call hooks and outputs with R absent",
+      "success": "F(x,S) exactly defines neutral route; never enabled=false for A alone; R keys removed, not zero-filled",
+      "failure": "shared transform removed or zero keys remain altering softmax",
+      "future_budget": {
+        "maximum_trajectories_proposed": 0,
+        "UNet_call_ceiling_proposed": 0,
+        "maximum_decoded_outputs_proposed": 0,
+        "auxiliary_learned_call_ceiling": "UNKNOWN_REQUIRES_VERSIONED_EXECUTION_PLAN",
+        "wall_GPU_money_ceiling": "UNKNOWN_REQUIRES_RESOURCE_APPROVAL",
+        "approved_calls": 0,
+        "notes": "These are per-test proposals, not additive approved quota or exemption from campaign attempts. Shared runs may be referenced once by receipt ID; no implicit retries.",
+        "direct_fuser_calls_proposed": 4
+      }
+    },
+    {
+      "id": "VALID_ISOLATED_MUTATION",
+      "status": "NOT_RUN",
+      "prerequisites": "typed enum LEFT_OF->RIGHT_OF; same endpoints; learned R; campaign validation still enabled",
+      "observable": "R input/output, real fuser, final latent with B text/common/source fixed",
+      "success": "isolated consumer path shows directed effect above repeat noise; campaign rejects altered frozen payload hash",
+      "failure": "mutation admitted as original D, silent invalidinput accepted or only JSON hash changes",
+      "future_budget": {
+        "maximum_trajectories_proposed": 2,
+        "UNet_call_ceiling_proposed": 102,
+        "maximum_decoded_outputs_proposed": 0,
+        "auxiliary_learned_call_ceiling": "UNKNOWN_REQUIRES_VERSIONED_EXECUTION_PLAN",
+        "wall_GPU_money_ceiling": "UNKNOWN_REQUIRES_RESOURCE_APPROVAL",
+        "approved_calls": 0,
+        "notes": "These are per-test proposals, not additive approved quota or exemption from campaign attempts. Shared runs may be referenced once by receipt ID; no implicit retries."
+      }
+    },
+    {
+      "id": "TEMPORAL_TO_DECODED_OBSERVABLE",
+      "status": "NOT_RUN",
+      "prerequisites": "approved full loop/decode budget and output classification; same model state",
+      "observable": "all51 UNet calls, PNDM state, final latent, decoded float pixels, safety/postprocess final image",
+      "success": "non-erased structural path and measurable effect at final latent/image; reject copy-source final compositing; keep safety handling",
+      "failure": "only early hook differs, decode residue with no semantics, safety blocked or quantization erases relevant effect",
+      "future_budget": {
+        "maximum_trajectories_proposed": 2,
+        "UNet_call_ceiling_proposed": 102,
+        "maximum_decoded_outputs_proposed": 2,
+        "auxiliary_learned_call_ceiling": "UNKNOWN_REQUIRES_VERSIONED_EXECUTION_PLAN",
+        "wall_GPU_money_ceiling": "UNKNOWN_REQUIRES_RESOURCE_APPROVAL",
+        "approved_calls": 0,
+        "notes": "These are per-test proposals, not additive approved quota or exemption from campaign attempts. Shared runs may be referenced once by receipt ID; no implicit retries."
+      }
+    },
+    {
+      "id": "NUMERICAL_REPEAT",
+      "status": "NOT_RUN",
+      "prerequisites": "pinned environment, deterministic ops, RNG tapes and fresh PNDM",
+      "observable": "source/initial/per-step hashes; repeat operator/final latents",
+      "success": "fp32 atol1e-6 rtol1e-5; fp16 if later chosen atol1e-3 rtol1e-3; no widening after result",
+      "failure": "nondeterminism, changed cache/config or tolerance exceeded",
+      "future_budget": {
+        "maximum_trajectories_proposed": 2,
+        "UNet_call_ceiling_proposed": 102,
+        "maximum_decoded_outputs_proposed": 0,
+        "auxiliary_learned_call_ceiling": "UNKNOWN_REQUIRES_VERSIONED_EXECUTION_PLAN",
+        "wall_GPU_money_ceiling": "UNKNOWN_REQUIRES_RESOURCE_APPROVAL",
+        "approved_calls": 0,
+        "notes": "These are per-test proposals, not additive approved quota or exemption from campaign attempts. Shared runs may be referenced once by receipt ID; no implicit retries."
+      }
+    },
+    {
+      "id": "SEMANTIC_AND_PRESERVATION_REVIEW",
+      "status": "NOT_RUN",
+      "prerequisites": "licensed heldout corpus/split and independent reviewers; generation separately approved",
+      "observable": "frozen rubric: relations, literal TERMINAL DINER, identity, P0/PR0/PR1, source preservation; record uncertainty",
+      "success": "no protected regression/S3/unauthorized change; rubric complete; preregister corpus-level useful-effect criterion before outputs",
+      "failure": "mere numeric sensitivity, unreadable/substituted literal, altered source identity or unreviewed UNKNOWN",
+      "future_budget": {
+        "maximum_trajectories_proposed": 2,
+        "UNet_call_ceiling_proposed": 102,
+        "maximum_decoded_outputs_proposed": 2,
+        "auxiliary_learned_call_ceiling": "UNKNOWN_REQUIRES_VERSIONED_EXECUTION_PLAN",
+        "wall_GPU_money_ceiling": "UNKNOWN_REQUIRES_RESOURCE_APPROVAL",
+        "approved_calls": 0,
+        "notes": "These are per-test proposals, not additive approved quota or exemption from campaign attempts. Shared runs may be referenced once by receipt ID; no implicit retries."
+      }
+    },
+    {
+      "id": "FULL_TEXT_AND_INPUT_VALIDATION",
+      "status": "NOT_RUN",
+      "prerequisites": "exact tokenizer path/assets; trained shared resampler and strict validator",
+      "observable": "A7305/B5686 content-token coverage; masks/128slots; invalidinputs",
+      "success": "every token covered; no B prompt/A graph parsing; reject unsupporteddomain/overflow/missinglocks/topology before learned call",
+      "failure": "truncation, field loss, silent coercion or semantic claim based only on hashes",
+      "future_budget": {
+        "maximum_trajectories_proposed": 0,
+        "UNet_call_ceiling_proposed": 0,
+        "maximum_decoded_outputs_proposed": 0,
+        "auxiliary_learned_call_ceiling": "UNKNOWN_REQUIRES_VERSIONED_EXECUTION_PLAN",
+        "wall_GPU_money_ceiling": "UNKNOWN_REQUIRES_RESOURCE_APPROVAL",
+        "approved_calls": 0,
+        "notes": "These are per-test proposals, not additive approved quota or exemption from campaign attempts. Shared runs may be referenced once by receipt ID; no implicit retries.",
+        "text_encoding_planning_units": "98 A chunks+76 B chunks+1 negative+5 shared labels=180 CLIP calls if processed separately; batching/caching must be explicit; shared resampler3 calls; not current execution"
+      }
+    }
+  ],
+  "quality_threshold_dependency": "Corpus-level semantic usefulness/effect size threshold UNKNOWN until heldout corpus/metric and power/sample plan defined. N4 diagnostic QA thresholds remain proposed, not calibration or visual pilot readiness. All model tests NOT_RUN.",
+  "resources": [
+    {
+      "stage": "design decision",
+      "requested": "accept/reject/revise this ID/version only",
+      "authorizes": "preparing implementation/resources plan only",
+      "approved": false
+    },
+    {
+      "stage": "implementation",
+      "ceiling": "UNKNOWN_PERSON_DAYS; explicit bounded plan needed",
+      "approved": false
+    },
+    {
+      "stage": "weight download",
+      "base_bytes_remote_declared": 3159269896,
+      "new_weight_bytes": "UNKNOWN",
+      "ceiling": "UNKNOWN_TOTAL_BYTES_UNTIL_NEW_MODULE_ARTIFACTS_KNOWN",
+      "approved_bytes": 0
+    },
+    {
+      "stage": "load/weighted diagnostics",
+      "ceiling": "UNKNOWN_TOTAL_AUX_CALLS_WALL_GPU_COST; per-test proposals above do not constitute permission",
+      "approved_calls": 0
+    },
+    {
+      "stage": "data/training/infra",
+      "ceiling": "UNKNOWN_DATA_RIGHTS_VOLUME_GPU_HOURS_MONETARY_TOTAL",
+      "approved_GPU_hours": 0,
+      "approved": false
+    },
+    {
+      "stage": "visual campaign",
+      "current_policy_max_attempts": 8,
+      "approved_new_attempts": 0,
+      "new_policy": "NONE_APPLIED"
+    }
+  ],
+  "forward_accounting_proposal": {
+    "status": "PROPOSED_NOT_APPROVED; existing independent forwards UNCLASSIFIED_NOT_EXEMPT",
+    "unit": "one invocation at declared learned-module boundary: CLIP encoder, VAE encode/decode, resampler, shared/relational projector, whole UNet, safety checker; nested fuser hooks logged but not counted again; direct fuser diagnostic counts one",
+    "preflight": "enumerate full directed execution graph and cache reuse; hard numeric ceiling for ALL modules/time/cost before permission. N4R200-call suggestion is not sufficient for every test; cannot silently reuse it as whole validation budget.",
+    "generation": "write campaign attempt before generator dispatch, failures count, maximum8 unchanged. Diagnostic generation/independent forwards require explicit classification before execution; do not invent separate-budget exemption.",
+    "ledger": "new append-only IDs link configversion/input/weights/RNG, parenttrajectory and campaignattempt if applicable; no double counting reused receipts as new positive evidence",
+    "stop": "reserve budget before each call; halt on cap, hash mismatch, nondeterminism, failed prereq, safety output or cancellation; no automatic retry"
+  },
+  "activation_after_future_approvals": "new immutable config ID/version+resolved-settings hash; strict same-model load and all gates before admission. Preserve old manifests/reports/counters; no override of original frozen D hash.",
+  "rollback": {
+    "before_application": "mark proposal rejected/withdrawn in a NEW decision record; current DRY_RUN_ONLY remains",
+    "after_future_activation": "disable candidate configuration ID/version; revert registry pointer to identified previous config only if that activation was separately authorized. Matched beta0.3 diagnostic remains NON_OPERATIONAL, not a ready fallback. Without previous operational config, return to no-backend BLOCKED. Preserve all attempts/errors/results.",
+    "no_counter_reset": true
+  },
+  "decision_request": {
+    "options": [
+      "ACCEPT_DESIGN_FOR_PLANNING_ONLY",
+      "REJECT",
+      "REQUEST_SPECIFIC_CORRECTION"
+    ],
+    "acceptance_effect": "Only permission to prepare a bounded implementation/resources spec; no implementation, weights, forwards, training, images, policy change or admission",
+    "approval_evidence": "NONE_FOUND; request to execute N4S is not amendment approval"
+  }
+}
