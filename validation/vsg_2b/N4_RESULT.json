@@ -1,0 +1,323 @@
+{
+  "milestone": "VSG-2B-N4",
+  "completed_by": "VSG-2B-N4R",
+  "created_at": "2026-10-02T03:30:37.779028+00:00",
+  "status": "N4_SCOPE_CHANGE_REQUIRED",
+  "closeout_marker": "PENDING_FINAL_CHECK",
+  "confidence": "STATIC_ONLY",
+  "prior_N4_state": "IN_PROGRESS_AUDITOR_ONLY_NO_SIX_DOCUMENT_CLOSURE",
+  "N4R_evaluation": "New decision and fresh tokenizer/symbolic/geometry checks; no retrospective successful N4 claim",
+  "head_initial": "1ef2e344c71d446a508d94e2813b4f4bdb30ee90",
+  "head_final": "PENDING",
+  "initial_git_status": "CLEAN",
+  "specs": [
+    {
+      "path": "/Users/macbookpro/Documents/STREETCRAFT_specs VSG/VSG_2B_N4_GLIGEN_FEASIBILITY_SPEC.md",
+      "sha256": "7fa36baab8c3b8419217272759c509d5ec1642f30656e8d97d48745292409e9a"
+    },
+    {
+      "path": "/Users/macbookpro/Documents/STREETCRAFT_specs VSG/VSG_2B_N4R_DECISION_CLOSEOUT_SPEC.md",
+      "sha256": "e3c51abe41ef37eb57f95f14ddea5a051c466fb33547fa9cf1ee87bb7e0c6cda"
+    }
+  ],
+  "pins": {
+    "diffusers": {
+      "version": "0.29.0",
+      "commit": "39aa3909e8e2dfe30f4807aedaadf42c1d8b1a8f"
+    },
+    "checkpoint": {
+      "id": "masterful/gligen-1-4-inpainting-text-box",
+      "revision": "d6d957f8d27c40889c0d570a616571a5645c8be3",
+      "variant": "fp16",
+      "weights_loaded": false
+    },
+    "transformers": {
+      "version": "4.41.2",
+      "commit": "573565e35a5cc68f6cfb6337f5a93753ab16c65b"
+    }
+  },
+  "subgates": {
+    "inputs": {
+      "status": "PASS_STATIC",
+      "decision": "D hashes and ten records/N3 artifacts consistent",
+      "evidence": "n4/INPUT_MANIFEST.json",
+      "uncertainty": "No operational provider settings",
+      "future_tests": [
+        "strict model load NOT_RUN"
+      ]
+    },
+    "text": {
+      "status": "DECIDED_STATIC",
+      "decision": "CLIP75-token blocks + shared ordered128slot resampler; exact measured counts accredited on checked domain",
+      "evidence": "n4/TEXT_CAPACITY_AUDIT.json",
+      "uncertainty": "Learned compression/semantic preservation NOT_RUN",
+      "future_tests": [
+        "COMPLETE_TEXT"
+      ]
+    },
+    "source_mask": {
+      "status": "PARTIAL_DECISION_SCOPE_DEPENDENCY",
+      "decision": "Native512edgepadding and common observed association fixed; M1/default0.3 schedule rejected for structural visual observable",
+      "evidence": "n4/SOURCE_CONDITIONING_DECISION.json",
+      "uncertainty": "VAE/output visual preservation NOT_RUN; no authorized edit masks",
+      "future_tests": [
+        "REPEAT",
+        "TEMPORAL_PERSISTENCE"
+      ]
+    },
+    "AB_control": {
+      "status": "DESIGN_DEFINED_CONDITIONAL",
+      "decision": "Same composite weights; shared fuser transforms in both branches; R absent only in A/ablation; beta1 proposal unapplied",
+      "evidence": "n4/AB_CONTROL_MATRIX.json",
+      "uncertainty": "Patch/weights/settings unimplemented/unapproved",
+      "future_tests": [
+        "NEUTRALIZATION",
+        "VALID_ISOLATED_MUTATION",
+        "RELATIONAL_ABLATION",
+        "INVALID_INPUT_REJECTION"
+      ]
+    },
+    "observable": {
+      "status": "DEFAULT_VARIANT_REJECTED_PROPOSED_VARIANT_STATIC_PLAUSIBLE",
+      "decision": "PLMS history flush plus M1 wipes early-only B relation dependence; full-schedule proposal has unblocked final-step path, not measured effect",
+      "evidence": "n4/SOURCE_CONDITIONING_DECISION.json#/temporal",
+      "uncertainty": "No real learned sensitivity, quantized image or semantic gain",
+      "future_tests": [
+        "TEMPORAL_PERSISTENCE"
+      ]
+    },
+    "resources_policy": {
+      "status": "PROPOSAL_ONLY",
+      "decision": "No forwards/training allowed now; future counters and budget must be explicit",
+      "evidence": "visual_scene_graph/pilot/N4_GLIGEN_FEASIBILITY_RUNBOOK.md",
+      "uncertainty": "Environment/GPU/data/cost unknown",
+      "future_tests": [
+        "strict load/peak memory before training"
+      ]
+    }
+  },
+  "decisions_resolved": [
+    "Tokenizer exact bounded-domain counts and future BasicTokenizer path",
+    "One long-text mechanism selected, alternative rejected",
+    "Native source padding and five-ID association from real common",
+    "Mask semantics and PNDM temporal dependency",
+    "Same-artifact neutral fuser mechanism and RNG streams"
+  ],
+  "pending": [
+    "Approve/reject separately documented inference-settings amendment (beta1 and symmetric fuser schedule semantics) before implementation planning can treat design as accepted",
+    "Then specify reproducible external patch/env/data/weight/download/compute budget; training and all learned execution remain unapproved",
+    "Measure final structural sensitivity and preservation after learned modules exist; no current operational/visual readiness"
+  ],
+  "model_tests": [
+    {
+      "test": "COMPLETE_TEXT",
+      "status": "NOT_RUN",
+      "prerequisites": "trained resampler, exact tokenizer/weights/environment",
+      "criterion": "every input ID retained; semantic holdout and exact literal controls; no A->B parsing"
+    },
+    {
+      "test": "NEUTRALIZATION",
+      "status": "NOT_RUN",
+      "prerequisites": "versioned fuser patch and trained shared objects",
+      "criterion": "A/ablatedB with same test text invokes attention and FF; empty R exactly equals shared path within repeat tolerance"
+    },
+    {
+      "test": "REPEAT",
+      "status": "NOT_RUN",
+      "prerequisites": "deterministic environment and restored stream/scheduler states",
+      "criterion": "fp32 atol1e-6 rtol1e-5; fp16 atol1e-3 rtol1e-3; predeclare, do not widen after failure"
+    },
+    {
+      "test": "VALID_ISOLATED_MUTATION",
+      "status": "NOT_RUN",
+      "prerequisites": "trained R and approved isolated diagnostic",
+      "criterion": "LEFT_OF->RIGHT_OF typed endpoints unchanged; source/text/S/mask/RNG fixed; actual operator effect exceeds noise; frozen campaign must reject mutated hash"
+    },
+    {
+      "test": "RELATIONAL_ABLATION",
+      "status": "NOT_RUN",
+      "prerequisites": "same composed checkpoint",
+      "criterion": "remove only R, retain shared attention/FF/S, compare actual operator and downstream observable"
+    },
+    {
+      "test": "TEMPORAL_PERSISTENCE",
+      "status": "NOT_RUN",
+      "prerequisites": "approved schedule/source protocol, separate forward/generation budget",
+      "criterion": "trace all actual PNDM indices/ets; final latent and decoded image effect, not only early hook; defaultM1/beta0.3 negative control"
+    },
+    {
+      "test": "INVALID_INPUT_REJECTION",
+      "status": "NOT_RUN",
+      "prerequisites": "strict envelope validator",
+      "criterion": "reject missing lock, invalid topology/ID, B string, unsupported Unicode/reservedtokens/overflow, altered frozen input before any learned call"
+    }
+  ],
+  "static_checks": {
+    "fresh_tokenization": "PASS_BOUNDED_ASCII_EQUIVALENCE",
+    "measured_strings": 12,
+    "positive_controls": 8,
+    "domain_rejections": 3,
+    "chunk_reassembly": "PASS_TOKEN_SEQUENCE_IDENTITY",
+    "coordinate_inverse": "PASS_5_REGIONS_RATIONAL_ARITHMETIC",
+    "symbolic_temporal": "PASS_STATIC_CASES_AND_5_SCHEDULE_LENGTHS",
+    "N3_artifact_hashes": "PASS_FRESH",
+    "D_payload_source_hashes": "PASS_FRESH",
+    "consumer_probe": "NOT_RUN"
+  },
+  "counters": {
+    "Archive_calls_this_work": 0,
+    "provider_predictions_this_work": 0,
+    "generated_images_this_work": 0,
+    "new_visual_pairs_this_work": 0,
+    "learned_forwards_this_work": 0,
+    "training_runs_this_work": 0,
+    "provider_account_history": "UNKNOWN_NOT_QUERIED",
+    "tokenization": {
+      "N4_original_successful_path_invocations": 41,
+      "N4R_fresh_successful_path_invocations": 41,
+      "each_run_rejected_guard_invocations": 3,
+      "definitions": "Two paths for12strings+8controls plus1 known-ID assertion. Tokenization only; no text encoder."
+    },
+    "policy": "Campaign v1.0.0 counts attempt file before generator.generate, failures included, max8. Standalone weighted forward remains UNCLASSIFIED_NOT_EXEMPT. Proposed later protocol does not amend it.",
+    "before": {
+      "attempts": [],
+      "reports": [
+        "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/report.json",
+        "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/report.json",
+        "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/report.json",
+        "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/report.json",
+        "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/report.json",
+        "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/report.json",
+        "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/report.json",
+        "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/report.json",
+        "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/report.json",
+        "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/report.json",
+        "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/report.json",
+        "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/report.json",
+        "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/report.json",
+        "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/report.json",
+        "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/report.json"
+      ],
+      "evaluations": [],
+      "images": 0
+    },
+    "after": "PENDING_FINAL_SCAN"
+  },
+  "downloads": {
+    "cap_bytes": 10000000,
+    "new_N4_small_asset_bytes": 1986531,
+    "new_N4R_download_bytes": 0,
+    "weights_bytes_downloaded": 0,
+    "categories_N4": {
+      "checkpoint_metadata": 0,
+      "code": 335252,
+      "metadata": 1047,
+      "tokenizer_asset": 1585053,
+      "tokenizer_code": 65179
+    },
+    "reused_N3_asset_bytes": 218186,
+    "method": "Actual saved response-body bytes, hashes checked; earlier N3 acquisition volume not reconstructed. One browser rendering of pinned pipeline has transport bytes UNKNOWN, not an artifact download. No predictions.",
+    "pin_note": "Transformers annotated v4.41.2 tag resolved using saved tag object; no assumption that tag ref itself is commit."
+  },
+  "plan_limits": {
+    "ceiling_percentage_points": 40,
+    "allocation_N4R": [
+      4,
+      10,
+      12,
+      8,
+      6
+    ],
+    "observed": {
+      "initial_N4": {
+        "five_hour": "UNKNOWN",
+        "Weekly": "UNKNOWN"
+      },
+      "N4R_preflight": {
+        "five_hour": "UNKNOWN",
+        "Weekly": "UNKNOWN"
+      },
+      "text": {
+        "five_hour": "UNKNOWN",
+        "Weekly": "UNKNOWN"
+      },
+      "source_observability": {
+        "five_hour": "UNKNOWN",
+        "Weekly": "UNKNOWN"
+      },
+      "AB": {
+        "five_hour": "UNKNOWN",
+        "Weekly": "UNKNOWN"
+      },
+      "closure": {
+        "five_hour": "UNKNOWN",
+        "Weekly": "UNKNOWN"
+      }
+    },
+    "numeric_compliance_certified": false
+  },
+  "reasoning": {
+    "model_changed": false,
+    "client_selected_effort": "UNKNOWN",
+    "recommendation": "HIGH for architecture; no routine confirmation required"
+  },
+  "commands": [
+    {
+      "command": "git rev-parse HEAD; git status --short; AGENTS scan",
+      "exit_code": 0,
+      "result": "1ef2e344...; CLEAN; no applicable AGENTS"
+    },
+    {
+      "command": "N4 initial inspection (relations_locks key / providers*.py glob)",
+      "exit_code": 1,
+      "result": "Exploratory lookup errors corrected to relations_and_locks and actual files; no inputs changed"
+    },
+    {
+      "command": "python3 /tmp/vsg_n4/fetch.py first annotated-tag assumption",
+      "exit_code": 1,
+      "result": "Tokenizer assets saved; tag object was annotated, resolved explicitly next call; no duplicated downloads"
+    },
+    {
+      "command": "python3 /tmp/vsg_n4/fetch.py resumed with byte ledger",
+      "exit_code": 0,
+      "result": "26 small sources,1986531 new bytes; zero weights"
+    },
+    {
+      "command": "python3 validation/vsg_2b/n4/audit_static.py --assets /tmp/vsg_n4 --repo . --output /tmp/vsg_n4/text_measured.json",
+      "exit_code": 0,
+      "result": "N4 prior actual counts; persisted and rechecked"
+    },
+    {
+      "command": "python3 validation/vsg_2b/n4/closeout_checks.py --repo . --assets /tmp/vsg_n4 --output /tmp/vsg_n4/closeout_measured.json",
+      "exit_code": 0,
+      "result": "Fresh12strings,5nodes; final dependency false/true/true for three static controls; no model"
+    },
+    {
+      "command": "python3 /tmp/vsg_n4/write_closeout.py (input hashing before artifact creation)",
+      "exit_code": 0,
+      "result": "751 prior files and N3 artifacts rehashed; D source/payload verified"
+    }
+  ],
+  "files_new": [
+    "visual_scene_graph/pilot/N4_GLIGEN_FEASIBILITY_RUNBOOK.md",
+    "validation/vsg_2b/N4_RESULT.json",
+    "validation/vsg_2b/n4/TEXT_CAPACITY_AUDIT.json",
+    "validation/vsg_2b/n4/SOURCE_CONDITIONING_DECISION.json",
+    "validation/vsg_2b/n4/AB_CONTROL_MATRIX.json",
+    "validation/vsg_2b/n4/INPUT_MANIFEST.json",
+    "visual_scene_graph/pilot/N4R_WORK_MODE_NEXT_STEPS.md",
+    "validation/vsg_2b/n4/closeout_checks.py",
+    "visual_scene_graph/pilot/N4R_SETTINGS_AMENDMENT_PROPOSAL.md"
+  ],
+  "prior_files_preservation": "PENDING_FINAL_SCAN",
+  "CAUSAL_TRACE_created": false,
+  "operational_manifest_created": false,
+  "scope_applied": false,
+  "production_authorized": false,
+  "provider_READY": false,
+  "vsg_2b_status": "BLOCKED / PENDING_VISUAL",
+  "C_status": "NO_GO_C0_UNVERIFIED",
+  "X1_status": "PROPOSED_NOT_APPROVED",
+  "N3_status": "N3_MODEL_DEVELOPMENT_REQUIRED",
+  "next_step": "Decide the narrow settings amendment or independently audit temporal proof; use N4R_WORK_MODE_NEXT_STEPS.md. Neither authorizes training, weights or image generation."
+}

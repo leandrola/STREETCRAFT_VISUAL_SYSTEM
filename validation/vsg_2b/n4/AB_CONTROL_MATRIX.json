@@ -1,0 +1,162 @@
+{
+  "milestone": "VSG-2B-N4",
+  "completed_by": "N4R",
+  "confidence": "STATIC_ONLY",
+  "status": "CONTROL_DESIGN_DEFINED_SETTINGS_AMENDMENT_PENDING",
+  "variables": [
+    {
+      "variable": "source/transform/mask",
+      "A": "same frozen JPEG,512pad,M1",
+      "B": "same cached bytes/latents/mask",
+      "classification": "EQUAL_PROPOSED",
+      "notes": "No mask from evidence/locks; beta0.3 combination rejected for channel observability."
+    },
+    {
+      "variable": "common",
+      "A": "full canonical common",
+      "B": "same full canonical common",
+      "classification": "EQUAL",
+      "notes": "Includes original redundant relations; no removal or summaries."
+    },
+    {
+      "variable": "relation input",
+      "A": "exact3045-character JSONL appended with newline",
+      "B": "ten typed records via structural validator/projector",
+      "classification": "PERMITTED_EXPERIMENTAL_DIFFERENCE",
+      "notes": "No generative A parsing; no B textual fallback."
+    },
+    {
+      "variable": "text length",
+      "A": "7305 content tokens",
+      "B": "5686 content tokens",
+      "classification": "DERIVED_TREATMENT_DIFFERENCE",
+      "notes": "Same ordered resampler128; no A-only encoder. Shared negative and5phrases exact."
+    },
+    {
+      "variable": "shared source objects",
+      "A": "5 shared ROI/label tokens S",
+      "B": "same S",
+      "classification": "EQUAL_PROPOSED",
+      "notes": "Existing common evidence binds IDs; immutable precompute before branching."
+    },
+    {
+      "variable": "relational objects",
+      "A": "empty [batch,0,768]",
+      "B": "7 learned tokens R from typed records",
+      "classification": "PERMITTED_EXPERIMENTAL_DIFFERENCE",
+      "notes": "Do not substitute zero-valued tokens; extra unmasked keys affect normalization as part of intended treatment."
+    },
+    {
+      "variable": "fuser transforms",
+      "A": "F(x,S)",
+      "B": "F(x,concat(S,R)) while relation active",
+      "classification": "EQUAL_ARCHITECTURE_DIFFERENT_CONDITIONING",
+      "notes": "Both keep alpha gates, visual attention and FF. B ablation=F(x,S). No enabled=false for A alone."
+    },
+    {
+      "variable": "gating schedule",
+      "A": "same shared-transform schedule",
+      "B": "same schedule plus relation present",
+      "classification": "ADDITIONAL_VERSIONED_PATCH_AND_SETTINGS_REQUIRED",
+      "notes": "Proposed patch keeps shared visual/FF/S path always active; relational presence follows beta. beta1 proposed; default0.3 proved insufficient under M1. Neither patch nor new setting applied."
+    },
+    {
+      "variable": "weights",
+      "A": "same full base+resampler+shared projector+relational projector+fuser deltas",
+      "B": "identical hashes/strict load",
+      "classification": "EQUAL_PROPOSED",
+      "notes": "No branch-specific weights; all trained artifacts absent."
+    },
+    {
+      "variable": "scheduler",
+      "A": "fresh PNDM pinned config and timesteps",
+      "B": "same config, fresh state",
+      "classification": "EQUAL_PROPOSED",
+      "notes": "History differs only as consequence of conditioning; must not transfer A history to B."
+    },
+    {
+      "variable": "source/initial/step RNG",
+      "A": "separate named streams and cached draws",
+      "B": "same cached draws and restored states",
+      "classification": "EQUAL_PROPOSED",
+      "notes": "Null frozen seed remains nonoperational. No account-global counters inferred."
+    },
+    {
+      "variable": "decode/safety/postprocess",
+      "A": "same VAE/safety/unpad only",
+      "B": "same",
+      "classification": "EQUAL_PROPOSED",
+      "notes": "No final pixel copy; flagged/degenerate output cannot pass."
+    },
+    {
+      "variable": "campaign/generation settings",
+      "A": "DRY_RUN_ONLY, seednull, size347x389",
+      "B": "same frozen manifest",
+      "classification": "UNCHANGED_NONOPERATIONAL",
+      "notes": "beta1 proposal is separate. No operational manifest or admission."
+    }
+  ],
+  "equations": [
+    "S=SharedProjector(ROI(z_source,observed_regions),CLIP(observed_labels),coordinates); identical both branches",
+    "R_A=empty; R_B=RelationalProjector(typed_B,common_ID_index,S); no A JSONL parser used here",
+    "F(x,O): u=x+tanh(alpha_attn)*Attn(LN1(concat(x,Linear(O))))[:n_visual]; y=u+tanh(alpha_dense)*FF(LN2(u))",
+    "A: F(x,S). B: F(x,concat(S,R_B)) while relation enabled; otherwise F(x,S). B ablation always F(x,S). Same shared visual transforms and weights.",
+    "For CFG unconditional half, no R in either branch; shared S same. Conditional half follows above. Neutral R is absent keys, never a zero vector that still changes softmax denominator."
+  ],
+  "external_patch": {
+    "implemented": false,
+    "version_required": "Future patch revision/hash separate from pinned upstream commit",
+    "UNet_port": "Bypass original boxes->position_net for typed relational port, pass projected objs to real GatedSelfAttentionDense; input schemas stable",
+    "shared_transform_control": "Always execute visual attention/FF/shared source S in both branches. Retain same alpha parameters. Route relational token presence with explicit schedule. This changes upstream enable_fuser semantics symmetrically and must be reviewed/versioned, not hidden.",
+    "same_checkpoint": true,
+    "no_B_prompt": true,
+    "no_A_graph_parse": true
+  },
+  "temporal_reference": "SOURCE_CONDITIONING_DECISION.json#/temporal",
+  "required_settings_proposal": "visual_scene_graph/pilot/N4R_SETTINGS_AMENDMENT_PROPOSAL.md",
+  "future_tests": [
+    {
+      "test": "COMPLETE_TEXT",
+      "status": "NOT_RUN",
+      "prerequisites": "trained resampler, exact tokenizer/weights/environment",
+      "criterion": "every input ID retained; semantic holdout and exact literal controls; no A->B parsing"
+    },
+    {
+      "test": "NEUTRALIZATION",
+      "status": "NOT_RUN",
+      "prerequisites": "versioned fuser patch and trained shared objects",
+      "criterion": "A/ablatedB with same test text invokes attention and FF; empty R exactly equals shared path within repeat tolerance"
+    },
+    {
+      "test": "REPEAT",
+      "status": "NOT_RUN",
+      "prerequisites": "deterministic environment and restored stream/scheduler states",
+      "criterion": "fp32 atol1e-6 rtol1e-5; fp16 atol1e-3 rtol1e-3; predeclare, do not widen after failure"
+    },
+    {
+      "test": "VALID_ISOLATED_MUTATION",
+      "status": "NOT_RUN",
+      "prerequisites": "trained R and approved isolated diagnostic",
+      "criterion": "LEFT_OF->RIGHT_OF typed endpoints unchanged; source/text/S/mask/RNG fixed; actual operator effect exceeds noise; frozen campaign must reject mutated hash"
+    },
+    {
+      "test": "RELATIONAL_ABLATION",
+      "status": "NOT_RUN",
+      "prerequisites": "same composed checkpoint",
+      "criterion": "remove only R, retain shared attention/FF/S, compare actual operator and downstream observable"
+    },
+    {
+      "test": "TEMPORAL_PERSISTENCE",
+      "status": "NOT_RUN",
+      "prerequisites": "approved schedule/source protocol, separate forward/generation budget",
+      "criterion": "trace all actual PNDM indices/ets; final latent and decoded image effect, not only early hook; defaultM1/beta0.3 negative control"
+    },
+    {
+      "test": "INVALID_INPUT_REJECTION",
+      "status": "NOT_RUN",
+      "prerequisites": "strict envelope validator",
+      "criterion": "reject missing lock, invalid topology/ID, B string, unsupported Unicode/reservedtokens/overflow, altered frozen input before any learned call"
+    }
+  ],
+  "interpretation": "Current control design is static and conditional; no learned/causal/visual PASS. A/B output difference with default mask/schedule cannot identify structural channel contribution."
+}

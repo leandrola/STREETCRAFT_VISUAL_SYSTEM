@@ -1,0 +1,648 @@
+{
+  "strings": [
+    {
+      "name": "common",
+      "role": "A/B proposed canonical textual rendering",
+      "text": "{\"approved_source_restrictions\":[{\"id\":\"action:billboard_01\",\"lock_ids\":[],\"priority\":\"P2\",\"value\":\"PRESERVE_CONTEXT\"},{\"id\":\"action:diner_01\",\"lock_ids\":[\"GL-GEO-DINER_01\"],\"priority\":\"P0\",\"value\":\"PRESERVE_EXACT\"},{\"id\":\"action:facade_01\",\"lock_ids\":[\"GL-GEO-FACADE_01\"],\"priority\":\"P0\",\"value\":\"PRESERVE_EXACT\"},{\"id\":\"action:fascia_01\",\"lock_ids\":[],\"priority\":\"P2\",\"value\":\"PRESERVE_CONTEXT\"},{\"id\":\"action:sign_01\",\"lock_ids\":[\"GL-SEM-SIGN_01\"],\"priority\":\"P0\",\"value\":\"PRESERVE_EXACT\"},{\"id\":\"directive:forbid\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[\"Add hidden architecture, rooftop equipment, geographic identity or documentary history.\",\"Invent or complete exact text on fascia_01 or untranscribed billboard_01.\",\"break_protected_relationships:diner_01\",\"break_protected_relationships:facade_01\",\"break_protected_relationships:sign_01\"]},{\"id\":\"directive:infer\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[]},{\"id\":\"directive:preserve\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[\"Source framing, oblique view, visible facade, diner storefront and graphic layouts.\",\"billboard_01:upper advertising board; wording not transcribed:PRESERVE_CONTEXT\",\"diner_01:visible street-level diner storefront with striped fascia:PRESERVE_EXACT\",\"facade_01:visible left masonry facade and exterior fire escape:PRESERVE_EXACT\",\"fascia_01:left storefront fascia; exact lettering uncertain:PRESERVE_CONTEXT\",\"sign_01: TERMINAL above DINER in two lines; preserve exact spelling.\",\"sign_01:yellow TERMINAL DINER sign:PRESERVE_EXACT\"]},{\"id\":\"directive:remove\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[]},{\"id\":\"directive:transform\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[]},{\"id\":\"directive:unknown\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[\"Exact lettering on fascia_01 is uncertain; billboard_01 wording is not transcribed in this annotation.\",\"Hidden interiors and unseen building surfaces are unannotated.\"]},{\"id\":\"identity_anchors\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[\"diner_01\",\"sign_01\"]},{\"id\":\"node:billboard_01\",\"lock_ids\":[],\"priority\":\"P2\",\"value\":{\"cardinality\":{\"max\":1,\"min\":1},\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-billboard_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.437,0.018,0.797,0.37]},\"label\":\"upper advertising board; wording not transcribed\",\"locks\":{\"geometry\":false,\"identity\":false,\"occlusion\":false,\"semantic\":false},\"observed\":true,\"source_attributes\":{\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-billboard_01\",\"kind\":\"SIGNAGE\",\"observed\":true,\"preservation_level\":\"P2\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.437,0.018,0.797,0.37],\"roles\":[\"CONTEXTUAL_SUPPORT\"]},\"source_kind\":\"SIGNAGE\",\"type\":\"sign\"}},{\"id\":\"node:diner_01\",\"lock_ids\":[\"GL-GEO-DINER_01\"],\"priority\":\"P0\",\"value\":{\"cardinality\":{\"max\":1,\"min\":1},\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-diner_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.478,0.668,0.945,0.951]},\"label\":\"visible street-level diner storefront with striped fascia\",\"locks\":{\"geometry\":true,\"identity\":true,\"occlusion\":false,\"semantic\":false},\"observed\":true,\"source_attributes\":{\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-diner_01\",\"kind\":\"STOREFRONT\",\"observed\":true,\"preservation_level\":\"P0\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.478,0.668,0.945,0.951],\"roles\":[\"IDENTITY_ANCHOR\",\"STRUCTURAL_CORE\"]},\"source_kind\":\"STOREFRONT\",\"type\":\"storefront\"}},{\"id\":\"node:facade_01\",\"lock_ids\":[\"GL-GEO-FACADE_01\"],\"priority\":\"P0\",\"value\":{\"cardinality\":{\"max\":1,\"min\":1},\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-facade_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.025,0.065,0.46,0.956]},\"label\":\"visible left masonry facade and exterior fire escape\",\"locks\":{\"geometry\":true,\"identity\":false,\"occlusion\":false,\"semantic\":false},\"observed\":true,\"source_attributes\":{\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-facade_01\",\"kind\":\"FACADE\",\"observed\":true,\"preservation_level\":\"P0\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.025,0.065,0.46,0.956],\"roles\":[\"STRUCTURAL_CORE\"]},\"source_kind\":\"FACADE\",\"type\":\"facade\"}},{\"id\":\"node:fascia_01\",\"lock_ids\":[],\"priority\":\"P2\",\"value\":{\"cardinality\":{\"max\":1,\"min\":1},\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-fascia_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.05,0.622,0.405,0.725]},\"label\":\"left storefront fascia; exact lettering uncertain\",\"locks\":{\"geometry\":false,\"identity\":false,\"occlusion\":false,\"semantic\":false},\"observed\":true,\"source_attributes\":{\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-fascia_01\",\"kind\":\"SIGNAGE\",\"observed\":true,\"preservation_level\":\"P2\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.05,0.622,0.405,0.725],\"roles\":[\"CONTEXTUAL_SUPPORT\"]},\"source_kind\":\"SIGNAGE\",\"type\":\"sign\"}},{\"id\":\"node:sign_01\",\"lock_ids\":[\"GL-SEM-SIGN_01\"],\"priority\":\"P0\",\"value\":{\"cardinality\":{\"max\":1,\"min\":1},\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-sign_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.455,0.527,0.6,0.628]},\"label\":\"yellow TERMINAL DINER sign\",\"locks\":{\"geometry\":false,\"identity\":true,\"occlusion\":false,\"semantic\":true},\"observed\":true,\"properties\":{\"text\":\"TERMINAL DINER\"},\"source_attributes\":{\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-sign_01\",\"kind\":\"SIGNAGE\",\"observed\":true,\"preservation_level\":\"P0\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.455,0.527,0.6,0.628],\"roles\":[\"IDENTITY_ANCHOR\",\"RELATIONSHIP_ANCHOR\"],\"semantic_lock\":true},\"source_kind\":\"SIGNAGE\",\"type\":\"sign\"}},{\"id\":\"policy:camera\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":\"CG-S\"},{\"id\":\"policy:cil\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":{\"commands\":\"/sc-core /sc-lock\",\"resolved\":{\"aspect_ratio\":null,\"camera\":\"CG-S\",\"explicit_fear_city_profile_override\":false,\"fear_city_identity\":null,\"frontalization\":null,\"identity_lock\":null,\"mode\":\"T01\",\"occlusion_lock\":null,\"preservation\":null,\"profile\":\"VP00\",\"street_presence\":null,\"uncertainty\":null}}},{\"id\":\"policy:material_intensity_delta\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":0},{\"id\":\"policy:mode\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":\"T01\"},{\"id\":\"policy:occlusion_locks\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":[]},{\"id\":\"policy:pre_generation_gate\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":{\"findings\":[],\"reference_preflight\":{\"admitted\":[],\"rejected\":[],\"status\":\"PASS\"},\"status\":\"PASS\"}},{\"id\":\"policy:profile\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":\"VP00\"},{\"id\":\"policy:reference_features\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":[]},{\"id\":\"policy:reference_reasoning\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":{\"admissions\":[],\"generation_projection\":[],\"locked_unknowns\":[],\"need_results\":{},\"queries\":0,\"query_budget\":4,\"status\":\"READY\",\"trace\":[],\"unresolved_required\":[],\"version\":\"RR-2.0\"}},{\"id\":\"policy:semantic_text_lock\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":\"STRICT\"},{\"id\":\"policy:text_render_plan\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":{\"proposed_text\":{\"billboard_01\":null,\"fascia_01\":null,\"sign_01\":\"TERMINAL DINER\"},\"tokens\":[{\"confidence\":0.99,\"identity_bearing\":true,\"literal\":\"TERMINAL DINER\",\"numeral\":false,\"preservation_level\":\"P0\",\"state\":\"FROZEN_EXACT\",\"token_id\":\"sign_01\"},{\"confidence\":0.2,\"identity_bearing\":false,\"literal\":\"\",\"numeral\":false,\"preservation_level\":\"P2\",\"state\":\"MASK_GRAPHIC_ONLY\",\"token_id\":\"fascia_01\"},{\"confidence\":0.0,\"identity_bearing\":false,\"literal\":\"\",\"numeral\":false,\"preservation_level\":\"P2\",\"state\":\"MASK_GRAPHIC_ONLY\",\"token_id\":\"billboard_01\"}]}},{\"id\":\"source_identity\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\"}],\"stable_cgc\":{\"camera\":\"CG-S\",\"cil\":{\"commands\":\"/sc-core /sc-lock\",\"resolved\":{\"aspect_ratio\":null,\"camera\":\"CG-S\",\"explicit_fear_city_profile_override\":false,\"fear_city_identity\":null,\"frontalization\":null,\"identity_lock\":null,\"mode\":\"T01\",\"occlusion_lock\":null,\"preservation\":null,\"profile\":\"VP00\",\"street_presence\":null,\"uncertainty\":null}},\"forbid\":[\"Add hidden architecture, rooftop equipment, geographic identity or documentary history.\",\"Invent or complete exact text on fascia_01 or untranscribed billboard_01.\",\"break_protected_relationships:diner_01\",\"break_protected_relationships:facade_01\",\"break_protected_relationships:sign_01\"],\"infer\":[],\"material_intensity_delta\":0,\"mode\":\"T01\",\"occlusion_locks\":[],\"pre_generation_gate\":{\"findings\":[],\"reference_preflight\":{\"admitted\":[],\"rejected\":[],\"status\":\"PASS\"},\"status\":\"PASS\"},\"preserve\":[\"Source framing, oblique view, visible facade, diner storefront and graphic layouts.\",\"billboard_01:upper advertising board; wording not transcribed:PRESERVE_CONTEXT\",\"diner_01:visible street-level diner storefront with striped fascia:PRESERVE_EXACT\",\"facade_01:visible left masonry facade and exterior fire escape:PRESERVE_EXACT\",\"fascia_01:left storefront fascia; exact lettering uncertain:PRESERVE_CONTEXT\",\"sign_01: TERMINAL above DINER in two lines; preserve exact spelling.\",\"sign_01:yellow TERMINAL DINER sign:PRESERVE_EXACT\"],\"profile\":\"VP00\",\"reference_features\":[],\"reference_reasoning\":{\"admissions\":[],\"generation_projection\":[],\"locked_unknowns\":[],\"need_results\":{},\"queries\":0,\"query_budget\":4,\"status\":\"READY\",\"trace\":[],\"unresolved_required\":[],\"version\":\"RR-2.0\"},\"remove\":[],\"scene_intelligence\":{\"entity_actions\":[{\"action\":\"PRESERVE_CONTEXT\",\"entity_id\":\"billboard_01\",\"protected_relationships\":[],\"relationship_lock\":false,\"salience\":{\"axes\":{\"identity_salience\":0.0,\"relationship_centrality\":0.0,\"structural_dependency\":0.0,\"task_relevance\":0.0,\"temporal_relevance\":0.0},\"band\":\"MINOR_ATTENTION\",\"score\":0.0}},{\"action\":\"PRESERVE_CONTEXT\",\"entity_id\":\"fascia_01\",\"protected_relationships\":[],\"relationship_lock\":false,\"salience\":{\"axes\":{\"identity_salience\":0.0,\"relationship_centrality\":0.0,\"structural_dependency\":0.0,\"task_relevance\":0.0,\"temporal_relevance\":0.0},\"band\":\"MINOR_ATTENTION\",\"score\":0.0}},{\"action\":\"PRESERVE_EXACT\",\"entity_id\":\"diner_01\",\"protected_relationships\":[\"rel_facade_left_of_diner\",\"rel_sign_above_diner\"],\"relationship_lock\":true,\"salience\":{\"axes\":{\"identity_salience\":0.0,\"relationship_centrality\":0.0,\"structural_dependency\":0.0,\"task_relevance\":0.0,\"temporal_relevance\":0.0},\"band\":\"MINOR_ATTENTION\",\"score\":0.0}},{\"action\":\"PRESERVE_EXACT\",\"entity_id\":\"facade_01\",\"protected_relationships\":[\"rel_facade_left_of_diner\"],\"relationship_lock\":true,\"salience\":{\"axes\":{\"identity_salience\":0.0,\"relationship_centrality\":0.0,\"structural_dependency\":0.0,\"task_relevance\":0.0,\"temporal_relevance\":0.0},\"band\":\"MINOR_ATTENTION\",\"score\":0.0}},{\"action\":\"PRESERVE_EXACT\",\"entity_id\":\"sign_01\",\"protected_relationships\":[\"rel_sign_above_diner\"],\"relationship_lock\":true,\"salience\":{\"axes\":{\"identity_salience\":0.0,\"relationship_centrality\":0.0,\"structural_dependency\":0.0,\"task_relevance\":0.0,\"temporal_relevance\":0.0},\"band\":\"MINOR_ATTENTION\",\"score\":0.0}}],\"identity_anchors\":[\"diner_01\",\"sign_01\"],\"protected_relationships\":[{\"confidence\":\"HIGH\",\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-rel_facade_left_of_diner\",\"object\":\"diner_01\",\"predicate\":\"LEFT_OF\",\"protection\":\"PR1\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.025,0.065,0.945,0.956],\"relationship_id\":\"rel_facade_left_of_diner\",\"subject\":\"facade_01\"},{\"confidence\":\"HIGH\",\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-rel_sign_above_diner\",\"object\":\"diner_01\",\"predicate\":\"ABOVE\",\"protection\":\"PR0\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.455,0.527,0.945,0.951],\"relationship_id\":\"rel_sign_above_diner\",\"subject\":\"sign_01\"}],\"reference_need_hints\":[],\"scene_id\":\"VSG2B-R2B-D-NEW-01\",\"unknown_locks\":[]},\"semantic_text_lock\":\"STRICT\",\"source_identity\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"text_render_plan\":{\"proposed_text\":{\"billboard_01\":null,\"fascia_01\":null,\"sign_01\":\"TERMINAL DINER\"},\"tokens\":[{\"confidence\":0.99,\"identity_bearing\":true,\"literal\":\"TERMINAL DINER\",\"numeral\":false,\"preservation_level\":\"P0\",\"state\":\"FROZEN_EXACT\",\"token_id\":\"sign_01\"},{\"confidence\":0.2,\"identity_bearing\":false,\"literal\":\"\",\"numeral\":false,\"preservation_level\":\"P2\",\"state\":\"MASK_GRAPHIC_ONLY\",\"token_id\":\"fascia_01\"},{\"confidence\":0.0,\"identity_bearing\":false,\"literal\":\"\",\"numeral\":false,\"preservation_level\":\"P2\",\"state\":\"MASK_GRAPHIC_ONLY\",\"token_id\":\"billboard_01\"}]},\"transform\":[],\"unknown\":[\"Exact lettering on fascia_01 is uncertain; billboard_01 wording is not transcribed in this annotation.\",\"Hidden interiors and unseen building surfaces are unannotated.\"]}}",
+      "utf8_bytes": 13501,
+      "characters": 13501,
+      "sha256": "6bcfca3589562f02e54a21ba15e21e0267238d64f16b7ba9326e210133b8df05",
+      "ascii": true,
+      "content_tokens": 5686,
+      "special_tokens": 2,
+      "tokens_with_special": 5688,
+      "tokenizer_capacity": 77,
+      "encoder_capacity": 77,
+      "overflow": 5611,
+      "token_ids_sha256": "82b4efe9885599b2e5f4b87f4459adfaa13ab4c931c0734ad105bf7dbecf59bd",
+      "blocks_75": 76,
+      "last_block_content_tokens": 61,
+      "equivalence": "PASS_ASCII_DOMAIN",
+      "chunk_coverage": "PASS_TOKEN_SEQUENCE_IDENTITY"
+    },
+    {
+      "name": "common.stable_cgc",
+      "role": "diagnostic component; not separately encoded",
+      "text": "{\"camera\":\"CG-S\",\"cil\":{\"commands\":\"/sc-core /sc-lock\",\"resolved\":{\"aspect_ratio\":null,\"camera\":\"CG-S\",\"explicit_fear_city_profile_override\":false,\"fear_city_identity\":null,\"frontalization\":null,\"identity_lock\":null,\"mode\":\"T01\",\"occlusion_lock\":null,\"preservation\":null,\"profile\":\"VP00\",\"street_presence\":null,\"uncertainty\":null}},\"forbid\":[\"Add hidden architecture, rooftop equipment, geographic identity or documentary history.\",\"Invent or complete exact text on fascia_01 or untranscribed billboard_01.\",\"break_protected_relationships:diner_01\",\"break_protected_relationships:facade_01\",\"break_protected_relationships:sign_01\"],\"infer\":[],\"material_intensity_delta\":0,\"mode\":\"T01\",\"occlusion_locks\":[],\"pre_generation_gate\":{\"findings\":[],\"reference_preflight\":{\"admitted\":[],\"rejected\":[],\"status\":\"PASS\"},\"status\":\"PASS\"},\"preserve\":[\"Source framing, oblique view, visible facade, diner storefront and graphic layouts.\",\"billboard_01:upper advertising board; wording not transcribed:PRESERVE_CONTEXT\",\"diner_01:visible street-level diner storefront with striped fascia:PRESERVE_EXACT\",\"facade_01:visible left masonry facade and exterior fire escape:PRESERVE_EXACT\",\"fascia_01:left storefront fascia; exact lettering uncertain:PRESERVE_CONTEXT\",\"sign_01: TERMINAL above DINER in two lines; preserve exact spelling.\",\"sign_01:yellow TERMINAL DINER sign:PRESERVE_EXACT\"],\"profile\":\"VP00\",\"reference_features\":[],\"reference_reasoning\":{\"admissions\":[],\"generation_projection\":[],\"locked_unknowns\":[],\"need_results\":{},\"queries\":0,\"query_budget\":4,\"status\":\"READY\",\"trace\":[],\"unresolved_required\":[],\"version\":\"RR-2.0\"},\"remove\":[],\"scene_intelligence\":{\"entity_actions\":[{\"action\":\"PRESERVE_CONTEXT\",\"entity_id\":\"billboard_01\",\"protected_relationships\":[],\"relationship_lock\":false,\"salience\":{\"axes\":{\"identity_salience\":0.0,\"relationship_centrality\":0.0,\"structural_dependency\":0.0,\"task_relevance\":0.0,\"temporal_relevance\":0.0},\"band\":\"MINOR_ATTENTION\",\"score\":0.0}},{\"action\":\"PRESERVE_CONTEXT\",\"entity_id\":\"fascia_01\",\"protected_relationships\":[],\"relationship_lock\":false,\"salience\":{\"axes\":{\"identity_salience\":0.0,\"relationship_centrality\":0.0,\"structural_dependency\":0.0,\"task_relevance\":0.0,\"temporal_relevance\":0.0},\"band\":\"MINOR_ATTENTION\",\"score\":0.0}},{\"action\":\"PRESERVE_EXACT\",\"entity_id\":\"diner_01\",\"protected_relationships\":[\"rel_facade_left_of_diner\",\"rel_sign_above_diner\"],\"relationship_lock\":true,\"salience\":{\"axes\":{\"identity_salience\":0.0,\"relationship_centrality\":0.0,\"structural_dependency\":0.0,\"task_relevance\":0.0,\"temporal_relevance\":0.0},\"band\":\"MINOR_ATTENTION\",\"score\":0.0}},{\"action\":\"PRESERVE_EXACT\",\"entity_id\":\"facade_01\",\"protected_relationships\":[\"rel_facade_left_of_diner\"],\"relationship_lock\":true,\"salience\":{\"axes\":{\"identity_salience\":0.0,\"relationship_centrality\":0.0,\"structural_dependency\":0.0,\"task_relevance\":0.0,\"temporal_relevance\":0.0},\"band\":\"MINOR_ATTENTION\",\"score\":0.0}},{\"action\":\"PRESERVE_EXACT\",\"entity_id\":\"sign_01\",\"protected_relationships\":[\"rel_sign_above_diner\"],\"relationship_lock\":true,\"salience\":{\"axes\":{\"identity_salience\":0.0,\"relationship_centrality\":0.0,\"structural_dependency\":0.0,\"task_relevance\":0.0,\"temporal_relevance\":0.0},\"band\":\"MINOR_ATTENTION\",\"score\":0.0}}],\"identity_anchors\":[\"diner_01\",\"sign_01\"],\"protected_relationships\":[{\"confidence\":\"HIGH\",\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-rel_facade_left_of_diner\",\"object\":\"diner_01\",\"predicate\":\"LEFT_OF\",\"protection\":\"PR1\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.025,0.065,0.945,0.956],\"relationship_id\":\"rel_facade_left_of_diner\",\"subject\":\"facade_01\"},{\"confidence\":\"HIGH\",\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-rel_sign_above_diner\",\"object\":\"diner_01\",\"predicate\":\"ABOVE\",\"protection\":\"PR0\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.455,0.527,0.945,0.951],\"relationship_id\":\"rel_sign_above_diner\",\"subject\":\"sign_01\"}],\"reference_need_hints\":[],\"scene_id\":\"VSG2B-R2B-D-NEW-01\",\"unknown_locks\":[]},\"semantic_text_lock\":\"STRICT\",\"source_identity\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"text_render_plan\":{\"proposed_text\":{\"billboard_01\":null,\"fascia_01\":null,\"sign_01\":\"TERMINAL DINER\"},\"tokens\":[{\"confidence\":0.99,\"identity_bearing\":true,\"literal\":\"TERMINAL DINER\",\"numeral\":false,\"preservation_level\":\"P0\",\"state\":\"FROZEN_EXACT\",\"token_id\":\"sign_01\"},{\"confidence\":0.2,\"identity_bearing\":false,\"literal\":\"\",\"numeral\":false,\"preservation_level\":\"P2\",\"state\":\"MASK_GRAPHIC_ONLY\",\"token_id\":\"fascia_01\"},{\"confidence\":0.0,\"identity_bearing\":false,\"literal\":\"\",\"numeral\":false,\"preservation_level\":\"P2\",\"state\":\"MASK_GRAPHIC_ONLY\",\"token_id\":\"billboard_01\"}]},\"transform\":[],\"unknown\":[\"Exact lettering on fascia_01 is uncertain; billboard_01 wording is not transcribed in this annotation.\",\"Hidden interiors and unseen building surfaces are unannotated.\"]}",
+      "utf8_bytes": 5023,
+      "characters": 5023,
+      "sha256": "44f6181ffcb2bdd253087f17aca9f9d18e31b77d2d8d61e0cc1249a59fae3ce0",
+      "ascii": true,
+      "content_tokens": 1918,
+      "special_tokens": 2,
+      "tokens_with_special": 1920,
+      "tokenizer_capacity": 77,
+      "encoder_capacity": 77,
+      "overflow": 1843,
+      "token_ids_sha256": "d743a228f73906db44185487058540a5019c09e4188c186d13b41ed448e55d91",
+      "blocks_75": 26,
+      "last_block_content_tokens": 43,
+      "equivalence": "PASS_ASCII_DOMAIN",
+      "chunk_coverage": "PASS_TOKEN_SEQUENCE_IDENTITY"
+    },
+    {
+      "name": "common.approved_source_restrictions",
+      "role": "diagnostic component; not separately encoded",
+      "text": "[{\"id\":\"action:billboard_01\",\"lock_ids\":[],\"priority\":\"P2\",\"value\":\"PRESERVE_CONTEXT\"},{\"id\":\"action:diner_01\",\"lock_ids\":[\"GL-GEO-DINER_01\"],\"priority\":\"P0\",\"value\":\"PRESERVE_EXACT\"},{\"id\":\"action:facade_01\",\"lock_ids\":[\"GL-GEO-FACADE_01\"],\"priority\":\"P0\",\"value\":\"PRESERVE_EXACT\"},{\"id\":\"action:fascia_01\",\"lock_ids\":[],\"priority\":\"P2\",\"value\":\"PRESERVE_CONTEXT\"},{\"id\":\"action:sign_01\",\"lock_ids\":[\"GL-SEM-SIGN_01\"],\"priority\":\"P0\",\"value\":\"PRESERVE_EXACT\"},{\"id\":\"directive:forbid\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[\"Add hidden architecture, rooftop equipment, geographic identity or documentary history.\",\"Invent or complete exact text on fascia_01 or untranscribed billboard_01.\",\"break_protected_relationships:diner_01\",\"break_protected_relationships:facade_01\",\"break_protected_relationships:sign_01\"]},{\"id\":\"directive:infer\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[]},{\"id\":\"directive:preserve\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[\"Source framing, oblique view, visible facade, diner storefront and graphic layouts.\",\"billboard_01:upper advertising board; wording not transcribed:PRESERVE_CONTEXT\",\"diner_01:visible street-level diner storefront with striped fascia:PRESERVE_EXACT\",\"facade_01:visible left masonry facade and exterior fire escape:PRESERVE_EXACT\",\"fascia_01:left storefront fascia; exact lettering uncertain:PRESERVE_CONTEXT\",\"sign_01: TERMINAL above DINER in two lines; preserve exact spelling.\",\"sign_01:yellow TERMINAL DINER sign:PRESERVE_EXACT\"]},{\"id\":\"directive:remove\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[]},{\"id\":\"directive:transform\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[]},{\"id\":\"directive:unknown\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[\"Exact lettering on fascia_01 is uncertain; billboard_01 wording is not transcribed in this annotation.\",\"Hidden interiors and unseen building surfaces are unannotated.\"]},{\"id\":\"identity_anchors\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[\"diner_01\",\"sign_01\"]},{\"id\":\"node:billboard_01\",\"lock_ids\":[],\"priority\":\"P2\",\"value\":{\"cardinality\":{\"max\":1,\"min\":1},\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-billboard_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.437,0.018,0.797,0.37]},\"label\":\"upper advertising board; wording not transcribed\",\"locks\":{\"geometry\":false,\"identity\":false,\"occlusion\":false,\"semantic\":false},\"observed\":true,\"source_attributes\":{\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-billboard_01\",\"kind\":\"SIGNAGE\",\"observed\":true,\"preservation_level\":\"P2\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.437,0.018,0.797,0.37],\"roles\":[\"CONTEXTUAL_SUPPORT\"]},\"source_kind\":\"SIGNAGE\",\"type\":\"sign\"}},{\"id\":\"node:diner_01\",\"lock_ids\":[\"GL-GEO-DINER_01\"],\"priority\":\"P0\",\"value\":{\"cardinality\":{\"max\":1,\"min\":1},\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-diner_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.478,0.668,0.945,0.951]},\"label\":\"visible street-level diner storefront with striped fascia\",\"locks\":{\"geometry\":true,\"identity\":true,\"occlusion\":false,\"semantic\":false},\"observed\":true,\"source_attributes\":{\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-diner_01\",\"kind\":\"STOREFRONT\",\"observed\":true,\"preservation_level\":\"P0\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.478,0.668,0.945,0.951],\"roles\":[\"IDENTITY_ANCHOR\",\"STRUCTURAL_CORE\"]},\"source_kind\":\"STOREFRONT\",\"type\":\"storefront\"}},{\"id\":\"node:facade_01\",\"lock_ids\":[\"GL-GEO-FACADE_01\"],\"priority\":\"P0\",\"value\":{\"cardinality\":{\"max\":1,\"min\":1},\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-facade_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.025,0.065,0.46,0.956]},\"label\":\"visible left masonry facade and exterior fire escape\",\"locks\":{\"geometry\":true,\"identity\":false,\"occlusion\":false,\"semantic\":false},\"observed\":true,\"source_attributes\":{\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-facade_01\",\"kind\":\"FACADE\",\"observed\":true,\"preservation_level\":\"P0\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.025,0.065,0.46,0.956],\"roles\":[\"STRUCTURAL_CORE\"]},\"source_kind\":\"FACADE\",\"type\":\"facade\"}},{\"id\":\"node:fascia_01\",\"lock_ids\":[],\"priority\":\"P2\",\"value\":{\"cardinality\":{\"max\":1,\"min\":1},\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-fascia_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.05,0.622,0.405,0.725]},\"label\":\"left storefront fascia; exact lettering uncertain\",\"locks\":{\"geometry\":false,\"identity\":false,\"occlusion\":false,\"semantic\":false},\"observed\":true,\"source_attributes\":{\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-fascia_01\",\"kind\":\"SIGNAGE\",\"observed\":true,\"preservation_level\":\"P2\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.05,0.622,0.405,0.725],\"roles\":[\"CONTEXTUAL_SUPPORT\"]},\"source_kind\":\"SIGNAGE\",\"type\":\"sign\"}},{\"id\":\"node:sign_01\",\"lock_ids\":[\"GL-SEM-SIGN_01\"],\"priority\":\"P0\",\"value\":{\"cardinality\":{\"max\":1,\"min\":1},\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-sign_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.455,0.527,0.6,0.628]},\"label\":\"yellow TERMINAL DINER sign\",\"locks\":{\"geometry\":false,\"identity\":true,\"occlusion\":false,\"semantic\":true},\"observed\":true,\"properties\":{\"text\":\"TERMINAL DINER\"},\"source_attributes\":{\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-sign_01\",\"kind\":\"SIGNAGE\",\"observed\":true,\"preservation_level\":\"P0\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.455,0.527,0.6,0.628],\"roles\":[\"IDENTITY_ANCHOR\",\"RELATIONSHIP_ANCHOR\"],\"semantic_lock\":true},\"source_kind\":\"SIGNAGE\",\"type\":\"sign\"}},{\"id\":\"policy:camera\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":\"CG-S\"},{\"id\":\"policy:cil\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":{\"commands\":\"/sc-core /sc-lock\",\"resolved\":{\"aspect_ratio\":null,\"camera\":\"CG-S\",\"explicit_fear_city_profile_override\":false,\"fear_city_identity\":null,\"frontalization\":null,\"identity_lock\":null,\"mode\":\"T01\",\"occlusion_lock\":null,\"preservation\":null,\"profile\":\"VP00\",\"street_presence\":null,\"uncertainty\":null}}},{\"id\":\"policy:material_intensity_delta\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":0},{\"id\":\"policy:mode\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":\"T01\"},{\"id\":\"policy:occlusion_locks\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":[]},{\"id\":\"policy:pre_generation_gate\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":{\"findings\":[],\"reference_preflight\":{\"admitted\":[],\"rejected\":[],\"status\":\"PASS\"},\"status\":\"PASS\"}},{\"id\":\"policy:profile\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":\"VP00\"},{\"id\":\"policy:reference_features\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":[]},{\"id\":\"policy:reference_reasoning\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":{\"admissions\":[],\"generation_projection\":[],\"locked_unknowns\":[],\"need_results\":{},\"queries\":0,\"query_budget\":4,\"status\":\"READY\",\"trace\":[],\"unresolved_required\":[],\"version\":\"RR-2.0\"}},{\"id\":\"policy:semantic_text_lock\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":\"STRICT\"},{\"id\":\"policy:text_render_plan\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":{\"proposed_text\":{\"billboard_01\":null,\"fascia_01\":null,\"sign_01\":\"TERMINAL DINER\"},\"tokens\":[{\"confidence\":0.99,\"identity_bearing\":true,\"literal\":\"TERMINAL DINER\",\"numeral\":false,\"preservation_level\":\"P0\",\"state\":\"FROZEN_EXACT\",\"token_id\":\"sign_01\"},{\"confidence\":0.2,\"identity_bearing\":false,\"literal\":\"\",\"numeral\":false,\"preservation_level\":\"P2\",\"state\":\"MASK_GRAPHIC_ONLY\",\"token_id\":\"fascia_01\"},{\"confidence\":0.0,\"identity_bearing\":false,\"literal\":\"\",\"numeral\":false,\"preservation_level\":\"P2\",\"state\":\"MASK_GRAPHIC_ONLY\",\"token_id\":\"billboard_01\"}]}},{\"id\":\"source_identity\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\"}]",
+      "utf8_bytes": 8431,
+      "characters": 8431,
+      "sha256": "67bc4567be678ff4d76c6b8b6559bf128b19a2702d3b4103f4332737a4a3fc16",
+      "ascii": true,
+      "content_tokens": 3752,
+      "special_tokens": 2,
+      "tokens_with_special": 3754,
+      "tokenizer_capacity": 77,
+      "encoder_capacity": 77,
+      "overflow": 3677,
+      "token_ids_sha256": "ae75a53fc908cdbbad1ad2d093682d2301af309a75ef8f1736314f6375b43849",
+      "blocks_75": 51,
+      "last_block_content_tokens": 2,
+      "equivalence": "PASS_ASCII_DOMAIN",
+      "chunk_coverage": "PASS_TOKEN_SEQUENCE_IDENTITY"
+    },
+    {
+      "name": "A.JSONL",
+      "role": "exact persisted string",
+      "text": "{\"id\":\"edge:rel_facade_left_of_diner\",\"lock_ids\":[\"GL-GEO-DINER_01\",\"GL-GEO-FACADE_01\"],\"priority\":\"PR1\",\"value\":{\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-rel_facade_left_of_diner\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.025,0.065,0.945,0.956]},\"from\":\"facade_01\",\"protection\":\"PR1\",\"to\":\"diner_01\",\"type\":\"LEFT_OF\"}}\n{\"id\":\"edge:rel_sign_above_diner\",\"lock_ids\":[\"GL-GEO-DINER_01\"],\"priority\":\"PR0\",\"value\":{\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-rel_sign_above_diner\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.455,0.527,0.945,0.951]},\"from\":\"sign_01\",\"protection\":\"PR0\",\"to\":\"diner_01\",\"type\":\"ABOVE\"}}\n{\"id\":\"lock:GL-GEO-DINER_01\",\"lock_ids\":[\"GL-GEO-DINER_01\"],\"priority\":\"LOCK\",\"value\":{\"enforcement\":\"VALIDATE_ONLY\",\"expected\":{\"node_type\":\"storefront\",\"protected_topology\":[{\"from\":\"facade_01\",\"id\":\"rel_facade_left_of_diner\",\"to\":\"diner_01\",\"type\":\"LEFT_OF\"},{\"from\":\"sign_01\",\"id\":\"rel_sign_above_diner\",\"to\":\"diner_01\",\"type\":\"ABOVE\"}]},\"provenance\":{\"evidence\":{\"evidence_id\":\"D-OBS-diner_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.478,0.668,0.945,0.951]},\"source\":\"VSG_NODE_LOCK\"},\"strength\":\"ABSOLUTE\",\"target\":{\"id\":\"diner_01\",\"kind\":\"NODE\"},\"type\":\"GEOMETRY_LOCK\"}}\n{\"id\":\"lock:GL-GEO-FACADE_01\",\"lock_ids\":[\"GL-GEO-FACADE_01\"],\"priority\":\"LOCK\",\"value\":{\"enforcement\":\"VALIDATE_ONLY\",\"expected\":{\"node_type\":\"facade\",\"protected_topology\":[{\"from\":\"facade_01\",\"id\":\"rel_facade_left_of_diner\",\"to\":\"diner_01\",\"type\":\"LEFT_OF\"}]},\"provenance\":{\"evidence\":{\"evidence_id\":\"D-OBS-facade_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.025,0.065,0.46,0.956]},\"source\":\"VSG_NODE_LOCK\"},\"strength\":\"ABSOLUTE\",\"target\":{\"id\":\"facade_01\",\"kind\":\"NODE\"},\"type\":\"GEOMETRY_LOCK\"}}\n{\"id\":\"lock:GL-SEM-SIGN_01\",\"lock_ids\":[\"GL-SEM-SIGN_01\"],\"priority\":\"LOCK\",\"value\":{\"enforcement\":\"VALIDATE_ONLY\",\"expected\":{\"node_type\":\"sign\",\"text\":\"TERMINAL DINER\"},\"provenance\":{\"evidence\":{\"evidence_id\":\"D-OBS-sign_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.455,0.527,0.6,0.628]},\"source\":\"VSG_NODE_LOCK\"},\"strength\":\"ABSOLUTE\",\"target\":{\"id\":\"sign_01\",\"kind\":\"NODE\"},\"type\":\"SEMANTIC_TEXT_LOCK\"}}\n{\"id\":\"topology:billboard_01\",\"lock_ids\":[],\"priority\":\"P2\",\"value\":[]}\n{\"id\":\"topology:diner_01\",\"lock_ids\":[\"GL-GEO-DINER_01\"],\"priority\":\"P0\",\"value\":[\"rel_facade_left_of_diner\",\"rel_sign_above_diner\"]}\n{\"id\":\"topology:facade_01\",\"lock_ids\":[\"GL-GEO-FACADE_01\"],\"priority\":\"P0\",\"value\":[\"rel_facade_left_of_diner\"]}\n{\"id\":\"topology:fascia_01\",\"lock_ids\":[],\"priority\":\"P2\",\"value\":[]}\n{\"id\":\"topology:sign_01\",\"lock_ids\":[\"GL-SEM-SIGN_01\"],\"priority\":\"P0\",\"value\":[\"rel_sign_above_diner\"]}",
+      "utf8_bytes": 3045,
+      "characters": 3045,
+      "sha256": "328d079d323760aa4f2b7b8c27bb524db0d846bcff93f1e3f03ef27d9ddb4a40",
+      "ascii": true,
+      "content_tokens": 1619,
+      "special_tokens": 2,
+      "tokens_with_special": 1621,
+      "tokenizer_capacity": 77,
+      "encoder_capacity": 77,
+      "overflow": 1544,
+      "token_ids_sha256": "d139bd3aadeafbc3a8cecefdd0293cb21d0392aab85ac826b83817c75486fb15",
+      "blocks_75": 22,
+      "last_block_content_tokens": 44,
+      "equivalence": "PASS_ASCII_DOMAIN",
+      "chunk_coverage": "PASS_TOKEN_SEQUENCE_IDENTITY"
+    },
+    {
+      "name": "A.prompt",
+      "role": "proposed assembly; no production bridge exists",
+      "text": "{\"approved_source_restrictions\":[{\"id\":\"action:billboard_01\",\"lock_ids\":[],\"priority\":\"P2\",\"value\":\"PRESERVE_CONTEXT\"},{\"id\":\"action:diner_01\",\"lock_ids\":[\"GL-GEO-DINER_01\"],\"priority\":\"P0\",\"value\":\"PRESERVE_EXACT\"},{\"id\":\"action:facade_01\",\"lock_ids\":[\"GL-GEO-FACADE_01\"],\"priority\":\"P0\",\"value\":\"PRESERVE_EXACT\"},{\"id\":\"action:fascia_01\",\"lock_ids\":[],\"priority\":\"P2\",\"value\":\"PRESERVE_CONTEXT\"},{\"id\":\"action:sign_01\",\"lock_ids\":[\"GL-SEM-SIGN_01\"],\"priority\":\"P0\",\"value\":\"PRESERVE_EXACT\"},{\"id\":\"directive:forbid\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[\"Add hidden architecture, rooftop equipment, geographic identity or documentary history.\",\"Invent or complete exact text on fascia_01 or untranscribed billboard_01.\",\"break_protected_relationships:diner_01\",\"break_protected_relationships:facade_01\",\"break_protected_relationships:sign_01\"]},{\"id\":\"directive:infer\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[]},{\"id\":\"directive:preserve\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[\"Source framing, oblique view, visible facade, diner storefront and graphic layouts.\",\"billboard_01:upper advertising board; wording not transcribed:PRESERVE_CONTEXT\",\"diner_01:visible street-level diner storefront with striped fascia:PRESERVE_EXACT\",\"facade_01:visible left masonry facade and exterior fire escape:PRESERVE_EXACT\",\"fascia_01:left storefront fascia; exact lettering uncertain:PRESERVE_CONTEXT\",\"sign_01: TERMINAL above DINER in two lines; preserve exact spelling.\",\"sign_01:yellow TERMINAL DINER sign:PRESERVE_EXACT\"]},{\"id\":\"directive:remove\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[]},{\"id\":\"directive:transform\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[]},{\"id\":\"directive:unknown\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[\"Exact lettering on fascia_01 is uncertain; billboard_01 wording is not transcribed in this annotation.\",\"Hidden interiors and unseen building surfaces are unannotated.\"]},{\"id\":\"identity_anchors\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[\"diner_01\",\"sign_01\"]},{\"id\":\"node:billboard_01\",\"lock_ids\":[],\"priority\":\"P2\",\"value\":{\"cardinality\":{\"max\":1,\"min\":1},\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-billboard_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.437,0.018,0.797,0.37]},\"label\":\"upper advertising board; wording not transcribed\",\"locks\":{\"geometry\":false,\"identity\":false,\"occlusion\":false,\"semantic\":false},\"observed\":true,\"source_attributes\":{\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-billboard_01\",\"kind\":\"SIGNAGE\",\"observed\":true,\"preservation_level\":\"P2\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.437,0.018,0.797,0.37],\"roles\":[\"CONTEXTUAL_SUPPORT\"]},\"source_kind\":\"SIGNAGE\",\"type\":\"sign\"}},{\"id\":\"node:diner_01\",\"lock_ids\":[\"GL-GEO-DINER_01\"],\"priority\":\"P0\",\"value\":{\"cardinality\":{\"max\":1,\"min\":1},\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-diner_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.478,0.668,0.945,0.951]},\"label\":\"visible street-level diner storefront with striped fascia\",\"locks\":{\"geometry\":true,\"identity\":true,\"occlusion\":false,\"semantic\":false},\"observed\":true,\"source_attributes\":{\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-diner_01\",\"kind\":\"STOREFRONT\",\"observed\":true,\"preservation_level\":\"P0\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.478,0.668,0.945,0.951],\"roles\":[\"IDENTITY_ANCHOR\",\"STRUCTURAL_CORE\"]},\"source_kind\":\"STOREFRONT\",\"type\":\"storefront\"}},{\"id\":\"node:facade_01\",\"lock_ids\":[\"GL-GEO-FACADE_01\"],\"priority\":\"P0\",\"value\":{\"cardinality\":{\"max\":1,\"min\":1},\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-facade_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.025,0.065,0.46,0.956]},\"label\":\"visible left masonry facade and exterior fire escape\",\"locks\":{\"geometry\":true,\"identity\":false,\"occlusion\":false,\"semantic\":false},\"observed\":true,\"source_attributes\":{\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-facade_01\",\"kind\":\"FACADE\",\"observed\":true,\"preservation_level\":\"P0\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.025,0.065,0.46,0.956],\"roles\":[\"STRUCTURAL_CORE\"]},\"source_kind\":\"FACADE\",\"type\":\"facade\"}},{\"id\":\"node:fascia_01\",\"lock_ids\":[],\"priority\":\"P2\",\"value\":{\"cardinality\":{\"max\":1,\"min\":1},\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-fascia_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.05,0.622,0.405,0.725]},\"label\":\"left storefront fascia; exact lettering uncertain\",\"locks\":{\"geometry\":false,\"identity\":false,\"occlusion\":false,\"semantic\":false},\"observed\":true,\"source_attributes\":{\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-fascia_01\",\"kind\":\"SIGNAGE\",\"observed\":true,\"preservation_level\":\"P2\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.05,0.622,0.405,0.725],\"roles\":[\"CONTEXTUAL_SUPPORT\"]},\"source_kind\":\"SIGNAGE\",\"type\":\"sign\"}},{\"id\":\"node:sign_01\",\"lock_ids\":[\"GL-SEM-SIGN_01\"],\"priority\":\"P0\",\"value\":{\"cardinality\":{\"max\":1,\"min\":1},\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-sign_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.455,0.527,0.6,0.628]},\"label\":\"yellow TERMINAL DINER sign\",\"locks\":{\"geometry\":false,\"identity\":true,\"occlusion\":false,\"semantic\":true},\"observed\":true,\"properties\":{\"text\":\"TERMINAL DINER\"},\"source_attributes\":{\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-sign_01\",\"kind\":\"SIGNAGE\",\"observed\":true,\"preservation_level\":\"P0\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.455,0.527,0.6,0.628],\"roles\":[\"IDENTITY_ANCHOR\",\"RELATIONSHIP_ANCHOR\"],\"semantic_lock\":true},\"source_kind\":\"SIGNAGE\",\"type\":\"sign\"}},{\"id\":\"policy:camera\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":\"CG-S\"},{\"id\":\"policy:cil\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":{\"commands\":\"/sc-core /sc-lock\",\"resolved\":{\"aspect_ratio\":null,\"camera\":\"CG-S\",\"explicit_fear_city_profile_override\":false,\"fear_city_identity\":null,\"frontalization\":null,\"identity_lock\":null,\"mode\":\"T01\",\"occlusion_lock\":null,\"preservation\":null,\"profile\":\"VP00\",\"street_presence\":null,\"uncertainty\":null}}},{\"id\":\"policy:material_intensity_delta\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":0},{\"id\":\"policy:mode\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":\"T01\"},{\"id\":\"policy:occlusion_locks\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":[]},{\"id\":\"policy:pre_generation_gate\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":{\"findings\":[],\"reference_preflight\":{\"admitted\":[],\"rejected\":[],\"status\":\"PASS\"},\"status\":\"PASS\"}},{\"id\":\"policy:profile\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":\"VP00\"},{\"id\":\"policy:reference_features\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":[]},{\"id\":\"policy:reference_reasoning\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":{\"admissions\":[],\"generation_projection\":[],\"locked_unknowns\":[],\"need_results\":{},\"queries\":0,\"query_budget\":4,\"status\":\"READY\",\"trace\":[],\"unresolved_required\":[],\"version\":\"RR-2.0\"}},{\"id\":\"policy:semantic_text_lock\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":\"STRICT\"},{\"id\":\"policy:text_render_plan\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":{\"proposed_text\":{\"billboard_01\":null,\"fascia_01\":null,\"sign_01\":\"TERMINAL DINER\"},\"tokens\":[{\"confidence\":0.99,\"identity_bearing\":true,\"literal\":\"TERMINAL DINER\",\"numeral\":false,\"preservation_level\":\"P0\",\"state\":\"FROZEN_EXACT\",\"token_id\":\"sign_01\"},{\"confidence\":0.2,\"identity_bearing\":false,\"literal\":\"\",\"numeral\":false,\"preservation_level\":\"P2\",\"state\":\"MASK_GRAPHIC_ONLY\",\"token_id\":\"fascia_01\"},{\"confidence\":0.0,\"identity_bearing\":false,\"literal\":\"\",\"numeral\":false,\"preservation_level\":\"P2\",\"state\":\"MASK_GRAPHIC_ONLY\",\"token_id\":\"billboard_01\"}]}},{\"id\":\"source_identity\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\"}],\"stable_cgc\":{\"camera\":\"CG-S\",\"cil\":{\"commands\":\"/sc-core /sc-lock\",\"resolved\":{\"aspect_ratio\":null,\"camera\":\"CG-S\",\"explicit_fear_city_profile_override\":false,\"fear_city_identity\":null,\"frontalization\":null,\"identity_lock\":null,\"mode\":\"T01\",\"occlusion_lock\":null,\"preservation\":null,\"profile\":\"VP00\",\"street_presence\":null,\"uncertainty\":null}},\"forbid\":[\"Add hidden architecture, rooftop equipment, geographic identity or documentary history.\",\"Invent or complete exact text on fascia_01 or untranscribed billboard_01.\",\"break_protected_relationships:diner_01\",\"break_protected_relationships:facade_01\",\"break_protected_relationships:sign_01\"],\"infer\":[],\"material_intensity_delta\":0,\"mode\":\"T01\",\"occlusion_locks\":[],\"pre_generation_gate\":{\"findings\":[],\"reference_preflight\":{\"admitted\":[],\"rejected\":[],\"status\":\"PASS\"},\"status\":\"PASS\"},\"preserve\":[\"Source framing, oblique view, visible facade, diner storefront and graphic layouts.\",\"billboard_01:upper advertising board; wording not transcribed:PRESERVE_CONTEXT\",\"diner_01:visible street-level diner storefront with striped fascia:PRESERVE_EXACT\",\"facade_01:visible left masonry facade and exterior fire escape:PRESERVE_EXACT\",\"fascia_01:left storefront fascia; exact lettering uncertain:PRESERVE_CONTEXT\",\"sign_01: TERMINAL above DINER in two lines; preserve exact spelling.\",\"sign_01:yellow TERMINAL DINER sign:PRESERVE_EXACT\"],\"profile\":\"VP00\",\"reference_features\":[],\"reference_reasoning\":{\"admissions\":[],\"generation_projection\":[],\"locked_unknowns\":[],\"need_results\":{},\"queries\":0,\"query_budget\":4,\"status\":\"READY\",\"trace\":[],\"unresolved_required\":[],\"version\":\"RR-2.0\"},\"remove\":[],\"scene_intelligence\":{\"entity_actions\":[{\"action\":\"PRESERVE_CONTEXT\",\"entity_id\":\"billboard_01\",\"protected_relationships\":[],\"relationship_lock\":false,\"salience\":{\"axes\":{\"identity_salience\":0.0,\"relationship_centrality\":0.0,\"structural_dependency\":0.0,\"task_relevance\":0.0,\"temporal_relevance\":0.0},\"band\":\"MINOR_ATTENTION\",\"score\":0.0}},{\"action\":\"PRESERVE_CONTEXT\",\"entity_id\":\"fascia_01\",\"protected_relationships\":[],\"relationship_lock\":false,\"salience\":{\"axes\":{\"identity_salience\":0.0,\"relationship_centrality\":0.0,\"structural_dependency\":0.0,\"task_relevance\":0.0,\"temporal_relevance\":0.0},\"band\":\"MINOR_ATTENTION\",\"score\":0.0}},{\"action\":\"PRESERVE_EXACT\",\"entity_id\":\"diner_01\",\"protected_relationships\":[\"rel_facade_left_of_diner\",\"rel_sign_above_diner\"],\"relationship_lock\":true,\"salience\":{\"axes\":{\"identity_salience\":0.0,\"relationship_centrality\":0.0,\"structural_dependency\":0.0,\"task_relevance\":0.0,\"temporal_relevance\":0.0},\"band\":\"MINOR_ATTENTION\",\"score\":0.0}},{\"action\":\"PRESERVE_EXACT\",\"entity_id\":\"facade_01\",\"protected_relationships\":[\"rel_facade_left_of_diner\"],\"relationship_lock\":true,\"salience\":{\"axes\":{\"identity_salience\":0.0,\"relationship_centrality\":0.0,\"structural_dependency\":0.0,\"task_relevance\":0.0,\"temporal_relevance\":0.0},\"band\":\"MINOR_ATTENTION\",\"score\":0.0}},{\"action\":\"PRESERVE_EXACT\",\"entity_id\":\"sign_01\",\"protected_relationships\":[\"rel_sign_above_diner\"],\"relationship_lock\":true,\"salience\":{\"axes\":{\"identity_salience\":0.0,\"relationship_centrality\":0.0,\"structural_dependency\":0.0,\"task_relevance\":0.0,\"temporal_relevance\":0.0},\"band\":\"MINOR_ATTENTION\",\"score\":0.0}}],\"identity_anchors\":[\"diner_01\",\"sign_01\"],\"protected_relationships\":[{\"confidence\":\"HIGH\",\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-rel_facade_left_of_diner\",\"object\":\"diner_01\",\"predicate\":\"LEFT_OF\",\"protection\":\"PR1\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.025,0.065,0.945,0.956],\"relationship_id\":\"rel_facade_left_of_diner\",\"subject\":\"facade_01\"},{\"confidence\":\"HIGH\",\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-rel_sign_above_diner\",\"object\":\"diner_01\",\"predicate\":\"ABOVE\",\"protection\":\"PR0\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.455,0.527,0.945,0.951],\"relationship_id\":\"rel_sign_above_diner\",\"subject\":\"sign_01\"}],\"reference_need_hints\":[],\"scene_id\":\"VSG2B-R2B-D-NEW-01\",\"unknown_locks\":[]},\"semantic_text_lock\":\"STRICT\",\"source_identity\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"text_render_plan\":{\"proposed_text\":{\"billboard_01\":null,\"fascia_01\":null,\"sign_01\":\"TERMINAL DINER\"},\"tokens\":[{\"confidence\":0.99,\"identity_bearing\":true,\"literal\":\"TERMINAL DINER\",\"numeral\":false,\"preservation_level\":\"P0\",\"state\":\"FROZEN_EXACT\",\"token_id\":\"sign_01\"},{\"confidence\":0.2,\"identity_bearing\":false,\"literal\":\"\",\"numeral\":false,\"preservation_level\":\"P2\",\"state\":\"MASK_GRAPHIC_ONLY\",\"token_id\":\"fascia_01\"},{\"confidence\":0.0,\"identity_bearing\":false,\"literal\":\"\",\"numeral\":false,\"preservation_level\":\"P2\",\"state\":\"MASK_GRAPHIC_ONLY\",\"token_id\":\"billboard_01\"}]},\"transform\":[],\"unknown\":[\"Exact lettering on fascia_01 is uncertain; billboard_01 wording is not transcribed in this annotation.\",\"Hidden interiors and unseen building surfaces are unannotated.\"]}}\n{\"id\":\"edge:rel_facade_left_of_diner\",\"lock_ids\":[\"GL-GEO-DINER_01\",\"GL-GEO-FACADE_01\"],\"priority\":\"PR1\",\"value\":{\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-rel_facade_left_of_diner\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.025,0.065,0.945,0.956]},\"from\":\"facade_01\",\"protection\":\"PR1\",\"to\":\"diner_01\",\"type\":\"LEFT_OF\"}}\n{\"id\":\"edge:rel_sign_above_diner\",\"lock_ids\":[\"GL-GEO-DINER_01\"],\"priority\":\"PR0\",\"value\":{\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-rel_sign_above_diner\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.455,0.527,0.945,0.951]},\"from\":\"sign_01\",\"protection\":\"PR0\",\"to\":\"diner_01\",\"type\":\"ABOVE\"}}\n{\"id\":\"lock:GL-GEO-DINER_01\",\"lock_ids\":[\"GL-GEO-DINER_01\"],\"priority\":\"LOCK\",\"value\":{\"enforcement\":\"VALIDATE_ONLY\",\"expected\":{\"node_type\":\"storefront\",\"protected_topology\":[{\"from\":\"facade_01\",\"id\":\"rel_facade_left_of_diner\",\"to\":\"diner_01\",\"type\":\"LEFT_OF\"},{\"from\":\"sign_01\",\"id\":\"rel_sign_above_diner\",\"to\":\"diner_01\",\"type\":\"ABOVE\"}]},\"provenance\":{\"evidence\":{\"evidence_id\":\"D-OBS-diner_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.478,0.668,0.945,0.951]},\"source\":\"VSG_NODE_LOCK\"},\"strength\":\"ABSOLUTE\",\"target\":{\"id\":\"diner_01\",\"kind\":\"NODE\"},\"type\":\"GEOMETRY_LOCK\"}}\n{\"id\":\"lock:GL-GEO-FACADE_01\",\"lock_ids\":[\"GL-GEO-FACADE_01\"],\"priority\":\"LOCK\",\"value\":{\"enforcement\":\"VALIDATE_ONLY\",\"expected\":{\"node_type\":\"facade\",\"protected_topology\":[{\"from\":\"facade_01\",\"id\":\"rel_facade_left_of_diner\",\"to\":\"diner_01\",\"type\":\"LEFT_OF\"}]},\"provenance\":{\"evidence\":{\"evidence_id\":\"D-OBS-facade_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.025,0.065,0.46,0.956]},\"source\":\"VSG_NODE_LOCK\"},\"strength\":\"ABSOLUTE\",\"target\":{\"id\":\"facade_01\",\"kind\":\"NODE\"},\"type\":\"GEOMETRY_LOCK\"}}\n{\"id\":\"lock:GL-SEM-SIGN_01\",\"lock_ids\":[\"GL-SEM-SIGN_01\"],\"priority\":\"LOCK\",\"value\":{\"enforcement\":\"VALIDATE_ONLY\",\"expected\":{\"node_type\":\"sign\",\"text\":\"TERMINAL DINER\"},\"provenance\":{\"evidence\":{\"evidence_id\":\"D-OBS-sign_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.455,0.527,0.6,0.628]},\"source\":\"VSG_NODE_LOCK\"},\"strength\":\"ABSOLUTE\",\"target\":{\"id\":\"sign_01\",\"kind\":\"NODE\"},\"type\":\"SEMANTIC_TEXT_LOCK\"}}\n{\"id\":\"topology:billboard_01\",\"lock_ids\":[],\"priority\":\"P2\",\"value\":[]}\n{\"id\":\"topology:diner_01\",\"lock_ids\":[\"GL-GEO-DINER_01\"],\"priority\":\"P0\",\"value\":[\"rel_facade_left_of_diner\",\"rel_sign_above_diner\"]}\n{\"id\":\"topology:facade_01\",\"lock_ids\":[\"GL-GEO-FACADE_01\"],\"priority\":\"P0\",\"value\":[\"rel_facade_left_of_diner\"]}\n{\"id\":\"topology:fascia_01\",\"lock_ids\":[],\"priority\":\"P2\",\"value\":[]}\n{\"id\":\"topology:sign_01\",\"lock_ids\":[\"GL-SEM-SIGN_01\"],\"priority\":\"P0\",\"value\":[\"rel_sign_above_diner\"]}",
+      "utf8_bytes": 16547,
+      "characters": 16547,
+      "sha256": "c5e84384bd1e8b1c24921fc78aedc55f8fb7465b44cbdc6673ed1ce35e626eef",
+      "ascii": true,
+      "content_tokens": 7305,
+      "special_tokens": 2,
+      "tokens_with_special": 7307,
+      "tokenizer_capacity": 77,
+      "encoder_capacity": 77,
+      "overflow": 7230,
+      "token_ids_sha256": "6e6871701e767b5c5456ae55c21f41b194b607e89596b7552925b5f73e2e5a88",
+      "blocks_75": 98,
+      "last_block_content_tokens": 30,
+      "equivalence": "PASS_ASCII_DOMAIN",
+      "chunk_coverage": "PASS_TOKEN_SEQUENCE_IDENTITY"
+    },
+    {
+      "name": "B.prompt",
+      "role": "proposed assembly; B array never serialized to prompt",
+      "text": "{\"approved_source_restrictions\":[{\"id\":\"action:billboard_01\",\"lock_ids\":[],\"priority\":\"P2\",\"value\":\"PRESERVE_CONTEXT\"},{\"id\":\"action:diner_01\",\"lock_ids\":[\"GL-GEO-DINER_01\"],\"priority\":\"P0\",\"value\":\"PRESERVE_EXACT\"},{\"id\":\"action:facade_01\",\"lock_ids\":[\"GL-GEO-FACADE_01\"],\"priority\":\"P0\",\"value\":\"PRESERVE_EXACT\"},{\"id\":\"action:fascia_01\",\"lock_ids\":[],\"priority\":\"P2\",\"value\":\"PRESERVE_CONTEXT\"},{\"id\":\"action:sign_01\",\"lock_ids\":[\"GL-SEM-SIGN_01\"],\"priority\":\"P0\",\"value\":\"PRESERVE_EXACT\"},{\"id\":\"directive:forbid\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[\"Add hidden architecture, rooftop equipment, geographic identity or documentary history.\",\"Invent or complete exact text on fascia_01 or untranscribed billboard_01.\",\"break_protected_relationships:diner_01\",\"break_protected_relationships:facade_01\",\"break_protected_relationships:sign_01\"]},{\"id\":\"directive:infer\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[]},{\"id\":\"directive:preserve\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[\"Source framing, oblique view, visible facade, diner storefront and graphic layouts.\",\"billboard_01:upper advertising board; wording not transcribed:PRESERVE_CONTEXT\",\"diner_01:visible street-level diner storefront with striped fascia:PRESERVE_EXACT\",\"facade_01:visible left masonry facade and exterior fire escape:PRESERVE_EXACT\",\"fascia_01:left storefront fascia; exact lettering uncertain:PRESERVE_CONTEXT\",\"sign_01: TERMINAL above DINER in two lines; preserve exact spelling.\",\"sign_01:yellow TERMINAL DINER sign:PRESERVE_EXACT\"]},{\"id\":\"directive:remove\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[]},{\"id\":\"directive:transform\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[]},{\"id\":\"directive:unknown\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[\"Exact lettering on fascia_01 is uncertain; billboard_01 wording is not transcribed in this annotation.\",\"Hidden interiors and unseen building surfaces are unannotated.\"]},{\"id\":\"identity_anchors\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":[\"diner_01\",\"sign_01\"]},{\"id\":\"node:billboard_01\",\"lock_ids\":[],\"priority\":\"P2\",\"value\":{\"cardinality\":{\"max\":1,\"min\":1},\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-billboard_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.437,0.018,0.797,0.37]},\"label\":\"upper advertising board; wording not transcribed\",\"locks\":{\"geometry\":false,\"identity\":false,\"occlusion\":false,\"semantic\":false},\"observed\":true,\"source_attributes\":{\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-billboard_01\",\"kind\":\"SIGNAGE\",\"observed\":true,\"preservation_level\":\"P2\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.437,0.018,0.797,0.37],\"roles\":[\"CONTEXTUAL_SUPPORT\"]},\"source_kind\":\"SIGNAGE\",\"type\":\"sign\"}},{\"id\":\"node:diner_01\",\"lock_ids\":[\"GL-GEO-DINER_01\"],\"priority\":\"P0\",\"value\":{\"cardinality\":{\"max\":1,\"min\":1},\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-diner_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.478,0.668,0.945,0.951]},\"label\":\"visible street-level diner storefront with striped fascia\",\"locks\":{\"geometry\":true,\"identity\":true,\"occlusion\":false,\"semantic\":false},\"observed\":true,\"source_attributes\":{\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-diner_01\",\"kind\":\"STOREFRONT\",\"observed\":true,\"preservation_level\":\"P0\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.478,0.668,0.945,0.951],\"roles\":[\"IDENTITY_ANCHOR\",\"STRUCTURAL_CORE\"]},\"source_kind\":\"STOREFRONT\",\"type\":\"storefront\"}},{\"id\":\"node:facade_01\",\"lock_ids\":[\"GL-GEO-FACADE_01\"],\"priority\":\"P0\",\"value\":{\"cardinality\":{\"max\":1,\"min\":1},\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-facade_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.025,0.065,0.46,0.956]},\"label\":\"visible left masonry facade and exterior fire escape\",\"locks\":{\"geometry\":true,\"identity\":false,\"occlusion\":false,\"semantic\":false},\"observed\":true,\"source_attributes\":{\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-facade_01\",\"kind\":\"FACADE\",\"observed\":true,\"preservation_level\":\"P0\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.025,0.065,0.46,0.956],\"roles\":[\"STRUCTURAL_CORE\"]},\"source_kind\":\"FACADE\",\"type\":\"facade\"}},{\"id\":\"node:fascia_01\",\"lock_ids\":[],\"priority\":\"P2\",\"value\":{\"cardinality\":{\"max\":1,\"min\":1},\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-fascia_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.05,0.622,0.405,0.725]},\"label\":\"left storefront fascia; exact lettering uncertain\",\"locks\":{\"geometry\":false,\"identity\":false,\"occlusion\":false,\"semantic\":false},\"observed\":true,\"source_attributes\":{\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-fascia_01\",\"kind\":\"SIGNAGE\",\"observed\":true,\"preservation_level\":\"P2\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.05,0.622,0.405,0.725],\"roles\":[\"CONTEXTUAL_SUPPORT\"]},\"source_kind\":\"SIGNAGE\",\"type\":\"sign\"}},{\"id\":\"node:sign_01\",\"lock_ids\":[\"GL-SEM-SIGN_01\"],\"priority\":\"P0\",\"value\":{\"cardinality\":{\"max\":1,\"min\":1},\"confidence\":0.9,\"epistemic_class\":\"OBSERVED\",\"evidence\":{\"evidence_id\":\"D-OBS-sign_01\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.455,0.527,0.6,0.628]},\"label\":\"yellow TERMINAL DINER sign\",\"locks\":{\"geometry\":false,\"identity\":true,\"occlusion\":false,\"semantic\":true},\"observed\":true,\"properties\":{\"text\":\"TERMINAL DINER\"},\"source_attributes\":{\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-sign_01\",\"kind\":\"SIGNAGE\",\"observed\":true,\"preservation_level\":\"P0\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.455,0.527,0.6,0.628],\"roles\":[\"IDENTITY_ANCHOR\",\"RELATIONSHIP_ANCHOR\"],\"semantic_lock\":true},\"source_kind\":\"SIGNAGE\",\"type\":\"sign\"}},{\"id\":\"policy:camera\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":\"CG-S\"},{\"id\":\"policy:cil\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":{\"commands\":\"/sc-core /sc-lock\",\"resolved\":{\"aspect_ratio\":null,\"camera\":\"CG-S\",\"explicit_fear_city_profile_override\":false,\"fear_city_identity\":null,\"frontalization\":null,\"identity_lock\":null,\"mode\":\"T01\",\"occlusion_lock\":null,\"preservation\":null,\"profile\":\"VP00\",\"street_presence\":null,\"uncertainty\":null}}},{\"id\":\"policy:material_intensity_delta\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":0},{\"id\":\"policy:mode\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":\"T01\"},{\"id\":\"policy:occlusion_locks\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":[]},{\"id\":\"policy:pre_generation_gate\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":{\"findings\":[],\"reference_preflight\":{\"admitted\":[],\"rejected\":[],\"status\":\"PASS\"},\"status\":\"PASS\"}},{\"id\":\"policy:profile\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":\"VP00\"},{\"id\":\"policy:reference_features\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":[]},{\"id\":\"policy:reference_reasoning\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":{\"admissions\":[],\"generation_projection\":[],\"locked_unknowns\":[],\"need_results\":{},\"queries\":0,\"query_budget\":4,\"status\":\"READY\",\"trace\":[],\"unresolved_required\":[],\"version\":\"RR-2.0\"}},{\"id\":\"policy:semantic_text_lock\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":\"STRICT\"},{\"id\":\"policy:text_render_plan\",\"lock_ids\":[],\"priority\":\"POLICY\",\"value\":{\"proposed_text\":{\"billboard_01\":null,\"fascia_01\":null,\"sign_01\":\"TERMINAL DINER\"},\"tokens\":[{\"confidence\":0.99,\"identity_bearing\":true,\"literal\":\"TERMINAL DINER\",\"numeral\":false,\"preservation_level\":\"P0\",\"state\":\"FROZEN_EXACT\",\"token_id\":\"sign_01\"},{\"confidence\":0.2,\"identity_bearing\":false,\"literal\":\"\",\"numeral\":false,\"preservation_level\":\"P2\",\"state\":\"MASK_GRAPHIC_ONLY\",\"token_id\":\"fascia_01\"},{\"confidence\":0.0,\"identity_bearing\":false,\"literal\":\"\",\"numeral\":false,\"preservation_level\":\"P2\",\"state\":\"MASK_GRAPHIC_ONLY\",\"token_id\":\"billboard_01\"}]}},{\"id\":\"source_identity\",\"lock_ids\":[],\"priority\":\"REQUIRED\",\"value\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\"}],\"stable_cgc\":{\"camera\":\"CG-S\",\"cil\":{\"commands\":\"/sc-core /sc-lock\",\"resolved\":{\"aspect_ratio\":null,\"camera\":\"CG-S\",\"explicit_fear_city_profile_override\":false,\"fear_city_identity\":null,\"frontalization\":null,\"identity_lock\":null,\"mode\":\"T01\",\"occlusion_lock\":null,\"preservation\":null,\"profile\":\"VP00\",\"street_presence\":null,\"uncertainty\":null}},\"forbid\":[\"Add hidden architecture, rooftop equipment, geographic identity or documentary history.\",\"Invent or complete exact text on fascia_01 or untranscribed billboard_01.\",\"break_protected_relationships:diner_01\",\"break_protected_relationships:facade_01\",\"break_protected_relationships:sign_01\"],\"infer\":[],\"material_intensity_delta\":0,\"mode\":\"T01\",\"occlusion_locks\":[],\"pre_generation_gate\":{\"findings\":[],\"reference_preflight\":{\"admitted\":[],\"rejected\":[],\"status\":\"PASS\"},\"status\":\"PASS\"},\"preserve\":[\"Source framing, oblique view, visible facade, diner storefront and graphic layouts.\",\"billboard_01:upper advertising board; wording not transcribed:PRESERVE_CONTEXT\",\"diner_01:visible street-level diner storefront with striped fascia:PRESERVE_EXACT\",\"facade_01:visible left masonry facade and exterior fire escape:PRESERVE_EXACT\",\"fascia_01:left storefront fascia; exact lettering uncertain:PRESERVE_CONTEXT\",\"sign_01: TERMINAL above DINER in two lines; preserve exact spelling.\",\"sign_01:yellow TERMINAL DINER sign:PRESERVE_EXACT\"],\"profile\":\"VP00\",\"reference_features\":[],\"reference_reasoning\":{\"admissions\":[],\"generation_projection\":[],\"locked_unknowns\":[],\"need_results\":{},\"queries\":0,\"query_budget\":4,\"status\":\"READY\",\"trace\":[],\"unresolved_required\":[],\"version\":\"RR-2.0\"},\"remove\":[],\"scene_intelligence\":{\"entity_actions\":[{\"action\":\"PRESERVE_CONTEXT\",\"entity_id\":\"billboard_01\",\"protected_relationships\":[],\"relationship_lock\":false,\"salience\":{\"axes\":{\"identity_salience\":0.0,\"relationship_centrality\":0.0,\"structural_dependency\":0.0,\"task_relevance\":0.0,\"temporal_relevance\":0.0},\"band\":\"MINOR_ATTENTION\",\"score\":0.0}},{\"action\":\"PRESERVE_CONTEXT\",\"entity_id\":\"fascia_01\",\"protected_relationships\":[],\"relationship_lock\":false,\"salience\":{\"axes\":{\"identity_salience\":0.0,\"relationship_centrality\":0.0,\"structural_dependency\":0.0,\"task_relevance\":0.0,\"temporal_relevance\":0.0},\"band\":\"MINOR_ATTENTION\",\"score\":0.0}},{\"action\":\"PRESERVE_EXACT\",\"entity_id\":\"diner_01\",\"protected_relationships\":[\"rel_facade_left_of_diner\",\"rel_sign_above_diner\"],\"relationship_lock\":true,\"salience\":{\"axes\":{\"identity_salience\":0.0,\"relationship_centrality\":0.0,\"structural_dependency\":0.0,\"task_relevance\":0.0,\"temporal_relevance\":0.0},\"band\":\"MINOR_ATTENTION\",\"score\":0.0}},{\"action\":\"PRESERVE_EXACT\",\"entity_id\":\"facade_01\",\"protected_relationships\":[\"rel_facade_left_of_diner\"],\"relationship_lock\":true,\"salience\":{\"axes\":{\"identity_salience\":0.0,\"relationship_centrality\":0.0,\"structural_dependency\":0.0,\"task_relevance\":0.0,\"temporal_relevance\":0.0},\"band\":\"MINOR_ATTENTION\",\"score\":0.0}},{\"action\":\"PRESERVE_EXACT\",\"entity_id\":\"sign_01\",\"protected_relationships\":[\"rel_sign_above_diner\"],\"relationship_lock\":true,\"salience\":{\"axes\":{\"identity_salience\":0.0,\"relationship_centrality\":0.0,\"structural_dependency\":0.0,\"task_relevance\":0.0,\"temporal_relevance\":0.0},\"band\":\"MINOR_ATTENTION\",\"score\":0.0}}],\"identity_anchors\":[\"diner_01\",\"sign_01\"],\"protected_relationships\":[{\"confidence\":\"HIGH\",\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-rel_facade_left_of_diner\",\"object\":\"diner_01\",\"predicate\":\"LEFT_OF\",\"protection\":\"PR1\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.025,0.065,0.945,0.956],\"relationship_id\":\"rel_facade_left_of_diner\",\"subject\":\"facade_01\"},{\"confidence\":\"HIGH\",\"epistemic_class\":\"OBSERVED\",\"evidence_id\":\"D-OBS-rel_sign_above_diner\",\"object\":\"diner_01\",\"predicate\":\"ABOVE\",\"protection\":\"PR0\",\"reference_id\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"region\":[0.455,0.527,0.945,0.951],\"relationship_id\":\"rel_sign_above_diner\",\"subject\":\"sign_01\"}],\"reference_need_hints\":[],\"scene_id\":\"VSG2B-R2B-D-NEW-01\",\"unknown_locks\":[]},\"semantic_text_lock\":\"STRICT\",\"source_identity\":\"R2B-191-D_SOURCE_SHA256_282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc\",\"text_render_plan\":{\"proposed_text\":{\"billboard_01\":null,\"fascia_01\":null,\"sign_01\":\"TERMINAL DINER\"},\"tokens\":[{\"confidence\":0.99,\"identity_bearing\":true,\"literal\":\"TERMINAL DINER\",\"numeral\":false,\"preservation_level\":\"P0\",\"state\":\"FROZEN_EXACT\",\"token_id\":\"sign_01\"},{\"confidence\":0.2,\"identity_bearing\":false,\"literal\":\"\",\"numeral\":false,\"preservation_level\":\"P2\",\"state\":\"MASK_GRAPHIC_ONLY\",\"token_id\":\"fascia_01\"},{\"confidence\":0.0,\"identity_bearing\":false,\"literal\":\"\",\"numeral\":false,\"preservation_level\":\"P2\",\"state\":\"MASK_GRAPHIC_ONLY\",\"token_id\":\"billboard_01\"}]},\"transform\":[],\"unknown\":[\"Exact lettering on fascia_01 is uncertain; billboard_01 wording is not transcribed in this annotation.\",\"Hidden interiors and unseen building surfaces are unannotated.\"]}}",
+      "utf8_bytes": 13501,
+      "characters": 13501,
+      "sha256": "6bcfca3589562f02e54a21ba15e21e0267238d64f16b7ba9326e210133b8df05",
+      "ascii": true,
+      "content_tokens": 5686,
+      "special_tokens": 2,
+      "tokens_with_special": 5688,
+      "tokenizer_capacity": 77,
+      "encoder_capacity": 77,
+      "overflow": 5611,
+      "token_ids_sha256": "82b4efe9885599b2e5f4b87f4459adfaa13ab4c931c0734ad105bf7dbecf59bd",
+      "blocks_75": 76,
+      "last_block_content_tokens": 61,
+      "equivalence": "PASS_ASCII_DOMAIN",
+      "chunk_coverage": "PASS_TOKEN_SEQUENCE_IDENTITY"
+    },
+    {
+      "name": "negative_prompt",
+      "role": "proposed identical empty negative for both branches",
+      "text": "",
+      "utf8_bytes": 0,
+      "characters": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "ascii": true,
+      "content_tokens": 0,
+      "special_tokens": 2,
+      "tokens_with_special": 2,
+      "tokenizer_capacity": 77,
+      "encoder_capacity": 77,
+      "overflow": 0,
+      "token_ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "blocks_75": 1,
+      "last_block_content_tokens": 0,
+      "equivalence": "PASS_ASCII_DOMAIN",
+      "chunk_coverage": "PASS_TOKEN_SEQUENCE_IDENTITY"
+    },
+    {
+      "name": "shared_phrase.node:billboard_01",
+      "role": "shared source association, never edit authority",
+      "text": "upper advertising board; wording not transcribed",
+      "utf8_bytes": 48,
+      "characters": 48,
+      "sha256": "8ffa1a3f50a6ccc9f3f170ac4527c583be2e009ba8a4c7f5b380d009730f5b49",
+      "ascii": true,
+      "content_tokens": 9,
+      "special_tokens": 2,
+      "tokens_with_special": 11,
+      "tokenizer_capacity": 77,
+      "encoder_capacity": 77,
+      "overflow": 0,
+      "token_ids_sha256": "6b83b562ccd10670b2031b50ce9e00cd7e8d02fd39617eb63241d25b9a39f193",
+      "blocks_75": 1,
+      "last_block_content_tokens": 9,
+      "equivalence": "PASS_ASCII_DOMAIN",
+      "chunk_coverage": "PASS_TOKEN_SEQUENCE_IDENTITY"
+    },
+    {
+      "name": "shared_phrase.node:diner_01",
+      "role": "shared source association, never edit authority",
+      "text": "visible street-level diner storefront with striped fascia",
+      "utf8_bytes": 57,
+      "characters": 57,
+      "sha256": "790600d8fef6e13c2b196ce853cbbb05b15996143b8e4ba186dda69cdd5b8b62",
+      "ascii": true,
+      "content_tokens": 11,
+      "special_tokens": 2,
+      "tokens_with_special": 13,
+      "tokenizer_capacity": 77,
+      "encoder_capacity": 77,
+      "overflow": 0,
+      "token_ids_sha256": "54a81274743934dcb10a8e30cb3fe06d6a1084e7784dd8cebc294559fea796d6",
+      "blocks_75": 1,
+      "last_block_content_tokens": 11,
+      "equivalence": "PASS_ASCII_DOMAIN",
+      "chunk_coverage": "PASS_TOKEN_SEQUENCE_IDENTITY"
+    },
+    {
+      "name": "shared_phrase.node:facade_01",
+      "role": "shared source association, never edit authority",
+      "text": "visible left masonry facade and exterior fire escape",
+      "utf8_bytes": 52,
+      "characters": 52,
+      "sha256": "368f3f558461676c05d18be04a96414b57ab5a499cd4df2386c91049b76ae45d",
+      "ascii": true,
+      "content_tokens": 8,
+      "special_tokens": 2,
+      "tokens_with_special": 10,
+      "tokenizer_capacity": 77,
+      "encoder_capacity": 77,
+      "overflow": 0,
+      "token_ids_sha256": "428bd55cc2dbbcfd721fdb8beee4105e957bd9ca6927fed3c97817c8c12b831b",
+      "blocks_75": 1,
+      "last_block_content_tokens": 8,
+      "equivalence": "PASS_ASCII_DOMAIN",
+      "chunk_coverage": "PASS_TOKEN_SEQUENCE_IDENTITY"
+    },
+    {
+      "name": "shared_phrase.node:fascia_01",
+      "role": "shared source association, never edit authority",
+      "text": "left storefront fascia; exact lettering uncertain",
+      "utf8_bytes": 49,
+      "characters": 49,
+      "sha256": "7d4e90f30dbf53dc619dca4a4a48f9f56b237998deaf04a9b36a22dca0d4136a",
+      "ascii": true,
+      "content_tokens": 9,
+      "special_tokens": 2,
+      "tokens_with_special": 11,
+      "tokenizer_capacity": 77,
+      "encoder_capacity": 77,
+      "overflow": 0,
+      "token_ids_sha256": "441e86aadf9222829125d947f97ce1ae4c397ec57a4343f86a80f76c71676c47",
+      "blocks_75": 1,
+      "last_block_content_tokens": 9,
+      "equivalence": "PASS_ASCII_DOMAIN",
+      "chunk_coverage": "PASS_TOKEN_SEQUENCE_IDENTITY"
+    },
+    {
+      "name": "shared_phrase.node:sign_01",
+      "role": "shared source association, never edit authority",
+      "text": "yellow TERMINAL DINER sign",
+      "utf8_bytes": 26,
+      "characters": 26,
+      "sha256": "1f468cb08cb0dac066541e75e9ce63d62957abe8903249f5b1fc64394ac60ac8",
+      "ascii": true,
+      "content_tokens": 4,
+      "special_tokens": 2,
+      "tokens_with_special": 6,
+      "tokenizer_capacity": 77,
+      "encoder_capacity": 77,
+      "overflow": 0,
+      "token_ids_sha256": "3b99e96dcab7ef62b80585ed9ed162fd443f2d21ce145a851b653a2cb540bb0d",
+      "blocks_75": 1,
+      "last_block_content_tokens": 4,
+      "equivalence": "PASS_ASCII_DOMAIN",
+      "chunk_coverage": "PASS_TOKEN_SEQUENCE_IDENTITY"
+    }
+  ],
+  "controls": [
+    {
+      "text": "",
+      "token_ids": [],
+      "status": "PASS"
+    },
+    {
+      "text": "hello world!",
+      "token_ids": [
+        3306,
+        1002,
+        256
+      ],
+      "status": "PASS"
+    },
+    {
+      "text": "TERMINAL DINER",
+      "token_ids": [
+        11816,
+        16963
+      ],
+      "status": "PASS"
+    },
+    {
+      "text": "it's we're I've I'd he'll",
+      "token_ids": [
+        585,
+        568,
+        649,
+        982,
+        328,
+        1200,
+        328,
+        1896,
+        797,
+        1342
+      ],
+      "status": "PASS"
+    },
+    {
+      "text": "LEFT_OF ABOVE 0123456789",
+      "token_ids": [
+        1823,
+        318,
+        539,
+        4348,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280
+      ],
+      "status": "PASS"
+    },
+    {
+      "text": "\t A\nB\r C  ",
+      "token_ids": [
+        320,
+        321,
+        322
+      ],
+      "status": "PASS"
+    },
+    {
+      "text": "{\"id\":\"topology:fascia_01\",\"value\":[],\"x\":0.945}",
+      "token_ids": [
+        90,
+        257,
+        1014,
+        1,
+        12089,
+        23008,
+        1659,
+        281,
+        4830,
+        4019,
+        318,
+        271,
+        272,
+        1,
+        3823,
+        4602,
+        1,
+        25,
+        58,
+        60,
+        3823,
+        343,
+        7811,
+        271,
+        269,
+        280,
+        275,
+        276,
+        348
+      ],
+      "status": "PASS"
+    },
+    {
+      "text": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~",
+      "token_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        31975,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        25,
+        26,
+        27,
+        28,
+        29,
+        29258,
+        13137,
+        2044,
+        583,
+        7337,
+        74,
+        6981,
+        578,
+        79,
+        80,
+        81,
+        858,
+        85,
+        18192,
+        46451,
+        58,
+        59,
+        60,
+        14423,
+        319,
+        13137,
+        2044,
+        583,
+        7337,
+        74,
+        6981,
+        578,
+        79,
+        80,
+        81,
+        858,
+        85,
+        18192,
+        46451,
+        90,
+        91,
+        92,
+        349
+      ],
+      "status": "PASS"
+    }
+  ],
+  "domain_rejections": [
+    "café",
+    "<|startoftext|>",
+    "a\u0000b"
+  ],
+  "unique_measured_strings": 12,
+  "control_strings": 8,
+  "tokenizer_invocations": 40,
+  "rejected_invocations": 3,
+  "pretrained_model_forwards": 0,
+  "encoder_forwards": 0,
+  "successful_tokenizer_path_invocations_corrected": 41,
+  "counter_correction": "Includes tokenize(hello world!) known-ID assertion; original auditor unchanged.",
+  "milestone": "VSG-2B-N4",
+  "completed_by": "N4R",
+  "confidence": "STATIC_ONLY",
+  "status": "COUNTS_ACCREDITED_DESIGN_SELECTED_MODEL_NOT_RUN",
+  "pins": {
+    "diffusers": {
+      "version": "0.29.0",
+      "commit": "39aa3909e8e2dfe30f4807aedaadf42c1d8b1a8f"
+    },
+    "checkpoint": {
+      "id": "masterful/gligen-1-4-inpainting-text-box",
+      "revision": "d6d957f8d27c40889c0d570a616571a5645c8be3",
+      "variant": "fp16",
+      "weights_loaded": false
+    },
+    "transformers": {
+      "version": "4.41.2",
+      "commit": "573565e35a5cc68f6cfb6337f5a93753ab16c65b"
+    }
+  },
+  "tokenizer_selection": {
+    "class": "CLIPTokenizer (slow)",
+    "future_path": "Transformers v4.41.2; explicitly BasicTokenizer(strip_accents=False, do_split_on_punc=False), fix_text=None; fail if a deployment selects ftfy or fast tokenizer without equivalence review",
+    "implementation_executed": "Original auditor extracts only tokenizer AST definitions; no external learned-model module imports",
+    "regex_equivalence": "For checked ASCII domain, Unicode L=A-Za-z, N=0-9. Stdlib re uses those exact replacements. BasicTokenizer/helpers/bpe/_tokenize/special-token builder are pinned source. Independent scanner and BPE agree on every measured string and 8 controls. Not proof for Unicode, embedded specials, ftfy or other releases.",
+    "no_input_rewriting": true,
+    "source_manifest_sha256": "7c8e0998dc8c435241603d3d49782e0584c60458c20f4a2e6d6d7bdbfac582f3",
+    "auditor_sha256": "0294bbefba9a1db38eb97a716327803bd79be2805e3e4670e988297446fbbfbc",
+    "fresh_wrapper_sha256": "d7131b73659e5c757359f70caaba24624622a06347c88e58e1aea8ea81ce9349",
+    "asset_sources": {
+      "text_encoder/config.json": {
+        "url": "https://huggingface.co/masterful/gligen-1-4-inpainting-text-box/raw/d6d957f8d27c40889c0d570a616571a5645c8be3/text_encoder/config.json",
+        "sha256": "aa210e6d6abd239a466af57a1dadb62d5ced63295064d295a549e08a6c4a2020",
+        "bytes": 592,
+        "license": "CreativeML OpenRAIL-M (checkpoint card declaration)"
+      },
+      "tokenizer/tokenizer_config.json": {
+        "url": "https://huggingface.co/masterful/gligen-1-4-inpainting-text-box/raw/d6d957f8d27c40889c0d570a616571a5645c8be3/tokenizer/tokenizer_config.json",
+        "sha256": "00439066fcba73de57644cf41e4e3b9f2dbb09d7f3fc2005898ba52399045882",
+        "bytes": 806,
+        "license": "CreativeML OpenRAIL-M (checkpoint card declaration)"
+      },
+      "tokenizer/vocab.json": {
+        "url": "https://huggingface.co/masterful/gligen-1-4-inpainting-text-box/raw/d6d957f8d27c40889c0d570a616571a5645c8be3/tokenizer/vocab.json",
+        "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+        "bytes": 1059962,
+        "license": "CreativeML OpenRAIL-M (checkpoint card declaration)"
+      },
+      "tokenizer/merges.txt": {
+        "url": "https://huggingface.co/masterful/gligen-1-4-inpainting-text-box/raw/d6d957f8d27c40889c0d570a616571a5645c8be3/tokenizer/merges.txt",
+        "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+        "bytes": 524619,
+        "license": "CreativeML OpenRAIL-M (checkpoint card declaration)"
+      },
+      "tokenizer/special_tokens_map.json": {
+        "url": "https://huggingface.co/masterful/gligen-1-4-inpainting-text-box/raw/d6d957f8d27c40889c0d570a616571a5645c8be3/tokenizer/special_tokens_map.json",
+        "sha256": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac",
+        "bytes": 472,
+        "license": "CreativeML OpenRAIL-M (checkpoint card declaration)"
+      },
+      "transformers/src/transformers/models/clip/tokenization_clip.py": {
+        "url": "https://raw.githubusercontent.com/huggingface/transformers/573565e35a5cc68f6cfb6337f5a93753ab16c65b/src/transformers/models/clip/tokenization_clip.py",
+        "sha256": "943087b48a2a7eab8d8359faf44a24da39d5d66bf979b652b6fb77d9c9e8c115",
+        "bytes": 20584,
+        "license": "Apache-2.0"
+      },
+      "transformers/src/transformers/models/clip/modeling_clip.py": {
+        "url": "https://raw.githubusercontent.com/huggingface/transformers/573565e35a5cc68f6cfb6337f5a93753ab16c65b/src/transformers/models/clip/modeling_clip.py",
+        "sha256": "147acef5e2d5d04de09f847eb94e625ee0ac68cf74922daaeb1b40221ec5e913",
+        "bytes": 61466,
+        "license": "Apache-2.0"
+      },
+      "transformers/src/transformers/tokenization_utils.py": {
+        "url": "https://raw.githubusercontent.com/huggingface/transformers/573565e35a5cc68f6cfb6337f5a93753ab16c65b/src/transformers/tokenization_utils.py",
+        "sha256": "4aec95fbac425cc84ea83757131b467975949235ade205777f3dcf5a36e392e0",
+        "bytes": 44595,
+        "license": "Apache-2.0"
+      }
+    }
+  },
+  "assembly": {
+    "existing_harness": "harness.py:153-159 makes common object + exact A JSONL/B array; no operational GLIGEN string assembler exists",
+    "canonicalization": "json.dumps(common,sort_keys=True,separators=(',',':'),ensure_ascii=False,allow_nan=False)",
+    "A": "canonical(common) + one U+000A + exact persisted A.relations_and_locks; no trailing separator",
+    "B": "canonical(common); B.relations_and_locks remains array on separate port",
+    "JSONL_bytes_preserved": true,
+    "JSONL_sha256": "328d079d323760aa4f2b7b8c27bb524db0d846bcff93f1e3f03ef27d9ddb4a40",
+    "negative": "empty string shared proposal, not a frozen operational setting",
+    "shared_phrases": "Exact five common node labels, each separately encoded identically for visual association in A/B; no phrases synthesized from B",
+    "diagnostic_components": "common.stable_cgc and common.approved_source_restrictions measured separately only for attribution; never appended twice",
+    "common_contains_relations": "Existing protected_relationships/provenance are already present in common. Preserve them. This limits inference to incremental effect of representation/channel, not exclusive access to relation facts."
+  },
+  "chosen_mechanism": {
+    "id": "CHUNKED_CLIP_SHARED_ORDERED_RESAMPLER_128",
+    "status": "DESIGN_ONLY",
+    "content_tokens_per_chunk": 75,
+    "maximum_chunks": 128,
+    "maximum_content_tokens": 9600,
+    "D_blocks": {
+      "A": 98,
+      "B": 76
+    },
+    "split": "Tokenize complete string once without truncation. Contiguous slices [75*k:75*(k+1)], not line/record truncation; preserve every token ID exactly once. Empty string produces one BOS/EOS block.",
+    "specials_and_padding": "Each chunk BOS=49406, up to75 content IDs, EOS=49407, right-pad EOS to77; mask valid BOS/content/EOS, zero padding. Local CLIP positions0..76 unchanged. Gather content positions1..n only; empty prompt uses its actual EOS hidden state as a defined sentinel.",
+    "positions": "Add learned chunk-index embedding (0..127) to each retained hidden state before resampling; CLIP local positional embeddings remain. Ordered chunk IDs prevent permutation invariance across chunks; no claim of learned order until tested.",
+    "resampler": "4 blocks, d=768,8 heads,128 learned query slots; each block queries all masked input embeddings, latent self-attention, FF width3072, layer norms; dropout0 for evaluation. Same exact modules/weights in A, B, negative path.",
+    "output_shape": [
+      "batch",
+      128,
+      768
+    ],
+    "output_dtype": "float32 reference; fp16 deployment only after preregistered repeat test",
+    "output_mask": "all128 slots valid; no source-token padding leaked into softmax",
+    "encoder_mask": "Explicit CLIP attention_mask for chunk pads; no change to max_position_embeddings. Causal encoder processing retained.",
+    "overflow_policy": "Reject >9600 content tokens, unsupported domain, reserved input tokens, fields or vocabulary before any learned forward. Do not truncate, summarize, skip records or fallback to B prompt. Non-D inputs not automatically admitted.",
+    "shared_phrase_path": "Same pinned CLIP, exact individual labels <=77; use pooled EOS output for five source association tokens. No phrase truncation. Proposed shared visual projector separate from resampler.",
+    "UNet_consumers": [
+      {
+        "consumer": "down/mid/up CrossAttn blocks",
+        "compatibility": "UNet2DConditionModel passes [batch,L,768] and encoder_attention_mask; BasicTransformerBlock.attn2 -> Attention processors derives key length from encoder_hidden_states; L128 structurally supported."
+      },
+      {
+        "consumer": "GLIGEN position_net/fuser",
+        "compatibility": "Resampler output is NOT gligen objs. Shared source tokens and B relational tokens arrive through a new external relational port, projected to768 then fuser.linear to query_dim."
+      },
+      {
+        "consumer": "other optional conditioning",
+        "compatibility": "Checkpoint has no addition_embed_type/encoder_hid_dim branch configured; do not inject pooled text/time/image adapters. Preserve PNDM and UNet timestep embedding."
+      },
+      {
+        "consumer": "CFG",
+        "compatibility": "128-slot positive and negative outputs have same shape; concatenate batch negative/positive. Unconditional half receives shared source tokens and no B relation tokens; identical policy across branches."
+      }
+    ],
+    "future_code_changes": [
+      "CompleteTextConditioner outside stable client; bypass encode_prompt truncation using prompt_embeds and negative_prompt_embeds",
+      "Versioned external UNet port; keep standard text attn2 masks",
+      "Explicit source preparation and generator wiring; no raw-source center crop",
+      "State/shape validator before model dispatch"
+    ],
+    "new_weights": [
+      "shared resampler queries, chunk embeddings, four resampler blocks",
+      "shared visual node projector from source ROI/label/coordinates",
+      "RelationalConditionProjector and predicate embeddings; explicitly versioned fuser adaptation deltas"
+    ],
+    "frozen_weights": [
+      "CLIP base",
+      "VAE base",
+      "UNet base weights; learned deltas stored separately and shared A/B"
+    ],
+    "alternative_rejected": {
+      "id": "CHUNKS_VARIABLE_LENGTH_UNET_CROSS_ATTENTION",
+      "reason": "Direct concatenation is structurally possible but repeats local positions; without explicit global position adaptation cross-attention cannot identify chunk order. Adding position adaptation still needs semantic validation and raises UNet attention memory with L7305. Resampler chosen to bound downstream context consistently; compression risk accepted as unverified dependency, not losslessness."
+    },
+    "semantic_status": "NOT_RUN; coverage is token coverage only. CLIP lowercases/tokenizes punctuation and resampler compresses; original hashes do not prove preservation of literals or relations."
+  },
+  "memory_estimates": {
+    "assumptions": "D padded512x512 -> latent64x64, largest spatial tokens4096; batch1 plus CFG=2; fp16. Dense materialized score tensor, one layer, no activations/gradients/optimizer; SDPA may avoid full materialization. fp32 doubles values.",
+    "components": [
+      {
+        "component": "direct_UNet_A_logits",
+        "estimated_bytes": 957480960,
+        "estimated_MiB": 913.125,
+        "formula": "2 batch(CFG) * 8 heads * 4096 query * 7305 key * 2 bytes",
+        "confidence": "ANALYTIC_TENSOR_SIZE_NOT_MEASURED_PEAK"
+      },
+      {
+        "component": "resampler_A_cross_logits",
+        "estimated_bytes": 29921280,
+        "estimated_MiB": 28.53515625,
+        "formula": "2 batch(CFG) * 8 heads * 128 query * 7305 key * 2 bytes",
+        "confidence": "ANALYTIC_TENSOR_SIZE_NOT_MEASURED_PEAK"
+      },
+      {
+        "component": "resampler_max_cross_logits",
+        "estimated_bytes": 39321600,
+        "estimated_MiB": 37.5,
+        "formula": "2 batch(CFG) * 8 heads * 128 query * 9600 key * 2 bytes",
+        "confidence": "ANALYTIC_TENSOR_SIZE_NOT_MEASURED_PEAK"
+      },
+      {
+        "component": "UNet_resampled_logits",
+        "estimated_bytes": 16777216,
+        "estimated_MiB": 16.0,
+        "formula": "2 batch(CFG) * 8 heads * 4096 query * 128 key * 2 bytes",
+        "confidence": "ANALYTIC_TENSOR_SIZE_NOT_MEASURED_PEAK"
+      }
+    ],
+    "input_hidden_A_bytes": 11220480,
+    "resampler_parameter_estimate": {
+      "value_approx": 37945344,
+      "formula": "4 blocks*(cross-attn4d²+self-attn4d²+FF8d²)+128*d query+128*d chunk tables; excludes small bias/norm terms",
+      "confidence": "PLANNING_NOT_IMPLEMENTED"
+    },
+    "total_model_RAM_VRAM": "UNKNOWN; fuser visual self-attention, all layers, training activations and optimizer excluded"
+  },
+  "future_semantic_tests": [
+    {
+      "test": "Full A7305/B5686 content IDs enter chunks and masks once; output128slots, no truncation",
+      "status": "NOT_RUN"
+    },
+    {
+      "test": "Holdout scene-split corpus excludes D/E/Kenny/C; preregister >=1000 ordered relational examples, fields in first/middle/last chunks; relation QA>=95%, record-field recall>=99%, exact protected literal100% on diagnostic decoder; requirements proposed, not measurements",
+      "status": "NOT_RUN"
+    },
+    {
+      "test": "Swap endpoints, predicates, negation and chunk order; controlled failures must be detected. Diagnostic readout trained on separate split and kept out of generative runtime",
+      "status": "NOT_RUN"
+    },
+    {
+      "test": "Independent visual preservation/rubric plus B mutation/ablation after separate authorization; auxiliary QA cannot certify image semantics",
+      "status": "NOT_RUN"
+    }
+  ]
+}
