@@ -1,0 +1,318 @@
+{
+  "milestone": "VSG-2B-N5PV",
+  "created_at": "2026-10-02T04:40:22.484146+00:00",
+  "status": "N5PV_JOINT_REVIEW_READY",
+  "N5P_status": "N5P_PLAN_READY_FOR_REVIEW",
+  "N5V_status": "N5V_PREREGISTRATION_READY_FOR_REVIEW",
+  "confidence": "DOCUMENTARY_AND_ANALYTIC_ONLY",
+  "planning_requested": true,
+  "amendment": {
+    "id": "VSG-2B-N4R-GLIGEN-FULL-SCHEDULE",
+    "version": "0.1.0",
+    "approval_status": "PROPOSED_NOT_APPROVED",
+    "explicit_approval_found": false
+  },
+  "settings_applied": false,
+  "implementation_authorized": false,
+  "execution_authorized": false,
+  "execution_budget_complete": false,
+  "semantic_criteria_frozen": false,
+  "head_initial": "8e292d8f8cfad1aa0fa17cc51894d041a5a370f9",
+  "head_final": "8e292d8f8cfad1aa0fa17cc51894d041a5a370f9",
+  "initial_git_status": "CLEAN",
+  "spec": {
+    "path": "/Users/macbookpro/Documents/STREETCRAFT_specs VSG/VSG_2B_N5P_N5V_PREEXECUTION_SPEC.md",
+    "sha256": "89123ca72cc8f3477d14cb57715785b3fe58326fd09dd15e261760a86d63438b"
+  },
+  "input_hashes": {
+    "visual_scene_graph/pilot/N4S_CLOSURE_AND_SETTINGS_DECISION.md": "28f78f0f84184185fc163488f5ada1311c014b13d4bbfa4eb563c17406e05622",
+    "validation/vsg_2b/N4S_RESULT.json": "6b633a563f9db5406493988c2ff1d41979c351864cbeebe328d10b201c4fbabb",
+    "validation/vsg_2b/n4s/INPUT_MANIFEST.json": "cb830178cdbc265510aa0238912589e4ca69f5740a2a8e6442292ce37cc9b678",
+    "validation/vsg_2b/n4s/SETTINGS_AMENDMENT_PROPOSAL.json": "aeee1d9d03dfea555f980904556e429e304d788a09b78834e3996927eb6c10e3",
+    "validation/vsg_2b/n3/BASE_MANIFEST.json": "c5c2a9c8ec2d158f4984413eac511f3bb3d55060ad6d1c719e09edf2a28eac53",
+    "validation/vsg_2b/n4/INPUT_MANIFEST.json": "711c2829491f489c66599ff8c22a810d0d6fb16141c8c5d89aa7de9c9288684a",
+    "validation/vsg_2b/n4/TEXT_CAPACITY_AUDIT.json": "9e3159e3139e301b61d397474b33faed6eed1e1ca3bd242f9e4bb588509fb8d7",
+    "validation/vsg_2b/n4/SOURCE_CONDITIONING_DECISION.json": "ef84d5730e7bd31ff95f781ec5097f74daaaf8831521ddedae36be5c423de6ab",
+    "validation/vsg_2b/n4/AB_CONTROL_MATRIX.json": "3b21efdde421a8b36d172c58fe5e5e7596e957373fde7f1c53554973fc11ef25",
+    "visual_scene_graph/pilot/campaign_policy.json": "241204469fb84da8835621f953964d8c887fb91442fd55aeda1a07b89cfc0285",
+    "visual_scene_graph/pilot/evaluation.py": "e51a0c977ffb07fd45a3ed146c48a9d1145101a903694bd15ff519b57ff8bade",
+    "visual_scene_graph/pilot/campaign.py": "8ed19f98f25c8b0c7632b82831bb5418e19f9d14b37fface4fa4ef4322e99e13",
+    "visual_scene_graph/pilot/harness.py": "99b886d03317639912c828d80620ae9340a148232de6ad4569ab0cc895b3ede3",
+    "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/manifest.json": "da3c021fea39eafb972a34876786cecc648f95359c32dbbffd232ad504f14895",
+    "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/payloads.json": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d",
+    "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/source.image": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+    "visual_scene_graph/pilot/fixtures/r2b_e_new_01/contract.json": "42db55f13f0e44f4c55161a05ce9f7dae1108a0cd426264c15321f2895edcf31",
+    "visual_scene_graph/pilot/fixtures/kennys_new_01/contract.json": "37dd0f143288ade92bfb80bd8ef670b4c5f54850a5e882387cb68267214ddb5b"
+  },
+  "open_dependencies": [
+    "fulltransitivewheellock/containerdriverdigest",
+    "licensedcorpusandannotation/revieweravailability",
+    "measuredpeakRAM/VRAM andruntime",
+    "all tariffs/costs and monetaryceiling",
+    "weightedforwardanddiagnosticattemptclassification",
+    "semanticcalibration beforetestfreeze",
+    "explicitdesign/implementationdecision",
+    "trainedmodulesnotexisting",
+    "unsupportedE/Kenny andCblocked"
+  ],
+  "decisions_needed": [
+    {
+      "id": "D1",
+      "decision": "accept/reject/revise existingenmienda;planningalreadyrequested",
+      "enables": "conditionaldesignbasis only",
+      "cap": "0learnedcalls/0images",
+      "prerequisites": [
+        "identifyproposalID/version"
+      ]
+    },
+    {
+      "id": "D2",
+      "decision": "authorize isolatedcontract/log/settings scaffold only",
+      "enables": "future sourcecodeimplementation withstdlib/staticchecks,notmodelpatchexecution",
+      "caps": {
+        "newfiles": 8,
+        "static_acceptance_checks": 16,
+        "engineering_hours": 40,
+        "model_calls": 0,
+        "attempts": 0,
+        "images": 0
+      },
+      "prerequisites": [
+        "explicitD1/D2",
+        "versionedfileallowlist/gates"
+      ]
+    },
+    {
+      "id": "D3",
+      "decision": "authorize metadata/data/criteria/lock closure work",
+      "enables": "resolvequotes,rights,reviewers,calibrationprotocol before anyweightedtest",
+      "caps": {
+        "weight_downloads": 0,
+        "learned_calls": 0,
+        "new_generated_images": 0
+      },
+      "prerequisites": [
+        "boundedacquisitionandreviewauthorization where needed;no blanket purchasepermission"
+      ]
+    },
+    {
+      "id": "D4",
+      "decision": "later authorize training/load/diagnostics as separate stages",
+      "enables": "only after execution_budget_complete and semanticfreeze whenrelevant",
+      "proposedcaps": {
+        "GPU_hours": 34,
+        "diagnostic_calls": 425,
+        "trajectories": 7,
+        "decoded_outputs": 5
+      },
+      "prerequisites": [
+        "fulltransitivewheellock/containerdriverdigest",
+        "licensedcorpusandannotation/revieweravailability",
+        "measuredpeakRAM/VRAM andruntime",
+        "all tariffs/costs and monetaryceiling",
+        "weightedforwardanddiagnosticattemptclassification",
+        "semanticcalibration beforetestfreeze"
+      ]
+    }
+  ],
+  "first_stage_requested": "D2 isolatedcontract/settings/ledger scaffold as a FUTUREdecision;notimplementednow",
+  "proposed_caps_summary": {
+    "diagnostic_invocations": 425,
+    "diagnostic_processed_units": 915,
+    "CLIP_calls": 47,
+    "CLIP_sequences": 180,
+    "UNet_calls": 357,
+    "UNet_CFG_units": 714,
+    "trajectories": 7,
+    "outputs": 5,
+    "pairs": 1,
+    "attempts_proposed": 7,
+    "policy_max_attempts_unchanged": 8,
+    "combined_official_plus_diagnostic_unique_attempts": 13,
+    "training_learned_invocations": 93121,
+    "all_stage_invocations": 93546,
+    "training_optimizer_steps": 512
+  },
+  "checks": {
+    "N4S_artifact_hashes": "PASS",
+    "referenced_inputs": "PASS",
+    "D_contract_hashes": "PASS",
+    "package_metadata_constraints": "SATISFIABLE_CORE_PINS_NOT_INSTALLED_FULL_LOCK_INCOMPLETE",
+    "DAG_and_sums": "verified beforedelivery",
+    "invariance": "verified beforedelivery"
+  },
+  "model_tests": [
+    {
+      "id": "DEFAULT_SCHEDULE_NEGATIVE_CONTROL",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "EXPLICIT_FULL_SCHEDULE",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "RELATIONAL_NEUTRALIZATION_ABLATION",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "VALID_ISOLATED_MUTATION",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "TEMPORAL_TO_DECODED_OBSERVABLE",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NUMERICAL_REPEAT",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "SEMANTIC_AND_PRESERVATION_REVIEW",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "FULL_TEXT_AND_INPUT_VALIDATION",
+      "status": "NOT_RUN"
+    }
+  ],
+  "counters": {
+    "before": {
+      "attempts": [],
+      "reports": [
+        "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/report.json",
+        "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/report.json",
+        "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/report.json",
+        "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/report.json",
+        "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/report.json",
+        "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/report.json",
+        "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/report.json",
+        "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/report.json",
+        "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/report.json",
+        "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/report.json",
+        "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/report.json",
+        "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/report.json",
+        "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/report.json",
+        "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/report.json",
+        "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/report.json"
+      ],
+      "evaluations": [],
+      "images": 0
+    },
+    "after": {
+      "attempts": [],
+      "reports": [
+        "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/report.json",
+        "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/report.json",
+        "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/report.json",
+        "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/report.json",
+        "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/report.json",
+        "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/report.json",
+        "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/report.json",
+        "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/report.json",
+        "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/report.json",
+        "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/report.json",
+        "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/report.json",
+        "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/report.json",
+        "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/report.json",
+        "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/report.json",
+        "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/report.json"
+      ],
+      "evaluations": [],
+      "images": 0
+    },
+    "Archive": 0,
+    "provider_predictions": 0,
+    "generated_images": 0,
+    "new_pairs": 0,
+    "weighted_forwards": 0,
+    "training_runs": 0,
+    "tokenizations": 0,
+    "saved_metadata_bytes": 995685,
+    "provider_account_history": "UNKNOWN_NOT_QUERIED"
+  },
+  "plan_limits": {
+    "ceiling_percentage_points": 40,
+    "allocation": [
+      4,
+      10,
+      10,
+      10,
+      6
+    ],
+    "observed": {
+      "preflight": {
+        "five_hour": "UNKNOWN",
+        "Weekly": "UNKNOWN"
+      },
+      "method": {
+        "five_hour": "UNKNOWN",
+        "Weekly": "UNKNOWN"
+      },
+      "implementation": {
+        "five_hour": "UNKNOWN",
+        "Weekly": "UNKNOWN"
+      },
+      "budget": {
+        "five_hour": "UNKNOWN",
+        "Weekly": "UNKNOWN"
+      },
+      "closure": {
+        "five_hour": "UNKNOWN",
+        "Weekly": "UNKNOWN"
+      }
+    },
+    "numeric_compliance_certified": false
+  },
+  "reasoning": {
+    "model_changed": false,
+    "client_effort": "UNKNOWN",
+    "recommendation": "HIGH forarchitecture/method/budget"
+  },
+  "files_new": [
+    "visual_scene_graph/pilot/N5P_IMPLEMENTATION_AND_RESOURCES_PLAN.md",
+    "visual_scene_graph/pilot/N5V_SEMANTIC_VALIDATION_PREREGISTRATION.md",
+    "validation/vsg_2b/N5PV_RESULT.json",
+    "validation/vsg_2b/n5pv/EXECUTION_BUDGET_PROPOSAL.json",
+    "validation/vsg_2b/n5pv/VALIDATION_MATRIX.json",
+    "validation/vsg_2b/n5pv/INPUT_MANIFEST.json",
+    "visual_scene_graph/pilot/N5PV_WORK_MODE_NEXT_STEPS.md"
+  ],
+  "historical_states_unchanged": {
+    "N3": "N3_MODEL_DEVELOPMENT_REQUIRED",
+    "N4": "N4_SCOPE_CHANGE_REQUIRED",
+    "N4S": "N4S_SETTINGS_DECISION_READY",
+    "VSG-2B": "BLOCKED / PENDING_VISUAL",
+    "C": "NO_GO_C0_UNVERIFIED",
+    "X1": "PROPOSED_NOT_APPROVED",
+    "production_authorized": false,
+    "provider_READY": false
+  },
+  "commands": [
+    {
+      "command": "git rev-parse HEAD;git status;AGENTSscan;Pythonbaselinehashes",
+      "exit_code": 0,
+      "result": "765files,CLEAN;inputsverified"
+    },
+    {
+      "command": "python3 /tmp/vsg_n5pv/metadata.py",
+      "exit_code": 0,
+      "result": "9versionedPyPImetadatarows;noinstalls/weights"
+    },
+    {
+      "command": "web find v2.3.1 afterofficialpageopen",
+      "result": "TIMED_OUT_TERMINATED;replacedbyboundedurllibGET;no taskstatechange"
+    },
+    {
+      "command": "Python officialPyTorchpageGET + requirementsinspection + rgpolicy",
+      "exit_code": 0,
+      "result": "2.3.1cu121 confirmed;metadata constraints inspected;current8attemptpolicy read"
+    },
+    {
+      "command": "python3 /tmp/vsg_n5pv/build.py",
+      "exit_code": 0,
+      "result": "Jointplan arithmetic and newplanningJSON;no modelrun"
+    }
+  ],
+  "next_steps_document": "visual_scene_graph/pilot/N5PV_WORK_MODE_NEXT_STEPS.md",
+  "no_commit_push_branch_zip": true
+}

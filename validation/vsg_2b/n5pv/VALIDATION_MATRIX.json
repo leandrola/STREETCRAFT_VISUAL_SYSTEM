@@ -1,0 +1,432 @@
+{
+  "milestone": "VSG-2B-N5V",
+  "version": "0.1.0",
+  "status": "N5V_PREREGISTRATION_READY_FOR_REVIEW",
+  "semantic_criteria_frozen": false,
+  "execution_authorized": false,
+  "scope": "D-only prospective diagnostic;n1pairedunit,no populationefficacy and no originalcampaignclosure",
+  "hypotheses": {
+    "causal": "B relation mutation/ablation changes actual operator and final observable beyond repeat noise,withcommon/text/sourceRNGfixed",
+    "preservation": "candidateB respects every frozen reviewed D criterion",
+    "incremental_primary": "Delta=q_B-q_A where q is fraction of two preregistered edge rows markedpreservedYES;positive means observed incrementalrelationpreservation in thissinglepair,not populationgain"
+  },
+  "primary_endpoint": {
+    "rows": [
+      "edge:rel_facade_left_of_diner",
+      "edge:rel_sign_above_diner"
+    ],
+    "unit": "one scene/source+seed matched A/B pair;repeats/mutations are not additionalindependentunits",
+    "score": "q=(YES_LEFT_OF+YES_ABOVE)/2; if either row UNKNOWN for eitherbranch, primary endpointINCONCLUSIVE; no denominator dropping",
+    "useful_effect_proposal": "delta>=0.5 (one of two relations goesNO->YES) withzero regressions anywhere and no protectedloss; smallest possible nonzero positive effect on the two-row rubric,calibration acceptance stillrequired",
+    "ties": "delta0 with all preservation gates met =>NO_INCREMENTAL_EFFECT_DETECTED,valid outcome not technicalfailure",
+    "negative_effect": "delta<0 or anyprotectedregression=>REJECT/REGRESSION",
+    "inference": "n=1 D seed;no confidenceinterval/p-value/generalization; no forced B superiority"
+  },
+  "secondary_endpoints": [
+    "literal TERMINAL DINER exact/readable",
+    "allprotectedrubricrows preserved",
+    "full rubric severity vectorS0..S3;YES impliesS0",
+    "causal finalnormalizedeffect comparedrepeatnoise",
+    "sourceidentity/layout andunauthorizedchange observations"
+  ],
+  "cases": [
+    {
+      "case": "R2B-191-D",
+      "eligibility": "CONDITIONAL_DESIGN_ONLY",
+      "seed": 20261002,
+      "vocabulary": [
+        "LEFT_OF",
+        "ABOVE",
+        "RIGHT_OF",
+        "BELOW"
+      ],
+      "source_hash": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+      "payload_hash": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d",
+      "limitations": "DRY_RUN_ONLY manifest;new settings/admission unapproved;one prospective A/B pair only"
+    },
+    {
+      "case": "R2B-191-E",
+      "eligibility": "REJECT_UNSUPPORTED_OCCLUDES",
+      "reason": "Current R vocabulary does not support occlusion; preservation lock and interpretation require separate development"
+    },
+    {
+      "case": "KENNYS-ROOFTOP",
+      "eligibility": "REJECT_UNSUPPORTED_DESIGN_AUTHORITY_PATH",
+      "reason": "Authorized rooftop/design records not handled by5node/2edge conservativeM1 D consumer;no automatic extension"
+    },
+    {
+      "case": "R2B-191-C",
+      "eligibility": "EXCLUDED_NO_GO_C0_UNVERIFIED",
+      "reason": "Missing authored reference binding;no substitution byF"
+    },
+    {
+      "case": "R2B-191-F",
+      "eligibility": "NOT_SELECTED_NOT_SUBSTITUTE",
+      "reason": "Cannot replace C or expand attempt quota"
+    }
+  ],
+  "criteria": [
+    {
+      "id": "edge:rel_facade_left_of_diner",
+      "observable": "Identify same facade and diner by visible structure/source anchors, confirm facade remains on left of diner in image-plane composition without relocation/inversion; assess adjoining boundaries and local arrangement, not centroid alone",
+      "tolerance": "No inversion or node substitution. Numeric boundary/displacement bands UNKNOWN until independent source/target calibration; ambiguous overlap/occlusion =>UNKNOWN, never forcedpass."
+    },
+    {
+      "id": "edge:rel_sign_above_diner",
+      "observable": "Same yellow sign above same diner storefront, source-consistent vertical placement/attachment; sign and diner must be separately identifiable",
+      "tolerance": "No inversion, moved sign identity or new occlusion. Annotation uncertainty bands to freeze from independent calibration; not hard boxes enforcing generation."
+    },
+    {
+      "id": "lock:GL-SEM-SIGN_01",
+      "observable": "Two lines TERMINAL above DINER, visually readable at native size and fixed4x nearest-neighbor viewing; exact uppercase spelling/order, no substituted/additional characters",
+      "tolerance": "zero literal substitution tolerance; if either independent reviewer cannot read a character then UNKNOWN pending adjudication. OCR optional only and not budgeted/enabled here."
+    },
+    {
+      "id": "identity_geometry_layout",
+      "observable": "Manifest rubric all original constraint IDs; same oblique framing, facade openings/fireescape, striped fascia, glazing, yellow sign and untranscribed graphic layout; no new architecture/text",
+      "tolerance": "Original qualitative rubric governs. Pixel-equality not required/promised. Landmark tolerance UNKNOWN until calibration; protected loss or unauthorized change =>reject."
+    }
+  ],
+  "frozen_rubric": {
+    "path": "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/manifest.json",
+    "sha256": "da3c021fea39eafb972a34876786cecc648f95359c32dbbffd232ad504f14895",
+    "rows": [
+      {
+        "constraint_id": "action:diner_01",
+        "category": "identity",
+        "priority": "P0",
+        "target": "diner_01",
+        "criterion": "Preserve the striped diner fascia, street-level glazing and storefront outline without adding or removing openings. Source region [0.478, 0.668, 0.945, 0.951]."
+      },
+      {
+        "constraint_id": "action:facade_01",
+        "category": "identity",
+        "priority": "P0",
+        "target": "facade_01",
+        "criterion": "Preserve the visible left masonry facade, windows and exterior fire escape arrangement. Source region [0.025, 0.065, 0.46, 0.956]."
+      },
+      {
+        "constraint_id": "action:sign_01",
+        "category": "identity",
+        "priority": "P0",
+        "target": "sign_01",
+        "criterion": "Preserve literal TERMINAL DINER, TERMINAL above DINER, on the yellow sign; no substituted or additional letters. Source region [0.455, 0.527, 0.6, 0.628]."
+      },
+      {
+        "constraint_id": "edge:rel_facade_left_of_diner",
+        "category": "relation",
+        "priority": "PR1",
+        "target": "rel_facade_left_of_diner",
+        "criterion": "Preserve facade_01 LEFT_OF diner_01 in source region [0.025, 0.065, 0.945, 0.956]; no inversion or relocation."
+      },
+      {
+        "constraint_id": "edge:rel_sign_above_diner",
+        "category": "relation",
+        "priority": "PR0",
+        "target": "rel_sign_above_diner",
+        "criterion": "Preserve sign_01 ABOVE diner_01 in source region [0.455, 0.527, 0.945, 0.951]; no inversion or relocation."
+      },
+      {
+        "constraint_id": "lock:GL-GEO-DINER_01",
+        "category": "lock",
+        "priority": "LOCK",
+        "target": "diner_01",
+        "criterion": "Preserve the striped diner fascia, street-level glazing and storefront outline without adding or removing openings. Source region [0.478, 0.668, 0.945, 0.951]."
+      },
+      {
+        "constraint_id": "lock:GL-GEO-FACADE_01",
+        "category": "lock",
+        "priority": "LOCK",
+        "target": "facade_01",
+        "criterion": "Preserve the visible left masonry facade, windows and exterior fire escape arrangement. Source region [0.025, 0.065, 0.46, 0.956]."
+      },
+      {
+        "constraint_id": "lock:GL-SEM-SIGN_01",
+        "category": "lock",
+        "priority": "LOCK",
+        "target": "sign_01",
+        "criterion": "Preserve literal TERMINAL DINER, TERMINAL above DINER, on the yellow sign; no substituted or additional letters. Source region [0.455, 0.527, 0.6, 0.628]."
+      },
+      {
+        "constraint_id": "node:diner_01",
+        "category": "identity",
+        "priority": "P0",
+        "target": "diner_01",
+        "criterion": "Preserve the striped diner fascia, street-level glazing and storefront outline without adding or removing openings. Source region [0.478, 0.668, 0.945, 0.951]."
+      },
+      {
+        "constraint_id": "node:facade_01",
+        "category": "identity",
+        "priority": "P0",
+        "target": "facade_01",
+        "criterion": "Preserve the visible left masonry facade, windows and exterior fire escape arrangement. Source region [0.025, 0.065, 0.46, 0.956]."
+      },
+      {
+        "constraint_id": "node:sign_01",
+        "category": "identity",
+        "priority": "P0",
+        "target": "sign_01",
+        "criterion": "Preserve literal TERMINAL DINER, TERMINAL above DINER, on the yellow sign; no substituted or additional letters. Source region [0.455, 0.527, 0.6, 0.628]."
+      },
+      {
+        "constraint_id": "topology:diner_01",
+        "category": "relation",
+        "priority": "P0",
+        "target": "diner_01",
+        "criterion": "Preserve the striped diner fascia, street-level glazing and storefront outline without adding or removing openings. Source region [0.478, 0.668, 0.945, 0.951]. Preserve incident relations: rel_facade_left_of_diner, rel_sign_above_diner."
+      },
+      {
+        "constraint_id": "topology:facade_01",
+        "category": "relation",
+        "priority": "P0",
+        "target": "facade_01",
+        "criterion": "Preserve the visible left masonry facade, windows and exterior fire escape arrangement. Source region [0.025, 0.065, 0.46, 0.956]. Preserve incident relations: rel_facade_left_of_diner."
+      },
+      {
+        "constraint_id": "topology:sign_01",
+        "category": "relation",
+        "priority": "P0",
+        "target": "sign_01",
+        "criterion": "Preserve literal TERMINAL DINER, TERMINAL above DINER, on the yellow sign; no substituted or additional letters. Source region [0.455, 0.527, 0.6, 0.628]. Preserve incident relations: rel_sign_above_diner."
+      },
+      {
+        "constraint_id": "identity",
+        "category": "identity",
+        "priority": "REQUIRED",
+        "target": "whole source",
+        "criterion": "Retain this source facade/diner composition, oblique camera and source identity; no substitute building or sign."
+      },
+      {
+        "constraint_id": "unauthorized_change",
+        "category": "unauthorized_change",
+        "priority": "REQUIRED",
+        "target": "whole source; fascia_01 and billboard_01",
+        "criterion": "No new architecture, roof equipment, geographic tokens or completed invented text. Preserve uncertain left fascia lettering as graphic evidence in [0.050,0.622,0.405,0.725]; do not supply an exact reading. Billboard wording in [0.437,0.018,0.797,0.370] is untranscribed, not asserted illegible; preserve graphic layout without inventing a transcription."
+      }
+    ],
+    "do_not_modify_schema": true
+  },
+  "review": {
+    "reviewers": 2,
+    "independence": "neither trained/tuned model nor authored output;availabilityUNKNOWN;adjudicator thirdindependent on disagreements,availabilityUNKNOWN",
+    "blinding": "custodian assigns shuffledopaque labels, hidesA/B/seed/config;sourceavailable; collectindependent perrowjudgments beforejointadjudication; recordblindinglimits",
+    "view": "native347x389 and4x nearest-neighbor; nosharpening/reconstruction;sourceandoutputsidebyside foridentity; literaltranscribe before revealexpected phrase",
+    "disagreements": "keep bothsignedreviews;thirdadjudicator may resolvewithreason; unresolved=>UNKNOWN,never average intoPASS",
+    "S0_S3": "useexistingrubric/severityschema;do not redefine campaign conditions",
+    "no_evaluator": "prerequisitefails; no reviewclaimed"
+  },
+  "calibration": {
+    "pairs_proposed": 24,
+    "source": "separately licensed preexisting source/authorizedtargetimages,neverD/E/Kenny/C or model testoutputs",
+    "ratings": 48,
+    "adjudications_cap": 24,
+    "new_model_images": 0,
+    "acceptance_proposal": ">=90%exact categoricalagreement across criterionjudgments beforeadjudication;failure requires rubric revision/versionfreeze oncalibrationonly",
+    "pending": "annotatedboundary/landmark uncertainty bands,revieweravailability,corpusrights and calibrationresult;semantic_criteria_frozen remainsfalse",
+    "data_split": "scene/provenance-disjoint train1024,val128,cal24,holdout128;no training or execution performed"
+  },
+  "future_results": [
+    "TECHNICAL_ERROR",
+    "NO_FINAL_CHANNEL_SENSITIVITY",
+    "PROTECTED_CONTRACT_FAILURE",
+    "NO_INCREMENTAL_EFFECT_DETECTED",
+    "INCONCLUSIVE_UNKNOWN_OR_COVERAGE",
+    "OBSERVED_INCREMENTAL_EFFECT_IN_SAMPLE"
+  ],
+  "tests": [
+    {
+      "id": "DEFAULT_SCHEDULE_NEGATIVE_CONTROL",
+      "status": "NOT_RUN",
+      "receipts": [
+        "T_NEG_B",
+        "T_NEG_ABL"
+      ],
+      "hypothesis": "absence of final R sensitivity under early-only schedule",
+      "success": "final difference within measured repeat noise; early hook dependence may exist",
+      "falsifier": "persistent final effect under asserted identical inputs falsifies temporal/nohiddenstate assumptions",
+      "prerequisites": [
+        "designdecision",
+        "trainedsamecompositeartifact",
+        "strictsettings/runtime/RNG",
+        "approvedcounterclassificationandnumericbudget"
+      ],
+      "prohibited": [
+        "noalteredfrozenDtruth",
+        "nooperationaladmissionbypass",
+        "noadditionalunbudgetedreceipts"
+      ]
+    },
+    {
+      "id": "EXPLICIT_FULL_SCHEDULE",
+      "status": "NOT_RUN",
+      "receipts": [
+        "T_A",
+        "T_B"
+      ],
+      "hypothesis": "same resolved beta1 acrossA/B",
+      "success": "51 scheduled conditional calls; identical other config hashes",
+      "falsifier": "missing final R activation,branch-weight/settings differences",
+      "prerequisites": [
+        "designdecision",
+        "trainedsamecompositeartifact",
+        "strictsettings/runtime/RNG",
+        "approvedcounterclassificationandnumericbudget"
+      ],
+      "prohibited": [
+        "noalteredfrozenDtruth",
+        "nooperationaladmissionbypass",
+        "noadditionalunbudgetedreceipts"
+      ]
+    },
+    {
+      "id": "RELATIONAL_NEUTRALIZATION_ABLATION",
+      "status": "NOT_RUN",
+      "receipts": [
+        "F_NEUTRAL",
+        "T_B",
+        "T_B_ABL"
+      ],
+      "hypothesis": "R alone controls treatment",
+      "success": "shared attention/FF/S retained;empty R neutral;nozero-keysubstitute",
+      "falsifier": "whole-fuser bypass or shared-path mismatch",
+      "prerequisites": [
+        "designdecision",
+        "trainedsamecompositeartifact",
+        "strictsettings/runtime/RNG",
+        "approvedcounterclassificationandnumericbudget"
+      ],
+      "prohibited": [
+        "noalteredfrozenDtruth",
+        "nooperationaladmissionbypass",
+        "noadditionalunbudgetedreceipts"
+      ]
+    },
+    {
+      "id": "VALID_ISOLATED_MUTATION",
+      "status": "NOT_RUN",
+      "receipts": [
+        "R_MUT",
+        "T_B",
+        "T_B_MUT"
+      ],
+      "hypothesis": "typed predicate causally matters",
+      "success": "operator and final latent effect >max(10*repeatnoise,1e-4) normalized;campaign rejects mutatedD",
+      "falsifier": "onlytransporthash changes,no learned dependence,admittedmutatedtruth",
+      "prerequisites": [
+        "designdecision",
+        "trainedsamecompositeartifact",
+        "strictsettings/runtime/RNG",
+        "approvedcounterclassificationandnumericbudget"
+      ],
+      "prohibited": [
+        "noalteredfrozenDtruth",
+        "nooperationaladmissionbypass",
+        "noadditionalunbudgetedreceipts"
+      ]
+    },
+    {
+      "id": "TEMPORAL_TO_DECODED_OBSERVABLE",
+      "status": "NOT_RUN",
+      "receipts": [
+        "T_B",
+        "T_B_ABL",
+        "T_B_MUT",
+        "OUT_B",
+        "OUT_B_ABL",
+        "OUT_B_MUT"
+      ],
+      "hypothesis": "structural influence survives to final observable",
+      "success": "hooks each timestep,PNDMhistory,latent and decodedpixels;semanticreview independently required",
+      "falsifier": "onlyearlyeffect,copysource,safetyblocked,residualwithoutsemanticchange",
+      "prerequisites": [
+        "designdecision",
+        "trainedsamecompositeartifact",
+        "strictsettings/runtime/RNG",
+        "approvedcounterclassificationandnumericbudget"
+      ],
+      "prohibited": [
+        "noalteredfrozenDtruth",
+        "nooperationaladmissionbypass",
+        "noadditionalunbudgetedreceipts"
+      ]
+    },
+    {
+      "id": "NUMERICAL_REPEAT",
+      "status": "NOT_RUN",
+      "receipts": [
+        "T_B",
+        "T_B_REPEAT",
+        "OUT_B",
+        "OUT_B_REPEAT"
+      ],
+      "hypothesis": "fixed states reproduce",
+      "success": "fp32atol1e-6 rtol1e-5; no posthoc widening;measure normalizedrepeatnoise",
+      "falsifier": "nondeterminism or hash/state mismatch",
+      "prerequisites": [
+        "designdecision",
+        "trainedsamecompositeartifact",
+        "strictsettings/runtime/RNG",
+        "approvedcounterclassificationandnumericbudget"
+      ],
+      "prohibited": [
+        "noalteredfrozenDtruth",
+        "nooperationaladmissionbypass",
+        "noadditionalunbudgetedreceipts"
+      ]
+    },
+    {
+      "id": "SEMANTIC_AND_PRESERVATION_REVIEW",
+      "status": "NOT_RUN",
+      "receipts": [
+        "OUT_A",
+        "OUT_B"
+      ],
+      "hypothesis": "contract preservation andincremental endpoint",
+      "success": "complete blind rubric,noUNKNOWN/protectedregression/S3/unauthorizedchange;equal outputs may yield validtie",
+      "falsifier": "protectedloss =>reject; UNKNOWN=>inconclusive; numericdifference alone insufficient",
+      "prerequisites": [
+        "designdecision",
+        "trainedsamecompositeartifact",
+        "strictsettings/runtime/RNG",
+        "approvedcounterclassificationandnumericbudget"
+      ],
+      "prohibited": [
+        "noalteredfrozenDtruth",
+        "nooperationaladmissionbypass",
+        "noadditionalunbudgetedreceipts"
+      ]
+    },
+    {
+      "id": "FULL_TEXT_AND_INPUT_VALIDATION",
+      "status": "NOT_RUN",
+      "receipts": [
+        "TXT_A",
+        "TXT_B",
+        "TXT_NEG",
+        "LABELS",
+        "RESAMPLE"
+      ],
+      "hypothesis": "complete text and typed integrity",
+      "success": "IDs coverage,128slots;rejectinvalid/overflow/missinglock/Bstring before learned calls;semanticfidelitynotinferred",
+      "falsifier": "truncation,fieldloss,silentfallback,A parsed forR",
+      "prerequisites": [
+        "designdecision",
+        "trainedsamecompositeartifact",
+        "strictsettings/runtime/RNG",
+        "approvedcounterclassificationandnumericbudget"
+      ],
+      "prohibited": [
+        "noalteredfrozenDtruth",
+        "nooperationaladmissionbypass",
+        "noadditionalunbudgetedreceipts"
+      ]
+    }
+  ],
+  "receipt_budget_reference": "EXECUTION_BUDGET_PROPOSAL.json",
+  "non_goals": [
+    "No OCR model/newbackend",
+    "NoC/F substitution",
+    "No visual consumerPASS fromstaticmath",
+    "No resamplerQAaccuracyclaim withoutseparatereadout/protocol;N4QAthresholds remain unvalidated proposals"
+  ]
+}

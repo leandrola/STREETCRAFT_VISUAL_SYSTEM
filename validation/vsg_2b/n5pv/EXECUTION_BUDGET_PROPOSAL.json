@@ -1,0 +1,1232 @@
+{
+  "milestone": "VSG-2B-N5PV",
+  "version": "0.1.0",
+  "status": "PROPOSAL_ONLY",
+  "execution_budget_complete": false,
+  "all_execution_authorized": false,
+  "approved_caps": {
+    "learned_calls": 0,
+    "attempts": 0,
+    "outputs": 0,
+    "training_steps": 0,
+    "spend": 0
+  },
+  "selected_diagnostic_scenario": {
+    "id": "D_DIAGNOSTIC_7_TRAJECTORIES",
+    "purpose": "D-only causality,preservation and oneincrementalpair;no claimcampaignclosure",
+    "receipts": [
+      {
+        "id": "SRC",
+        "stage": "prepare",
+        "status": "NOT_RUN",
+        "depends_on": [],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 1,
+          "UNet": 0,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 1,
+          "UNet": 0,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "cache": "source latent and RNG draw tape common to all7 trajectories"
+      },
+      {
+        "id": "TXT_A",
+        "stage": "prepare",
+        "status": "NOT_RUN",
+        "depends_on": [],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 25,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 98,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "microbatch": 4,
+        "purpose": "98 complete A chunks:24 batches4+1 batch2"
+      },
+      {
+        "id": "TXT_B",
+        "stage": "prepare",
+        "status": "NOT_RUN",
+        "depends_on": [],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 19,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 76,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "microbatch": 4,
+        "purpose": "76 complete B chunks:19 batches4; no cross-A chunk-cache claim"
+      },
+      {
+        "id": "TXT_NEG",
+        "stage": "prepare",
+        "status": "NOT_RUN",
+        "depends_on": [],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 1,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 1,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "microbatch": 1,
+        "purpose": "one empty negative sequence"
+      },
+      {
+        "id": "LABELS",
+        "stage": "prepare",
+        "status": "NOT_RUN",
+        "depends_on": [],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 2,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 5,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "microbatch": 4,
+        "purpose": "five source labels:4+1"
+      },
+      {
+        "id": "RESAMPLE",
+        "stage": "prepare",
+        "status": "NOT_RUN",
+        "depends_on": [
+          "TXT_A",
+          "TXT_B",
+          "TXT_NEG"
+        ],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 0,
+          "resampler": 3,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 0,
+          "resampler": 3,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "purpose": "separate A/B/negative calls; output caches keyed by full prompt hash and ordered chunks"
+      },
+      {
+        "id": "S",
+        "stage": "prepare",
+        "status": "NOT_RUN",
+        "depends_on": [
+          "SRC",
+          "LABELS"
+        ],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 1,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 1,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "objects": 5
+      },
+      {
+        "id": "R",
+        "stage": "prepare",
+        "status": "NOT_RUN",
+        "depends_on": [
+          "S"
+        ],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 1,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 1,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "objects": 7
+      },
+      {
+        "id": "R_MUT",
+        "stage": "prepare",
+        "status": "NOT_RUN",
+        "depends_on": [
+          "S"
+        ],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 1,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 1,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "objects": 7,
+        "purpose": "isolated LEFT_OF->RIGHT_OF; not admitted D truth"
+      },
+      {
+        "id": "T_A",
+        "stage": "trajectory",
+        "status": "NOT_RUN",
+        "depends_on": [
+          "SRC",
+          "RESAMPLE",
+          "S"
+        ],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 51,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 102,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "branch": "A",
+        "beta": 1.0,
+        "R": "NONE",
+        "CFG_batch": 2,
+        "steps_requested": 50,
+        "loop_calls": 51,
+        "attempt_reservations_proposed": 1,
+        "root_seed": 20261002,
+        "RNG_source_initial_reinject": [
+          20261003,
+          20261004,
+          20261005
+        ],
+        "scheduler_reset": true,
+        "output": "final latent;full trajectory counts as generative compute even without decode"
+      },
+      {
+        "id": "T_B",
+        "stage": "trajectory",
+        "status": "NOT_RUN",
+        "depends_on": [
+          "SRC",
+          "RESAMPLE",
+          "S",
+          "R"
+        ],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 51,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 102,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "branch": "B",
+        "beta": 1.0,
+        "R": "R",
+        "CFG_batch": 2,
+        "steps_requested": 50,
+        "loop_calls": 51,
+        "attempt_reservations_proposed": 1,
+        "root_seed": 20261002,
+        "RNG_source_initial_reinject": [
+          20261003,
+          20261004,
+          20261005
+        ],
+        "scheduler_reset": true,
+        "output": "final latent;full trajectory counts as generative compute even without decode"
+      },
+      {
+        "id": "T_B_REPEAT",
+        "stage": "trajectory",
+        "status": "NOT_RUN",
+        "depends_on": [
+          "SRC",
+          "RESAMPLE",
+          "S",
+          "R"
+        ],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 51,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 102,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "branch": "B",
+        "beta": 1.0,
+        "R": "R",
+        "CFG_batch": 2,
+        "steps_requested": 50,
+        "loop_calls": 51,
+        "attempt_reservations_proposed": 1,
+        "root_seed": 20261002,
+        "RNG_source_initial_reinject": [
+          20261003,
+          20261004,
+          20261005
+        ],
+        "scheduler_reset": true,
+        "output": "final latent;full trajectory counts as generative compute even without decode"
+      },
+      {
+        "id": "T_B_ABL",
+        "stage": "trajectory",
+        "status": "NOT_RUN",
+        "depends_on": [
+          "SRC",
+          "RESAMPLE",
+          "S"
+        ],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 51,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 102,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "branch": "B",
+        "beta": 1.0,
+        "R": "NONE",
+        "CFG_batch": 2,
+        "steps_requested": 50,
+        "loop_calls": 51,
+        "attempt_reservations_proposed": 1,
+        "root_seed": 20261002,
+        "RNG_source_initial_reinject": [
+          20261003,
+          20261004,
+          20261005
+        ],
+        "scheduler_reset": true,
+        "output": "final latent;full trajectory counts as generative compute even without decode"
+      },
+      {
+        "id": "T_B_MUT",
+        "stage": "trajectory",
+        "status": "NOT_RUN",
+        "depends_on": [
+          "SRC",
+          "RESAMPLE",
+          "S",
+          "R_MUT"
+        ],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 51,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 102,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "branch": "B",
+        "beta": 1.0,
+        "R": "R_MUT",
+        "CFG_batch": 2,
+        "steps_requested": 50,
+        "loop_calls": 51,
+        "attempt_reservations_proposed": 1,
+        "root_seed": 20261002,
+        "RNG_source_initial_reinject": [
+          20261003,
+          20261004,
+          20261005
+        ],
+        "scheduler_reset": true,
+        "output": "final latent;full trajectory counts as generative compute even without decode"
+      },
+      {
+        "id": "T_NEG_B",
+        "stage": "trajectory",
+        "status": "NOT_RUN",
+        "depends_on": [
+          "SRC",
+          "RESAMPLE",
+          "S",
+          "R"
+        ],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 51,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 102,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "branch": "B",
+        "beta": 0.3,
+        "R": "R",
+        "CFG_batch": 2,
+        "steps_requested": 50,
+        "loop_calls": 51,
+        "attempt_reservations_proposed": 1,
+        "root_seed": 20261002,
+        "RNG_source_initial_reinject": [
+          20261003,
+          20261004,
+          20261005
+        ],
+        "scheduler_reset": true,
+        "output": "final latent;full trajectory counts as generative compute even without decode"
+      },
+      {
+        "id": "T_NEG_ABL",
+        "stage": "trajectory",
+        "status": "NOT_RUN",
+        "depends_on": [
+          "SRC",
+          "RESAMPLE",
+          "S"
+        ],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 51,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 102,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "branch": "B",
+        "beta": 0.3,
+        "R": "NONE",
+        "CFG_batch": 2,
+        "steps_requested": 50,
+        "loop_calls": 51,
+        "attempt_reservations_proposed": 1,
+        "root_seed": 20261002,
+        "RNG_source_initial_reinject": [
+          20261003,
+          20261004,
+          20261005
+        ],
+        "scheduler_reset": true,
+        "output": "final latent;full trajectory counts as generative compute even without decode"
+      },
+      {
+        "id": "OUT_A",
+        "stage": "decode",
+        "status": "NOT_RUN",
+        "depends_on": [
+          "T_A"
+        ],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 1,
+          "safety": 1,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 1,
+          "safety": 1,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "maximum_outputs": 1,
+        "purpose": "decode one existing trajectory, not another attempt; no extra learned generator; unpad only"
+      },
+      {
+        "id": "OUT_B",
+        "stage": "decode",
+        "status": "NOT_RUN",
+        "depends_on": [
+          "T_B"
+        ],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 1,
+          "safety": 1,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 1,
+          "safety": 1,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "maximum_outputs": 1,
+        "purpose": "decode one existing trajectory, not another attempt; no extra learned generator; unpad only"
+      },
+      {
+        "id": "OUT_B_REPEAT",
+        "stage": "decode",
+        "status": "NOT_RUN",
+        "depends_on": [
+          "T_B_REPEAT"
+        ],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 1,
+          "safety": 1,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 1,
+          "safety": 1,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "maximum_outputs": 1,
+        "purpose": "decode one existing trajectory, not another attempt; no extra learned generator; unpad only"
+      },
+      {
+        "id": "OUT_B_ABL",
+        "stage": "decode",
+        "status": "NOT_RUN",
+        "depends_on": [
+          "T_B_ABL"
+        ],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 1,
+          "safety": 1,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 1,
+          "safety": 1,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "maximum_outputs": 1,
+        "purpose": "decode one existing trajectory, not another attempt; no extra learned generator; unpad only"
+      },
+      {
+        "id": "OUT_B_MUT",
+        "stage": "decode",
+        "status": "NOT_RUN",
+        "depends_on": [
+          "T_B_MUT"
+        ],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 1,
+          "safety": 1,
+          "direct_fuser": 0
+        },
+        "processed_batch_units": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 1,
+          "safety": 1,
+          "direct_fuser": 0
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "maximum_outputs": 1,
+        "purpose": "decode one existing trajectory, not another attempt; no extra learned generator; unpad only"
+      },
+      {
+        "id": "F_NEUTRAL",
+        "stage": "operator",
+        "status": "NOT_RUN",
+        "depends_on": [
+          "S",
+          "R",
+          "T_B"
+        ],
+        "maximum_executions": 1,
+        "module_invocations": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 4
+        },
+        "processed_batch_units": {
+          "CLIP": 0,
+          "resampler": 0,
+          "S_projector": 0,
+          "R_projector": 0,
+          "VAE_encode": 0,
+          "UNet": 0,
+          "VAE_decode": 0,
+          "safety": 0,
+          "direct_fuser": 4
+        },
+        "hash_requirements": [
+          "input bytes/config version",
+          "composite checkpoint+patch",
+          "tokenizer",
+          "dtype/device/runtime",
+          "RNG tapes",
+          "source/authority"
+        ],
+        "cache_policy": "No cache reuse across different complete input/config/weights/dtype/position keys; explicitly declared reuse only",
+        "retry_max": 0,
+        "purpose": "four direct selected-layer neutralization comparisons; nested hooks during UNet are not counted again",
+        "input_feature": "fixed cached fuser input x from declared T_B layer/timestep;noadditionalUNetforward"
+      }
+    ],
+    "module_invocation_caps": {
+      "CLIP": 47,
+      "resampler": 3,
+      "S_projector": 1,
+      "R_projector": 2,
+      "VAE_encode": 1,
+      "UNet": 357,
+      "VAE_decode": 5,
+      "safety": 5,
+      "direct_fuser": 4
+    },
+    "processed_batch_unit_caps": {
+      "CLIP": 180,
+      "resampler": 3,
+      "S_projector": 1,
+      "R_projector": 2,
+      "VAE_encode": 1,
+      "UNet": 714,
+      "VAE_decode": 5,
+      "safety": 5,
+      "direct_fuser": 4
+    },
+    "total_learned_invocations": 425,
+    "total_processed_batch_units": 915,
+    "full_trajectories": 7,
+    "UNet_invocations": 357,
+    "UNet_CFG_sample_units": 714,
+    "decoded_outputs_cap": 5,
+    "matched_AB_pairs": 1,
+    "root_seed": 20261002,
+    "attempt_charges_proposed": 7,
+    "retry_max": 0,
+    "all_nodes_status": "NOT_RUN",
+    "configuration_reference": "n4s/SETTINGS_AMENDMENT_PROPOSAL.json; same composedpatch/weights across7trajectories",
+    "cache_scope": "Within one immutable artifact/seed/run-group;fullfrozen cache key hashed. Repeat restoresallRNG/schedulerstate;source/textcache reuseexplicit,not a fulluncachedpreprocessingrepeat. Cachedsource reproducibility is not newlyproven."
+  },
+  "campaign_policy_conflict": {
+    "current_max_attempts": 8,
+    "minimum_distinct_pairs": 4,
+    "official_pair_plan_attempts": 8,
+    "diagnostic_and_official_unique_attempts": 13,
+    "formula": "7diagnostic trajectories (including D A/B2)+6additional E/Kenny/C branches=13; no double counting D pair",
+    "decision": "Reduce current requested scope to7trajectoryD diagnosticproposal,leave1unused; cannotrununderexistingpolicy until classificationauthorized. Neverclaim diagnosticsexempt. Fulloriginalcampaignremainsblocked;alternativeexpandedbudget wouldrequireseparateproposal,notrequested/appliedhere.",
+    "unsupported_coverage": [
+      "E OCCLUDES",
+      "Kenny authored design",
+      "C unbound reference"
+    ],
+    "existing_policy_edited": false,
+    "diagnostic_admission": "NOT_AUTHORIZED; proposed sharedattemptledgercharge includeslatent-onlytrajectories andmutations; frozenDgate mustreject mutation. Requires explicit decision on diagnosticdispatch/classification,notordinaryDmanifest admission."
+  },
+  "training_scenario": {
+    "status": "PROPOSED_NOT_AUTHORIZED",
+    "train_scenes": 1024,
+    "validation_scenes": 128,
+    "calibration_pairs_existing_images": 24,
+    "heldout_scenes_reserved": 128,
+    "acquisition_max_scene_pairs": 1304,
+    "available_licensed_pairs": "UNKNOWN",
+    "data_assumptions": "Each scene one source/authorizedtarget pair;5nodes,2edges,<=9600 content tokens per route,7 short labels/edgephrases<=75 each. Out-of-domain rows reject before encoding. Corpus D/E/Kenny/C excluded from all training/tuning/calibration.",
+    "learned_preparation_scene_cap": 1152,
+    "CLIP_preparation": {
+      "invocations": 76033,
+      "processed_sequences": 302977,
+      "formula": "per scene:ceil128/4 A+ceil128/4 B+ceil7/4 labels/teacherphrases=66 calls,263 sequences; one shared empty negative globally; upper bounds, not measured text distribution"
+    },
+    "VAE_preparation": {
+      "invocations": 2304,
+      "processed_images": 2304,
+      "formula": "source and authorizedtarget encode once per scene"
+    },
+    "training_validation_calls": {
+      "UNet": 4224,
+      "resampler": 4224,
+      "S_projector": 4224,
+      "R_projector": 2112
+    },
+    "microsteps_training": 4096,
+    "validation_examples_forward": 128,
+    "microbatch": 1,
+    "gradient_accumulation": 8,
+    "optimizer_steps_cap": 512,
+    "backward_passes_cap": 4096,
+    "CFG_training_batch": 1,
+    "route_schedule": "strict alternating A/B;128 validation examples64/64; no full diffusion trajectories in training/val loss stage",
+    "full_trajectories": 0,
+    "decoded_outputs": 0,
+    "optimizer": "AdamW lr1e-4 betas(0.9,0.999) eps1e-8 decay0.01; constant LR for bounded pilot; seed20261010 proposed",
+    "loss": "denoising MSE1.0 + cosine text-to-CLIP teacher alignment0.1 + cosine R-to-short-relation-teacher alignment0.1 on B; no-edit licensed pairs regularize denoising target. Teacher labels are training supervision, never B runtime prompt. No extra model/loss network.",
+    "selection": "one final pilot checkpoint after fixed512 optimizersteps; validation loss recorded, no D-driven selection, no hyperparameter sweep. More steps/configs need revised budget.",
+    "module_execution_cap": 93121,
+    "approved_calls": 0,
+    "approved_training_steps": 0,
+    "calibration_and_holdout": "No learned execution on calibration24/holdout128 in this tranche. Human calibration uses licensed preexisting images. Population validation on holdout requires separate future budget; not promised by pilot."
+  },
+  "all_tranches_learned_invocations_cap": 93546,
+  "resource_caps_proposed": {
+    "preparation_GPU_hours": 8,
+    "training_plus_validation_GPU_hours": 24,
+    "diagnostic_GPU_hours": 2,
+    "total_GPU_hours": 34,
+    "GPU_count": 1,
+    "GPU_memory_class_GiB": 48,
+    "host_RAM_GiB": 64,
+    "storage_GiB": 256,
+    "numeric_memory_STOP_GiB": 38.4,
+    "caps_are": "Planning limits,notruntime estimates or adequacy proof. Stopwithin cap;noautomaticupgrade/extensions. MonetaryceilingUNKNOWN,soexecutionnotready."
+  },
+  "cost": {
+    "currency": "USD",
+    "rates": "UNKNOWN_NOT_QUOTED",
+    "total": "UNKNOWN",
+    "ceiling_money": "UNKNOWN_REQUIRES_QUOTE_AND_APPROVAL",
+    "formula": "Hprep*Rgpu_prep+Htrain*Rgpu_train+Hdiag*Rgpu_diag+Hcpu*Rcpu+stored_GB*months*Rstorage+egress_GB*Regress+licensed_pairs*Rdata+annotation_hours*Rannotation+review_hours*Rreview+engineering_hours*Rengineering+taxes/fees",
+    "cap_scenario": "GPU components <=8Rp+24Rt+2Rd;othersneednumericrates/amounts beforeapproval; do nottreatUNKNOWNaszero",
+    "sensitivity_scenarios": {
+      "fast": "measuredtime belowcaps,actualreceiptscounted",
+      "at_cap": "stopat34GPUhours aggregate andperstagecaps evenifincomplete",
+      "failure": "one failed receiptconsumes reservedunits/attempt;retry0; stopaffectedgate; retainedlogs"
+    }
+  },
+  "memory_and_storage_estimates": {
+    "trainable_parameters_by_module": {
+      "resampler": 37971456,
+      "S_projector": 1234944,
+      "R_projector": 1267072,
+      "fuser_LoRA_r8_plus_gates": 2394656
+    },
+    "trainable_parameters_total_approx": 42868128,
+    "method": "Proposed linear/normalizationshapes,bias-free resamplerlinear;16fusers assumed from2layers perthreecrossattndownblocks+3perthreeup+1mid. Mustverify state_dict beforeload; no weightbytes loaded.",
+    "trainable_parameter_gradient_Adam_bytes_fp32": 685890048,
+    "formula": "4bytesparams+4grads+8Adam moments pertrainableparameter;notpeakactivationmemory",
+    "frozen_parameter_residency": "UNKNOWN untiltensor inventory;2*3,159,269,896bytes is only an approximateproxy IF allpublishedfp16payloads store2byteparams,notmeasuredmemory",
+    "activation_formula": "sum(savedblockactivations)+attentionworkspace+QKV+latents;UNet/fuseractivations stillneeded forgradienttoinputs/deltas despitefrozenbase",
+    "training_microbatch": 1,
+    "accumulation": 8,
+    "reference_dtype": "float32",
+    "attention": "PyTorch2.3.1 SDPA, deterministicmathreference; otherkernelsrequirepreregisteredrepeatability. Actualpeak NOT_MEASURED.",
+    "max_full_text_cache_bytes": 67947724800,
+    "max_VAE_cache_bytes": 150994944,
+    "raw_images_scenario_bytes": 5216000000,
+    "checkpoint_retention_cap": 5,
+    "hardware_rationale": "48GiB planningclass only;stopif measuredpeak>38.4GiB (80%) or hostmemory/storagecap. Weights+optimizer knownapprox;activationuncertainty keepsrequirement NOT_MEASURED. No hardwarecontract."
+  },
+  "reservation_and_logs": {
+    "unit": "one declared learnedmodule call; recordbatch samples,objects/tokens separately. Nestedfuserhooks freeofdouble-count, directfuserreceipts counted. Backward/optimizer separatetrainingcounters,notlost inforwardcount.",
+    "before_call": "reserveunits andattempt iftrajectory; validateinputs/checkpoint/RNG/counterclassification;noreservation ifmandatorygatefails",
+    "failure": "appenderror/status/times/allocatedunits;attempt remainsconsumed;no retry",
+    "STOP": [
+      "input/config/weight hashmismatch",
+      "unknown counterauthority",
+      "memory/time/cost/callcap",
+      "protectedfailure or S3",
+      "nondeterministic unapprovedkernel",
+      "usercancel",
+      "missingreviewer/calibration"
+    ],
+    "rollback": "disablecandidateID;leaveallreceipts/counters;no READY fallback, no oldevidenceoverwrite"
+  },
+  "open_budget_dependencies": [
+    "fulltransitivewheellock/containerdriverdigest",
+    "licensedcorpusandannotation/revieweravailability",
+    "measuredpeakRAM/VRAM andruntime",
+    "all tariffs/costs and monetaryceiling",
+    "weightedforwardanddiagnosticattemptclassification",
+    "semanticcalibration beforetestfreeze"
+  ]
+}
