@@ -1,0 +1,129 @@
+{
+  "milestone": "ORCHESTRATION_PILOT_N5PV_RECONCILIATION",
+  "created_at": "2026-10-02T18:13:28.816853+00:00",
+  "status": "IMPLEMENTED_PENDING_INDEPENDENT_REVIEW",
+  "documentary_status": "RECONSTRUCTION_DRAFTS_FOR_REVIEW",
+  "historical_originals_available": false,
+  "baseline": {
+    "local_HEAD": "2a489a6e6868bfe8473ceb6b4f4228e0d2cc8b88",
+    "remote_HEAD": "2a489a6e6868bfe8473ceb6b4f4228e0d2cc8b88",
+    "remote_check": "git ls-remote origin HEAD; equal at preflight",
+    "branch": "main",
+    "initial_git_status": "CLEAN",
+    "AGENTS": "No applicable files found in repo/ancestor directories"
+  },
+  "authorization": {
+    "source": "User RUN IT invokes ORCHESTRATION_PILOT_BOOTSTRAP.md",
+    "bootstrap_path": "/Users/macbookpro/Documents/STREETCRAFT_ORCHESTATION_PILOT/ORCHESTRATION_PILOT_BOOTSTRAP.md",
+    "bootstrap_sha256": "090a77865d170987a0fac6d931a8f384b2ee03a89aaa937ba0b23a1b1562fb61",
+    "scope": "setup/documentary recovery/static checks/task-owned commit/normal push only",
+    "D1": "PENDING",
+    "D2": "PENDING",
+    "D3": "PENDING",
+    "D4": "PENDING",
+    "historical_no_commit_push": "Original N5 spec restriction retained as historical text; current bootstrap expressly permits documentary pilot commits and pushes"
+  },
+  "source_spec": {
+    "original_path": "/Users/macbookpro/Documents/STREETCRAFT_specs VSG/VSG_2B_N5P_N5V_PREEXECUTION_SPEC.md",
+    "repository_copy": "validation/vsg_2b/orchestration_pilot/VSG_2B_N5P_N5V_PREEXECUTION_SPEC.md",
+    "sha256": "89123ca72cc8f3477d14cb57715785b3fe58326fd09dd15e261760a86d63438b",
+    "expected_sha256": "89123ca72cc8f3477d14cb57715785b3fe58326fd09dd15e261760a86d63438b",
+    "hash_verified": true,
+    "copy_kind": "Recovered authoritative specification, exact bytes"
+  },
+  "recovery": {
+    "owner": "independent read-only specialist /root/recovery",
+    "searched": [
+      "current checkout",
+      "/Users/macbookpro/Documents/STREETCRAFT_specs VSG",
+      "/Users/macbookpro/Documents/STREETCRAFT_ORCHESTATION_PILOT",
+      "/tmp/vsg_n5pv",
+      "all reachable git history exact missing paths and object names"
+    ],
+    "bounds": "Only three top-level Streetcraft Documents directories and related task tmp artifacts; no unrelated personal search",
+    "git_evidence": "git log --all -- exact missing paths and git rev-list --all --objects filtered N5 markdown: no matches",
+    "nearby_artifact": {
+      "path": "/tmp/vsg_n5pv/build.py",
+      "sha256": "d9f993b1e43e4a47a956493c7f054e2a449998a856a09d7138c9cb3639ae7f22",
+      "finding": "Historical JSON generator references but does not write missing Markdown; read only, not executed"
+    },
+    "missing_originals": [
+      "visual_scene_graph/pilot/N5P_IMPLEMENTATION_AND_RESOURCES_PLAN.md",
+      "visual_scene_graph/pilot/N5V_SEMANTIC_VALIDATION_PREREGISTRATION.md",
+      "visual_scene_graph/pilot/N5PV_WORK_MODE_NEXT_STEPS.md"
+    ],
+    "new_documents_kind": "Clearly labeled reconstruction drafts, not recovered originals"
+  },
+  "readiness_correction": {
+    "historical_record": "validation/vsg_2b/N5PV_RESULT.json",
+    "historical_record_sha256": "9f64f29c08fce6466755e1df1f6fbc0391af6474ced15a547c7378519950b19f",
+    "historical_declared_status": "N5PV_JOINT_REVIEW_READY",
+    "baseline_absent_declared_deliverables": [
+      "visual_scene_graph/pilot/N5P_IMPLEMENTATION_AND_RESOURCES_PLAN.md",
+      "visual_scene_graph/pilot/N5V_SEMANTIC_VALIDATION_PREREGISTRATION.md",
+      "visual_scene_graph/pilot/N5PV_WORK_MODE_NEXT_STEPS.md"
+    ],
+    "finding": "Historical documentary readiness not substantiated at baseline: three declared deliverables absent. Hash/inventory checks passed but cannot establish missing deliverables.",
+    "corrected_baseline_documentary_status": "N5PV_INCOMPLETE_MISSING_DECLARED_DOCUMENTS",
+    "current_documentary_status": "Reconstruction drafts await independent review; no restoration claim for historical originals",
+    "historical_records_rewritten": false,
+    "additional_open_definition": "Numerical normalization and decoded-observable causal threshold require explicit pre-test definition, calibration and acceptance"
+  },
+  "verification": {
+    "command": "python3 validation/vsg_2b/orchestration_pilot/check_documentary.py",
+    "evidence": "validation/vsg_2b/orchestration_pilot/CHECKS.json",
+    "independent_review": "PENDING",
+    "scope": "Hashes, historical inventories/contents, receipt DAG/arithmetic, exact rubric, quota/gate invariants, document links; no model execution"
+  },
+  "gates": {
+    "VSG-2B": "BLOCKED / PENDING_VISUAL",
+    "settings_applied": false,
+    "implementation_authorized": false,
+    "execution_authorized": false,
+    "execution_budget_complete": false,
+    "semantic_criteria_frozen": false,
+    "C": "NO_GO_C0_UNVERIFIED",
+    "X1": "PROPOSED_NOT_APPROVED",
+    "production_authorized": false,
+    "provider_READY": false
+  },
+  "counters": {
+    "new_weight_downloads": 0,
+    "model_loads": 0,
+    "tokenizations": 0,
+    "learned_calls": 0,
+    "training_runs": 0,
+    "generated_images": 0,
+    "new_pairs": 0,
+    "new_provider_predictions": 0,
+    "model_tests": "NOT_RUN",
+    "provider_account_history": "UNKNOWN_NOT_QUERIED"
+  },
+  "usage": {
+    "telemetry": "UNKNOWN",
+    "numeric_percentage_compliance_certified": false
+  },
+  "pilot_metrics": {
+    "human_handoffs_completed": 0,
+    "pending_consolidated_decision_requests": 1,
+    "rework_rounds": 0,
+    "elapsed_seconds": "PENDING_FINAL_MEASUREMENT_FROM_M1_CLOSE",
+    "timing_scope": "M1 close to documentary review completion only; preflight duration not measured",
+    "evidence_backed_acceptance": "PENDING independent review"
+  },
+  "next_milestone": "M3 isolated D2 scaffold, BLOCKED pending explicit D1/D2 and reviewed versioned allowlist/checks",
+  "reconstructed_documents": {
+    "visual_scene_graph/pilot/N5P_IMPLEMENTATION_AND_RESOURCES_PLAN.md": {
+      "sha256": "1203455e9117074d1f29c5bee217ea24d3d603e5a53df84953a354ecd67e0942",
+      "kind": "RECONSTRUCTION_DRAFT"
+    },
+    "visual_scene_graph/pilot/N5V_SEMANTIC_VALIDATION_PREREGISTRATION.md": {
+      "sha256": "0df8abc94099dcc5bb040426c9393dbc5955408c49dc4b93ee1e06a99d9d7a53",
+      "kind": "RECONSTRUCTION_DRAFT"
+    },
+    "visual_scene_graph/pilot/N5PV_WORK_MODE_NEXT_STEPS.md": {
+      "sha256": "d1297a46abd915f1497bc10e6053cbec207741de43b4cf6c3f47516347572fb6",
+      "kind": "RECONSTRUCTION_DRAFT"
+    }
+  }
+}
