@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "baseline": "2a489a6e6868bfe8473ceb6b4f4228e0d2cc8b88",
-  "current_milestone": "M2",
+  "current_milestone": "M3",
   "milestones": {
     "M1": {
       "status": "CLOSED",
@@ -10,10 +10,17 @@
       "verification": "README required scope/state/task sections present; checkpoint parsed with stdlib json"
     },
     "M2": {
-      "status": "IMPLEMENTED",
+      "status": "CLOSED",
       "owner": "root",
       "dependency": "M1 CLOSED",
-      "acceptance": "Source/hash audit, labeled deliverables, separate correction, static checks and independent review"
+      "acceptance": "Source/hash audit, labeled deliverables, separate correction, static checks and independent review",
+      "documentary_status": "DOCUMENTARY_READY_RECONSTRUCTION_DRAFTS",
+      "verification": "22 static checks /1643 hash rows PASS; independent verifier actual-evidence review, no blocking findings",
+      "evidence": [
+        "validation/vsg_2b/orchestration_pilot/AUDIT.json",
+        "validation/vsg_2b/orchestration_pilot/CHECKS.json",
+        "validation/vsg_2b/orchestration_pilot/REVIEW.md"
+      ]
     },
     "M3": {
       "status": "BLOCKED",
@@ -41,7 +48,16 @@
     {
       "at": "2026-10-02T18:07:58.370127+00:00",
       "event": "M1 checks passed; M1 CLOSED before M2 document edits"
+    },
+    {
+      "at": "2026-10-02T18:21:34.831769+00:00",
+      "event": "M2 VERIFIED then CLOSED against reconciliation acceptance; historical originals unavailable; M3 BLOCKED pending D1/D2"
     }
   ],
-  "resume": "Complete M2 evidence and independent review"
+  "resume": "Read N5PV_WORK_MODE_NEXT_STEPS.md, obtain cited D1/D2 decision, verify HEAD/status and evidence; start only authorized M3; do not execute models",
+  "blocker": "Explicit D1 design decision and D2 isolated scaffold authorization with reviewed allowlist v0.1 and sixteen static checks; no approval found",
+  "integration_commits_observed": [
+    "8fa10427bdbab33c649deebe6fd12e92aef537a3",
+    "d9a54e351ff6b4dc30e046812cceff638a81e0f9"
+  ]
 }

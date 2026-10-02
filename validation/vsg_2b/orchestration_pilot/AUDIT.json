@@ -1,8 +1,8 @@
 {
   "milestone": "ORCHESTRATION_PILOT_N5PV_RECONCILIATION",
   "created_at": "2026-10-02T18:13:28.816853+00:00",
-  "status": "IMPLEMENTED_PENDING_INDEPENDENT_REVIEW",
-  "documentary_status": "RECONSTRUCTION_DRAFTS_FOR_REVIEW",
+  "status": "VERIFIED",
+  "documentary_status": "DOCUMENTARY_READY_RECONSTRUCTION_DRAFTS",
   "historical_originals_available": false,
   "baseline": {
     "local_HEAD": "2a489a6e6868bfe8473ceb6b4f4228e0d2cc8b88",
@@ -66,16 +66,20 @@
     ],
     "finding": "Historical documentary readiness not substantiated at baseline: three declared deliverables absent. Hash/inventory checks passed but cannot establish missing deliverables.",
     "corrected_baseline_documentary_status": "N5PV_INCOMPLETE_MISSING_DECLARED_DOCUMENTS",
-    "current_documentary_status": "Reconstruction drafts await independent review; no restoration claim for historical originals",
+    "current_documentary_status": "All declared deliverables now exist as hash-checked reconstruction drafts; independent documentary review passed. Historical originals still unavailable; no execution readiness.",
     "historical_records_rewritten": false,
     "additional_open_definition": "Numerical normalization and decoded-observable causal threshold require explicit pre-test definition, calibration and acceptance"
   },
   "verification": {
     "command": "python3 validation/vsg_2b/orchestration_pilot/check_documentary.py",
     "evidence": "validation/vsg_2b/orchestration_pilot/CHECKS.json",
-    "independent_review": "PENDING",
+    "independent_review": "validation/vsg_2b/orchestration_pilot/REVIEW.md; /root/verifier fresh run exit0,22 PASS checks,1643 hash rows",
     "scope": "Hashes, historical inventories/contents, receipt DAG/arithmetic, exact rubric, quota/gate invariants, document links; no model execution",
-    "portability": "CHECKS.json records this local verification. Rerunning full external-source hashes requires retained /tmp source/metadata files and original spec paths; unavailable sources must fail visibly, not imply corruption or readiness. Recovered N5 spec is also preserved in repo."
+    "portability": "CHECKS.json records this local verification. Rerunning full external-source hashes requires retained /tmp source/metadata files and original spec paths; unavailable sources must fail visibly, not imply corruption or readiness. Recovered N5 spec is also preserved in repo.",
+    "rework": "One informational checker aggregation finding corrected; independent final recheck passed",
+    "checks_sha256": "3e9f47e32c22c2b043e2f15ce1891b97782a8d0ae0a459e92eaaab3a99279cce",
+    "checker_sha256": "b030c6d337ab425825c89d4201c1617c4f1d189e9bd79c46627f9f4860b2c446",
+    "independent_review_sha256": "ef8ec5b7675190735f0284fb5b3d1d19b5adae229ae6e6e5aea6ba5a483f436f"
   },
   "gates": {
     "VSG-2B": "BLOCKED / PENDING_VISUAL",
@@ -108,10 +112,10 @@
   "pilot_metrics": {
     "human_handoffs_completed": 0,
     "pending_consolidated_decision_requests": 1,
-    "rework_rounds": 0,
-    "elapsed_seconds": "PENDING_FINAL_MEASUREMENT_FROM_M1_CLOSE",
+    "rework_rounds": 1,
+    "elapsed_seconds": 816.5,
     "timing_scope": "M1 close to documentary review completion only; preflight duration not measured",
-    "evidence_backed_acceptance": "PENDING independent review"
+    "evidence_backed_acceptance": "M1 setup CLOSED; M2 reconciliation VERIFIED/CLOSED; no VSG-2B closure"
   },
   "next_milestone": "M3 isolated D2 scaffold, BLOCKED pending explicit D1/D2 and reviewed versioned allowlist/checks",
   "reconstructed_documents": {
@@ -132,6 +136,8 @@
     "commit": "8fa10427bdbab33c649deebe6fd12e92aef537a3",
     "observation": "HEAD advanced concurrently outside root agent tool actions; six already-created task artifacts were committed and remote HEAD matched this commit",
     "preserved": true,
-    "original_audit_baseline_unchanged": true
+    "original_audit_baseline_unchanged": true,
+    "additional_commit": "d9a54e351ff6b4dc30e046812cceff638a81e0f9",
+    "additional_observation": "Audit/checker/check evidence committed concurrently outside root agent tool actions; retained"
   }
 }
