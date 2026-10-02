@@ -1,0 +1,47 @@
+{
+  "version": "0.1.0",
+  "baseline": "2a489a6e6868bfe8473ceb6b4f4228e0d2cc8b88",
+  "current_milestone": "M2",
+  "milestones": {
+    "M1": {
+      "status": "CLOSED",
+      "owner": "root",
+      "acceptance": "README scope/state/tasks and parseable checkpoint present",
+      "verification": "README required scope/state/task sections present; checkpoint parsed with stdlib json"
+    },
+    "M2": {
+      "status": "IMPLEMENTED",
+      "owner": "root",
+      "dependency": "M1 CLOSED",
+      "acceptance": "Source/hash audit, labeled deliverables, separate correction, static checks and independent review"
+    },
+    "M3": {
+      "status": "BLOCKED",
+      "owner": "UNASSIGNED",
+      "dependency": "M2 CLOSED and explicit D1/D2 plus reviewed versioned allowlist"
+    },
+    "VSG-2B": {
+      "status": "BLOCKED / PENDING_VISUAL",
+      "owner": "UNASSIGNED",
+      "dependency": "original campaign acceptance and authorized visual evidence"
+    }
+  },
+  "decisions": {
+    "D1": "PENDING",
+    "D2": "PENDING",
+    "D3": "PENDING",
+    "D4": "PENDING"
+  },
+  "execution_authorized": false,
+  "settings_applied": false,
+  "model_tests": "NOT_RUN",
+  "generated_images": 0,
+  "usage_telemetry": "UNKNOWN",
+  "events": [
+    {
+      "at": "2026-10-02T18:07:58.370127+00:00",
+      "event": "M1 checks passed; M1 CLOSED before M2 document edits"
+    }
+  ],
+  "resume": "Complete M2 evidence and independent review"
+}
