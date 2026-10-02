@@ -21,7 +21,8 @@
     "D2": "PENDING",
     "D3": "PENDING",
     "D4": "PENDING",
-    "historical_no_commit_push": "Original N5 spec restriction retained as historical text; current bootstrap expressly permits documentary pilot commits and pushes"
+    "historical_no_commit_push": "Original N5 spec restriction retained as historical text; current bootstrap expressly permits documentary pilot commits and pushes",
+    "approval_search": "Bounded rg across visual_scene_graph and validation/vsg_2b for explicit true approval/implementation/execution authorization and D1-D4 approved/authorized markers found no matches; authoritative N4S/N5PV records remain false/PENDING."
   },
   "source_spec": {
     "original_path": "/Users/macbookpro/Documents/STREETCRAFT_specs VSG/VSG_2B_N5P_N5V_PREEXECUTION_SPEC.md",
@@ -73,7 +74,8 @@
     "command": "python3 validation/vsg_2b/orchestration_pilot/check_documentary.py",
     "evidence": "validation/vsg_2b/orchestration_pilot/CHECKS.json",
     "independent_review": "PENDING",
-    "scope": "Hashes, historical inventories/contents, receipt DAG/arithmetic, exact rubric, quota/gate invariants, document links; no model execution"
+    "scope": "Hashes, historical inventories/contents, receipt DAG/arithmetic, exact rubric, quota/gate invariants, document links; no model execution",
+    "portability": "CHECKS.json records this local verification. Rerunning full external-source hashes requires retained /tmp source/metadata files and original spec paths; unavailable sources must fail visibly, not imply corruption or readiness. Recovered N5 spec is also preserved in repo."
   },
   "gates": {
     "VSG-2B": "BLOCKED / PENDING_VISUAL",
@@ -125,5 +127,11 @@
       "sha256": "d1297a46abd915f1497bc10e6053cbec207741de43b4cf6c3f47516347572fb6",
       "kind": "RECONSTRUCTION_DRAFT"
     }
+  },
+  "concurrent_integration": {
+    "commit": "8fa10427bdbab33c649deebe6fd12e92aef537a3",
+    "observation": "HEAD advanced concurrently outside root agent tool actions; six already-created task artifacts were committed and remote HEAD matched this commit",
+    "preserved": true,
+    "original_audit_baseline_unchanged": true
   }
 }
