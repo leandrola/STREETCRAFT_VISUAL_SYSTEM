@@ -85,10 +85,14 @@
     {
       "at": "2026-10-03T02:11:27.216157+00:00",
       "event": "Verified published scaffold2b7aa0b matches reviewed artifacts; M3 CLOSED against all acceptance; D3/D4 pending; no model calls/images"
+    },
+    {
+      "at": "2026-10-03T16:00:49.227832+00:00",
+      "event": "User explicitly PAUSED GLIGEN structural route; rationale/25–59 person-day estimate/report SHA-256 recorded; D3/D4 PENDING; outputs unchanged, VSG shadow mode, no further implementation/tests; reopen requires textual advantage >=2 of3 pairs and explicit Lean effort allocation."
     }
   ],
-  "resume": "M3 is CLOSED. Verify git HEAD/status, current STATIC_RESULT and D1/D2 scope. Await explicit bounded D3 approval before the next milestone; do not load models, tokenize, train or generate images.",
-  "blocker": "D3/D4 remain PENDING; no authorization for metadata/data/criteria/lock closure, learned consumer/model implementation, resource acquisition or model/image execution",
+  "resume": "Preserve closed M1-M3 and VSG shadow mode. No further structural implementation or tests. Reopen only after documented textual advantage >=2 of3 pairs AND an explicit Lean effort allocation decision with scoped D3/D4 authorization; model execution/images remain unauthorized until explicitly approved.",
+  "blocker": "GLIGEN structural route PAUSED by explicit user decision. D3/D4 PENDING; textual advantage >=2 of3 pairs and explicit Lean effort allocation required to reconsider.",
   "integration_commits_observed": [
     "8fa10427bdbab33c649deebe6fd12e92aef537a3",
     "d9a54e351ff6b4dc30e046812cceff638a81e0f9",
@@ -116,6 +120,56 @@
     "id": "D3_METADATA_DATA_CRITERIA_LOCK_CLOSURE",
     "status": "BLOCKED",
     "owner": "UNASSIGNED",
-    "dependency": "Explicit bounded D3 authorization; rights/reviewer/quotes/calibration protocol/environment lock closure; no acquisition/spend or model execution implied"
+    "dependency": "Structural route PAUSED. Reopen only if textual exploration shows advantage in at least2 of3 pairs and Lean explicitly allocates estimated effort through scoped D3/D4 decisions."
+  },
+  "structural_route": {
+    "technology": "GLIGEN",
+    "status": "PAUSED",
+    "decision_date": "2026-10-03",
+    "recorded_at": "2026-10-03T16:00:49.227832+00:00",
+    "authorization_source": "Explicit user instruction: HITO Pausar la ruta estructural de VSG (GLIGEN)",
+    "reason": "M3 validates static contracts only. Trained modules, licensed data/reviewers, complete environment lock, measured memory/runtime, frozen semantic criteria and full execution budget remain unresolved. Pause pending evidence of textual advantage and explicit effort allocation.",
+    "visible_output_change": "NONE",
+    "vsg_mode": "SHADOW",
+    "existing_artifacts": "PRESERVED",
+    "additional_implementation_authorized": false,
+    "additional_tests_authorized": false,
+    "report": {
+      "path": "/Users/macbookpro/Documents/STREETCRAFT_ORCHESTATION_PILOT/GLIGEN_RECOMENDACION_2026-10-03.md",
+      "sha256": "0f1f118ec95c987894f853195127f2e6b4ef75038e9bdbce37f8f1072d788e86"
+    },
+    "estimate": {
+      "engineering_person_days": {
+        "minimum": 25,
+        "maximum": 59,
+        "basis": "Conservative N2/N3 planning reference retained in report; not measured; no automatic M3 effort discount"
+      },
+      "engineering_hours_at_8h_day": {
+        "minimum": 200,
+        "maximum": 472
+      },
+      "exclusions": [
+        "data acquisition/curation/licensing",
+        "annotation/calibration/visual review",
+        "resource waits",
+        "GPU training time"
+      ],
+      "infrastructure_scenario_USD": 113.19,
+      "infrastructure_assumptions": "34 proposed GPU-hours, L40S,4 physical CPU cores,64 GiB RAM for34h,256 GiB volume for1month; gross official price example,not approved budget or adequacy proof",
+      "total_spend": "UNKNOWN;engineering/data/annotation/review/egress/taxes/fees not fully quoted",
+      "pause_recording_cost": "One short session per user instruction; actual billed cost unavailable"
+    },
+    "reopen_conditions": {
+      "all_required": true,
+      "textual_exploration": {
+        "minimum_advantage_pairs": 2,
+        "pairs_total": 3,
+        "observed_result": "UNKNOWN_NOT_EVALUATED_IN_THIS_ACTION"
+      },
+      "decision_owner": "Lean",
+      "explicit_effort_allocation_required": true,
+      "decision_scope": "Explicit scoped D3/D4 effort decision; no automatic approval, execution or generation from a textual result",
+      "automatic_resume": false
+    }
   }
 }
