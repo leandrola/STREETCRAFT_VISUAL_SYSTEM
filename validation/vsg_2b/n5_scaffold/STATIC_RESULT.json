@@ -1,0 +1,174 @@
+{
+  "milestone": "M3",
+  "status": "PASS",
+  "scope": "D2_STATIC_ONLY",
+  "created_at": "2026-10-02T18:34:31.207524+00:00",
+  "baseline": "8ca0422dfb5bfceb524652fbc4560c7ef79f5de0",
+  "checks": [
+    {
+      "id": "VALID_ENVELOPE",
+      "status": "PASS"
+    },
+    {
+      "id": "MISSING_FIELD",
+      "status": "PASS"
+    },
+    {
+      "id": "UNKNOWN_FIELD",
+      "status": "PASS"
+    },
+    {
+      "id": "SUPPORTED_PREDICATE",
+      "status": "PASS"
+    },
+    {
+      "id": "UNSUPPORTED_PREDICATE",
+      "status": "PASS"
+    },
+    {
+      "id": "EXACT_INPUT_HASH",
+      "status": "PASS"
+    },
+    {
+      "id": "MUTATED_D_REJECTION",
+      "status": "PASS"
+    },
+    {
+      "id": "PROTECTED_LOCK_COMPLETENESS",
+      "status": "PASS"
+    },
+    {
+      "id": "A_R_ABSENCE",
+      "status": "PASS"
+    },
+    {
+      "id": "B_TYPED_RECORDS",
+      "status": "PASS"
+    },
+    {
+      "id": "EXPLICIT_CONFIG_IDENTITY",
+      "status": "PASS"
+    },
+    {
+      "id": "AB_SHARED_SETTINGS",
+      "status": "PASS"
+    },
+    {
+      "id": "ZERO_EXECUTION_CAPS",
+      "status": "PASS"
+    },
+    {
+      "id": "RESERVATION_CAP_REJECTION",
+      "status": "PASS"
+    },
+    {
+      "id": "FAILED_RESERVATION_NO_RETRY",
+      "status": "PASS"
+    },
+    {
+      "id": "ISOLATION_AND_PRESERVATION",
+      "status": "PASS"
+    }
+  ],
+  "checks_count": 16,
+  "elapsed_seconds": 0.4039,
+  "artifact_sha256": {
+    "visual_scene_graph/pilot/n5_scaffold/README.md": "e9dec04b5b9f3182787a0014b902205f39b83b700ef10fd08fe23c1944b0e472",
+    "visual_scene_graph/pilot/n5_scaffold/__init__.py": "cd638318fa70f04e5a810f822c2aba58c5755e8f236823dfda91229106557302",
+    "visual_scene_graph/pilot/n5_scaffold/contract.py": "bd7fad63e5efa00bcfbdd03752e26aa22690b8af75086255b7e139392a8bc49a",
+    "visual_scene_graph/pilot/n5_scaffold/settings.py": "44090bda28d885ac569a189c285ca7145303d7e2464d155ed5cde838a9331d1d",
+    "visual_scene_graph/pilot/n5_scaffold/ledger.py": "6b34ce7e1c127c213eff4ff346f5e2fa839c61e249e759632caa2ccd101dee45",
+    "visual_scene_graph/pilot/n5_scaffold/fixtures.json": "73eb2fdea018826bbc0a7b52517667e8b8950544231a9f89669605776c9f3ad9",
+    "visual_scene_graph/pilot/n5_scaffold/static_checks.py": "03eeb94e479ce0514f9ef08c2d944ed56968f6e1f2b6e427ec14ebd59f5ee919"
+  },
+  "input_sha256": {
+    "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/payloads.json": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d",
+    "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/source.image": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+    "validation/vsg_2b/n4s/SETTINGS_AMENDMENT_PROPOSAL.json": "aeee1d9d03dfea555f980904556e429e304d788a09b78834e3996927eb6c10e3"
+  },
+  "preservation": {
+    "baseline": "8ca0422dfb5bfceb524652fbc4560c7ef79f5de0",
+    "prior_files": 779,
+    "unchanged_previous_files": 777,
+    "allowed_existing_changes": [
+      "development/coordination/CHECKPOINT.json",
+      "development/coordination/README.md"
+    ],
+    "new_files": [
+      "validation/vsg_2b/n5_scaffold/STATIC_RESULT.json",
+      "visual_scene_graph/pilot/n5_scaffold/README.md",
+      "visual_scene_graph/pilot/n5_scaffold/__init__.py",
+      "visual_scene_graph/pilot/n5_scaffold/contract.py",
+      "visual_scene_graph/pilot/n5_scaffold/fixtures.json",
+      "visual_scene_graph/pilot/n5_scaffold/ledger.py",
+      "visual_scene_graph/pilot/n5_scaffold/settings.py",
+      "visual_scene_graph/pilot/n5_scaffold/static_checks.py"
+    ],
+    "imports": "STDLIB_AND_SIBLING_SCAFFOLD_ONLY",
+    "dispatch": "ABSENT"
+  },
+  "independent_review": {
+    "status": "PASS",
+    "verifier": "/root/m3_verifier",
+    "preimplementation_allowlist_review": "APPROVED_8_FILES_16_CHECKS",
+    "command": "python3 -B visual_scene_graph/pilot/n5_scaffold/static_checks.py --verify-only",
+    "run_at": "2026-10-02T18:34:02.092460+00:00",
+    "exit_code": 0,
+    "checks_passed": 16,
+    "checks_failed": 0,
+    "elapsed_seconds": 0.4843,
+    "actual_files_reviewed": [
+      "validation/vsg_2b/n5_scaffold/STATIC_RESULT.json",
+      "visual_scene_graph/pilot/n5_scaffold/README.md",
+      "visual_scene_graph/pilot/n5_scaffold/__init__.py",
+      "visual_scene_graph/pilot/n5_scaffold/contract.py",
+      "visual_scene_graph/pilot/n5_scaffold/fixtures.json",
+      "visual_scene_graph/pilot/n5_scaffold/ledger.py",
+      "visual_scene_graph/pilot/n5_scaffold/settings.py",
+      "visual_scene_graph/pilot/n5_scaffold/static_checks.py"
+    ],
+    "artifact_hashes_checked": 7,
+    "input_hashes_checked": 3,
+    "blocking_findings": [],
+    "verdict": "M3 isolated static scaffold may close; no model or image authorization",
+    "reviewed_artifact_sha256": {
+      "visual_scene_graph/pilot/n5_scaffold/README.md": "e9dec04b5b9f3182787a0014b902205f39b83b700ef10fd08fe23c1944b0e472",
+      "visual_scene_graph/pilot/n5_scaffold/__init__.py": "cd638318fa70f04e5a810f822c2aba58c5755e8f236823dfda91229106557302",
+      "visual_scene_graph/pilot/n5_scaffold/contract.py": "bd7fad63e5efa00bcfbdd03752e26aa22690b8af75086255b7e139392a8bc49a",
+      "visual_scene_graph/pilot/n5_scaffold/settings.py": "44090bda28d885ac569a189c285ca7145303d7e2464d155ed5cde838a9331d1d",
+      "visual_scene_graph/pilot/n5_scaffold/ledger.py": "6b34ce7e1c127c213eff4ff346f5e2fa839c61e249e759632caa2ccd101dee45",
+      "visual_scene_graph/pilot/n5_scaffold/fixtures.json": "73eb2fdea018826bbc0a7b52517667e8b8950544231a9f89669605776c9f3ad9",
+      "visual_scene_graph/pilot/n5_scaffold/static_checks.py": "03eeb94e479ce0514f9ef08c2d944ed56968f6e1f2b6e427ec14ebd59f5ee919"
+    },
+    "findings": "Exact frozen D/contracts/settings, immutable zero quotas, retained failed reservations/no retry, stdlib/sibling imports and preserved historical files verified independently"
+  },
+  "model_tests": "NOT_RUN",
+  "generated_images": 0,
+  "model_calls": 0,
+  "attempts": 0,
+  "settings_applied": false,
+  "execution_authorized": false,
+  "production_authorized": false,
+  "provider_READY": false,
+  "VSG-2B": "BLOCKED / PENDING_VISUAL",
+  "milestone_status": "VERIFIED",
+  "authorization": {
+    "source": "Explicit user approval quoted in development/coordination/CHECKPOINT.json",
+    "D1": "APPROVED_DESIGN_BASIS_ONLY",
+    "D2": "APPROVED_ISOLATED_SCAFFOLD_ONLY",
+    "D3": "PENDING",
+    "D4": "PENDING",
+    "proposal_id": "VSG-2B-N4R-GLIGEN-FULL-SCHEDULE",
+    "proposal_version": "0.1.0",
+    "proposal_sha256": "aeee1d9d03dfea555f980904556e429e304d788a09b78834e3996927eb6c10e3"
+  },
+  "scope_limits": {
+    "new_files": 8,
+    "static_acceptance_checks": 16,
+    "engineering_hours": 40,
+    "model_calls": 0,
+    "attempts": 0,
+    "images": 0
+  },
+  "rework_rounds": 0
+}

@@ -1,0 +1,109 @@
+{
+  "version": "0.1.0",
+  "scope": "D2_STATIC_ONLY",
+  "baseline": "8ca0422dfb5bfceb524652fbc4560c7ef79f5de0",
+  "proposal": {
+    "id": "VSG-2B-N4R-GLIGEN-FULL-SCHEDULE",
+    "version": "0.1.0",
+    "path": "validation/vsg_2b/n4s/SETTINGS_AMENDMENT_PROPOSAL.json",
+    "sha256": "aeee1d9d03dfea555f980904556e429e304d788a09b78834e3996927eb6c10e3"
+  },
+  "inputs": {
+    "payload": {
+      "path": "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/payloads.json",
+      "sha256": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d"
+    },
+    "source": {
+      "path": "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/source.image",
+      "sha256": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc"
+    }
+  },
+  "limits": {
+    "new_files": 8,
+    "static_acceptance_checks": 16,
+    "engineering_hours": 40,
+    "model_calls": 0,
+    "attempts": 0,
+    "images": 0
+  },
+  "allowed_new_files": [
+    "visual_scene_graph/pilot/n5_scaffold/README.md",
+    "visual_scene_graph/pilot/n5_scaffold/__init__.py",
+    "visual_scene_graph/pilot/n5_scaffold/contract.py",
+    "visual_scene_graph/pilot/n5_scaffold/settings.py",
+    "visual_scene_graph/pilot/n5_scaffold/ledger.py",
+    "visual_scene_graph/pilot/n5_scaffold/fixtures.json",
+    "visual_scene_graph/pilot/n5_scaffold/static_checks.py",
+    "validation/vsg_2b/n5_scaffold/STATIC_RESULT.json"
+  ],
+  "allowed_existing_edits": [
+    "development/coordination/CHECKPOINT.json",
+    "development/coordination/README.md"
+  ],
+  "checks": [
+    {
+      "id": "VALID_ENVELOPE",
+      "acceptance": "Exact frozen A and B envelopes are accepted; validation is side-effect-free"
+    },
+    {
+      "id": "MISSING_FIELD",
+      "acceptance": "Every required envelope field omission is rejected"
+    },
+    {
+      "id": "UNKNOWN_FIELD",
+      "acceptance": "Unknown envelope fields and duplicate JSON keys are rejected"
+    },
+    {
+      "id": "SUPPORTED_PREDICATE",
+      "acceptance": "LEFT_OF/ABOVE and inverse predicate syntax are accepted without changing frozen D truth"
+    },
+    {
+      "id": "UNSUPPORTED_PREDICATE",
+      "acceptance": "Unsupported/ill-typed predicates are rejected"
+    },
+    {
+      "id": "EXACT_INPUT_HASH",
+      "acceptance": "Payload and source corruption and envelope hash substitution are rejected"
+    },
+    {
+      "id": "MUTATED_D_REJECTION",
+      "acceptance": "Valid inverse mutation or altered text/common/authority cannot be admitted as frozen D"
+    },
+    {
+      "id": "PROTECTED_LOCK_COMPLETENESS",
+      "acceptance": "Removed/changed/duplicate locks and changed protected references are rejected"
+    },
+    {
+      "id": "A_R_ABSENCE",
+      "acceptance": "A cannot carry typed R or altered/truncated JSONL"
+    },
+    {
+      "id": "B_TYPED_RECORDS",
+      "acceptance": "B rejects serialized R, missing/duplicate records and B serialization into its prompt"
+    },
+    {
+      "id": "EXPLICIT_CONFIG_IDENTITY",
+      "acceptance": "Full candidate/control settings resolve without defaults; identity/settings/schedule/pins substitutions reject"
+    },
+    {
+      "id": "AB_SHARED_SETTINGS",
+      "acceptance": "A/B share entire config; mixed control/candidate/settings reject"
+    },
+    {
+      "id": "ZERO_EXECUTION_CAPS",
+      "acceptance": "Settings and ledger require strict integer zero budgets, read-only snapshots"
+    },
+    {
+      "id": "RESERVATION_CAP_REJECTION",
+      "acceptance": "Positive/negative/boolean/unknown/missing units cannot reserve work"
+    },
+    {
+      "id": "FAILED_RESERVATION_NO_RETRY",
+      "acceptance": "Static failed reservations retained; retry or repeat failure rejected"
+    },
+    {
+      "id": "ISOLATION_AND_PRESERVATION",
+      "acceptance": "Stdlib/sibling imports only; no dispatch/model/runtime calls; exact8 files; previous bytes unchanged except coordination"
+    }
+  ]
+}

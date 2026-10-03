@@ -23,9 +23,26 @@
       ]
     },
     "M3": {
-      "status": "BLOCKED",
-      "owner": "UNASSIGNED",
-      "dependency": "M2 CLOSED and explicit D1/D2 plus reviewed versioned allowlist"
+      "status": "VERIFIED",
+      "owner": "root",
+      "baseline": "8ca0422dfb5bfceb524652fbc4560c7ef79f5de0",
+      "dependency": "M2 CLOSED; explicit D1/D2 and reviewed allowlist v0.1 now satisfied",
+      "acceptance": "Eight approved files; sixteen meaningful static checks PASS; strict zero execution caps; preserved operational/historical evidence; independent review; verified delivery commit/push before closure record",
+      "evidence": [
+        "validation/vsg_2b/n5_scaffold/STATIC_RESULT.json",
+        "visual_scene_graph/pilot/n5_scaffold/README.md"
+      ],
+      "verification": "16/16 approved static checks PASS, independent actual-file review PASS, seven artifact and three input hashes verified; eight new files and777 prior noncoordination files preserved",
+      "scaffold_implementation_authorized": true,
+      "model_consumer_implementation_authorized": false,
+      "new_files_count": 8,
+      "static_acceptance_checks_count": 16,
+      "independent_review": "/root/m3_verifier; STATIC_RESULT.json#/independent_review",
+      "static_result_sha256": "3cf243eb6092db435367a5089bd5c3922b1a2195e97051ccab148d181a1e6d02",
+      "elapsed_wall_seconds_to_verification": 390.9,
+      "engineering_hours_observed": "UNKNOWN; elapsed wall time recorded, not a billed labor measurement",
+      "rework_rounds": 0,
+      "packaging": "VERIFIED; commit/push pending"
     },
     "VSG-2B": {
       "status": "BLOCKED / PENDING_VISUAL",
@@ -34,8 +51,8 @@
     }
   },
   "decisions": {
-    "D1": "PENDING",
-    "D2": "PENDING",
+    "D1": "APPROVED_DESIGN_BASIS_ONLY",
+    "D2": "APPROVED_ISOLATED_SCAFFOLD_ONLY",
     "D3": "PENDING",
     "D4": "PENDING"
   },
@@ -52,12 +69,38 @@
     {
       "at": "2026-10-02T18:21:34.831769+00:00",
       "event": "M2 VERIFIED then CLOSED against reconciliation acceptance; historical originals unavailable; M3 BLOCKED pending D1/D2"
+    },
+    {
+      "at": "2026-10-02T18:28:46.970772+00:00",
+      "event": "D1/D2 explicitly approved with bounded scope; M3 started after preimplementation independent review"
+    },
+    {
+      "at": "2026-10-02T18:35:17.834601+00:00",
+      "event": "M3 independently VERIFIED:16/16 static checks,8 newfiles,777 preserved prior noncoordination files; model calls/attempts/images0"
     }
   ],
-  "resume": "Read N5PV_WORK_MODE_NEXT_STEPS.md, obtain cited D1/D2 decision, verify HEAD/status and evidence; start only authorized M3; do not execute models",
-  "blocker": "Explicit D1 design decision and D2 isolated scaffold authorization with reviewed allowlist v0.1 and sixteen static checks; no approval found",
+  "resume": "Publish verified M3 scaffold normally; record delivery evidence and close M3; D3/D4 remain pending",
+  "blocker": null,
   "integration_commits_observed": [
     "8fa10427bdbab33c649deebe6fd12e92aef537a3",
     "d9a54e351ff6b4dc30e046812cceff638a81e0f9"
-  ]
+  ],
+  "authorization": {
+    "recorded_at": "2026-10-02T18:28:46.970772+00:00",
+    "source": "Explicit user instruction in this conversation, 2026-10-02",
+    "user_statement": "Apruebo D1 para `VSG-2B-N4R-GLIGEN-FULL-SCHEDULE@0.1.0` como base de diseño y D2 exclusivamente para el scaffold aislado propuesto, con sus límites establecidos. Completá M3, verificá sus criterios de cierre, hacé commit y push, y actualizá el checkpoint. No autorizo ejecución del modelo ni generación de imágenes.",
+    "proposal_id": "VSG-2B-N4R-GLIGEN-FULL-SCHEDULE",
+    "proposal_version": "0.1.0",
+    "proposal_sha256": "aeee1d9d03dfea555f980904556e429e304d788a09b78834e3996927eb6c10e3",
+    "D2_allowlist_version": "0.1",
+    "D2_limits": {
+      "new_files": 8,
+      "static_acceptance_checks": 16,
+      "engineering_hours": 40,
+      "model_calls": 0,
+      "attempts": 0,
+      "images": 0
+    },
+    "preimplementation_review": "/root/m3_verifier approved allowlist and 16 checks; stdlib-only isolated scaffold; no operational imports or writes"
+  }
 }
