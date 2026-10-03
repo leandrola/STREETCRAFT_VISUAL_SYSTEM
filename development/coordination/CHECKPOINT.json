@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "baseline": "2a489a6e6868bfe8473ceb6b4f4228e0d2cc8b88",
-  "current_milestone": "M3",
+  "current_milestone": "POST_M3_DECISION_GATE",
   "milestones": {
     "M1": {
       "status": "CLOSED",
@@ -23,7 +23,7 @@
       ]
     },
     "M3": {
-      "status": "VERIFIED",
+      "status": "CLOSED",
       "owner": "root",
       "baseline": "8ca0422dfb5bfceb524652fbc4560c7ef79f5de0",
       "dependency": "M2 CLOSED; explicit D1/D2 and reviewed allowlist v0.1 now satisfied",
@@ -38,11 +38,15 @@
       "new_files_count": 8,
       "static_acceptance_checks_count": 16,
       "independent_review": "/root/m3_verifier; STATIC_RESULT.json#/independent_review",
-      "static_result_sha256": "3cf243eb6092db435367a5089bd5c3922b1a2195e97051ccab148d181a1e6d02",
+      "static_result_sha256": "a61286665ac2879a8fb381b43a16a030a1c1ef81a96583f14e4ec39bfa318952",
       "elapsed_wall_seconds_to_verification": 390.9,
       "engineering_hours_observed": "UNKNOWN; elapsed wall time recorded, not a billed labor measurement",
       "rework_rounds": 0,
-      "packaging": "VERIFIED; commit/push pending"
+      "packaging": "Verified scaffold commit present at origin/main; closure record ready for normal commit/push",
+      "closed_at": "2026-10-03T02:11:27.216157+00:00",
+      "verified_delivery_commit": "2b7aa0baabf871bc5e9aba782fc389c5edf227dc",
+      "remote_delivery_verified_at": "2026-10-03T02:11:27.216157+00:00",
+      "elapsed_wall_seconds_to_closure": 27760.2
     },
     "VSG-2B": {
       "status": "BLOCKED / PENDING_VISUAL",
@@ -77,13 +81,18 @@
     {
       "at": "2026-10-02T18:35:17.834601+00:00",
       "event": "M3 independently VERIFIED:16/16 static checks,8 newfiles,777 preserved prior noncoordination files; model calls/attempts/images0"
+    },
+    {
+      "at": "2026-10-03T02:11:27.216157+00:00",
+      "event": "Verified published scaffold2b7aa0b matches reviewed artifacts; M3 CLOSED against all acceptance; D3/D4 pending; no model calls/images"
     }
   ],
-  "resume": "Publish verified M3 scaffold normally; record delivery evidence and close M3; D3/D4 remain pending",
-  "blocker": null,
+  "resume": "M3 is CLOSED. Verify git HEAD/status, current STATIC_RESULT and D1/D2 scope. Await explicit bounded D3 approval before the next milestone; do not load models, tokenize, train or generate images.",
+  "blocker": "D3/D4 remain PENDING; no authorization for metadata/data/criteria/lock closure, learned consumer/model implementation, resource acquisition or model/image execution",
   "integration_commits_observed": [
     "8fa10427bdbab33c649deebe6fd12e92aef537a3",
-    "d9a54e351ff6b4dc30e046812cceff638a81e0f9"
+    "d9a54e351ff6b4dc30e046812cceff638a81e0f9",
+    "2b7aa0baabf871bc5e9aba782fc389c5edf227dc"
   ],
   "authorization": {
     "recorded_at": "2026-10-02T18:28:46.970772+00:00",
@@ -102,5 +111,11 @@
       "images": 0
     },
     "preimplementation_review": "/root/m3_verifier approved allowlist and 16 checks; stdlib-only isolated scaffold; no operational imports or writes"
+  },
+  "next_milestone": {
+    "id": "D3_METADATA_DATA_CRITERIA_LOCK_CLOSURE",
+    "status": "BLOCKED",
+    "owner": "UNASSIGNED",
+    "dependency": "Explicit bounded D3 authorization; rights/reviewer/quotes/calibration protocol/environment lock closure; no acquisition/spend or model execution implied"
   }
 }
