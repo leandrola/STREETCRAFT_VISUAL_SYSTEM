@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "recorded_at": "2026-10-13T12:28:34Z",
+  "instruction": "Create a new spec to resolve the current REVIEW_PROVENANCE_BLOCKED condition.",
+  "spec": {
+    "id": "SC-MULTIAGENT-06",
+    "version": "1.0",
+    "path": "specs/SC_MULTIAGENT_06_PROVENANCE_RECOVERY_v1.md",
+    "sha256": "0a72aff8a78dbc8cbde352404033df35797c5a62071debe7bfd93702efcc9d5e",
+    "status": "SPEC_READY",
+    "execution": "NOT_STARTED"
+  },
+  "problem": "SC-MULTIAGENT-04 cannot prove that the reviewer differs from the material implementer because the implementation turn's effective model is not exposed.",
+  "authorized_resolution": [
+    "One local metadata recovery attempt tied to the material implementation turn",
+    "If unavailable, one material and requirement-driven reconstruction by a traceable read-only implementer, applied serially by root",
+    "Freeze the final candidate and review it with a distinct effective runtime model"
+  ],
+  "sequence": [
+    "SC-MULTIAGENT-06 provenance recovery",
+    "SC-MULTIAGENT-04 integration/publication",
+    "SC-MULTIAGENT-05 real supervisor pilot"
+  ],
+  "parallel_lane": "SC-MULTIAGENT-02 visual campaign",
+  "preserved_limits": {
+    "delegated_writes": false,
+    "root_only_checkpoint_writer": true,
+    "additional_spend": 0,
+    "images": 0,
+    "gligen": "PAUSED",
+    "vsg_clock": "NOT_STARTED"
+  },
+  "reasoning": {
+    "metadata_inventory": "medium",
+    "material_reconstruction_and_review": "high",
+    "current_high_sufficient": true
+  },
+  "candidate_04_manifest": "Preserved as historical frozen evidence; admission of SC-MULTIAGENT-06 changes the local candidate set, so a new manifest is required before review."
+}

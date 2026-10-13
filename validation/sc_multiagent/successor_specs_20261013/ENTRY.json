@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "recorded_at": "2026-10-13",
+  "instruction": "Replace the unimplemented 04/05 proposals in the master plan; keep 02 parallel.",
+  "sources": [
+    {
+      "source_path": "/Users/macbookpro/Documents/STREETCRAFT_ORCHESTATION_PILOT/STREETCRAFT_MULTIAGENT_04_REVIEW_SPEC_v1.md",
+      "repo_path": "specs/SC_MULTIAGENT_04_v1.md",
+      "source_sha256": "de4d3b32d23d9c2604cccbab9e063b497104a205d3d4c720b078a3ab446080fe",
+      "repo_sha256": "000ecc212a63b491a935d3432670f9cb6a71488d57f3e746ea287359e39f7224",
+      "adaptation": "Text preserved; repository copy normalizes the final blank line to one terminal newline."
+    },
+    {
+      "source_path": "/Users/macbookpro/Documents/STREETCRAFT_ORCHESTATION_PILOT/STREETCRAFT_MULTIAGENT_05_LIVE_PILOT_SPEC_v1.md",
+      "repo_path": "specs/SC_MULTIAGENT_05_v1.md",
+      "source_sha256": "41011787409e4224273a6011f3a9995b4ddaaadf3802b4b107485755945822ed",
+      "repo_sha256": "329b2f1920528155483efba6779a34d9e8cbac7d596fd2b4e641883bed2bbb46",
+      "adaptation": "Text preserved; repository copy normalizes the final blank line to one terminal newline."
+    }
+  ],
+  "sequence": ["SC-MULTIAGENT-04 review/integration", "SC-MULTIAGENT-05 real supervisor pilot"],
+  "parallel_lane": "SC-MULTIAGENT-02 visual campaign",
+  "execution": "NOT_STARTED",
+  "images": 0,
+  "vsg_clock": "NOT_STARTED"
+}

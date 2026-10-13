@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "baseline": "2a489a6e6868bfe8473ceb6b4f4228e0d2cc8b88",
-  "current_milestone": "SC-MULTIAGENT-02+03",
+  "current_milestone": "SC-MULTIAGENT-02+06",
   "milestones": {
     "M1": {
       "status": "CLOSED",
@@ -93,22 +93,96 @@
       "evidence": [
         "validation/sc_multiagent/plan_entry_20261013/REPORT.md",
         "validation/sc_multiagent/visual_campaigns/vsg_textual_20261013/MANIFEST.json",
+        "validation/sc_multiagent/visual_campaigns/vsg_textual_20261013/PAIR_SHEET.json",
+        "validation/sc_multiagent/visual_campaigns/vsg_textual_20261013/CONDITION_KEY.json",
         "validation/sc_multiagent/visual_campaigns/sc_contribution_20261013/SOURCE_CANDIDATES.json",
         "docs/SC_VISUAL_CAMPAIGN_QUICKSTART.md"
       ]
     },
     "SC-MULTIAGENT-03": {
-      "status": "PENDING",
+      "status": "SC_CONTINUITY_PREPARED_PENDING_LIVE",
       "owner": "root",
       "spec_version": "1.0",
       "spec": "specs/SC_MULTIAGENT_03_v1.md",
-      "admission": "Compatibility preparation started; supervisor implementation and live pilot not started",
+      "admission": "Supervisor implementation and fake-executor verification in progress; live Codex pilot pending",
       "dependency": "SC-MULTIAGENT-01 READY with evidence; existing CLI/auth/permissions verified",
       "acceptance": "Bounded continuity acceptance remains exactly as specified; no readiness claimed",
-      "verification": "PASS for bounded CLI compatibility only: non-ephemeral read-only sc_implementer delegation completed and the exact persisted session ID resumed successfully on the second and final invocation. Supervisor, lock, watchdog, stop propagation and recovery remain NOT_BUILT and SC_CONTINUITY_READY is not claimed.",
+      "verification": "Persisted exact-ID resume PASS. Deterministic local supervisor, repository lock, bounded process-group stop, status separation and non-relaunch reconcile implemented for fake-executor verification. Live Codex pilot and effective distinct-model review remain pending; SC_CONTINUITY_READY is not claimed.",
       "evidence": [
         "validation/sc_multiagent/plan_entry_20261013/REPORT.md",
-        "validation/sc_multiagent/continuity/PERSISTED_DELEGATION_SMOKE.json"
+        "validation/sc_multiagent/continuity/PERSISTED_DELEGATION_SMOKE.json",
+        "docs/SC_CONTINUITY_QUICKSTART.md",
+        "validation/sc_multiagent/continuity/FAKE_SUPERVISOR_RUN_20261013.json",
+        "validation/sc_multiagent/continuity/MODEL_REVIEW_ATTEMPTS_20261013.json"
+      ],
+      "envelopes": {
+        "SC03-PILOT-READONLY-01": {
+          "status": "FAKE_EXECUTOR_COMPLETED_LIVE_EXPIRED_AFTER_INTEGRATION",
+          "objective": "Verify bounded supervisor behavior without product writes, images or external effects.",
+          "tasks": [
+            {"task_id": "SC03-READ-QUICKSTART", "depends_on": [], "files_allowed": [], "acceptance": "Read two quickstart sections and return a bounded JSONL completion event."}
+          ],
+          "base_commit": "d946f1b5d0d6dad53f080540ae9634bdf360d440",
+          "checkpoint_sha256": "92b7a2474529bd89d227b0c212645e194d9e8b73b358ff06450d464e91595cd0",
+          "orchestrator_model": "gpt-5.6-sol",
+          "implementer_model": "gpt-5.6-sol",
+          "verifier_model": "gpt-6-astra",
+          "effective_model_gate": "REVIEW_MODEL_UNAVAILABLE until exact runtime identifiers are observable",
+          "max_codex_turns": 2,
+          "max_wall_seconds": 1800,
+          "max_subagents": 3,
+          "max_open_implementations": 0,
+          "max_commits": 0,
+          "push": "PROHIBITED",
+          "additional_spend": 0,
+          "max_images": 0,
+          "stop_conditions": ["completion", "blocker", "permission", "auth", "quota", "timeout", "HEAD_OR_CHECKPOINT_CHANGE"],
+          "resume_policy": "Exact persisted session ID only; at most one controlled resume; never automatic.",
+          "prompt": "Read docs/SC_MULTIAGENT_QUICKSTART.md and docs/SC_CONTINUITY_QUICKSTART.md in read-only mode. Return one concise finding and preserve all files. Do not delegate or invoke image tools."
+        }
+      }
+    },
+    "SC-MULTIAGENT-04": {
+      "status": "SC04_BLOCKED",
+      "owner": "root",
+      "spec_version": "1.0",
+      "spec": "specs/SC_MULTIAGENT_04_v1.md",
+      "admission": "Replaces the unimplemented master-plan proposal 04; review/integration is the immediate continuity priority.",
+      "dependency": "SC-MULTIAGENT-01 READY and current 02/03 candidate",
+      "verification": "Diagnostic completed without another model call: persisted turn_context metadata identifies prior reviewers as gpt-6-astra and gpt-5.6-sol. Material supervisor implementation remains tied only to Agent Host session ad1a4a07-a403-47bb-824a-58d4488fab27, whose exact effective model was not exposed. Candidate remains local and unintegrated under REVIEW_PROVENANCE_BLOCKED.",
+      "evidence": [
+        "validation/sc_multiagent/successor_specs_20261013/ENTRY.json",
+        "validation/sc_multiagent/continuity/MODEL_REVIEW_ATTEMPTS_20261013.json",
+        "validation/sc_multiagent/continuity/MODEL_METADATA_DIAGNOSTIC_20261013.json",
+        "validation/sc_multiagent/continuity/CANDIDATE_04_MANIFEST.json"
+      ]
+    },
+    "SC-MULTIAGENT-05": {
+      "status": "PENDING_DEPENDENCY",
+      "owner": "UNASSIGNED",
+      "spec_version": "1.0",
+      "spec": "specs/SC_MULTIAGENT_05_v1.md",
+      "admission": "Replaces the unimplemented master-plan proposal 05; offline preparation allowed, real execution gated by 04.",
+      "dependency": "SC-MULTIAGENT-04 reviewed and integrated, or equivalent verifiable evidence for the same supervisor content",
+      "verification": "NOT_STARTED. No real supervisor pilot, child thread or in-supervisor resume has been run under this spec.",
+      "evidence": [
+        "validation/sc_multiagent/successor_specs_20261013/ENTRY.json"
+      ]
+    },
+    "SC-MULTIAGENT-06": {
+      "status": "SPEC_READY_PENDING_EXECUTION",
+      "owner": "root",
+      "spec_version": "1.0",
+      "spec": "specs/SC_MULTIAGENT_06_PROVENANCE_RECOVERY_v1.md",
+      "admission": "Explicitly requested by Lean to resolve SC-MULTIAGENT-04 REVIEW_PROVENANCE_BLOCKED without weakening the distinct-model gate.",
+      "dependency": "SC-MULTIAGENT-01 READY in DELEGATED_ANALYSIS_CENTRALIZED_WRITES mode; preserved local 02/03 candidate; SC-MULTIAGENT-04 provenance diagnosis",
+      "acceptance": "Recover historical implementation model metadata or perform one material traceable reconstruction, then freeze and obtain PASS from a distinct effective runtime model.",
+      "verification": "SPEC_ONLY. Recovery, reconstruction and review have not started. Existing CANDIDATE_04_MANIFEST is historical after this admission; a new final manifest is required before review.",
+      "evidence": [
+        "specs/SC_MULTIAGENT_06_PROVENANCE_RECOVERY_v1.md",
+        "validation/sc_multiagent/successor_specs_20261013/SC06_ENTRY.json",
+        "validation/sc_multiagent/continuity/MODEL_METADATA_DIAGNOSTIC_20261013.json",
+        "validation/sc_multiagent/continuity/CANDIDATE_04_MANIFEST.json"
       ]
     }
   },
@@ -183,10 +257,34 @@
     {
       "at": "2026-10-13T03:45:00Z",
       "event": "SC02/03 final candidate technical validation PASS at hash b169255ea6b0d77d6804b1916c79094bc2ed1cf9959e645bbe9c00fa0b165d5f, but independent review BLOCKED as REVIEW_MODEL_UNAVAILABLE: reviewer profile gpt-6-astra and writer both exposed only GPT-6 with exact effective identifiers UNKNOWN. Candidate preserved locally; no commit or push."
+    },
+    {
+      "at": "2026-10-13T11:41:05Z",
+      "event": "Publication reconciliation: the prior no-commit/no-push statement became stale when commit d946f1b5d0d6dad53f080540ae9634bdf360d440 was published to origin/main. HEAD and origin/main were observed equal with 0/0 divergence and a clean tree before the next supervisor implementation. REVIEW_MODEL_UNAVAILABLE remains open; publication does not convert configured model names into effective-model evidence."
+    },
+    {
+      "at": "2026-10-13T11:43:04Z",
+      "event": "SC-MULTIAGENT-03 fake-executor run 6752a840-3c11-4a00-a45b-904fb238d094 COMPLETED: 6 unit tests PASS; lock, bounded process-group stop state machine, orphan classification, stable task key, structured completion and reconcile-without-relaunch verified. One fake invocation, 0 remote model calls, 0 images, 0 additional spend. Live Codex pilot and effective distinct-model review remain pending."
+    },
+    {
+      "at": "2026-10-13T11:43:04Z",
+      "event": "SC-MULTIAGENT-02 VSG textual presentation preparation added a neutral three-pair sheet and a separate deterministic condition key. Outputs and Lean judgment remain pending; generated_images=0 and the 168-hour clock remains NOT_STARTED."
+    },
+    {
+      "at": "2026-10-13T12:22:04Z",
+      "event": "Lean replaced the unimplemented master-plan proposals 04/05 with SC-MULTIAGENT-04 v1 review/integration and SC-MULTIAGENT-05 v1 real supervisor pilot. Specs incorporated with source hashes and terminal-newline adaptation recorded; plan sequence updated to 04 then 05 while 02 continues in parallel. 04 admitted BLOCKED on implementation/reviewer provenance and effective model metadata; 05 real execution remains dependency-blocked. Zero images; VSG clock NOT_STARTED; GLIGEN unchanged."
+    },
+    {
+      "at": "2026-10-13T12:24:05Z",
+      "event": "SC-MULTIAGENT-04 minimal metadata diagnostic: persisted turn_context.model resolves prior review sessions 01a1334a-17a8-7291-b159-cab9f0ccf51c=gpt-6-astra and 01a1334a-1a35-7dc2-b1ea-a9d89283dcc6=gpt-5.6-sol; persisted delegation session 01a13338-c0ad-7fc1-83d1-c6bfa7e91be6=gpt-5.6-sol for both turns. Material supervisor implementation authorship remains exact-model UNKNOWN in Agent Host session ad1a4a07-a403-47bb-824a-58d4488fab27, so REVIEW_PROVENANCE_BLOCKED remains. No new model call."
+    },
+    {
+      "at": "2026-10-13T12:28:34Z",
+      "event": "Lean explicitly requested a new spec to resolve the current provenance blocker. SC-MULTIAGENT-06 v1 admitted with sequence 06 provenance recovery -> 04 integration -> 05 live pilot, while 02 continues in parallel. It permits one local metadata recovery attempt and, only if needed, one material traceable reconstruction with read-only implementer and root-only serial application, followed by a distinct effective-model review. Execution NOT_STARTED; zero images; VSG clock NOT_STARTED; GLIGEN unchanged."
     }
   ],
-  "resume": "Read HEAD, git status, this checkpoint and the 02/03 evidence paths. SC-MULTIAGENT-01 remains READY only in DELEGATED_ANALYSIS_CENTRALIZED_WRITES mode. For 03, use explicitly recorded non-ephemeral session IDs and exact-ID resume; do not use an implicit latest session. Build and test supervisor, lock, watchdog, stop and recovery before any READY claim. For 02, the VSG textual six-output package is ready for the authorized ChatGPT-app campaign; preserve first outputs and start the 168-hour clock only at the first valid image timestamp/id/hash. The SC contribution lane requires Lean confirmation of source representativeness before payload freeze or generation. Preserve GLIGEN PAUSED, D3/D4 PENDING and VSG SHADOW.",
-  "blocker": "No global 01 or CLI session-routing blocker. REVIEW_MODEL_UNAVAILABLE blocks integration/publication of the current 02/03 candidate because exact effective identifiers did not prove a reviewer model distinct from the writer. Capability limit CHILD_SANDBOX_UNAVAILABLE still prohibits delegated writes and parallel implementations. SC-MULTIAGENT-02 is partial: VSG textual packages are ready, while the SC contribution source set needs Lean confirmation and all generation/evaluation remains pending. SC-MULTIAGENT-03 remains PENDING because supervisor behavior and live pilot are not implemented or verified. GLIGEN remains PAUSED.",
+  "resume": "Read HEAD, git status, this checkpoint and specs/SC_MULTIAGENT_06_PROVENANCE_RECOVERY_v1.md, SC_MULTIAGENT_04_v1.md and SC_MULTIAGENT_05_v1.md. Preserve the local 02/03 candidate. Execute 06 by attempting one local metadata recovery tied to the material implementation turn; if unavailable, use the authorized material reconstruction with a traceable read-only implementer and root-only serial application. Freeze a new candidate and obtain review from a distinct effective runtime model before returning to 04 integration. Do not start 05 real execution before 04 passes and integrates. SC-MULTIAGENT-02 continues independently; no image has started the VSG clock. Preserve GLIGEN PAUSED, D3/D4 PENDING and VSG SHADOW.",
+  "blocker": "SC-MULTIAGENT-04 remains REVIEW_PROVENANCE_BLOCKED until SC-MULTIAGENT-06 recovers historical implementation metadata or completes a material traceable reconstruction and a distinct effective-model review. The spec is ready but execution has not started. SC-MULTIAGENT-05 real execution remains dependency-blocked. CHILD_SANDBOX_UNAVAILABLE prohibits delegated writes, so root must apply any implementer patch serially. SC-MULTIAGENT-02 proceeds in parallel, with VSG generation/evaluation and SC source representativeness pending. GLIGEN remains PAUSED.",
   "integration_commits_observed": [
     "8fa10427bdbab33c649deebe6fd12e92aef537a3",
     "d9a54e351ff6b4dc30e046812cceff638a81e0f9",

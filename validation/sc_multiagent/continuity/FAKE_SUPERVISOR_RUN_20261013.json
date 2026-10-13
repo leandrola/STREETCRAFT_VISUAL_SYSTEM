@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "run_id": "6752a840-3c11-4a00-a45b-904fb238d094",
+  "envelope_id": "SC03-PILOT-READONLY-01",
+  "executor": "tests/fixtures/sc_fake_executor.py",
+  "remote_model_calls": 0,
+  "images": 0,
+  "additional_spend": 0,
+  "base_commit": "d946f1b5d0d6dad53f080540ae9634bdf360d440",
+  "checkpoint_projection_sha256": "141d07707bdc2af8ead2ff0f8ff60bc0d9a21626fa7e08d06ac5b0d74494be19",
+  "invocations": 1,
+  "elapsed_seconds": 0.13134008197812364,
+  "result": "COMPLETED",
+  "turn_completed_event": true,
+  "status_process_alive": false,
+  "reconcile": {"head_matches": true, "checkpoint_matches": true, "relaunch": false},
+  "unit_tests": {"result": "PASS", "count": 6},
+  "verified_controls": ["exclusive nonblocking lock", "invalid-envelope block", "process-group stop state machine", "signal-permission orphan classification", "stable task key", "reconcile without automatic relaunch", "structured JSONL completion"],
+  "limits": ["Fake executor only; no live Codex continuity claim.", "The managed environment denied a real process-group signal during the first test attempt, so permission failure is explicitly classified ORPHANED_OR_UNKNOWN.", "Effective model identifiers remain UNKNOWN and REVIEW_MODEL_UNAVAILABLE remains open."]
+}

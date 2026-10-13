@@ -35,9 +35,10 @@ Si falta un documento indispensable, identificarlo y continuar solo las tareas i
 | 01 · Equipo y orquestador | Spec disponible; ejecución no verificada en este plan | Compatibilidad del cliente y modelos | SC_MULTIAGENT_READY con piloto real |
 | 02 · Operación visual | Spec disponible | 01 verificado y fuentes/payloads por carril | Pares, evaluación y decisión; corrección acotada si procede |
 | 03 · Continuidad acotada | Spec disponible | 01 verificado y ruta CLI disponible | Supervisor probado y tanda real acotada |
-| 04 · Uso diario y runtime estable | Sucesora propuesta; spec aún no creada | 01; runtime identificado; resultados técnicos pertinentes de 02/03 | Paquete chico, estado legible y verificación unificada |
-| 05 · Mejora dirigida por evidencia | Sucesora condicionada; spec aún no creada | Evidencia de 02; candidato concreto y runtime verificable de 04 | Una mejora prioritaria comprobada |
-| 06 y siguientes | Sin alcance asignado | Necesidad demostrada y tareas admitidas | Se define después; no abrir por numeración |
+| 04 · Revisión trazable e integración | Spec 1.0 incorporada; bloqueada por procedencia de implementación | 01 READY; candidato 02/03; procedencia y modelos efectivos observables | Recibo ligado al candidato exacto e integración solo si satisface el gate |
+| 05 · Piloto Codex real | Spec 1.0 incorporada; ejecución bloqueada por 04 | Contenido de 03 revisado e integrado mediante 04 o evidencia equivalente | Tanda real de lectura, delegación y resume por ID bajo el supervisor |
+| 06 · Recuperación de procedencia | Spec 1.0 incorporada; prioridad inmediata | `REVIEW_PROVENANCE_BLOCKED` de 04 y candidato local preservado | Metadata histórica recuperada o reconstrucción material trazable, con revisión distinta |
+| 07 y siguientes | Sin alcance asignado | Necesidad demostrada y tareas admitidas | Se define después; no abrir por numeración |
 
 Los estados de la tabla describen documentos y dependencias, no el estado vigente de implementación. Los estados operativos se consultan exclusivamente en CHECKPOINT.json y su evidencia.
 
@@ -102,44 +103,23 @@ No lanzar una sesión interactiva coordinadora y un supervisor integrador simult
 
 Los locks, logs y manifiestos son controles o evidencia, no otra fuente de decisiones.
 
-## 7. Próxima spec propuesta: 04 · Uso diario y runtime estable
+## 7. Gate de integración: 04 · Revisión trazable e integración
 
-**Necesidad:** que Lean pueda usar SC sin adjuntar documentación de desarrollo innecesaria, identificar la versión efectiva y consultar un estado claro.
+[SC-MULTIAGENT-04](SC_MULTIAGENT_04_v1.md) reemplaza la propuesta anterior de empaquetado de runtime. Revisa el candidato actual de 02/03, resuelve una vez la procedencia de implementación y la identidad operativa de modelos, congela el contenido y solo permite integrar/publicar después de satisfacer el gate independiente. Si la metadata o cuota no permiten acreditarlo, conserva `SC04_BLOCKED` o `REVIEW_PROVENANCE_BLOCKED`; un nombre configurado no cumple el criterio.
 
-Al redactar la spec 04, incluir:
+02 continúa como carril paralelo. 03 permanece preparado/pending y no pasa a READY por pruebas simuladas.
 
-- Selección determinista de archivos necesarios para el runtime según el repo real.
-- Identidad verificable del paquete: versión/commit y hashes.
-- Conservación de contratos y comandos incluidos.
-- Vista /sc-status derivada del checkpoint y de la identidad del runtime, con alcance realista para cada entorno.
-- Registro simple por sesión: fecha, versión y comandos usados.
-- Entrada única de verificación que reutilice comprobaciones existentes.
-- Exclusión de credenciales, logs operativos y material de entrenamiento o desarrollo no requerido.
-- Prueba de uso con una invocación existente y evidencia de compatibilidad.
+## 7.1 Prioridad inmediata: 06 · Recuperación verificable de procedencia
 
-No asumir que escribir “/sc-status” crea un comando nativo de Codex o de ChatGPT. La spec debe definir si es una convención del runtime, un script o una instrucción y demostrar cómo se consume.
+[SC-MULTIAGENT-06](SC_MULTIAGENT_06_PROVENANCE_RECOVERY_v1.md) responde al bloqueo concreto de 04. Primero intenta recuperar del runtime la identidad del modelo ligada al turno de implementación material. Si esa metadata no existe, permite una única reconstrucción material y necesaria por un implementador trazable; debido a `CHILD_SANDBOX_UNAVAILABLE`, el implementador devuelve un patch y root lo aplica serialmente.
 
-Puede prepararse con resultados técnicos disponibles sin esperar el juicio de Lean en 02. Si 03 sigue bloqueado, status muestra ese bloqueo; no presenta continuidad habilitada.
+06 conserva el requisito de revisión por un modelo efectivo distinto. No acepta configuración, autoinforme ni una reemisión de bytes como procedencia. Su PASS alimenta 04; 04 sigue siendo quien integra y publica. La secuencia vigente de continuidad es `06 → 04 → 05`, mientras 02 continúa en paralelo.
 
-Cerrar con paquete utilizable y comprobaciones concretas, no con otra propuesta de empaquetado.
+## 8. Prioridad dependiente: 05 · Piloto Codex real
 
-## 8. Siguiente spec condicionada: 05 · Una mejora visual demostrada
+[SC-MULTIAGENT-05](SC_MULTIAGENT_05_v1.md) reemplaza la propuesta anterior de mejora visual. Depende de 04 revisado e integrado, o de evidencia equivalente del mismo contenido. Su alcance es una tanda real de lectura con máximo dos invocaciones, un hijo identificable, resume por ID, lock mantenido y cero escrituras del ejecutor, imágenes, GLIGEN o gasto adicional.
 
-No redactar una spec genérica de “hacer SC mejor”. Elegir una falla observable de 02 y formular:
-
-- Trigger y ejemplo de antes.
-- Comportamiento esperado.
-- Contratos y archivos afectados.
-- Inputs y comparación que permitirán verificar la corrección.
-- Presupuesto nuevo, solo si hace falta y está dentro de autorización existente.
-- Revisión técnica y criterio visual separados.
-- Reversión y límites de conclusión.
-
-Si 02 ya corrigió y verificó esa falla, no abrir 05 para repetirla. Seleccionar otra necesidad real o terminar el ciclo.
-
-Sin imágenes nuevas autorizadas y disponibles, un patch puede quedar técnicamente verificado y visualmente pendiente. No declararlo una mejora demostrada. El test prompt directo vs. SC tampoco demuestra el efecto causal de un patch frente a SC anterior.
-
-GLIGEN, cierre formal VSG-2B, VSG-3A y validación formal BD01/BD02 no entran automáticamente en 05.
+La preparación offline puede avanzar mientras 04 esté bloqueado; la ejecución real no comienza hasta satisfacer su gate. El empaquetado de runtime, `/sc-status` y cualquier mejora visual vuelven a ser propuestas posteriores sin admisión automática.
 
 ## 9. Cómo incorporar cualquier spec futura
 
@@ -191,7 +171,7 @@ Usar niveles y modelos realmente disponibles. No prometer porcentajes de ventana
 
 Conservar topes de las specs: 01 una sesión; 02 dos sesiones de ingeniería/consolidación; 03 tres sesiones de construcción. No confundir estos límites con el plazo de 30 minutos y dos invocaciones de su piloto. Las esperas visuales no habilitan reinicios automáticos.
 
-Los hitos 04/05 definen sus topes en sus futuras specs. No tienen presupuesto implícito por aparecer aquí.
+Los hitos 04/05/06 usan los topes de sus specs v1 incorporadas. Su admisión no amplía gasto, imágenes ni permisos y 05 conserva el gate obligatorio de 04. Para 06, medium alcanza para inventario de metadata; reconstrucción, procesos/digest y revisión requieren high.
 
 ## 12. Final de cada tanda y reanudación
 
@@ -214,7 +194,6 @@ Comenzá por leer las specs y reconciliar SC-MULTIAGENT-01 contra CHECKPOINT.jso
 
 Continuá autónomamente las decisiones técnicas reversibles y tareas ya autorizadas. No reiteres permisos ya otorgados. Conservá pausa de GLIGEN, D3/D4 pendientes, presupuestos separados y el reloj original de VSG.
 
-Incorporá las specs futuras mediante la sección 9. Prepará 04/05 solo cuando sus condiciones se cumplan; no interpretes su numeración como permiso para ejecutar alcance nuevo.
+Incorporá specs posteriores mediante la sección 9. Ejecutá primero 06 para resolver la procedencia, luego 04 para integrar el candidato verificado y finalmente 05 conforme a sus dependencias. 05 real no comienza antes de que 04 cierre su gate. No interpretes la numeración como permiso para ampliar alcance.
 
 Si falta una capacidad o input, entregá lo completado y el bloqueo concreto; continuá trabajo independiente cuando corresponda. Terminá al agotar la tanda o cerrar su objetivo, con checkpoint actualizado y resumen de tres líneas.
-

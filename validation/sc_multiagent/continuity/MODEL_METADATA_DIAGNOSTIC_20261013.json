@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "diagnostic_at": "2026-10-13",
+  "method": "Read only session_meta and turn_context fields from the three pertinent persisted Codex rollouts; prompts and credentials excluded.",
+  "sessions": [
+    {
+      "session_id": "01a1334a-17a8-7291-b159-cab9f0ccf51c",
+      "originator": "codex_exec",
+      "provider": "openai",
+      "effective_model": "gpt-6-astra",
+      "metadata_field": "turn_context.model",
+      "rollout_sha256": "52c2e7240bcefd8a7885dc8037f419461e3cdce823431f4a84aa309a1a7ba1a2"
+    },
+    {
+      "session_id": "01a1334a-1a35-7dc2-b1ea-a9d89283dcc6",
+      "originator": "codex_exec",
+      "provider": "openai",
+      "effective_model": "gpt-5.6-sol",
+      "metadata_field": "turn_context.model",
+      "rollout_sha256": "9698c1ffe37c1da952c5b15de9edf847f394a90106d42436aac5f1280b02061b"
+    },
+    {
+      "session_id": "01a13338-c0ad-7fc1-83d1-c6bfa7e91be6",
+      "originator": "codex_exec",
+      "provider": "openai",
+      "effective_model": "gpt-5.6-sol",
+      "metadata_field": "turn_context.model",
+      "turns_with_same_model": 2,
+      "rollout_sha256": "1b58363d4cd6ab771f3b5dcb1859429a25edb630992e60953764b11b24d0f020"
+    }
+  ],
+  "implementation_session": {
+    "agent_host_session_id": "ad1a4a07-a403-47bb-824a-58d4488fab27",
+    "effective_model": "UNKNOWN",
+    "reason": "Current Agent Host metadata exposed session identity and workspace but no exact model identifier tied to the material implementation turns."
+  },
+  "result": "REVIEW_PROVENANCE_BLOCKED",
+  "next_action": "Do not spend another model call. Freeze the candidate and await observable implementation provenance or an explicitly authorized traceable reconstruction."
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "VSG-TEXTUAL-D-E-KENNY-20261013",
+  "status": "FROZEN_BEFORE_GENERATION",
+  "procedure": "Case order follows the lexical order of SHA-256(case_id). Left/right uses the low bit of the final byte of SHA-256(campaign_id + ':' + case_id); 0 places A left and 1 places B left.",
+  "mapping": [
+    {"pair_code": "PAIR-01", "case_id": "KENNY", "left": "A", "right": "B", "left_task": "VSG-KENNY-A", "right_task": "VSG-KENNY-B"},
+    {"pair_code": "PAIR-02", "case_id": "D", "left": "B", "right": "A", "left_task": "VSG-D-B", "right_task": "VSG-D-A"},
+    {"pair_code": "PAIR-03", "case_id": "E", "left": "A", "right": "B", "left_task": "VSG-E-A", "right_task": "VSG-E-B"}
+  ],
+  "warning": "Keep this key separate from the sheet shown to Lean until judgments are recorded."
+}

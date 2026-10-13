@@ -12,5 +12,6 @@
   "observed_writer_model": "GPT-6; exact identifier UNKNOWN",
   "reason": "The environment did not expose exact effective identifiers proving that reviewer and writer used different models.",
   "validated": ["source and payload hashes", "A/B semantics and equivalence", "six task IDs", "persisted exact-ID resume evidence", "JSON/JSONL", "scope and preserved GLIGEN/D3/D4/clock limits"],
-  "publication": "PENDING"
+  "publication": "PUBLISHED_UNREVIEWED_AT_d946f1b5d0d6dad53f080540ae9634bdf360d440",
+  "publication_reconciliation": "Publication was observed after this blocked review. REVIEW_MODEL_UNAVAILABLE remains open and no independent approval is implied."
 }

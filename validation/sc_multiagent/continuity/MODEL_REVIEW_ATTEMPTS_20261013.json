@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "published_commit": "d946f1b5d0d6dad53f080540ae9634bdf360d440",
+  "attempts": [
+    {
+      "thread_id": "01a1334a-17a8-7291-b159-cab9f0ccf51c",
+      "requested_model": "gpt-6-astra",
+      "effective_model": "gpt-6-astra",
+      "effective_model_source": "turn_context.model in persisted rollout metadata",
+      "result": "FAIL_DOCUMENTARY_TRACEABILITY",
+      "findings": ["publication state was stale", "review checkpoint hash did not identify published checkpoint", "event chronology needed reconciliation", "condition serialization was undocumented"]
+    },
+    {
+      "thread_id": "01a1334a-1a35-7dc2-b1ea-a9d89283dcc6",
+      "requested_model": "gpt-5.6-sol",
+      "effective_model": "gpt-5.6-sol",
+      "effective_model_source": "turn_context.model in persisted rollout metadata",
+      "result": "USAGE_LIMIT_BEFORE_FINAL_REPORT",
+      "partial_findings": ["technical source and payload integrity passed", "effective identifier was not exposed"]
+    }
+  ],
+  "conclusion": "REVIEWERS_IDENTIFIED_IMPLEMENTATION_AUTHORSHIP_UNKNOWN",
+  "limit": "Persisted turn_context resolves the two review executions, but no equivalent runtime record ties the material supervisor implementation in the current Agent Host session to an exact model identifier."
+}

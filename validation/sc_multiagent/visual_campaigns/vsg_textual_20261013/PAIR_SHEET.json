@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "VSG-TEXTUAL-D-E-KENNY-20261013",
+  "status": "OUTPUTS_PENDING",
+  "condition_key": "CONDITION_KEY.json",
+  "pairs": [
+    {"pair_code": "PAIR-01", "left_code": "OUT-01-L", "right_code": "OUT-01-R", "preference": null, "critical_failure": null, "reason": null, "not_evaluable": null},
+    {"pair_code": "PAIR-02", "left_code": "OUT-02-L", "right_code": "OUT-02-R", "preference": null, "critical_failure": null, "reason": null, "not_evaluable": null},
+    {"pair_code": "PAIR-03", "left_code": "OUT-03-L", "right_code": "OUT-03-R", "preference": null, "critical_failure": null, "reason": null, "not_evaluable": null}
+  ],
+  "presentation_rule": "Do not reveal case or condition until Lean records the first judgment for all evaluable pairs. Uniform scaling only; no crop or retouch."
+}

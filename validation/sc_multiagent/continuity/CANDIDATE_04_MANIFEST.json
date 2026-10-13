@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "base_commit": "d946f1b5d0d6dad53f080540ae9634bdf360d440",
+  "status": "HISTORICAL_FROZEN_SUPERSEDED_BY_SC06_ADMISSION",
+  "combined_sha256": "6e6caaccb9a5e3221e3784d7982757a0140c177980b505a9f4ac061205e92486",
+  "combined_hash_recipe": "For each file in listed order: UTF-8 path bytes, one NUL byte, then exact file bytes; concatenate and SHA-256. Manifest and future receipt excluded.",
+  "files": [
+    {"path": "development/coordination/CHECKPOINT.json", "operation": "modify", "sha256": "280d590107d97fa33f808e69d0394d819379212f70f8e2a8912aacc471d6343c"},
+    {"path": "docs/SC_VISUAL_CAMPAIGN_QUICKSTART.md", "operation": "modify", "sha256": "258d75c8a6b614347702d4f90510f9de7d08e68f07e562ca4b5a8addafb3cf51"},
+    {"path": "specs/STREETCRAFT_CODEX_MASTER_PLAN_v1.md", "operation": "modify", "sha256": "c7cb6835e98fd800c01140473ee30e10201b03d457596bb986135e8d135420c3"},
+    {"path": "validation/sc_multiagent/FINAL_REVIEW_0203_20261013.json", "operation": "modify", "sha256": "bf50198591e2f96a118fb3e7dd46d335e77000d139f326ef2014508b07130a05"},
+    {"path": "docs/SC_CONTINUITY_QUICKSTART.md", "operation": "add", "sha256": "79035a1680086b13a51ace4c1aa1f803bbec630e1cb798ea79659c0a37e61eb8"},
+    {"path": "scripts/sc_supervisor.py", "operation": "add", "sha256": "0bf98f908c0e699a8434936d17df9ff3259c452d3553fe11af58680260e13e5c"},
+    {"path": "specs/SC_MULTIAGENT_04_v1.md", "operation": "add", "sha256": "000ecc212a63b491a935d3432670f9cb6a71488d57f3e746ea287359e39f7224"},
+    {"path": "specs/SC_MULTIAGENT_05_v1.md", "operation": "add", "sha256": "329b2f1920528155483efba6779a34d9e8cbac7d596fd2b4e641883bed2bbb46"},
+    {"path": "tests/fixtures/sc_fake_executor.py", "operation": "add", "sha256": "6eb8b161aeed2da7ab52938ed004a60a1e958eb7df0f5d4520e1340c3bc59fa4"},
+    {"path": "tests/test_sc_supervisor.py", "operation": "add", "sha256": "b7a83a726e6b72f4722139c88c16f403a78c7803272d1bf613592d331f55c64c"},
+    {"path": "validation/sc_multiagent/continuity/FAKE_SUPERVISOR_RUN_20261013.json", "operation": "add", "sha256": "9a7b20fe699bbe62a1031f6e2fac3356bd70d089d3d1d4807d2e7abcb21f05ab"},
+    {"path": "validation/sc_multiagent/continuity/MODEL_REVIEW_ATTEMPTS_20261013.json", "operation": "add", "sha256": "8e30c1330baee0e4e330a393bb9f38f309d6af77bcbc33ccebc7be9f946a1a21"},
+    {"path": "validation/sc_multiagent/continuity/MODEL_METADATA_DIAGNOSTIC_20261013.json", "operation": "add", "sha256": "8f6fb297300a8db510f182b9be72ab5641c153d8d963c779346115204ec44201"},
+    {"path": "validation/sc_multiagent/successor_specs_20261013/ENTRY.json", "operation": "add", "sha256": "8b67eb60ea262242c15670d4703e17717e53f228232c2bb51398f65d0c29f9b0"},
+    {"path": "validation/sc_multiagent/visual_campaigns/vsg_textual_20261013/CONDITION_KEY.json", "operation": "add", "sha256": "f396bb1c88cf1f700663df5533e4b31d303d8b5fa7f69ef5c6649daef6741648"},
+    {"path": "validation/sc_multiagent/visual_campaigns/vsg_textual_20261013/PAIR_SHEET.json", "operation": "add", "sha256": "419a238c322f8429d222fa5b1d1388270b361411c99474f9f1be0259d14bd509"}
+  ],
+  "exclusions": ["This manifest itself", "A future REVIEW_04_RECEIPT.json"],
+  "review_gate": "REVIEW_PROVENANCE_BLOCKED",
+  "integration": "NOT_AUTHORIZED_UNTIL_GATE_PASSES",
+  "superseded_by": "SC-MULTIAGENT-06 spec admission changes the local candidate set; preserve this manifest as historical evidence and freeze CANDIDATE_06_MANIFEST.json before review."
+}

@@ -4,7 +4,7 @@
 
 El manifiesto `validation/sc_multiagent/visual_campaigns/vsg_textual_20261013/MANIFEST.json` congela las fuentes, payloads y hashes de D, E y Kenny. La campaña consume seis salidas: una condición A y una B por caso.
 
-Para cada salida, abrir una sesión nueva en la app de ChatGPT, adjuntar la fuente exacta y enviar la rama `.A` o `.B` del payload canónico sin cambios semánticos. Conservar la primera salida válida y registrar sesión, modelo, timestamp, ID y hash. No reintentar selectivamente. El reloj de 168 horas comienza con esos datos de la primera imagen válida; preparar archivos no lo inicia.
+Para cada salida, abrir una sesión nueva en la app de ChatGPT, adjuntar la fuente exacta y enviar la rama `.A` o `.B` del payload canónico sin cambios semánticos. Los hashes `condition_text_sha256` corresponden a la rama completa serializada como JSON compacto, conservando el orden original de claves, en UTF-8 y con un salto de línea final. Conservar la primera salida válida y registrar sesión, modelo, timestamp, ID y hash. No reintentar selectivamente. El reloj de 168 horas comienza con esos datos de la primera imagen válida; preparar archivos no lo inicia.
 
 La comparación se presenta a Lean con códigos neutrales y la clave separada. Lean juzga preferencia, fallas críticas y casos no evaluables antes de revelar las condiciones. Generación y juicio visual son responsabilidades separadas.
 
