@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "baseline": "2a489a6e6868bfe8473ceb6b4f4228e0d2cc8b88",
-  "current_milestone": "SC-MULTIAGENT-01",
+  "current_milestone": "SC-MULTIAGENT-02+03",
   "milestones": {
     "M1": {
       "status": "CLOSED",
@@ -82,29 +82,33 @@
       }
     },
     "SC-MULTIAGENT-02": {
-      "status": "PENDING",
-      "owner": "UNASSIGNED",
+      "status": "SC_VISUAL_PARTIAL_BLOCKED",
+      "owner": "root",
       "spec_version": "1.0",
       "spec": "specs/SC_MULTIAGENT_02_v1.md",
-      "admission": "Spec incorporated under master plan v1; execution not started",
+      "admission": "Preparation started after SC-MULTIAGENT-01 READY; generation and visual evaluation not started",
       "dependency": "SC-MULTIAGENT-01 READY with evidence; source bindings and authorized generation route",
       "acceptance": "Visual evidence acceptance remains exactly as specified; no readiness claimed",
-      "verification": "NOT_RUN; predecessor 01 READY in centralized-write mode; inputs and campaign execution remain pending",
+      "verification": "VSG textual D/E/Kenny source and canonical A/B payload bindings prepared with verified hashes for six authorized outputs; generation remains NOT_STARTED. Six existing SC sources are hash-bound candidates, but current representativeness is UNKNOWN pending Lean confirmation, so that lane is SOURCE_SET_INCOMPLETE.",
       "evidence": [
-        "validation/sc_multiagent/plan_entry_20261013/REPORT.md"
+        "validation/sc_multiagent/plan_entry_20261013/REPORT.md",
+        "validation/sc_multiagent/visual_campaigns/vsg_textual_20261013/MANIFEST.json",
+        "validation/sc_multiagent/visual_campaigns/sc_contribution_20261013/SOURCE_CANDIDATES.json",
+        "docs/SC_VISUAL_CAMPAIGN_QUICKSTART.md"
       ]
     },
     "SC-MULTIAGENT-03": {
       "status": "PENDING",
-      "owner": "UNASSIGNED",
+      "owner": "root",
       "spec_version": "1.0",
       "spec": "specs/SC_MULTIAGENT_03_v1.md",
-      "admission": "Spec incorporated under master plan v1; execution not started",
+      "admission": "Compatibility preparation started; supervisor implementation and live pilot not started",
       "dependency": "SC-MULTIAGENT-01 READY with evidence; existing CLI/auth/permissions verified",
       "acceptance": "Bounded continuity acceptance remains exactly as specified; no readiness claimed",
-      "verification": "NOT_RUN; predecessor 01 READY in centralized-write mode; CLI thread-routing failure must be reconciled before live supervisor pilot",
+      "verification": "PASS for bounded CLI compatibility only: non-ephemeral read-only sc_implementer delegation completed and the exact persisted session ID resumed successfully on the second and final invocation. Supervisor, lock, watchdog, stop propagation and recovery remain NOT_BUILT and SC_CONTINUITY_READY is not claimed.",
       "evidence": [
-        "validation/sc_multiagent/plan_entry_20261013/REPORT.md"
+        "validation/sc_multiagent/plan_entry_20261013/REPORT.md",
+        "validation/sc_multiagent/continuity/PERSISTED_DELEGATION_SMOKE.json"
       ]
     }
   },
@@ -167,10 +171,22 @@
     {
       "at": "2026-10-13T02:55:19Z",
       "event": "SC-MULTIAGENT-01 reconciliation candidate on integrated base 0554315: available models queried from Codex CLI 0.153.0; four profiles changed from rejected gpt-6.1-sol to available gpt-5.6-sol, verifier remains distinct gpt-6-astra. Named sc_implementer smoke /root/sc01_profile_smoke PASS. Operational detached copy PASS; child sandbox unavailable because live checkout remained writable, so verified mode is delegated analysis with root-only serial writes and no parallel delegated implementations. Independent gpt-6-astra review is required against frozen candidate before publication. Zero images/GLIGEN; quota UNKNOWN."
+    },
+    {
+      "at": "2026-10-13T03:30:00Z",
+      "event": "SC-MULTIAGENT-03 compatibility probe PASS without --ephemeral: read-only gpt-5.6-sol invocation persisted session 01a13338-c0ad-7fc1-83d1-c6bfa7e91be6 and exact-ID resume returned the expected base marker on invocation 2/2. Routing blocker removed; supervisor/lock/watchdog/stop/recovery remain unbuilt, so 03 stays PENDING and no READY claim is made."
+    },
+    {
+      "at": "2026-10-13T03:30:00Z",
+      "event": "SC-MULTIAGENT-02 parallel read-only preparation: VSG textual D/E/Kenny sources and canonical A/B payloads frozen for six authorized outputs; generation remains NOT_STARTED and visual clock NOT_STARTED. Existing SC A-F sources are hash-bound candidates but representativeness is UNKNOWN pending Lean confirmation; SC lane is SOURCE_SET_INCOMPLETE. Zero images, zero GLIGEN calls, D3/D4 unchanged."
+    },
+    {
+      "at": "2026-10-13T03:45:00Z",
+      "event": "SC02/03 final candidate technical validation PASS at hash b169255ea6b0d77d6804b1916c79094bc2ed1cf9959e645bbe9c00fa0b165d5f, but independent review BLOCKED as REVIEW_MODEL_UNAVAILABLE: reviewer profile gpt-6-astra and writer both exposed only GPT-6 with exact effective identifiers UNKNOWN. Candidate preserved locally; no commit or push."
     }
   ],
-  "resume": "Read HEAD, git status, this checkpoint and validation/sc_multiagent/plan_entry_20261013/REPORT.md. SC-MULTIAGENT-01 is READY only in DELEGATED_ANALYSIS_CENTRALIZED_WRITES mode: child sandbox is unavailable and delegated writes remain prohibited. Do not repeat completed documentary analyses or reapply preserved patches. SC-MULTIAGENT-02 and 03 are PENDING and may be prepared in later bounded work under their specs; 03 must first reconcile the observed standalone CLI thread-routing failure. Preserve M1-M3 CLOSED, GLIGEN PAUSED, D3/D4 PENDING, VSG SHADOW and original visual-clock rules. No automatic restart or supervisor handoff.",
-  "blocker": "No global SC-MULTIAGENT-01 blocker under centralized-write mode. Capability limit: CHILD_SANDBOX_UNAVAILABLE, so delegated writes and parallel implementations are disabled. SC-MULTIAGENT-02 awaits source/payload campaign inputs and Lean visual evaluation; SC-MULTIAGENT-03 awaits reconciliation of standalone CLI child-thread routing. GLIGEN remains PAUSED under existing D3/D4 conditions.",
+  "resume": "Read HEAD, git status, this checkpoint and the 02/03 evidence paths. SC-MULTIAGENT-01 remains READY only in DELEGATED_ANALYSIS_CENTRALIZED_WRITES mode. For 03, use explicitly recorded non-ephemeral session IDs and exact-ID resume; do not use an implicit latest session. Build and test supervisor, lock, watchdog, stop and recovery before any READY claim. For 02, the VSG textual six-output package is ready for the authorized ChatGPT-app campaign; preserve first outputs and start the 168-hour clock only at the first valid image timestamp/id/hash. The SC contribution lane requires Lean confirmation of source representativeness before payload freeze or generation. Preserve GLIGEN PAUSED, D3/D4 PENDING and VSG SHADOW.",
+  "blocker": "No global 01 or CLI session-routing blocker. REVIEW_MODEL_UNAVAILABLE blocks integration/publication of the current 02/03 candidate because exact effective identifiers did not prove a reviewer model distinct from the writer. Capability limit CHILD_SANDBOX_UNAVAILABLE still prohibits delegated writes and parallel implementations. SC-MULTIAGENT-02 is partial: VSG textual packages are ready, while the SC contribution source set needs Lean confirmation and all generation/evaluation remains pending. SC-MULTIAGENT-03 remains PENDING because supervisor behavior and live pilot are not implemented or verified. GLIGEN remains PAUSED.",
   "integration_commits_observed": [
     "8fa10427bdbab33c649deebe6fd12e92aef537a3",
     "d9a54e351ff6b4dc30e046812cceff638a81e0f9",

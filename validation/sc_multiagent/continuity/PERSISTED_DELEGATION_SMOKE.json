@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "task_id": "SC03-PERSISTED-DELEGATION-20261013",
+  "tested_at": "2026-10-13",
+  "base_commit": "3a3846198bc34aa9b8288fd06e1e16270dcdbbeb",
+  "checkpoint_sha256": "2b0fd32d2e4ca2dec5cdf0cad065f7d2ad66be6eeac6d8f27bd3a4e3c4a53026",
+  "client": "codex-cli 0.153.0",
+  "sandbox": "read-only",
+  "approval_policy": "never",
+  "ephemeral": false,
+  "configured_model": "gpt-5.6-sol",
+  "effective_model_self_report": "GPT-5 family; exact identifier UNKNOWN",
+  "session_id": "01a13338-c0ad-7fc1-83d1-c6bfa7e91be6",
+  "event_log": "validation/sc_multiagent/continuity/PERSISTED_DELEGATION_EVENTS.jsonl",
+  "invocations": 2,
+  "initial_delegation": {
+    "result": "PASS",
+    "role": "sc_implementer",
+    "files_changed": 0,
+    "input_tokens": 49620,
+    "cached_input_tokens": 32384,
+    "output_tokens": 881,
+    "reasoning_tokens": 101
+  },
+  "resume": {
+    "result": "PASS",
+    "observed_session_id": "01a13338-c0ad-7fc1-83d1-c6bfa7e91be6",
+    "marker": "RESUME_PASS SC03-PERSISTED-DELEGATION-20261013 3a3846198bc34aa9b8288fd06e1e16270dcdbbeb",
+    "input_tokens": 17670,
+    "cached_input_tokens": 16768,
+    "output_tokens": 42
+  },
+  "conclusion": "PERSISTED_SESSION_SMOKE_PASS",
+  "supervisor_status": "NOT_BUILT",
+  "milestone_status": "PENDING",
+  "limits": [
+    "This proves identified non-ephemeral session persistence and exact-ID resume only.",
+    "It does not prove supervisor locking, watchdog, stop propagation, recovery, or SC_CONTINUITY_READY.",
+    "Child write sandbox remains unavailable; delegated work stays read-only and root writes serially."
+  ]
+}

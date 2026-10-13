@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "VSG-TEXTUAL-D-E-KENNY-20261013",
+  "status": "SC_VISUAL_PACKAGES_READY",
+  "base_commit": "3a3846198bc34aa9b8288fd06e1e16270dcdbbeb",
+  "generation": "NOT_STARTED",
+  "evaluation": "PENDING_LEAN",
+  "budget": {"authorized_outputs": 6, "used_outputs": 0, "selective_retries": 0, "additional_spend": 0},
+  "clock": {"duration_hours": 168, "status": "NOT_STARTED", "starts_at": "first valid image timestamp/id/hash"},
+  "conditions": {
+    "A": {"selector": ".A", "meaning": "text derived from the CGC"},
+    "B": {"selector": ".B", "meaning": "the same constraint content expressed from the VSG-2A contract"}
+  },
+  "cases": [
+    {"id": "D", "source": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_source.jpg", "source_sha256": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc", "payload": "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/payloads.json", "payload_sha256": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d", "manifest_sha256": "d258f4784d7f27cabec9b6044142cdc809e19a9552e72924468e20d55dc3d3ec", "condition_text_sha256": {"A": "12d85b2d93be1d8d5470e53ed8f5e0a21e4d582102622dd3451b9d16a26913fb", "B": "154611c1a8f08ec79880a4a0e2ddd197e46a362a9ec7fc9fb3d9cfe04bf9ab68"}},
+    {"id": "E", "source": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-E_source.jpg", "source_sha256": "f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860", "payload": "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/payloads.json", "payload_sha256": "5197f955e2e3f335cd40298b0cf07564f2f2168d1d2446380df8a78b516d90f2", "manifest_sha256": "6568570352087407c7f6f23955ffe6e4f6381c6861bdd674d78baaa16197b275", "condition_text_sha256": {"A": "5084ac8f8c75f0337af6d6a9bbb77a8cb7903d082d91d383defc3bda020e2295", "B": "16b172130b81d6fc186d907423358ff83a84a221c49a070ef1c3cb83b36ed7a8"}},
+    {"id": "KENNY", "source": "visual_scene_graph/pilot/fixtures/kennys/source/kennys-shop.jpg", "source_sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2", "payload": "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/payloads.json", "payload_sha256": "f8ea1131d393e0cdd4ed7bfe4ce4b841a798f15f476305275c15bc12ae8ffb1a", "manifest_sha256": "f628730fb1dd043c6df5cdf2d47d76002b3266be21b8a97204d54914674b5c79", "condition_text_sha256": {"A": "926ff6617b7b19a6f5b2ddbf0514984c4f63a77350acdd180e23629dd9115bc4", "B": "001bebdcfa526747b9e3289207fdaaf1dfe5caa74521a80e7459239ea3aabba2"}}
+  ],
+  "tasks": [
+    {"task_id": "VSG-D-A", "case_id": "D", "condition_id": "A", "output_id": null},
+    {"task_id": "VSG-D-B", "case_id": "D", "condition_id": "B", "output_id": null},
+    {"task_id": "VSG-E-A", "case_id": "E", "condition_id": "A", "output_id": null},
+    {"task_id": "VSG-E-B", "case_id": "E", "condition_id": "B", "output_id": null},
+    {"task_id": "VSG-KENNY-A", "case_id": "KENNY", "condition_id": "A", "output_id": null},
+    {"task_id": "VSG-KENNY-B", "case_id": "KENNY", "condition_id": "B", "output_id": null}
+  ],
+  "execution_rules": [
+    "Use one new ChatGPT session per case and condition; six sessions total.",
+    "Attach the exact source and submit the selected canonical payload without semantic edits.",
+    "Keep the first valid output; do not selectively retry.",
+    "Record session, model, timestamp, output id and output hash before evaluation.",
+    "Generation and Lean visual judgment remain separate."
+  ]
+}

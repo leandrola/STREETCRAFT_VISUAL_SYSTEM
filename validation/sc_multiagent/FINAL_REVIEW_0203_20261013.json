@@ -1,0 +1,16 @@
+{
+  "task_id": "SC0203-FINAL-REVIEW-20261013",
+  "result": "BLOCKED",
+  "technical_validation": "PASS",
+  "blocker": "REVIEW_MODEL_UNAVAILABLE",
+  "base_commit": "3a3846198bc34aa9b8288fd06e1e16270dcdbbeb",
+  "candidate_sha256": "b169255ea6b0d77d6804b1916c79094bc2ed1cf9959e645bbe9c00fa0b165d5f",
+  "checkpoint_sha256": "209805d68a985672ebba6fb73ad5f3e11668ba9da7838d965a5308d3b59ce906",
+  "review_role": "sc_verifier",
+  "configured_review_model": "gpt-6-astra",
+  "observed_review_model": "GPT-6; exact identifier UNKNOWN",
+  "observed_writer_model": "GPT-6; exact identifier UNKNOWN",
+  "reason": "The environment did not expose exact effective identifiers proving that reviewer and writer used different models.",
+  "validated": ["source and payload hashes", "A/B semantics and equivalence", "six task IDs", "persisted exact-ID resume evidence", "JSON/JSONL", "scope and preserved GLIGEN/D3/D4/clock limits"],
+  "publication": "PENDING"
+}

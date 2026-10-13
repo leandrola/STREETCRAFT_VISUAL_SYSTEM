@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "SC-CONTRIBUTION-CANDIDATES-20261013",
+  "status": "SOURCE_SET_INCOMPLETE",
+  "generation": "NOT_STARTED",
+  "budget": {"authorized_outputs": 12, "used_outputs": 0, "additional_spend": 0},
+  "representativeness": "UNKNOWN_PENDING_LEAN_CONFIRMATION",
+  "candidates": [
+    {"id": "A", "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-A_source.jpg", "sha256": "89face740ce626e2b7adf8b0e98fe7390cd4a51de7d72ece8a77e3745930163b"},
+    {"id": "B", "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-B_source.jpg", "sha256": "9a33f40bc6722b0673b1fa4350cc6c28fa024b7e95d6f62bcb766b3a36798650"},
+    {"id": "C", "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-C_source.jpg", "sha256": "2130500a09548d4f9c1991a210de3cfa13d8ef63406dd0c3a78c257c68858a09"},
+    {"id": "D", "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_source.jpg", "sha256": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc"},
+    {"id": "E", "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-E_source.jpg", "sha256": "f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860"},
+    {"id": "F", "path": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-F_source.png", "sha256": "dc21c48d695cf3d14efa57365b246a765cec770792f173c47a1da1748d38f5bf"}
+  ],
+  "next_gate": "Lean confirms that these six existing sources represent the intended SC contribution campaign, or supplies replacements. Payloads are frozen only after that decision.",
+  "limits": ["No visual judgment was inferred from filenames or metadata.", "No synthetic cases may fill coverage gaps."]
+}
