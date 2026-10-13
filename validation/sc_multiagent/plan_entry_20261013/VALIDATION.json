@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-13T02:45:20.913474+00:00",
+  "base_commit": "577a538ddd2039193d24b71429faa0872a437fba",
+  "result": "PASS_DOCUMENTARY_CHECKS_ONLY",
+  "prior_tracked_files": 812,
+  "preserved_prior_files": 810,
+  "changed_prior_files": [
+    "AGENTS.md",
+    "development/coordination/CHECKPOINT.json"
+  ],
+  "exact_imports": 3,
+  "toml_parsed": 6,
+  "checkpoint_json": "PASS",
+  "historical_checkpoint_fields_and_events": "PRESERVED; only planned additive milestone/event data plus resume/blocker changed",
+  "git_diff_check": "PASS",
+  "runtime_tests": "NOT_RUN; runtime bytes preserved",
+  "GLIGEN_tests": "NOT_RUN; PAUSED",
+  "independent_review": "NOT_RUN",
+  "commit_push": "NOT_RUN"
+}

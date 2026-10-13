@@ -1,0 +1,54 @@
+{
+  "base_commit": "577a538ddd2039193d24b71429faa0872a437fba",
+  "candidate_review": "NOT_RUN",
+  "patch": "CANDIDATE.patch",
+  "patch_sha256": "50f269698dfbbe3c0f08f533ae912a7cc3f9aef9978732d5389587a15506ae4f",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "change": "MODIFY",
+      "sha256": "abfc8fc257be6fe6344a91106757c2abb5b42d76ca80a6beda2b348361281619"
+    },
+    {
+      "path": "development/coordination/CHECKPOINT.json",
+      "change": "MODIFY",
+      "sha256": "e24b5a3b2e0bda1f2b33a0ad78d46609b5f5b4f12471408d4c6b88066971ff2f"
+    },
+    {
+      "path": "specs/SC_MULTIAGENT_02_v1.md",
+      "change": "ADD",
+      "sha256": "bb095560e9d915e43ef2e831d85b53f1c2bad34725db98f8cd0fa6087c72583a"
+    },
+    {
+      "path": "specs/SC_MULTIAGENT_03_v1.md",
+      "change": "ADD",
+      "sha256": "7372a818391af6e199ddfd6dddd13adabb75c0a3e19cf178ccf8062246565035"
+    },
+    {
+      "path": "specs/STREETCRAFT_CODEX_MASTER_PLAN_v1.md",
+      "change": "ADD",
+      "sha256": "d5958161bf2a6d371487a82360a70ae28754df018a4252588ef78d6a3394f34b"
+    },
+    {
+      "path": "validation/sc_multiagent/plan_entry_20261013/ENTRY_EVIDENCE.json",
+      "change": "ADD",
+      "sha256": "0f57042791af1f8872b69dbc0c74658581ebf2f7aab66fd99d58e761e41a95de"
+    },
+    {
+      "path": "validation/sc_multiagent/plan_entry_20261013/REPORT.md",
+      "change": "ADD",
+      "sha256": "3cd516f273fa6696db51a2b80ff80af5dd62090915787e691ab645d7eb380713"
+    },
+    {
+      "path": "validation/sc_multiagent/plan_entry_20261013/VALIDATION.json",
+      "change": "ADD",
+      "sha256": "e59ed2b91facfb300c289fa40fca06d3e540158902e111260b18a4ee4c6d1fd9"
+    }
+  ],
+  "deleted_files": [],
+  "receipt_exclusions": [
+    "validation/sc_multiagent/plan_entry_20261013/CANDIDATE.patch",
+    "validation/sc_multiagent/plan_entry_20261013/MANIFEST.json"
+  ],
+  "receipt_note": "Patch and manifest generated after candidate; excluded to avoid self-reference. This is preservation evidence, not review or checkpoint."
+}

@@ -6,15 +6,32 @@ son perfiles de IA; no acreditan credenciales profesionales.
 
 ## Autoridad y estado
 
-La instrucción actual de Lean autoriza ejecutar [SC-MULTIAGENT-01](specs/SC_MULTIAGENT_01_v1.md)
-tras leer [v12](specs/STREETCRAFT_v12.md). Esta spec acota el piloto actual; leer
-v12 no autoriza ejecutar todo su plan. Las decisiones históricas y sus límites
+La instrucción actual de Lean remite al [plan maestro v1](specs/STREETCRAFT_CODEX_MASTER_PLAN_v1.md).
+Primero reconciliar [SC-MULTIAGENT-01](specs/SC_MULTIAGENT_01_v1.md) contra su
+evidencia; no repetir el piloto documental completado. [02](specs/SC_MULTIAGENT_02_v1.md)
+y [03](specs/SC_MULTIAGENT_03_v1.md) requieren 01 verificado antes de implementar.
+Leer [v12](specs/STREETCRAFT_v12.md) y el plan no permite omitir dependencias ni
+ejecutar 04/05 sin sus condiciones y topes. Las decisiones históricas y sus límites
 se conservan. CHECKPOINT.json en development/coordination/ es la única fuente
 operativa de estado. Los informes guardan evidencia; no son otro checkpoint.
 Leé el checkpoint, README.md, STREETCRAFT.md y los contratos de la tarea antes
 de actuar; verificá HEAD y cambios locales, sin reset ni limpieza de Lean.
 
-## Sobre autorizado de esta tanda
+## Entrada del plan maestro
+
+- Trabajo actual: incorporar specs exactas y reconciliar únicamente criterios
+  pendientes de 01. Usar una sesión acotada a 60 minutos, sin reinicios automáticos.
+- Conservar informes anteriores como evidencia histórica. Las capacidades
+  expuestas por el cliente no demuestran ejecución; registrar errores reales.
+- Hasta verificar 01, 02/03 quedan bloqueados por dependencia. No construir
+  supervisor ni iniciar campañas como parte de esta reconciliación.
+- No ampliar permisos globales, proveedor ni gasto para resolver un bloqueo.
+  Si falla un modelo configurado, guardar la causa sin afirmar modelo efectivo.
+- El plan permite incorporar sus tres documentos en specs/, evidencia de entrada
+  en validation/sc_multiagent/ y el delta del checkpoint; raíz integra en serie.
+  Conservar autorización de commit/push, condicionada a revisión del candidato.
+
+## Sobre del piloto 01 (histórico; límites aplicables a su reconciliación)
 
 - Objetivo: configurar colaboración y demostrar un piloto documental real.
 - Tareas: configuración, tres análisis documentales independientes del mismo

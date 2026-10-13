@@ -67,6 +67,42 @@
         "validation/sc_multiagent/ISOLATION_CHECK.json",
         "validation/sc_multiagent/CHECKS.json",
         "validation/sc_multiagent/sc_verifier_REPORT.md"
+      ],
+      "reconciliation": {
+        "at": "2026-10-13T02:44:44.871321+00:00",
+        "base_commit": "577a538ddd2039193d24b71429faa0872a437fba",
+        "status": "BLOCKED",
+        "named_profiles": "EXPOSED; sc_implementer dispatch attempted but rejected before execution",
+        "model_dispatch": "MODEL_DISPATCH_BLOCKED: gpt-6.1-sol unsupported with this ChatGPT account",
+        "write_isolation": "ISOLATION_BLOCKED; child-specific enforcement not demonstrated",
+        "independent_review": "NOT_RUN for this entry; historical review preserved",
+        "evidence": "validation/sc_multiagent/plan_entry_20261013/REPORT.md"
+      }
+    },
+    "SC-MULTIAGENT-02": {
+      "status": "BLOCKED",
+      "owner": "UNASSIGNED",
+      "spec_version": "1.0",
+      "spec": "specs/SC_MULTIAGENT_02_v1.md",
+      "admission": "Spec incorporated under master plan v1; execution not started",
+      "dependency": "SC-MULTIAGENT-01 READY with evidence; source bindings and authorized generation route",
+      "acceptance": "Visual evidence acceptance remains exactly as specified; no readiness claimed",
+      "verification": "NOT_RUN; predecessor 01 remains BLOCKED",
+      "evidence": [
+        "validation/sc_multiagent/plan_entry_20261013/REPORT.md"
+      ]
+    },
+    "SC-MULTIAGENT-03": {
+      "status": "BLOCKED",
+      "owner": "UNASSIGNED",
+      "spec_version": "1.0",
+      "spec": "specs/SC_MULTIAGENT_03_v1.md",
+      "admission": "Spec incorporated under master plan v1; execution not started",
+      "dependency": "SC-MULTIAGENT-01 READY with evidence; existing CLI/auth/permissions verified",
+      "acceptance": "Bounded continuity acceptance remains exactly as specified; no readiness claimed",
+      "verification": "NOT_RUN; predecessor 01 remains BLOCKED",
+      "evidence": [
+        "validation/sc_multiagent/plan_entry_20261013/REPORT.md"
       ]
     }
   },
@@ -117,10 +153,18 @@
     {
       "at": "2026-10-13T02:03:20.056427+00:00",
       "event": "SC-MULTIAGENT-01 preparation and documentary pilot evidenced: three specialists overlap, actual runtime metadata gpt-6.1-sol; detached-worktree implementer returns proposal without writes; root applies quickstart serially. 27/27 existing backdrop/orchestrator checks pass in temporary environment; no new instruction-mirroring tests or GLIGEN tests. Milestone BLOCKED pending actual custom-profile selection and enforceable write isolation; final candidate requires different-model review before commit."
+    },
+    {
+      "at": "2026-10-13T02:44:44.871321+00:00",
+      "event": "Master plan SC-MULTIAGENT-PLAN v1 invoked by Lean via file reference. Exact master plan and specs 02/03 incorporated; existing v12/01 bytes match originals. 02/03 admitted with execution BLOCKED by 01; 04/05 not opened. Existing pilot analysis reused, not relaunched."
+    },
+    {
+      "at": "2026-10-13T02:44:44.871321+00:00",
+      "event": "SC-MULTIAGENT-01 reconciliation at 577a538: five named profiles exposed, sc_implementer task /root/reconcile_capability dispatch failed before work because configured gpt-6.1-sol is unsupported with this ChatGPT account. Effective child model UNKNOWN. Write isolation still unverified. No model/provider/global permission change, no independent final review or commit/push for this entry. Zero images, GLIGEN calls and supervisor invocations; quota UNKNOWN. Evidence: validation/sc_multiagent/plan_entry_20261013/REPORT.md"
     }
   ],
-  "resume": "Read HEAD, git status, this checkpoint and validation/sc_multiagent/PILOT_REPORT.md; do not relaunch completed documentary tasks. SC-MULTIAGENT-01 remains BLOCKED: active client must expose/select custom profiles and verify actual per-agent permissions before parallel writes or READY. Independent review evidence cannot waive those criteria. Preserve M1-M3 CLOSED, GLIGEN PAUSED, D3/D4 PENDING and VSG SHADOW; no further structural implementation/tests. Textual exploration has separate bounded v12 authorization; this pilot starts no visual clock. No persistent supervisor or automatic restart is implemented.",
-  "blocker": "SC-MULTIAGENT-01 CLIENT_CAPABILITY_BLOCKED for named custom-profile selection; ISOLATION_BLOCKED for enforceable child write roots. Existing GLIGEN structural route remains PAUSED with D3/D4 PENDING and its original reopening conditions.",
+  "resume": "Read HEAD, git status, this checkpoint and validation/sc_multiagent/plan_entry_20261013/REPORT.md. Do not repeat completed documentary analyses. Resolve configured implementation-model availability under the existing account, demonstrate named-profile execution and enforceable isolated write roots, then obtain different-model final-candidate review. SC-MULTIAGENT-01 remains BLOCKED; 02/03 specs are incorporated but cannot start until 01 is verified. No automatic restart or supervisor handoff. Preserve M1-M3 CLOSED, GLIGEN PAUSED, D3/D4 PENDING, VSG SHADOW and original visual-clock rules; this entry generated no images and started no clock. Candidate documentary patch is local, unreviewed and uncommitted.",
+  "blocker": "SC-MULTIAGENT-01 MODEL_DISPATCH_BLOCKED: configured gpt-6.1-sol rejected by current ChatGPT-account runtime; named profiles are exposed but execution is not verified. ISOLATION_BLOCKED: enforceable per-child write roots not demonstrated. 02/03 blocked by prerequisite 01. GLIGEN remains PAUSED under existing D3/D4 conditions.",
   "integration_commits_observed": [
     "8fa10427bdbab33c649deebe6fd12e92aef537a3",
     "d9a54e351ff6b4dc30e046812cceff638a81e0f9",
