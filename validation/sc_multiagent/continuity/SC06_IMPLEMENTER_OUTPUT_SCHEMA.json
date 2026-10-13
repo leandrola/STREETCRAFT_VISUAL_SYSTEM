@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_id",
+    "result",
+    "base_commit",
+    "files",
+    "patch",
+    "validations",
+    "limits",
+    "closure"
+  ],
+  "properties": {
+    "task_id": {"type": "string", "const": "SC06-IMPLEMENTER-RECONSTRUCTION-01"},
+    "result": {"type": "string", "enum": ["PASS", "FAIL", "BLOCKED"]},
+    "base_commit": {
+      "type": "string",
+      "const": "d946f1b5d0d6dad53f080540ae9634bdf360d440"
+    },
+    "files": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "patch": {"type": "string"},
+    "validations": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "limits": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "closure": {"type": "string"}
+  }
+}

@@ -123,7 +123,7 @@
             {"task_id": "SC03-READ-QUICKSTART", "depends_on": [], "files_allowed": [], "acceptance": "Read two quickstart sections and return a bounded JSONL completion event."}
           ],
           "base_commit": "d946f1b5d0d6dad53f080540ae9634bdf360d440",
-          "checkpoint_sha256": "925a86ae3cb7d1b9ea06ad6d75a1d2ef07484da9009c65f966bd3f21f14253a1",
+          "checkpoint_sha256": "519cce4dcb4661938b8937d5390f4f22c44f259fe24500e8ecbf04ac091cfa09",
           "orchestrator_model": "gpt-5.6-sol",
           "implementer_model": "gpt-5.6-sol",
           "verifier_model": "gpt-6-astra",
@@ -170,18 +170,20 @@
       ]
     },
     "SC-MULTIAGENT-06": {
-      "status": "SPEC_READY_PREFLIGHT_PASS_PENDING_EXECUTION",
+      "status": "SC06_BLOCKED_INCOMPLETE_PATCH_INTERRUPTED",
       "owner": "root",
       "spec_version": "1.1",
       "spec": "specs/SC_MULTIAGENT_06_PROVENANCE_RECOVERY_v1.md",
       "admission": "Explicitly requested by Lean to resolve SC-MULTIAGENT-04 REVIEW_PROVENANCE_BLOCKED by rebuilding provenance forward, without exception or retroactive UNKNOWN attribution.",
       "dependency": "SC-MULTIAGENT-01 READY in DELEGATED_ANALYSIS_CENTRALIZED_WRITES mode; base d946f1b before material supervisor implementation; SC-MULTIAGENT-04 provenance diagnosis",
       "acceptance": "One traceable implementer reconstructs the complete supervisor patch from the pre-implementation base; root records host/session/turn, effective runtime model, prompt_sha256 and diff_sha256; a distinct effective model reviews the exact combined_sha256 integrated by 04.",
-      "verification": "PREFLIGHT PASS without model call: Agent Host session metadata is insufficient because it omits effective model; persistent Codex CLI can fix -m and prior rollouts expose turn_context.model for gpt-5.6-sol and gpt-6-astra. Reconstruction and review have not started. Historical metadata and the fake run cannot close provenance.",
+      "verification": "Preflight PASS and effective implementer identity proved: persistent CLI session 01a13562-a186-7140-8025-de1cbfc5da54 recorded turn_context.model=gpt-5.6-sol, high reasoning and read-only sandbox. Execution was interrupted without turn.completed; its only agent message self-reported PASS but returned files=[] and an empty patch. Root rejected it. No diff_sha256, reconstructed candidate, manifest or distinct-model review exists.",
       "evidence": [
         "specs/SC_MULTIAGENT_06_PROVENANCE_RECOVERY_v1.md",
         "validation/sc_multiagent/successor_specs_20261013/SC06_ENTRY.json",
         "validation/sc_multiagent/continuity/SC06_VIABILITY_PREFLIGHT.json",
+        "validation/sc_multiagent/continuity/SC06_IMPLEMENTATION_PROVENANCE.json",
+        "validation/sc_multiagent/continuity/SC06_IMPLEMENTER_EXECUTION.json",
         "validation/sc_multiagent/continuity/MODEL_METADATA_DIAGNOSTIC_20261013.json",
         "validation/sc_multiagent/continuity/CANDIDATE_04_MANIFEST.json"
       ]
@@ -286,10 +288,14 @@
     {
       "at": "2026-10-13T12:52:08Z",
       "event": "Lean rejected an exception or retroactive UNKNOWN attribution for 04 and directed 06 to rebuild provenance forward. SC-MULTIAGENT-06 updated to v1.1: full supervisor patch reconstructed from d946f1b by one model-fixed persistent CLI implementer; root owns host/session/turn, prompt/diff hashes and effective-model records; distinct-model review must bind the exact combined_sha256 integrated by 04. Read-only preflight PASS: Agent Host metadata omits effective model, but prior persistent CLI rollouts prove -m plus turn_context.model for gpt-5.6-sol and gpt-6-astra. No model call; execution NOT_STARTED."
+    },
+    {
+      "at": "2026-10-13T13:17:45Z",
+      "event": "SC-MULTIAGENT-06 execution stopped BLOCKED. A first launch was rejected before model execution by an invalid strict-schema keyword. After schema-only correction, effective implementer session 01a13562-a186-7140-8025-de1cbfc5da54 ran gpt-5.6-sol at high reasoning in read-only mode, proven by turn_context.model. The turn was interrupted without turn.completed; its only message reported PASS but returned files=[] and an empty patch, so root rejected it. No reconstructed candidate, diff_sha256, combined_sha256 or review exists. No automatic resume/relaunch; zero images; 04 and 05 remain blocked."
     }
   ],
-  "resume": "Read HEAD, git status, this checkpoint and specs/SC_MULTIAGENT_06_PROVENANCE_RECOVERY_v1.md, SC_MULTIAGENT_04_v1.md and SC_MULTIAGENT_05_v1.md. Preserve published history. Reconfirm the SC06 CLI preflight, then root freezes the prompt and launch record before one persistent read-only implementer reconstructs the complete supervisor patch from d946f1b. Root reads effective model from runtime metadata, records session/turn/host and prompt/diff hashes, applies serially, freezes combined_sha256 and obtains review from a distinct effective model. Historical metadata and fake execution cannot close provenance. Do not start 05 before 04 integrates the exact reviewed hash. SC-MULTIAGENT-02 continues independently; preserve GLIGEN PAUSED, D3/D4 PENDING and VSG SHADOW.",
-  "blocker": "SC-MULTIAGENT-04 remains REVIEW_PROVENANCE_BLOCKED until SC-MULTIAGENT-06 reconstructs the complete supervisor candidate with forward root-owned provenance and distinct effective-model review over the exact combined_sha256 integrated by 04. Viability preflight passed, but 06 implementation/review have not started. SC-MULTIAGENT-05 real execution remains dependency-blocked. CHILD_SANDBOX_UNAVAILABLE prohibits delegated writes, so root must apply the implementer patch serially. SC-MULTIAGENT-02 proceeds in parallel, with VSG generation/evaluation and SC source representativeness pending. GLIGEN remains PAUSED.",
+  "resume": "Read HEAD, git status, this checkpoint and SC06 implementation evidence. Preserve published history and do not resume or relaunch session 01a13562-a186-7140-8025-de1cbfc5da54 automatically. Its model identity is proven but the interrupted turn produced no patch and did not complete; the one effective implementer turn under the current cap is consumed. A new bounded implementer turn requires Lean authorization or a revised cap. Without it, no CANDIDATE_06_MANIFEST or reviewer launch is permitted. 04 remains blocked and 05 does not start. SC-MULTIAGENT-02 continues independently; preserve GLIGEN PAUSED, D3/D4 PENDING and VSG SHADOW.",
+  "blocker": "SC-MULTIAGENT-06 is SC06_BLOCKED_INCOMPLETE_PATCH_INTERRUPTED: effective implementer gpt-5.6-sol is proven, but the turn ended without turn.completed and returned an empty patch, so forward provenance is not established. The current one-turn cap prohibits automatic relaunch. Consequently SC-MULTIAGENT-04 remains REVIEW_PROVENANCE_BLOCKED and SC-MULTIAGENT-05 remains dependency-blocked. CHILD_SANDBOX_UNAVAILABLE still requires root-only serial application. SC-MULTIAGENT-02 remains partially blocked on generation/evaluation and source representativeness. GLIGEN remains PAUSED.",
   "integration_commits_observed": [
     "8fa10427bdbab33c649deebe6fd12e92aef537a3",
     "d9a54e351ff6b4dc30e046812cceff638a81e0f9",
