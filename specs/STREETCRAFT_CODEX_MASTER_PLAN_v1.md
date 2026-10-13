@@ -37,7 +37,7 @@ Si falta un documento indispensable, identificarlo y continuar solo las tareas i
 | 03 · Continuidad acotada | Spec disponible | 01 verificado y ruta CLI disponible | Supervisor probado y tanda real acotada |
 | 04 · Revisión trazable e integración | Spec 1.0 incorporada; bloqueada por procedencia de implementación | 01 READY; candidato 02/03; procedencia y modelos efectivos observables | Recibo ligado al candidato exacto e integración solo si satisface el gate |
 | 05 · Piloto Codex real | Spec 1.0 incorporada; ejecución bloqueada por 04 | Contenido de 03 revisado e integrado mediante 04 o evidencia equivalente | Tanda real de lectura, delegación y resume por ID bajo el supervisor |
-| 06 · Recuperación de procedencia | Spec 1.0 incorporada; prioridad inmediata | `REVIEW_PROVENANCE_BLOCKED` de 04 y candidato local preservado | Metadata histórica recuperada o reconstrucción material trazable, con revisión distinta |
+| 06 · Reconstrucción de procedencia | Spec 1.1 incorporada; preflight viable y ejecución pendiente | `REVIEW_PROVENANCE_BLOCKED` de 04 y base anterior al supervisor | Reconstrucción completa con modelo efectivo registrado por root y revisión distinta |
 | 07 y siguientes | Sin alcance asignado | Necesidad demostrada y tareas admitidas | Se define después; no abrir por numeración |
 
 Los estados de la tabla describen documentos y dependencias, no el estado vigente de implementación. Los estados operativos se consultan exclusivamente en CHECKPOINT.json y su evidencia.
@@ -109,11 +109,11 @@ Los locks, logs y manifiestos son controles o evidencia, no otra fuente de decis
 
 02 continúa como carril paralelo. 03 permanece preparado/pending y no pasa a READY por pruebas simuladas.
 
-## 7.1 Prioridad inmediata: 06 · Recuperación verificable de procedencia
+## 7.1 Prioridad inmediata: 06 · Reconstrucción verificable de procedencia
 
-[SC-MULTIAGENT-06](SC_MULTIAGENT_06_PROVENANCE_RECOVERY_v1.md) responde al bloqueo concreto de 04. Primero intenta recuperar del runtime la identidad del modelo ligada al turno de implementación material. Si esa metadata no existe, permite una única reconstrucción material y necesaria por un implementador trazable; debido a `CHILD_SANDBOX_UNAVAILABLE`, el implementador devuelve un patch y root lo aplica serialmente.
+[SC-MULTIAGENT-06](SC_MULTIAGENT_06_PROVENANCE_RECOVERY_v1.md) responde al bloqueo concreto de 04 sin excepción ni atribución retroactiva. Un implementador iniciado con modelo fijado reconstruye el patch completo del supervisor desde la base anterior; root registra host, sesión/turno, prompt, modelo efectivo leído del runtime y hash del diff. Debido a `CHILD_SANDBOX_UNAVAILABLE`, el implementador entrega el patch en lectura y root lo aplica serialmente.
 
-06 conserva el requisito de revisión por un modelo efectivo distinto. No acepta configuración, autoinforme ni una reemisión de bytes como procedencia. Su PASS alimenta 04; 04 sigue siendo quien integra y publica. La secuencia vigente de continuidad es `06 → 04 → 05`, mientras 02 continúa en paralelo.
+El preflight confirmó que Agent Host por sí solo no expone el modelo efectivo, mientras las sesiones persistidas del CLI permiten fijar modelo y sus rollouts exponen `turn_context.model`. 06 conserva el requisito de revisión por un modelo efectivo distinto y exige que el `combined_sha256` revisado coincida con la integración de 04. Su PASS alimenta 04; 04 sigue siendo quien integra y publica. La secuencia vigente de continuidad es `06 → 04 → 05`, mientras 02 continúa en paralelo.
 
 ## 8. Prioridad dependiente: 05 · Piloto Codex real
 

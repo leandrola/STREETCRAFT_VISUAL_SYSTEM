@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "task_id": "SC06-VIABILITY-PREFLIGHT-20261013",
+  "checked_at": "2026-10-13",
+  "base_commit": "7c209ac8d5fa460adce117a6a7552a4e397e0c78",
+  "checkpoint_sha256_at_preflight": "5dfc6a1331523eee75420a284a71671d1a15a3eca3eb068d5f067f36c383b04c",
+  "spec": {
+    "path": "specs/SC_MULTIAGENT_06_PROVENANCE_RECOVERY_v1.md",
+    "version": "1.1",
+    "sha256": "252057efd1eaf6129952e94007d62642cfa627ac90eb22d2ac7c5fb0bc86ca84"
+  },
+  "result": "PASS_CLI_PERSISTED_RUNTIME_METADATA",
+  "execution_started": false,
+  "model_calls": 0,
+  "checks": [
+    {
+      "capability": "Agent Host model selection",
+      "result": "REQUEST_MODEL_SUPPORTED_EFFECTIVE_MODEL_NOT_EXPOSED",
+      "evidence": "Session APIs accept or inherit a model choice, but get_current_session/list_sessions metadata for ad1a4a07-a403-47bb-824a-58d4488fab27 exposes session/workspace/git fields and no effective model field.",
+      "sufficient_for_sc06": false
+    },
+    {
+      "capability": "Persistent CLI launch with fixed model",
+      "result": "PASS",
+      "client": "codex-cli 0.153.0",
+      "evidence_path": "validation/sc_multiagent/continuity/PERSISTED_DELEGATION_EVENTS.jsonl",
+      "evidence_sha256": "72c96a400f1adc340598ef4fd85ca5910eb71b88a027987fd8ee5b4d0511e815",
+      "observed_argv": [
+        "codex",
+        "-a",
+        "never",
+        "exec",
+        "--json",
+        "--strict-config",
+        "-m",
+        "gpt-5.6-sol",
+        "-s",
+        "read-only",
+        "-C",
+        "<repo>",
+        "<bounded-task-card>"
+      ],
+      "persistent_session_id": "01a13338-c0ad-7fc1-83d1-c6bfa7e91be6",
+      "sufficient_for_sc06": true
+    },
+    {
+      "capability": "Runtime effective-model metadata",
+      "result": "PASS_ON_PERSISTED_CODEX_ROLLOUTS",
+      "evidence_path": "validation/sc_multiagent/continuity/MODEL_METADATA_DIAGNOSTIC_20261013.json",
+      "evidence_sha256": "8f6fb297300a8db510f182b9be72ab5641c153d8d963c779346115204ec44201",
+      "metadata_field": "turn_context.model",
+      "observed_models": [
+        "gpt-5.6-sol",
+        "gpt-6-astra"
+      ],
+      "sufficient_for_sc06": true
+    },
+    {
+      "capability": "Distinct implementation and review models",
+      "result": "VIABLE_SUBJECT_TO_LAUNCH_TIME_AVAILABILITY_AND_QUOTA",
+      "implementer_requested_model": "gpt-5.6-sol",
+      "reviewer_requested_model": "gpt-6-astra",
+      "required_launch_time_check": "Both effective identifiers must be read by root from each new rollout; historical availability does not satisfy the future gate.",
+      "sufficient_for_sc06": true
+    },
+    {
+      "capability": "Root-owned prompt and diff binding",
+      "result": "SUPPORTED_BY_LOCAL_SHA256_AND_SERIAL_INTEGRATION",
+      "required_execution_evidence": [
+        "prompt_sha256 before launch",
+        "session and turn IDs",
+        "runtime effective_model",
+        "diff_sha256 after agent output",
+        "candidate combined_sha256",
+        "integrated combined_sha256"
+      ],
+      "sufficient_for_sc06": true
+    }
+  ],
+  "decision": "Use persistent Codex CLI for SC06 implementation and review provenance. Do not use Agent Host session metadata alone and do not accept agent self-report as effective-model evidence.",
+  "limits": [
+    "This is a read-only capability preflight, not the SC06 implementation turn.",
+    "No model was invoked and no candidate was reconstructed or reviewed.",
+    "Model availability and quota must be rechecked at launch.",
+    "The official OpenAI documentation search returned no readable page in this environment; this result is based on observed local runtime artifacts and exposed session schemas."
+  ]
+}

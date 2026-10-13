@@ -4,17 +4,17 @@
   "instruction": "Create a new spec to resolve the current REVIEW_PROVENANCE_BLOCKED condition.",
   "spec": {
     "id": "SC-MULTIAGENT-06",
-    "version": "1.0",
+    "version": "1.1",
     "path": "specs/SC_MULTIAGENT_06_PROVENANCE_RECOVERY_v1.md",
-    "sha256": "0a72aff8a78dbc8cbde352404033df35797c5a62071debe7bfd93702efcc9d5e",
+    "sha256": "252057efd1eaf6129952e94007d62642cfa627ac90eb22d2ac7c5fb0bc86ca84",
     "status": "SPEC_READY",
     "execution": "NOT_STARTED"
   },
   "problem": "SC-MULTIAGENT-04 cannot prove that the reviewer differs from the material implementer because the implementation turn's effective model is not exposed.",
   "authorized_resolution": [
-    "One local metadata recovery attempt tied to the material implementation turn",
-    "If unavailable, one material and requirement-driven reconstruction by a traceable read-only implementer, applied serially by root",
-    "Freeze the final candidate and review it with a distinct effective runtime model"
+    "Reconstruct the complete supervisor candidate from the pre-implementation base with one traceable read-only implementer",
+    "Root records host, session and turn IDs, requested and effective runtime model, prompt_sha256 and diff_sha256",
+    "Freeze the final candidate, review it with a distinct effective runtime model and require combined_sha256 equality through SC-MULTIAGENT-04 integration"
   ],
   "sequence": [
     "SC-MULTIAGENT-06 provenance recovery",
@@ -34,6 +34,12 @@
     "metadata_inventory": "medium",
     "material_reconstruction_and_review": "high",
     "current_high_sufficient": true
+  },
+  "viability_preflight": {
+    "path": "validation/sc_multiagent/continuity/SC06_VIABILITY_PREFLIGHT.json",
+    "sha256": "331a8dbd8363fa47dca1ab48f066412b06d8ed024c967e7579585fd29a7dc9cf",
+    "result": "PASS_CLI_PERSISTED_RUNTIME_METADATA",
+    "execution_started": false
   },
   "candidate_04_manifest": "Preserved as historical frozen evidence; admission of SC-MULTIAGENT-06 changes the local candidate set, so a new manifest is required before review."
 }
