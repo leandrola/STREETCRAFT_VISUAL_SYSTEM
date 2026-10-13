@@ -1,0 +1,25 @@
+{
+  "review_thread": "/root/sc_verifier",
+  "runtime_metadata": {
+    "id": "01a13302-38bd-7f30-8ff1-40648c3e30f7",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "created_at_ms": 1791857146045,
+    "updated_at_ms": 1791857589245,
+    "sandbox_policy": "{\"type\":\"disabled\"}",
+    "approval_mode": "never",
+    "cwd": "/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2",
+    "agent_role": null
+  },
+  "source": "read-only local Codex threads metadata",
+  "base_commit": "33b6581353b18004a4818e8fc597b5455ba7ccf3",
+  "reviewed_patch_sha256": "97fe031c211aef5547d044cb654f6b1f6983c573c145e131d6a0818899c7ebcf",
+  "implementer_effective_model": "gpt-6.1-sol",
+  "reviewer_effective_model": "gpt-6-astra",
+  "models_differ": true,
+  "artifact_review_result": "PASS",
+  "full_milestone_status": "BLOCKED",
+  "quota": "UNKNOWN",
+  "review_report_sha256": "58648ac8b8e3dd5f44c6fca28c6e538fc15333335b58af3a3e6ab524e5320e17",
+  "candidate_corrections_required": 0
+}

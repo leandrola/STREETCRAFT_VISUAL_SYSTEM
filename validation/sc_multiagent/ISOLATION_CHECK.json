@@ -1,0 +1,16 @@
+{
+  "base_commit": "33b6581353b18004a4818e8fc597b5455ba7ccf3",
+  "path_assigned": "/tmp/sc-multiagent-01-worktree",
+  "path_actual": "/private/tmp/sc-multiagent-01-worktree",
+  "parent_runtime_cwd": "/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2",
+  "implementer_shell_workdir_observed": "/tmp/sc-multiagent-01-worktree",
+  "filesystem_policy": "disabled/unrestricted",
+  "enforced_write_isolation": "BLOCKED",
+  "implementer_modified_files": [],
+  "worktree_before_after_hashes_match": true,
+  "root_applied_files": [
+    "docs/SC_MULTIAGENT_QUICKSTART.md"
+  ],
+  "root_adaptation": "Task example checkout aligned to actual P1 path; three analyses are documentary and can read principal.",
+  "statement": "No delegate writes or isolated-write certification. Detached worktree verified for read path only; proposal applied serially by root."
+}

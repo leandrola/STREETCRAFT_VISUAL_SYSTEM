@@ -1,0 +1,123 @@
+{
+  "base_commit": "33b6581353b18004a4818e8fc597b5455ba7ccf3",
+  "checkpoint_digest": "a6a8f5dd97ecbf874fbe0663a588348b8211f0c1b182bb10cb7aaba3b58fe0b3",
+  "patch_file": "validation/sc_multiagent/REVIEW_CANDIDATE.patch",
+  "patch_sha256": "97fe031c211aef5547d044cb654f6b1f6983c573c145e131d6a0818899c7ebcf",
+  "files": [
+    {
+      "path": ".codex/agents/sc_architecture.toml",
+      "change": "ADDED",
+      "sha256": "9f15f78261cbe259ecaf3bd85a5a684640de00dfce78f13e1ec5db64b0b339f6"
+    },
+    {
+      "path": ".codex/agents/sc_camera.toml",
+      "change": "ADDED",
+      "sha256": "3607b0258058d0323d96f317ac77b1a6fc38d1eb3d954e688c857b8c562ea796"
+    },
+    {
+      "path": ".codex/agents/sc_history.toml",
+      "change": "ADDED",
+      "sha256": "3e885e9ec5d49a383a9d2e5ad240bcd28c5dcc365a3a96ce18ce3fc8a326cc39"
+    },
+    {
+      "path": ".codex/agents/sc_implementer.toml",
+      "change": "ADDED",
+      "sha256": "6acc813de9ccb06bf8ec13116bfffb0bf32013b9fd5ea756e21e037e12328e16"
+    },
+    {
+      "path": ".codex/agents/sc_verifier.toml",
+      "change": "ADDED",
+      "sha256": "a05736a136232762fc6ac4ebcb43a7a1c10bc70e3e286876d6e4ec6c3d67a970"
+    },
+    {
+      "path": ".codex/config.toml",
+      "change": "ADDED",
+      "sha256": "01014ffce21d9cf80e4a3d8326b6ca8b4606b23da7b4ba9ae668b10588c326db"
+    },
+    {
+      "path": "AGENTS.md",
+      "change": "ADDED",
+      "sha256": "c67d397abca25c4a2a172ea4b520200a4697379ac7815c4dc29834f3b060b8d1"
+    },
+    {
+      "path": "development/coordination/CHECKPOINT.json",
+      "change": "MODIFIED",
+      "sha256": "a6a8f5dd97ecbf874fbe0663a588348b8211f0c1b182bb10cb7aaba3b58fe0b3"
+    },
+    {
+      "path": "docs/SC_MULTIAGENT_QUICKSTART.md",
+      "change": "ADDED",
+      "sha256": "7f3ffb4bc3b09592db8072abfa483bc7621391785fcb110a07ba91047dac0268"
+    },
+    {
+      "path": "specs/SC_MULTIAGENT_01_v1.md",
+      "change": "ADDED",
+      "sha256": "540df5bc871809c19a2abcc1c93ecd3119b153f2691d998b4f68d583a4b3fd79"
+    },
+    {
+      "path": "specs/STREETCRAFT_v12.md",
+      "change": "ADDED",
+      "sha256": "7ce2a3892b00838dbfac90395a27204451a0e9d4651dd4f89555fcf69b4df94a"
+    },
+    {
+      "path": "validation/sc_multiagent/ACTIVITY.json",
+      "change": "ADDED",
+      "sha256": "331ead33feac4f7dc496eb11e6fe1fa866070a99e1f2fd0c14e4893f94e559e2"
+    },
+    {
+      "path": "validation/sc_multiagent/CAPABILITY_CHECK.json",
+      "change": "ADDED",
+      "sha256": "a022ef1748bf7e53ac76d666433cf1ce7ed49f74e2a989a53404b6acb2916f2c"
+    },
+    {
+      "path": "validation/sc_multiagent/CHECKS.json",
+      "change": "ADDED",
+      "sha256": "61083116d4a2e43a6a4830b12c09249f5af706f70cf8d4f3c2ca162574a8bd31"
+    },
+    {
+      "path": "validation/sc_multiagent/ISOLATION_CHECK.json",
+      "change": "ADDED",
+      "sha256": "e0152a25a1bf921f5e43da70288338b1c1ec63cb44196516b7e62654bbd04e03"
+    },
+    {
+      "path": "validation/sc_multiagent/P2_QUICKSTART.patch",
+      "change": "ADDED",
+      "sha256": "20d8a9a70752cb17e84b2315456189141d46be5581f17c360a5c640c620d14d3"
+    },
+    {
+      "path": "validation/sc_multiagent/PILOT_REPORT.md",
+      "change": "ADDED",
+      "sha256": "b486f1001ee7114f3d62e91ec0cb03cdb7dd1cf0971ac2ac0c8018a6ae0ffc5b"
+    },
+    {
+      "path": "validation/sc_multiagent/sc_architecture_REPORT.md",
+      "change": "ADDED",
+      "sha256": "503e9d70866394c649ae9d9da97ded0190121b30857de55e964baa42961e9fe7"
+    },
+    {
+      "path": "validation/sc_multiagent/sc_camera_REPORT.md",
+      "change": "ADDED",
+      "sha256": "a90dff3105dc82cf152a8fe5ccb157629b2aeca1becd55cf79f7edcc9b381284"
+    },
+    {
+      "path": "validation/sc_multiagent/sc_history_REPORT.md",
+      "change": "ADDED",
+      "sha256": "cabb89d62d075843f49431c053a37d66230bae65559fabda0628c2fa7a507151"
+    },
+    {
+      "path": "validation/sc_multiagent/sc_implementer_REPORT.md",
+      "change": "ADDED",
+      "sha256": "4c3cf7f0ca4f7db2df6045c7a664b2cb123782f2901be547d231cfb16feeb9d7"
+    }
+  ],
+  "deletions": [],
+  "receipt_exclusions": [
+    "validation/sc_multiagent/REVIEW_CANDIDATE.patch",
+    "validation/sc_multiagent/REVIEW_MANIFEST.json",
+    "validation/sc_multiagent/sc_verifier_REPORT.md",
+    "validation/sc_multiagent/REVIEW_METADATA.json",
+    "validation/sc_multiagent/DELIVERY.json"
+  ],
+  "receipt_policy": "Review/packaging receipts excluded to avoid self-referential hashes. No candidate file may change after review without invalidation.",
+  "whitespace_check": "PASS on root-authored files. Original source copies and preserved agent reports use intentional Markdown trailing-space breaks; unified patch context contains space-only lines. Full diff --check reports these; they are preserved evidence, not edited to satisfy whitespace style."
+}

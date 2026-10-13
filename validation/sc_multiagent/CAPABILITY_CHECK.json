@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-13T01:57:17.315213+00:00",
+  "base_commit": "33b6581353b18004a4818e8fc597b5455ba7ccf3",
+  "checkpoint_digest": "2c60a49a3d58581dc40602e9c9357ea4d8ca842a0520d18b1b0bbc8d96ea1cc0",
+  "active_extension": "26.930.61225",
+  "installed_extension": "26.1007.21434",
+  "cli": "0.160.1",
+  "project_trusted": true,
+  "effective_agents": {
+    "enabled": true,
+    "max_concurrent_threads_per_session": 3
+  },
+  "model_catalog": {
+    "implementer": "gpt-6.1-sol",
+    "verifier": "gpt-6-astra",
+    "availability": "catalog and live collaboration tool enum; runtime identity must be reported"
+  },
+  "live_permissions": {
+    "filesystem": "unrestricted",
+    "sandbox_mode": "danger-full-access",
+    "approval_policy": "never",
+    "per_agent_override_exposed": false
+  },
+  "client_capability": "CLIENT_CAPABILITY_BLOCKED: current collaboration.spawn_agent has no named-profile selector; fresh debug prompt-input does not expose the five project custom agent names",
+  "write_isolation": "ISOLATION_BLOCKED: shared unrestricted tools; no verified per-child writable root restriction",
+  "adaptation": "Run real analysis agents with explicit profile instructions; no delegated filesystem writes. Main session serializes documentation implementation. No custom-profile loading or enforced read-only claim.",
+  "quota": "UNKNOWN",
+  "official_sources": [
+    "https://learn.chatgpt.com/docs/agent-configuration/subagents",
+    "https://learn.chatgpt.com/docs/config-file/config-basic"
+  ]
+}

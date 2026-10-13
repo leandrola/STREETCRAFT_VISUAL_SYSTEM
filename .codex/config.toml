@@ -1,0 +1,4 @@
+# SC-MULTIAGENT-01. Project is trusted; global permissions/providers remain unchanged.
+[agents]
+enabled = true
+max_concurrent_threads_per_session = 3

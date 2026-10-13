@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "baseline": "2a489a6e6868bfe8473ceb6b4f4228e0d2cc8b88",
-  "current_milestone": "POST_M3_DECISION_GATE",
+  "current_milestone": "SC-MULTIAGENT-01",
   "milestones": {
     "M1": {
       "status": "CLOSED",
@@ -52,6 +52,22 @@
       "status": "BLOCKED / PENDING_VISUAL",
       "owner": "UNASSIGNED",
       "dependency": "original campaign acceptance and authorized visual evidence"
+    },
+    "SC-MULTIAGENT-01": {
+      "status": "BLOCKED",
+      "owner": "root",
+      "baseline": "33b6581353b18004a4818e8fc597b5455ba7ccf3",
+      "dependency": "Current user instruction: read v12, only then run subagents spec v1; source copies and hashes preserved in specs/.",
+      "acceptance": "Five custom profiles loaded and selected; real bounded parallel analyses; verified isolated implementation; different-model final-candidate review; current integration; preserved Streetcraft runtime. No visual quality or persistent service claim.",
+      "verification": "Project agents config effective enabled=true / max=3; six TOML files parse; three real specialist threads overlap and return cited documentary reports; implementer returns proposal from detached worktree; root applies quickstart serially; 27 existing backdrop/orchestrator tests PASS after isolated dependency correction. Named custom-profile dispatch CLIENT_CAPABILITY_BLOCKED and enforced write isolation ISOLATION_BLOCKED. Independent review receipt is evidence, not automatic closure.",
+      "evidence": [
+        "validation/sc_multiagent/PILOT_REPORT.md",
+        "validation/sc_multiagent/CAPABILITY_CHECK.json",
+        "validation/sc_multiagent/ACTIVITY.json",
+        "validation/sc_multiagent/ISOLATION_CHECK.json",
+        "validation/sc_multiagent/CHECKS.json",
+        "validation/sc_multiagent/sc_verifier_REPORT.md"
+      ]
     }
   },
   "decisions": {
@@ -89,10 +105,22 @@
     {
       "at": "2026-10-03T16:00:49.227832+00:00",
       "event": "User explicitly PAUSED GLIGEN structural route; rationale/25–59 person-day estimate/report SHA-256 recorded; D3/D4 PENDING; outputs unchanged, VSG shadow mode, no further implementation/tests; reopen requires textual advantage >=2 of3 pairs and explicit Lean effort allocation."
+    },
+    {
+      "at": "2026-10-13T02:03:20.056427+00:00",
+      "event": "SC-MULTIAGENT-01 scope authorized by current user instruction after complete v12 read: configure collaboration, three documentary analyses, isolated quickstart task and different-model review. One active session <=60min; one correction round; <=3 simultaneous subagents, <=2 implementations, one task-owned commit and one normal push; zero additional spend/images/GLIGEN/product changes; quota UNKNOWN. Named custom-profile dispatch and enforced write isolation are blocked; explicit role analysis and main-session serial edit fallback used."
+    },
+    {
+      "at": "2026-10-13T02:03:20.056427+00:00",
+      "event": "Authorization separation recorded from v12 decisions 6/7/10 and spec base: textual exploration of VSG instructions allows six outputs / three D,E,Kenny pairs in ChatGPT app, no selective retries and zero additional spend. Historical authorization preserved; GLIGEN remains PAUSED, D3/D4 PENDING and execution_authorized=false. This documentary pilot generated zero images and did not start or reset the 168-hour visual clock. Generating does not delegate Lean visual judgment."
+    },
+    {
+      "at": "2026-10-13T02:03:20.056427+00:00",
+      "event": "SC-MULTIAGENT-01 preparation and documentary pilot evidenced: three specialists overlap, actual runtime metadata gpt-6.1-sol; detached-worktree implementer returns proposal without writes; root applies quickstart serially. 27/27 existing backdrop/orchestrator checks pass in temporary environment; no new instruction-mirroring tests or GLIGEN tests. Milestone BLOCKED pending actual custom-profile selection and enforceable write isolation; final candidate requires different-model review before commit."
     }
   ],
-  "resume": "Preserve closed M1-M3 and VSG shadow mode. No further structural implementation or tests. Reopen only after documented textual advantage >=2 of3 pairs AND an explicit Lean effort allocation decision with scoped D3/D4 authorization; model execution/images remain unauthorized until explicitly approved.",
-  "blocker": "GLIGEN structural route PAUSED by explicit user decision. D3/D4 PENDING; textual advantage >=2 of3 pairs and explicit Lean effort allocation required to reconsider.",
+  "resume": "Read HEAD, git status, this checkpoint and validation/sc_multiagent/PILOT_REPORT.md; do not relaunch completed documentary tasks. SC-MULTIAGENT-01 remains BLOCKED: active client must expose/select custom profiles and verify actual per-agent permissions before parallel writes or READY. Independent review evidence cannot waive those criteria. Preserve M1-M3 CLOSED, GLIGEN PAUSED, D3/D4 PENDING and VSG SHADOW; no further structural implementation/tests. Textual exploration has separate bounded v12 authorization; this pilot starts no visual clock. No persistent supervisor or automatic restart is implemented.",
+  "blocker": "SC-MULTIAGENT-01 CLIENT_CAPABILITY_BLOCKED for named custom-profile selection; ISOLATION_BLOCKED for enforceable child write roots. Existing GLIGEN structural route remains PAUSED with D3/D4 PENDING and its original reopening conditions.",
   "integration_commits_observed": [
     "8fa10427bdbab33c649deebe6fd12e92aef537a3",
     "d9a54e351ff6b4dc30e046812cceff638a81e0f9",

@@ -1,0 +1,117 @@
+{
+  "base_commit": "33b6581353b18004a4818e8fc597b5455ba7ccf3",
+  "profile_dispatch": "manual task instructions; named TOML selection unavailable",
+  "samples": [
+    {
+      "at": "2026-10-13T01:58:10.960063+00:00",
+      "source": "collaboration.list_agents",
+      "running": [
+        "/root",
+        "/root/sc_architecture",
+        "/root/sc_camera",
+        "/root/sc_history"
+      ],
+      "active_subagents": 3
+    },
+    {
+      "at": "2026-10-13T02:00:33.843324+00:00",
+      "source": "completion notifications and spawn_agent",
+      "running": [
+        "/root",
+        "/root/sc_implementer"
+      ],
+      "completed": [
+        "/root/sc_architecture",
+        "/root/sc_camera",
+        "/root/sc_history"
+      ],
+      "active_subagents": 1
+    }
+  ],
+  "agents": [
+    {
+      "task_id": "SC-MULTIAGENT-01-P1-ARCH",
+      "thread_name": "/root/sc_architecture",
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "medium",
+      "phase": "P1",
+      "runtime_metadata": {
+        "id": "01a132fa-abd9-7240-bb12-20ef93b7341c",
+        "model": "gpt-6.1-sol",
+        "reasoning_effort": "medium",
+        "sandbox_policy": "{\"type\":\"disabled\"}",
+        "approval_mode": "never",
+        "cwd": "/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2",
+        "created_at_ms": 1791856651225,
+        "updated_at_ms": 1791856717863,
+        "agent_role": null
+      },
+      "result": "PASS_DOCUMENTARY",
+      "report": "sc_architecture_REPORT.md"
+    },
+    {
+      "task_id": "SC-MULTIAGENT-01-P1-CAMERA",
+      "thread_name": "/root/sc_camera",
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "medium",
+      "phase": "P1",
+      "runtime_metadata": {
+        "id": "01a132fa-db40-7f70-af47-adec2d11d90a",
+        "model": "gpt-6.1-sol",
+        "reasoning_effort": "medium",
+        "sandbox_policy": "{\"type\":\"disabled\"}",
+        "approval_mode": "never",
+        "cwd": "/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2",
+        "created_at_ms": 1791856663361,
+        "updated_at_ms": 1791856727799,
+        "agent_role": null
+      },
+      "result": "PASS_DOCUMENTARY",
+      "report": "sc_camera_REPORT.md"
+    },
+    {
+      "task_id": "SC-MULTIAGENT-01-P1-HISTORY",
+      "thread_name": "/root/sc_history",
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "medium",
+      "phase": "P1",
+      "runtime_metadata": {
+        "id": "01a132fb-0cc0-7702-9a59-c28da9944ee9",
+        "model": "gpt-6.1-sol",
+        "reasoning_effort": "medium",
+        "sandbox_policy": "{\"type\":\"disabled\"}",
+        "approval_mode": "never",
+        "cwd": "/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2",
+        "created_at_ms": 1791856676032,
+        "updated_at_ms": 1791856725859,
+        "agent_role": null
+      },
+      "result": "PASS_DOCUMENTARY",
+      "report": "sc_history_REPORT.md"
+    },
+    {
+      "task_id": "SC-MULTIAGENT-01-P2-DOC",
+      "thread_name": "/root/sc_implementer",
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "medium",
+      "phase": "P2",
+      "write_authorization": "NONE; proposal-only fallback",
+      "runtime_metadata": {
+        "id": "01a132fc-edfa-7a22-ab5f-6b4f08e0111b",
+        "model": "gpt-6.1-sol",
+        "reasoning_effort": "medium",
+        "sandbox_policy": "{\"type\":\"disabled\"}",
+        "approval_mode": "never",
+        "cwd": "/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2",
+        "created_at_ms": 1791856799226,
+        "updated_at_ms": 1791856882525,
+        "agent_role": null
+      },
+      "result": "PASS_PROPOSAL / ISOLATION_BLOCKED_WRITES",
+      "report": "sc_implementer_REPORT.md"
+    }
+  ],
+  "maximum_observed_active_subagents": 3,
+  "quota": "UNKNOWN",
+  "runtime_metadata_source": "Read-only local Codex threads database; not a self-reported profile model. agent_role=null confirms named role was not selected."
+}

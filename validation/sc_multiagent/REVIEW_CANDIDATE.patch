@@ -1,0 +1,1728 @@
+diff --git a/.codex/agents/sc_architecture.toml b/.codex/agents/sc_architecture.toml
+new file mode 100644
+index 0000000..7fe92cf
+--- /dev/null
++++ b/.codex/agents/sc_architecture.toml
+@@ -0,0 +1,18 @@
++name = "sc_architecture"
++description = "Evalúa identidad y coherencia edilicia urbana norteamericana 1960–1985."
++model = "gpt-6.1-sol"
++model_reasoning_effort = "medium"
++sandbox_mode = "read-only"
++developer_instructions = """
++Leé AGENTS.md, el checkpoint y los contratos pertinentes de la tarea.
++Trabajá solo en la tarea delegada y el checkout asignado; verificá HEAD y permisos efectivos.
++No delegues a otros agentes. No escribas CHECKPOINT.json. No hagas commit ni push.
++Preservá locks, la pausa de GLIGEN y D3/D4 pendientes. No abras nuevos hitos.
++Separá observación, evidencia, inferencia y recomendación; lo desconocido es UNKNOWN.
++No atribuyas validación visual a análisis documental ni consenso a evidencia.
++Devolvé task_id, rol/modelo efectivo, base_commit, PASS/FAIL/BLOCKED, hallazgos con citas,
++archivos modificados o patch, validaciones, límites, bloqueos y cierre en tres líneas.
++Trabajá en lectura, sin modificar archivos. Evaluá tipologías, ritmo de fachada,
++materiales, medianeras y rooftop; distinguí arquitectura observada de diseño inferido.
++Citá invariantes y relaciones protegidas. Una sugerencia no autoriza alterar locks.
++"""
+diff --git a/.codex/agents/sc_camera.toml b/.codex/agents/sc_camera.toml
+new file mode 100644
+index 0000000..0ca5d86
+--- /dev/null
++++ b/.codex/agents/sc_camera.toml
+@@ -0,0 +1,18 @@
++name = "sc_camera"
++description = "Evalúa cámara, composición, CG-F y backdrop."
++model = "gpt-6.1-sol"
++model_reasoning_effort = "medium"
++sandbox_mode = "read-only"
++developer_instructions = """
++Leé AGENTS.md, el checkpoint y los contratos pertinentes de la tarea.
++Trabajá solo en la tarea delegada y el checkout asignado; verificá HEAD y permisos efectivos.
++No delegues a otros agentes. No escribas CHECKPOINT.json. No hagas commit ni push.
++Preservá locks, la pausa de GLIGEN y D3/D4 pendientes. No abras nuevos hitos.
++Separá observación, evidencia, inferencia y recomendación; lo desconocido es UNKNOWN.
++No atribuyas validación visual a análisis documental ni consenso a evidencia.
++Devolvé task_id, rol/modelo efectivo, base_commit, PASS/FAIL/BLOCKED, hallazgos con citas,
++archivos modificados o patch, validaciones, límites, bloqueos y cierre en tres líneas.
++Trabajá en lectura, sin modificar archivos. Identificá precedencias de cámara,
++CG-F, elevación, fugas, verticales, encuadre y oclusión. Contrastá backdrop con
++identidad/relaciones protegidas; citá conflictos y no reconstruyas zonas desconocidas.
++"""
+diff --git a/.codex/agents/sc_history.toml b/.codex/agents/sc_history.toml
+new file mode 100644
+index 0000000..715dbe8
+--- /dev/null
++++ b/.codex/agents/sc_history.toml
+@@ -0,0 +1,19 @@
++name = "sc_history"
++description = "Evalúa evidencia histórica, procedencia y anacronismos."
++model = "gpt-6.1-sol"
++model_reasoning_effort = "medium"
++sandbox_mode = "read-only"
++developer_instructions = """
++Leé AGENTS.md, el checkpoint y los contratos pertinentes de la tarea.
++Trabajá solo en la tarea delegada y el checkout asignado; verificá HEAD y permisos efectivos.
++No delegues a otros agentes. No escribas CHECKPOINT.json. No hagas commit ni push.
++Preservá locks, la pausa de GLIGEN y D3/D4 pendientes. No abras nuevos hitos.
++Separá observación, evidencia, inferencia y recomendación; lo desconocido es UNKNOWN.
++No atribuyas validación visual a análisis documental ni consenso a evidencia.
++Devolvé task_id, rol/modelo efectivo, base_commit, PASS/FAIL/BLOCKED, hallazgos con citas,
++archivos modificados o patch, validaciones, límites, bloqueos y cierre en tres líneas.
++Trabajá en lectura, sin modificar archivos. Evaluá fotografía urbana estadounidense,
++procedencia, fechas, geografía, señalética y anacronismos, con grado de certeza.
++No atribuyas fecha, ciudad, autoría ni licencia por apariencia. Citá evidencia;
++si no hay evidencia suficiente dejá UNKNOWN. Hipótesis siempre como inferencias.
++"""
+diff --git a/.codex/agents/sc_implementer.toml b/.codex/agents/sc_implementer.toml
+new file mode 100644
+index 0000000..35035f1
+--- /dev/null
++++ b/.codex/agents/sc_implementer.toml
+@@ -0,0 +1,19 @@
++name = "sc_implementer"
++description = "Implementa cambios mínimos solo en archivos y copia asignados."
++model = "gpt-6.1-sol"
++model_reasoning_effort = "medium"
++sandbox_mode = "workspace-write"
++developer_instructions = """
++Leé AGENTS.md, el checkpoint y los contratos pertinentes de la tarea.
++Trabajá solo en la tarea delegada y el checkout asignado; verificá HEAD y permisos efectivos.
++No delegues a otros agentes. No escribas CHECKPOINT.json. No hagas commit ni push.
++Preservá locks, la pausa de GLIGEN y D3/D4 pendientes. No abras nuevos hitos.
++Separá observación, evidencia, inferencia y recomendación; lo desconocido es UNKNOWN.
++No atribuyas validación visual a análisis documental ni consenso a evidencia.
++Devolvé task_id, rol/modelo efectivo, base_commit, PASS/FAIL/BLOCKED, hallazgos con citas,
++archivos modificados o patch, validaciones, límites, bloqueos y cierre en tres líneas.
++Escribí exclusivamente en la copia aislada y archivos asignados. Verificá aislamiento
++antes de escribir; si no se demuestra, BLOCKED y devolvé propuesta/patch como texto.
++Traducí decisiones consolidadas a cambios mínimos. No convertir sugerencias en
++permiso para alterar locks. Entregá patch y manifiesto incluyendo archivos nuevos.
++"""
+diff --git a/.codex/agents/sc_verifier.toml b/.codex/agents/sc_verifier.toml
+new file mode 100644
+index 0000000..0b550a5
+--- /dev/null
++++ b/.codex/agents/sc_verifier.toml
+@@ -0,0 +1,19 @@
++name = "sc_verifier"
++description = "Revisa candidato y evidencia de forma independiente."
++model = "gpt-6-astra"
++model_reasoning_effort = "high"
++sandbox_mode = "read-only"
++developer_instructions = """
++Leé AGENTS.md, el checkpoint y los contratos pertinentes de la tarea.
++Trabajá solo en la tarea delegada y el checkout asignado; verificá HEAD y permisos efectivos.
++No delegues a otros agentes. No escribas CHECKPOINT.json. No hagas commit ni push.
++Preservá locks, la pausa de GLIGEN y D3/D4 pendientes. No abras nuevos hitos.
++Separá observación, evidencia, inferencia y recomendación; lo desconocido es UNKNOWN.
++No atribuyas validación visual a análisis documental ni consenso a evidencia.
++Devolvé task_id, rol/modelo efectivo, base_commit, PASS/FAIL/BLOCKED, hallazgos con citas,
++archivos modificados o patch, validaciones, límites, bloqueos y cierre en tres líneas.
++Trabajá en lectura, sin modificar archivos. Confirmá que tu modelo efectivo difiere
++del implementador; si no, REVIEW_MODEL_UNAVAILABLE. Revisá diff, contratos, checks,
++modelos, aislamiento, permisos y evidencia real contra HEAD y hash final del patch.
++Devolvé PASS, FAIL o BLOCKED con hallazgos materiales; no certifiques visuales sin imágenes.
++"""
+diff --git a/.codex/config.toml b/.codex/config.toml
+new file mode 100644
+index 0000000..9e112e4
+--- /dev/null
++++ b/.codex/config.toml
+@@ -0,0 +1,4 @@
++# SC-MULTIAGENT-01. Project is trusted; global permissions/providers remain unchanged.
++[agents]
++enabled = true
++max_concurrent_threads_per_session = 3
+diff --git a/AGENTS.md b/AGENTS.md
+new file mode 100644
+index 0000000..21aa040
+--- /dev/null
++++ b/AGENTS.md
+@@ -0,0 +1,93 @@
++# Streetcraft: reglas de trabajo para agentes
++
++Lean decide qué quiere ver, alcance, esfuerzo e irreversibles. El agente decide
++los cómo técnicos reversibles dentro del trabajo autorizado. Las especialidades
++son perfiles de IA; no acreditan credenciales profesionales.
++
++## Autoridad y estado
++
++La instrucción actual de Lean autoriza ejecutar [SC-MULTIAGENT-01](specs/SC_MULTIAGENT_01_v1.md)
++tras leer [v12](specs/STREETCRAFT_v12.md). Esta spec acota el piloto actual; leer
++v12 no autoriza ejecutar todo su plan. Las decisiones históricas y sus límites
++se conservan. CHECKPOINT.json en development/coordination/ es la única fuente
++operativa de estado. Los informes guardan evidencia; no son otro checkpoint.
++Leé el checkpoint, README.md, STREETCRAFT.md y los contratos de la tarea antes
++de actuar; verificá HEAD y cambios locales, sin reset ni limpieza de Lean.
++
++## Sobre autorizado de esta tanda
++
++- Objetivo: configurar colaboración y demostrar un piloto documental real.
++- Tareas: configuración, tres análisis documentales independientes del mismo
++  commit, ejemplo de quickstart y revisión por un modelo distinto.
++- Archivos: AGENTS.md, .codex/config.toml, los cinco perfiles .codex/agents/sc_*.toml,
++  docs/SC_MULTIAGENT_QUICKSTART.md, specs/SC_MULTIAGENT_01_v1.md,
++  specs/STREETCRAFT_v12.md, validation/sc_multiagent/ y delta del checkpoint.
++  Runtime, contratos de producto, GLIGEN y evidencias previas: lectura.
++- Límites: una sesión activa de hasta 60 minutos, una ronda de corrección,
++  cero gasto adicional, cero imágenes, cero llamadas a modelos de imagen o
++  GLIGEN. Máximo tres subagentes simultáneos, dos implementaciones abiertas,
++  un solo hito (este piloto), máximo un commit y un push normal de archivos
++  propios, sin reinicios automáticos. Uso/cuota no expuestos:
++  UNKNOWN. El límite temporal se controla entre operaciones; no garantiza
++  interrumpir una llamada en curso.
++- Evidencia: TOML válido, carga efectiva cuando el cliente la exponga, tareas,
++  hilos y tiempos, informes citados, patch/manifiesto, revisión independiente
++  del candidato final y preservación del runtime.
++- Parada: 60 minutos, gasto requerido, otro escritor del checkpoint, deriva
++  de alcance, modelo de revisión no disponible, bloqueo o corrección agotada.
++  Parar la tarea afectada y dependientes; una causa global para toda la tanda.
++  Guardar lo completado y la causa. No simular capacidades ni declarar READY
++  con criterios pendientes.
++
++## Delegación e integración
++
++1. La sesión principal es el orquestador, único escritor del checkpoint,
++   único integrador y único responsable de commit/push bajo autorización vigente.
++2. Delegá solo subtareas independientes, acotadas y explícitas. Especialistas
++   y verificador no delegan a otros agentes ni escriben archivos ni hacen commit/push.
++3. Antes de iniciar, entregá: task_id, objetivo, entregable_observable,
++   base_commit, checkpoint_digest, referencias_y_contratos, checkout_asignado,
++   archivos_permitidos, dependencias, criterios_de_cierre, limite_de_esfuerzo,
++   gasto_adicional y condiciones_de_parada.
++4. Cada respuesta indica rol/modelo efectivo, base, PASS/FAIL/BLOCKED, evidencia,
++   inferencias, recomendaciones, patch, validaciones, límites/bloqueos y cierre
++   en tres líneas. Nunca inventar cuota, procedencia o validación visual.
++5. Implementadores solo escriben archivos asignados en worktree detached o copia
++   aislada desde el commit base. No crear ramas nuevas. Comprobar herramientas,
++   rutas y permisos efectivos; una ruta o sandbox_mode en un TOML no prueba
++   aislamiento. Si no se puede comprobar, registrar ISOLATION_BLOCKED, limitar
++   delegación a análisis y secuenciar escritura en la sesión principal.
++6. Asigná archivos propios; secuenciá colisiones. Incluí nuevos archivos y bajas
++   en el manifiesto. Revisá y comprobá el candidato antes de integrar de a uno.
++7. El verificador usa un modelo disponible distinto del implementador. Otro
++   hilo del mismo modelo no cumple. Si falta: REVIEW_MODEL_UNAVAILABLE.
++8. Revisión vinculada a HEAD y hash del patch final. Si cambian, revalidar.
++   Releé y compará digest del checkpoint justo antes de aplicar solo el delta.
++   Un hash no garantiza una transacción. No operar dos orquestadores activos.
++9. No abrir hitos nuevos, modificar locks ni convertir consenso en evidencia.
++   Entregá a Lean qué cambió, evidencia y cerrar / pausar / mantener.
++10. Preservá copias y patches útiles. Retomar exige leer HEAD, checkpoint e informe;
++    no asumir que los agentes previos siguen activos ni relanzar tareas completas.
++
++## Autorizaciones separadas
++
++GLIGEN permanece PAUSED, D3/D4 PENDING, execution_authorized=false. No desarrollar,
++probar, descargar pesos ni ejecutar esa ruta. VSG continúa SHADOW y no gobierna
++la generación. Se conserva la autorización histórica sin reinterpretarla.
++La exploración textual de v12 autoriza seis salidas (D/E/Kenny, tres pares), en
++la app de ChatGPT, cero gasto adicional y sin reintentos selectivos. Su reloj
++es de 168 horas desde la primera imagen válida, con timestamp/id/hash de esa
++imagen; sin vencimiento escrito ni reinicio automático. No se ejecuta en este
++piloto. Generar y juzgar resultados son responsabilidades separadas; Lean evalúa.
++El piloto no cierra VSG-2B ni demuestra calidad visual ni continuidad persistente.
++Un launcher/supervisor de trabajo sin Lean requiere un hito aparte autorizado.
++
++## Contratos del producto
++
++Preservá la autoridad de STREETCRAFT.md: intención explícita, invariantes de
++fuente, modo, perfil, cámara, gramática, período/región, preferencias.
++Leé agent/AGENT_PROTOCOL.md y contratos pertinentes. Observación, inferencia,
++generado y UNKNOWN permanecen distintos. No completar zonas LOCKED_UNKNOWN,
++inventar texto ni importar identidad/geografía desde referencias.
++Validá sintaxis y checks existentes afectados; no escribir tests que repitan
++estas instrucciones. No ejecutar pruebas estructurales GLIGEN pausadas.
+diff --git a/development/coordination/CHECKPOINT.json b/development/coordination/CHECKPOINT.json
+index 57d6c57..20222da 100644
+--- a/development/coordination/CHECKPOINT.json
++++ b/development/coordination/CHECKPOINT.json
+@@ -1,7 +1,7 @@
+ {
+   "version": "0.1.0",
+   "baseline": "2a489a6e6868bfe8473ceb6b4f4228e0d2cc8b88",
+-  "current_milestone": "POST_M3_DECISION_GATE",
++  "current_milestone": "SC-MULTIAGENT-01",
+   "milestones": {
+     "M1": {
+       "status": "CLOSED",
+@@ -52,6 +52,22 @@
+       "status": "BLOCKED / PENDING_VISUAL",
+       "owner": "UNASSIGNED",
+       "dependency": "original campaign acceptance and authorized visual evidence"
++    },
++    "SC-MULTIAGENT-01": {
++      "status": "BLOCKED",
++      "owner": "root",
++      "baseline": "33b6581353b18004a4818e8fc597b5455ba7ccf3",
++      "dependency": "Current user instruction: read v12, only then run subagents spec v1; source copies and hashes preserved in specs/.",
++      "acceptance": "Five custom profiles loaded and selected; real bounded parallel analyses; verified isolated implementation; different-model final-candidate review; current integration; preserved Streetcraft runtime. No visual quality or persistent service claim.",
++      "verification": "Project agents config effective enabled=true / max=3; six TOML files parse; three real specialist threads overlap and return cited documentary reports; implementer returns proposal from detached worktree; root applies quickstart serially; 27 existing backdrop/orchestrator tests PASS after isolated dependency correction. Named custom-profile dispatch CLIENT_CAPABILITY_BLOCKED and enforced write isolation ISOLATION_BLOCKED. Independent review receipt is evidence, not automatic closure.",
++      "evidence": [
++        "validation/sc_multiagent/PILOT_REPORT.md",
++        "validation/sc_multiagent/CAPABILITY_CHECK.json",
++        "validation/sc_multiagent/ACTIVITY.json",
++        "validation/sc_multiagent/ISOLATION_CHECK.json",
++        "validation/sc_multiagent/CHECKS.json",
++        "validation/sc_multiagent/sc_verifier_REPORT.md"
++      ]
+     }
+   },
+   "decisions": {
+@@ -89,10 +105,22 @@
+     {
+       "at": "2026-10-03T16:00:49.227832+00:00",
+       "event": "User explicitly PAUSED GLIGEN structural route; rationale/25–59 person-day estimate/report SHA-256 recorded; D3/D4 PENDING; outputs unchanged, VSG shadow mode, no further implementation/tests; reopen requires textual advantage >=2 of3 pairs and explicit Lean effort allocation."
++    },
++    {
++      "at": "2026-10-13T02:03:20.056427+00:00",
++      "event": "SC-MULTIAGENT-01 scope authorized by current user instruction after complete v12 read: configure collaboration, three documentary analyses, isolated quickstart task and different-model review. One active session <=60min; one correction round; <=3 simultaneous subagents, <=2 implementations, one task-owned commit and one normal push; zero additional spend/images/GLIGEN/product changes; quota UNKNOWN. Named custom-profile dispatch and enforced write isolation are blocked; explicit role analysis and main-session serial edit fallback used."
++    },
++    {
++      "at": "2026-10-13T02:03:20.056427+00:00",
++      "event": "Authorization separation recorded from v12 decisions 6/7/10 and spec base: textual exploration of VSG instructions allows six outputs / three D,E,Kenny pairs in ChatGPT app, no selective retries and zero additional spend. Historical authorization preserved; GLIGEN remains PAUSED, D3/D4 PENDING and execution_authorized=false. This documentary pilot generated zero images and did not start or reset the 168-hour visual clock. Generating does not delegate Lean visual judgment."
++    },
++    {
++      "at": "2026-10-13T02:03:20.056427+00:00",
++      "event": "SC-MULTIAGENT-01 preparation and documentary pilot evidenced: three specialists overlap, actual runtime metadata gpt-6.1-sol; detached-worktree implementer returns proposal without writes; root applies quickstart serially. 27/27 existing backdrop/orchestrator checks pass in temporary environment; no new instruction-mirroring tests or GLIGEN tests. Milestone BLOCKED pending actual custom-profile selection and enforceable write isolation; final candidate requires different-model review before commit."
+     }
+   ],
+-  "resume": "Preserve closed M1-M3 and VSG shadow mode. No further structural implementation or tests. Reopen only after documented textual advantage >=2 of3 pairs AND an explicit Lean effort allocation decision with scoped D3/D4 authorization; model execution/images remain unauthorized until explicitly approved.",
+-  "blocker": "GLIGEN structural route PAUSED by explicit user decision. D3/D4 PENDING; textual advantage >=2 of3 pairs and explicit Lean effort allocation required to reconsider.",
++  "resume": "Read HEAD, git status, this checkpoint and validation/sc_multiagent/PILOT_REPORT.md; do not relaunch completed documentary tasks. SC-MULTIAGENT-01 remains BLOCKED: active client must expose/select custom profiles and verify actual per-agent permissions before parallel writes or READY. Independent review evidence cannot waive those criteria. Preserve M1-M3 CLOSED, GLIGEN PAUSED, D3/D4 PENDING and VSG SHADOW; no further structural implementation/tests. Textual exploration has separate bounded v12 authorization; this pilot starts no visual clock. No persistent supervisor or automatic restart is implemented.",
++  "blocker": "SC-MULTIAGENT-01 CLIENT_CAPABILITY_BLOCKED for named custom-profile selection; ISOLATION_BLOCKED for enforceable child write roots. Existing GLIGEN structural route remains PAUSED with D3/D4 PENDING and its original reopening conditions.",
+   "integration_commits_observed": [
+     "8fa10427bdbab33c649deebe6fd12e92aef537a3",
+     "d9a54e351ff6b4dc30e046812cceff638a81e0f9",
+diff --git a/docs/SC_MULTIAGENT_QUICKSTART.md b/docs/SC_MULTIAGENT_QUICKSTART.md
+new file mode 100644
+index 0000000..b325077
+--- /dev/null
++++ b/docs/SC_MULTIAGENT_QUICKSTART.md
+@@ -0,0 +1,150 @@
++# Colaboración Streetcraft: inicio y recuperación
++
++## Estado y cliente
++
++El piloto SC-MULTIAGENT-01 está configurado con tres subagentes como máximo.
++El resultado y criterios comprobados están en [informe](../validation/sc_multiagent/PILOT_REPORT.md).
++El estado operativo sigue en [checkpoint](../development/coordination/CHECKPOINT.json).
++
++Cliente observado: extensión activa 26.930.61225, CLI 0.160.1; extensión
++26.1007.21434 instalada pero no activa en el proceso observado. Proyecto trusted.
++La configuración efectiva cargó agents.enabled=true y límite=3.
++Los cinco TOML pasan sintaxis; este cliente no expone selección nominal de perfil
++por la herramienta de delegación y su prompt diagnóstico no muestra estos perfiles.
++Leerlos manualmente permite especialización por instrucciones, sin demostrar
++carga nominal. Los agentes del piloto heredan filesystem unrestricted; sus
++instrucciones de lectura no constituyen aislamiento. ISOLATION_BLOCKED impide
++escritura delegada. El orquestador secuencia las ediciones en el checkout principal.
++No declarar SC_MULTIAGENT_READY con estas capacidades pendientes.
++
++## Una sesión principal
++
++Abrí el repo en Codex, leé AGENTS.md, HEAD y checkpoint. Pedí al orquestador:
++
++```text
++Dentro del sobre autorizado de SC-MULTIAGENT-01, delegá tres análisis documentales:
++identidad edilicia, cámara/backdrop y evidencia histórica. Usá el mismo HEAD y
++digest del checkpoint, esperá los tres informes y consolidá citas y diferencias.
++No generar imágenes ni cambiar contratos. Cada agente lee su perfil sc_*;
++si no podés seleccionarlo nominalmente, registrá esa limitación.
++```
++
++No iniciar otro orquestador sobre este repo. La concurrencia no aumenta por
++agregar perfiles. El verificador usa un modelo distinto del implementador;
++si no está disponible, registrar REVIEW_MODEL_UNAVAILABLE y guardar preparación.
++El tiempo/cuota se registra con evidencia disponible; cuota no expuesta: UNKNOWN.
++
++## Ejemplo basado en contratos existentes
++
++Este ejemplo audita documentación existente de Kenny y los contratos de cámara.
++No solicita generación, ejecuta runtime ni evalúa imágenes. Kenny aporta un caso
++con fachada observada, relaciones protegidas y rooftop de diseño inferido; no se
++presupone su ciudad ni su fecha histórica. Comparar BD01/BD02 aquí no declara que
++una fachada aislada sea una fuente adecuada para un backdrop panorámico.
++
++### Tarjetas de los tres análisis
++
++El orquestador entrega una tarjeta completa a cada especialista antes de iniciarlo.
++Para reproducir una tarea, verificar primero HEAD y digest actuales; los siguientes
++valores identifican la base usada en este piloto, no un estado futuro.
++
++Campos comunes de las tres tarjetas:
++
++```text
++base_commit: 33b6581353b18004a4818e8fc597b5455ba7ccf3
++checkpoint_digest: 2c60a49a3d58581dc40602e9c9357ea4d8ca842a0520d18b1b0bbc8d96ea1cc0
++checkout_asignado: /Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2
++archivos_permitidos: []
++dependencias: ninguna entre los tres análisis; preparación del orquestador completada
++entregable_observable: cinco hallazgos citados, con observación, inferencia y recomendación separadas; sin patch
++limite_de_esfuerzo: 8 minutos por análisis, dentro del máximo de 60 minutos de la sesión
++gasto_adicional: cero
++condiciones_de_parada: base o digest distintos, necesidad de escritura, gasto, deriva de alcance o parada global
++referencias_y_contratos: AGENTS.md, perfil propio .codex/agents/sc_*.toml, checkpoint, README.md, STREETCRAFT.md, agent/AGENT_PROTOCOL.md y contratos específicos indicados abajo
++```
++
++Completar los campos específicos de cada tarjeta:
++
++| task_id / rol | objetivo | referencias_y_contratos adicionales | criterios_de_cierre |
++| --- | --- | --- | --- |
++| SC-MULTIAGENT-01-P1-ARCH / sc_architecture | Identificar invariantes edilicios y separar fuente de diseño inferido. | core/IDENTITY.md; core/PRESERVATION_MODEL.md; visual_scene_graph/pilot/fixtures/kennys/K0_OBSERVED_INFERRED_DESIGN.md; fixtures/kennys_new_01/observations.json y design.json bajo visual_scene_graph/pilot/. | Citar fachada, vanos, señalética y PR0/PR1; distinguir rooftop autorizado de P0 observado; conservar geometría oculta UNKNOWN. |
++| SC-MULTIAGENT-01-P1-CAMERA / sc_camera | Comparar CG-F, modificador, macro y presets sin debilitar locks. | command_invocation/CG_F_FRONTAL_ELEVATION.md; command_invocation/BACKDROP_PRESETS.md; transform/VISUAL_PROFILES.md; transform/AUTO_ROUTING.md. | Explicar /sc-front frente a /sc-rdr2-elevation y BD01/BD02; indicar precedencias y conflictos; no promover validación visual. |
++| SC-MULTIAGENT-01-P1-HISTORY / sc_history | Auditar procedencia, fecha, geografía y texto incierto. | core/PRESERVATION_MODEL.md; reference_runtime/REFERENCE_AUTHORITY_MAP.md; reference_runtime/REFERENCE_REASONING_2.md; reference_runtime/real_catalog/REAL_EVIDENCE_CATALOG_V1.json; patch/SEMANTIC_TOKEN_FREEZE.md; patch/LOW_CONFIDENCE_TEXT_MASK.md. | Separar fecha de entrega de fecha histórica; exigir procedencia; conservar ciudad, fecha y texto no acreditados como UNKNOWN; no completar señalética. |
++
++El checkout asignado identifica dónde leer; no impone aislamiento. En este cliente
++los perfiles se leen manualmente y las herramientas permiten escritura compartida.
++Registrar ISOLATION_BLOCKED y mantener estos análisis sin escritura. Solo el
++orquestador guarda sus respuestas en validation/sc_multiagent/.
++
++### Consolidación respaldada por el piloto
++
++Los tres informes aportan evidencia documental complementaria:
++
++- [Arquitectura](../validation/sc_multiagent/sc_architecture_REPORT.md):
++  fachada, vanos, acceso, vidrieras y relaciones de señalética están protegidos.
++  El rooftop pertenece al diseño inferido autorizado; no se convierte en fuente
++  observada. Laterales, profundidad y coronación histórica siguen desconocidos.
++- [Cámara](../validation/sc_multiagent/sc_camera_REPORT.md):
++  `/sc-front` cambia únicamente cámara y frontalización STRICT.
++  `/sc-rdr2-elevation` agrega VP02, T02, identidad STRICT, oclusión
++  LOCKED_UNKNOWN, 16:9 y calle mínima. BD01 y BD02 son presets compuestos:
++  BD01/T02 permite recomposición en regiones no protegidas; BD02/T08 preserva
++  layout y prohíbe trasladar masas importantes o sustituir edificios.
++- [Historia](../validation/sc_multiagent/sc_history_REPORT.md):
++  apariencia plausible no acredita fecha, ciudad, autoría ni licencia.
++  RR2 exige procedencia y aprendizaje limitado; referencias no pueden importar
++  identidad ni completar texto ilegible.
++
++La autoridad viene de los [invariantes de fuente](../STREETCRAFT.md),
++las [clases epistemológicas](../core/PRESERVATION_MODEL.md),
++[CG-F](../command_invocation/CG_F_FRONTAL_ELEVATION.md),
++[BD01/BD02](../command_invocation/BACKDROP_PRESETS.md) y
++[RR2](../reference_runtime/REFERENCE_REASONING_2.md), no del acuerdo entre agentes.
++BD01 puede tener alcance de recomposición vacío si toda la composición está
++protegida. Ni frontalización ni T08 autorizan rellenar LOCKED_UNKNOWN.
++
++Una vista moderadamente elevada del diseño rooftop y CG-F, que prohíbe una vista
++elevada de conjunto, requieren resolver la intención y compatibilidad antes de
++una futura solicitud. Este ejemplo no los combina en una orden de generación.
++Fear City confirmado conserva su routing T06/VP03/CG-FC salvo override explícito;
++el parecido con una ciudad no establece geografía.
++
++El orquestador recibe los tres informes, conserva discrepancias y citas, y encarga
++al implementador solo la propuesta documental del quickstart. Ante
++ISOLATION_BLOCKED, aplica la edición de forma secuencial en la sesión principal.
++Después vincula el candidato final a HEAD y hash del patch y solicita revisión
++por un modelo efectivo distinto. Sin ese modelo, registra
++REVIEW_MODEL_UNAVAILABLE y conserva lo completado.
++
++El cierre acredita colaboración y análisis documental. Calidad visual, aceptación
++de BD01/BD02 e impresión permanecen pendientes; GLIGEN sigue PAUSED, D3/D4 PENDING
++y VSG SHADOW. No se inicia el reloj visual de 168 horas con este ejemplo.
++
++## Inspección, parada y recuperación
++
++En la UI expandí la actividad de subagentes cuando esté disponible o pedí a la
++sesión principal listar agentes/tareas y sus estados. En CLI, /agent permite
++inspeccionar los hilos. Para parar, pedí al orquestador detener la tarea indicada
++(y dependientes), o todos los agentes por una condición global. No suponer que
++cerrar una vista detuvo trabajo; verificar los estados y preservar resultados.
++
++Al retomar: leer checkpoint, git status, HEAD e informe. Verificar que no haya
++otra sesión escritora. No asumir agentes activos ni relanzar automáticamente
++trabajo completo. Preservar copies/patches; solo integrar archivos asignados y
++un candidato cuyo HEAD y hash coincidan con la revisión.
++
++Si el cliente permite implementar en aislamiento verificable, crear worktree
++detached desde HEAD conocido, sin rama nueva, y comprobar permisos efectivos
++antes de escribir. Una ruta o sandbox_mode=workspace-write no basta. Si no,
++mantener ISOLATION_BLOCKED y secuenciar implementación en la sesión principal.
++
++El piloto no inicia el reloj de VSG, genera imágenes ni cambia D3/D4 o GLIGEN.
++La exploración textual conserva su autorización separada. Continuidad después
++de terminar la sesión exige otro hito autorizado; estos archivos no son supervisor.
++
++Referencias de producto: [jerarquía](../STREETCRAFT.md), [preservación](../core/PRESERVATION_MODEL.md),
++[CG-F](../command_invocation/CG_F_FRONTAL_ELEVATION.md),
++[backdrop](../command_invocation/BACKDROP_PRESETS.md) y
++[RR2](../reference_runtime/REFERENCE_REASONING_2.md).
++Fuentes de configuración: [OpenAI Subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents)
++y [Config basics](https://learn.chatgpt.com/docs/config-file/config-basic).
+diff --git a/specs/SC_MULTIAGENT_01_v1.md b/specs/SC_MULTIAGENT_01_v1.md
+new file mode 100644
+index 0000000..f4e958d
+--- /dev/null
++++ b/specs/SC_MULTIAGENT_01_v1.md
+@@ -0,0 +1,258 @@
++# SC · Spec de implementación de subagentes y orquestador
++
++**ID:** SC-MULTIAGENT-01 · **Versión:** 1.0 · **Fecha:** 2026-10-12  
++**Destino:** Codex local en VS Code, checkout de STREETCRAFT_VISUAL_SYSTEM en la Mac.  
++**Estado:** SPEC_READY — configuración y ejecución aún no verificadas en la Mac.  
++**Base de decisiones:** STREETCRAFT_v12.md, leído completo. El repo vivo no fue inspeccionado para elaborar esta spec.
++
++## 1. Resultado esperado
++
++Lean trabaja con un único chat principal. Ese agente coordina especialistas que analizan SC en paralelo, asigna implementaciones aisladas, recibe una revisión independiente e integra resultados con evidencia. Solo el orquestador actualiza CHECKPOINT.json.
++
++El primer cierre debe mostrar agentes reales trabajando y devolviendo resultados: crear archivos TOML por sí solo no acredita que el equipo funcione.
++
++Este hito implementa la capacidad de colaboración. No autoriza nuevos hitos de producto, gasto adicional, ejecución de GLIGEN ni cambios en D3/D4. Tampoco implementa un servicio permanente para continuar después de terminar la sesión.
++
++## 2. Plataforma y comprobación previa
++
++Usar la versión instalada de Codex en VS Code. Antes de editar:
++
++1. Registrar versión de la extensión y del CLI si está instalado; no asumir que coinciden.
++2. Registrar HEAD, rama, git status y ubicación real del checkpoint.
++3. Leer instrucciones aplicables, checkpoint, README y contratos pertinentes.
++4. Inspeccionar configuración efectiva: comprobar soporte de subagentes, agentes personalizados, límites, modelos y confianza del proyecto.
++5. Identificar cambios de Lean y preservarlos. No limpiar ni resetear el árbol.
++6. Localizar validadores y pruebas existentes; no inventar comandos o campos del checkpoint.
++
++**Base oficial de configuración, consultada el 12-oct-2026:** los agentes personalizados actuales se definen mediante TOML en .codex/agents/, con name, description y developer_instructions; los controles globales de subagentes viven en [agents]. La configuración de proyecto .codex/config.toml requiere proyecto confiable. Revalidar el formato contra la versión instalada. [Subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents) · [Config basics](https://learn.chatgpt.com/docs/config-file/config-basic).
++
++Si el cliente no soporta el formato, registrar CLIENT_CAPABILITY_BLOCKED y la adaptación necesaria. No simular subagentes con secciones de una sola respuesta ni cambiar silenciosamente a una API.
++
++## 3. Equipo y responsabilidades
++
++| Rol / identificador | Especialidad y entregable | Escritura permitida |
++| --- | --- | --- |
++| Orquestador / sesión principal | Define tareas, consolida evidencia, arbitra contradicciones técnicas, integra y explica el cierre a Lean | Archivos asignados a integración; único escritor del checkpoint |
++| sc_architecture | Arquitectura urbana norteamericana 1960–1985: tipologías, ritmo de fachada, materiales, medianeras y rooftop; observaciones e inferencias separadas | Ninguna en el checkout principal |
++| sc_camera | Cámara, composición y backdrop: CG-F, elevación, puntos de fuga, verticales, encuadre y oclusión; conflictos con los contratos citados | Ninguna en el checkout principal |
++| sc_history | Fotografía histórica urbana estadounidense: procedencia, fecha, geografía, señalética y anacronismos; referencias y grado de certeza | Ninguna en el checkout principal |
++| sc_implementer | Traduce decisiones consolidadas en cambios mínimos de contratos, runtime o validación; entrega patch y evidencia | Solo copia aislada y archivos asignados |
++| sc_verifier | Revisa diff, contratos, pruebas y evidencia visual de forma independiente; devuelve PASS, FAIL o BLOCKED | Ninguna en el checkout principal |
++
++Los perfiles son especializaciones de agentes IA, no credenciales profesionales acreditadas.
++
++El experto histórico no debe atribuir fechas, ciudades, autorías o licencias por apariencia. Las hipótesis se marcan como inferencias; lo desconocido queda UNKNOWN. El implementador no transforma una sugerencia del experto en permiso para alterar un lock.
++
++## 4. Archivos a implementar
++
++Reutilizar ubicaciones existentes cuando cumplan la misma función. No duplicar documentación operativa.
++
++| Archivo relativo propuesto | Contenido |
++| --- | --- |
++| AGENTS.md | Política común, delegación, sobre de trabajo, responsabilidades y condiciones de parada |
++| .codex/config.toml | Activación y límite de concurrencia; conservar configuración previa |
++| .codex/agents/sc_architecture.toml | Perfil arquitectónico |
++| .codex/agents/sc_camera.toml | Perfil de cámara y composición |
++| .codex/agents/sc_history.toml | Perfil de fotografía histórica |
++| .codex/agents/sc_implementer.toml | Perfil implementador |
++| .codex/agents/sc_verifier.toml | Perfil verificador |
++| docs/SC_MULTIAGENT_QUICKSTART.md | Inicio, ejemplo de tarea, inspección de agentes, parada y recuperación |
++| validation/sc_multiagent/PILOT_REPORT.md | Evidencia del piloto, sin convertirse en fuente paralela de estado |
++
++No crear un segundo checkpoint, tablero persistente o roadmap alternativo. Los reportes documentan evidencia; el estado operativo sigue en el checkpoint existente.
++
++### Configuración de proyecto
++
++Fusionar esta sección con la configuración existente; no sobrescribir el archivo:
++
++```toml
++[agents]
++enabled = true
++max_concurrent_threads_per_session = 3
++```
++
++Tres subagentes simultáneos, además del orquestador. El equipo tiene cinco perfiles disponibles; no deben estar todos activos todo el tiempo.
++
++### Plantilla de perfil
++
++```toml
++name = "sc_architecture"
++description = "Evalúa arquitectura urbana norteamericana para Streetcraft."
++
++developer_instructions = """
++Leé AGENTS.md y los contratos de SC pertinentes.
++Trabajá únicamente en la tarea delegada.
++Separá hechos observables, inferencias y recomendaciones.
++Citá archivos, referencias o evidencia para cada hallazgo material.
++Preservá los locks y distinguí áreas observadas de áreas desconocidas.
++No escribas CHECKPOINT.json. No hagas commit ni push.
++No delegues a otros agentes.
++Devolvé un informe breve con versión base, evidencia, límites y resultado.
++"""
++```
++
++El implementador adapta las instrucciones para admitir escritura exclusivamente en la copia asignada. Cada especialista incorpora sus criterios de la sección 3. No acumular prompts genéricos que se contradigan.
++
++## 5. Modelos, razonamiento y permisos
++
++- El orquestador y el implementador usan un modelo disponible en la cuenta; registrar el identificador efectivo.
++- El verificador debe usar un modelo distinto del implementador, conforme a la v12. Otro hilo del mismo modelo no cumple ese requisito.
++- Seleccionar y comprobar ambos modelos antes del piloto. No hardcodear identificadores supuestos ni iniciar llamadas facturadas para resolver disponibilidad.
++- Si no hay segundo modelo disponible, completar preparación y diagnóstico; registrar REVIEW_MODEL_UNAVAILABLE. No declarar cierre independiente.
++- Recomendación de esfuerzo: medium para especialistas e implementación rutinaria; high para conflictos de contratos y revisión. Ajustar a los niveles admitidos por el modelo y cliente.
++- No modificar permisos globales, credenciales, proveedores ni políticas de aprobación.
++- Los perfiles analíticos y el verificador deben trabajar en lectura. Comprobar permisos efectivos, pues las instrucciones de un perfil no son por sí mismas un aislamiento de filesystem.
++
++Los TOML almacenan configuración reusable; no mantienen expertos permanentemente activos ni una memoria propia que sustituya el checkpoint.
++
++## 6. Contrato de cada tarea delegada
++
++El orquestador debe entregar antes de iniciar:
++
++```text
++task_id:
++objetivo:
++entregable_observable:
++base_commit:
++checkpoint_digest:
++referencias_y_contratos:
++checkout_asignado:
++archivos_permitidos:
++dependencias:
++criterios_de_cierre:
++limite_de_esfuerzo:
++gasto_adicional:
++condiciones_de_parada:
++```
++
++Cada subagente devuelve:
++
++```text
++task_id / rol / modelo efectivo:
++base_commit:
++resultado: PASS | FAIL | BLOCKED
++hallazgos: observación / evidencia / inferencia / recomendación
++archivos modificados o patch:
++validaciones ejecutadas y resultados:
++límites de la evaluación:
++bloqueos:
++cierre en tres líneas:
++```
++
++No inventar cuotas o porcentajes. Si la plataforma no expone uso suficiente, registrar UNKNOWN. Un límite escrito en el prompt es una regla operativa, no un medidor ni un corte automático garantizado.
++
++## 7. Reglas del orquestador en AGENTS.md
++
++1. Delegar solo subtareas independientes, con entregable y alcance acotados.
++2. Mantener como máximo tres subagentes simultáneos y dos tareas de implementación abiertas. Estos son valores iniciales propuestos por esta spec, sin crecimiento automático.
++3. Prohibir delegación recursiva de especialistas.
++4. Ser el único escritor de CHECKPOINT.json y el único integrador.
++5. Asignar archivos propios. Secuenciar tareas que necesiten el mismo archivo.
++6. Impedir que implementadores hagan commit o push; centralizar esas acciones bajo la política vigente del repo.
++7. Preservar pausa de GLIGEN, decisiones pendientes y autorizaciones separadas de generación.
++8. No equiparar consenso entre agentes con evidencia ni pruebas deterministas con validación visual.
++9. No abrir nuevos hitos por iniciativa de los subagentes.
++10. Detener la tarea afectada ante bloqueo; detener también las tareas que dependan de ella. Una condición global de parada detiene toda la tanda.
++11. Rechazar integración basada en un commit o checkpoint desactualizado; volver a validar.
++12. Entregar a Lean: qué cambió, qué evidencia lo sostiene y cerrar / pausar / mantener.
++
++El sobre de cada tanda incluye objetivo, tareas permitidas, límites de uso y gasto, evidencia de cierre y parada. Registrar usando la estructura real del checkpoint, sin asumir nuevas claves.
++
++## 8. Aislamiento e integración sin ramas nuevas
++
++Para respetar la preferencia actual de Lean, usar copias de trabajo aisladas sin nuevas ramas de desarrollo. La elección inicial es un worktree detached desde el commit base; una copia independiente es alternativa si el cliente no permite trabajar allí.
++
++El orquestador:
++
++1. Crea la copia desde un commit conocido y entrega su ruta absoluta al implementador.
++2. Verifica que las herramientas del subagente operen allí; indicar una ruta en el prompt no prueba aislamiento.
++3. Recibe el patch y comprueba que afecta únicamente archivos asignados.
++4. Incluye altas, bajas y archivos nuevos en el manifiesto; un diff de archivos tracked no cubre archivos nuevos.
++5. Aplica el cambio en un espacio de integración y ejecuta las comprobaciones pertinentes.
++6. Pide al verificador revisar el patch final contra el HEAD vigente.
++7. Integra de a uno. Si cambia HEAD o el contenido revisado, invalida la revisión y la repite sobre el candidato actualizado.
++8. Actualiza el checkpoint y realiza commit/push solo según la autorización vigente.
++
++El worktree detached no impide modificar el checkout principal mediante rutas absolutas. Si no se puede comprobar aislamiento de escritura, limitar el piloto a análisis y secuenciar la implementación en la sesión principal; registrar ISOLATION_BLOCKED para la capacidad de escritura paralela.
++
++Para el checkpoint: releer justo antes de escribir, comprobar digest y aplicar solamente el delta previsto. El escritor único exige una única sesión coordinadora autorizada; no ejecutar dos orquestadores activos sobre el mismo repo. Si la evidencia revela otro escritor, parar. No atribuir garantías transaccionales a una simple comparación de hash.
++
++## 9. Piloto mínimo
++
++**Alcance inicial:** implementar configuración y demostrar coordinación. Gasto adicional: cero. Sin imágenes nuevas ni cambios de producto durante este piloto. Esto acota esta corrida; no revoca la autorización general de generar imágenes de la v12.
++
++**Límite propuesto:** una sesión activa de hasta 60 minutos, una ronda de corrección y sin reinicios automáticos. El orquestador controla el tiempo entre operaciones; no se promete un corte duro mientras una llamada siga ejecutándose.
++
++### P0 — Preparación
++
++Inspeccionar el repo, completar configuración y seleccionar modelos. Validar TOML y comprobar carga real en una sesión nueva cuando sea necesario.
++
++### P1 — Tres especialistas reales
++
++Asignar al mismo commit base tres análisis independientes:
++
++- Arquitectura: identificar restricciones existentes de identidad y coherencia edilicia.
++- Cámara: identificar contratos CG-F y backdrop, y sus precedencias.
++- Historia: identificar cómo SC distingue fidelidad histórica, inferencia y evidencia.
++
++Usar una referencia existente solo si está disponible y cada agente puede inspeccionarla. Si no hay imagen, reportar análisis documental; no simular evaluación visual.
++
++Esperar los tres resultados. Consolidar una conclusión breve con evidencia y discrepancias.
++
++### P2 — Implementación aislada
++
++Asignar al implementador un cambio acotado del propio hito: completar el quickstart con un ejemplo basado en los contratos encontrados. Usar copia aislada y entregar patch, sin modificar contratos del runtime.
++
++### P3 — Verificación e integración
++
++El verificador, con modelo distinto, revisa configuración, quickstart, cumplimiento de reglas y diff final. El orquestador aplica correcciones dentro de la ronda permitida y registra el resultado.
++
++No usar este piloto para iniciar el reloj visual de VSG: ese reloj comienza con la primera imagen válida de su exploración específica.
++
++## 10. Evidencia y criterios de aceptación
++
++| Criterio | Evidencia requerida |
++| --- | --- |
++| Perfiles cargados | Registro del cliente y agentes personalizados seleccionados efectivamente |
++| Paralelismo real | Identificadores de hilos, tareas y tiempos que muestran ejecución superpuesta |
++| Especialización | Tres informes distintos, con referencias concretas al mismo commit base |
++| Concurrencia acotada | Registro de máximo de agentes activos y configuración efectiva |
++| Aislamiento | Rutas reales y comparación de cambios en copia vs. checkout principal |
++| Escritor único | Diff del checkpoint producido exclusivamente por el orquestador |
++| Revisión independiente | Identificador de modelo distinto, base y hash del patch revisado |
++| Integración vigente | Correspondencia entre diff revisado y contenido integrado |
++| Compatibilidad SC | Comprobaciones existentes pertinentes; sin cambio del runtime ni de GLIGEN |
++| Lectura para Lean | Cierre en tres líneas y enlaces a evidencia suficiente |
++
++No escribir tests que repitan las instrucciones. Usar una corrida real para comprobar delegación y rutas; validar sintaxis y ejecutar solo las comprobaciones del repo afectadas.
++
++**Estados de salida propuestos, a adaptar al esquema vigente:**
++
++- SC_MULTIAGENT_READY: configuración, delegación, aislamiento e independencia demostrados.
++- SC_MULTIAGENT_CONFIGURED_PENDING_PILOT: archivos listos, prueba real pendiente.
++- SC_MULTIAGENT_BLOCKED: falta una capacidad requerida; describir cuál y cómo resolverla.
++
++El reporte debe declarar qué fue probado y qué sigue sin probar. No declarar mejoras de calidad visual a partir de un piloto documental.
++
++## 11. Recuperación y límites de continuidad
++
++Si la sesión se interrumpe, el siguiente orquestador lee checkpoint, HEAD y reporte antes de reanudar. No supone que los subagentes anteriores siguen activos ni relanza automáticamente una tarea completada.
++
++Preservar copias y patches útiles hasta confirmar integración. No limpiar worktrees con cambios sin conservar.
++
++Una ejecución durante la ausencia de Lean requiere un hito aparte para launcher, límites observables, manejo de permisos, prevención de doble orquestador y recuperación. AGENTS.md y los TOML no sustituyen ese supervisor. Esta separación no debe retrasar la exploración visual ya autorizada.
++
++## 12. Orden de implementación y esfuerzo recomendado
++
++| Paso | Entregable | Razonamiento recomendado |
++| --- | --- | --- |
++| 1. Inspección y compatibilidad | Base y capacidades verificadas | Medium |
++| 2. Reglas y perfiles | AGENTS.md y cinco TOML | Medium |
++| 3. Aislamiento y contrato de tarea | Ruta demostrada y asignaciones claras | High si hay conflictos; medium en el resto |
++| 4. Piloto y revisión | Evidencia real y quickstart integrado | High para verificador |
++| 5. Cierre | Checkpoint y resumen para Lean | Medium |
++
++No convertir estos pasos en una cadena de nuevas specs. Resolver ajustes reversibles durante la implementación. Ante una limitación real, entregar lo completado y la causa concreta del bloqueo.
++
++**Instrucción de arranque para Codex:** implementar SC-MULTIAGENT-01 en el repo vivo; comenzar por inspección, preservar cambios existentes y usar esta spec como contrato de alcance. Delegar el piloto únicamente después de comprobar configuración efectiva. No reabrir GLIGEN ni declarar cierre sin la evidencia de la sección 10.
++
+diff --git a/specs/STREETCRAFT_v12.md b/specs/STREETCRAFT_v12.md
+new file mode 100644
+index 0000000..0980024
+--- /dev/null
++++ b/specs/STREETCRAFT_v12.md
+@@ -0,0 +1,334 @@
++# Streetcraft · Análisis y plan (versión personal)
++
++**Fecha:** 3 de octubre de 2026 · **Base analizada:** SVS 1.10.0 STABLE (README + zip del repo, ver límites en la sección 4) · **Revisión externa:** Claude · **Versión 8:** incorpora las decisiones de Lean (tope de 7 días para VSG, delegación de los "cómo" técnicos), la lectura de `ROADMAP.md`, `CHECKPOINT.json` y los documentos N2/N4/P1R, las objeciones de GPT a las versiones 4 y 5 (sección 11), la verificación sobre el repo vivo del 3 de octubre de 2026 y la estimación de la ruta estructural entregada por GPT/Codex (sección 8.4) y el registro de la pausa en el checkpoint (commit `33b6581`, informado por GPT/Codex) · **Versión 9 (9-oct-2026):** retira la regla de "un hito abierto a la vez" por decisión de Lean (hitos en paralelo con agentes coordinados por un orquestador) y fija que `CHECKPOINT.json` lo escribe un solo agente (secciones 3, 5, 6, 9, 10 y 11) · **Versión 10 (11-oct-2026):** por decisión de Lean, reinicia el reloj de VSG, retira las expectativas de fechas de calendario y todo contenido que no provenga de documentación oficial o del propio repo, y elimina la aprobación previa de Lean para generar imágenes (secciones 1, 5, 8, 9, 10 y 11) · **Versión 11 (11-oct-2026):** incorpora el dictamen de GPT sobre la v10 (APROBADO CON CAMBIOS): separa las autorizaciones, define el reloj, corrige qué compara el A/B, completa las reglas de paralelismo y corrige evidencia y procedencia (secciones 1, 5, 6, 8, 9, 10 y 11) · **Versión 12 (11-oct-2026):** corrige dos inconsistencias señaladas por GPT y registra las confirmaciones de Lean (reloj de 168 horas y continuidad)
++
++---
++
++## 1. Resumen ejecutivo
++
++- Streetcraft (SC) es un **proyecto personal** cuyo output de reinterpretación ya le sirve a Lean. El problema no está en el output: está en **cómo se desarrolla**.
++- Las tres fallas (sección 3): specs interminables hacia VSG, hitos y pruebas que ya no se entienden, y un workflow manual que obliga a Lean a decidir arquitectura sin ser arquitecto de sistemas visuales.
++- **Principio central:** *Lean decide qué quiere ver; el agente decide cómo construirlo.* Lo único que Lean puede juzgar sin ser arquitecto es **la imagen**, así que toda decisión de arquitectura debe presentarse con su efecto visible (o con "no cambia el output").
++- **VSG, tope de 7 días con el reloj reiniciado (decisión de Lean):** según los documentos del repo, la **ruta estructural** (consumidor aprendido sobre GLIGEN) requiere desarrollo de modelo, por lo que no se puede prometer su cierre dentro de ese tope (hay una estimación registrada, cuyo informe no fue auditado). La vía práctica identificada para obtener imágenes dentro de ese tope con tu flujo actual es una **exploración visual de instrucciones derivadas de VSG**, que no cierra VSG-2B ni juzga la arquitectura. GPT/Codex entregó la estimación de la ruta estructural, Claude coincidió en pausarla y la pausa quedó registrada en el checkpoint (commit `33b6581`, informado por GPT/Codex; sección 8.4). El reloj (168 horas desde la primera imagen válida) arranca con la primera imagen de la exploración y no tiene fecha de calendario; la generación de imágenes ya no requiere aprobación previa de Lean.
++- **Primer paso:** reencuadre y marco de decisión, apoyándose en el `CHECKPOINT.json` existente en lugar de crear estructuras paralelas (sección 6).
++- **Cambio de la v9 (decisión de Lean):** se retira la regla de un hito abierto a la vez para ir más rápido, con varios agentes coordinados por un orquestador. Para que el paralelismo no rompa el estado se fijan dos reglas: `CHECKPOINT.json` lo escribe un solo agente y cada agente tiene archivos propios (sección 9.1).
++- **Continuidad sin Lean:** posible, pero con un sobre de autorización acotado y topes duros (sección 9).
++- **Test liviano de 12 imágenes** (SC vs. prompt directo) para saber si SC aporta frente a un prompt simple (sección 7).
++
++---
++
++## 2. Contexto (confirmado por Lean)
++
++| Tema | Estado |
++| --- | --- |
++| Naturaleza | Proyecto personal, no producto. Lean paga ChatGPT Plus. |
++| Uso | Sesión de chat nueva en la app de ChatGPT; adjunta el repo de GitHub una vez, la imagen fuente y corre el CLI (ver `CHEAT_SHEET.md`). GPT es el motor de imagen que mejor le resultó; no probó otros. |
++| Runtime real | ChatGPT leyendo las specs del repo. El orquestador Python es una formalización/verificador, no lo que corre en cada uso. |
++| Archive | Un tablero de Pinterest: fuente de consulta, no Canon. |
++| VSG | Replanteo de arquitectura inspirado en grafos (ej: el modelo del conectoma de la mosca). Hoy en modo sombra. |
++| Desarrollo | App de ChatGPT + VS Code/Codex; Lean es el orquestador humano entre ambos. |
++| Agentes | GPT (ChatGPT/Codex) construye; Claude actúa como revisor externo. Lean contrasta ambas posturas (sección 11). |
++
++---
++
++## 3. Las tres fallas de desarrollo
++
++| Falla (según Lean) | Causa probable *(hipótesis a partir de lo visto en el repo)* | Remedio |
++| --- | --- | --- |
++| **1. Cada vez más tiempo entre specs infinitas para llegar a VSG** | La hoja de ruta de VSG tiene 8 etapas (0, 0.5, 1, 1.5, 2A, 2B, 3, 4) y la ruta estructural agrega N1–N5 y M1–M3; cada una produce su spec y su informe (`validation/` tiene 490 archivos). Los hitos se producen más rápido de lo que se usan: hoy hay 0 imágenes generadas y `model_tests: NOT_RUN`. | **Hitos en paralelo** (v9, sin el límite de un hito a la vez), con un tope de **7 días** para VSG y un entregable observable por hito; abrir hitos nuevos sigue requiriendo la tarjeta "Go". VSG-3A/3B, VSG-4 y VSG-5 en pausa (sección 8). |
++| **2. Hitos y pruebas interminables; ya no sabe qué aprueba** | Los criterios de aceptación los escribe el mismo sistema que implementa, en lenguaje técnico (ej.: `K1_CORPUS_RECOVERY_DRY_RUN_PASS`, `N4_SCOPE_CHANGE_REQUIRED`, compuertas D1–D4). Aprobar eso exige entender el sistema por dentro. | **Tarjeta "Go" en lenguaje llano** con qué vas a ver distinto, costo y una opción recomendada por defecto. Regla: si el hito no se explica en 3 líneas sin siglas, no se aprueba. |
++| **3. Workflow manual y dependiente de Lean; necesita que la arquitectura se construya con menos inferencia suya** | Lean transporta contexto entre chats y toma decisiones técnicas sin ser arquitecto. Hay fricción concreta: N2 informa que la spec se buscó en Downloads y estaba en `Documents/specs vsg`, fuera del repo; N2 y N4 informan que no hay `AGENTS.md`. | **Marco de decisión escrito una sola vez** (`AGENTS.md`): el agente decide los "cómo" técnicos reversibles; Lean aprueba cambios visibles, gasto de tiempo/alcance y lo irreversible. Specs dentro del repo. Verificación automática + revisión por un segundo modelo. |
++
++**Por qué delegar el "cómo" es razonable acá (Lean aceptó este reparto):** Lean no puede juzgar arquitectura, pero sí puede juzgar imágenes. El control de calidad no depende de que entienda el diseño, sino de que cada hito traiga evidencia visible (antes/después) o declare que no cambia el output. La delegación necesita tres salvaguardas: checks determinísticos (tests, schemas, hashes), revisión por un modelo distinto del que implementó y registro de cada decisión en el estado del proyecto.
++
++---
++
++## 4. Valoración de SC (resumida)
++
++**Fortalezas**
++1. Principio rector claro y bajado a mecanismos: Identity Lock, Semantic Text Lock, `LOCKED_UNKNOWN`, Reference Isolation, distinción observado/inferido.
++2. Código del orquestador de buena calidad: estados explícitos (`GENERATION_READY`, `BLOCKED_*`, `REVIEW_REQUIRED`), locks derivados de la configuración. Tests del orquestador: 12/12 OK al ejecutarlos.
++3. Interfaz de comandos clara y componible (`/sc-2a`, `/sc-rdr2-elevation`, `/sc-preserve`…).
++4. Honestidad del estado: "Visual PASS: 0, Pending: 10"; los documentos N2/N4/P1R declaran sus límites (`STATIC_ONLY`, `NO_COMPATIBLE_BACKEND_VERIFIED`).
++5. Resultado visual convincente en el caso R2B-191-F: texto y layout se conservan; deriva menor en escalera de incendios, ventanas y techo.
++
++**Riesgos que siguen vigentes**
++- **Sin comparación contra un prompt directo:** no se sabe cuánto aporta SC sobre pedirle lo mismo al modelo (sección 7).
++- **Validación circular:** los "19/19" y "25/25" son sobre corpus armados con las mismas herramientas que construyen el sistema. Sirven como regresión.
++- **Adherencia entre sesiones no medida:** cada sesión nueva interpreta el repo adjunto (873 archivos, 52 MB) y no se sabe cuánto lee realmente.
++- **Evidencia solo con un motor (GPT):** el Core se declara agnóstico del motor, pero no hay validación con otro.
++- **VSG es una hipótesis, no una medición:** el grafo lo construye un modelo interpretando la imagen.
++- **La ruta estructural es un proyecto de desarrollo de modelo,** no una integración: sin backend compatible, con pesos, corpus, derechos y presupuesto pendientes (sección 8).
++
++**Alcance de la revisión (y límites)**
++- **Revisado:** README, estructura del zip, orquestador completo, `CHEAT_SHEET.md`, `STREETCRAFT.md`, `agent/AGENT_PROTOCOL.md`, `ROADMAP.md`, `development/coordination/` (incluido `CHECKPOINT.json`), README del piloto VSG-2B, y el caso visual F. Ejecutados: tests del orquestador.
++- **Leído solo parcialmente:** `N2_ARCHITECTURE_DECISION.md`, `N4_GLIGEN_FEASIBILITY_RUNBOOK.md` y `P1R_SCOPE_DECISION.md` (los primeros ~3 KB de cada uno).
++- **No revisado:** N1, N3, N5PV, `reference_runtime/`, el resto de `visual_scene_graph/` y los 490 archivos de `validation/`. No se ejecutó el benchmark VSG (falta `jsonschema`; no hay `requirements.txt`). El Archive externo no está en el repo.
++- **Versión del repo:** la revisión se basa en el zip subido. GPT/Codex confirmó sobre el repo vivo (3-oct-2026, commit `f7c594e`, árbol limpio) que el checkpoint coincide con el del zip en los campos verificados (sección 8.1, punto 4). Lo que no se verificó en vivo sigue dependiendo del zip.
++
++---
++
++## 5. Plan priorizado
++
++**Hacer ahora (en orden)**
++
++1. **Reencuadre y marco de decisión** (sección 6).
++2. **Carril de 7 días de VSG:** exploración visual de instrucciones derivadas de VSG, con decisión final (sección 8). No depende del reencuadre ni requiere aprobación previa de Lean; puede correr en paralelo con los pasos 1 y 3.
++3. **Flujo mínimo apoyado en el estado existente:** `AGENTS.md`, specs dentro del repo, un comando único de verificación y la vista en llano del `CHECKPOINT.json`.
++4. **Continuidad con sobre acotado** (sección 9): objetivo confirmado por Lean.
++5. **Test liviano de 12 imágenes** (sección 7).
++6. **Paquete de runtime chico + `/sc-status` + registro simple** por sesión (versión del repo, fecha, CLI usado).
++
++*Nota (v9): la exploración visual y la continuidad del desarrollo avanzan por separado. La regla de "un hito abierto a la vez", acordada antes con GPT, queda retirada por decisión de Lean (9-oct-2026): los hitos pueden avanzar en paralelo bajo las reglas de la sección 9.1.*
++
++**Se baja de prioridad o se pausa (por ser un proyecto personal)**
++
++- Ruta estructural de VSG (desarrollo de modelo): **pausada** y registrada en el checkpoint (commit `33b6581`) tras la estimación de la sección 8.4 (25–59 días-persona de referencia y un escenario de infraestructura de USD 113,19, que no es un mínimo ni el costo total); sin ampliar implementación ni pruebas hasta que Lean decida el esfuerzo (D3/D4).
++- Runner automático por API de imágenes (trabajo de construcción; el costo no está verificado en documentación oficial).
++- Experimento grande de 48–72 imágenes con segunda persona y umbrales estadísticos.
++- Compuertas formales G1–G3, VSG-3A/3B, VSG-4, VSG-5, el cierre formal de VSG-2B y la validación formal de BD01/BD02.
++- Limpieza del README pensada para extraños y el tema de derechos de las referencias de Pinterest.
++- Probar otro motor (Gemini): no urgente.
++
++---
++
++## 6. Primer paso: reencuadre y marco de decisión
++
++**Objetivo:** que Lean vuelva a entender qué está aprobando y que el agente construya con menos inferencia suya, **sin crear estructuras documentales paralelas**.
++
++**Qué incluye (una sesión):**
++- Una **vista en llano generada desde `CHECKPOINT.json`** (no una fuente de verdad nueva): cada hito abierto clasificado en **cerrar / pausar / mantener**, con la recomendación del agente y 2 líneas de justificación, sin siglas sin definir.
++- Un **`AGENTS.md`** con el marco de decisión (qué decide el agente, qué decide Lean), las reglas de paralelismo de la sección 9.1 (escritor único del checkpoint y archivos propios por agente), el tope de sesiones por hito y el sobre de autorización de la sección 9. Se mantiene como archivo separado porque no existe (lo informan N2 y N4 y se confirmó en el repo vivo) y es el archivo de instrucciones para agentes de código (su lectura automática por cada herramienta no está verificada en documentación oficial).
++- Las **decisiones se registran en el campo `decisions`/`events` del checkpoint**, no en un `DECISIONS.md` aparte.
++- **Specs dentro del repo** (`specs/`), no en carpetas locales.
++- La definición de "terminado" para VSG (sección 8) y el tope de **7 días**, ya decidido por Lean.
++
++**Recomendación:** que la vista generada la revise también un segundo modelo antes de que Lean la apruebe.
++
++**Plantilla de tarjeta "Go" (para todos los hitos):**
++
++```
++HITO: <nombre en lenguaje llano>
++Qué vas a ver distinto: <cambio visible en el output, o "nada visible">
++Qué cambia / qué no cambia: <2 líneas>
++Cómo se revierte: <rama/commit>
++Evidencia que te voy a mostrar: <imágenes, resultado de verificación>
++Costo: <sesiones/tiempo>
++Mi recomendación (por defecto): <opción>   ← respondé "default" para aceptarla
++```
++
++**Tarjeta "Go" de este primer paso (lista para pegar a GPT / Codex):**
++
++```
++HITO: Reencuadre y marco de decisión (v0)
++Qué vas a ver distinto: nada visible en el output; vas a tener el estado del proyecto en llano y reglas escritas de quién decide qué.
++Qué cambia: se agregan AGENTS.md (confirmado que no existe), una vista en llano generada desde CHECKPOINT.json y la carpeta specs/.
++Qué no cambia: core/, schemas/, hardening/, visual_scene_graph/ y validation/ (solo lectura). No se crea ninguna fuente de verdad paralela al checkpoint.
++Cómo se revierte: un solo commit; se revierte con `git revert`.
++Evidencia: diff con solo archivos nuevos (nada borrado); la vista con cada hito clasificado.
++Costo: una sesión.
++Mi recomendación (por defecto): aprobar la clasificación propuesta; el tope de VSG ya está fijado en 7 días.
++Decisión de Lean: corregir o aprobar la clasificación de hitos y el marco.
++Próxima acción: la exploración de la sección 8, que no requiere aprobación previa.
++```
++
++---
++
++## 7. Test liviano de 12 imágenes
++
++*Se puede hacer en paralelo con el carril de VSG de la sección 8: ambos usan la app de ChatGPT.*
++
++- **Fuentes:** 6 representativas de tu uso real (como mínimo las de R2b A–F si cubren lo que más usás).
++- **Condiciones:** (A) prompt directo de una o dos frases pidiendo el mismo resultado; (B) la misma fuente con el comando SC correspondiente. Una corrida por condición, y se evalúa la **primera** salida (sin rerun selectivo).
++- **Evaluación:** pares mezclados y sin etiquetas, juzgados por Lean. Por par: cuál prefiere y qué fallas críticas ve (identidad cambiada, texto alterado o inventado, deriva de cámara, detalle oculto "resuelto" como si fuera observado).
++- **Regla de decisión (escribirla antes de ver resultados):** propuesta de partida, SC se considera aporte si gana en **≥ 4 de 6 pares** y no tiene más fallas críticas que el control. Son umbrales míos para que Lean los ajuste.
++- **Alcance de la conclusión:** con 6 pares es **indicativo, no estadístico**.
++- **Registro mínimo por imagen:** hash de la fuente, comando o prompt exacto, modelo que muestra la app, fecha, versión del repo adjunto.
++- **Qué decide:** si SC gana, se sigue; si el margen es chico, se simplifica y se conservan los comandos que sí aportan; si pierde en algún tipo de escena, queda acotada la zona de trabajo.
++
++---
++
++## 8. VSG: tope de 7 días para ver resultados
++
++**Tope decidido por Lean, con el reloj reiniciado:** 7 días para ver resultados, medidos como **168 horas transcurridas desde la primera imagen válida de la exploración** (definición propuesta por GPT para que el tope sea medible). Si al cumplirse no hay resultados, la inversión en VSG se pausa. El checkpoint registra solo el **evento de inicio** (marca temporal, identificador y hash de la imagen), que es evidencia y no una fecha de vencimiento escrita; ningún documento fija una fecha de calendario. Reiniciar la exploración no reactiva GLIGEN ni habilita reinicios sucesivos automáticos: cada reinicio requiere una decisión explícita de Lean. Antes del reinicio llevaba más de 12 días en specs.
++
++### 8.1 Lo que dicen los documentos del repo
++
++1. **El piloto formal textual (VSG-2B)** genera por un "bridge" externo hacia una API de proveedor que no está configurado (`BLOCKED: NO_GENERATOR`). Lean genera en la app de ChatGPT, así que no se ejecuta como está diseñado. Su cierre exige al menos 4 pares válidos que incluyan el caso C (hoy `NO_GO_C0_UNVERIFIED`), semillas controladas y revisión con esquema propio.
++2. **En ese piloto las dos ramas llevan las mismas restricciones;** solo cambia cómo se expresan (JSONL dentro de un texto vs. arreglo tipado). Los dry runs de D, E y Kenny ya guardaron ambos payloads (`validation/vsg_2b/dry_runs/`).
++3. **La ruta estructural** (N2 → N4 → N5, base GLIGEN en Diffusers v0.29.0) no tiene backend compatible verificado (P1R: `NO_COMPATIBLE_BACKEND_VERIFIED`; N3: `N3_MODEL_DEVELOPMENT_REQUIRED`; N4: `N4_SCOPE_CHANGE_REQUIRED`, confianza `STATIC_ONLY`). Requiere un consumidor aprendido con pesos nuevos, corpus y derechos, protocolo de forwards, presupuesto y una enmienda de settings. N2 la describe como un hito de investigación "sujeto a decisión explícita sobre su esfuerzo".
++4. **Estado del checkpoint (zip subido; confirmado en el repo vivo el 3-oct-2026: commit `f7c594e`, árbol limpio, `main` al día con `origin/main`; no existe `AGENTS.md`):** `current_milestone: POST_M3_DECISION_GATE`; M1, M2 y M3 en `CLOSED`; D1 y D2 aprobados con alcance acotado (solo diseño y andamiaje aislado); **D3 y D4 pendientes**; `execution_authorized: false`, `model_tests: NOT_RUN`, `generated_images: 0`. La autorización de Lean dice expresamente que no autoriza ejecución del modelo ni generación de imágenes. **Actualización (11-oct-2026, decisión de Lean):** la generación de imágenes ya no requiere su aprobación previa. El checkpoint publicado todavía dice, según la cita de GPT, que la ejecución de modelos y las imágenes siguen sin autorizar hasta una aprobación explícita. Corresponde registrar una **autorización específica para la exploración textual** (seis salidas, tres pares, con la app de ChatGPT), conservando la autorización histórica, manteniendo GLIGEN desautorizado y D3/D4 pendientes. GPT coincide: generar queda autorizado y evaluar los resultados sigue siendo responsabilidad de Lean.
++5. **VSG-3A/3B** dependen de salidas reales y anotaciones de 2B (según el ROADMAP); VSG-4 y VSG-5 están diferidos.
++
++### 8.2 Dos rutas y qué demuestra cada una
++
++| Ruta | Qué es | Qué demuestra | Qué **no** demuestra | ¿Cabe en el tope de 7 días? |
++| --- | --- | --- | --- | --- |
++| **Exploración textual** (nombre: "exploración visual de instrucciones derivadas de VSG") | Pegar en la app dos versiones de instrucciones textuales (payload A y B de D, E y Kenny) junto con la imagen fuente | Cómo responde el generador a dos instrucciones textuales con el mismo contenido | Que un consumidor estructural use el grafo; no cierra VSG-2B; no juzga la arquitectura | **Sí** |
++| **Estructural** (GLIGEN + consumidor aprendido) | Un modelo que consuma el grafo como estructura, en lugar de texto | (Si se hiciera) si el grafo es útil usado como estaba previsto | — | **No prometible:** hay trabajo de modelo pendiente, pero no existe una estimación definitiva; requiere decisión de esfuerzo de Lean (D3/D4) |
++
++### 8.3 Exploración textual: pasos
++
++*La exploración no depende de la continuidad (sección 9) ni del reencuadre (sección 6): puede arrancar sin supervisor y sin aprobación previa de Lean.*
++
++El reloj de 7 días arranca con la primera imagen generada. Los pasos van en orden, sin fechas de calendario:
++
++| Paso | Qué pasa | Quién |
++| --- | --- | --- |
++| 1 | Se congela el cierre formal de VSG-2B (no se cierra en esta exploración). | Agente |
++| 2 | Se arma un paquete manual por caso (D, E, Kenny): imagen fuente, texto del payload A, texto del payload B y el orden de pares mezclado, con la clave guardada aparte. | Agente |
++| 3 | En la app de ChatGPT, una sesión nueva por imagen (6 imágenes): adjuntar la fuente, pegar el payload y generar. Anotar el modelo que muestra la app y la fecha de la corrida. Sin reintentos. | Lean (sin aprobación previa) |
++| 4 | Mirar los 3 pares sin etiquetas: cuál preferís y qué fallas críticas ves (identidad, texto, oclusor o zona desconocida, deriva de cámara). Opcional: adjuntar los pares a un chat con Claude como segunda opinión, sin reemplazar tu juicio. | Lean |
++| 5 | Decisión según la regla de abajo. | Lean decide |
++
++**Terminado para este carril (una frase):** "Dentro del tope de 7 días veo 3 pares de imágenes, cada uno con dos representaciones textuales del mismo contenido de restricciones (A: las restricciones del CGC como texto; B: las mismas restricciones desde el contrato compilado por VSG-2A, como arreglo tipado), para D, E y Kenny, y decido si vale la pena invertir más."
++
++*Ambos payloads contienen restricciones: no es una comparación entre presencia y ausencia del grafo (verificado por GPT en N2 y P1R).*
++
++**Regla de decisión (propuesta; fijarla antes de ver las imágenes):**
++- **Se observó una ventaja** (≥ 2 de 3 pares prefieren la versión B, sin más fallas críticas): se considera invertir en la ruta estructural. Esa inversión es una decisión de esfuerzo de Lean (D3/D4), no automática.
++- **No se observó ventaja** (cualquier otro resultado, incluidos empates): significa que *en estas tres comparaciones no se vio una ventaja*. Alcanza para **pausar la inversión en VSG por decisión personal**. No permite concluir que el grafo carezca de utilidad ni descartar la ruta estructural. Lo construido queda en modo sombra.
++- En ambos casos el reporte debe decir: 3 pares son anecdóticos, las semillas no están controladas y el nombre del ensayo es "exploración visual de instrucciones derivadas de VSG", no "cierre de VSG-2B".
++
++**Límites de la exploración (propuestos por GPT, aceptados por Claude):**
++- Seis salidas (3 pares), sin reintentos selectivos.
++- Gasto adicional autorizado: cero; sin cambio automático a una API ni a otro proveedor.
++- Se registran intentos, salidas, fallas y el uso disponible; si la cuota se desconoce, se registra `UNKNOWN`.
++- El test separado de 12 imágenes (sección 7) no consume este mismo presupuesto.
++
++### 8.4 Ruta estructural: estimación y pausa
++
++**Entregado por GPT/Codex:** una recomendación de **pausar la ejecución** de la ruta estructural, en un informe con fundamentos y cálculos (`GLIGEN_RECOMENDACION_2026-10-03.md`, **fuera del repo**; Claude no lo leyó, solo vio el resumen).
++
++| Concepto | Resumen entregado |
++| --- | --- |
++| Qué falta | Pesos entrenados, datos y licencias, entorno verificado, criterios congelados y presupuesto completo |
++| Trabajo | Referencia conservadora de **25–59 días-persona**, basada en N2/N3. Excluye datos, esperas y revisión externa. M3 no demuestra cuánto puede descontarse. |
++| Gasto | Escenario de **USD 113,19** de infraestructura, calculado con un techo propuesto de 34 GPU-h, cuatro núcleos, 64 GiB de RAM y almacenamiento (tarifas de Modal). **No es un mínimo ni el costo total:** ingeniería, datos y revisión siguen sin cotizar. Los cálculos y las tarifas no fueron verificados: el informe está fuera del repo y el hash registrado no acredita su contenido. |
++
++**Valoración de Claude:**
++- **Coincide con pausar.** Es mucho esfuerzo para un proyecto personal cuyo output ya sirve, y deja la ruta fuera de los 7 días.
++- **Orden de magnitud, no cifra firme:** el rango es amplio y la estima viene del mismo agente que diseñó la ruta.
++- **Faltan dos cosas que se pidieron:** un entregable concreto que Lean pueda ver y las unidades que le importan (sus horas, los días de calendario y el gasto total). "Días-persona" no decide su caso.
++
++**Estado:** pausa **registrada** en `CHECKPOINT.json` (commit `33b6581`, informado por GPT/Codex). Claude no lo verificó: `git show 33b6581 --stat` debería mostrar cambios solo en ese archivo. El registro incluye la razón, la estimación de 25–59 días-persona y el hash del informe; D3/D4 siguen `PENDING`, lo construido se preserva, VSG continúa en modo sombra y no se ejecutaron pruebas ni se amplió la implementación. Tarjeta "Go" usada, para referencia:
++
++```
++HITO: Pausar la ruta estructural de VSG (GLIGEN)
++Qué vas a ver distinto: nada en el output.
++Qué cambia: el checkpoint registra la pausa, la razón y la estimación (con el hash del informe). D3/D4 siguen PENDING. No se hacen más pruebas ni implementación.
++Qué no cambia: lo ya construido queda; VSG sigue en modo sombra.
++Cómo se revierte: con una decisión explícita de esfuerzo (D3/D4).
++Costo: una sesión corta.
++Mi recomendación (por defecto): pausar.
++Reabrir si: la exploración textual muestra ventaja (≥ 2 de 3 pares) y Lean decide asignar el esfuerzo estimado.
++```
++
++---
++
++## 9. Continuidad del desarrollo con autonomía acotada
++
++**Objetivo (confirmado por Lean el 11-oct-2026):** que la Mac siga desarrollando SC mientras Lean está ausente.
++
++**Estado actual (verificado en el repo vivo: no existe `AGENTS.md`):** `CHECKPOINT.json` ya tiene `resume`, `events` y `next_milestone`, así que permite **retomar**. En el zip no encontré mención de un supervisor ni de una continuación persistente (buscar una palabra no prueba su ausencia funcional), que es lo que permitiría **avanzar sin Lean**.
++
++**Riesgo:** un agente sin supervisión y sin topes reproduce justo las fallas 1 y 2 (más hitos, más specs), pero sin nadie presente. Con varios agentes en paralelo el riesgo crece: más hitos a la vez y más posibilidades de que dos agentes se pisen el estado; por eso valen las reglas de la sección 9.1.
++
++**Sobre de autorización (versión simplificada, acordada entre Claude y GPT; vive en `AGENTS.md`).** Antes de cada tanda de trabajo Lean fija cinco cosas:
++
++1. **Objetivo.**
++2. **Tareas permitidas.**
++3. **Límites de gasto y de uso** (incluida la cuota).
++4. **Evidencia de cierre** de cada tarea.
++5. **Condiciones de parada** (bloqueo, decisión pendiente, límite agotado).
++
++El agente ejecuta solo ese alcance, guarda el progreso en el checkpoint y se detiene ante cualquier condición de parada. Siguen requiriendo a Lean: D3/D4 y cualquier otra autorización de alcance, el gasto fuera de los límites, ejecutar modelos (hoy no autorizado) y abrir hitos nuevos. **La generación de imágenes ya no requiere aprobación previa de Lean** (decisión del 11-oct-2026); sigue sujeta a los límites de gasto y de uso del sobre.
++
++**Commits y push:** Lean ya los autorizó y viene trabajando sin ramas, así que esa política no cambia sin una razón concreta. Razón a considerar: en cada sesión Lean adjunta el repo desde GitHub, de modo que lo que esté en `main` es lo que ChatGPT lee como SC; un push sin supervisión que rompa algo contaminaría el uso diario. Alternativa sin ramas: fijar el runtime a una versión estable (un tag, o el paquete de runtime chico, si la app no permite elegir versión) y registrar en el checkpoint el último commit verificado para poder revertir con un comando. **Con agentes en paralelo (v9)** aparece una razón concreta para reabrir el punto: si todos escriben sobre `main` sin ramas ni copias separadas, se pisan entre sí; hace falta aislar a cada agente en su rama o copia de trabajo. **Decisión de Lean.**
++
++**Topes duros:** máximo de sesiones/horas/commits por tanda de trabajo; tope de hitos abiertos en paralelo, fijado por Lean en el sobre de autorización (un número fijo; no crece automáticamente al agregar agentes); parada automática ante cualquier bloqueo.
++
++### 9.1 Orquestación multiagente (v9)
++
++**Roles propuestos** (ajustables por Lean): un **orquestador** (líder, es con quien habla Lean), uno o más **implementadores** y un **verificador** de un modelo distinto del que implementó (salvaguarda de la sección 3).
++
++**Reglas que reemplazan al límite de un hito a la vez:**
++1. **Escritor único del checkpoint:** solo el orquestador escribe `CHECKPOINT.json` (`events`, `decisions`, pausas, último commit verificado). Los demás agentes le reportan sus resultados y no editan ese archivo. Sigue siendo la única fuente de verdad, sin estructuras paralelas.
++2. **Archivos propios:** cada implementador trabaja solo sobre los archivos o carpetas que la tarjeta "Go" de su hito le asigna. Si dos hitos necesitan tocar lo mismo, el orquestador los secuencia.
++3. **Aislamiento:** cada implementador trabaja en su propia rama o copia de trabajo (ver "Commits y push"). Cómo se logra eso en cada entorno de orquestación es una pregunta abierta que debe resolverse con la documentación oficial de cada herramienta; este documento no afirma nada al respecto.
++4. **Revisión antes de integrar:** el verificador revisa el diff de cada hito antes de que se integre a `main`.
++5. **Lectura para Lean:** el orquestador entrega cada cierre en la vista en llano (cerrar / pausar / mantener) y con la tarjeta "Go"; lo que Lean decide sigue siendo lo del sobre de autorización.
++6. **Integración serial:** los hitos se integran de a uno, y el verificador revisa contra el commit que realmente se integra.
++7. **Checkpoint sin versiones viejas:** el orquestador rechaza actualizaciones del checkpoint basadas en una versión antigua.
++8. **Tarea acotada:** cada tarea tiene un entregable observable, un límite de esfuerzo y un cierre explicable en tres líneas.
++
++*Reglas 6 a 8 y el tope numérico: propuestas por GPT, aceptadas por Claude.*
++
++**Prueba corta:** una corrida de prueba bajo el sobre, midiendo si el resumen de cierre le permite a Lean decidir en menos de 5 minutos.
++
++---
++
++## 10. Decisiones de Lean y pendientes
++
++**Decisiones tomadas**
++1. **Tope para VSG:** 7 días para ver resultados (llevaba más de 12 días en specs); reloj reiniciado, ver decisión 6.
++2. **Delegación:** el agente y sus skills deciden los "cómo" técnicos reversibles bajo el marco de decisión; Lean aprueba lo visible, el alcance y lo irreversible.
++3. **Ruta estructural de VSG (GLIGEN):** pausada y registrada en el checkpoint (commit `33b6581`, informado por GPT/Codex), tras la estimación de la sección 8.4. Se reabre solo si la exploración textual muestra ventaja en ≥ 2 de 3 pares y Lean decide asignar el esfuerzo mediante D3/D4.
++4. **Regla de un hito a la vez: retirada (9-oct-2026).** Lean prefiere ir más rápido; los hitos avanzan en paralelo con agentes coordinados por un orquestador (sección 9.1).
++5. **Escritor único del checkpoint (9-oct-2026):** solo el orquestador escribe `CHECKPOINT.json`; los demás agentes le reportan (sección 9.1).
++6. **Reloj de VSG reiniciado (11-oct-2026):** en lugar de parquear, se reinicia el tope de 7 días. Arranca con la primera imagen de la exploración y no tiene fecha de calendario.
++7. **Imágenes sin aprobación previa de Lean (11-oct-2026):** la generación de imágenes ya no requiere su aprobación. Sigue valiendo su juicio sobre los resultados (acordado entre Claude y GPT; Lean puede delegarlo si lo decide) y los límites de gasto y de uso del sobre. El checkpoint debe registrar el cambio.
++8. **Sin expectativas de fechas de calendario ni contenido de tutoriales (11-oct-2026):** el documento no fija fechas de vencimiento ni cronogramas por día, y no afirma nada sobre productos que no provenga de documentación oficial o del propio repo.
++9. **Dictamen de GPT sobre la v10: APROBADO CON CAMBIOS (11-oct-2026).** Las cinco objeciones se incorporaron en esta versión.
++10. **Confirmaciones de Lean (11-oct-2026):** el reloj de VSG se mide como 168 horas desde la primera imagen válida de la exploración, y la continuidad del desarrollo sin su presencia es un objetivo.
++
++**Pendientes de Lean**
++- **Adjuntar imágenes de uso real:** 4 a 6 fuentes que representen lo que más usás y, si podés, un resultado que te gustó y uno con una falla. Con eso se eligen las fuentes del test de 12 imágenes y los tipos de falla a mirar.
++- **Aprobar la tarjeta "Go"** del primer paso (sección 6).
++- **Decidir** la política de commits y push (sección 9), ahora con agentes en paralelo.
++- **Elegir** el entorno del orquestador (decisión a tomar con la documentación oficial de cada opción) y confirmar los roles de la sección 9.1.
++- **Pasar al agente con acceso al checkout de la Mac** el registro de la autorización específica de la exploración y de las reglas en `AGENTS.md` y el checkpoint, sin tocar la pausa de GLIGEN.
++
++**Verificado en el repo vivo (3-oct-2026, por el agente con acceso al checkout de la Mac)**
++- M3 cerrado (commit `f7c594e`); árbol limpio y `main` al día con `origin/main`.
++- `D1` y `D2` aprobados con alcance acotado; `D3` y `D4` pendientes; `execution_authorized: false`; `generated_images: 0`.
++- No existe `AGENTS.md`.
++- Estimación de la ruta estructural entregada (sección 8.4); GPT no abrió hitos nuevos ni amplió implementación o pruebas.
++- Pausa de la ruta estructural registrada en el checkpoint (commit `33b6581`): informada por el agente de la Mac y **verificada después por GPT en el remoto de GitHub** (`main` en `33b6581`, que modifica solo el checkpoint; el checkpoint publicado muestra la pausa y D3/D4 pendientes).
++- GPT no tiene acceso al checkout de la Mac: inspeccionó un checkout propio en `2a489a6` y el remoto. El estado limpio de la Mac sigue sin verificación independiente.
++
++---
++
++## 11. Registro de desacuerdos Claude / GPT
++
++**Qué vio cada agente:** el **repo vivo está en la Mac de Lean** y solo lo ve el agente con acceso a ese checkout; la instancia de GPT que dictaminó la v10 ve únicamente el remoto de GitHub (`main` en `33b6581`) y un checkout propio (`2a489a6`); Claude trabajó solo sobre el zip subido (snapshot) y con lecturas parciales de varios documentos. GPT reconoció que su recomendación sobre M3 se apoyaba en el último resultado compartido en la conversación y no en el checkpoint vivo. Ninguno ejecutó el benchmark VSG completo. La concesión de uno al otro **no cuenta como prueba**; lo que cuenta es la evidencia citada. El 3-oct-2026 GPT/Codex ejecutó `git status`, `git log -1` y la lectura de campos del checkpoint sobre el repo vivo; Claude no pudo leer el informe GLIGEN, que queda fuera del repo.
++
++| # | Tema | Claude | GPT | Estado | Qué lo resolvió o lo resolvería (y quién) |
++| --- | --- | --- | --- | --- | --- |
++| 1 | Qué prueba la exploración textual | Muestra la respuesta del generador a dos textos; la v4 concluyó de más | No prueba el consumo estructural; debe tener nombre y conclusión propios | **Resuelto (acuerdo)** | Aplicado en 8.2–8.3 |
++| 2 | Interpretación de los empates | Tres empates = "no se observó ventaja"; se retiró "VSG no cambia el output" | Tres empates no demuestran que el grafo carezca de utilidad | **Resuelto (acuerdo)** | Aplicado en la regla de decisión (8.3) |
++| 3 | Estado de M3 | El checkpoint del zip lo mostraba `CLOSED`, con D3/D4 pendientes | Su "cerrar M3" estaba desactualizado | **Resuelto (verificado en vivo)** | `git status`, `git log -1` y campos del checkpoint, ejecutados por GPT/Codex |
++| 4 | Ruta estructural en 7 días | Lectura parcial: hay trabajo de modelo pendiente; la v5 sobreafirmó que "no cabe" | No está demostrado que quede fuera; el agente debe estimar y recomendar | **Resuelto:** GPT entregó la estimación, recomendó pausar y registró la pausa en el checkpoint (commit `33b6581`); Claude coincidió (orden de magnitud, no cifra firme) | Informe `GLIGEN_RECOMENDACION_2026-10-03.md` y registro en el checkpoint; reapertura solo con ventaja textual y decisión de Lean (D3/D4) |
++| 5 | Orden: cerrar M3 antes o no | No debe retrasar la evidencia visual | Aplica "un hito activo" a la cadena de desarrollo; las imágenes se evalúan aparte | **Resuelto (acuerdo); reemplazado en v9** | Aplicado en la nota de la sección 5; la regla se retira en la v9 por decisión de Lean (9-oct-2026) |
++| 6 | Estructuras documentales | La vista en llano se genera desde `CHECKPOINT.json`; las decisiones van al checkpoint; `AGENTS.md` aparte | Evitar otra estructura paralela | **Resuelto:** `AGENTS.md` no existe (verificado), se crea en el primer paso | Verificación en vivo |
++| 7 | Continuidad sin Lean | Sí, con límites y condiciones de parada | Sí; sobre simplificado: objetivo, tareas, límites, evidencia de cierre y parada | **Resuelto (acuerdo)** | Corrida de prueba bajo el sobre (sección 9) |
++| 8 | "Única vía" a imágenes | La v5 dijo "la única vía con la app" | Es la vía práctica identificada, no quedó acreditado que sea la única | **Resuelto (acuerdo)** | Redacción corregida |
++| 9 | Ramas y prohibición de push a `main` | Propuso ramas; ahora la retira como regla | Lean ya autorizó commits y push y trabaja sin ramas; cambiarlo requiere una razón concreta | **Abierto: decide Lean** | Razón y alternativa en la sección 9 (`main` = lo que ChatGPT lee; fijar el runtime a un tag o paquete); v9: con agentes en paralelo hace falta aislar a cada uno en su rama o copia |
++| 10 | Secuencia: exploración vs. supervisor | La exploración no debe esperar a la continuidad | Aceptó que depender del supervisor volvería a postergar las imágenes | **Resuelto (acuerdo)** | Aplicado en 8.3 |
++| 11 | Contenido de la estimación | Faltan un entregable concreto que Lean pueda ver y las unidades que le importan (sus horas, días de calendario, gasto total) | Entregó trabajo en días-persona y gasto de infraestructura; reconoce que no es el costo total | **Abierto (menor)** | Revisar el informe completo (Claude no lo leyó) |
++| 12 | Un hito a la vez vs. paralelismo | Recomendó el límite para frenar las fallas 1 y 2 (hitos que se producen más rápido de lo que se usan) | Dictaminó la v10 como APROBADO CON CAMBIOS; no objetó el retiro, pidió completar las reglas (filas 15 a 19) | **Retirado por decisión de Lean (9-oct-2026)** | Lean prioriza la velocidad; se mantienen el escritor único del checkpoint y los archivos propios por agente (sección 9.1) |
++| 13 | Retiro de expectativas de fechas y de contenido de tutoriales (v10) | Aplicado por decisión de Lean | Revisó: quedan una afirmación de producto sin fuente (lectura automática de `AGENTS.md`) y un precio no comprobado | **Resuelto en la v11** | Correcciones aplicadas |
++| 14 | Imágenes sin aprobación previa de Lean (v10) | Aplica a generar, no al juicio sobre los resultados | Coincide; exige una autorización específica en el checkpoint, separada de GLIGEN | **Resuelto en lo conceptual; falta registrarlo** | Lo registra el agente con acceso al checkout de la Mac |
++| 15 | Qué compara el A/B | La v10 decía "con y sin instrucciones derivadas de VSG" | Ambos payloads contienen restricciones: son dos representaciones textuales del mismo contenido, no presencia vs. ausencia del grafo | **Resuelto (Claude corrige)** | Payloads y N2/P1R |
++| 16 | Definición del reloj | Tope de 7 días sin fecha de calendario | 168 horas desde la primera imagen válida; evento de inicio registrado; sin reinicios automáticos | **Resuelto (acuerdo);** unidad confirmada por Lean | El orquestador registra el evento de inicio |
++| 17 | Reglas de paralelismo | Escritor único y archivos propios | Agregar integración serial, revisión contra el commit integrado, rechazo de checkpoint viejo, tope numérico fijo y tareas acotadas | **Resuelto (acuerdo)** | Aplicado en 9 y 9.1 |
++| 18 | Estimación de infraestructura | "Al menos USD 113,19" | El checkpoint lo describe como escenario, no como mínimo | **Resuelto (Claude corrige)** | Aplicado en 5 y 8.4; el informe sigue sin auditar |
++| 19 | Supervisor, continuidad y productos | "0 coincidencias" probaba la ausencia; la continuidad estaba por confirmar | Buscar una palabra no prueba ausencia; hay afirmaciones de producto sin fuente | **Resuelto (acuerdo)** | Aplicado en 5, 9 y 10 |
++
++**Reglas para que la interobjetividad sirva:**
++1. Separar **hechos verificables** (archivo, comando, hash) de **interpretaciones**.
++2. Cada agente declara **qué versión del repo vio**.
++3. Todo desacuerdo se registra con **qué evidencia lo resolvería y quién puede obtenerla**.
++4. Lean arbitra solo lo que puede juzgar: imágenes, alcance y tiempo.
++5. Un acuerdo entre agentes **no es evidencia**; una citada, sí.
++6. Un estado se verifica **ejecutando el comando sobre el repo vivo**; nadie lo da por vigente de memoria (ni GPT ni Claude).
+diff --git a/validation/sc_multiagent/ACTIVITY.json b/validation/sc_multiagent/ACTIVITY.json
+new file mode 100644
+index 0000000..b1329c2
+--- /dev/null
++++ b/validation/sc_multiagent/ACTIVITY.json
+@@ -0,0 +1,117 @@
++{
++  "base_commit": "33b6581353b18004a4818e8fc597b5455ba7ccf3",
++  "profile_dispatch": "manual task instructions; named TOML selection unavailable",
++  "samples": [
++    {
++      "at": "2026-10-13T01:58:10.960063+00:00",
++      "source": "collaboration.list_agents",
++      "running": [
++        "/root",
++        "/root/sc_architecture",
++        "/root/sc_camera",
++        "/root/sc_history"
++      ],
++      "active_subagents": 3
++    },
++    {
++      "at": "2026-10-13T02:00:33.843324+00:00",
++      "source": "completion notifications and spawn_agent",
++      "running": [
++        "/root",
++        "/root/sc_implementer"
++      ],
++      "completed": [
++        "/root/sc_architecture",
++        "/root/sc_camera",
++        "/root/sc_history"
++      ],
++      "active_subagents": 1
++    }
++  ],
++  "agents": [
++    {
++      "task_id": "SC-MULTIAGENT-01-P1-ARCH",
++      "thread_name": "/root/sc_architecture",
++      "requested_model": "gpt-6.1-sol",
++      "requested_reasoning": "medium",
++      "phase": "P1",
++      "runtime_metadata": {
++        "id": "01a132fa-abd9-7240-bb12-20ef93b7341c",
++        "model": "gpt-6.1-sol",
++        "reasoning_effort": "medium",
++        "sandbox_policy": "{\"type\":\"disabled\"}",
++        "approval_mode": "never",
++        "cwd": "/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2",
++        "created_at_ms": 1791856651225,
++        "updated_at_ms": 1791856717863,
++        "agent_role": null
++      },
++      "result": "PASS_DOCUMENTARY",
++      "report": "sc_architecture_REPORT.md"
++    },
++    {
++      "task_id": "SC-MULTIAGENT-01-P1-CAMERA",
++      "thread_name": "/root/sc_camera",
++      "requested_model": "gpt-6.1-sol",
++      "requested_reasoning": "medium",
++      "phase": "P1",
++      "runtime_metadata": {
++        "id": "01a132fa-db40-7f70-af47-adec2d11d90a",
++        "model": "gpt-6.1-sol",
++        "reasoning_effort": "medium",
++        "sandbox_policy": "{\"type\":\"disabled\"}",
++        "approval_mode": "never",
++        "cwd": "/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2",
++        "created_at_ms": 1791856663361,
++        "updated_at_ms": 1791856727799,
++        "agent_role": null
++      },
++      "result": "PASS_DOCUMENTARY",
++      "report": "sc_camera_REPORT.md"
++    },
++    {
++      "task_id": "SC-MULTIAGENT-01-P1-HISTORY",
++      "thread_name": "/root/sc_history",
++      "requested_model": "gpt-6.1-sol",
++      "requested_reasoning": "medium",
++      "phase": "P1",
++      "runtime_metadata": {
++        "id": "01a132fb-0cc0-7702-9a59-c28da9944ee9",
++        "model": "gpt-6.1-sol",
++        "reasoning_effort": "medium",
++        "sandbox_policy": "{\"type\":\"disabled\"}",
++        "approval_mode": "never",
++        "cwd": "/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2",
++        "created_at_ms": 1791856676032,
++        "updated_at_ms": 1791856725859,
++        "agent_role": null
++      },
++      "result": "PASS_DOCUMENTARY",
++      "report": "sc_history_REPORT.md"
++    },
++    {
++      "task_id": "SC-MULTIAGENT-01-P2-DOC",
++      "thread_name": "/root/sc_implementer",
++      "requested_model": "gpt-6.1-sol",
++      "requested_reasoning": "medium",
++      "phase": "P2",
++      "write_authorization": "NONE; proposal-only fallback",
++      "runtime_metadata": {
++        "id": "01a132fc-edfa-7a22-ab5f-6b4f08e0111b",
++        "model": "gpt-6.1-sol",
++        "reasoning_effort": "medium",
++        "sandbox_policy": "{\"type\":\"disabled\"}",
++        "approval_mode": "never",
++        "cwd": "/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2",
++        "created_at_ms": 1791856799226,
++        "updated_at_ms": 1791856882525,
++        "agent_role": null
++      },
++      "result": "PASS_PROPOSAL / ISOLATION_BLOCKED_WRITES",
++      "report": "sc_implementer_REPORT.md"
++    }
++  ],
++  "maximum_observed_active_subagents": 3,
++  "quota": "UNKNOWN",
++  "runtime_metadata_source": "Read-only local Codex threads database; not a self-reported profile model. agent_role=null confirms named role was not selected."
++}
+diff --git a/validation/sc_multiagent/CAPABILITY_CHECK.json b/validation/sc_multiagent/CAPABILITY_CHECK.json
+new file mode 100644
+index 0000000..2cf14fa
+--- /dev/null
++++ b/validation/sc_multiagent/CAPABILITY_CHECK.json
+@@ -0,0 +1,32 @@
++{
++  "at": "2026-10-13T01:57:17.315213+00:00",
++  "base_commit": "33b6581353b18004a4818e8fc597b5455ba7ccf3",
++  "checkpoint_digest": "2c60a49a3d58581dc40602e9c9357ea4d8ca842a0520d18b1b0bbc8d96ea1cc0",
++  "active_extension": "26.930.61225",
++  "installed_extension": "26.1007.21434",
++  "cli": "0.160.1",
++  "project_trusted": true,
++  "effective_agents": {
++    "enabled": true,
++    "max_concurrent_threads_per_session": 3
++  },
++  "model_catalog": {
++    "implementer": "gpt-6.1-sol",
++    "verifier": "gpt-6-astra",
++    "availability": "catalog and live collaboration tool enum; runtime identity must be reported"
++  },
++  "live_permissions": {
++    "filesystem": "unrestricted",
++    "sandbox_mode": "danger-full-access",
++    "approval_policy": "never",
++    "per_agent_override_exposed": false
++  },
++  "client_capability": "CLIENT_CAPABILITY_BLOCKED: current collaboration.spawn_agent has no named-profile selector; fresh debug prompt-input does not expose the five project custom agent names",
++  "write_isolation": "ISOLATION_BLOCKED: shared unrestricted tools; no verified per-child writable root restriction",
++  "adaptation": "Run real analysis agents with explicit profile instructions; no delegated filesystem writes. Main session serializes documentation implementation. No custom-profile loading or enforced read-only claim.",
++  "quota": "UNKNOWN",
++  "official_sources": [
++    "https://learn.chatgpt.com/docs/agent-configuration/subagents",
++    "https://learn.chatgpt.com/docs/config-file/config-basic"
++  ]
++}
+diff --git a/validation/sc_multiagent/CHECKS.json b/validation/sc_multiagent/CHECKS.json
+new file mode 100644
+index 0000000..67fe2fb
+--- /dev/null
++++ b/validation/sc_multiagent/CHECKS.json
+@@ -0,0 +1,34 @@
++{
++  "at": "2026-10-13T02:03:20.056427+00:00",
++  "base_commit": "33b6581353b18004a4818e8fc597b5455ba7ccf3",
++  "toml_syntax": {
++    "files": 6,
++    "result": "PASS"
++  },
++  "effective_project_config": {
++    "result": "PASS",
++    "enabled": true,
++    "max_concurrent_threads_per_session": 3,
++    "source": "fresh codex app-server config/read --strict-config, no model turn"
++  },
++  "compatibility_tests": {
++    "command": "PYTHONDONTWRITEBYTECODE=1 /tmp/sc-multiagent-01-test-env/bin/python -m unittest command_invocation.test_backdrop_presets integration.test_streetcraft_orchestrator",
++    "cwd": "/tmp/sc-multiagent-01-worktree",
++    "initial_result": "25 PASS, 2 import errors: jsonschema absent from system Python",
++    "correction": "one retry after jsonschema 4.26.0 installation in isolated /tmp test venv; no global dependency changes",
++    "tests": 27,
++    "result": "PASS",
++    "runtime_seconds": 0.982
++  },
++  "preservation": {
++    "baseline_tracked_files": 787,
++    "unchanged_prior_noncheckpoint_files": 786,
++    "result": "PASS",
++    "prior_checkpoint_decisions_authorizations_structural_route_milestones_and_events": "PRESERVED"
++  },
++  "images_generated": 0,
++  "gligen_model_calls": 0,
++  "new_tests": 0,
++  "additional_spend": 0,
++  "quota": "UNKNOWN"
++}
+diff --git a/validation/sc_multiagent/ISOLATION_CHECK.json b/validation/sc_multiagent/ISOLATION_CHECK.json
+new file mode 100644
+index 0000000..e0b2bdd
+--- /dev/null
++++ b/validation/sc_multiagent/ISOLATION_CHECK.json
+@@ -0,0 +1,16 @@
++{
++  "base_commit": "33b6581353b18004a4818e8fc597b5455ba7ccf3",
++  "path_assigned": "/tmp/sc-multiagent-01-worktree",
++  "path_actual": "/private/tmp/sc-multiagent-01-worktree",
++  "parent_runtime_cwd": "/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2",
++  "implementer_shell_workdir_observed": "/tmp/sc-multiagent-01-worktree",
++  "filesystem_policy": "disabled/unrestricted",
++  "enforced_write_isolation": "BLOCKED",
++  "implementer_modified_files": [],
++  "worktree_before_after_hashes_match": true,
++  "root_applied_files": [
++    "docs/SC_MULTIAGENT_QUICKSTART.md"
++  ],
++  "root_adaptation": "Task example checkout aligned to actual P1 path; three analyses are documentary and can read principal.",
++  "statement": "No delegate writes or isolated-write certification. Detached worktree verified for read path only; proposal applied serially by root."
++}
+diff --git a/validation/sc_multiagent/P2_QUICKSTART.patch b/validation/sc_multiagent/P2_QUICKSTART.patch
+new file mode 100644
+index 0000000..e704345
+--- /dev/null
++++ b/validation/sc_multiagent/P2_QUICKSTART.patch
+@@ -0,0 +1,93 @@
++--- a/docs/SC_MULTIAGENT_QUICKSTART.md
+++++ b/docs/SC_MULTIAGENT_QUICKSTART.md
++@@ -36,7 +36,89 @@
++ 
++ ## Ejemplo basado en contratos existentes
++ 
++-<!-- P2: completar mediante propuesta del implementador; sin cambiar runtime. -->
+++Este ejemplo audita documentación existente de Kenny y los contratos de cámara.
+++No solicita generación, ejecuta runtime ni evalúa imágenes. Kenny aporta un caso
+++con fachada observada, relaciones protegidas y rooftop de diseño inferido; no se
+++presupone su ciudad ni su fecha histórica. Comparar BD01/BD02 aquí no declara que
+++una fachada aislada sea una fuente adecuada para un backdrop panorámico.
+++
+++### Tarjetas de los tres análisis
+++
+++El orquestador entrega una tarjeta completa a cada especialista antes de iniciarlo.
+++Para reproducir una tarea, verificar primero HEAD y digest actuales; los siguientes
+++valores identifican la base usada en este piloto, no un estado futuro.
+++
+++Campos comunes de las tres tarjetas:
+++
+++```text
+++base_commit: 33b6581353b18004a4818e8fc597b5455ba7ccf3
+++checkpoint_digest: 2c60a49a3d58581dc40602e9c9357ea4d8ca842a0520d18b1b0bbc8d96ea1cc0
+++checkout_asignado: /Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2
+++archivos_permitidos: []
+++dependencias: ninguna entre los tres análisis; preparación del orquestador completada
+++entregable_observable: cinco hallazgos citados, con observación, inferencia y recomendación separadas; sin patch
+++limite_de_esfuerzo: 8 minutos por análisis, dentro del máximo de 60 minutos de la sesión
+++gasto_adicional: cero
+++condiciones_de_parada: base o digest distintos, necesidad de escritura, gasto, deriva de alcance o parada global
+++referencias_y_contratos: AGENTS.md, perfil propio .codex/agents/sc_*.toml, checkpoint, README.md, STREETCRAFT.md, agent/AGENT_PROTOCOL.md y contratos específicos indicados abajo
+++```
+++
+++Completar los campos específicos de cada tarjeta:
+++
+++| task_id / rol | objetivo | referencias_y_contratos adicionales | criterios_de_cierre |
+++| --- | --- | --- | --- |
+++| SC-MULTIAGENT-01-P1-ARCH / sc_architecture | Identificar invariantes edilicios y separar fuente de diseño inferido. | core/IDENTITY.md; core/PRESERVATION_MODEL.md; visual_scene_graph/pilot/fixtures/kennys/K0_OBSERVED_INFERRED_DESIGN.md; fixtures/kennys_new_01/observations.json y design.json bajo visual_scene_graph/pilot/. | Citar fachada, vanos, señalética y PR0/PR1; distinguir rooftop autorizado de P0 observado; conservar geometría oculta UNKNOWN. |
+++| SC-MULTIAGENT-01-P1-CAMERA / sc_camera | Comparar CG-F, modificador, macro y presets sin debilitar locks. | command_invocation/CG_F_FRONTAL_ELEVATION.md; command_invocation/BACKDROP_PRESETS.md; transform/VISUAL_PROFILES.md; transform/AUTO_ROUTING.md. | Explicar /sc-front frente a /sc-rdr2-elevation y BD01/BD02; indicar precedencias y conflictos; no promover validación visual. |
+++| SC-MULTIAGENT-01-P1-HISTORY / sc_history | Auditar procedencia, fecha, geografía y texto incierto. | core/PRESERVATION_MODEL.md; reference_runtime/REFERENCE_AUTHORITY_MAP.md; reference_runtime/REFERENCE_REASONING_2.md; reference_runtime/real_catalog/REAL_EVIDENCE_CATALOG_V1.json; patch/SEMANTIC_TOKEN_FREEZE.md; patch/LOW_CONFIDENCE_TEXT_MASK.md. | Separar fecha de entrega de fecha histórica; exigir procedencia; conservar ciudad, fecha y texto no acreditados como UNKNOWN; no completar señalética. |
+++
+++El checkout asignado identifica dónde leer; no impone aislamiento. En este cliente
+++los perfiles se leen manualmente y las herramientas permiten escritura compartida.
+++Registrar ISOLATION_BLOCKED y mantener estos análisis sin escritura. Solo el
+++orquestador guarda sus respuestas en validation/sc_multiagent/.
+++
+++### Consolidación respaldada por el piloto
+++
+++Los tres informes aportan evidencia documental complementaria:
+++
+++- [Arquitectura](../validation/sc_multiagent/sc_architecture_REPORT.md):
+++  fachada, vanos, acceso, vidrieras y relaciones de señalética están protegidos.
+++  El rooftop pertenece al diseño inferido autorizado; no se convierte en fuente
+++  observada. Laterales, profundidad y coronación histórica siguen desconocidos.
+++- [Cámara](../validation/sc_multiagent/sc_camera_REPORT.md):
+++  `/sc-front` cambia únicamente cámara y frontalización STRICT.
+++  `/sc-rdr2-elevation` agrega VP02, T02, identidad STRICT, oclusión
+++  LOCKED_UNKNOWN, 16:9 y calle mínima. BD01 y BD02 son presets compuestos:
+++  BD01/T02 permite recomposición en regiones no protegidas; BD02/T08 preserva
+++  layout y prohíbe trasladar masas importantes o sustituir edificios.
+++- [Historia](../validation/sc_multiagent/sc_history_REPORT.md):
+++  apariencia plausible no acredita fecha, ciudad, autoría ni licencia.
+++  RR2 exige procedencia y aprendizaje limitado; referencias no pueden importar
+++  identidad ni completar texto ilegible.
+++
+++La autoridad viene de los [invariantes de fuente](../STREETCRAFT.md),
+++las [clases epistemológicas](../core/PRESERVATION_MODEL.md),
+++[CG-F](../command_invocation/CG_F_FRONTAL_ELEVATION.md),
+++[BD01/BD02](../command_invocation/BACKDROP_PRESETS.md) y
+++[RR2](../reference_runtime/REFERENCE_REASONING_2.md), no del acuerdo entre agentes.
+++BD01 puede tener alcance de recomposición vacío si toda la composición está
+++protegida. Ni frontalización ni T08 autorizan rellenar LOCKED_UNKNOWN.
+++
+++Una vista moderadamente elevada del diseño rooftop y CG-F, que prohíbe una vista
+++elevada de conjunto, requieren resolver la intención y compatibilidad antes de
+++una futura solicitud. Este ejemplo no los combina en una orden de generación.
+++Fear City confirmado conserva su routing T06/VP03/CG-FC salvo override explícito;
+++el parecido con una ciudad no establece geografía.
+++
+++El orquestador recibe los tres informes, conserva discrepancias y citas, y encarga
+++al implementador solo la propuesta documental del quickstart. Ante
+++ISOLATION_BLOCKED, aplica la edición de forma secuencial en la sesión principal.
+++Después vincula el candidato final a HEAD y hash del patch y solicita revisión
+++por un modelo efectivo distinto. Sin ese modelo, registra
+++REVIEW_MODEL_UNAVAILABLE y conserva lo completado.
+++
+++El cierre acredita colaboración y análisis documental. Calidad visual, aceptación
+++de BD01/BD02 e impresión permanecen pendientes; GLIGEN sigue PAUSED, D3/D4 PENDING
+++y VSG SHADOW. No se inicia el reloj visual de 168 horas con este ejemplo.
++ 
++ ## Inspección, parada y recuperación
++ 
+diff --git a/validation/sc_multiagent/PILOT_REPORT.md b/validation/sc_multiagent/PILOT_REPORT.md
+new file mode 100644
+index 0000000..70ac509
+--- /dev/null
++++ b/validation/sc_multiagent/PILOT_REPORT.md
+@@ -0,0 +1,134 @@
++# SC-MULTIAGENT-01: evidencia de configuración y piloto
++
++Resultado operativo: **SC_MULTIAGENT_BLOCKED**, adaptado a `milestones["SC-MULTIAGENT-01"].status=BLOCKED`
++en el [checkpoint](../../development/coordination/CHECKPOINT.json). Se completó el
++piloto documental permitido; no se cumple READY para perfiles seleccionados y
++escritura paralela aislada. Este informe es evidencia, no fuente operativa de estado.
++
++## Base y autorización
++
++Lean pidió leer v12 y solo después ejecutar la spec. Se leyó v12 completo antes
++de abrir la spec. Copias exactas: [v12](../../specs/STREETCRAFT_v12.md) y
++[spec](../../specs/SC_MULTIAGENT_01_v1.md). Lectura de v12 no implica ejecutar todo
++su plan. Base viva limpia en main: `33b6581353b18004a4818e8fc597b5455ba7ccf3`; checkpoint inicial
++SHA-256 `2c60a49a3d58581dc40602e9c9357ea4d8ca842a0520d18b1b0bbc8d96ea1cc0`. Se inspeccionaron instrucciones de ancestros,
++README, STREETCRAFT, protocolo, coordinación y contratos específicos.
++
++Sobre: una sesión activa hasta 60 minutos, una ronda de corrección, tres subagentes
++simultáneos, hasta dos implementaciones abiertas, un hito, un commit y un push
++normal de archivos propios. Gasto adicional cero; cuota UNKNOWN. Ningún servicio
++persistente, imágenes nuevas, cambios de producto ni ejecución GLIGEN.
++
++## Cliente y capacidades comprobadas
++
++Extensión activa **26.930.61225**, CLI **0.160.1**, observados por proceso activo
++y `codex --version`; extensión 26.1007.21434 instalada, sin atribuirle ejecución.
++El proyecto ya era trusted. Una instancia nueva de app-server, sin iniciar turnos
++de modelo, cargó `.codex/config.toml`: enabled=true, máximo tres subagentes; strict
++config sin errores. Seis TOML válidos con Python stdlib tomllib.
++
++[CAPABILITY_CHECK](CAPABILITY_CHECK.json) separa configuración de evidencia real.
++La herramienta expuesta `collaboration.spawn_agent` permite nombre de tarea,
++modelo y esfuerzo, pero no seleccionar nombre/tipo de perfil ni permisos por hijo.
++`codex debug prompt-input` tampoco muestra los cinco nombres custom. Por tanto,
++**CLIENT_CAPABILITY_BLOCKED**: archivos preparados, carga/selección nominal no
++acreditada. Los agentes reales recibieron tarjetas y leyeron perfiles manualmente;
++no se presenta eso como prueba de selección de agentes personalizados.
++
++Todos los hijos heredaron filesystem compartido sin sandbox, aprobación never.
++Los TOML analíticos solicitan read-only y el implementador workspace-write, pero
++la metadata efectiva dice disabled. **ISOLATION_BLOCKED**: no escritura delegada.
++No se cambiaron permisos globales, confianza, credenciales ni proveedor.
++Fuentes oficiales consultadas: [Subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents)
++y [Config basics](https://learn.chatgpt.com/docs/config-file/config-basic).
++
++## Agentes reales y especialización
++
++Se eligió gpt-6.1-sol para especialistas/implementador y gpt-6-astra para revisar.
++Ambos aparecen en catálogo local y en modelos admitidos por la herramienta.
++La metadata de los hilos, obtenida en lectura de la base local Codex, acredita
++modelo/esfuerzo efectivos; los informes originales conservan UNKNOWN donde
++los hijos no pudieron observar su propia identidad.
++
++| Hilo | UUID | Modelo / esfuerzo | Creado UTC | Última actualización observada UTC |
++| --- | --- | --- | --- | --- |
++| /root/sc_architecture | 01a132fa-abd9-7240-bb12-20ef93b7341c | gpt-6.1-sol / medium | 2026-10-13T01:57:31.225000+00:00 | 2026-10-13T01:58:37.863000+00:00 |
++| /root/sc_camera | 01a132fa-db40-7f70-af47-adec2d11d90a | gpt-6.1-sol / medium | 2026-10-13T01:57:43.361000+00:00 | 2026-10-13T01:58:47.799000+00:00 |
++| /root/sc_history | 01a132fb-0cc0-7702-9a59-c28da9944ee9 | gpt-6.1-sol / medium | 2026-10-13T01:57:56.032000+00:00 | 2026-10-13T01:58:45.859000+00:00 |
++| /root/sc_implementer | 01a132fc-edfa-7a22-ab5f-6b4f08e0111b | gpt-6.1-sol / medium | 2026-10-13T01:59:59.226000+00:00 | 2026-10-13T02:01:22.525000+00:00 |
++
++[ACTIVITY](ACTIVITY.json) conserva una muestra de los tres especialistas RUNNING
++al mismo tiempo, más sus UUID y timestamps. Máximo observado: tres subagentes.
++Los tiempos son marcas del runtime, no horas facturadas ni consumo de cuota.
++
++- [Arquitectura](sc_architecture_REPORT.md): identidad fuente, relaciones de
++  fachada/señalética y rooftop inferido separado de arquitectura observada.
++- [Cámara](sc_camera_REPORT.md): modificador `/sc-front` frente a macro y
++  presets CG-F/BD01/BD02, precedencias y conflictos con locks.
++- [Historia](sc_history_REPORT.md): procedencia, fecha de entrega frente a fecha
++  histórica, geografía y texto desconocidos; plausibilidad no es evidencia.
++
++Cada informe comprobó el mismo HEAD/digest y no escribió archivos. Los hallazgos
++son complementarios, sin discrepancia que requiera cambiar contratos. El ejemplo
++retiene el conflicto potencial de rooftop elevado vs. CG-F y evita combinarlo
++en una orden de generación. El acuerdo entre agentes no reemplaza las citas.
++
++## Implementación y verificación
++
++El worktree detached `/tmp/sc-multiagent-01-worktree` se creó desde la base,
++sin rama nueva. El implementador leyó contratos allí, comprobó ruta/base/digest
++y entregó [propuesta](sc_implementer_REPORT.md) sin escribir. El orquestador aplicó
++el [patch documental](P2_QUICKSTART.patch) serialmente en la sesión principal,
++alineando la tarjeta de ejemplo con la ruta usada realmente en P1.
++[ISOLATION_CHECK](ISOLATION_CHECK.json) acredita igualdad de hashes antes/después
++del worktree y diferencia entre ruta de lectura e aislamiento de escritura.
++No se afirma que una ruta impida usar rutas absolutas al checkout principal.
++
++[Quickstart](../../docs/SC_MULTIAGENT_QUICKSTART.md) contiene inicio, tarjetas,
++ejemplo concreto, inspección, parada y recuperación. No es otro runtime ni supervisor.
++[CHECKS](CHECKS.json): 27/27 pruebas existentes de backdrop y orquestador PASS en
++worktree y entorno temporal. Primer intento: 25 PASS y dos errores de importación
++por jsonschema ausente. Una corrección de entorno aislado y una repetición: PASS.
++No se cambiaron dependencias globales ni se escribieron tests de instrucciones.
++
++Todos los 786 archivos previos distintos del checkpoint permanecen idénticos.
++El root fue el único escritor del checkpoint: digest releído inmediatamente antes
++del delta; decisiones D1–D4, autorización histórica, GLIGEN, hitos previos y eventos
++anteriores preservados. La comparación no se presenta como garantía transaccional.
++La autorización textual de v12 se registra separada; generated_images=0 y el
++reloj de 168 horas no inició. No hay mejora visual, cierre VSG-2B ni impresión validada.
++
++El candidato final queda congelado como patch y manifiesto de altas/cambios, con
++base y SHA-256. La [revisión independiente](sc_verifier_REPORT.md) y su recibo
++registran el modelo efectivo, alcance y hashes; son recibos posteriores al candidato,
++no modificaciones silenciosas de los archivos revisados. Si cambia un archivo del
++candidato o HEAD antes de integrar, la revisión se invalida y debe repetirse.
++
++## Criterios del hito
++
++| Criterio | Resultado y evidencia |
++| --- | --- |
++| Perfiles cargados/seleccionados | BLOCKED: selección nominal no expuesta; TOML válido no la demuestra. |
++| Paralelismo real | PASS documental: tres hilos RUNNING superpuestos, UUID/timestamps. |
++| Especialización | PASS documental: tres informes distintos del mismo commit. |
++| Concurrencia acotada | PASS observado: máximo tres, config nueva cargada con límite tres. No se ensayó una cuarta solicitud. |
++| Aislamiento de escritura | BLOCKED: permissions disabled; fallback de análisis + escritura serial root. |
++| Escritor único | PASS observado: solo root aplicó delta del checkpoint; sin garantía transaccional. |
++| Revisión por modelo distinto | Resultado en recibo/REVIEW_METADATA posterior; requiere identidad efectiva distinta. |
++| Integración vigente | Evidencia en recibo/DELIVERY posterior; requiere hashes/HEAD coincidentes. |
++| Compatibilidad SC | PASS: runtime preservado y 27 pruebas existentes; GLIGEN intacto. |
++| Lectura para Lean | Resumen de tres líneas y enlaces. Tiempo de decisión de Lean aún no medido. |
++
++## Continuación necesaria
++
++Activar una versión del cliente que exponga/seleccione los perfiles custom y
++comprobarlo en una sesión nueva; la extensión nueva instalada no prueba esa
++capacidad. Verificar permisos efectivos que impidan escribir fuera de la copia
++asignada antes de repetir P2 con escritura. No cambiar automáticamente permisos
++globales, proveedor ni gasto. No repetir P1 completado ni reiniciar el piloto
++por iniciativa automática. Una futura tanda requiere sobre vigente.
++
++Cierre en tres líneas:
++Configurar y analizar: cinco perfiles preparados y tres especialistas reales con evidencia citada.
++Pausar capacidad completa: faltan selección nominal de perfiles y aislamiento efectivo de escritura.
++Mantener: runtime preservado, GLIGEN PAUSED, D3/D4 PENDING y reloj visual sin iniciar.
+diff --git a/validation/sc_multiagent/sc_architecture_REPORT.md b/validation/sc_multiagent/sc_architecture_REPORT.md
+new file mode 100644
+index 0000000..16a92b0
+--- /dev/null
++++ b/validation/sc_multiagent/sc_architecture_REPORT.md
+@@ -0,0 +1,27 @@
++# sc_architecture: informe devuelto por el agente
++
++task_id: **SC-MULTIAGENT-01-P1-ARCH** · rol: sc_architecture, especialización de IA · **PASS documental**.  
++base_commit: `33b6581353b18004a4818e8fc597b5455ba7ccf3` · checkpoint_digest: `2c60a49a3d58581dc40602e9c9357ea4d8ca842a0520d18b1b0bbc8d96ea1cc0`.  
++Modelo configurado: `gpt-6.1-sol`; modelo efectivo: **UNKNOWN**, no expuesto mediante evidencia verificable de esta sesión. Perfil leído manualmente; despacho nominal no acreditado.
++
++Cinco hallazgos documentales:
++
++1. **La identidad específica precede al período o estilo.** `STREETCRAFT.md:13–20` ordena intención, P0, modo, perfil, cámara y finalmente período/región. `core/IDENTITY.md:5–13` exige preservar evidencia y relaciones, y distingue interpretación de invención. **Inferencia:** la especialidad urbana 1960–1985 no autoriza adaptar la tipología del edificio para hacerla más representativa de ese período. **Recomendación:** comprobar primero invariantes fuente antes de sugerir lenguaje arquitectónico.
++
++2. **El ritmo y la composición de Kenny tienen protección explícita.** `visual_scene_graph/pilot/fixtures/kennys/K0_OBSERVED_INFERRED_DESIGN.md:104–107` fija P0 para fachada, vanos superiores, acceso y vidrieras. `:117–126` protege letrero sobre banner, banner sobre acceso, vidrieras a ambos lados y pertenencia a fachada mediante PR0/PR1. `core/PRESERVATION_MODEL.md:18–30` distingue relaciones protegidas y epistemología. **Inferencia:** conservar objetos sin conservar sus relaciones no satisface este contrato. **Recomendación:** usar estos IDs para organizar una futura revisión autorizada.
++
++3. **Medianeras, profundidad y coronación histórica siguen desconocidas.** K0 `:59–67` registra techo, altura total, fondo y caras ocultas como límites de evidencia. `hardening/OCCLUSION_LOCKS.md:2` establece `LOCKED_UNKNOWN` por defecto para vista única. `visual_scene_graph/pilot/fixtures/kennys_new_01/observations.json:315–318` mantiene geometría lateral e interiores UNKNOWN. **Inferencia:** una medianera plausible no constituye reconstrucción observada. **Recomendación:** conservar esas incertidumbres y evitar completar laterales detallados.
++
++4. **La coherencia del rooftop es diseño autorizado separado de la fachada.** K0 `:78–87` exige cubierta volumétrica, parapeto bajo compatible con la fábrica y un HVAC compacto apoyado, subordinado y parcialmente visible; excluye nuevas piezas mayores. `visual_scene_graph/pilot/kenny_binding.py:65–81` comprueba tres nodos `AUTHORIZED_INFERENCE`, cuatro relaciones y exclusiones, sin prioridades fuente. **Inferencia:** la obligatoriedad del diseño no convierte el techo en P0 observado. **Recomendación:** mantener separados gate fuente y gate diseño; no alterar los locks para acomodar componentes.
++
++5. **La cámara y los materiales también limitan la propuesta.** `visual_scene_graph/pilot/fixtures/kennys_new_01/design.json:84–101` prohíbe redimensionar fachada, desplazar vanos/letreros, resolver geometría oculta o cambiar identidad material, humedad/desgaste y contexto; permite ampliación superior y presentación moderadamente elevada. `visual_scene_graph/pilot/fixtures/kennys_new_01/RUNBOOK.md:64–68` declara rooftop Graph Locks `0/0, NOT_EXERCISED` y rúbrica visual PENDING. **Inferencia:** integridad documental y topología no demuestran proporciones, apariencia ni calidad visual. **Recomendación:** preservar PENDING hasta evaluación visual autorizada.
++
++Validaciones: HEAD y digest comprobados al inicio y al cierre; coinciden con la tarjeta. `git diff HEAD` vacío en los contratos de producto consultados. Leídos AGENTS.md, perfil, checkpoint, README, STREETCRAFT, protocolo, spec del piloto/v12 y contratos pertinentes. No se ejecutaron tests, modelos, GLIGEN ni inspección de imágenes.
++
++Patch / archivos modificados: **ninguno**. Permisos efectivos: filesystem compartido irrestricto; el TOML `read-only` no acredita aislamiento técnico. Cumplido por disciplina de solo lectura. Bloqueos: ninguno para este análisis; cuota/consumo efectivo UNKNOWN.
++
++Cierre: análisis documental completado con cinco hallazgos y citas del commit asignado.  
++Evidencia: invariantes y relaciones protegidas identificados; rooftop inferido y arquitectura oculta distinguidos.  
++Mantener: runtime, locks, GLIGEN PAUSED y evaluación visual PENDING; sin cambios ni nuevos hitos.
++
++Nota del orquestador: metadata local del hilo 01a132fa-abd9-7240-bb12-20ef93b7341c registra modelo efectivo gpt-6.1-sol, esfuerzo medium. El UNKNOWN del informe indica lo que el agente pudo observar; no se reemplaza su respuesta original.
+diff --git a/validation/sc_multiagent/sc_camera_REPORT.md b/validation/sc_multiagent/sc_camera_REPORT.md
+new file mode 100644
+index 0000000..ee03caf
+--- /dev/null
++++ b/validation/sc_multiagent/sc_camera_REPORT.md
+@@ -0,0 +1,32 @@
++# sc_camera: informe devuelto por el agente
++
++task_id: SC-MULTIAGENT-01-P1-CAMERA  
++rol: sc_camera, análisis documental mediante instrucciones explícitas del perfil.  
++modelo efectivo: UNKNOWN; el TOML declara `gpt-6.1-sol`, pero esta sesión no expone un identificador verificable de ejecución.  
++base_commit: `33b6581353b18004a4818e8fc597b5455ba7ccf3`  
++resultado: **PASS** documental.
++
++Hallazgos:
++
++1. **Observación:** cámara y preferencias están subordinadas a intención explícita, invariantes P0, modo y perfil ([STREETCRAFT.md:12](/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2/STREETCRAFT.md:12)). CG-F prohíbe rediseñar proporciones, vanos, coronamiento y relaciones de señalética; exige verticales controladas y plano de fachada dominante ([CG_F_FRONTAL_ELEVATION.md:8](/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2/command_invocation/CG_F_FRONTAL_ELEVATION.md:8)).
++
++2. **Observación:** `/sc-front` activa CG-F y frontalización STRICT, sin cambiar por sí solo perfil, modo, relación de aspecto, calle o locks ([CG_F_FRONTAL_ELEVATION.md:25](/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2/command_invocation/CG_F_FRONTAL_ELEVATION.md:25)). La macro completa agrega identidad STRICT y oclusión LOCKED_UNKNOWN; una elevación incompleta debe conservar incertidumbre ([CG_F_FRONTAL_ELEVATION.md:17](/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2/command_invocation/CG_F_FRONTAL_ELEVATION.md:17)). **Inferencia:** el quickstart debe distinguir modificador y macro.
++
++3. **Observación:** VP02 general admite CG-A/CG-B y retira la obligatoriedad de yaw≈0° y perspectiva frontal de un punto ([VISUAL_PROFILES.md:48](/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2/transform/VISUAL_PROFILES.md:48)). BD01/BD02 seleccionan explícitamente CG-F STRICT, horizonte estable, verticales rectas y convergencia dramática mínima; rechazan overrides oblicuos/automáticos ([BACKDROP_PRESETS.md:39](/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2/command_invocation/BACKDROP_PRESETS.md:39), [BACKDROP_PRESETS.md:54](/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2/command_invocation/BACKDROP_PRESETS.md:54)). **Inferencia:** son restricciones del preset específico, no una nueva obligación general de VP02.
++
++4. **Observación:** BD01 permite recomposición solamente en regiones no protegidas; P0, identidad, PR0/PR1, texto y desconocidos prevalecen, pudiendo dejar vacío el alcance disponible ([BACKDROP_PRESETS.md:76](/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2/command_invocation/BACKDROP_PRESETS.md:76)). BD02 prohíbe trasladar masas importantes y sustituir edificios. La mención general de oclusiones reconstruidas en T08 queda acotada por evidencia y unknown locks en este preset ([TRANSFORMATION_MODES.md:24](/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2/transform/TRANSFORMATION_MODES.md:24), [BACKDROP_PRESETS.md:94](/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2/command_invocation/BACKDROP_PRESETS.md:94)).
++
++5. **Observación:** Fear City confirmado conserva T06/VP03/CG-FC salvo override explícito; nombrar un perfil RDR no basta. Incluso con override siguen protegidas autoría, geografía y geometría ([AUTO_ROUTING.md:8](/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2/transform/AUTO_ROUTING.md:8), [AUTO_ROUTING.md:69](/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2/transform/AUTO_ROUTING.md:69)). **Recomendación:** usar una fuente documental no Fear City en el ejemplo BD, o declarar expresamente el override y sus límites.
++
++Validaciones: HEAD y checkpoint coinciden al inicio y al cierre; digest `2c60a49a3d58581dc40602e9c9357ea4d8ca842a0520d18b1b0bbc8d96ea1cc0`. Diff de contratos citados contra HEAD vacío. Leídos AGENTS, perfil, README, STREETCRAFT, protocolo, checkpoint, spec del piloto y v12. Dos rutas supuestas no existían; se localizaron archivos reales con `rg --files`. `python` no estaba disponible; lectura JSON comprobada con `python3`.
++
++Patch/archivos modificados: ninguno.  
++Límites: lectura documental; sin pruebas runtime, imágenes, evaluación visual ni impresión. Permisos efectivos compartidos y sin aislamiento read-only impuesto; respetado por conducta. Uso/cuota UNKNOWN.  
++Bloqueos: ninguno para esta subtarea; carga nominal del perfil y modelo efectivo no acreditados.
++
++Cierre en tres líneas:  
++Cerrar P1-CAMERA: cinco hallazgos documentales respaldados por contratos del mismo commit.  
++Preservar CG-F/backdrop bajo identidad, relaciones protegidas y desconocidos; distinguir macro, modificador y routing Fear City.  
++La evidencia no acredita calidad visual, impresión, carga nominal del perfil ni modelo efectivo.
++
++Nota del orquestador: metadata local del hilo 01a132fa-db40-7f70-af47-adec2d11d90a registra modelo efectivo gpt-6.1-sol, esfuerzo medium. El UNKNOWN del informe indica lo que el agente pudo observar; no se reemplaza su respuesta original.
+diff --git a/validation/sc_multiagent/sc_history_REPORT.md b/validation/sc_multiagent/sc_history_REPORT.md
+new file mode 100644
+index 0000000..b647fd5
+--- /dev/null
++++ b/validation/sc_multiagent/sc_history_REPORT.md
+@@ -0,0 +1,26 @@
++# sc_history: informe devuelto por el agente
++
++task_id: `SC-MULTIAGENT-01-P1-HISTORY`  
++Rol: `sc_history`, instrucciones aplicadas manualmente; modelo efectivo: `UNKNOWN` — la interfaz de este hilo no expone un identificador verificable. El TOML solicita `gpt-6.1-sol`, sin demostrar su carga efectiva.  
++Base: `33b6581353b18004a4818e8fc597b5455ba7ccf3`  
++Resultado: **PASS documental**, sin evaluación visual.
++
++1. **La fidelidad parte de la identidad documental o autoral de la fuente.** La intención explícita y los invariantes P0 preceden modo, perfil y restricciones de período/región (`STREETCRAFT.md:9–20`). Archive queda subordinado a los invariantes y locks (`reference_runtime/REFERENCE_AUTHORITY_MAP.md:2`). Inferencia: una referencia históricamente plausible no autoriza reemplazar la identidad de la fuente.
++
++2. **Plausibilidad, observación e inferencia tienen categorías separadas.** El modelo distingue `OBSERVED / DERIVED / INFERRED / GENERATED / UNKNOWN`, registra confianza y declara que la plausibilidad no equivale a observación (`core/PRESERVATION_MODEL.md:25–30`). Las zonas P5 separan continuación, inferencia estructural, contextual y desconocimiento (`core/PRESERVATION_MODEL.md:11–16`). Una región oculta de una sola vista queda `LOCKED_UNKNOWN`; múltiples vistas pueden permitir reconstrucción acotada (`hardening/OCCLUSION_LOCKS.md:2`).
++
++3. **La evidencia requiere procedencia y aprendizaje limitado.** RR2 exige ID y procedencia mínima, evita contar duplicados como evidencia independiente y excluye evidencia negativa o pendiente de revisión (`reference_runtime/REFERENCE_REASONING_2.md:16–22`). El catálogo separa `USER_SOURCE_FIXTURE` de `MODEL_CANDIDATE_OUTPUT`, registra hashes y declara aprendizajes permitidos y transferencias prohibidas (`reference_runtime/real_catalog/REAL_EVIDENCE_CATALOG_V1.json:3–18`, `:24–39`). La fecha `2026-09-21` se describe como origen de la entrega/candidato; no demuestra fecha de captura histórica, autoría ni licencia.
++
++4. **La geografía no se deduce por parecido y el texto incierto no se completa.** En Fear City la identidad geográfica externa es NULL por defecto y el parecido visual no constituye evidencia (`patch/FEAR_CITY_GEOGRAPHIC_NULL_LOCK.md:3–18`). Los tokens legibles de identidad se congelan; los parciales conservan únicamente fragmentos conocidos y el microtexto ilegible mantiene comportamiento gráfico (`patch/SEMANTIC_TOKEN_FREEZE.md:7–25`). Direcciones, nombres de calles, precios y titulares inventados están prohibidos (`patch/LOW_CONFIDENCE_TEXT_MASK.md:12–22`).
++
++5. **READY documental no acredita calidad visual ni autenticidad histórica.** RR2 READY significa satisfacción de necesidades documentales modeladas, sin certificar calidad visual (`reference_runtime/REFERENCE_REASONING_2.md:28`). El catálogo es metadata-only y su reejecución requiere el runtime externo identificado (`reference_runtime/real_catalog/README.md:11`, `:26–28`). Inferencia: los contratos permiten controlar anacronismos cuando existe evidencia explícita; este análisis no acredita fecha, ciudad, autoría, licencia ni ausencia visual de anacronismos en una imagen.
++
++Validaciones: HEAD y digest del checkpoint coinciden al inicio y al cierre; digest `2c60a49a3d58581dc40602e9c9357ea4d8ca842a0520d18b1b0bbc8d96ea1cc0`. `git diff --name-only HEAD` no mostró cambios en los contratos leídos. Leídos AGENTS, perfil, checkpoint, README y protocolo.  
++Patch/archivos modificados: ninguno. Herramientas permiten escritura compartida; lectura fue una restricción de autorización, no aislamiento técnico. Sin ejecución de runtime, tests, imágenes, GLIGEN ni fuentes externas.  
++Recomendación: preservar fechas de entrega separadas de fechas históricas y mantener `UNKNOWN` cuando falte procedencia suficiente. Bloqueos: ninguno para el análisis.
++
++Cierre: análisis documental completado sobre la base asignada.  
++Evidencia: cinco hallazgos citados; contratos y checkpoint preservados.  
++Mantener: límites operativos, locks y validación visual pendiente.
++
++Nota del orquestador: metadata local del hilo 01a132fb-0cc0-7702-9a59-c28da9944ee9 registra modelo efectivo gpt-6.1-sol, esfuerzo medium. El UNKNOWN del informe indica lo que el agente pudo observar; no se reemplaza su respuesta original.
+diff --git a/validation/sc_multiagent/sc_implementer_REPORT.md b/validation/sc_multiagent/sc_implementer_REPORT.md
+new file mode 100644
+index 0000000..1fb3e51
+--- /dev/null
++++ b/validation/sc_multiagent/sc_implementer_REPORT.md
+@@ -0,0 +1,104 @@
++# sc_implementer: propuesta devuelta por el agente
++
++task_id: `SC-MULTIAGENT-01-P2-DOC`  
++Rol: `sc_implementer`, perfil leído manualmente; modelo efectivo: **UNKNOWN**.  
++Base: `33b6581353b18004a4818e8fc597b5455ba7ccf3`.  
++Resultado: **PASS propuesta documental / ISOLATION_BLOCKED escritura delegada**.
++
++HEAD y digest del checkout asignado coinciden con la tarjeta al inicio y al cierre. El worktree contiene archivos de preparación sin seguimiento (`AGENTS.md`, `.codex/`, quickstart); no los modifiqué. Los contratos de producto se leyeron en `/private/tmp/sc-multiagent-01-worktree`. Los tres informes y las specs del piloto/v12 se leyeron en el checkout principal; las specs no existen en el worktree base.
++
++Reemplazo exacto del comentario `<!-- P2: completar mediante propuesta del implementador; sin cambiar runtime. -->`:
++
++```markdown
++Este ejemplo audita documentación existente de Kenny y los contratos de cámara.
++No solicita generación, ejecuta runtime ni evalúa imágenes. Kenny aporta un caso
++con fachada observada, relaciones protegidas y rooftop de diseño inferido; no se
++presupone su ciudad ni su fecha histórica. Comparar BD01/BD02 aquí no declara que
++una fachada aislada sea una fuente adecuada para un backdrop panorámico.
++
++### Tarjetas de los tres análisis
++
++El orquestador entrega una tarjeta completa a cada especialista antes de iniciarlo.
++Para reproducir una tarea, verificar primero HEAD y digest actuales; los siguientes
++valores identifican la base usada en este piloto, no un estado futuro.
++
++Campos comunes de las tres tarjetas:
++
++```text
++base_commit: 33b6581353b18004a4818e8fc597b5455ba7ccf3
++checkpoint_digest: 2c60a49a3d58581dc40602e9c9357ea4d8ca842a0520d18b1b0bbc8d96ea1cc0
++checkout_asignado: /tmp/sc-multiagent-01-worktree
++archivos_permitidos: []
++dependencias: ninguna entre los tres análisis; preparación del orquestador completada
++entregable_observable: cinco hallazgos citados, con observación, inferencia y recomendación separadas; sin patch
++limite_de_esfuerzo: 8 minutos por análisis, dentro del máximo de 60 minutos de la sesión
++gasto_adicional: cero
++condiciones_de_parada: base o digest distintos, necesidad de escritura, gasto, deriva de alcance o parada global
++referencias_y_contratos: AGENTS.md, perfil propio .codex/agents/sc_*.toml, checkpoint, README.md, STREETCRAFT.md, agent/AGENT_PROTOCOL.md y contratos específicos indicados abajo
++```
++
++Completar los campos específicos de cada tarjeta:
++
++| task_id / rol | objetivo | referencias_y_contratos adicionales | criterios_de_cierre |
++| --- | --- | --- | --- |
++| SC-MULTIAGENT-01-P1-ARCH / sc_architecture | Identificar invariantes edilicios y separar fuente de diseño inferido. | core/IDENTITY.md; core/PRESERVATION_MODEL.md; visual_scene_graph/pilot/fixtures/kennys/K0_OBSERVED_INFERRED_DESIGN.md; fixtures/kennys_new_01/observations.json y design.json bajo visual_scene_graph/pilot/. | Citar fachada, vanos, señalética y PR0/PR1; distinguir rooftop autorizado de P0 observado; conservar geometría oculta UNKNOWN. |
++| SC-MULTIAGENT-01-P1-CAMERA / sc_camera | Comparar CG-F, modificador, macro y presets sin debilitar locks. | command_invocation/CG_F_FRONTAL_ELEVATION.md; command_invocation/BACKDROP_PRESETS.md; transform/VISUAL_PROFILES.md; transform/AUTO_ROUTING.md. | Explicar /sc-front frente a /sc-rdr2-elevation y BD01/BD02; indicar precedencias y conflictos; no promover validación visual. |
++| SC-MULTIAGENT-01-P1-HISTORY / sc_history | Auditar procedencia, fecha, geografía y texto incierto. | core/PRESERVATION_MODEL.md; reference_runtime/REFERENCE_AUTHORITY_MAP.md; reference_runtime/REFERENCE_REASONING_2.md; reference_runtime/real_catalog/REAL_EVIDENCE_CATALOG_V1.json; patch/SEMANTIC_TOKEN_FREEZE.md; patch/LOW_CONFIDENCE_TEXT_MASK.md. | Separar fecha de entrega de fecha histórica; exigir procedencia; conservar ciudad, fecha y texto no acreditados como UNKNOWN; no completar señalética. |
++
++El checkout asignado identifica dónde leer; no impone aislamiento. En este cliente
++los perfiles se leen manualmente y las herramientas permiten escritura compartida.
++Registrar ISOLATION_BLOCKED y mantener estos análisis sin escritura. Solo el
++orquestador guarda sus respuestas en validation/sc_multiagent/.
++
++### Consolidación respaldada por el piloto
++
++Los tres informes aportan evidencia documental complementaria:
++
++- [Arquitectura](../validation/sc_multiagent/sc_architecture_REPORT.md):
++  fachada, vanos, acceso, vidrieras y relaciones de señalética están protegidos.
++  El rooftop pertenece al diseño inferido autorizado; no se convierte en fuente
++  observada. Laterales, profundidad y coronación histórica siguen desconocidos.
++- [Cámara](../validation/sc_multiagent/sc_camera_REPORT.md):
++  `/sc-front` cambia únicamente cámara y frontalización STRICT.
++  `/sc-rdr2-elevation` agrega VP02, T02, identidad STRICT, oclusión
++  LOCKED_UNKNOWN, 16:9 y calle mínima. BD01 y BD02 son presets compuestos:
++  BD01/T02 permite recomposición en regiones no protegidas; BD02/T08 preserva
++  layout y prohíbe trasladar masas importantes o sustituir edificios.
++- [Historia](../validation/sc_multiagent/sc_history_REPORT.md):
++  apariencia plausible no acredita fecha, ciudad, autoría ni licencia.
++  RR2 exige procedencia y aprendizaje limitado; referencias no pueden importar
++  identidad ni completar texto ilegible.
++
++La autoridad viene de los [invariantes de fuente](../STREETCRAFT.md),
++las [clases epistemológicas](../core/PRESERVATION_MODEL.md),
++[CG-F](../command_invocation/CG_F_FRONTAL_ELEVATION.md),
++[BD01/BD02](../command_invocation/BACKDROP_PRESETS.md) y
++[RR2](../reference_runtime/REFERENCE_REASONING_2.md), no del acuerdo entre agentes.
++BD01 puede tener alcance de recomposición vacío si toda la composición está
++protegida. Ni frontalización ni T08 autorizan rellenar LOCKED_UNKNOWN.
++
++Una vista moderadamente elevada del diseño rooftop y CG-F, que prohíbe una vista
++elevada de conjunto, requieren resolver la intención y compatibilidad antes de
++una futura solicitud. Este ejemplo no los combina en una orden de generación.
++Fear City confirmado conserva su routing T06/VP03/CG-FC salvo override explícito;
++el parecido con una ciudad no establece geografía.
++
++El orquestador recibe los tres informes, conserva discrepancias y citas, y encarga
++al implementador solo la propuesta documental del quickstart. Ante
++ISOLATION_BLOCKED, aplica la edición de forma secuencial en la sesión principal.
++Después vincula el candidato final a HEAD y hash del patch y solicita revisión
++por un modelo efectivo distinto. Sin ese modelo, registra
++REVIEW_MODEL_UNAVAILABLE y conserva lo completado.
++
++El cierre acredita colaboración y análisis documental. Calidad visual, aceptación
++de BD01/BD02 e impresión permanecen pendientes; GLIGEN sigue PAUSED, D3/D4 PENDING
++y VSG SHADOW. No se inicia el reloj visual de 168 horas con este ejemplo.
++```
++
++Validaciones: lectura de tarjetas, tres informes y contratos; verificación de HEAD/digest; sin escritura, pruebas, runtime, modelos de imagen, GLIGEN ni delegación. Manifiesto propuesto: un archivo nuevo ya preparado por el orquestador, `docs/SC_MULTIAGENT_QUICKSTART.md`, con reemplazo de su placeholder; cero bajas. La ruta y los permisos irrestrictos no demuestran aislamiento. Cuota y consumo efectivo: **UNKNOWN**.
++
++Cerrar P2-DOC: propuesta exacta entregada con campos de delegación y citas verificadas.  
++Pausar escritura delegada: ISOLATION_BLOCKED; integración y revisión corresponden al orquestador.  
++Mantener runtime, locks, GLIGEN PAUSED, D3/D4 PENDING y validación visual pendiente.
++
++Nota del orquestador: metadata local del hilo 01a132fc-edfa-7a22-ab5f-6b4f08e0111b registra modelo efectivo gpt-6.1-sol, esfuerzo medium.

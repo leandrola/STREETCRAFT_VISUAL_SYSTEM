@@ -1,0 +1,26 @@
+{
+  "prepared_at": "2026-10-13T02:14:14.694415+00:00",
+  "base_commit_before_integration": "33b6581353b18004a4818e8fc597b5455ba7ccf3",
+  "reviewed_patch_sha256": "97fe031c211aef5547d044cb654f6b1f6983c573c145e131d6a0818899c7ebcf",
+  "review_model_effective": "gpt-6-astra",
+  "implementer_model_effective": "gpt-6.1-sol",
+  "review_result": "PASS_ARTIFACTS / BLOCKED_MILESTONE",
+  "candidate_files": 21,
+  "candidate_hashes_match_at_packaging": true,
+  "prior_noncheckpoint_files_preserved": 786,
+  "single_checkpoint_writer_observed": "root",
+  "elapsed_seconds_from_preparation": 1063.3,
+  "additional_spend_authorized": 0,
+  "quota": "UNKNOWN",
+  "active_subagent_work_at_packaging": "none; all five delegated tasks returned final responses",
+  "worktree_preserved": "/tmp/sc-multiagent-01-worktree",
+  "test_environment_preserved": "/tmp/sc-multiagent-01-test-env",
+  "publication_policy": "One task-owned normal commit/push under existing authorization. Exact delivering commit and remote match are checked after committing and reported by Git/final response; no self-referential commit hash stored here.",
+  "receipt_scope": [
+    "validation/sc_multiagent/REVIEW_CANDIDATE.patch",
+    "validation/sc_multiagent/REVIEW_MANIFEST.json",
+    "validation/sc_multiagent/sc_verifier_REPORT.md",
+    "validation/sc_multiagent/REVIEW_METADATA.json",
+    "validation/sc_multiagent/DELIVERY.json"
+  ]
+}
