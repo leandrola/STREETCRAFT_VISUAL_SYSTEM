@@ -1,0 +1,54 @@
+{
+  "observed_at": "2026-10-13T02:55:19Z",
+  "base_commit": "055431555eea6873ff184aeb725789e7e5dc6f1c",
+  "initial_checkpoint_sha256": "e24b5a3b2e0bda1f2b33a0ad78d46609b5f5b4f12471408d4c6b88066971ff2f",
+  "codex_cli": "0.153.0",
+  "available_models": [
+    "gpt-6-astra",
+    "gpt-5.6-sol",
+    "gpt-5.6-terra",
+    "gpt-5.6-luna"
+  ],
+  "profile_models": {
+    "sc_architecture": "gpt-5.6-sol",
+    "sc_camera": "gpt-5.6-sol",
+    "sc_history": "gpt-5.6-sol",
+    "sc_implementer": "gpt-5.6-sol",
+    "sc_verifier": "gpt-6-astra"
+  },
+  "profile_smoke": {
+    "task_id": "SC01-PROFILE-SMOKE-20261013",
+    "task_name": "/root/sc01_profile_smoke",
+    "role": "sc_implementer",
+    "configured_model_from_active_role": "gpt-5.6-sol",
+    "child_self_report": "GPT-5 family; exact identifier UNKNOWN to child",
+    "result": "PASS_READ_ONLY",
+    "evidence": "Read SC_MULTIAGENT_01 v1.1 at base commit and returned required contract; no files modified"
+  },
+  "standalone_cli_smoke": {
+    "thread_id": "01a1332d-24e0-79f3-b76a-577940f5cd03",
+    "primary_model": "gpt-5.6-sol",
+    "result": "CLIENT_THREAD_ROUTING_ERROR",
+    "error": "collab spawn failed: no thread with id",
+    "termination": "Stopped after the single corrected CLI invocation waited with no child agents"
+  },
+  "operational_copy": {
+    "path": "/private/var/folders/4j/9wb2jw_12k9gvtcfjwqv58000000gn/T/vscode-agent-codex-sandbox-ckilQs/sc-multiagent-01-operational-0554315",
+    "mode": "detached worktree",
+    "base_commit": "055431555eea6873ff184aeb725789e7e5dc6f1c",
+    "probe": "validation/sc_multiagent/OPERATIONAL_COPY_PROBE.txt",
+    "probe_sha256": "0023b366d8c529762959e0bd8fcdf750a92243836b6a23b7575eec0c730c388f",
+    "live_checkout_probe_absent": true,
+    "result": "PASS_OPERATIONAL_COPY"
+  },
+  "child_sandbox": {
+    "result": "CHILD_SANDBOX_UNAVAILABLE",
+    "evidence": "The sc_implementer process reported the live spec path was writable despite the read-only task contract",
+    "enabled_mode": "DELEGATED_ANALYSIS_CENTRALIZED_WRITES",
+    "parallel_delegated_writes": false
+  },
+  "additional_spend": 0,
+  "usage_quota": "UNKNOWN",
+  "generated_images": 0,
+  "gligen_calls": 0
+}

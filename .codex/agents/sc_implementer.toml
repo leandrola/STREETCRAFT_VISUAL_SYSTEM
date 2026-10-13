@@ -1,6 +1,6 @@
 name = "sc_implementer"
 description = "Implementa cambios mínimos solo en archivos y copia asignados."
-model = "gpt-6.1-sol"
+model = "gpt-5.6-sol"
 model_reasoning_effort = "medium"
 sandbox_mode = "workspace-write"
 developer_instructions = """

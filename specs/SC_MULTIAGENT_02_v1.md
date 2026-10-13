@@ -25,7 +25,7 @@ Esta spec no cierra VSG-2B, no reabre GLIGEN, no autoriza forwards ni entrenamie
 
 ## 2. Dependencias y entrada
 
-La implementación comienza después de comprobar SC_MULTIAGENT_READY en el checkpoint vivo y su evidencia. No basta con que existan TOML.
+La implementación comienza después de comprobar SC_MULTIAGENT_READY en el checkpoint vivo y su evidencia, incluida la modalidad de integración habilitada por 01. No basta con que existan TOML. Si 01 cerró con escritura centralizada, los subagentes de 02 analizan en lectura y el orquestador conserva la única escritura e integración.
 
 Verificar:
 
@@ -184,4 +184,3 @@ Razonamiento recomendado: medium para paquetes y trazabilidad; high para revisi�
 Esta spec usa decisiones del documento de SC, no presupone capacidades de generación en Codex. Para perfiles y delegación: [documentación oficial de subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents), consultada el 12-oct-2026. Comprobar soporte real del cliente antes de ejecutar.
 
 **Arranque:** verificar cierre de SC-MULTIAGENT-01; continuar campañas existentes o preparar las faltantes; ejecutar cada carril disponible con su presupuesto propio; no esperar a SC-MULTIAGENT-03 y no declarar cierre visual mediante pruebas documentales.
-

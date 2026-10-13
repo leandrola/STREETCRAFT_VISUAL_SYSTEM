@@ -72,8 +72,10 @@ de actuar; verificá HEAD y cambios locales, sin reset ni limpieza de Lean.
 5. Implementadores solo escriben archivos asignados en worktree detached o copia
    aislada desde el commit base. No crear ramas nuevas. Comprobar herramientas,
    rutas y permisos efectivos; una ruta o sandbox_mode en un TOML no prueba
-   aislamiento. Si no se puede comprobar, registrar ISOLATION_BLOCKED, limitar
-   delegación a análisis y secuenciar escritura en la sesión principal.
+   aislamiento. Si no se puede comprobar, registrar CHILD_SANDBOX_UNAVAILABLE,
+   limitar el perfil a lectura y secuenciar escritura en la sesión principal.
+   Esta modalidad centralizada puede verificar 01 con despacho, modelo, revisión
+   y preservación comprobados; no acredita escritura paralela aislada.
 6. Asigná archivos propios; secuenciá colisiones. Incluí nuevos archivos y bajas
    en el manifiesto. Revisá y comprobá el candidato antes de integrar de a uno.
 7. El verificador usa un modelo disponible distinto del implementador. Otro

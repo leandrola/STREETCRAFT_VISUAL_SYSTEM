@@ -70,3 +70,45 @@ no iniciar 02/03 hasta satisfacer su dependencia y no relanzar automáticamente.
 Incorporado: plan y specs 02/03 exactos, con procedencia y hashes.
 Bloqueado: modelo del implementador rechazado; aislamiento efectivo pendiente.
 Mantener: evidencia previa, runtime y pausas; 02/03 esperan 01 verificado.
+
+## Reconciliación posterior sobre base integrada
+
+Lean integró el candidato anterior como `055431555eea6873ff184aeb725789e7e5dc6f1c`;
+el orquestador encontró `main` limpio y no reimportó specs ni aplicó el patch
+conservado. La continuación corrigió los cuatro perfiles que fijaban el modelo
+rechazado: especialistas e implementador usan `gpt-5.6-sol`; el verificador
+conserva `gpt-6-astra`. El catálogo efectivo de Codex CLI 0.153.0 mostró ambos
+modelos y sus niveles configurados. Los seis TOML volvieron a parsear.
+
+La spec 01 pasa a versión 1.1. Se separan dos garantías: una copia detached
+demuestra aislamiento operativo de cambios; una política efectiva del sandbox
+debe probarse aparte. La modalidad habilitada para este cliente es
+`DELEGATED_ANALYSIS_CENTRALIZED_WRITES`: los perfiles analizan en lectura por
+contrato y root escribe e integra en serie. No se acredita escritura paralela.
+
+La tarea real `/root/sc01_profile_smoke` seleccionó `sc_implementer` y terminó
+PASS: leyó el título y versión 1.1 sobre la base vigente, devolvió el contrato
+pedido y no modificó archivos. La definición activa del rol fija
+`gpt-5.6-sol`; el hijo solo pudo autoidentificar la familia GPT-5, por lo que
+esa diferencia de observabilidad queda explícita. El mismo proceso comprobó
+que el archivo del checkout vivo era escribible. Resultado:
+`CHILD_SANDBOX_UNAVAILABLE`; se prohíben escrituras delegadas.
+
+Una copia detached en la ruta registrada en [RECONCILIATION_01.json](RECONCILIATION_01.json)
+partió exactamente de `0554315`. Root agregó allí un probe documental; el probe
+quedó como único cambio de la copia y no existe en el checkout vivo. Esto prueba
+la separación operativa de la copia, no una barrera de filesystem para hijos.
+
+Una prueba adicional mediante `codex exec --ephemeral` arrancó correctamente con
+`gpt-5.6-sol`, pero su router no pudo crear el hilo hijo (`no thread with id`).
+Fue detenida tras la única invocación corregida. La prueba del orquestador activo
+es la evidencia positiva de despacho; el fallo CLI queda como límite del cliente
+para futuras tareas del supervisor 03.
+
+La revisión independiente de este candidato usa `sc_verifier` / `gpt-6-astra`,
+contra el HEAD y hash de patch congelados. Su recibo se guarda después del
+candidato y no se usa para cambiar silenciosamente los archivos revisados.
+
+Corregido: perfiles compatibles y selección real del implementador comprobada.
+Habilitado: análisis delegado y escritura centralizada; copia operativa comprobada.
+Limitado: sandbox por hijo no disponible; escritura paralela continúa deshabilitada.

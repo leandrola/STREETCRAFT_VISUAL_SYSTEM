@@ -2,7 +2,7 @@
 
 **ID:** SC-MULTIAGENT-03 · **Versión:** 1.0 · **Fecha:** 2026-10-12  
 **Estado:** SPEC_READY. Supervisor aún no construido ni validado.  
-**Dependencia obligatoria:** SC-MULTIAGENT-01 cerrado con evidencia.  
+**Dependencia obligatoria:** SC-MULTIAGENT-01 cerrado con evidencia y modalidad de integración declarada.
 **Complementaria:** SC-MULTIAGENT-02; su cierre visual no es requisito para construir este supervisor.  
 **Destino:** Mac de Lean, Codex CLI local, mismo repo y cuenta autorizados.
 
@@ -227,4 +227,3 @@ El resumen de regreso tiene tres líneas: hecho / evidencia / pendiente. status 
 La ingeniería de SC-MULTIAGENT-03 puede avanzar en paralelo con generación/evaluación de SC-MULTIAGENT-02, siempre con un único orquestador y archivos asignados. No ejecutar dos sesiones integradoras simultáneas. No esperar a un juicio visual para construir y probar controles locales.
 
 **Arranque:** comprobar SC-MULTIAGENT-01; inspeccionar ayuda y permisos efectivos; implementar supervisor mínimo y probar fallas con ejecutor simulado; demostrar una tanda real; no instalar servicio permanente ni ampliar tareas para mantener a los agentes ocupados.
-

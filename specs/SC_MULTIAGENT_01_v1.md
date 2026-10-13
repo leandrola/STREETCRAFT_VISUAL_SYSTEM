@@ -1,6 +1,6 @@
 # SC · Spec de implementación de subagentes y orquestador
 
-**ID:** SC-MULTIAGENT-01 · **Versión:** 1.0 · **Fecha:** 2026-10-12  
+**ID:** SC-MULTIAGENT-01 · **Versión:** 1.1 · **Fecha:** 2026-10-13
 **Destino:** Codex local en VS Code, checkout de STREETCRAFT_VISUAL_SYSTEM en la Mac.  
 **Estado:** SPEC_READY — configuración y ejecución aún no verificadas en la Mac.  
 **Base de decisiones:** STREETCRAFT_v12.md, leído completo. El repo vivo no fue inspeccionado para elaborar esta spec.
@@ -160,6 +160,31 @@ El sobre de cada tanda incluye objetivo, tareas permitidas, límites de uso y ga
 
 ## 8. Aislamiento e integración sin ramas nuevas
 
+### Enmienda 1.1: dos garantías separadas
+
+El aislamiento operativo mediante worktree detached o copia independiente y la
+restricción de filesystem impuesta por el sandbox del subagente son evidencias
+distintas. Una ruta separada permite comprobar base, cambios y patch, pero no
+demuestra por sí sola que el proceso no pueda alcanzar el checkout principal.
+Un `sandbox_mode` declarado tampoco demuestra que el cliente lo haya aplicado.
+
+Para cerrar este piloto se admite una de estas modalidades, declarada en la
+evidencia:
+
+1. **Escritura delegada aislada:** el implementador escribe en la copia asignada
+   y se comprueban ruta efectiva, permisos y ausencia de cambios en el checkout
+   principal.
+2. **Análisis delegado y escritura centralizada:** el implementador inspecciona
+   en lectura y entrega una propuesta o patch textual; el orquestador es el único
+   que escribe e integra en serie. Esta modalidad puede verificar 01 si se prueba
+   el despacho real del perfil, el modelo efectivo, la revisión independiente y
+   la preservación del runtime. No acredita sandbox de escritura por subagente ni
+   habilita implementaciones paralelas.
+
+Si el cliente no ofrece una garantía de sandbox por hijo, registrarla como
+`CHILD_SANDBOX_UNAVAILABLE` sin convertirla en bloqueo de la modalidad centralizada.
+La escritura delegada sigue bloqueada hasta que su aislamiento se demuestre.
+
 Para respetar la preferencia actual de Lean, usar copias de trabajo aisladas sin nuevas ramas de desarrollo. La elección inicial es un worktree detached desde el commit base; una copia independiente es alternativa si el cliente no permite trabajar allí.
 
 El orquestador:
@@ -199,9 +224,12 @@ Usar una referencia existente solo si está disponible y cada agente puede inspe
 
 Esperar los tres resultados. Consolidar una conclusión breve con evidencia y discrepancias.
 
-### P2 — Implementación aislada
+### P2 — Implementación aislada o propuesta en lectura
 
 Asignar al implementador un cambio acotado del propio hito: completar el quickstart con un ejemplo basado en los contratos encontrados. Usar copia aislada y entregar patch, sin modificar contratos del runtime.
+
+Si no hay sandbox por hijo comprobable, ejecutar el perfil en lectura sobre la
+copia, recibir la propuesta y aplicar el cambio únicamente desde el orquestador.
 
 ### P3 — Verificación e integración
 
@@ -217,7 +245,7 @@ No usar este piloto para iniciar el reloj visual de VSG: ese reloj comienza con 
 | Paralelismo real | Identificadores de hilos, tareas y tiempos que muestran ejecución superpuesta |
 | Especialización | Tres informes distintos, con referencias concretas al mismo commit base |
 | Concurrencia acotada | Registro de máximo de agentes activos y configuración efectiva |
-| Aislamiento | Rutas reales y comparación de cambios en copia vs. checkout principal |
+| Modalidad de integración | Escritura delegada: rutas/permisos y comparación de cambios; escritura centralizada: perfil real en lectura, propuesta trazable y root como único escritor |
 | Escritor único | Diff del checkpoint producido exclusivamente por el orquestador |
 | Revisión independiente | Identificador de modelo distinto, base y hash del patch revisado |
 | Integración vigente | Correspondencia entre diff revisado y contenido integrado |
@@ -255,4 +283,3 @@ Una ejecución durante la ausencia de Lean requiere un hito aparte para launcher
 No convertir estos pasos en una cadena de nuevas specs. Resolver ajustes reversibles durante la implementación. Ante una limitación real, entregar lo completado y la causa concreta del bloqueo.
 
 **Instrucción de arranque para Codex:** implementar SC-MULTIAGENT-01 en el repo vivo; comenzar por inspección, preservar cambios existentes y usar esta spec como contrato de alcance. Delegar el piloto únicamente después de comprobar configuración efectiva. No reabrir GLIGEN ni declarar cierre sin la evidencia de la sección 10.
-
