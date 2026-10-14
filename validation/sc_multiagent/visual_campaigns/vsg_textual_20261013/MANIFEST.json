@@ -1,10 +1,11 @@
 {
   "schema_version": "1.0",
   "campaign_id": "VSG-TEXTUAL-D-E-KENNY-20261013",
-  "status": "OUTPUTS_VALID_6_OF_6_PENDING_BLIND_EVALUATION",
+  "status": "BLIND_REVIEW_COMPLETE_KEY_NOT_OPENED",
   "base_commit": "3a3846198bc34aa9b8288fd06e1e16270dcdbbeb",
   "generation": "COMPLETED_BY_OPERATOR_VIA_CHATGPT_INTEGRATED_IMAGE_GENERATOR",
-  "evaluation": "NOT_STARTED",
+  "evaluation": "BLIND_REVIEW_COMPLETE_KEY_NOT_OPENED",
+  "blind_review": "BLIND_REVIEW_COMPLETE.md",
   "winner": "NOT_DECLARED",
   "ab_disclosure": "WITHHELD_PENDING_BLIND_EVALUATION",
   "budget": {"authorized_outputs": 6, "used_outputs": 6, "valid_outputs": 6, "selective_retries": 0, "additional_spend": 0},
