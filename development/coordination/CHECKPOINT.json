@@ -199,6 +199,38 @@
   "settings_applied": false,
   "model_tests": "NOT_RUN",
   "generated_images": 0,
+  "vsg_value_test": {
+    "campaign_id": "VSG-VALUE-D-E-KENNY-20261013",
+    "status": "PREPARED_AWAITING_USER_GENERATION",
+    "criterion_commit": "b273fdf0ad34e15c2c700bbf312fd27b07cb7bb9",
+    "criterion": "development/coordination/VSG_VALUE_TEST_CRITERIA.md",
+    "runbook": "development/coordination/VSG_VALUE_TEST_RUNS.md",
+    "condition_key": "development/coordination/VSG_VALUE_TEST_AB_KEY.json",
+    "source_binding_status": "PASS_D_E_KENNY",
+    "six_candidate_sources_relationship": "SEPARATE_SC_CONTRIBUTION_SOURCE_SET; not the D/E/Kenny VSG sources or runs",
+    "runs": [
+      {"run": 1, "output_name": "IMG_0001", "case_id": "D", "condition_id": "B", "status": "NOT_STARTED"},
+      {"run": 2, "output_name": "IMG_0002", "case_id": "E", "condition_id": "B", "status": "NOT_STARTED"},
+      {"run": 3, "output_name": "IMG_0003", "case_id": "KENNY", "condition_id": "A", "status": "NOT_STARTED"},
+      {"run": 4, "output_name": "IMG_0004", "case_id": "D", "condition_id": "A", "status": "NOT_STARTED"},
+      {"run": 5, "output_name": "IMG_0005", "case_id": "E", "condition_id": "A", "status": "NOT_STARTED"},
+      {"run": 6, "output_name": "IMG_0006", "case_id": "KENNY", "condition_id": "B", "status": "NOT_STARTED"}
+    ],
+    "steps": {
+      "criterion_committed_before_generation": "CLOSED",
+      "sources_and_contracts_confirmed": "CLOSED",
+      "randomized_run_list_and_separate_key": "CLOSED",
+      "checkpoint_recorded": "CLOSED"
+    },
+    "generation": "NOT_STARTED",
+    "evaluation": "NOT_STARTED; USER_RESPONSIBILITY",
+    "clock": {
+      "duration_hours": 168,
+      "status": "NOT_STARTED",
+      "start_event": null,
+      "starts_with": "first valid image timestamp, id and sha256"
+    }
+  },
   "usage_telemetry": "UNKNOWN",
   "events": [
     {
