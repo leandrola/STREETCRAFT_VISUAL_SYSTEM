@@ -1,12 +1,16 @@
 {
   "schema_version": "1.0",
   "campaign_id": "VSG-TEXTUAL-D-E-KENNY-20261013",
-  "status": "SC_VISUAL_PACKAGES_READY",
+  "status": "OUTPUTS_VALID_6_OF_6_PENDING_BLIND_EVALUATION",
   "base_commit": "3a3846198bc34aa9b8288fd06e1e16270dcdbbeb",
-  "generation": "NOT_STARTED",
-  "evaluation": "PENDING_LEAN",
-  "budget": {"authorized_outputs": 6, "used_outputs": 0, "selective_retries": 0, "additional_spend": 0},
-  "clock": {"duration_hours": 168, "status": "NOT_STARTED", "starts_at": "first valid image timestamp/id/hash"},
+  "generation": "COMPLETED_BY_OPERATOR_VIA_CHATGPT_INTEGRATED_IMAGE_GENERATOR",
+  "evaluation": "NOT_STARTED",
+  "winner": "NOT_DECLARED",
+  "ab_disclosure": "WITHHELD_PENDING_BLIND_EVALUATION",
+  "budget": {"authorized_outputs": 6, "used_outputs": 6, "valid_outputs": 6, "selective_retries": 0, "additional_spend": 0},
+  "clock": {"duration_hours": 168, "status": "PENDING_EXACT_ANCHOR", "first_valid_output": "IMG_0001.png", "first_valid_generation_id": "7af99030-d999-4a07-901e-3a43286f1e43", "first_valid_sha256": "0f3a7fd2da3d24f5794265893b01e5b06fcd645d5068ce62280b174b199fb8c4", "first_valid_at": "PENDING_CHAT_EVENT_TIMESTAMP"},
+  "execution_evidence": "EXECUTION_RECORD.json",
+  "withheld_execution_key": "EXECUTION_KEY.json",
   "conditions": {
     "A": {"selector": ".A", "meaning": "text derived from the CGC"},
     "B": {"selector": ".B", "meaning": "the same constraint content expressed from the VSG-2A contract"}

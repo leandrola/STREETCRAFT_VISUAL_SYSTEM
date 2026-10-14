@@ -1,6 +1,14 @@
 # Corridas de la prueba de valor A/B de VSG
 
-Estado: **PREPARADAS / GENERACIÓN NO INICIADA**.
+Estado: **PLAN PREVIO CONSERVADO / EJECUCIÓN REAL REGISTRADA APARTE**.
+
+La ejecución efectiva no siguió esta numeración aleatorizada: el operador agrupó
+las dos salidas de D, luego las dos de E y luego las dos de Kenny. Este documento
+se conserva como plan previo, no como evidencia de la secuencia ejecutada. El
+registro neutral real está en
+`validation/sc_multiagent/visual_campaigns/vsg_textual_20261013/EXECUTION_RECORD.json`;
+la vinculación de condición permanece en una clave separada y retenida hasta
+completar la evaluación ciega.
 
 Cada comando imprime en stdout la rama canónica completa como JSON compacto. En
 una sesión nueva de ChatGPT por corrida, adjuntar la fuente indicada y pegar la
@@ -40,10 +48,10 @@ ordenando por SHA-256 de `semilla:caso-condición` y queda congelado aquí.
 6. **IMG_0006** — adjuntar `visual_scene_graph/pilot/fixtures/kennys/source/kennys-shop.jpg`  
    Comando exacto: `jq -c '.B' validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/payloads.json`
 
-La clave autoritativa IMG/caso/condición está separada en
-`development/coordination/VSG_VALUE_TEST_AB_KEY.json`. No mostrarla durante una
-evaluación ciega.
+La clave de este orden planificado está separada en
+`development/coordination/VSG_VALUE_TEST_AB_KEY.json`; no describe la numeración
+final ejecutada. No mostrar ninguna clave durante la evaluación ciega.
 
-El reloj de 168 horas permanece `NOT_STARTED`. Al generar la primera imagen
-válida se deben registrar su timestamp con zona horaria, ID y SHA-256; ese evento
-inicia el reloj y no se reemplaza por una fecha de vencimiento escrita.
+La primera imagen válida ya está identificada, pero su timestamp exacto del evento
+de ChatGPT sigue pendiente. El reloj está `PENDING_EXACT_ANCHOR`; no se usa el
+`mtime` de una copia como sustituto.

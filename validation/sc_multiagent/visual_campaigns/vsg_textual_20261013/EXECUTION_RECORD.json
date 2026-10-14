@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "VSG-TEXTUAL-D-E-KENNY-20261013",
+  "status": "OUTPUTS_VALID_6_OF_6_PENDING_BLIND_EVALUATION",
+  "provenance": {
+    "execution_route": "CHATGPT_INTEGRATED_IMAGE_GENERATOR_WITH_FROZEN_PAYLOADS",
+    "conversation_model_operator_reported": "GPT-5.6 Sol",
+    "reasoning_operator_reported": "High",
+    "local_vsg_cli_executed": false,
+    "provider_bridge_local": false,
+    "vsg_2b_harness_evidence_claim": false,
+    "command_generator_execution_claim": false,
+    "harness_receipts_claim": false,
+    "seed_controlled_claim": false,
+    "methodological_deviation": "The operator used the integrated ChatGPT image generator with the repository's frozen payloads. This was not an execution of python -m visual_scene_graph.pilot, the local provider bridge, the CommandGenerator or the VSG-2B harness; the outputs are not reinterpreted as harness-produced evidence."
+  },
+  "verification_scope": {
+    "operator_validation": "VALID for all six outputs",
+    "output_bytes_available_in_workspace": false,
+    "output_sha256_local_recalculation": "NOT_PERFORMED_OUTPUT_FILES_UNAVAILABLE",
+    "source_and_frozen_payload_bindings": "MATCH_REPOSITORY_MANIFEST",
+    "condition_binding": "RECORDED_SEPARATELY_IN_EXECUTION_KEY_WITHHELD_PENDING_BLIND_EVALUATION"
+  },
+  "counts": {
+    "valid_outputs": "6/6",
+    "D": "2/2",
+    "E": "2/2",
+    "KENNY": "2/2"
+  },
+  "outputs": [
+    {
+      "output_name": "IMG_0001.png",
+      "sha256_operator_reported": "0f3a7fd2da3d24f5794265893b01e5b06fcd645d5068ce62280b174b199fb8c4",
+      "case_id": "D",
+      "source": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_source.jpg",
+      "source_sha256": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+      "frozen_payload_file": "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/payloads.json",
+      "frozen_payload_file_sha256": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d",
+      "chatgpt_generation_id": "7af99030-d999-4a07-901e-3a43286f1e43",
+      "original_generated_artifact_name": "terminal_diner_corner_facade.png",
+      "operator_validation": "VALID"
+    },
+    {
+      "output_name": "IMG_0002.png",
+      "sha256_operator_reported": "a8b86fe1dbf066224189aad63241faf3704222fe8885b5fe5fc2146581fac1cb",
+      "case_id": "D",
+      "source": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_source.jpg",
+      "source_sha256": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+      "frozen_payload_file": "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/payloads.json",
+      "frozen_payload_file_sha256": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d",
+      "chatgpt_generation_id": "7fe8dfe2-a367-433a-9df9-4161f3dd0e87",
+      "original_generated_artifact_name": "wide_detailed_street_level_urban_scene_in_a_reali.png",
+      "operator_validation": "VALID"
+    },
+    {
+      "output_name": "IMG_0003.png",
+      "sha256_operator_reported": "bdfeebfbf22d19c4913f0b81c7c7c49caf8effd748060018e8ca995133f0b76e",
+      "case_id": "E",
+      "source": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-E_source.jpg",
+      "source_sha256": "f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+      "frozen_payload_file": "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/payloads.json",
+      "frozen_payload_file_sha256": "5197f955e2e3f335cd40298b0cf07564f2f2168d1d2446380df8a78b516d90f2",
+      "chatgpt_generation_id": "96707de7-9276-41be-a190-50cc92d3ba32",
+      "original_generated_artifact_name": "cool_twilight_downtown_avenue.png",
+      "operator_validation": "VALID"
+    },
+    {
+      "output_name": "IMG_0004.png",
+      "sha256_operator_reported": "bd1ae455b209778c237447f8fd594189841eb641311f085f5f110c9329ea8b16",
+      "case_id": "E",
+      "source": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-E_source.jpg",
+      "source_sha256": "f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+      "frozen_payload_file": "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/payloads.json",
+      "frozen_payload_file_sha256": "5197f955e2e3f335cd40298b0cf07564f2f2168d1d2446380df8a78b516d90f2",
+      "chatgpt_generation_id": "0d957c23-7da3-49ca-9120-eb94da12cd52",
+      "original_generated_artifact_name": "dusk_through_the_financial_district.png",
+      "operator_validation": "VALID"
+    },
+    {
+      "output_name": "IMG_0005.png",
+      "sha256_operator_reported": "179c765dc3731d670d1d2cc1950998f14f08e5f782ace867aa57cf74446d35a2",
+      "case_id": "KENNY",
+      "source": "visual_scene_graph/pilot/fixtures/kennys/source/kennys-shop.jpg",
+      "source_sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+      "frozen_payload_file": "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/payloads.json",
+      "frozen_payload_file_sha256": "f8ea1131d393e0cdd4ed7bfe4ce4b841a798f15f476305275c15bc12ae8ffb1a",
+      "chatgpt_generation_id": "1099fa1e-6f44-4c64-8419-23f118d943f6",
+      "original_generated_artifact_name": "a_wide_street_level_urban_storefront_scene_in_a.png",
+      "operator_validation": "VALID"
+    },
+    {
+      "output_name": "IMG_0006.png",
+      "sha256_operator_reported": "8dce9916f1e61dc56806440b9edf33eb9cb7889d2e9c597bafe4782f0f376248",
+      "case_id": "KENNY",
+      "source": "visual_scene_graph/pilot/fixtures/kennys/source/kennys-shop.jpg",
+      "source_sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+      "frozen_payload_file": "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/payloads.json",
+      "frozen_payload_file_sha256": "f8ea1131d393e0cdd4ed7bfe4ce4b841a798f15f476305275c15bc12ae8ffb1a",
+      "chatgpt_generation_id": "16be0cd1-99dc-4084-b23d-f9b4bd47006b",
+      "original_generated_artifact_name": "wide_detailed_street_level_photo_illustration_of.png",
+      "operator_validation": "VALID"
+    }
+  ],
+  "clock_168h": {
+    "duration_hours": 168,
+    "first_valid_output": "IMG_0001.png",
+    "first_valid_generation_id": "7af99030-d999-4a07-901e-3a43286f1e43",
+    "first_valid_sha256": "0f3a7fd2da3d24f5794265893b01e5b06fcd645d5068ce62280b174b199fb8c4",
+    "first_valid_at": "PENDING_CHAT_EVENT_TIMESTAMP",
+    "status": "PENDING_EXACT_ANCHOR",
+    "timestamp_rule": "Recover the exact ChatGPT generation-event timestamp for the generation ID; do not substitute copied-file mtime.",
+    "recovery_attempt": "Generation ID not found in the repository, /mnt/data, accessible Code logs or available Codex sessions; no ChatGPT generation-event history API was available to this session."
+  },
+  "visual_evaluation": "NOT_STARTED",
+  "winner": "NOT_DECLARED",
+  "ab_disclosure": "WITHHELD_PENDING_BLIND_EVALUATION"
+}

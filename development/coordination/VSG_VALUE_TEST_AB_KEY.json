@@ -1,13 +1,14 @@
 {
   "schema_version": "1.0",
   "campaign_id": "VSG-VALUE-D-E-KENNY-20261013",
-  "status": "FROZEN_BEFORE_GENERATION",
+  "status": "SUPERSEDED_PLANNED_ORDER_NOT_EXECUTION_KEY",
   "criterion_commit": "b273fdf0ad34e15c2c700bbf312fd27b07cb7bb9",
   "randomization": {
     "seed_hex": "adbe972f90f746031ac341c25146db96",
     "procedure": "Sort ascending by SHA-256(seed_hex + ':' + case_id + '-' + condition_id)."
   },
-  "mapping": [
+  "note": "This preserves the randomized pre-execution plan. The operator used a different neutral numbering sequence. Actual condition bindings are held separately in validation/sc_multiagent/visual_campaigns/vsg_textual_20261013/EXECUTION_KEY.json pending blind evaluation.",
+  "planned_mapping": [
     {"run": 1, "output_name": "IMG_0001", "case_id": "D", "condition_id": "B", "meaning": "SC with VSG textual exploration"},
     {"run": 2, "output_name": "IMG_0002", "case_id": "E", "condition_id": "B", "meaning": "SC with VSG textual exploration"},
     {"run": 3, "output_name": "IMG_0003", "case_id": "KENNY", "condition_id": "A", "meaning": "current SC"},

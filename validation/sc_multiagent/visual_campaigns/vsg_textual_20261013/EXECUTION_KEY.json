@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "VSG-TEXTUAL-D-E-KENNY-20261013",
+  "status": "WITHHELD_PENDING_BLIND_EVALUATION",
+  "warning": "Do not disclose this mapping before Lean completes the blind evaluation.",
+  "bindings": [
+    {"output_name": "IMG_0001.png", "run_specific_frozen_condition_text_sha256": "12d85b2d93be1d8d5470e53ed8f5e0a21e4d582102622dd3451b9d16a26913fb"},
+    {"output_name": "IMG_0002.png", "run_specific_frozen_condition_text_sha256": "154611c1a8f08ec79880a4a0e2ddd197e46a362a9ec7fc9fb3d9cfe04bf9ab68"},
+    {"output_name": "IMG_0003.png", "run_specific_frozen_condition_text_sha256": "5084ac8f8c75f0337af6d6a9bbb77a8cb7903d082d91d383defc3bda020e2295"},
+    {"output_name": "IMG_0004.png", "run_specific_frozen_condition_text_sha256": "16b172130b81d6fc186d907423358ff83a84a221c49a070ef1c3cb83b36ed7a8"},
+    {"output_name": "IMG_0005.png", "run_specific_frozen_condition_text_sha256": "926ff6617b7b19a6f5b2ddbf0514984c4f63a77350acdd180e23629dd9115bc4"},
+    {"output_name": "IMG_0006.png", "run_specific_frozen_condition_text_sha256": "001bebdcfa526747b9e3289207fdaaf1dfe5caa74521a80e7459239ea3aabba2"}
+  ]
+}
