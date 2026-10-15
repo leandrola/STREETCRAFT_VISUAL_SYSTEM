@@ -1,0 +1,42 @@
+{
+  "freeze_commit": "ce681b0c6df133e2f9900583ce9370d819e77d28",
+  "freeze_sha256": "70163367de7a14fc7bad0b7711a914ef01730376e7ce5a5f070974a197c291e1",
+  "source": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_source.jpg",
+  "source_sha256": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+  "source_size": [
+    347,
+    389
+  ],
+  "pillow_version": "12.3.0",
+  "method": "Pillow RGB decode; resize LANCZOS; PNG RGB lossless",
+  "scale_xy": [
+    2,
+    2
+  ],
+  "core_size": [
+    694,
+    778
+  ],
+  "canvas_size": [
+    1600,
+    900
+  ],
+  "neutral_rgb": [
+    128,
+    128,
+    128
+  ],
+  "core_box_xyxy_exclusive": [
+    453,
+    61,
+    1147,
+    839
+  ],
+  "core_file_sha256": "8aa70cf0a666c67650e0c042b674e7c7e50c0ba23a2b8711b4f14654747a2794",
+  "core_rgb_sha256": "acaa0415c9957c4d72d449b6c881e6addf05f1639fff4186fc581b5c9a4d0a3a",
+  "canvas_file_sha256": "b1ac55c559499c38cc021e3f524e21738d19e39c7ee14637be87c31a0989435a",
+  "canvas_rgb_sha256": "5f72908afb3986e2105e965911590c682ed839600f725c462ad7ce95df57891b",
+  "prepare_script_sha256": "6a6aaf5dede93544a0b0f327d87edbee763bd4a89da1277bf7c60f08c6fd8ab5",
+  "saved_canvas_core_exact": true,
+  "generated_by_model": false
+}

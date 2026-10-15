@@ -428,19 +428,20 @@
   },
   "spatial_pilot_d": {
     "authorization": "Lean 2026-10-15: preparar y ejecutar parte local, generación exclusivamente por usuario en ChatGPT",
-    "status": "STEP_1_FREEZE_CANDIDATE",
+    "status": "STEP_3_PROMPT_COMMIT_CANDIDATE",
     "source": "R2B-191-D",
     "evidence": "validation/spatial_pilot_d/FREEZE.md",
     "base_commit": "e9cec79b38ba14171e6b89e036924caa69b4fddb",
     "steps": {
-      "1": "OPEN_AWAITING_COMMIT",
-      "2": "BLOCKED_STEP_1",
-      "3": "BLOCKED_STEP_2",
+      "1": "CERRADO",
+      "2": "CERRADO",
+      "3": "OPEN_AWAITING_COMMIT",
       "4": "BLOCKED_STEP_3",
       "5": "BLOCKED_STEP_4"
     },
     "generated_images_by_agent": 0,
     "stable_runtime_modified": false,
-    "vsg_gligen_reopened": false
+    "vsg_gligen_reopened": false,
+    "freeze_commit": "ce681b0c6df133e2f9900583ce9370d819e77d28"
   }
 }
