@@ -1,0 +1,576 @@
+{
+  "type": "SYNTHETIC_LOCAL_GEOMETRY_ONLY",
+  "gpt_outputs": 0,
+  "script_sha256": "412d027e7a1a272e69ece9b0813e09e835dffcc606f29a8f173638f71921471d",
+  "check_script_sha256": "bd7f9529a77cc48457afe030fbfe61830e4a2aead407519462a948f8da207a66",
+  "all_pass": true,
+  "checks": [
+    {
+      "case": "identity",
+      "expected_acceptance": true,
+      "pass": true,
+      "known_geometry": {
+        "dx": 0,
+        "dy": 0,
+        "scale": 1.0
+      },
+      "metrics": {
+        "accepted": true,
+        "reasons": [],
+        "center_drift_xy_px": [
+          0,
+          0
+        ],
+        "center_drift_px": 0.0,
+        "scale": 1.0,
+        "scale_delta": 0.0,
+        "global_ncc": 1.0,
+        "alternative_margin": 0.038286952716292566,
+        "quadrants": [
+          {
+            "core_box": [
+              0,
+              0,
+              347,
+              389
+            ],
+            "ncc": 1.0,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              347,
+              0,
+              694,
+              389
+            ],
+            "ncc": 1.0,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              0,
+              389,
+              347,
+              778
+            ],
+            "ncc": 1.0,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              347,
+              389,
+              694,
+              778
+            ],
+            "ncc": 1.0,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          }
+        ],
+        "thresholds": {
+          "max_center_drift_px": 16,
+          "max_scale_delta": 0.02,
+          "min_global_ncc": 0.92,
+          "min_quadrant_ncc": 0.8,
+          "min_patch_stddev": 8,
+          "min_distinct_alternative_margin": 0.03,
+          "max_quadrant_residual_px": 1.5
+        },
+        "search_model": "uniform_scale_and_translation_only",
+        "seed": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "case": "small_shift",
+      "expected_acceptance": true,
+      "pass": true,
+      "known_geometry": {
+        "dx": 8,
+        "dy": 0,
+        "scale": 1.0
+      },
+      "metrics": {
+        "accepted": true,
+        "reasons": [],
+        "center_drift_xy_px": [
+          8,
+          0
+        ],
+        "center_drift_px": 8.0,
+        "scale": 1.0,
+        "scale_delta": 0.0,
+        "global_ncc": 1.0,
+        "alternative_margin": 0.038286952716292566,
+        "quadrants": [
+          {
+            "core_box": [
+              0,
+              0,
+              347,
+              389
+            ],
+            "ncc": 1.0,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              347,
+              0,
+              694,
+              389
+            ],
+            "ncc": 1.0,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              0,
+              389,
+              347,
+              778
+            ],
+            "ncc": 1.0,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              347,
+              389,
+              694,
+              778
+            ],
+            "ncc": 1.0,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          }
+        ],
+        "thresholds": {
+          "max_center_drift_px": 16,
+          "max_scale_delta": 0.02,
+          "min_global_ncc": 0.92,
+          "min_quadrant_ncc": 0.8,
+          "min_patch_stddev": 8,
+          "min_distinct_alternative_margin": 0.03,
+          "max_quadrant_residual_px": 1.5
+        },
+        "search_model": "uniform_scale_and_translation_only",
+        "seed": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "case": "small_shift_and_scale_ambiguity",
+      "expected_acceptance": false,
+      "pass": true,
+      "known_geometry": {
+        "dx": 5,
+        "dy": -3,
+        "scale": 1.012
+      },
+      "metrics": {
+        "accepted": false,
+        "reasons": [
+          "AMBIGUOUS_ALIGNMENT"
+        ],
+        "center_drift_xy_px": [
+          5,
+          -3
+        ],
+        "center_drift_px": 5.830951894845301,
+        "scale": 1.012,
+        "scale_delta": 0.01200000000000001,
+        "global_ncc": 0.9999500382992946,
+        "alternative_margin": 0.026055934015515314,
+        "quadrants": [
+          {
+            "core_box": [
+              0,
+              0,
+              347,
+              389
+            ],
+            "ncc": 0.9998925551658675,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              347,
+              0,
+              694,
+              389
+            ],
+            "ncc": 0.9999401282685233,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              0,
+              389,
+              347,
+              778
+            ],
+            "ncc": 0.999859744369941,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              347,
+              389,
+              694,
+              778
+            ],
+            "ncc": 0.9997976256107133,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          }
+        ],
+        "thresholds": {
+          "max_center_drift_px": 16,
+          "max_scale_delta": 0.02,
+          "min_global_ncc": 0.92,
+          "min_quadrant_ncc": 0.8,
+          "min_patch_stddev": 8,
+          "min_distinct_alternative_margin": 0.03,
+          "max_quadrant_residual_px": 1.5
+        },
+        "search_model": "uniform_scale_and_translation_only",
+        "seed": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "case": "excess_translation",
+      "expected_acceptance": false,
+      "pass": true,
+      "known_geometry": {
+        "dx": 24,
+        "dy": 0,
+        "scale": 1.0
+      },
+      "metrics": {
+        "accepted": false,
+        "reasons": [
+          "POSITION_DRIFT"
+        ],
+        "center_drift_xy_px": [
+          24,
+          0
+        ],
+        "center_drift_px": 24.0,
+        "scale": 1.0,
+        "scale_delta": 0.0,
+        "global_ncc": 1.0,
+        "alternative_margin": 0.038286952716292566,
+        "quadrants": [
+          {
+            "core_box": [
+              0,
+              0,
+              347,
+              389
+            ],
+            "ncc": 1.0,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              347,
+              0,
+              694,
+              389
+            ],
+            "ncc": 1.0,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              0,
+              389,
+              347,
+              778
+            ],
+            "ncc": 1.0,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              347,
+              389,
+              694,
+              778
+            ],
+            "ncc": 1.0,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          }
+        ],
+        "thresholds": {
+          "max_center_drift_px": 16,
+          "max_scale_delta": 0.02,
+          "min_global_ncc": 0.92,
+          "min_quadrant_ncc": 0.8,
+          "min_patch_stddev": 8,
+          "min_distinct_alternative_margin": 0.03,
+          "max_quadrant_residual_px": 1.5
+        },
+        "search_model": "uniform_scale_and_translation_only",
+        "seed": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "case": "excess_scale",
+      "expected_acceptance": false,
+      "pass": true,
+      "known_geometry": {
+        "dx": 0,
+        "dy": 0,
+        "scale": 1.06
+      },
+      "metrics": {
+        "accepted": false,
+        "reasons": [
+          "SCALE_DRIFT"
+        ],
+        "center_drift_xy_px": [
+          0,
+          0
+        ],
+        "center_drift_px": 0.0,
+        "scale": 1.06,
+        "scale_delta": 0.06000000000000005,
+        "global_ncc": 0.9999488305636124,
+        "alternative_margin": 0.033954484147552755,
+        "quadrants": [
+          {
+            "core_box": [
+              0,
+              0,
+              347,
+              389
+            ],
+            "ncc": 0.9998997350758103,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              347,
+              0,
+              694,
+              389
+            ],
+            "ncc": 0.9999461627289603,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              0,
+              389,
+              347,
+              778
+            ],
+            "ncc": 0.9998353764119176,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              347,
+              389,
+              694,
+              778
+            ],
+            "ncc": 0.9997963946918882,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          }
+        ],
+        "thresholds": {
+          "max_center_drift_px": 16,
+          "max_scale_delta": 0.02,
+          "min_global_ncc": 0.92,
+          "min_quadrant_ncc": 0.8,
+          "min_patch_stddev": 8,
+          "min_distinct_alternative_margin": 0.03,
+          "max_quadrant_residual_px": 1.5
+        },
+        "search_model": "uniform_scale_and_translation_only",
+        "seed": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "case": "nonuniform_geometry",
+      "pass": true,
+      "metrics": {
+        "accepted": false,
+        "reasons": [
+          "AMBIGUOUS_ALIGNMENT",
+          "LOCAL_DEFORMATION"
+        ],
+        "center_drift_xy_px": [
+          -1,
+          0
+        ],
+        "center_drift_px": 1.0,
+        "scale": 0.991,
+        "scale_delta": -0.009000000000000008,
+        "global_ncc": 0.9880358872328565,
+        "alternative_margin": 0.02242702802012886,
+        "quadrants": [
+          {
+            "core_box": [
+              0,
+              0,
+              347,
+              389
+            ],
+            "ncc": 0.975146660276073,
+            "residual_xy_px": [
+              -3,
+              2
+            ],
+            "residual_px": 3.605551275463989
+          },
+          {
+            "core_box": [
+              347,
+              0,
+              694,
+              389
+            ],
+            "ncc": 0.9840738055217385,
+            "residual_xy_px": [
+              3,
+              2
+            ],
+            "residual_px": 3.605551275463989
+          },
+          {
+            "core_box": [
+              0,
+              389,
+              347,
+              778
+            ],
+            "ncc": 0.9453583660563752,
+            "residual_xy_px": [
+              -3,
+              -2
+            ],
+            "residual_px": 3.605551275463989
+          },
+          {
+            "core_box": [
+              347,
+              389,
+              694,
+              778
+            ],
+            "ncc": 0.9252063849901989,
+            "residual_xy_px": [
+              3,
+              -2
+            ],
+            "residual_px": 3.605551275463989
+          }
+        ],
+        "thresholds": {
+          "max_center_drift_px": 16,
+          "max_scale_delta": 0.02,
+          "min_global_ncc": 0.92,
+          "min_quadrant_ncc": 0.8,
+          "min_patch_stddev": 8,
+          "min_distinct_alternative_margin": 0.03,
+          "max_quadrant_residual_px": 1.5
+        },
+        "search_model": "uniform_scale_and_translation_only",
+        "seed": "NOT_APPLICABLE"
+      }
+    },
+    {
+      "case": "wrong_size",
+      "pass": true
+    },
+    {
+      "case": "wrong_mode",
+      "pass": true
+    },
+    {
+      "case": "untextured_patch_rejected",
+      "pass": true
+    }
+  ]
+}

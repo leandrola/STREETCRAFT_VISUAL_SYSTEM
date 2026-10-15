@@ -428,20 +428,26 @@
   },
   "spatial_pilot_d": {
     "authorization": "Lean 2026-10-15: preparar y ejecutar parte local, generación exclusivamente por usuario en ChatGPT",
-    "status": "STEP_3_PROMPT_COMMIT_CANDIDATE",
+    "status": "BLOQUEADO_STEP_4_MISSING_CHATGPT_OUTPUT",
     "source": "R2B-191-D",
-    "evidence": "validation/spatial_pilot_d/FREEZE.md",
+    "evidence": "validation/spatial_pilot_d/REPORT.md",
     "base_commit": "e9cec79b38ba14171e6b89e036924caa69b4fddb",
     "steps": {
       "1": "CERRADO",
       "2": "CERRADO",
-      "3": "OPEN_AWAITING_COMMIT",
-      "4": "BLOCKED_STEP_3",
-      "5": "BLOCKED_STEP_4"
+      "3": "CERRADO",
+      "4": "BLOQUEADO: no original ChatGPT output bytes; compositor implemented and synthetically tested only",
+      "5": "BLOQUEADO: dependency step 4; real run consolidation not started"
     },
     "generated_images_by_agent": 0,
     "stable_runtime_modified": false,
     "vsg_gligen_reopened": false,
-    "freeze_commit": "ce681b0c6df133e2f9900583ce9370d819e77d28"
+    "freeze_commit": "ce681b0c6df133e2f9900583ce9370d819e77d28",
+    "prompt_commit": "b62ad278d6bb09704b1358f316650b4dca5c0862",
+    "local_checks": "9/9 expected behaviors, including conservative ambiguity rejection; not visual acceptance",
+    "local_checks_sha256": "511fe6ab059a20b7399c3b2addc478edb00ca6fd2164279533c527f96a5cc206",
+    "resume": "Receive original ChatGPT output generated with frozen canvas/prompt; run compose.py without changing thresholds; reject unreliable alignment; close step 4 before opening step 5.",
+    "alignment_limitation": "Synthetic dx=5 dy=-3 scale=1.012 recovers geometry but is rejected: ambiguity margin 0.026055934 < frozen 0.03; no forced composition",
+    "real_outputs_received": 0
   }
 }
