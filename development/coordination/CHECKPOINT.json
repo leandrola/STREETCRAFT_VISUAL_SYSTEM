@@ -428,9 +428,10 @@
   },
   "spatial_pilot_d": {
     "authorization": "Lean 2026-10-15: preparar y ejecutar parte local, generación exclusivamente por usuario en ChatGPT",
-    "status": "BLOQUEADO_STEP_4_MISSING_CHATGPT_OUTPUT",
+    "status": "V2_PHASE_2_BLOCKED_ORIGINAL_DOWNLOADS_AND_PROVENANCE",
     "source": "R2B-191-D",
-    "evidence": "validation/spatial_pilot_d/REPORT.md",
+    "evidence": "validation/spatial_pilot_d/v2/REPORT.md",
+    "v1_historical_evidence": "validation/spatial_pilot_d/REPORT.md",
     "base_commit": "e9cec79b38ba14171e6b89e036924caa69b4fddb",
     "steps": {
       "1": "CERRADO",
@@ -446,8 +447,57 @@
     "prompt_commit": "b62ad278d6bb09704b1358f316650b4dca5c0862",
     "local_checks": "9/9 expected behaviors, including conservative ambiguity rejection; not visual acceptance",
     "local_checks_sha256": "511fe6ab059a20b7399c3b2addc478edb00ca6fd2164279533c527f96a5cc206",
-    "resume": "Receive original ChatGPT output generated with frozen canvas/prompt; run compose.py without changing thresholds; reject unreliable alignment; close step 4 before opening step 5.",
+    "resume": "Identify original downloads and provenance of spatial D runs 1/2/3, then use frozen v2 ingestion commands in validation/spatial_pilot_d/v2/README.md. No real run has been processed. Close phase 2 before implementing/calibrating SEAM_GATE (phase 3); no composite visual evaluation before phases 1-3 close.",
     "alignment_limitation": "Synthetic dx=5 dy=-3 scale=1.012 recovers geometry but is rejected: ambiguity margin 0.026055934 < frozen 0.03; no forced composition",
-    "real_outputs_received": 0
+    "real_outputs_received": 0,
+    "v2": {
+      "authorization": "Lean 2026-10-17: four ordered phases; local versioned amendment; no generation or push without additional explicit authorization",
+      "protocol": "SPATIAL-PILOT-D-v2",
+      "base_commit": "421627deb3aa9c2ffe4e349a1ef71273601619b1",
+      "freeze_commit": "7f0b4989e7c91d113f2a34bfc110a6ce26cba9e7",
+      "freeze_sha256": "ecb4be11ce70a3088edcc3372a81ddfcffe7e9a800459bd9c433e216f79fe4a8",
+      "v1_original": "PRESERVED",
+      "v1_output_size_assumption": "INVALIDATED_BY_OBSERVATION_REPORTED_BY_LEAN",
+      "size_policy": "Canonical RGB 1600x900; identity for canonical input; explicit Pillow 12.3.0 LANCZOS normalization from RGB 1672x941 only; other sizes/modes rejected",
+      "normalization_scale_x": "1600/1672",
+      "normalization_scale_y": "900/941",
+      "aspect_ratio_correction": "EXPLICIT_NONUNIFORM_RESIZE",
+      "alignment_scale_quantity": "residual_scale_after_normalization",
+      "native_1672x941_candidate": "PREPARED_NOT_ENABLED; input/output size stability unproven",
+      "phases": {
+        "1": "CERRADO: committed freeze and synthetic tests PASS",
+        "2": "BLOQUEADO: three spatial run originals not identified with provenance; zero processed",
+        "3": "NO_INICIADA: phase 2 dependency; GOOD/BAD reference binding also pending",
+        "4": "NO_INICIADA: phases 2/3 dependencies; no composite scoring"
+      },
+      "synthetic_alignment_logic": "VALIDATED_WITHIN_RECORDED_TEST_SCOPE_ONLY",
+      "tests": {
+        "final_pass": 28,
+        "historical_pass": 9,
+        "additional_pass": 19,
+        "evidence": "validation/spatial_pilot_d/v2/CHECKS.json",
+        "initial_failed_expectation_preserved": "validation/spatial_pilot_d/v2/CHECKS_INITIAL.json",
+        "limitation": "Residual scales 1.01 and 1.002 reject for frozen ambiguity margin; 1.02 accepts. No promise that every in-limit scale is correctable; thresholds unchanged.",
+        "seam_good_bad_tests": "NOT_RUN_PHASE_3_DEPENDS_ON_PHASE_2"
+      },
+      "real_generator_alignment": "NOT_VALIDATED",
+      "real_outputs_processed": 0,
+      "missing_original_run_bindings": ["D-001", "D-002", "D-003"],
+      "compatible_unbound_candidate": {
+        "path": "/Users/macbookpro/Desktop/untitled folder/R2B-191-D_source_corrida_2.png",
+        "sha256": "e6353e48ec334a1d44be0e7f48d098dab0125b060f0e2f5a53bd03c304799799",
+        "size": [1672, 941],
+        "mode": "RGB",
+        "status": "NOT_PROCESSED; original download, frozen canvas/prompt and run identity unconfirmed"
+      },
+      "search_limit": "Downloads read denied by macOS (Operation not permitted); repository/Desktop inventory insufficient to identify spatial originals",
+      "seam_gate": "NOT_IMPLEMENTED; requirement follows actual visible-seam limitation reported by Lean, not speculative calibration",
+      "prior_visual_scores": "RAW_GENERATOR_VISUAL_EVALUATION",
+      "raw_score_transcription": "validation/spatial_pilot_d/v2/RAW_GENERATOR_SCORES.json",
+      "pipeline_visual_scores": "NOT_YET_EVALUATED",
+      "pixel_identity_claim": "Only valid normalization, alignment PASS, composition and saved-pixel verification PASS demonstrate pipeline core identity; visual scores do not",
+      "pilot_success_declared": false,
+      "push_performed": false
+    }
   }
 }

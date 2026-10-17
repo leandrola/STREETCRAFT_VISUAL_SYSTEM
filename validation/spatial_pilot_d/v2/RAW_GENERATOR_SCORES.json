@@ -1,0 +1,15 @@
+{
+  "classification": "RAW_GENERATOR_VISUAL_EVALUATION",
+  "source": "Lean: instruction of 2026-10-17; scores transcribed, not reevaluated by agent",
+  "case": "R2B-191-D",
+  "image_binding": "PENDING_ORIGINAL_DOWNLOADS_AND_RUN_PROVENANCE",
+  "scores": [
+    {"run": 1, "preservation": 5, "fidelity": 5, "camera": 4.6, "urban_coherence": 5},
+    {"run": 2, "preservation": 5, "fidelity": 4.8, "camera": 4.6, "urban_coherence": 5},
+    {"run": 3, "preservation": 5, "fidelity": 5, "camera": 4.6, "urban_coherence": 5}
+  ],
+  "camera_note": "Irregularidad perceptible del punto de fuga y perspectiva del conjunto de cuadra extendida.",
+  "pixel_exact_identity_demonstrated_by_these_scores": false,
+  "composite_pipeline_visual_evaluation": "NOT_YET_EVALUATED",
+  "note": "Transcription/classification only; phase 4 is not opened. No reuse as composite scoring, no new judgment and no VSG score changes."
+}
