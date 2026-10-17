@@ -1,0 +1,45 @@
+{
+  "protocol": "SPATIAL-PILOT-D-v2",
+  "enabled_for_runs": false,
+  "reason": "NO_NATIVE_INPUT_OUTPUT_STABILITY_EVIDENCE",
+  "source": "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_source.jpg",
+  "source_sha256": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+  "source_size": [
+    347,
+    389
+  ],
+  "pillow": "12.3.0",
+  "method": "Source RGB direct resize LANCZOS; PNG lossless",
+  "source_scale_x": 2.089337175792507,
+  "source_scale_y": 2.089974293059126,
+  "canvas_size": [
+    1672,
+    941
+  ],
+  "core_size": [
+    725,
+    813
+  ],
+  "core_box_xyxy_exclusive": [
+    473,
+    64,
+    1198,
+    877
+  ],
+  "neutral_rgb": [
+    128,
+    128,
+    128
+  ],
+  "crop": false,
+  "artifacts": {
+    "native_core.png": {
+      "file_sha256": "b0c92485a6b9fd0d41f9f62f1b49177bdb8c2364db990830ef6827ee90faf7cc",
+      "rgb_sha256": "daf2f1157116dc85ad8b373122dfa2bcf1b77ec0d2f542740647098760b13d2a"
+    },
+    "native_canvas.png": {
+      "file_sha256": "63ca519f0c869060d6602409b8c488a93aa1f2384eb17f7dc7438f095d73dcbc",
+      "rgb_sha256": "6737efc735ee23c2596ac688d9f6f7a18e97090781347f166337a3ead47f68d5"
+    }
+  }
+}

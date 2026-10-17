@@ -1,0 +1,1245 @@
+{
+  "scope": "SYNTHETIC_SIZE_AND_RESIDUAL_ALIGNMENT_ONLY",
+  "real_runs": 0,
+  "phase1_all_pass": false,
+  "checks": [
+    {
+      "case": "v1_existing_suite",
+      "pass": true,
+      "checks": [
+        {
+          "case": "identity",
+          "expected_acceptance": true,
+          "pass": true,
+          "known_geometry": {
+            "dx": 0,
+            "dy": 0,
+            "scale": 1.0
+          },
+          "metrics": {
+            "accepted": true,
+            "reasons": [],
+            "center_drift_xy_px": [
+              0,
+              0
+            ],
+            "center_drift_px": 0.0,
+            "scale": 1.0,
+            "scale_delta": 0.0,
+            "global_ncc": 1.0,
+            "alternative_margin": 0.038286952716292566,
+            "quadrants": [
+              {
+                "core_box": [
+                  0,
+                  0,
+                  347,
+                  389
+                ],
+                "ncc": 1.0,
+                "residual_xy_px": [
+                  0,
+                  0
+                ],
+                "residual_px": 0.0
+              },
+              {
+                "core_box": [
+                  347,
+                  0,
+                  694,
+                  389
+                ],
+                "ncc": 1.0,
+                "residual_xy_px": [
+                  0,
+                  0
+                ],
+                "residual_px": 0.0
+              },
+              {
+                "core_box": [
+                  0,
+                  389,
+                  347,
+                  778
+                ],
+                "ncc": 1.0,
+                "residual_xy_px": [
+                  0,
+                  0
+                ],
+                "residual_px": 0.0
+              },
+              {
+                "core_box": [
+                  347,
+                  389,
+                  694,
+                  778
+                ],
+                "ncc": 1.0,
+                "residual_xy_px": [
+                  0,
+                  0
+                ],
+                "residual_px": 0.0
+              }
+            ],
+            "thresholds": {
+              "max_center_drift_px": 16,
+              "max_scale_delta": 0.02,
+              "min_global_ncc": 0.92,
+              "min_quadrant_ncc": 0.8,
+              "min_patch_stddev": 8,
+              "min_distinct_alternative_margin": 0.03,
+              "max_quadrant_residual_px": 1.5
+            },
+            "search_model": "uniform_scale_and_translation_only",
+            "seed": "NOT_APPLICABLE"
+          }
+        },
+        {
+          "case": "small_shift",
+          "expected_acceptance": true,
+          "pass": true,
+          "known_geometry": {
+            "dx": 8,
+            "dy": 0,
+            "scale": 1.0
+          },
+          "metrics": {
+            "accepted": true,
+            "reasons": [],
+            "center_drift_xy_px": [
+              8,
+              0
+            ],
+            "center_drift_px": 8.0,
+            "scale": 1.0,
+            "scale_delta": 0.0,
+            "global_ncc": 1.0,
+            "alternative_margin": 0.038286952716292566,
+            "quadrants": [
+              {
+                "core_box": [
+                  0,
+                  0,
+                  347,
+                  389
+                ],
+                "ncc": 1.0,
+                "residual_xy_px": [
+                  0,
+                  0
+                ],
+                "residual_px": 0.0
+              },
+              {
+                "core_box": [
+                  347,
+                  0,
+                  694,
+                  389
+                ],
+                "ncc": 1.0,
+                "residual_xy_px": [
+                  0,
+                  0
+                ],
+                "residual_px": 0.0
+              },
+              {
+                "core_box": [
+                  0,
+                  389,
+                  347,
+                  778
+                ],
+                "ncc": 1.0,
+                "residual_xy_px": [
+                  0,
+                  0
+                ],
+                "residual_px": 0.0
+              },
+              {
+                "core_box": [
+                  347,
+                  389,
+                  694,
+                  778
+                ],
+                "ncc": 1.0,
+                "residual_xy_px": [
+                  0,
+                  0
+                ],
+                "residual_px": 0.0
+              }
+            ],
+            "thresholds": {
+              "max_center_drift_px": 16,
+              "max_scale_delta": 0.02,
+              "min_global_ncc": 0.92,
+              "min_quadrant_ncc": 0.8,
+              "min_patch_stddev": 8,
+              "min_distinct_alternative_margin": 0.03,
+              "max_quadrant_residual_px": 1.5
+            },
+            "search_model": "uniform_scale_and_translation_only",
+            "seed": "NOT_APPLICABLE"
+          }
+        },
+        {
+          "case": "small_shift_and_scale_ambiguity",
+          "expected_acceptance": false,
+          "pass": true,
+          "known_geometry": {
+            "dx": 5,
+            "dy": -3,
+            "scale": 1.012
+          },
+          "metrics": {
+            "accepted": false,
+            "reasons": [
+              "AMBIGUOUS_ALIGNMENT"
+            ],
+            "center_drift_xy_px": [
+              5,
+              -3
+            ],
+            "center_drift_px": 5.830951894845301,
+            "scale": 1.012,
+            "scale_delta": 0.01200000000000001,
+            "global_ncc": 0.9999500382992946,
+            "alternative_margin": 0.026055934015515314,
+            "quadrants": [
+              {
+                "core_box": [
+                  0,
+                  0,
+                  347,
+                  389
+                ],
+                "ncc": 0.9998925551658675,
+                "residual_xy_px": [
+                  0,
+                  0
+                ],
+                "residual_px": 0.0
+              },
+              {
+                "core_box": [
+                  347,
+                  0,
+                  694,
+                  389
+                ],
+                "ncc": 0.9999401282685233,
+                "residual_xy_px": [
+                  0,
+                  0
+                ],
+                "residual_px": 0.0
+              },
+              {
+                "core_box": [
+                  0,
+                  389,
+                  347,
+                  778
+                ],
+                "ncc": 0.999859744369941,
+                "residual_xy_px": [
+                  0,
+                  0
+                ],
+                "residual_px": 0.0
+              },
+              {
+                "core_box": [
+                  347,
+                  389,
+                  694,
+                  778
+                ],
+                "ncc": 0.9997976256107133,
+                "residual_xy_px": [
+                  0,
+                  0
+                ],
+                "residual_px": 0.0
+              }
+            ],
+            "thresholds": {
+              "max_center_drift_px": 16,
+              "max_scale_delta": 0.02,
+              "min_global_ncc": 0.92,
+              "min_quadrant_ncc": 0.8,
+              "min_patch_stddev": 8,
+              "min_distinct_alternative_margin": 0.03,
+              "max_quadrant_residual_px": 1.5
+            },
+            "search_model": "uniform_scale_and_translation_only",
+            "seed": "NOT_APPLICABLE"
+          }
+        },
+        {
+          "case": "excess_translation",
+          "expected_acceptance": false,
+          "pass": true,
+          "known_geometry": {
+            "dx": 24,
+            "dy": 0,
+            "scale": 1.0
+          },
+          "metrics": {
+            "accepted": false,
+            "reasons": [
+              "POSITION_DRIFT"
+            ],
+            "center_drift_xy_px": [
+              24,
+              0
+            ],
+            "center_drift_px": 24.0,
+            "scale": 1.0,
+            "scale_delta": 0.0,
+            "global_ncc": 1.0,
+            "alternative_margin": 0.038286952716292566,
+            "quadrants": [
+              {
+                "core_box": [
+                  0,
+                  0,
+                  347,
+                  389
+                ],
+                "ncc": 1.0,
+                "residual_xy_px": [
+                  0,
+                  0
+                ],
+                "residual_px": 0.0
+              },
+              {
+                "core_box": [
+                  347,
+                  0,
+                  694,
+                  389
+                ],
+                "ncc": 1.0,
+                "residual_xy_px": [
+                  0,
+                  0
+                ],
+                "residual_px": 0.0
+              },
+              {
+                "core_box": [
+                  0,
+                  389,
+                  347,
+                  778
+                ],
+                "ncc": 1.0,
+                "residual_xy_px": [
+                  0,
+                  0
+                ],
+                "residual_px": 0.0
+              },
+              {
+                "core_box": [
+                  347,
+                  389,
+                  694,
+                  778
+                ],
+                "ncc": 1.0,
+                "residual_xy_px": [
+                  0,
+                  0
+                ],
+                "residual_px": 0.0
+              }
+            ],
+            "thresholds": {
+              "max_center_drift_px": 16,
+              "max_scale_delta": 0.02,
+              "min_global_ncc": 0.92,
+              "min_quadrant_ncc": 0.8,
+              "min_patch_stddev": 8,
+              "min_distinct_alternative_margin": 0.03,
+              "max_quadrant_residual_px": 1.5
+            },
+            "search_model": "uniform_scale_and_translation_only",
+            "seed": "NOT_APPLICABLE"
+          }
+        },
+        {
+          "case": "excess_scale",
+          "expected_acceptance": false,
+          "pass": true,
+          "known_geometry": {
+            "dx": 0,
+            "dy": 0,
+            "scale": 1.06
+          },
+          "metrics": {
+            "accepted": false,
+            "reasons": [
+              "SCALE_DRIFT"
+            ],
+            "center_drift_xy_px": [
+              0,
+              0
+            ],
+            "center_drift_px": 0.0,
+            "scale": 1.06,
+            "scale_delta": 0.06000000000000005,
+            "global_ncc": 0.9999488305636124,
+            "alternative_margin": 0.033954484147552755,
+            "quadrants": [
+              {
+                "core_box": [
+                  0,
+                  0,
+                  347,
+                  389
+                ],
+                "ncc": 0.9998997350758103,
+                "residual_xy_px": [
+                  0,
+                  0
+                ],
+                "residual_px": 0.0
+              },
+              {
+                "core_box": [
+                  347,
+                  0,
+                  694,
+                  389
+                ],
+                "ncc": 0.9999461627289603,
+                "residual_xy_px": [
+                  0,
+                  0
+                ],
+                "residual_px": 0.0
+              },
+              {
+                "core_box": [
+                  0,
+                  389,
+                  347,
+                  778
+                ],
+                "ncc": 0.9998353764119176,
+                "residual_xy_px": [
+                  0,
+                  0
+                ],
+                "residual_px": 0.0
+              },
+              {
+                "core_box": [
+                  347,
+                  389,
+                  694,
+                  778
+                ],
+                "ncc": 0.9997963946918882,
+                "residual_xy_px": [
+                  0,
+                  0
+                ],
+                "residual_px": 0.0
+              }
+            ],
+            "thresholds": {
+              "max_center_drift_px": 16,
+              "max_scale_delta": 0.02,
+              "min_global_ncc": 0.92,
+              "min_quadrant_ncc": 0.8,
+              "min_patch_stddev": 8,
+              "min_distinct_alternative_margin": 0.03,
+              "max_quadrant_residual_px": 1.5
+            },
+            "search_model": "uniform_scale_and_translation_only",
+            "seed": "NOT_APPLICABLE"
+          }
+        },
+        {
+          "case": "nonuniform_geometry",
+          "pass": true,
+          "metrics": {
+            "accepted": false,
+            "reasons": [
+              "AMBIGUOUS_ALIGNMENT",
+              "LOCAL_DEFORMATION"
+            ],
+            "center_drift_xy_px": [
+              -1,
+              0
+            ],
+            "center_drift_px": 1.0,
+            "scale": 0.991,
+            "scale_delta": -0.009000000000000008,
+            "global_ncc": 0.9880358872328565,
+            "alternative_margin": 0.02242702802012886,
+            "quadrants": [
+              {
+                "core_box": [
+                  0,
+                  0,
+                  347,
+                  389
+                ],
+                "ncc": 0.975146660276073,
+                "residual_xy_px": [
+                  -3,
+                  2
+                ],
+                "residual_px": 3.605551275463989
+              },
+              {
+                "core_box": [
+                  347,
+                  0,
+                  694,
+                  389
+                ],
+                "ncc": 0.9840738055217385,
+                "residual_xy_px": [
+                  3,
+                  2
+                ],
+                "residual_px": 3.605551275463989
+              },
+              {
+                "core_box": [
+                  0,
+                  389,
+                  347,
+                  778
+                ],
+                "ncc": 0.9453583660563752,
+                "residual_xy_px": [
+                  -3,
+                  -2
+                ],
+                "residual_px": 3.605551275463989
+              },
+              {
+                "core_box": [
+                  347,
+                  389,
+                  694,
+                  778
+                ],
+                "ncc": 0.9252063849901989,
+                "residual_xy_px": [
+                  3,
+                  -2
+                ],
+                "residual_px": 3.605551275463989
+              }
+            ],
+            "thresholds": {
+              "max_center_drift_px": 16,
+              "max_scale_delta": 0.02,
+              "min_global_ncc": 0.92,
+              "min_quadrant_ncc": 0.8,
+              "min_patch_stddev": 8,
+              "min_distinct_alternative_margin": 0.03,
+              "max_quadrant_residual_px": 1.5
+            },
+            "search_model": "uniform_scale_and_translation_only",
+            "seed": "NOT_APPLICABLE"
+          }
+        },
+        {
+          "case": "wrong_size",
+          "pass": true
+        },
+        {
+          "case": "wrong_mode",
+          "pass": true
+        },
+        {
+          "case": "untextured_patch_rejected",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "case": "canonical_identity",
+      "pass": true
+    },
+    {
+      "case": "native_candidate_core_identity",
+      "pass": true
+    },
+    {
+      "case": "raw_1672_deterministic_normalization",
+      "pass": true,
+      "normalization": {
+        "original_size": [
+          1672,
+          941
+        ],
+        "original_mode": "RGB",
+        "normalized_size": [
+          1600,
+          900
+        ],
+        "normalized_mode": "RGB",
+        "method": "Pillow.Image.resize",
+        "interpolation": "LANCZOS",
+        "pillow": "12.3.0",
+        "scale_x": 0.9569377990430622,
+        "scale_y": 0.9564293304994687,
+        "scale_x_fraction": [
+          1600,
+          1672
+        ],
+        "scale_y_fraction": [
+          900,
+          941
+        ],
+        "raw_to_canonical_pixel_edge_affine": [
+          0.9569377990430622,
+          0,
+          0,
+          0,
+          0.9564293304994687,
+          0
+        ],
+        "inverse_pixel_center_affine": [
+          1.045,
+          0,
+          0.022499999999999964,
+          0,
+          1.0455555555555556,
+          0.022777777777777786
+        ],
+        "original_aspect_ratio": 1.7768331562167907,
+        "normalized_aspect_ratio": 1.7777777777777777,
+        "aspect_ratio_correction": 1.0005316321105795,
+        "nonuniform_resize": true,
+        "crop": false,
+        "normalized_rgb_sha256": "f933368de6a2733e66fbd8f3c00aa656e7a1f14e35a826fa880505935f87fc5d"
+      }
+    },
+    {
+      "case": "normalized_dx0",
+      "pass": true,
+      "expected_accepted": true,
+      "metrics": {
+        "accepted": true,
+        "reasons": [],
+        "center_drift_xy_px": [
+          0,
+          0
+        ],
+        "center_drift_px": 0.0,
+        "scale": 1.0,
+        "scale_delta": 0.0,
+        "global_ncc": 0.9999941437646,
+        "alternative_margin": 0.03832360929634837,
+        "quadrants": [
+          {
+            "core_box": [
+              0,
+              0,
+              347,
+              389
+            ],
+            "ncc": 0.9999897799616019,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              347,
+              0,
+              694,
+              389
+            ],
+            "ncc": 0.9999959694779915,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              0,
+              389,
+              347,
+              778
+            ],
+            "ncc": 0.9999832264152345,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              347,
+              389,
+              694,
+              778
+            ],
+            "ncc": 0.9999837726623516,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          }
+        ],
+        "thresholds": {
+          "max_center_drift_px": 16,
+          "max_scale_delta": 0.02,
+          "min_global_ncc": 0.92,
+          "min_quadrant_ncc": 0.8,
+          "min_patch_stddev": 8,
+          "min_distinct_alternative_margin": 0.03,
+          "max_quadrant_residual_px": 1.5
+        },
+        "search_model": "uniform_scale_and_translation_only",
+        "seed": "NOT_APPLICABLE",
+        "residual_scale_after_normalization": 1.0,
+        "residual_dx_dy_canonical_px": [
+          0,
+          0
+        ],
+        "normalization_scale_included_in_residual": false
+      }
+    },
+    {
+      "case": "normalized_dx0_zero_channels",
+      "pass": true,
+      "verification": {
+        "core_exact": true,
+        "different_channels": 0,
+        "core_rgb_sha256": "acaa0415c9957c4d72d449b6c881e6addf05f1639fff4186fc581b5c9a4d0a3a",
+        "composite_file_sha256": "6375d9bbefaf2f03d7c995f738477f66e000ac1bf0828954e3797b9d1c9a5cdf"
+      }
+    },
+    {
+      "case": "normalized_dx0_one_channel_rejected",
+      "pass": true
+    },
+    {
+      "case": "normalized_dx8",
+      "pass": true,
+      "expected_accepted": true,
+      "metrics": {
+        "accepted": true,
+        "reasons": [],
+        "center_drift_xy_px": [
+          8,
+          0
+        ],
+        "center_drift_px": 8.0,
+        "scale": 1.0,
+        "scale_delta": 0.0,
+        "global_ncc": 0.9999948224460338,
+        "alternative_margin": 0.03831335292482563,
+        "quadrants": [
+          {
+            "core_box": [
+              0,
+              0,
+              347,
+              389
+            ],
+            "ncc": 0.9999916192454276,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              347,
+              0,
+              694,
+              389
+            ],
+            "ncc": 0.9999963985809588,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              0,
+              389,
+              347,
+              778
+            ],
+            "ncc": 0.9999851695671671,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              347,
+              389,
+              694,
+              778
+            ],
+            "ncc": 0.9999855672771811,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          }
+        ],
+        "thresholds": {
+          "max_center_drift_px": 16,
+          "max_scale_delta": 0.02,
+          "min_global_ncc": 0.92,
+          "min_quadrant_ncc": 0.8,
+          "min_patch_stddev": 8,
+          "min_distinct_alternative_margin": 0.03,
+          "max_quadrant_residual_px": 1.5
+        },
+        "search_model": "uniform_scale_and_translation_only",
+        "seed": "NOT_APPLICABLE",
+        "residual_scale_after_normalization": 1.0,
+        "residual_dx_dy_canonical_px": [
+          8,
+          0
+        ],
+        "normalization_scale_included_in_residual": false
+      }
+    },
+    {
+      "case": "normalized_dx8_zero_channels",
+      "pass": true,
+      "verification": {
+        "core_exact": true,
+        "different_channels": 0,
+        "core_rgb_sha256": "acaa0415c9957c4d72d449b6c881e6addf05f1639fff4186fc581b5c9a4d0a3a",
+        "composite_file_sha256": "3b32683c4bb13ed7226cc703a29213301eb1e243b4988180fb6f4f9c682be150"
+      }
+    },
+    {
+      "case": "normalized_dx8_one_channel_rejected",
+      "pass": true
+    },
+    {
+      "case": "normalized_dx24",
+      "pass": true,
+      "expected_accepted": false,
+      "metrics": {
+        "accepted": false,
+        "reasons": [
+          "POSITION_DRIFT"
+        ],
+        "center_drift_xy_px": [
+          24,
+          0
+        ],
+        "center_drift_px": 24.0,
+        "scale": 1.0,
+        "scale_delta": 0.0,
+        "global_ncc": 0.9999946316085194,
+        "alternative_margin": 0.03828957282119083,
+        "quadrants": [
+          {
+            "core_box": [
+              0,
+              0,
+              347,
+              389
+            ],
+            "ncc": 0.9999901902646885,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              347,
+              0,
+              694,
+              389
+            ],
+            "ncc": 0.9999958177644597,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              0,
+              389,
+              347,
+              778
+            ],
+            "ncc": 0.9999818516096508,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              347,
+              389,
+              694,
+              778
+            ],
+            "ncc": 0.9999847849671851,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          }
+        ],
+        "thresholds": {
+          "max_center_drift_px": 16,
+          "max_scale_delta": 0.02,
+          "min_global_ncc": 0.92,
+          "min_quadrant_ncc": 0.8,
+          "min_patch_stddev": 8,
+          "min_distinct_alternative_margin": 0.03,
+          "max_quadrant_residual_px": 1.5
+        },
+        "search_model": "uniform_scale_and_translation_only",
+        "seed": "NOT_APPLICABLE",
+        "residual_scale_after_normalization": 1.0,
+        "residual_dx_dy_canonical_px": [
+          24,
+          0
+        ],
+        "normalization_scale_included_in_residual": false
+      }
+    },
+    {
+      "case": "normalized_scale_within",
+      "pass": false,
+      "expected_accepted": true,
+      "metrics": {
+        "accepted": false,
+        "reasons": [
+          "AMBIGUOUS_ALIGNMENT"
+        ],
+        "center_drift_xy_px": [
+          0,
+          0
+        ],
+        "center_drift_px": 0.0,
+        "scale": 1.009,
+        "scale_delta": 0.008999999999999897,
+        "global_ncc": 0.999940921215799,
+        "alternative_margin": 0.027710367932390345,
+        "quadrants": [
+          {
+            "core_box": [
+              0,
+              0,
+              347,
+              389
+            ],
+            "ncc": 0.9998824186083345,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              347,
+              0,
+              694,
+              389
+            ],
+            "ncc": 0.9999382527610388,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              0,
+              389,
+              347,
+              778
+            ],
+            "ncc": 0.9997221653599907,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              347,
+              389,
+              694,
+              778
+            ],
+            "ncc": 0.999783915572463,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          }
+        ],
+        "thresholds": {
+          "max_center_drift_px": 16,
+          "max_scale_delta": 0.02,
+          "min_global_ncc": 0.92,
+          "min_quadrant_ncc": 0.8,
+          "min_patch_stddev": 8,
+          "min_distinct_alternative_margin": 0.03,
+          "max_quadrant_residual_px": 1.5
+        },
+        "search_model": "uniform_scale_and_translation_only",
+        "seed": "NOT_APPLICABLE",
+        "residual_scale_after_normalization": 1.009,
+        "residual_dx_dy_canonical_px": [
+          0,
+          0
+        ],
+        "normalization_scale_included_in_residual": false
+      }
+    },
+    {
+      "case": "normalized_scale_outside",
+      "pass": true,
+      "expected_accepted": false,
+      "metrics": {
+        "accepted": false,
+        "reasons": [
+          "SCALE_DRIFT"
+        ],
+        "center_drift_xy_px": [
+          0,
+          0
+        ],
+        "center_drift_px": 0.0,
+        "scale": 1.03,
+        "scale_delta": 0.030000000000000027,
+        "global_ncc": 0.999934272981717,
+        "alternative_margin": 0.0359911069152844,
+        "quadrants": [
+          {
+            "core_box": [
+              0,
+              0,
+              347,
+              389
+            ],
+            "ncc": 0.9998468621167065,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              347,
+              0,
+              694,
+              389
+            ],
+            "ncc": 0.9999278996485522,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              0,
+              389,
+              347,
+              778
+            ],
+            "ncc": 0.9997607981433296,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          },
+          {
+            "core_box": [
+              347,
+              389,
+              694,
+              778
+            ],
+            "ncc": 0.9997167780846896,
+            "residual_xy_px": [
+              0,
+              0
+            ],
+            "residual_px": 0.0
+          }
+        ],
+        "thresholds": {
+          "max_center_drift_px": 16,
+          "max_scale_delta": 0.02,
+          "min_global_ncc": 0.92,
+          "min_quadrant_ncc": 0.8,
+          "min_patch_stddev": 8,
+          "min_distinct_alternative_margin": 0.03,
+          "max_quadrant_residual_px": 1.5
+        },
+        "search_model": "uniform_scale_and_translation_only",
+        "seed": "NOT_APPLICABLE",
+        "residual_scale_after_normalization": 1.03,
+        "residual_dx_dy_canonical_px": [
+          0,
+          0
+        ],
+        "normalization_scale_included_in_residual": false
+      }
+    },
+    {
+      "case": "normalized_nonuniform_deformation",
+      "pass": true,
+      "metrics": {
+        "accepted": false,
+        "reasons": [
+          "AMBIGUOUS_ALIGNMENT",
+          "LOCAL_DEFORMATION"
+        ],
+        "center_drift_xy_px": [
+          -1,
+          0
+        ],
+        "center_drift_px": 1.0,
+        "scale": 0.991,
+        "scale_delta": -0.009000000000000008,
+        "global_ncc": 0.9880429951693661,
+        "alternative_margin": 0.022431077311311887,
+        "quadrants": [
+          {
+            "core_box": [
+              0,
+              0,
+              347,
+              389
+            ],
+            "ncc": 0.9751378101845909,
+            "residual_xy_px": [
+              -3,
+              2
+            ],
+            "residual_px": 3.605551275463989
+          },
+          {
+            "core_box": [
+              347,
+              0,
+              694,
+              389
+            ],
+            "ncc": 0.9840631441535278,
+            "residual_xy_px": [
+              3,
+              2
+            ],
+            "residual_px": 3.605551275463989
+          },
+          {
+            "core_box": [
+              0,
+              389,
+              347,
+              778
+            ],
+            "ncc": 0.9453664561471712,
+            "residual_xy_px": [
+              -3,
+              -2
+            ],
+            "residual_px": 3.605551275463989
+          },
+          {
+            "core_box": [
+              347,
+              389,
+              694,
+              778
+            ],
+            "ncc": 0.9251022914353583,
+            "residual_xy_px": [
+              3,
+              -2
+            ],
+            "residual_px": 3.605551275463989
+          }
+        ],
+        "thresholds": {
+          "max_center_drift_px": 16,
+          "max_scale_delta": 0.02,
+          "min_global_ncc": 0.92,
+          "min_quadrant_ncc": 0.8,
+          "min_patch_stddev": 8,
+          "min_distinct_alternative_margin": 0.03,
+          "max_quadrant_residual_px": 1.5
+        },
+        "search_model": "uniform_scale_and_translation_only",
+        "seed": "NOT_APPLICABLE",
+        "residual_scale_after_normalization": 0.991,
+        "residual_dx_dy_canonical_px": [
+          -1,
+          0
+        ],
+        "normalization_scale_included_in_residual": false
+      }
+    },
+    {
+      "case": "unapproved_size_rejected",
+      "pass": true
+    },
+    {
+      "case": "wrong_mode_rejected",
+      "pass": true
+    }
+  ],
+  "deferred_checks": {
+    "seam_good_reference": "NOT_RUN_PHASE_3_DEPENDS_ON_PHASE_2",
+    "seam_bad_plus8": "NOT_RUN_PHASE_3_DEPENDS_ON_PHASE_2"
+  }
+}

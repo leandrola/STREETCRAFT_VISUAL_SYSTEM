@@ -1,0 +1,38 @@
+{
+  "protocol": "SPATIAL-PILOT-D-v2",
+  "scope": "PHASE_1_SIZE_ONLY",
+  "base_commit": "421627deb3aa9c2ffe4e349a1ef71273601619b1",
+  "policy": "EXPLICIT_LANCZOS_1672x941_TO_1600x900_OR_CANONICAL_IDENTITY",
+  "thresholds": {
+    "max_center_drift_px": 16,
+    "max_scale_delta": 0.02,
+    "min_global_ncc": 0.92,
+    "min_quadrant_ncc": 0.8,
+    "min_patch_stddev": 8,
+    "min_distinct_alternative_margin": 0.03,
+    "max_quadrant_residual_px": 1.5
+  },
+  "files_sha256": {
+    "validation/spatial_pilot_d/CANVAS.json": "0c7c2988e744529ad43d5958b4de060b793cd2573fd0576fd26f795b08862ab4",
+    "validation/spatial_pilot_d/FREEZE.md": "70163367de7a14fc7bad0b7711a914ef01730376e7ce5a5f070974a197c291e1",
+    "validation/spatial_pilot_d/LOCAL_CHECKS.json": "511fe6ab059a20b7399c3b2addc478edb00ca6fd2164279533c527f96a5cc206",
+    "validation/spatial_pilot_d/PROMPT.md": "ae57b51b7fabf744da4276aba08de92f53bd4895c89594a277775149987ad1ab",
+    "validation/spatial_pilot_d/README.md": "115637b1610d0235f98c8df9a920f9fae7c837dc5f3c50fa62784a583f7bdf0c",
+    "validation/spatial_pilot_d/REPORT.md": "d78ed37bcd30459514cbf909d37713b0aba25ed562420cf9b58ae5952db0b074",
+    "validation/spatial_pilot_d/canvas.png": "b1ac55c559499c38cc021e3f524e21738d19e39c7ee14637be87c31a0989435a",
+    "validation/spatial_pilot_d/check_composition.py": "bd7f9529a77cc48457afe030fbfe61830e4a2aead407519462a948f8da207a66",
+    "validation/spatial_pilot_d/compose.py": "412d027e7a1a272e69ece9b0813e09e835dffcc606f29a8f173638f71921471d",
+    "validation/spatial_pilot_d/core.png": "8aa70cf0a666c67650e0c042b674e7c7e50c0ba23a2b8711b4f14654747a2794",
+    "validation/spatial_pilot_d/prepare_canvas.py": "6a6aaf5dede93544a0b0f327d87edbee763bd4a89da1277bf7c60f08c6fd8ab5",
+    "validation/spatial_pilot_d/v2/CHECKS.json": "0d8495f8519fd45151aee19c2f210153b9def22520a6568cb44086a4938a0788",
+    "validation/spatial_pilot_d/v2/CHECKS_INITIAL.json": "9ef577b6603e317737d6ee2cde1f015e71466e1582ac819680d87d0255309c7a",
+    "validation/spatial_pilot_d/v2/NATIVE_CANVAS.json": "c6dd24f2136813a4012bb23bb5f1bafcecf30fdffc641917fd2a88b2f110e28e",
+    "validation/spatial_pilot_d/v2/PROTOCOL.md": "6432b8bc63d2ab2600591cfb3caa41f12271a624066fb09041c56ee852d5da8a",
+    "validation/spatial_pilot_d/v2/README.md": "ce3b7bf2ebe315c4c3657b36c5853f0241fed15ed621ef8109521500bcb90456",
+    "validation/spatial_pilot_d/v2/checks.py": "9d705a13e8c27584912a2a793a5b3df0ed6c41ec295947e17155bdc1db77f1f2",
+    "validation/spatial_pilot_d/v2/compose.py": "3686012c00142b67b0aa5b63e822aa542e7397c6876668536696d64d4fa9ecbf",
+    "validation/spatial_pilot_d/v2/native_canvas.png": "63ca519f0c869060d6602409b8c488a93aa1f2384eb17f7dc7438f095d73dcbc",
+    "validation/spatial_pilot_d/v2/native_core.png": "b0c92485a6b9fd0d41f9f62f1b49177bdb8c2364db990830ef6827ee90faf7cc",
+    "validation/spatial_pilot_d/v2/prepare.py": "353b65a5fdb2ac500cbb490a6e32ff3253f5e354be4359c60e3626061c182909"
+  }
+}
