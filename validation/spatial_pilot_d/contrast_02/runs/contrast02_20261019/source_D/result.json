@@ -1,0 +1,40 @@
+{
+  "case": "source_D",
+  "input": {
+    "path": "/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2/benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_source.jpg",
+    "location": "WORKSPACE",
+    "sha256": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+    "size": [
+      347,
+      389
+    ],
+    "mode": "RGB"
+  },
+  "original_mode": "RGB",
+  "normalization": {
+    "size": [
+      1600,
+      1794
+    ],
+    "scale_x": 4.610951008645533,
+    "scale_y": 4.611825192802057,
+    "interpolation": "LANCZOS",
+    "rgb_sha256": "1eb0b91c2a0c571197fb5d2c46e1aafff111e8e727fecf8adee896838f881400"
+  },
+  "core_box_normalized": [
+    0,
+    0,
+    1,
+    1
+  ],
+  "raw_only": false,
+  "tiles": [],
+  "annotation": "PENDING_USER",
+  "status": "NO_FREE_ZONE",
+  "findings": [],
+  "tile_errors": [],
+  "unique_counts": {},
+  "raw_finding_count": 0,
+  "core_violations": [],
+  "input_sha256_after": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc"
+}

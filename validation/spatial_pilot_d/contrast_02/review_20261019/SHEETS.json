@@ -1,0 +1,96 @@
+{
+  "scope": "VISUAL_REVIEW_SHEETS_ONLY_NO_PREDICTION_EDITS",
+  "pages": [
+    {
+      "file": "v1_D_2_page_01.png",
+      "case": "v1_D_2",
+      "sha256": "07b7c5e482c88f3b83922ee1bb2b48862c9d163b03bb90e25522c5c814dd3d92",
+      "finding_ids": [
+        "tile_000_line_000",
+        "tile_000_line_001",
+        "tile_000_line_002",
+        "tile_000_line_004",
+        "tile_001_line_000",
+        "tile_001_line_001",
+        "tile_001_line_002",
+        "tile_001_line_003",
+        "tile_001_line_004",
+        "tile_001_line_005",
+        "tile_001_line_006",
+        "tile_001_line_007",
+        "tile_001_line_008",
+        "tile_001_line_009",
+        "tile_002_line_000",
+        "tile_002_line_001"
+      ]
+    },
+    {
+      "file": "v1_D_2_page_02.png",
+      "case": "v1_D_2",
+      "sha256": "bfc88beb492f2e5d7db4d16f19dfb0f4a031e7d8ada77bbd3224255fd4d52ea4",
+      "finding_ids": [
+        "tile_002_line_002",
+        "tile_002_line_005",
+        "tile_002_line_007",
+        "tile_003_line_003",
+        "tile_003_line_004",
+        "tile_004_line_001",
+        "tile_005_line_002"
+      ]
+    },
+    {
+      "file": "v1_D_1_page_01.png",
+      "case": "v1_D_1",
+      "sha256": "b17c93bf596f9c6ecb205af1a66448c0ad3d939b87e2059160900fdbc74569a5",
+      "finding_ids": [
+        "tile_001_line_000",
+        "tile_001_line_001",
+        "tile_001_line_002",
+        "tile_001_line_004",
+        "tile_001_line_005",
+        "tile_001_line_006",
+        "tile_001_group_000",
+        "tile_002_line_000",
+        "tile_002_line_002",
+        "tile_002_line_004",
+        "tile_003_line_000",
+        "tile_004_line_000",
+        "tile_004_line_001",
+        "tile_006_line_000"
+      ]
+    },
+    {
+      "file": "legacy_191_D_page_01.png",
+      "case": "legacy_191_D",
+      "sha256": "7337f72a869235e0f09614b38e054e5a0b815a9fa12a41a9275dfa5907dd8e6b",
+      "finding_ids": [
+        "tile_001_line_000",
+        "tile_001_line_001",
+        "tile_001_line_002",
+        "tile_001_line_003",
+        "tile_001_line_004",
+        "tile_001_line_005",
+        "tile_001_line_006",
+        "tile_001_line_007",
+        "tile_002_line_000",
+        "tile_002_line_001",
+        "tile_002_line_006",
+        "tile_002_group_000",
+        "tile_003_line_000",
+        "tile_003_line_001",
+        "tile_004_line_000",
+        "tile_004_line_001"
+      ]
+    },
+    {
+      "file": "legacy_191_D_page_02.png",
+      "case": "legacy_191_D",
+      "sha256": "70584b384314193f8c1bb4c68c2ae7d6b3163d8196221801308c36575b34f951",
+      "finding_ids": [
+        "tile_005_line_000",
+        "tile_005_line_001",
+        "tile_006_line_000"
+      ]
+    }
+  ]
+}

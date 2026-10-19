@@ -1,0 +1,67 @@
+{
+  "freeze_commit": "b971cf43997017fecc6059961cbcf6dfaa49417b",
+  "freeze_sha256": "26302674549af7528e63948a6a76e7a6b4186ba0ea2098e70691e379330899c6",
+  "binary_sha256": "9e6441ab042ce165c43251078556ca14571d475fe6cff400d10529d8b4dfa4d0",
+  "python": "3.14.5",
+  "pillow": "12.3.0",
+  "os": "macOS-15.7.9-x86_64-i386-64bit-Mach-O",
+  "scope": "LOCAL_OCR_CONTRAST_ONLY",
+  "ai_generations": 0,
+  "cases": {
+    "v1_D_2": {
+      "status": "OCR_COMPLETE",
+      "unique_counts": {
+        "VIOLACION": 3,
+        "IGNORADO_POR_SOLAPE": 19,
+        "ADVERTENCIA": 1
+      },
+      "core_violations": [],
+      "known_positive_results": [
+        {
+          "text": "JOHNSON WAREHOUSE",
+          "expected": "VIOLACION",
+          "detected": false,
+          "violation_ids": [],
+          "recognized_ids": []
+        },
+        {
+          "text": "STORAGE MOVING",
+          "expected": "VIOLACION",
+          "detected": false,
+          "violation_ids": [],
+          "recognized_ids": []
+        }
+      ]
+    },
+    "v1_D_1": {
+      "status": "OCR_COMPLETE",
+      "unique_counts": {
+        "RAW_UNREVIEWED": 14
+      },
+      "core_violations": [],
+      "known_positive_results": null
+    },
+    "source_D": {
+      "status": "NO_FREE_ZONE",
+      "unique_counts": {},
+      "core_violations": [],
+      "known_positive_results": null
+    },
+    "legacy_191_D": {
+      "status": "OCR_COMPLETE",
+      "unique_counts": {
+        "RAW_UNREVIEWED": 19
+      },
+      "core_violations": [],
+      "known_positive_results": null
+    }
+  },
+  "missing_inputs": [
+    "spatial_D_001",
+    "spatial_D_002",
+    "spatial_D_003_good"
+  ],
+  "synthetic_injection": "NOT_RUN_MISSING_GOOD_BASE",
+  "overall_acceptance": "NOT_ESTABLISHED",
+  "false_positive_review": "PENDING_VISUAL_REVIEW"
+}

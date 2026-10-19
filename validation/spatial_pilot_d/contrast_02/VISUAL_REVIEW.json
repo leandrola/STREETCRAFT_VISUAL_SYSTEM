@@ -1,0 +1,33 @@
+{
+  "reviewer": "Codex visual inspection of contact sheets; not Lean scoring or completed annotations for other cases",
+  "scope": "False-positive triage of 56 unique OCR/group crops on five contact sheets; raw duplicate crops retained but not individually reviewed",
+  "sheets_manifest": "review_20261019/SHEETS.json",
+  "prediction_records_modified": false,
+  "case_annotations_other_than_operator_positive": "PENDING_USER; remain RAW_UNREVIEWED and excluded from acceptance/failure counts",
+  "false_positive_definition": "Detection in a crop that visually contains no text, not a spelling/transcription error on real text",
+  "false_positives_observed": [],
+  "false_positive_count_in_reviewed_unique_crops": 0,
+  "does_not_prove": "No false positives on unseen images, no false negatives, accurate transcription, or general OCR specificity",
+  "known_positive_diagnostic": {
+    "case": "v1_D_2",
+    "JOHNSON": {"finding": "tile_000_line_000", "confidence": 1.0, "classification": "VIOLACION", "visually_text": true},
+    "WAREHOUSE": {"finding": "tile_000_line_001", "confidence": 1.0, "classification": "VIOLACION", "visually_text": true},
+    "STORAGE": {"finding": "tile_000_line_002", "confidence": 1.0, "classification": "VIOLACION", "visually_text": true},
+    "MOVING": {"finding": "tile_003_line_003", "confidence": 0.5, "classification": "ADVERTENCIA", "visually_text": true, "failure": "Recognized but below frozen eliminatory confidence threshold; not an OCR transcription miss"},
+    "whole_image_eliminated_by_existing_violations": true,
+    "frozen_full_phrase_criterion": "FAIL: 0/2 phrase matches; keep result without regrouping or threshold changes",
+    "grouping_limitation": "Axis-aligned OCR boxes of slanted adjacent lines overlap vertically; frozen nonnegative-gap grouping cannot join them"
+  },
+  "transcription_errors_not_nontext_false_positives": [
+    {"case": "v1_D_2", "finding": "tile_000_line_004", "ocr": "L.KATZENSTEMM & CO.", "observation": "Real protected sign; name misread; correctly ignored by overlap"},
+    {"case": "v1_D_2", "finding": "tile_002_line_000", "ocr": "usiness 9 %/9% Pima", "observation": "Real billboard text partially clipped and merged; correctly ignored by overlap"},
+    {"case": "legacy_191_D", "finding": "tile_006_line_000", "ocr": "NILLNOL", "observation": "Crop contains lower parts of real sign lettering; severe partial-text transcription error; no spatial verdict"}
+  ],
+  "controls": {
+    "core_overlap_filter": "19 unique protected findings ignored, zero classified core violations on available zoned D2",
+    "source_free_zone_empty": "Zero OCR tiles; not evidence of recognition sensitivity",
+    "good_D3_negative_control": "NOT_RUN_MISSING_INPUT",
+    "synthetic_recall_by_size": "NOT_RUN_MISSING_GOOD_BASE",
+    "whitelist_duplicate_image_control": "NOT_RUN; metadata-only unit test is not image detection evidence"
+  }
+}
