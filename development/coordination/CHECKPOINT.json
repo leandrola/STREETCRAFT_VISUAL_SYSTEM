@@ -430,7 +430,7 @@
     "authorization": "Lean 2026-10-15: preparar y ejecutar parte local, generación exclusivamente por usuario en ChatGPT",
     "status": "V2_PHASE_2_BLOCKED_ORIGINAL_DOWNLOADS_AND_PROVENANCE",
     "source": "R2B-191-D",
-    "evidence": "validation/spatial_pilot_d/v2/REPORT.md",
+    "evidence": "validation/spatial_pilot_d/v2/RESUME_20261019.md",
     "v1_historical_evidence": "validation/spatial_pilot_d/REPORT.md",
     "base_commit": "e9cec79b38ba14171e6b89e036924caa69b4fddb",
     "steps": {
@@ -450,6 +450,40 @@
     "resume": "Identify original downloads and provenance of spatial D runs 1/2/3, then use frozen v2 ingestion commands in validation/spatial_pilot_d/v2/README.md. No real run has been processed. Close phase 2 before implementing/calibrating SEAM_GATE (phase 3); no composite visual evaluation before phases 1-3 close.",
     "alignment_limitation": "Synthetic dx=5 dy=-3 scale=1.012 recovers geometry but is rejected: ambiguity margin 0.026055934 < frozen 0.03; no forced composition",
     "real_outputs_received": 0,
+    "contrast_02": {
+      "status": "BLOCKED_STEP_1_PENDING_USER_OVERLAY_APPROVAL",
+      "scope": "Independent local OCR contrast authorized by Lean; missing spatial outputs do not block available legacy cases",
+      "evidence": "validation/spatial_pilot_d/contrast_02/REPORT.md",
+      "candidate_commit": "1bdf45df46f81314585214dc68f17a803550a1aa",
+      "candidate_protocol_sha256": "5120497c4e40c187eb194d66d641829bf48647eae83139dfd1cf426815395afd",
+      "valid_freeze_commit": null,
+      "valid_freeze_sha256": null,
+      "overlay": "validation/spatial_pilot_d/contrast_02/v1_D_2_zone_review.png",
+      "overlay_sha256": "79368a260badd7b6e40696a19017fc465be2a54abb51977c58292b72081f3500",
+      "overlay_approval": "PENDING_USER_CONFIRMATION_OF_NORMALIZED_BOX_0.20_0.00_0.89_0.94",
+      "inputs": {
+        "v1_D_1": "EXTERNAL_AVAILABLE; ZONA NO DEFINIDA after multiscale match; no verdict",
+        "v1_D_2": "EXTERNAL_AVAILABLE; operator-annotated positive; zone approval pending",
+        "source_D": "WORKSPACE_AVAILABLE",
+        "legacy_191_D": "WORKSPACE_AVAILABLE; raw OCR only, no verdict",
+        "spatial_D_001_002_003": "MISSING_IDENTIFIED_ORIGINALS; do not substitute; no blocker for available cases"
+      },
+      "ocr": "Apple Vision revision 3 capability query PASS on macOS 15.7.9 (24G830); en-US available; image OCR NOT_RUN; no network or installation",
+      "steps": {
+        "1": "BLOQUEADO: candidate committed, but user overlay approval required for valid freeze; OCR runner not yet implemented",
+        "2": "BLOQUEADO: step 1 dependency; no findings or crops",
+        "3": "BLOQUEADO: step 1 and missing good D3 base; no synthetic injections",
+        "4": "BLOQUEADO for complete record; preparation/blocker evidence recorded only"
+      },
+      "false_positives": "NOT_EVALUATED",
+      "false_negatives": "NOT_EVALUATED",
+      "ocr_executed": false,
+      "synthetic_injections_rendered": false,
+      "ai_images_generated": 0,
+      "input_files_modified": false,
+      "drift_thresholds_modified": false,
+      "resume": "Obtain overlay approval/correction, finish and commit final OCR protocol/runner before OCR, then process available inputs with fixed rules. Keep duplicate whitelist as ADVERTENCIA per explicit rule 1c; report missed duplicates as priority findings. Missing good D3 prevents its control/injections and overall PASS, not available-image OCR."
+    },
     "v2": {
       "authorization": "Lean 2026-10-17: four ordered phases; local versioned amendment; no generation or push without additional explicit authorization",
       "protocol": "SPATIAL-PILOT-D-v2",
@@ -497,7 +531,31 @@
       "pipeline_visual_scores": "NOT_YET_EVALUATED",
       "pixel_identity_claim": "Only valid normalization, alignment PASS, composition and saved-pixel verification PASS demonstrate pipeline core identity; visual scores do not",
       "pilot_success_declared": false,
-      "push_performed": false
+      "push_performed": false,
+      "resumption_20261019": {
+        "base_commit": "fc4936282aa0f17698b0d7f5bb2f37d2a2b83474",
+        "evidence": "validation/spatial_pilot_d/v2/RESUME_20261019.md",
+        "previous_evidence": "validation/spatial_pilot_d/v2/REPORT.md",
+        "steps_current_request": {
+          "1": "CERRADO: existing v2 freeze verified; deterministic normalization smoke PASS; residual scale limit remains 0.02, not 0.03",
+          "2": "BLOQUEADO: original downloads and run provenance for D-001/D-002/D-003 unidentified; zero real registrations",
+          "3": "BLOQUEADO: step 2 dependency; no real composites or Lean seam scores; SEAM_GATE not frozen",
+          "4": "BLOQUEADO: steps 2/3 dependencies; OCR not executed; violations and false positives NOT_EVALUATED",
+          "5": "BLOQUEADO: complete record depends on steps 2-4; only blocker and attempts recorded"
+        },
+        "attempts": [
+          "Verified all committed v1/v2 freeze hashes and normalization smoke without rewriting frozen evidence",
+          "Repeated repository/Desktop image inventory and read hashes/dimensions of four D candidates",
+          "Downloads read again denied by macOS; no permission change or bypass",
+          "Requested original paths and spatial run identification from Lean"
+        ],
+        "seam_gate_freeze_sha256": null,
+        "seam_gate_freeze_commit": null,
+        "real_outputs_processed": 0,
+        "ocr_executed": false,
+        "thresholds_modified": false,
+        "stop_at": "STEP_2"
+      }
     }
   }
 }
