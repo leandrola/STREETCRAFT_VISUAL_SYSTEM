@@ -451,7 +451,7 @@
     "alignment_limitation": "Synthetic dx=5 dy=-3 scale=1.012 recovers geometry but is rejected: ambiguity margin 0.026055934 < frozen 0.03; no forced composition",
     "real_outputs_received": 0,
     "contrast_02": {
-      "status": "BLOCKED_STEP_3_MISSING_GOOD_D3_BASE; FROZEN_FULL_PHRASE_CRITERION_FAIL",
+      "status": "BLOCKED_STEP_3_ORIGINAL_D3_PROVENANCE; FROZEN_FULL_PHRASE_CRITERION_FAIL",
       "scope": "Independent local OCR contrast authorized by Lean; missing spatial outputs do not block available legacy cases",
       "evidence": "validation/spatial_pilot_d/contrast_02/RESULTS.md",
       "historical_preparation_evidence": "validation/spatial_pilot_d/contrast_02/REPORT.md",
@@ -467,13 +467,15 @@
         "v1_D_2": "EXTERNAL_AVAILABLE; operator-annotated positive; approved zone; local OCR complete",
         "source_D": "WORKSPACE_AVAILABLE",
         "legacy_191_D": "WORKSPACE_AVAILABLE; raw OCR only, no verdict",
-        "spatial_D_001_002_003": "MISSING_IDENTIFIED_ORIGINALS; do not substitute; no blocker for available cases"
+        "spatial_D_001_002_003": "D1/D2 originals still missing; D3 candidate attachment received at 1365x768 RGBA, original-download provenance unverified; no substitution",
+        "D3_attachment_receipt": "validation/spatial_pilot_d/contrast_02/D3_ATTACHMENT_RECEIPT.json",
+        "D3_attachment_sha256": "1e8a03659cc877da91b34fd8dae35cda2130929ffd1932abd7fdc4f57bc27603"
       },
       "ocr": "Apple Vision revision 3 accurate en-US, local OCR COMPLETE: 27 tiles, no engine errors; macOS 15.7.9 (24G830), Pillow 12.3.0; no network or installation",
       "steps": {
         "1": "CERRADO: approved zone, committed freeze before image OCR; 22 metadata-only unit checks PASS",
         "2": "CERRADO for available inputs: 95 raw findings/groups with crops, 56 unique; full-phrase criterion fails, preserved without tuning; missing spatial cases excluded",
-        "3": "BLOQUEADO: identified original good D3 base missing after scoped search/operator request; no substitution or synthetic injections",
+        "3": "BLOQUEADO: candidate D3 attachment received, but original provenance unverified (1365x768 RGBA versus reported 1672x941); confirmation requested; no substitution or injections",
         "4": "BLOQUEADO for complete test record by step 3; execution, failure and blocker evidence recorded"
       },
       "false_positives": "0 non-text detections observed by Codex in 56 unique crops; transcription errors retained separately; not general specificity or Lean annotation",
@@ -483,14 +485,14 @@
       "visual_review": "validation/spatial_pilot_d/contrast_02/VISUAL_REVIEW.json",
       "v1_D_2_unique_counts": {"VIOLACION": 3, "ADVERTENCIA": 1, "IGNORADO_POR_SOLAPE": 19},
       "v1_D_2_core_violations": 0,
-      "good_D3_control": "NOT_RUN_MISSING_INPUT",
+      "good_D3_control": "NOT_RUN_PENDING_ORIGINAL_PROVENANCE_OF_RECEIVED_ATTACHMENT",
       "synthetic_recall_by_size": "NOT_MEASURED",
       "overall_acceptance": "NOT_PASSED; full-phrase criterion FAIL and sensitivity/negative controls incomplete",
       "synthetic_injections_rendered": false,
       "ai_images_generated": 0,
       "input_files_modified": false,
       "drift_thresholds_modified": false,
-      "resume": "Obtain identified original good spatial D3 for its negative control and frozen injection matrix; do not replace by v1/canvas. Preserve OCR results, confidence thresholds, grouping and whitelist. Any proposed improvement belongs to a separately authorized version, never retroactive tuning. Missing D3 blocks step 3 and overall completion, not the already completed available-image OCR."
+      "resume": "Confirm whether received 1365x768 RGBA attachment is original good spatial D3 or a reduced copy. Do not infer reduction solely from dimensions; do not silently substitute a copy for original-D3 controls. After binding the original, use frozen OCR/injection rules; a copy-only experiment requires explicit scoped approval and separate provenance. Preserve prior results, confidence thresholds, grouping and whitelist."
     },
     "v2": {
       "authorization": "Lean 2026-10-17: four ordered phases; local versioned amendment; no generation or push without additional explicit authorization",

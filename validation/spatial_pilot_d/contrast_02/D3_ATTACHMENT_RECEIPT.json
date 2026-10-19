@@ -1,0 +1,32 @@
+{
+  "kind": "ATTACHMENT_INTAKE_NOT_OCR_OR_COMPOSITION_EVIDENCE",
+  "base_commit": "905028d54283fabe759b076ee0f63cc1a906d4f0",
+  "delivery_context": "User supplied an image in response to request for original good spatial D corrida 3; no accompanying provenance statement",
+  "path": "/Users/macbookpro/Library/Application Support/Code/agentSessionData/9617c07f-4e1f-459f-b188-71cc7672325a/attachments/cd47e3be-5b1d-4012-bf42-25255759e5cb/Image from URL.png",
+  "sha256": "1e8a03659cc877da91b34fd8dae35cda2130929ffd1932abd7fdc4f57bc27603",
+  "bytes": 2495549,
+  "format": "PNG",
+  "size": [1365, 768],
+  "mode": "RGBA",
+  "alpha_extrema": [255, 255],
+  "metadata_keys": [],
+  "exif_orientation": 1,
+  "observations": [
+    "Delivered dimensions differ from operator-reported generator originals 1672x941",
+    "No metadata establishes an original download or conversion history",
+    "All alpha values are opaque; file mode is nevertheless RGBA, not RGB",
+    "Dimension mismatch does not prove recompression/resizing or wrong run identity"
+  ],
+  "run_binding": "D3_CANDIDATE_FROM_CONVERSATION_CONTEXT_PENDING_EXPLICIT_CONFIRMATION",
+  "original_download_status": "UNVERIFIED",
+  "ocr_technical_compatibility": "Frozen OCR preprocessor can handle this size/mode; that does not establish original-download provenance",
+  "spatial_compositor_admission": "NOT_ADMITTED; no normalization/registration/composition attempted",
+  "request_to_operator": "Confirm D3 identity and whether this is the original download or a reduced copy; a copy-only OCR/injection experiment must be explicitly scoped and cannot close original-D3 controls silently",
+  "current_status": "BLOCKED_ORIGINAL_D3_PROVENANCE; attachment received, no longer simply absent",
+  "ocr_executed_on_attachment": false,
+  "synthetic_injections_on_attachment": false,
+  "input_modified": false,
+  "freeze_modified": false,
+  "ai_generations": 0,
+  "clock_or_generation_timestamp_inferred": false
+}
