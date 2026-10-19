@@ -1,0 +1,95 @@
+{
+  "scope": "METADATA_ONLY_UNIT_TESTS_NO_OCR",
+  "passed": 22,
+  "checks": [
+    {
+      "case": "violation_at_confidence_boundary",
+      "pass": true
+    },
+    {
+      "case": "low_confidence_warning",
+      "pass": true
+    },
+    {
+      "case": "short_string_warning",
+      "pass": true
+    },
+    {
+      "case": "height_below_10_warning",
+      "pass": true
+    },
+    {
+      "case": "height_10_inclusive",
+      "pass": true
+    },
+    {
+      "case": "legitimate_core_ignored",
+      "pass": true
+    },
+    {
+      "case": "invented_core_ignored",
+      "pass": true
+    },
+    {
+      "case": "whitelist_duplicate_warning",
+      "pass": true
+    },
+    {
+      "case": "whitelist_case_punctuation",
+      "pass": true
+    },
+    {
+      "case": "whitelist_plural",
+      "pass": true
+    },
+    {
+      "case": "whitelist_approximate",
+      "pass": true
+    },
+    {
+      "case": "undefined_zone_raw_only",
+      "pass": true
+    },
+    {
+      "case": "overlap_exact_30_not_ignored",
+      "pass": true
+    },
+    {
+      "case": "overlap_over_30_ignored",
+      "pass": true
+    },
+    {
+      "case": "whole_core_no_tiles",
+      "pass": true
+    },
+    {
+      "case": "tile_overlap_and_edge",
+      "pass": true
+    },
+    {
+      "case": "small_image_tile",
+      "pass": true
+    },
+    {
+      "case": "tile_inverse_coordinates",
+      "pass": true
+    },
+    {
+      "case": "line_group_text_and_conservative_confidence",
+      "pass": true
+    },
+    {
+      "case": "line_group_preserves_constituents",
+      "pass": true
+    },
+    {
+      "case": "duplicate_preserves_strongest_and_raw",
+      "pass": true
+    },
+    {
+      "case": "no_cross_classification_dedup",
+      "pass": true
+    }
+  ],
+  "does_not_validate": "OCR sensitivity, real good-image specificity or synthetic image recall"
+}

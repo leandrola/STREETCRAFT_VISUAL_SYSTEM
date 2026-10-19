@@ -1,0 +1,183 @@
+{
+  "id": "SPATIAL-D-CONTRAST-02",
+  "version": "1.0.0",
+  "status": "APPROVED_ZONE_REQUIRES_COMMITTED_FREEZE_BEFORE_OCR",
+  "execution_authorized_by_this_file": true,
+  "scope": "Offline OCR contrast only; not a VSG reopen or spatial alignment acceptance",
+  "whitelist": [
+    "BUSINESS LOANS",
+    "2 3/4% OVER PRIME",
+    "1-800 722-LOAN",
+    "BUSINESS LOAN CENTER",
+    "BUSINESS LOAN CENTERS",
+    "TERMINAL DINER",
+    "L. KATZENSTEIN & CO."
+  ],
+  "whitelist_comparison": {
+    "normalization": "Unicode NFKD, uppercase, retain ASCII A-Z/0-9 only",
+    "metric": "difflib.SequenceMatcher(None, normalized_text, normalized_whitelist, autojunk=False).ratio()",
+    "minimum_similarity_inclusive": 0.8,
+    "unit": "whole OCR line; also evaluate contiguous line groups of 2 or 3 within a tile when horizontal overlap >=0.5 of narrower line and vertical gap <=1.5 times maximum line height; keep constituent detections for audit"
+  },
+  "geometry": {
+    "coordinates": "normalized 0-1, top-left origin, xyxy, exclusive right/bottom",
+    "spatial_D_core": [
+      0.283125,
+      0.06777777777777778,
+      0.716875,
+      0.9322222222222222
+    ],
+    "v1_D_2_core": [
+      0.2,
+      0.0,
+      0.89,
+      0.94
+    ],
+    "v1_D_2_approval": "APPROVED_BY_LEAN_REPLY_si_TO_OVERLAY_CONFIRMATION",
+    "v1_D_1_core": null,
+    "v1_D_1_status": "ZONA NO DEFINIDA; multiscale match failed fixed confidence checks; no verdict",
+    "source_D_core": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "legacy_191_D": "RAW_OCR_ONLY_NO_CORE_OR_VERDICT",
+    "free_zone": "whole image minus defined core rectangle",
+    "overlap_denominator": "area of OCR detection bounding box, NOT core area",
+    "ignore_if_core_overlap_strictly_greater_than": 0.3,
+    "undefined_zone": "no classified verdict; optional raw OCR explicitly unreviewed"
+  },
+  "decision_order": [
+    "Undefined zone or legacy image: RAW_UNREVIEWED, no verdict",
+    "Core overlap >0.30: IGNORADO_POR_SOLAPE regardless of spelling/confidence",
+    "Whitelist similarity >=0.80 in free zone: ADVERTENCIA_DUPLICADO",
+    "OCR confidence >=0.60 AND >=3 alphanumeric characters AND bounding-box height >=10 at width 1600 equivalent: VIOLACION",
+    "Otherwise: ADVERTENCIA (low confidence, short text, small height or possible plate)"
+  ],
+  "plate_policy": "No automatic exemption for plate-like strings; conservative VIOLACION if all three criteria pass, manual possible-plate flag only",
+  "duplicate_rule_interpretation": "Use explicit step 1c: whitelist in free zone is ADVERTENCIA_DUPLICADO, not silently relabeled VIOLACION. Failure to detect duplicates is nevertheless a priority test finding. User final-rule reference to eliminatory duplicates is a wording conflict to retain, not a threshold change.",
+  "preprocessing": {
+    "decode": "Pillow RGB; flatten alpha on white; no EXIF rotation, ICC conversion, thresholding, sharpening or contrast enhancement; flag nonidentity EXIF for exclusion",
+    "canonical_width": 1600,
+    "canonical_height": "round(original_height * 1600/original_width)",
+    "canonical_interpolation": "Pillow 12.3.0 LANCZOS",
+    "tile_size_px": [
+      800,
+      800
+    ],
+    "tile_stride_px": [
+      640,
+      640
+    ],
+    "edge_handling": "include final tile anchored to each far edge; if image smaller than tile use actual extent; deduplicate tile origins",
+    "zone_selection": "submit only tiles intersecting free zone; tiles may include core context, whose detections are filtered by overlap; no recognition pass dedicated to core. Legacy/undefined-zone raw-only diagnostics use full-image tiles without verdict.",
+    "tile_upscale": 2,
+    "tile_interpolation": "LANCZOS",
+    "coordinates_output": "original pixels plus normalized boxes, inverse mappings recorded",
+    "height_equivalent": "original_box_height * 1600/original_width",
+    "deduplicate": "same normalized line and bbox IoU >=0.50; keep maximum confidence and all raw tile detections; no cross-classification disappearance",
+    "crops": "every raw finding incl warnings and overlap-ignored; original pixels with 8 equivalent-pixel margin, clipped to image; never run OCR on labeled overlays"
+  },
+  "ocr_candidate": {
+    "engine": "Apple Vision VNRecognizeTextRequest",
+    "revision": 3,
+    "level": "accurate",
+    "languages": [
+      "en-US"
+    ],
+    "language_correction": false,
+    "automatic_language_detection": false,
+    "minimum_text_height": 0,
+    "custom_words": [],
+    "top_candidates": 1,
+    "network": "PROHIBITED",
+    "availability": "LOCAL_CAPABILITY_QUERY_PASS; image recognition not yet executed",
+    "platform": "macOS 15.7.9 (24G830), x86_64",
+    "compiler": "Apple Swift 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)",
+    "model_asset_version": "NOT_EXPOSED; pin OS build and Vision request revision instead",
+    "usesCPUOnly": true
+  },
+  "ground_truth": {
+    "v1_D_2": {
+      "source": "Lean instruction",
+      "known_positive": [
+        "JOHNSON WAREHOUSE",
+        "STORAGE MOVING"
+      ],
+      "expected": "VIOLACION"
+    },
+    "spatial_D_003_good": {
+      "source": "Lean instruction; input unavailable",
+      "expected_violations": 0
+    },
+    "others": "ANNOTATION_PENDING_USER; findings UNREVIEWED, excluded from acceptance/failure counts"
+  },
+  "planned_injection": {
+    "base": "spatial_D_003_good original; absent, do not replace silently by canvas/fixture/other output",
+    "text": "NOVA DEPOT",
+    "glyph_ink_heights_at_width_1600": [
+      8,
+      12,
+      20,
+      40,
+      80
+    ],
+    "font_families": [
+      "sans-serif",
+      "serif"
+    ],
+    "font_files_and_hashes": [
+      {
+        "path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "face": "Arial Regular",
+        "sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9"
+      },
+      {
+        "path": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+        "face": "Times New Roman Regular",
+        "sha256": "f3b4ffff71c2a0c7227d37497683b2498fb2d0a4e8beae26f022e3ccfcaabfa3"
+      }
+    ],
+    "variants": [
+      "sharp",
+      "GaussianBlur(radius=0.6 equivalent px) on text layer only"
+    ],
+    "foreground_background": "black text on white backing rectangle; explicitly high-contrast sensitivity test, not natural-scene robustness",
+    "placement": "one injection per image, wholly in left free strip, centered; skip-and-report if glyphs do not fit, never silently shrink",
+    "duplicate_control": "TERMINAL DINER in free zone, expected ADVERTENCIA_DUPLICADO",
+    "core_control": "TERMINAL DINER wholly inside core, expected ignored/excluded, never VIOLACION",
+    "detection": "bbox IoU >=0.30 AND normalized string similarity >=0.80 to injected text; also report OCR recognition separately from VIOLACION classification",
+    "report": "all 20 size/font/sharpness cells, denominators, false negatives, synthetic truth and hashes; sizes below gate height may be recognized warnings"
+  },
+  "acceptance_all_required": [
+    "Both known positive phrases detected as VIOLACION (line-group matching allowed; constituent findings retained)",
+    "Zero VIOLACION on available identified good spatial D-003",
+    "100% detection of synthetic injections at heights >=20 for both fonts and sharp/blurred variants",
+    "No core text classified as VIOLACION",
+    "Whitelist duplicate control detected as ADVERTENCIA_DUPLICADO"
+  ],
+  "limitations": [
+    "OCR can miss pseudo-legible glyphs; manual warning crops required; zero OCR findings is not absence-of-text proof",
+    "Missing inputs do not block available-image OCR after valid freeze, but missing good base/controls prevent overall PASS",
+    "No threshold or whitelist change after observing OCR; failures including whitelist misses reported first",
+    "No OCR execution until reviewed zone, bound engine/fonts, committed final protocol and recorded freeze digest"
+  ],
+  "derived_from_candidate_sha256": "5120497c4e40c187eb194d66d641829bf48647eae83139dfd1cf426815395afd",
+  "approval": {
+    "operator": "Lean",
+    "reply": "si",
+    "scope": "normalized core box [0.20,0.00,0.89,0.94] on overlay",
+    "overlay_sha256": "79368a260badd7b6e40696a19017fc465be2a54abb51977c58292b72081f3500",
+    "date": "2026-10-19",
+    "exact_event_timestamp": "NOT_EXPOSED"
+  },
+  "implementation_details": {
+    "group_confidence": "minimum confidence of constituents",
+    "group_order": "sort by top y then left x, group consecutive 2 or 3 lines; nonnegative gap",
+    "known_positive_match": "normalized string similarity >=0.80 and VIOLACION classification",
+    "backend_batch_timeout_seconds": 300,
+    "failure_policy": "preserve partial results; stop on engine or tile errors; no tuning or cloud fallback",
+    "missing_good_base": "no substitute; injection and overall acceptance remain blocked; available image OCR proceeds"
+  }
+}

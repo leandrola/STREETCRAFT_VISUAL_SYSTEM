@@ -1,0 +1,33 @@
+{
+  "id": "SPATIAL-D-CONTRAST-02-FREEZE-1",
+  "approval": "Lean reply si approves overlay box; exact timestamp not exposed",
+  "overlay_box": [
+    0.2,
+    0,
+    0.89,
+    0.94
+  ],
+  "files_sha256": {
+    "PROTOCOL.json": "67482bd608e6b48c0aa7c36e1927125f58d5214145166e1666d264d1065703bc",
+    "PROTOCOL_CANDIDATE.json": "5120497c4e40c187eb194d66d641829bf48647eae83139dfd1cf426815395afd",
+    "PREPARATION.json": "e622ffd297659700dc2009f145581fb12da75ec68ffebbf6d4301513ed38f3b1",
+    "v1_D_2_zone_review.png": "79368a260badd7b6e40696a19017fc465be2a54abb51977c58292b72081f3500",
+    "vision_ocr.swift": "2792fdc2dafb992fc2601ddcb7cb60862338e2b9424390837518f3f89c32c49f",
+    "run_ocr.py": "d5201fc0dae61f1f2c5349aaaf8e30a80b8e87ed047427fd9e6395439d59f90c",
+    "check_runner.py": "15d6b03e10d18811b3e8d0c4bf7a9e996b8cae5f548c7a55ece9c36154dc052d",
+    "RUNNER_CHECKS.json": "40b88cc7e01d514000547993b05dd94dc379ac39078cb20e898a8d9a2cc832cc",
+    "README_RUN.md": "1290af7ec4ee7d240e97b511f5e789af71da65cb79ec548940956e372cb5784c"
+  },
+  "binary_sha256": "9e6441ab042ce165c43251078556ca14571d475fe6cff400d10529d8b4dfa4d0",
+  "build_command": "swiftc validation/spatial_pilot_d/contrast_02/vision_ocr.swift -o /tmp/contrast02-ocr.5L2pPS/vision_ocr",
+  "build_exit_code": 0,
+  "build_warning": "usesCPUOnly deprecated in macOS 14.0; compiled successfully",
+  "empty_batch_check": "PASS_NO_IMAGE_OCR",
+  "pre_freeze_image_ocr_calls": 0,
+  "macos_build": "24G830",
+  "vision_revision": 3,
+  "python": "3.14.5",
+  "pillow": "12.3.0",
+  "tests": "22 metadata-only checks PASS; not image sensitivity",
+  "reproduction": "runner requires this committed manifest, all frozen file hashes and exact binary hash; no threshold overrides"
+}
