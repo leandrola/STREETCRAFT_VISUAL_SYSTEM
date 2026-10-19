@@ -1,0 +1,17 @@
+{
+  "id": "CONTRAST02-D3-EXECUTION-FREEZE-1",
+  "parent_freeze_commit": "b971cf43997017fecc6059961cbcf6dfaa49417b",
+  "parent_freeze_sha256": "26302674549af7528e63948a6a76e7a6b4186ba0ea2098e70691e379330899c6",
+  "files_sha256": {
+    "INPUT.json": "ad33e528e165136a5a34a0b7d54c832b42c302e0d7b2d85ee1fe9c8b27f97b7b",
+    "run_injections.py": "83e7777676b4649228815d86c0705608a6852b0e70a41eaff2b48496810a8220",
+    "check_injections.py": "4a4621ddf0e2ca1eaa6179a98e9d35e2d61f38b0a41e094a0a18a24a604375da",
+    "CHECKS.json": "d0138db5df0051eb2e678cdbe9fa28ad28d3cab099b293766e63f0d99274e012",
+    "PROCEDURE.md": "326aa368f53d0cceaa67149cb1bac7e4a6468f694462a500170ccc21ccf1747a"
+  },
+  "d3_image_ocr_before_this_freeze": false,
+  "d3_injection_ocr_before_this_freeze": false,
+  "thresholds_whitelist_ocr_grouping_changed": false,
+  "known_preexecution_coverage_limit": "80px text does not fit frozen 453px left strip; four planned cases must be reported skipped; do not claim >=20px recall100%",
+  "tests": "22 blank-pixel rendering/metadata checks PASS, not OCR sensitivity"
+}

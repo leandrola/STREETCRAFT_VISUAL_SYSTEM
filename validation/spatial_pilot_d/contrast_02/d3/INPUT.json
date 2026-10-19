@@ -1,0 +1,17 @@
+{
+  "case": "spatial_D_003_good",
+  "path": "/Users/macbookpro/Library/Application Support/Code/agentSessionData/9617c07f-4e1f-459f-b188-71cc7672325a/attachments/bbdadc6a-99d4-469a-826c-dd888f1d253e/download.png",
+  "sha256": "1e8a03659cc877da91b34fd8dae35cda2130929ffd1932abd7fdc4f57bc27603",
+  "size": [1365, 768],
+  "mode": "RGBA",
+  "bytes": 2495549,
+  "original_status": "ORIGINAL_D3_OPERATOR_CONFIRMED; no independent generation receipt",
+  "authorization": "Lean: continua con la tarea, con el original de la salida buena del piloto espacial D, corrida 3.",
+  "same_bytes_as_previous_attachment": true,
+  "size_discrepancy": "Observed 1365x768 RGBA, not prior reported 1672x941. Retain actual dimensions; do not upscale and claim original resolution.",
+  "scope": "OCR contrast and synthetic sensitivity on supplied D3 only; not compositor admission, alignment or pixel-identity evidence",
+  "expected_baseline_violations": 0,
+  "core_box_normalized": [0.283125, 0.06777777777777778, 0.716875, 0.9322222222222222],
+  "core_box_basis": "unchanged spatial pilot layout from frozen contrast protocol; no registration or geometry tuning in this task",
+  "input_mutation_allowed": false
+}

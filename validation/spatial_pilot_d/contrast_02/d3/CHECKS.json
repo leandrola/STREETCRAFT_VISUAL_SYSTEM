@@ -1,0 +1,846 @@
+{
+  "scope": "BLANK_PIXEL_RENDERING_AND_METADATA_ONLY_NO_OCR",
+  "passed": 22,
+  "checks": [
+    {
+      "case": "sans_8_sharp",
+      "pass": true,
+      "render_status": "RENDERED",
+      "geometry": {
+        "status": "RENDERED",
+        "text": "NOVA DEPOT",
+        "height": 8,
+        "variant": "sharp",
+        "patch_box": [
+          186,
+          442,
+          266,
+          458
+        ],
+        "ink_box": [
+          190,
+          446,
+          262,
+          454
+        ],
+        "box_normalized": [
+          0.11875,
+          0.4955555555555556,
+          0.16375,
+          0.5044444444444445
+        ],
+        "rendering": {
+          "font_size": 11,
+          "raw_ink_size": [
+            72,
+            8
+          ],
+          "target_ink_size": [
+            72,
+            8
+          ],
+          "height_resampling": "NONE"
+        },
+        "font_path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+        "actual_unblurred_mask_ink_height": 8
+      }
+    },
+    {
+      "case": "sans_8_blur",
+      "pass": true,
+      "render_status": "RENDERED",
+      "geometry": {
+        "status": "RENDERED",
+        "text": "NOVA DEPOT",
+        "height": 8,
+        "variant": "blur",
+        "patch_box": [
+          186,
+          442,
+          266,
+          458
+        ],
+        "ink_box": [
+          190,
+          446,
+          262,
+          454
+        ],
+        "box_normalized": [
+          0.11875,
+          0.4955555555555556,
+          0.16375,
+          0.5044444444444445
+        ],
+        "rendering": {
+          "font_size": 11,
+          "raw_ink_size": [
+            72,
+            8
+          ],
+          "target_ink_size": [
+            72,
+            8
+          ],
+          "height_resampling": "NONE"
+        },
+        "font_path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+        "actual_unblurred_mask_ink_height": 8
+      }
+    },
+    {
+      "case": "sans_12_sharp",
+      "pass": true,
+      "render_status": "RENDERED",
+      "geometry": {
+        "status": "RENDERED",
+        "text": "NOVA DEPOT",
+        "height": 12,
+        "variant": "sharp",
+        "patch_box": [
+          170,
+          440,
+          283,
+          460
+        ],
+        "ink_box": [
+          174,
+          444,
+          279,
+          456
+        ],
+        "box_normalized": [
+          0.10875,
+          0.49333333333333335,
+          0.174375,
+          0.5066666666666667
+        ],
+        "rendering": {
+          "font_size": 16,
+          "raw_ink_size": [
+            105,
+            12
+          ],
+          "target_ink_size": [
+            105,
+            12
+          ],
+          "height_resampling": "NONE"
+        },
+        "font_path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+        "actual_unblurred_mask_ink_height": 12
+      }
+    },
+    {
+      "case": "sans_12_blur",
+      "pass": true,
+      "render_status": "RENDERED",
+      "geometry": {
+        "status": "RENDERED",
+        "text": "NOVA DEPOT",
+        "height": 12,
+        "variant": "blur",
+        "patch_box": [
+          170,
+          440,
+          283,
+          460
+        ],
+        "ink_box": [
+          174,
+          444,
+          279,
+          456
+        ],
+        "box_normalized": [
+          0.10875,
+          0.49333333333333335,
+          0.174375,
+          0.5066666666666667
+        ],
+        "rendering": {
+          "font_size": 16,
+          "raw_ink_size": [
+            105,
+            12
+          ],
+          "target_ink_size": [
+            105,
+            12
+          ],
+          "height_resampling": "NONE"
+        },
+        "font_path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+        "actual_unblurred_mask_ink_height": 12
+      }
+    },
+    {
+      "case": "sans_20_sharp",
+      "pass": true,
+      "render_status": "RENDERED",
+      "geometry": {
+        "status": "RENDERED",
+        "text": "NOVA DEPOT",
+        "height": 20,
+        "variant": "sharp",
+        "patch_box": [
+          134,
+          436,
+          318,
+          464
+        ],
+        "ink_box": [
+          138,
+          440,
+          314,
+          460
+        ],
+        "box_normalized": [
+          0.08625,
+          0.4888888888888889,
+          0.19625,
+          0.5111111111111111
+        ],
+        "rendering": {
+          "font_size": 27,
+          "raw_ink_size": [
+            176,
+            20
+          ],
+          "target_ink_size": [
+            176,
+            20
+          ],
+          "height_resampling": "NONE"
+        },
+        "font_path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+        "actual_unblurred_mask_ink_height": 20
+      }
+    },
+    {
+      "case": "sans_20_blur",
+      "pass": true,
+      "render_status": "RENDERED",
+      "geometry": {
+        "status": "RENDERED",
+        "text": "NOVA DEPOT",
+        "height": 20,
+        "variant": "blur",
+        "patch_box": [
+          134,
+          436,
+          318,
+          464
+        ],
+        "ink_box": [
+          138,
+          440,
+          314,
+          460
+        ],
+        "box_normalized": [
+          0.08625,
+          0.4888888888888889,
+          0.19625,
+          0.5111111111111111
+        ],
+        "rendering": {
+          "font_size": 27,
+          "raw_ink_size": [
+            176,
+            20
+          ],
+          "target_ink_size": [
+            176,
+            20
+          ],
+          "height_resampling": "NONE"
+        },
+        "font_path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+        "actual_unblurred_mask_ink_height": 20
+      }
+    },
+    {
+      "case": "sans_40_sharp",
+      "pass": true,
+      "render_status": "RENDERED",
+      "geometry": {
+        "status": "RENDERED",
+        "text": "NOVA DEPOT",
+        "height": 40,
+        "variant": "sharp",
+        "patch_box": [
+          52,
+          426,
+          401,
+          474
+        ],
+        "ink_box": [
+          56,
+          430,
+          397,
+          470
+        ],
+        "box_normalized": [
+          0.035,
+          0.4777777777777778,
+          0.248125,
+          0.5222222222222223
+        ],
+        "rendering": {
+          "font_size": 53,
+          "raw_ink_size": [
+            341,
+            40
+          ],
+          "target_ink_size": [
+            341,
+            40
+          ],
+          "height_resampling": "NONE"
+        },
+        "font_path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+        "actual_unblurred_mask_ink_height": 40
+      }
+    },
+    {
+      "case": "sans_40_blur",
+      "pass": true,
+      "render_status": "RENDERED",
+      "geometry": {
+        "status": "RENDERED",
+        "text": "NOVA DEPOT",
+        "height": 40,
+        "variant": "blur",
+        "patch_box": [
+          52,
+          426,
+          401,
+          474
+        ],
+        "ink_box": [
+          56,
+          430,
+          397,
+          470
+        ],
+        "box_normalized": [
+          0.035,
+          0.4777777777777778,
+          0.248125,
+          0.5222222222222223
+        ],
+        "rendering": {
+          "font_size": 53,
+          "raw_ink_size": [
+            341,
+            40
+          ],
+          "target_ink_size": [
+            341,
+            40
+          ],
+          "height_resampling": "NONE"
+        },
+        "font_path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+        "actual_unblurred_mask_ink_height": 40
+      }
+    },
+    {
+      "case": "sans_80_sharp",
+      "pass": true,
+      "render_status": "SKIPPED_DOES_NOT_FIT_FROZEN_ZONE",
+      "geometry": {
+        "status": "SKIPPED_DOES_NOT_FIT_FROZEN_ZONE",
+        "text": "NOVA DEPOT",
+        "height": 80,
+        "required_patch_size": [
+          706,
+          88
+        ],
+        "available_zone": [
+          0,
+          0,
+          453,
+          900
+        ],
+        "rendering": {
+          "font_size": 108,
+          "raw_ink_size": [
+            698,
+            80
+          ],
+          "target_ink_size": [
+            698,
+            80
+          ],
+          "height_resampling": "NONE"
+        }
+      }
+    },
+    {
+      "case": "sans_80_blur",
+      "pass": true,
+      "render_status": "SKIPPED_DOES_NOT_FIT_FROZEN_ZONE",
+      "geometry": {
+        "status": "SKIPPED_DOES_NOT_FIT_FROZEN_ZONE",
+        "text": "NOVA DEPOT",
+        "height": 80,
+        "required_patch_size": [
+          706,
+          88
+        ],
+        "available_zone": [
+          0,
+          0,
+          453,
+          900
+        ],
+        "rendering": {
+          "font_size": 108,
+          "raw_ink_size": [
+            698,
+            80
+          ],
+          "target_ink_size": [
+            698,
+            80
+          ],
+          "height_resampling": "NONE"
+        }
+      }
+    },
+    {
+      "case": "serif_8_sharp",
+      "pass": true,
+      "render_status": "RENDERED",
+      "geometry": {
+        "status": "RENDERED",
+        "text": "NOVA DEPOT",
+        "height": 8,
+        "variant": "sharp",
+        "patch_box": [
+          191,
+          442,
+          261,
+          458
+        ],
+        "ink_box": [
+          195,
+          446,
+          257,
+          454
+        ],
+        "box_normalized": [
+          0.121875,
+          0.4955555555555556,
+          0.160625,
+          0.5044444444444445
+        ],
+        "rendering": {
+          "font_size": 9,
+          "raw_ink_size": [
+            62,
+            8
+          ],
+          "target_ink_size": [
+            62,
+            8
+          ],
+          "height_resampling": "NONE"
+        },
+        "font_path": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+        "font_sha256": "f3b4ffff71c2a0c7227d37497683b2498fb2d0a4e8beae26f022e3ccfcaabfa3",
+        "actual_unblurred_mask_ink_height": 8
+      }
+    },
+    {
+      "case": "serif_8_blur",
+      "pass": true,
+      "render_status": "RENDERED",
+      "geometry": {
+        "status": "RENDERED",
+        "text": "NOVA DEPOT",
+        "height": 8,
+        "variant": "blur",
+        "patch_box": [
+          191,
+          442,
+          261,
+          458
+        ],
+        "ink_box": [
+          195,
+          446,
+          257,
+          454
+        ],
+        "box_normalized": [
+          0.121875,
+          0.4955555555555556,
+          0.160625,
+          0.5044444444444445
+        ],
+        "rendering": {
+          "font_size": 9,
+          "raw_ink_size": [
+            62,
+            8
+          ],
+          "target_ink_size": [
+            62,
+            8
+          ],
+          "height_resampling": "NONE"
+        },
+        "font_path": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+        "font_sha256": "f3b4ffff71c2a0c7227d37497683b2498fb2d0a4e8beae26f022e3ccfcaabfa3",
+        "actual_unblurred_mask_ink_height": 8
+      }
+    },
+    {
+      "case": "serif_12_sharp",
+      "pass": true,
+      "render_status": "RENDERED",
+      "geometry": {
+        "status": "RENDERED",
+        "text": "NOVA DEPOT",
+        "height": 12,
+        "variant": "sharp",
+        "patch_box": [
+          169,
+          440,
+          283,
+          460
+        ],
+        "ink_box": [
+          173,
+          444,
+          279,
+          456
+        ],
+        "box_normalized": [
+          0.108125,
+          0.49333333333333335,
+          0.174375,
+          0.5066666666666667
+        ],
+        "rendering": {
+          "font_size": 16,
+          "raw_ink_size": [
+            106,
+            12
+          ],
+          "target_ink_size": [
+            106,
+            12
+          ],
+          "height_resampling": "NONE"
+        },
+        "font_path": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+        "font_sha256": "f3b4ffff71c2a0c7227d37497683b2498fb2d0a4e8beae26f022e3ccfcaabfa3",
+        "actual_unblurred_mask_ink_height": 12
+      }
+    },
+    {
+      "case": "serif_12_blur",
+      "pass": true,
+      "render_status": "RENDERED",
+      "geometry": {
+        "status": "RENDERED",
+        "text": "NOVA DEPOT",
+        "height": 12,
+        "variant": "blur",
+        "patch_box": [
+          169,
+          440,
+          283,
+          460
+        ],
+        "ink_box": [
+          173,
+          444,
+          279,
+          456
+        ],
+        "box_normalized": [
+          0.108125,
+          0.49333333333333335,
+          0.174375,
+          0.5066666666666667
+        ],
+        "rendering": {
+          "font_size": 16,
+          "raw_ink_size": [
+            106,
+            12
+          ],
+          "target_ink_size": [
+            106,
+            12
+          ],
+          "height_resampling": "NONE"
+        },
+        "font_path": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+        "font_sha256": "f3b4ffff71c2a0c7227d37497683b2498fb2d0a4e8beae26f022e3ccfcaabfa3",
+        "actual_unblurred_mask_ink_height": 12
+      }
+    },
+    {
+      "case": "serif_20_sharp",
+      "pass": true,
+      "render_status": "RENDERED",
+      "geometry": {
+        "status": "RENDERED",
+        "text": "NOVA DEPOT",
+        "height": 20,
+        "variant": "sharp",
+        "patch_box": [
+          133,
+          436,
+          319,
+          464
+        ],
+        "ink_box": [
+          137,
+          440,
+          315,
+          460
+        ],
+        "box_normalized": [
+          0.085625,
+          0.4888888888888889,
+          0.196875,
+          0.5111111111111111
+        ],
+        "rendering": {
+          "font_size": 28,
+          "raw_ink_size": [
+            178,
+            20
+          ],
+          "target_ink_size": [
+            178,
+            20
+          ],
+          "height_resampling": "NONE"
+        },
+        "font_path": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+        "font_sha256": "f3b4ffff71c2a0c7227d37497683b2498fb2d0a4e8beae26f022e3ccfcaabfa3",
+        "actual_unblurred_mask_ink_height": 20
+      }
+    },
+    {
+      "case": "serif_20_blur",
+      "pass": true,
+      "render_status": "RENDERED",
+      "geometry": {
+        "status": "RENDERED",
+        "text": "NOVA DEPOT",
+        "height": 20,
+        "variant": "blur",
+        "patch_box": [
+          133,
+          436,
+          319,
+          464
+        ],
+        "ink_box": [
+          137,
+          440,
+          315,
+          460
+        ],
+        "box_normalized": [
+          0.085625,
+          0.4888888888888889,
+          0.196875,
+          0.5111111111111111
+        ],
+        "rendering": {
+          "font_size": 28,
+          "raw_ink_size": [
+            178,
+            20
+          ],
+          "target_ink_size": [
+            178,
+            20
+          ],
+          "height_resampling": "NONE"
+        },
+        "font_path": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+        "font_sha256": "f3b4ffff71c2a0c7227d37497683b2498fb2d0a4e8beae26f022e3ccfcaabfa3",
+        "actual_unblurred_mask_ink_height": 20
+      }
+    },
+    {
+      "case": "serif_40_sharp",
+      "pass": true,
+      "render_status": "RENDERED",
+      "geometry": {
+        "status": "RENDERED",
+        "text": "NOVA DEPOT",
+        "height": 40,
+        "variant": "sharp",
+        "patch_box": [
+          41,
+          426,
+          411,
+          474
+        ],
+        "ink_box": [
+          45,
+          430,
+          407,
+          470
+        ],
+        "box_normalized": [
+          0.028125,
+          0.4777777777777778,
+          0.254375,
+          0.5222222222222223
+        ],
+        "rendering": {
+          "font_size": 57,
+          "raw_ink_size": [
+            362,
+            40
+          ],
+          "target_ink_size": [
+            362,
+            40
+          ],
+          "height_resampling": "NONE"
+        },
+        "font_path": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+        "font_sha256": "f3b4ffff71c2a0c7227d37497683b2498fb2d0a4e8beae26f022e3ccfcaabfa3",
+        "actual_unblurred_mask_ink_height": 40
+      }
+    },
+    {
+      "case": "serif_40_blur",
+      "pass": true,
+      "render_status": "RENDERED",
+      "geometry": {
+        "status": "RENDERED",
+        "text": "NOVA DEPOT",
+        "height": 40,
+        "variant": "blur",
+        "patch_box": [
+          41,
+          426,
+          411,
+          474
+        ],
+        "ink_box": [
+          45,
+          430,
+          407,
+          470
+        ],
+        "box_normalized": [
+          0.028125,
+          0.4777777777777778,
+          0.254375,
+          0.5222222222222223
+        ],
+        "rendering": {
+          "font_size": 57,
+          "raw_ink_size": [
+            362,
+            40
+          ],
+          "target_ink_size": [
+            362,
+            40
+          ],
+          "height_resampling": "NONE"
+        },
+        "font_path": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+        "font_sha256": "f3b4ffff71c2a0c7227d37497683b2498fb2d0a4e8beae26f022e3ccfcaabfa3",
+        "actual_unblurred_mask_ink_height": 40
+      }
+    },
+    {
+      "case": "serif_80_sharp",
+      "pass": true,
+      "render_status": "SKIPPED_DOES_NOT_FIT_FROZEN_ZONE",
+      "geometry": {
+        "status": "SKIPPED_DOES_NOT_FIT_FROZEN_ZONE",
+        "text": "NOVA DEPOT",
+        "height": 80,
+        "required_patch_size": [
+          738,
+          88
+        ],
+        "available_zone": [
+          0,
+          0,
+          453,
+          900
+        ],
+        "rendering": {
+          "font_size": 116,
+          "raw_ink_size": [
+            739,
+            81
+          ],
+          "target_ink_size": [
+            730,
+            80
+          ],
+          "height_resampling": "LANCZOS"
+        }
+      }
+    },
+    {
+      "case": "serif_80_blur",
+      "pass": true,
+      "render_status": "SKIPPED_DOES_NOT_FIT_FROZEN_ZONE",
+      "geometry": {
+        "status": "SKIPPED_DOES_NOT_FIT_FROZEN_ZONE",
+        "text": "NOVA DEPOT",
+        "height": 80,
+        "required_patch_size": [
+          738,
+          88
+        ],
+        "available_zone": [
+          0,
+          0,
+          453,
+          900
+        ],
+        "rendering": {
+          "font_size": 116,
+          "raw_ink_size": [
+            739,
+            81
+          ],
+          "target_ink_size": [
+            730,
+            80
+          ],
+          "height_resampling": "LANCZOS"
+        }
+      }
+    },
+    {
+      "case": "free_control",
+      "pass": true
+    },
+    {
+      "case": "core_control",
+      "pass": true
+    }
+  ]
+}
