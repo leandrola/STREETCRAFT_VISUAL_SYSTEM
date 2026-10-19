@@ -1,0 +1,1280 @@
+{
+  "parent_freeze_commit": "b971cf43997017fecc6059961cbcf6dfaa49417b",
+  "parent_freeze_sha256": "26302674549af7528e63948a6a76e7a6b4186ba0ea2098e70691e379330899c6",
+  "d3_freeze_commit": "ad0a19750b71a7d7ac008ae33bb14ba959bc57e5",
+  "d3_freeze_sha256": "0890c7b0ce4bcff2b1f6086ede277ea82a2e3e43b95c8da9440e6e833bf1c428",
+  "input": {
+    "case": "spatial_D_003_good",
+    "path": "/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2/validation/spatial_pilot_d/contrast_02/d3/execution/D3_original.png",
+    "sha256": "1e8a03659cc877da91b34fd8dae35cda2130929ffd1932abd7fdc4f57bc27603",
+    "size": [
+      1365,
+      768
+    ],
+    "mode": "RGBA",
+    "bytes": 2495549,
+    "original_status": "ORIGINAL_D3_OPERATOR_CONFIRMED; no independent generation receipt",
+    "authorization": "Lean: continua con la tarea, con el original de la salida buena del piloto espacial D, corrida 3.",
+    "same_bytes_as_previous_attachment": true,
+    "size_discrepancy": "Observed 1365x768 RGBA, not prior reported 1672x941. Retain actual dimensions; do not upscale and claim original resolution.",
+    "scope": "OCR contrast and synthetic sensitivity on supplied D3 only; not compositor admission, alignment or pixel-identity evidence",
+    "expected_baseline_violations": 0,
+    "core_box_normalized": [
+      0.283125,
+      0.06777777777777778,
+      0.716875,
+      0.9322222222222222
+    ],
+    "core_box_basis": "unchanged spatial pilot layout from frozen contrast protocol; no registration or geometry tuning in this task",
+    "input_mutation_allowed": false
+  },
+  "status": "EXECUTION_COMPLETE_WITH_SKIPPED_CASES",
+  "cases": [
+    {
+      "status": "RENDERED",
+      "text": "NOVA DEPOT",
+      "height": 8,
+      "variant": "sharp",
+      "patch_box": [
+        186,
+        442,
+        266,
+        458
+      ],
+      "ink_box": [
+        190,
+        446,
+        262,
+        454
+      ],
+      "box_normalized": [
+        0.11875,
+        0.4955555555555556,
+        0.16375,
+        0.5044444444444445
+      ],
+      "rendering": {
+        "font_size": 11,
+        "raw_ink_size": [
+          72,
+          8
+        ],
+        "target_ink_size": [
+          72,
+          8
+        ],
+        "height_resampling": "NONE"
+      },
+      "font_path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+      "font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+      "actual_unblurred_mask_ink_height": 8,
+      "case": "sans_8_sharp",
+      "zone": "free",
+      "expected_class": "ADVERTENCIA",
+      "core_identical_to_base": true,
+      "sha256": "5c9cc6790bf67211bdcad80b280e32847496abea2c259cfa61aff3829500dfff",
+      "evaluation": {
+        "recognized": true,
+        "matched_ids": [
+          "tile_000_line_000",
+          "tile_003_line_000"
+        ],
+        "expected_class": "ADVERTENCIA",
+        "expected_class_detected": true,
+        "matched_classes": {
+          "ADVERTENCIA": 1,
+          "VIOLACION": 1
+        },
+        "matched_confidences": [
+          0.5,
+          1
+        ],
+        "core_violation_count": 0
+      }
+    },
+    {
+      "status": "RENDERED",
+      "text": "NOVA DEPOT",
+      "height": 8,
+      "variant": "blur",
+      "patch_box": [
+        186,
+        442,
+        266,
+        458
+      ],
+      "ink_box": [
+        190,
+        446,
+        262,
+        454
+      ],
+      "box_normalized": [
+        0.11875,
+        0.4955555555555556,
+        0.16375,
+        0.5044444444444445
+      ],
+      "rendering": {
+        "font_size": 11,
+        "raw_ink_size": [
+          72,
+          8
+        ],
+        "target_ink_size": [
+          72,
+          8
+        ],
+        "height_resampling": "NONE"
+      },
+      "font_path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+      "font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+      "actual_unblurred_mask_ink_height": 8,
+      "case": "sans_8_blur",
+      "zone": "free",
+      "expected_class": "ADVERTENCIA",
+      "core_identical_to_base": true,
+      "sha256": "da6228ebce2cba39d267b725f89841f4ad086485671ebe2f74df5c94b34a3d54",
+      "evaluation": {
+        "recognized": true,
+        "matched_ids": [
+          "tile_000_line_000",
+          "tile_003_line_000"
+        ],
+        "expected_class": "ADVERTENCIA",
+        "expected_class_detected": true,
+        "matched_classes": {
+          "ADVERTENCIA": 1,
+          "VIOLACION": 1
+        },
+        "matched_confidences": [
+          0.3,
+          1
+        ],
+        "core_violation_count": 0
+      }
+    },
+    {
+      "status": "RENDERED",
+      "text": "NOVA DEPOT",
+      "height": 12,
+      "variant": "sharp",
+      "patch_box": [
+        170,
+        440,
+        283,
+        460
+      ],
+      "ink_box": [
+        174,
+        444,
+        279,
+        456
+      ],
+      "box_normalized": [
+        0.10875,
+        0.49333333333333335,
+        0.174375,
+        0.5066666666666667
+      ],
+      "rendering": {
+        "font_size": 16,
+        "raw_ink_size": [
+          105,
+          12
+        ],
+        "target_ink_size": [
+          105,
+          12
+        ],
+        "height_resampling": "NONE"
+      },
+      "font_path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+      "font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+      "actual_unblurred_mask_ink_height": 12,
+      "case": "sans_12_sharp",
+      "zone": "free",
+      "expected_class": "VIOLACION",
+      "core_identical_to_base": true,
+      "sha256": "c260b581419951de737d21fafdbb9e6e7b7428a3d916b6679e588f1dc13c0be1",
+      "evaluation": {
+        "recognized": true,
+        "matched_ids": [
+          "tile_000_line_000"
+        ],
+        "expected_class": "VIOLACION",
+        "expected_class_detected": true,
+        "matched_classes": {
+          "VIOLACION": 1
+        },
+        "matched_confidences": [
+          1
+        ],
+        "core_violation_count": 0
+      }
+    },
+    {
+      "status": "RENDERED",
+      "text": "NOVA DEPOT",
+      "height": 12,
+      "variant": "blur",
+      "patch_box": [
+        170,
+        440,
+        283,
+        460
+      ],
+      "ink_box": [
+        174,
+        444,
+        279,
+        456
+      ],
+      "box_normalized": [
+        0.10875,
+        0.49333333333333335,
+        0.174375,
+        0.5066666666666667
+      ],
+      "rendering": {
+        "font_size": 16,
+        "raw_ink_size": [
+          105,
+          12
+        ],
+        "target_ink_size": [
+          105,
+          12
+        ],
+        "height_resampling": "NONE"
+      },
+      "font_path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+      "font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+      "actual_unblurred_mask_ink_height": 12,
+      "case": "sans_12_blur",
+      "zone": "free",
+      "expected_class": "VIOLACION",
+      "core_identical_to_base": true,
+      "sha256": "9582964e8b824c7c2ae8612365aa620f577417cd25f1fad5e5e46859d6867867",
+      "evaluation": {
+        "recognized": true,
+        "matched_ids": [
+          "tile_000_line_000"
+        ],
+        "expected_class": "VIOLACION",
+        "expected_class_detected": false,
+        "matched_classes": {
+          "ADVERTENCIA": 1
+        },
+        "matched_confidences": [
+          0.5
+        ],
+        "core_violation_count": 0
+      }
+    },
+    {
+      "status": "RENDERED",
+      "text": "NOVA DEPOT",
+      "height": 20,
+      "variant": "sharp",
+      "patch_box": [
+        134,
+        436,
+        318,
+        464
+      ],
+      "ink_box": [
+        138,
+        440,
+        314,
+        460
+      ],
+      "box_normalized": [
+        0.08625,
+        0.4888888888888889,
+        0.19625,
+        0.5111111111111111
+      ],
+      "rendering": {
+        "font_size": 27,
+        "raw_ink_size": [
+          176,
+          20
+        ],
+        "target_ink_size": [
+          176,
+          20
+        ],
+        "height_resampling": "NONE"
+      },
+      "font_path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+      "font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+      "actual_unblurred_mask_ink_height": 20,
+      "case": "sans_20_sharp",
+      "zone": "free",
+      "expected_class": "VIOLACION",
+      "core_identical_to_base": true,
+      "sha256": "cd598fb8ae3fa9d9aa6eccdb0672c2ab6ad85384bd7e927ae6f584cc7324eeea",
+      "evaluation": {
+        "recognized": true,
+        "matched_ids": [
+          "tile_000_line_000"
+        ],
+        "expected_class": "VIOLACION",
+        "expected_class_detected": true,
+        "matched_classes": {
+          "VIOLACION": 1
+        },
+        "matched_confidences": [
+          1
+        ],
+        "core_violation_count": 0
+      }
+    },
+    {
+      "status": "RENDERED",
+      "text": "NOVA DEPOT",
+      "height": 20,
+      "variant": "blur",
+      "patch_box": [
+        134,
+        436,
+        318,
+        464
+      ],
+      "ink_box": [
+        138,
+        440,
+        314,
+        460
+      ],
+      "box_normalized": [
+        0.08625,
+        0.4888888888888889,
+        0.19625,
+        0.5111111111111111
+      ],
+      "rendering": {
+        "font_size": 27,
+        "raw_ink_size": [
+          176,
+          20
+        ],
+        "target_ink_size": [
+          176,
+          20
+        ],
+        "height_resampling": "NONE"
+      },
+      "font_path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+      "font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+      "actual_unblurred_mask_ink_height": 20,
+      "case": "sans_20_blur",
+      "zone": "free",
+      "expected_class": "VIOLACION",
+      "core_identical_to_base": true,
+      "sha256": "c521df0f45a1806cb17c56e4043cd9dfd74d82515f90d185fe37443afd2d8433",
+      "evaluation": {
+        "recognized": true,
+        "matched_ids": [
+          "tile_000_line_000"
+        ],
+        "expected_class": "VIOLACION",
+        "expected_class_detected": true,
+        "matched_classes": {
+          "VIOLACION": 1
+        },
+        "matched_confidences": [
+          1
+        ],
+        "core_violation_count": 0
+      }
+    },
+    {
+      "status": "RENDERED",
+      "text": "NOVA DEPOT",
+      "height": 40,
+      "variant": "sharp",
+      "patch_box": [
+        52,
+        426,
+        401,
+        474
+      ],
+      "ink_box": [
+        56,
+        430,
+        397,
+        470
+      ],
+      "box_normalized": [
+        0.035,
+        0.4777777777777778,
+        0.248125,
+        0.5222222222222223
+      ],
+      "rendering": {
+        "font_size": 53,
+        "raw_ink_size": [
+          341,
+          40
+        ],
+        "target_ink_size": [
+          341,
+          40
+        ],
+        "height_resampling": "NONE"
+      },
+      "font_path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+      "font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+      "actual_unblurred_mask_ink_height": 40,
+      "case": "sans_40_sharp",
+      "zone": "free",
+      "expected_class": "VIOLACION",
+      "core_identical_to_base": true,
+      "sha256": "cb0f21ca56180fb638dfb7e53efe87ab654d0d42961e0b4fb4c7ff02d35ddb88",
+      "evaluation": {
+        "recognized": true,
+        "matched_ids": [
+          "tile_000_line_000"
+        ],
+        "expected_class": "VIOLACION",
+        "expected_class_detected": true,
+        "matched_classes": {
+          "VIOLACION": 1
+        },
+        "matched_confidences": [
+          1
+        ],
+        "core_violation_count": 0
+      }
+    },
+    {
+      "status": "RENDERED",
+      "text": "NOVA DEPOT",
+      "height": 40,
+      "variant": "blur",
+      "patch_box": [
+        52,
+        426,
+        401,
+        474
+      ],
+      "ink_box": [
+        56,
+        430,
+        397,
+        470
+      ],
+      "box_normalized": [
+        0.035,
+        0.4777777777777778,
+        0.248125,
+        0.5222222222222223
+      ],
+      "rendering": {
+        "font_size": 53,
+        "raw_ink_size": [
+          341,
+          40
+        ],
+        "target_ink_size": [
+          341,
+          40
+        ],
+        "height_resampling": "NONE"
+      },
+      "font_path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+      "font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+      "actual_unblurred_mask_ink_height": 40,
+      "case": "sans_40_blur",
+      "zone": "free",
+      "expected_class": "VIOLACION",
+      "core_identical_to_base": true,
+      "sha256": "bf45b8bfb6f4b4595d14b35bf05828d89175dedc0c34edfad1735727219b44eb",
+      "evaluation": {
+        "recognized": true,
+        "matched_ids": [
+          "tile_000_line_000"
+        ],
+        "expected_class": "VIOLACION",
+        "expected_class_detected": true,
+        "matched_classes": {
+          "VIOLACION": 1
+        },
+        "matched_confidences": [
+          1
+        ],
+        "core_violation_count": 0
+      }
+    },
+    {
+      "status": "SKIPPED_DOES_NOT_FIT_FROZEN_ZONE",
+      "text": "NOVA DEPOT",
+      "height": 80,
+      "required_patch_size": [
+        706,
+        88
+      ],
+      "available_zone": [
+        0,
+        0,
+        453,
+        900
+      ],
+      "rendering": {
+        "font_size": 108,
+        "raw_ink_size": [
+          698,
+          80
+        ],
+        "target_ink_size": [
+          698,
+          80
+        ],
+        "height_resampling": "NONE"
+      },
+      "case": "sans_80_sharp",
+      "zone": "free",
+      "expected_class": "VIOLACION"
+    },
+    {
+      "status": "SKIPPED_DOES_NOT_FIT_FROZEN_ZONE",
+      "text": "NOVA DEPOT",
+      "height": 80,
+      "required_patch_size": [
+        706,
+        88
+      ],
+      "available_zone": [
+        0,
+        0,
+        453,
+        900
+      ],
+      "rendering": {
+        "font_size": 108,
+        "raw_ink_size": [
+          698,
+          80
+        ],
+        "target_ink_size": [
+          698,
+          80
+        ],
+        "height_resampling": "NONE"
+      },
+      "case": "sans_80_blur",
+      "zone": "free",
+      "expected_class": "VIOLACION"
+    },
+    {
+      "status": "RENDERED",
+      "text": "NOVA DEPOT",
+      "height": 8,
+      "variant": "sharp",
+      "patch_box": [
+        191,
+        442,
+        261,
+        458
+      ],
+      "ink_box": [
+        195,
+        446,
+        257,
+        454
+      ],
+      "box_normalized": [
+        0.121875,
+        0.4955555555555556,
+        0.160625,
+        0.5044444444444445
+      ],
+      "rendering": {
+        "font_size": 9,
+        "raw_ink_size": [
+          62,
+          8
+        ],
+        "target_ink_size": [
+          62,
+          8
+        ],
+        "height_resampling": "NONE"
+      },
+      "font_path": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+      "font_sha256": "f3b4ffff71c2a0c7227d37497683b2498fb2d0a4e8beae26f022e3ccfcaabfa3",
+      "actual_unblurred_mask_ink_height": 8,
+      "case": "serif_8_sharp",
+      "zone": "free",
+      "expected_class": "ADVERTENCIA",
+      "core_identical_to_base": true,
+      "sha256": "e3d8e0c113c347f9b53cb893ff3f29e21b0d04ea5dfa64a54c604e1616f766e5",
+      "evaluation": {
+        "recognized": true,
+        "matched_ids": [
+          "tile_000_line_000",
+          "tile_003_line_000"
+        ],
+        "expected_class": "ADVERTENCIA",
+        "expected_class_detected": true,
+        "matched_classes": {
+          "VIOLACION": 1,
+          "ADVERTENCIA": 1
+        },
+        "matched_confidences": [
+          1,
+          1
+        ],
+        "core_violation_count": 0
+      }
+    },
+    {
+      "status": "RENDERED",
+      "text": "NOVA DEPOT",
+      "height": 8,
+      "variant": "blur",
+      "patch_box": [
+        191,
+        442,
+        261,
+        458
+      ],
+      "ink_box": [
+        195,
+        446,
+        257,
+        454
+      ],
+      "box_normalized": [
+        0.121875,
+        0.4955555555555556,
+        0.160625,
+        0.5044444444444445
+      ],
+      "rendering": {
+        "font_size": 9,
+        "raw_ink_size": [
+          62,
+          8
+        ],
+        "target_ink_size": [
+          62,
+          8
+        ],
+        "height_resampling": "NONE"
+      },
+      "font_path": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+      "font_sha256": "f3b4ffff71c2a0c7227d37497683b2498fb2d0a4e8beae26f022e3ccfcaabfa3",
+      "actual_unblurred_mask_ink_height": 8,
+      "case": "serif_8_blur",
+      "zone": "free",
+      "expected_class": "ADVERTENCIA",
+      "core_identical_to_base": true,
+      "sha256": "641a1f9e4ac3ba568a4617405a6322de1df3202c4635b9463c2b8841b81e8c4a",
+      "evaluation": {
+        "recognized": true,
+        "matched_ids": [
+          "tile_000_line_000"
+        ],
+        "expected_class": "ADVERTENCIA",
+        "expected_class_detected": false,
+        "matched_classes": {
+          "VIOLACION": 1
+        },
+        "matched_confidences": [
+          1
+        ],
+        "core_violation_count": 0
+      }
+    },
+    {
+      "status": "RENDERED",
+      "text": "NOVA DEPOT",
+      "height": 12,
+      "variant": "sharp",
+      "patch_box": [
+        169,
+        440,
+        283,
+        460
+      ],
+      "ink_box": [
+        173,
+        444,
+        279,
+        456
+      ],
+      "box_normalized": [
+        0.108125,
+        0.49333333333333335,
+        0.174375,
+        0.5066666666666667
+      ],
+      "rendering": {
+        "font_size": 16,
+        "raw_ink_size": [
+          106,
+          12
+        ],
+        "target_ink_size": [
+          106,
+          12
+        ],
+        "height_resampling": "NONE"
+      },
+      "font_path": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+      "font_sha256": "f3b4ffff71c2a0c7227d37497683b2498fb2d0a4e8beae26f022e3ccfcaabfa3",
+      "actual_unblurred_mask_ink_height": 12,
+      "case": "serif_12_sharp",
+      "zone": "free",
+      "expected_class": "VIOLACION",
+      "core_identical_to_base": true,
+      "sha256": "e3a7a3fa903b426f807d4827915f11a9a0db42bd3319e8d21f48e325e16a7f76",
+      "evaluation": {
+        "recognized": true,
+        "matched_ids": [
+          "tile_000_line_000"
+        ],
+        "expected_class": "VIOLACION",
+        "expected_class_detected": true,
+        "matched_classes": {
+          "VIOLACION": 1
+        },
+        "matched_confidences": [
+          1
+        ],
+        "core_violation_count": 0
+      }
+    },
+    {
+      "status": "RENDERED",
+      "text": "NOVA DEPOT",
+      "height": 12,
+      "variant": "blur",
+      "patch_box": [
+        169,
+        440,
+        283,
+        460
+      ],
+      "ink_box": [
+        173,
+        444,
+        279,
+        456
+      ],
+      "box_normalized": [
+        0.108125,
+        0.49333333333333335,
+        0.174375,
+        0.5066666666666667
+      ],
+      "rendering": {
+        "font_size": 16,
+        "raw_ink_size": [
+          106,
+          12
+        ],
+        "target_ink_size": [
+          106,
+          12
+        ],
+        "height_resampling": "NONE"
+      },
+      "font_path": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+      "font_sha256": "f3b4ffff71c2a0c7227d37497683b2498fb2d0a4e8beae26f022e3ccfcaabfa3",
+      "actual_unblurred_mask_ink_height": 12,
+      "case": "serif_12_blur",
+      "zone": "free",
+      "expected_class": "VIOLACION",
+      "core_identical_to_base": true,
+      "sha256": "53b5ff8eb7891d848728d3ed86b476673f11201fdfaee0c530e284d053d2ceb1",
+      "evaluation": {
+        "recognized": true,
+        "matched_ids": [
+          "tile_000_line_000"
+        ],
+        "expected_class": "VIOLACION",
+        "expected_class_detected": true,
+        "matched_classes": {
+          "VIOLACION": 1
+        },
+        "matched_confidences": [
+          1
+        ],
+        "core_violation_count": 0
+      }
+    },
+    {
+      "status": "RENDERED",
+      "text": "NOVA DEPOT",
+      "height": 20,
+      "variant": "sharp",
+      "patch_box": [
+        133,
+        436,
+        319,
+        464
+      ],
+      "ink_box": [
+        137,
+        440,
+        315,
+        460
+      ],
+      "box_normalized": [
+        0.085625,
+        0.4888888888888889,
+        0.196875,
+        0.5111111111111111
+      ],
+      "rendering": {
+        "font_size": 28,
+        "raw_ink_size": [
+          178,
+          20
+        ],
+        "target_ink_size": [
+          178,
+          20
+        ],
+        "height_resampling": "NONE"
+      },
+      "font_path": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+      "font_sha256": "f3b4ffff71c2a0c7227d37497683b2498fb2d0a4e8beae26f022e3ccfcaabfa3",
+      "actual_unblurred_mask_ink_height": 20,
+      "case": "serif_20_sharp",
+      "zone": "free",
+      "expected_class": "VIOLACION",
+      "core_identical_to_base": true,
+      "sha256": "29f570304abfc35961f427ad68eafa6fc343081e3a50a7c0f9a7063c77193f1a",
+      "evaluation": {
+        "recognized": true,
+        "matched_ids": [
+          "tile_000_line_000"
+        ],
+        "expected_class": "VIOLACION",
+        "expected_class_detected": true,
+        "matched_classes": {
+          "VIOLACION": 1
+        },
+        "matched_confidences": [
+          1
+        ],
+        "core_violation_count": 0
+      }
+    },
+    {
+      "status": "RENDERED",
+      "text": "NOVA DEPOT",
+      "height": 20,
+      "variant": "blur",
+      "patch_box": [
+        133,
+        436,
+        319,
+        464
+      ],
+      "ink_box": [
+        137,
+        440,
+        315,
+        460
+      ],
+      "box_normalized": [
+        0.085625,
+        0.4888888888888889,
+        0.196875,
+        0.5111111111111111
+      ],
+      "rendering": {
+        "font_size": 28,
+        "raw_ink_size": [
+          178,
+          20
+        ],
+        "target_ink_size": [
+          178,
+          20
+        ],
+        "height_resampling": "NONE"
+      },
+      "font_path": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+      "font_sha256": "f3b4ffff71c2a0c7227d37497683b2498fb2d0a4e8beae26f022e3ccfcaabfa3",
+      "actual_unblurred_mask_ink_height": 20,
+      "case": "serif_20_blur",
+      "zone": "free",
+      "expected_class": "VIOLACION",
+      "core_identical_to_base": true,
+      "sha256": "78439a56a5cda5e2f888cb1455ec3c3a9fc7ed42a243034fe734f0afb1f5b2fa",
+      "evaluation": {
+        "recognized": true,
+        "matched_ids": [
+          "tile_000_line_000"
+        ],
+        "expected_class": "VIOLACION",
+        "expected_class_detected": true,
+        "matched_classes": {
+          "VIOLACION": 1
+        },
+        "matched_confidences": [
+          1
+        ],
+        "core_violation_count": 0
+      }
+    },
+    {
+      "status": "RENDERED",
+      "text": "NOVA DEPOT",
+      "height": 40,
+      "variant": "sharp",
+      "patch_box": [
+        41,
+        426,
+        411,
+        474
+      ],
+      "ink_box": [
+        45,
+        430,
+        407,
+        470
+      ],
+      "box_normalized": [
+        0.028125,
+        0.4777777777777778,
+        0.254375,
+        0.5222222222222223
+      ],
+      "rendering": {
+        "font_size": 57,
+        "raw_ink_size": [
+          362,
+          40
+        ],
+        "target_ink_size": [
+          362,
+          40
+        ],
+        "height_resampling": "NONE"
+      },
+      "font_path": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+      "font_sha256": "f3b4ffff71c2a0c7227d37497683b2498fb2d0a4e8beae26f022e3ccfcaabfa3",
+      "actual_unblurred_mask_ink_height": 40,
+      "case": "serif_40_sharp",
+      "zone": "free",
+      "expected_class": "VIOLACION",
+      "core_identical_to_base": true,
+      "sha256": "dbcbeaf0d0f0b076e00aaac467a6ec46a135f033c915c76b263917fda339d547",
+      "evaluation": {
+        "recognized": true,
+        "matched_ids": [
+          "tile_000_line_000"
+        ],
+        "expected_class": "VIOLACION",
+        "expected_class_detected": true,
+        "matched_classes": {
+          "VIOLACION": 1
+        },
+        "matched_confidences": [
+          1
+        ],
+        "core_violation_count": 0
+      }
+    },
+    {
+      "status": "RENDERED",
+      "text": "NOVA DEPOT",
+      "height": 40,
+      "variant": "blur",
+      "patch_box": [
+        41,
+        426,
+        411,
+        474
+      ],
+      "ink_box": [
+        45,
+        430,
+        407,
+        470
+      ],
+      "box_normalized": [
+        0.028125,
+        0.4777777777777778,
+        0.254375,
+        0.5222222222222223
+      ],
+      "rendering": {
+        "font_size": 57,
+        "raw_ink_size": [
+          362,
+          40
+        ],
+        "target_ink_size": [
+          362,
+          40
+        ],
+        "height_resampling": "NONE"
+      },
+      "font_path": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+      "font_sha256": "f3b4ffff71c2a0c7227d37497683b2498fb2d0a4e8beae26f022e3ccfcaabfa3",
+      "actual_unblurred_mask_ink_height": 40,
+      "case": "serif_40_blur",
+      "zone": "free",
+      "expected_class": "VIOLACION",
+      "core_identical_to_base": true,
+      "sha256": "db398fb272a31f4fe0026b5b020ab726eaa6fff81597c8f4e6b590a0c43bb930",
+      "evaluation": {
+        "recognized": true,
+        "matched_ids": [
+          "tile_000_line_000"
+        ],
+        "expected_class": "VIOLACION",
+        "expected_class_detected": true,
+        "matched_classes": {
+          "VIOLACION": 1
+        },
+        "matched_confidences": [
+          1
+        ],
+        "core_violation_count": 0
+      }
+    },
+    {
+      "status": "SKIPPED_DOES_NOT_FIT_FROZEN_ZONE",
+      "text": "NOVA DEPOT",
+      "height": 80,
+      "required_patch_size": [
+        738,
+        88
+      ],
+      "available_zone": [
+        0,
+        0,
+        453,
+        900
+      ],
+      "rendering": {
+        "font_size": 116,
+        "raw_ink_size": [
+          739,
+          81
+        ],
+        "target_ink_size": [
+          730,
+          80
+        ],
+        "height_resampling": "LANCZOS"
+      },
+      "case": "serif_80_sharp",
+      "zone": "free",
+      "expected_class": "VIOLACION"
+    },
+    {
+      "status": "SKIPPED_DOES_NOT_FIT_FROZEN_ZONE",
+      "text": "NOVA DEPOT",
+      "height": 80,
+      "required_patch_size": [
+        738,
+        88
+      ],
+      "available_zone": [
+        0,
+        0,
+        453,
+        900
+      ],
+      "rendering": {
+        "font_size": 116,
+        "raw_ink_size": [
+          739,
+          81
+        ],
+        "target_ink_size": [
+          730,
+          80
+        ],
+        "height_resampling": "LANCZOS"
+      },
+      "case": "serif_80_blur",
+      "zone": "free",
+      "expected_class": "VIOLACION"
+    },
+    {
+      "status": "RENDERED",
+      "text": "TERMINAL DINER",
+      "height": 20,
+      "variant": "sharp",
+      "patch_box": [
+        106,
+        436,
+        346,
+        464
+      ],
+      "ink_box": [
+        110,
+        440,
+        342,
+        460
+      ],
+      "box_normalized": [
+        0.06875,
+        0.4888888888888889,
+        0.21375,
+        0.5111111111111111
+      ],
+      "rendering": {
+        "font_size": 27,
+        "raw_ink_size": [
+          232,
+          20
+        ],
+        "target_ink_size": [
+          232,
+          20
+        ],
+        "height_resampling": "NONE"
+      },
+      "font_path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+      "font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+      "actual_unblurred_mask_ink_height": 20,
+      "case": "duplicate",
+      "zone": "free",
+      "expected_class": "ADVERTENCIA_DUPLICADO",
+      "core_identical_to_base": true,
+      "sha256": "5c048fbddf8572f8433f383a2f34af3f986f84b1f1a75a1916963f2f7cd39bd7",
+      "evaluation": {
+        "recognized": true,
+        "matched_ids": [
+          "tile_000_line_000"
+        ],
+        "expected_class": "ADVERTENCIA_DUPLICADO",
+        "expected_class_detected": true,
+        "matched_classes": {
+          "ADVERTENCIA_DUPLICADO": 1
+        },
+        "matched_confidences": [
+          1
+        ],
+        "core_violation_count": 0
+      }
+    },
+    {
+      "status": "RENDERED",
+      "text": "TERMINAL DINER",
+      "height": 20,
+      "variant": "sharp",
+      "patch_box": [
+        680,
+        436,
+        920,
+        464
+      ],
+      "ink_box": [
+        684,
+        440,
+        916,
+        460
+      ],
+      "box_normalized": [
+        0.4275,
+        0.4888888888888889,
+        0.5725,
+        0.5111111111111111
+      ],
+      "rendering": {
+        "font_size": 27,
+        "raw_ink_size": [
+          232,
+          20
+        ],
+        "target_ink_size": [
+          232,
+          20
+        ],
+        "height_resampling": "NONE"
+      },
+      "font_path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+      "font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+      "actual_unblurred_mask_ink_height": 20,
+      "case": "core_control",
+      "zone": "core",
+      "expected_class": "IGNORADO_POR_SOLAPE",
+      "core_identical_to_base": false,
+      "sha256": "64cb1e61ebe58f23d24133e64a4d8dd76a4fbbf6f2225913f0591950f856eb64",
+      "evaluation": {
+        "recognized": true,
+        "matched_ids": [
+          "tile_001_line_007"
+        ],
+        "expected_class": "IGNORADO_POR_SOLAPE",
+        "expected_class_detected": true,
+        "matched_classes": {
+          "IGNORADO_POR_SOLAPE": 1
+        },
+        "matched_confidences": [
+          1
+        ],
+        "core_violation_count": 0
+      }
+    }
+  ],
+  "ai_generations": 0,
+  "thresholds_changed": false,
+  "annotation_note": "ground truth here/INPUT.json; generic raw runner annotation field remains unchanged",
+  "baseline": {
+    "status": "OCR_COMPLETE",
+    "counts": {
+      "IGNORADO_POR_SOLAPE": 25
+    },
+    "expected_violations": 0,
+    "pass": true,
+    "core_violations": []
+  },
+  "by_height": {
+    "8": {
+      "planned": 4,
+      "rendered_evaluated": 4,
+      "detected": 4,
+      "skipped": 0,
+      "recognition_rate_evaluated": 1.0,
+      "expected_class_detected": 3
+    },
+    "12": {
+      "planned": 4,
+      "rendered_evaluated": 4,
+      "detected": 4,
+      "skipped": 0,
+      "recognition_rate_evaluated": 1.0,
+      "expected_class_detected": 3
+    },
+    "20": {
+      "planned": 4,
+      "rendered_evaluated": 4,
+      "detected": 4,
+      "skipped": 0,
+      "recognition_rate_evaluated": 1.0,
+      "expected_class_detected": 4
+    },
+    "40": {
+      "planned": 4,
+      "rendered_evaluated": 4,
+      "detected": 4,
+      "skipped": 0,
+      "recognition_rate_evaluated": 1.0,
+      "expected_class_detected": 4
+    },
+    "80": {
+      "planned": 4,
+      "rendered_evaluated": 0,
+      "detected": 0,
+      "skipped": 4,
+      "recognition_rate_evaluated": null,
+      "expected_class_detected": 0
+    }
+  },
+  "recall_100_percent_ge20_established": false
+}

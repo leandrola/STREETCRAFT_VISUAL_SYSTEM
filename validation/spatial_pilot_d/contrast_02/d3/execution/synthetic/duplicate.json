@@ -1,0 +1,44 @@
+{
+  "status": "RENDERED",
+  "text": "TERMINAL DINER",
+  "height": 20,
+  "variant": "sharp",
+  "patch_box": [
+    106,
+    436,
+    346,
+    464
+  ],
+  "ink_box": [
+    110,
+    440,
+    342,
+    460
+  ],
+  "box_normalized": [
+    0.06875,
+    0.4888888888888889,
+    0.21375,
+    0.5111111111111111
+  ],
+  "rendering": {
+    "font_size": 27,
+    "raw_ink_size": [
+      232,
+      20
+    ],
+    "target_ink_size": [
+      232,
+      20
+    ],
+    "height_resampling": "NONE"
+  },
+  "font_path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+  "font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+  "actual_unblurred_mask_ink_height": 20,
+  "case": "duplicate",
+  "zone": "free",
+  "expected_class": "ADVERTENCIA_DUPLICADO",
+  "core_identical_to_base": true,
+  "sha256": "5c048fbddf8572f8433f383a2f34af3f986f84b1f1a75a1916963f2f7cd39bd7"
+}

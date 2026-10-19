@@ -1,0 +1,27 @@
+{
+  "scope": "D3 supplement/report/review plus chained execution manifest; historical evidence unchanged",
+  "execution_manifest_entries": 961,
+  "files_sha256": {
+    "CHECKS.json": "d0138db5df0051eb2e678cdbe9fa28ad28d3cab099b293766e63f0d99274e012",
+    "FINDINGS.md": "94c68c93e4cd6d1453a75f896d7a8208b86a3cfac8bbcba69933bef4a7615bc1",
+    "FREEZE.json": "0890c7b0ce4bcff2b1f6086ede277ea82a2e3e43b95c8da9440e6e833bf1c428",
+    "INPUT.json": "ad33e528e165136a5a34a0b7d54c832b42c302e0d7b2d85ee1fe9c8b27f97b7b",
+    "PROCEDURE.md": "326aa368f53d0cceaa67149cb1bac7e4a6468f694462a500170ccc21ccf1747a",
+    "RESULTS.md": "f984679a4c2a55d9fefc70e419a3409895ed71399ccd01752a236a3eb552295e",
+    "VALIDATION.json": "0e525a584b66d0310bcbdd0ab3d06b064d0a7e5363f0d3c4cf21bd1897304d69",
+    "VISUAL_REVIEW.json": "a8588f15407afabcc78790fac851fc656ba6867cb58dd2184bfba569bf8094ba",
+    "audit_results.py": "fdf57026cff0b99db5c3d9127511b3be8fddffcb4b7325e501e3420ddb2dc2aa",
+    "check_injections.py": "4a4621ddf0e2ca1eaa6179a98e9d35e2d61f38b0a41e094a0a18a24a604375da",
+    "execution/OUTPUT_HASHES.json": "64fc1720348c0561287bf929f121ed10ff564678c83f91b2fe85f805de2fb65c",
+    "export_review.py": "db2b3b71b2abf38139538cc86e0eb75dff70b767fbdb9cdd0223ebaa85ae1dfb",
+    "review/SHEETS.json": "7621d8f9777348b8cd5f9c17c6daf69e43ef0acd627ada44d8632b72ca564ed7",
+    "review/baseline_01.png": "6edfc8bc65844af8c57cbad76d4b971a43da08d43ff7277a73a62213a2919340",
+    "review/baseline_02.png": "0b2e7400e31a366b95e76bd7d2b84d867a8b0005aa1012a449868c1304e41509",
+    "review/injections_01.png": "f27d5dbf1512137497e365dcf231c96904a6d644452e856dbbfce1ef09193271",
+    "review/injections_02.png": "f2209a1914ccd484356ca460a86f57bdbf254edfcfffe2bb14b653f7e3b26391",
+    "review/injections_03.png": "6952bbc236a27b21c3037ec8881e8deb2178ffe42c9c86c8da13e3c103eeb8a8",
+    "review/noncore_detections_01.png": "caf39371f17b7ece3a3ebb1743facfd0457eecb0f51936821ed403d3f268f6ee",
+    "review/noncore_detections_02.png": "3677bfb37d79e1dfd634cbc7e18720bd7519137cd0f65beb33b70e2152740c77",
+    "run_injections.py": "83e7777676b4649228815d86c0705608a6852b0e70a41eaff2b48496810a8220"
+  }
+}

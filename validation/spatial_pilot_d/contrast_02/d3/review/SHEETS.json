@@ -1,0 +1,113 @@
+{
+  "baseline_pages": [
+    {
+      "file": "baseline_01.png",
+      "sha256": "6edfc8bc65844af8c57cbad76d4b971a43da08d43ff7277a73a62213a2919340",
+      "ids": [
+        "tile_000_line_000",
+        "tile_001_line_000",
+        "tile_001_line_001",
+        "tile_001_line_003",
+        "tile_001_line_004",
+        "tile_001_line_005",
+        "tile_001_line_006",
+        "tile_001_line_007",
+        "tile_001_line_008",
+        "tile_001_line_009",
+        "tile_002_line_000",
+        "tile_002_line_001",
+        "tile_002_line_003",
+        "tile_002_line_005",
+        "tile_002_line_007",
+        "tile_002_line_008"
+      ]
+    },
+    {
+      "file": "baseline_02.png",
+      "sha256": "0b2e7400e31a366b95e76bd7d2b84d867a8b0005aa1012a449868c1304e41509",
+      "ids": [
+        "tile_002_group_000",
+        "tile_003_line_000",
+        "tile_004_line_000",
+        "tile_004_line_002",
+        "tile_004_line_003",
+        "tile_004_line_004",
+        "tile_004_line_010",
+        "tile_005_line_000",
+        "tile_005_line_004"
+      ]
+    }
+  ],
+  "injection_pages": [
+    {
+      "file": "injections_01.png",
+      "sha256": "f27d5dbf1512137497e365dcf231c96904a6d644452e856dbbfce1ef09193271",
+      "cases": [
+        "sans_8_sharp",
+        "sans_8_blur",
+        "sans_12_sharp",
+        "sans_12_blur",
+        "sans_20_sharp",
+        "sans_20_blur",
+        "sans_40_sharp",
+        "sans_40_blur"
+      ]
+    },
+    {
+      "file": "injections_02.png",
+      "sha256": "f2209a1914ccd484356ca460a86f57bdbf254edfcfffe2bb14b653f7e3b26391",
+      "cases": [
+        "serif_8_sharp",
+        "serif_8_blur",
+        "serif_12_sharp",
+        "serif_12_blur",
+        "serif_20_sharp",
+        "serif_20_blur",
+        "serif_40_sharp",
+        "serif_40_blur"
+      ]
+    },
+    {
+      "file": "injections_03.png",
+      "sha256": "6952bbc236a27b21c3037ec8881e8deb2178ffe42c9c86c8da13e3c103eeb8a8",
+      "cases": [
+        "duplicate",
+        "core_control"
+      ]
+    }
+  ],
+  "noncore_detection_pages": [
+    {
+      "file": "noncore_detections_01.png",
+      "sha256": "caf39371f17b7ece3a3ebb1743facfd0457eecb0f51936821ed403d3f268f6ee",
+      "ids": [
+        "sans_8_sharp/tile_000_line_000",
+        "sans_8_sharp/tile_003_line_000",
+        "sans_8_blur/tile_000_line_000",
+        "sans_8_blur/tile_003_line_000",
+        "sans_12_sharp/tile_000_line_000",
+        "sans_12_blur/tile_000_line_000",
+        "sans_20_sharp/tile_000_line_000",
+        "sans_20_blur/tile_000_line_000",
+        "sans_40_sharp/tile_000_line_000",
+        "sans_40_blur/tile_000_line_000",
+        "serif_8_sharp/tile_000_line_000",
+        "serif_8_sharp/tile_003_line_000",
+        "serif_8_blur/tile_000_line_000",
+        "serif_12_sharp/tile_000_line_000",
+        "serif_12_blur/tile_000_line_000",
+        "serif_20_sharp/tile_000_line_000"
+      ]
+    },
+    {
+      "file": "noncore_detections_02.png",
+      "sha256": "3677bfb37d79e1dfd634cbc7e18720bd7519137cd0f65beb33b70e2152740c77",
+      "ids": [
+        "serif_20_blur/tile_000_line_000",
+        "serif_40_sharp/tile_000_line_000",
+        "serif_40_blur/tile_000_line_000",
+        "duplicate/tile_000_line_000"
+      ]
+    }
+  ]
+}

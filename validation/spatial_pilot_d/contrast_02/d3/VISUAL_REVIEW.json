@@ -1,0 +1,16 @@
+{
+  "reviewer": "Codex, local visual inspection; not Lean ground-truth annotation",
+  "scope": "25 unique D3 baseline crops and all 20 non-ignored injection findings; control patches also inspected",
+  "sheets_inspected": ["review/baseline_01.png", "review/baseline_02.png", "review/noncore_detections_01.png", "review/noncore_detections_02.png", "review/injections_03.png"],
+  "nontext_false_positives": [],
+  "nontext_false_positive_count": 0,
+  "reviewed_detection_count": 45,
+  "not_claimed": "Manual review of all 504 unique findings, absence of undetected text or general OCR specificity",
+  "transcription_errors": "Partial/incorrect billboard and storefront transcriptions are retained; visible source text is present, not non-text false positives",
+  "classification_false_negative": {"case": "sans_12_blur", "text": "NOVA DEPOT", "confidence": 0.5, "expected": "VIOLACION", "observed": "ADVERTENCIA"},
+  "height_overclassification": ["sans_8_sharp", "sans_8_blur", "serif_8_sharp", "serif_8_blur"],
+  "height_note": "All four known 8px ink cases have at least one VIOLACION from OCR bbox height >=10; three also retain a warning from a different tile. Not non-text false positives.",
+  "duplicate_control": "DETECTED_AS_ADVERTENCIA_DUPLICADO",
+  "core_control": "DETECTED_AND_IGNORED_BY_OVERLAP",
+  "threshold_or_label_changes": false
+}

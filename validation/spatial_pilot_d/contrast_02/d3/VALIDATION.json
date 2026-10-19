@@ -1,0 +1,45 @@
+{
+  "status": "PASS_INTEGRITY_NOT_SENSITIVITY_ACCEPTANCE",
+  "freezes": {
+    "parent_freeze_commit": "b971cf43997017fecc6059961cbcf6dfaa49417b",
+    "parent_freeze_sha256": "26302674549af7528e63948a6a76e7a6b4186ba0ea2098e70691e379330899c6",
+    "d3_freeze_commit": "ad0a19750b71a7d7ac008ae33bb14ba959bc57e5",
+    "d3_freeze_sha256": "0890c7b0ce4bcff2b1f6086ede277ea82a2e3e43b95c8da9440e6e833bf1c428"
+  },
+  "output_hashes_verified": 961,
+  "input_bytes_unchanged": true,
+  "ocr_images": 19,
+  "tiles": 114,
+  "raw_findings": 881,
+  "unique_findings": 504,
+  "engine_errors": 0,
+  "core_violations": 0,
+  "free_injections_core_exact": [
+    "sans_8_sharp",
+    "sans_8_blur",
+    "sans_12_sharp",
+    "sans_12_blur",
+    "sans_20_sharp",
+    "sans_20_blur",
+    "sans_40_sharp",
+    "sans_40_blur",
+    "serif_8_sharp",
+    "serif_8_blur",
+    "serif_12_sharp",
+    "serif_12_blur",
+    "serif_20_sharp",
+    "serif_20_blur",
+    "serif_40_sharp",
+    "serif_40_blur",
+    "duplicate"
+  ],
+  "intentional_core_control_copies": [
+    "core_control"
+  ],
+  "unit_checks": {
+    "RUNNER_CHECKS.json": 22,
+    "CHECKS.json": 22
+  },
+  "sensitivity_acceptance": false,
+  "reason": "80px coverage absent; report classification failures separately"
+}

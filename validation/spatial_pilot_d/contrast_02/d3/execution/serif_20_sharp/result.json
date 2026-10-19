@@ -1,0 +1,1465 @@
+{
+  "case": "serif_20_sharp",
+  "input": {
+    "path": "/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2/validation/spatial_pilot_d/contrast_02/d3/execution/synthetic/serif_20_sharp.png",
+    "sha256": "29f570304abfc35961f427ad68eafa6fc343081e3a50a7c0f9a7063c77193f1a"
+  },
+  "original_mode": "RGB",
+  "normalization": {
+    "size": [
+      1600,
+      900
+    ],
+    "scale_x": 1.0,
+    "scale_y": 1.0,
+    "interpolation": "LANCZOS",
+    "rgb_sha256": "fc67968bb49487e77c5e8440e88703f4daeae66d02777c6a1bb048b37562b741"
+  },
+  "core_box_normalized": [
+    0.283125,
+    0.06777777777777778,
+    0.716875,
+    0.9322222222222222
+  ],
+  "raw_only": false,
+  "tiles": [
+    {
+      "id": "tile_000",
+      "canonical_box": [
+        0,
+        0,
+        800,
+        800
+      ],
+      "size_upscaled": [
+        1600,
+        1600
+      ],
+      "sha256": "31e93198b24a446cf718a76160753e57d5541bc544b88dfee1c356effc38f825"
+    },
+    {
+      "id": "tile_001",
+      "canonical_box": [
+        640,
+        0,
+        1440,
+        800
+      ],
+      "size_upscaled": [
+        1600,
+        1600
+      ],
+      "sha256": "b880e3eb0c6a21b8f605d64e00826a0bbcc27cc053aa33d0cef07be41592eb1c"
+    },
+    {
+      "id": "tile_002",
+      "canonical_box": [
+        800,
+        0,
+        1600,
+        800
+      ],
+      "size_upscaled": [
+        1600,
+        1600
+      ],
+      "sha256": "cca2b19c5664d03b175dfb798fc51dd7f4a380641a3936b2f3d814c9fa5dcd52"
+    },
+    {
+      "id": "tile_003",
+      "canonical_box": [
+        0,
+        100,
+        800,
+        900
+      ],
+      "size_upscaled": [
+        1600,
+        1600
+      ],
+      "sha256": "4582609ff7e8d2e4555d3026fc9ef06347b19adcf5cd3b1c44547171704fd7b9"
+    },
+    {
+      "id": "tile_004",
+      "canonical_box": [
+        640,
+        100,
+        1440,
+        900
+      ],
+      "size_upscaled": [
+        1600,
+        1600
+      ],
+      "sha256": "0c3ef5f3aa69e9004781314d74bb43f6a5bb3b999196f029ef628f62c300f7c5"
+    },
+    {
+      "id": "tile_005",
+      "canonical_box": [
+        800,
+        100,
+        1600,
+        900
+      ],
+      "size_upscaled": [
+        1600,
+        1600
+      ],
+      "sha256": "c32a0469f70aec553aa95dfae084eb2c653b8d69260bf99d63607bd59cc48b78"
+    }
+  ],
+  "annotation": "PENDING_USER",
+  "status": "OCR_COMPLETE",
+  "findings": [
+    {
+      "id": "tile_000_line_000",
+      "tile": "tile_000",
+      "text": "NOVA DEPOT",
+      "confidence": 1,
+      "box_normalized": [
+        0.08512931049531079,
+        0.48659003882587437,
+        0.19827586353486157,
+        0.5134099609551875
+      ],
+      "box_original_px": [
+        136.20689679249728,
+        437.93103494328693,
+        317.2413816557785,
+        462.06896485966877
+      ],
+      "kind": "OCR_LINE",
+      "classification": "VIOLACION",
+      "core_overlap": 0.0,
+      "height_at_width_1600": 24.13792991638185,
+      "alphanumeric_count": 9,
+      "whitelist_best": "2 3/4% OVER PRIME",
+      "whitelist_similarity": 0.38095238095238093,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_000_line_000.png",
+      "crop_sha256": "2ff19ff7ffe181ede5f8570c2bca43a92cdd255d73073a656a0c8d4355055107",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_000_line_001",
+      "tile": "tile_000",
+      "text": "& CO.",
+      "confidence": 0.3,
+      "box_normalized": [
+        0.4105603452753717,
+        0.6127777778770996,
+        0.4504310341906244,
+        0.661111111210433
+      ],
+      "box_original_px": [
+        656.8965524405947,
+        551.5000000893897,
+        720.689654704999,
+        595.0000000893897
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 43.50000000000001,
+      "alphanumeric_count": 2,
+      "whitelist_best": "L. KATZENSTEIN & CO.",
+      "whitelist_similarity": 0.25,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_000_line_001.png",
+      "crop_sha256": "c078161bc9eb458be8ca9deafb533c4ec6d9931d48237355fba87c11b0cfe849",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_001_line_000",
+      "tile": "tile_001",
+      "text": "Business 23/4/o pime",
+      "confidence": 0.3,
+      "box_normalized": [
+        0.4842781432336015,
+        0.13673539266495774,
+        0.619995306319539,
+        0.2767744551649577
+      ],
+      "box_original_px": [
+        774.8450291737624,
+        123.06185339846196,
+        991.9924901112624,
+        249.09700964846192
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 126.03515624999996,
+      "alphanumeric_count": 16,
+      "whitelist_best": "BUSINESS LOANS",
+      "whitelist_similarity": 0.6206896551724138,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_001_line_000.png",
+      "crop_sha256": "91d8de8ed9fec90c8f2f8e17c87e6f5f2031bb99b2e73f3ddacd4a9a8ff26051",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_001_line_001",
+      "tile": "tile_001",
+      "text": "Loans",
+      "confidence": 1,
+      "box_normalized": [
+        0.49023931255249126,
+        0.17374005173413584,
+        0.5372532772055064,
+        0.2260363045146263
+      ],
+      "box_original_px": [
+        784.382900083986,
+        156.36604656072225,
+        859.6052435288103,
+        203.4326740631637
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 47.06662750244143,
+      "alphanumeric_count": 5,
+      "whitelist_best": "BUSINESS LOANS",
+      "whitelist_similarity": 0.5555555555555556,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_001_line_001.png",
+      "crop_sha256": "74638255a202c920bc714ec102e621ded4759e42012f086d79250c47cc5973c1",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_001_line_002",
+      "tile": "tile_001",
+      "text": "1.800",
+      "confidence": 0.5,
+      "box_normalized": [
+        0.49975176152882006,
+        0.2242797451770975,
+        0.5477956133812371,
+        0.2846329903824469
+      ],
+      "box_original_px": [
+        799.6028184461121,
+        201.85177065938777,
+        876.4729814099793,
+        256.1696913442022
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 54.31792068481443,
+      "alphanumeric_count": 4,
+      "whitelist_best": "1-800 722-LOAN",
+      "whitelist_similarity": 0.5333333333333333,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_001_line_002.png",
+      "crop_sha256": "acd7f8c080095ebe7ac990354314f705fabab3d38e5f07d084493c788a1c5192",
+      "deduplicated_into": "tile_004_line_003"
+    },
+    {
+      "id": "tile_001_line_003",
+      "tile": "tile_001",
+      "text": "ec Business",
+      "confidence": 0.3,
+      "box_normalized": [
+        0.5629310300399445,
+        0.25440612662313206,
+        0.6196120717574738,
+        0.31455938844360737
+      ],
+      "box_original_px": [
+        900.6896480639111,
+        228.96551396081884,
+        991.379314811958,
+        283.10344959924663
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 54.13793563842778,
+      "alphanumeric_count": 10,
+      "whitelist_best": "BUSINESS LOANS",
+      "whitelist_similarity": 0.6956521739130435,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_001_line_003.png",
+      "crop_sha256": "a5f3782155b794da01b6943712af65bb3fb83954580caed3e6213eda5ad4bded",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_001_line_004",
+      "tile": "tile_001",
+      "text": "Loan",
+      "confidence": 1,
+      "box_normalized": [
+        0.5856763930846183,
+        0.29498968453291574,
+        0.6176226778555839,
+        0.3396699069382434
+      ],
+      "box_original_px": [
+        937.0822289353893,
+        265.4907160796242,
+        988.1962845689342,
+        305.70291624441904
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 40.212200164794886,
+      "alphanumeric_count": 4,
+      "whitelist_best": "1-800 722-LOAN",
+      "whitelist_similarity": 0.5333333333333333,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_001_line_004.png",
+      "crop_sha256": "437546fd27da30ae5154e7a472ebf3a887cd6c75b8d1cd4a2aded227b32b9230",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_001_line_005",
+      "tile": "tile_001",
+      "text": "722 LOAN",
+      "confidence": 0.5,
+      "box_normalized": [
+        0.48574031734258205,
+        0.2427321596001164,
+        0.5634042825678018,
+        0.32329067366532904
+      ],
+      "box_original_px": [
+        777.1845077481313,
+        218.45894364010476,
+        901.446852108483,
+        290.96160629879614
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 72.50266265869138,
+      "alphanumeric_count": 7,
+      "whitelist_best": "1-800 722-LOAN",
+      "whitelist_similarity": 0.7777777777777778,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_001_line_005.png",
+      "crop_sha256": "a5f359e84a0535fa0e15dd33ab444f75f8884b31f6abc869bdec799f269707e8",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_001_line_006",
+      "tile": "tile_001",
+      "text": "Center",
+      "confidence": 1,
+      "box_normalized": [
+        0.580172413223814,
+        0.30957854576120447,
+        0.6202586206136455,
+        0.3624521063487695
+      ],
+      "box_original_px": [
+        928.2758611581023,
+        278.620691185084,
+        992.4137929818327,
+        326.20689571389255
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 47.58620452880854,
+      "alphanumeric_count": 6,
+      "whitelist_best": "BUSINESS LOAN CENTER",
+      "whitelist_similarity": 0.5,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_001_line_006.png",
+      "crop_sha256": "60786c888b8843b344c68995a01cd87f17acb76f0379b3ca1c509218db5f4fad",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_001_line_007",
+      "tile": "tile_001",
+      "text": "TERMINAL",
+      "confidence": 1,
+      "box_normalized": [
+        0.4913268887061696,
+        0.5365900387771643,
+        0.5382601343650442,
+        0.5680853259306202
+      ],
+      "box_original_px": [
+        786.1230219298714,
+        482.93103489944787,
+        861.2162149840707,
+        511.2767933375582
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 28.345758438110362,
+      "alphanumeric_count": 8,
+      "whitelist_best": "TERMINAL DINER",
+      "whitelist_similarity": 0.7619047619047619,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_001_line_007.png",
+      "crop_sha256": "3eb6429760b531ea686583841826d7704ce55718486674478cd52ace8b3b2d8d",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_001_line_008",
+      "tile": "tile_001",
+      "text": "DINER",
+      "confidence": 1,
+      "box_normalized": [
+        0.4888750184605206,
+        0.5588963414416912,
+        0.540795170171031,
+        0.6037377983847794
+      ],
+      "box_original_px": [
+        782.200029536833,
+        503.0067072975221,
+        865.2722722736495,
+        543.3640185463014
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 40.35731124877935,
+      "alphanumeric_count": 5,
+      "whitelist_best": "TERMINAL DINER",
+      "whitelist_similarity": 0.5555555555555556,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_001_line_008.png",
+      "crop_sha256": "eeb052812a98883366aaf74af841b4f3e6697c0a12c1b376dd7813876157bc49",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_001_line_009",
+      "tile": "tile_001",
+      "text": "HаCO.",
+      "confidence": 0.3,
+      "box_normalized": [
+        0.4000000009191158,
+        0.6130268205129573,
+        0.4538793096196773,
+        0.6704980831268896
+      ],
+      "box_original_px": [
+        640.0000014705853,
+        551.7241384616616,
+        726.2068953914837,
+        603.4482748142007
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 51.724136352539084,
+      "alphanumeric_count": 4,
+      "whitelist_best": "L. KATZENSTEIN & CO.",
+      "whitelist_similarity": 0.23529411764705882,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_001_line_009.png",
+      "crop_sha256": "93dbf698f8bfdf3c0fd5e23249fc5b47a431f942302456c03fa23fae0e9f4f5b",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_002_line_000",
+      "tile": "tile_002",
+      "text": "ssiness 39 lo Prma,",
+      "confidence": 0.3,
+      "box_normalized": [
+        0.490410961417627,
+        0.13800101520246708,
+        0.624971451072168,
+        0.275494665850796
+      ],
+      "box_original_px": [
+        784.6575382682032,
+        124.20091368222037,
+        999.9543217154688,
+        247.9451992657164
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 123.74428558349605,
+      "alphanumeric_count": 15,
+      "whitelist_best": "BUSINESS LOANS",
+      "whitelist_similarity": 0.6428571428571429,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_002_line_000.png",
+      "crop_sha256": "9b87419d1430033539bdeb013f8fe2ba09d2f3999ab591ecc9ad23dac7cb71ca",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_002_line_001",
+      "tile": "tile_002",
+      "text": "oans",
+      "confidence": 1,
+      "box_normalized": [
+        0.4967733043746702,
+        0.17854909062820115,
+        0.5369290632323973,
+        0.22400494695144335
+      ],
+      "box_original_px": [
+        794.8372869994723,
+        160.69418156538103,
+        859.0865011718357,
+        201.60445225629903
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 40.91027069091798,
+      "alphanumeric_count": 4,
+      "whitelist_best": "BUSINESS LOANS",
+      "whitelist_similarity": 0.47058823529411764,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_002_line_001.png",
+      "crop_sha256": "2c75ab6c0385990329d5e856dfd7ebcb44dce915f4c848251058589a5338043b",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_002_line_002",
+      "tile": "tile_002",
+      "text": "1-800",
+      "confidence": 0.5,
+      "box_normalized": [
+        0.49999999951444335,
+        0.22473246162575358,
+        0.5476367421063013,
+        0.2838551999341304
+      ],
+      "box_original_px": [
+        799.9999992231094,
+        202.25921546317824,
+        876.218787370082,
+        255.46967994071736
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 53.21046447753913,
+      "alphanumeric_count": 4,
+      "whitelist_best": "1-800 722-LOAN",
+      "whitelist_similarity": 0.5333333333333333,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_002_line_002.png",
+      "crop_sha256": "cfce28cd12d112abd09639f043fba5fcf6c9f9a29c09a7afa8999ef42d5a8edf",
+      "deduplicated_into": "tile_004_line_003"
+    },
+    {
+      "id": "tile_002_line_003",
+      "tile": "tile_002",
+      "text": "ccBusiness",
+      "confidence": 0.3,
+      "box_normalized": [
+        0.5623304925005874,
+        0.2555401078549477,
+        0.6194981131594619,
+        0.3146599215620874
+      ],
+      "box_original_px": [
+        899.7287880009399,
+        229.9860970694529,
+        991.1969810551391,
+        283.19392940587863
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 53.20783233642574,
+      "alphanumeric_count": 10,
+      "whitelist_best": "BUSINESS LOANS",
+      "whitelist_similarity": 0.6956521739130435,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_002_line_003.png",
+      "crop_sha256": "1993aa02922f7ee9a6ca95323dc2f6144890bbc9b91de8cbfd3c3f2ea57ab05f",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_002_line_004",
+      "tile": "tile_002",
+      "text": "Loan",
+      "confidence": 0.5,
+      "box_normalized": [
+        0.5864611574497939,
+        0.29508373067119287,
+        0.6177959128704786,
+        0.3403934756120566
+      ],
+      "box_original_px": [
+        938.3378519196702,
+        265.5753576040736,
+        988.4734605927658,
+        306.35412805085093
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 40.77877044677734,
+      "alphanumeric_count": 4,
+      "whitelist_best": "1-800 722-LOAN",
+      "whitelist_similarity": 0.5333333333333333,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_002_line_004.png",
+      "crop_sha256": "ee1998f889cbe6e466bea16b4a90b34869a76dab97edc1ff73ff9d02b8fc1c88",
+      "deduplicated_into": "tile_001_line_004"
+    },
+    {
+      "id": "tile_002_line_005",
+      "tile": "tile_002",
+      "text": "22-LOAN",
+      "confidence": 0.5,
+      "box_normalized": [
+        0.4938497659838808,
+        0.24938826326430608,
+        0.5635567590869082,
+        0.32430754427016545
+      ],
+      "box_original_px": [
+        790.1596255742093,
+        224.44943693787548,
+        901.690814539053,
+        291.8767898431489
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 67.42735290527344,
+      "alphanumeric_count": 6,
+      "whitelist_best": "1-800 722-LOAN",
+      "whitelist_similarity": 0.7058823529411765,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_002_line_005.png",
+      "crop_sha256": "81b219f51c2dbf243b724ee648f555c9619b5f0e00bf71f5c04c6acd3a982eef",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_002_line_006",
+      "tile": "tile_002",
+      "text": "Center",
+      "confidence": 1,
+      "box_normalized": [
+        0.5797413799183873,
+        0.31034482672076635,
+        0.620258619489005,
+        0.3636015312631383
+      ],
+      "box_original_px": [
+        927.5862078694196,
+        279.31034404868973,
+        992.413791182408,
+        327.2413781368245
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 47.93103408813477,
+      "alphanumeric_count": 6,
+      "whitelist_best": "BUSINESS LOAN CENTER",
+      "whitelist_similarity": 0.5,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_002_line_006.png",
+      "crop_sha256": "998ae59d63195d09ca7ef0ecb349ba4bd09132dbd96e56d4a7f9abd117532c9b",
+      "deduplicated_into": "tile_001_line_006"
+    },
+    {
+      "id": "tile_002_line_007",
+      "tile": "tile_002",
+      "text": "ERMINAL",
+      "confidence": 1,
+      "box_normalized": [
+        0.49847099271240325,
+        0.5387542714821464,
+        0.5380358811897287,
+        0.5680853261696464
+      ],
+      "box_original_px": [
+        797.5535883398452,
+        484.87884433393174,
+        860.8574099035659,
+        511.27679355268174
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 26.39794921874997,
+      "alphanumeric_count": 7,
+      "whitelist_best": "TERMINAL DINER",
+      "whitelist_similarity": 0.7,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_002_line_007.png",
+      "crop_sha256": "efd412cb2e25fad479622896409a8eea3378ddfb0948e48000f78a3ae1bbb43d",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_002_line_008",
+      "tile": "tile_002",
+      "text": "INER",
+      "confidence": 1,
+      "box_normalized": [
+        0.4981076560283785,
+        0.5617699280582321,
+        0.5406591639782076,
+        0.6034015461341327
+      ],
+      "box_original_px": [
+        796.9722496454056,
+        505.5929352524089,
+        865.0546623651321,
+        543.0613915207194
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 37.46845626831049,
+      "alphanumeric_count": 4,
+      "whitelist_best": "TERMINAL DINER",
+      "whitelist_similarity": 0.47058823529411764,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_002_line_008.png",
+      "crop_sha256": "8941825033a898c67c095f014ab2bb51cfb2d032fa4b35ca036db453adc134b1",
+      "deduplicated_into": null
+    },
+    {
+      "text": "oans 1-800",
+      "confidence": 0.5,
+      "box_normalized": [
+        0.4967733043746702,
+        0.17854909062820115,
+        0.5476367421063013,
+        0.2838551999341304
+      ],
+      "constituents": [
+        "tile_002_line_001",
+        "tile_002_line_002"
+      ],
+      "kind": "LINE_GROUP",
+      "id": "tile_002_group_000",
+      "tile": "tile_002",
+      "box_original_px": [
+        794.8372869994723,
+        160.69418156538103,
+        876.218787370082,
+        255.46967994071736
+      ],
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 94.77549837533633,
+      "alphanumeric_count": 8,
+      "whitelist_best": "1-800 722-LOAN",
+      "whitelist_similarity": 0.42105263157894735,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_002_group_000.png",
+      "crop_sha256": "9b4ccc7b8ffea403768689571665f8c8a02724ab338cba1e6f7cb18b4b946f7d",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_003_line_000",
+      "tile": "tile_003",
+      "text": "NOVA DEPOT",
+      "confidence": 1,
+      "box_normalized": [
+        0.08405172336348611,
+        0.4865900391588427,
+        0.19719827640303692,
+        0.513409961288156
+      ],
+      "box_original_px": [
+        134.48275738157778,
+        437.93103524295844,
+        315.51724224485906,
+        462.0689651593404
+      ],
+      "kind": "OCR_LINE",
+      "classification": "VIOLACION",
+      "core_overlap": 0.0,
+      "height_at_width_1600": 24.13792991638195,
+      "alphanumeric_count": 9,
+      "whitelist_best": "2 3/4% OVER PRIME",
+      "whitelist_similarity": 0.38095238095238093,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_003_line_000.png",
+      "crop_sha256": "a9dcc92499d9d40ada9d5955de96bbbedb4c1eb46562dedfe8c4308b9b27cbde",
+      "deduplicated_into": "tile_000_line_000"
+    },
+    {
+      "id": "tile_003_line_001",
+      "tile": "tile_003",
+      "text": "LKATZENST",
+      "confidence": 0.3,
+      "box_normalized": [
+        0.30818965592152564,
+        0.6226053645717812,
+        0.39224137940175025,
+        0.6704980834167248
+      ],
+      "box_original_px": [
+        493.10344947444105,
+        560.344828114603,
+        627.5862070428004,
+        603.4482750750523
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 43.103446960449254,
+      "alphanumeric_count": 9,
+      "whitelist_best": "L. KATZENSTEIN & CO.",
+      "whitelist_similarity": 0.782608695652174,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_003_line_001.png",
+      "crop_sha256": "148b78503cbd516ce55c8bf6554bef9e01ad01ba1b49082e4faeb2daf9671036",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_003_line_002",
+      "tile": "tile_003",
+      "text": "& CO.",
+      "confidence": 0.3,
+      "box_normalized": [
+        0.4073275857748586,
+        0.6127777769185853,
+        0.4525862079443532,
+        0.6666666658074741
+      ],
+      "box_original_px": [
+        651.7241372397738,
+        551.4999992267267,
+        724.1379327109652,
+        599.9999992267267
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 48.49999999999998,
+      "alphanumeric_count": 2,
+      "whitelist_best": "L. KATZENSTEIN & CO.",
+      "whitelist_similarity": 0.25,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_003_line_002.png",
+      "crop_sha256": "e23d738e33c17c8043c480da65e8342e62b5adc1069204aab24d58a81abea718",
+      "deduplicated_into": "tile_000_line_001"
+    },
+    {
+      "id": "tile_004_line_000",
+      "tile": "tile_004",
+      "text": "Business e",
+      "confidence": 1,
+      "box_normalized": [
+        0.49123465254958704,
+        0.14266365365044356,
+        0.5572395344084127,
+        0.20897476086208636
+      ],
+      "box_original_px": [
+        785.9754440793392,
+        128.3972882853992,
+        891.5832550534603,
+        188.07728477587773
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 59.679996490478516,
+      "alphanumeric_count": 9,
+      "whitelist_best": "BUSINESS LOANS",
+      "whitelist_similarity": 0.7272727272727273,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_004_line_000.png",
+      "crop_sha256": "8145ed1c4279f680b4e8485c6073811982a95b05760443dce7f3fed4510c25b2",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_004_line_001",
+      "tile": "tile_004",
+      "text": "Loans",
+      "confidence": 1,
+      "box_normalized": [
+        0.48967857707812057,
+        0.17160763566468815,
+        0.5375945936567949,
+        0.22542951727683008
+      ],
+      "box_original_px": [
+        783.4857233249929,
+        154.44687209821933,
+        860.1513498508717,
+        202.88656554914706
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 48.43969345092774,
+      "alphanumeric_count": 5,
+      "whitelist_best": "BUSINESS LOANS",
+      "whitelist_similarity": 0.5555555555555556,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_004_line_001.png",
+      "crop_sha256": "5ea4a97e6cc636583c5239e7d7f1a739c5941c61e4c13af396fe66da5d4ee3c4",
+      "deduplicated_into": "tile_001_line_001"
+    },
+    {
+      "id": "tile_004_line_002",
+      "tile": "tile_004",
+      "text": "23/2% Prime",
+      "confidence": 0.3,
+      "box_normalized": [
+        0.5443152265456311,
+        0.18408043226078855,
+        0.6197806672957532,
+        0.2625132783301245
+      ],
+      "box_original_px": [
+        870.9043624730098,
+        165.67238903470968,
+        991.6490676732051,
+        236.26195049711205
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 70.58956146240236,
+      "alphanumeric_count": 8,
+      "whitelist_best": "2 3/4% OVER PRIME",
+      "whitelist_similarity": 0.7,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_004_line_002.png",
+      "crop_sha256": "2e42693c52a611b82d2632468341b4dbd5fa47d1c5f82f6306d3c86b5c7c1ec6",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_004_line_003",
+      "tile": "tile_004",
+      "text": "1-800",
+      "confidence": 1,
+      "box_normalized": [
+        0.4998439351703762,
+        0.22446822583165835,
+        0.5474806777622341,
+        0.2835909641400351
+      ],
+      "box_original_px": [
+        799.7502962726019,
+        202.0214032484925,
+        875.9690844195745,
+        255.2318677260316
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 53.210464477539084,
+      "alphanumeric_count": 4,
+      "whitelist_best": "1-800 722-LOAN",
+      "whitelist_similarity": 0.5333333333333333,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_004_line_003.png",
+      "crop_sha256": "285779576cd65d1d8c4f95dddfe1f95a130f71899ed96987e72211550e32e976",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_004_line_004",
+      "tile": "tile_004",
+      "text": "Business",
+      "confidence": 0.5,
+      "box_normalized": [
+        0.5643168187122131,
+        0.2558000874974926,
+        0.6193612456302429,
+        0.31479868707974096
+      ],
+      "box_original_px": [
+        902.9069099395409,
+        230.22007874774334,
+        990.9779930083886,
+        283.31881837176684
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 53.09873962402351,
+      "alphanumeric_count": 8,
+      "whitelist_best": "BUSINESS LOANS",
+      "whitelist_similarity": 0.7619047619047619,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_004_line_004.png",
+      "crop_sha256": "8b6edf941a8790ae1a5e54869092ffcf209b293079616624341e6c666746395d",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_004_line_005",
+      "tile": "tile_004",
+      "text": "Loan",
+      "confidence": 1,
+      "box_normalized": [
+        0.5856763930846183,
+        0.2949896845329157,
+        0.6176226778555839,
+        0.3396699069382434
+      ],
+      "box_original_px": [
+        937.0822289353893,
+        265.4907160796241,
+        988.1962845689342,
+        305.70291624441904
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 40.212200164794936,
+      "alphanumeric_count": 4,
+      "whitelist_best": "1-800 722-LOAN",
+      "whitelist_similarity": 0.5333333333333333,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_004_line_005.png",
+      "crop_sha256": "437546fd27da30ae5154e7a472ebf3a887cd6c75b8d1cd4a2aded227b32b9230",
+      "deduplicated_into": "tile_001_line_004"
+    },
+    {
+      "id": "tile_004_line_006",
+      "tile": "tile_004",
+      "text": "722-LOAN",
+      "confidence": 0.5,
+      "box_normalized": [
+        0.4855270051389674,
+        0.24177091695422567,
+        0.5634608983427027,
+        0.32306682895509364
+      ],
+      "box_original_px": [
+        776.8432082223478,
+        217.5938252588031,
+        901.5374373483244,
+        290.76014605958426
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 73.16632080078118,
+      "alphanumeric_count": 7,
+      "whitelist_best": "1-800 722-LOAN",
+      "whitelist_similarity": 0.7777777777777778,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_004_line_006.png",
+      "crop_sha256": "69f434abcb79c53eb1cf2716876d68b660f8aa1ac0dd4ea1f546010a5cfe9655",
+      "deduplicated_into": "tile_001_line_005"
+    },
+    {
+      "id": "tile_004_line_007",
+      "tile": "tile_004",
+      "text": "Center",
+      "confidence": 1,
+      "box_normalized": [
+        0.580172413223814,
+        0.3095785457612044,
+        0.6202586206136455,
+        0.3624521063487695
+      ],
+      "box_original_px": [
+        928.2758611581023,
+        278.62069118508396,
+        992.4137929818327,
+        326.20689571389255
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 47.58620452880859,
+      "alphanumeric_count": 6,
+      "whitelist_best": "BUSINESS LOAN CENTER",
+      "whitelist_similarity": 0.5,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_004_line_007.png",
+      "crop_sha256": "60786c888b8843b344c68995a01cd87f17acb76f0379b3ca1c509218db5f4fad",
+      "deduplicated_into": "tile_001_line_006"
+    },
+    {
+      "id": "tile_004_line_008",
+      "tile": "tile_004",
+      "text": "TERMINAL",
+      "confidence": 1,
+      "box_normalized": [
+        0.4912744666620928,
+        0.5349487441530558,
+        0.5384261371180254,
+        0.5685513082230157
+      ],
+      "box_original_px": [
+        786.0391466593485,
+        481.45386973775027,
+        861.4818193888407,
+        511.69617740071413
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 30.242307662963885,
+      "alphanumeric_count": 8,
+      "whitelist_best": "TERMINAL DINER",
+      "whitelist_similarity": 0.7619047619047619,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_004_line_008.png",
+      "crop_sha256": "445f962d064801c06596368c30dcb476d504805dc74cfca4e28413c47433f67f",
+      "deduplicated_into": "tile_001_line_007"
+    },
+    {
+      "id": "tile_004_line_009",
+      "tile": "tile_004",
+      "text": "DINER",
+      "confidence": 1,
+      "box_normalized": [
+        0.4937237169521566,
+        0.5666526489904196,
+        0.5369585802334066,
+        0.5949210371028056
+      ],
+      "box_original_px": [
+        789.9579471234506,
+        509.9873840913776,
+        859.1337283734506,
+        535.4289333925251
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 25.44154930114747,
+      "alphanumeric_count": 5,
+      "whitelist_best": "TERMINAL DINER",
+      "whitelist_similarity": 0.5555555555555556,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_004_line_009.png",
+      "crop_sha256": "339bc14b5a02e4a4759089791bc66a30ce18d422a671b4a8ef14e2b9ed04ad86",
+      "deduplicated_into": "tile_001_line_008"
+    },
+    {
+      "id": "tile_004_line_010",
+      "tile": "tile_004",
+      "text": "A&CO.",
+      "confidence": 0.3,
+      "box_normalized": [
+        0.40000000075948267,
+        0.6111111106766639,
+        0.4538793094600442,
+        0.6704980845875256
+      ],
+      "box_original_px": [
+        640.0000012151722,
+        549.9999996089975,
+        726.2068951360707,
+        603.448276128773
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 53.4482765197755,
+      "alphanumeric_count": 3,
+      "whitelist_best": "L. KATZENSTEIN & CO.",
+      "whitelist_similarity": 0.35294117647058826,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_004_line_010.png",
+      "crop_sha256": "28bdaac00438986c53c1c05937bacf6534e32923bd814afd06a7b492daf4cc18",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_005_line_000",
+      "tile": "tile_005",
+      "text": "usiness o 3/2 lo Prime",
+      "confidence": 0.3,
+      "box_normalized": [
+        0.49074181214061097,
+        0.1398509049631244,
+        0.6206732715674909,
+        0.27951454191245173
+      ],
+      "box_original_px": [
+        785.1868994249776,
+        125.86581446681197,
+        993.0772345079854,
+        251.56308772120656
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 125.69727325439459,
+      "alphanumeric_count": 17,
+      "whitelist_best": "BUSINESS LOANS",
+      "whitelist_similarity": 0.6,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_005_line_000.png",
+      "crop_sha256": "318719c0331037e34d0d4d0c80237374f8b4cbf117b2fe837bf0c4846ac1a212",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_005_line_001",
+      "tile": "tile_005",
+      "text": "oans",
+      "confidence": 1,
+      "box_normalized": [
+        0.4967733064862056,
+        0.17870723429041518,
+        0.5369452348919673,
+        0.2240301060284251
+      ],
+      "box_original_px": [
+        794.837290377929,
+        160.83651086137365,
+        859.1123758271477,
+        201.62709542558258
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 40.79058456420893,
+      "alphanumeric_count": 4,
+      "whitelist_best": "BUSINESS LOANS",
+      "whitelist_similarity": 0.47058823529411764,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_005_line_001.png",
+      "crop_sha256": "2c75ab6c0385990329d5e856dfd7ebcb44dce915f4c848251058589a5338043b",
+      "deduplicated_into": "tile_002_line_001"
+    },
+    {
+      "id": "tile_005_line_002",
+      "tile": "tile_005",
+      "text": "1-800",
+      "confidence": 0.5,
+      "box_normalized": [
+        0.49999999951444335,
+        0.22473246162575358,
+        0.5476367421063013,
+        0.2838551999341304
+      ],
+      "box_original_px": [
+        799.9999992231094,
+        202.25921546317824,
+        876.218787370082,
+        255.46967994071736
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 53.21046447753913,
+      "alphanumeric_count": 4,
+      "whitelist_best": "1-800 722-LOAN",
+      "whitelist_similarity": 0.5333333333333333,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_005_line_002.png",
+      "crop_sha256": "cfce28cd12d112abd09639f043fba5fcf6c9f9a29c09a7afa8999ef42d5a8edf",
+      "deduplicated_into": "tile_004_line_003"
+    },
+    {
+      "id": "tile_005_line_003",
+      "tile": "tile_005",
+      "text": "Business",
+      "confidence": 0.5,
+      "box_normalized": [
+        0.5656025639914926,
+        0.25668405703560104,
+        0.6198342076682504,
+        0.3146286939103298
+      ],
+      "box_original_px": [
+        904.964102386388,
+        231.01565133204093,
+        991.7347322692005,
+        283.16582451929685
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 52.1501731872559,
+      "alphanumeric_count": 8,
+      "whitelist_best": "BUSINESS LOANS",
+      "whitelist_similarity": 0.7619047619047619,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_005_line_003.png",
+      "crop_sha256": "88b647dec0900e54957a27d24104dba98ac46a85d0a3b5b670163a5dade4fc18",
+      "deduplicated_into": "tile_004_line_004"
+    },
+    {
+      "id": "tile_005_line_004",
+      "tile": "tile_005",
+      "text": "Loam",
+      "confidence": 0.3,
+      "box_normalized": [
+        0.586238589274084,
+        0.29569528760436303,
+        0.617742142664587,
+        0.34065810702168065
+      ],
+      "box_original_px": [
+        937.9817428385344,
+        266.12575884392675,
+        988.3874282633393,
+        306.59229631951257
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 40.46653747558585,
+      "alphanumeric_count": 4,
+      "whitelist_best": "1-800 722-LOAN",
+      "whitelist_similarity": 0.4,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_005_line_004.png",
+      "crop_sha256": "aa4dd424e0b7553d16b2a633d106ceb1f35f68baf590a6a5800f85a3119d38e9",
+      "deduplicated_into": null
+    },
+    {
+      "id": "tile_005_line_005",
+      "tile": "tile_005",
+      "text": "22-LOAN",
+      "confidence": 0.5,
+      "box_normalized": [
+        0.49413538504713084,
+        0.2485285464905648,
+        0.5635082535850338,
+        0.32293303833898057
+      ],
+      "box_original_px": [
+        790.6166160754093,
+        223.67569184150832,
+        901.613205736054,
+        290.6397345050825
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 66.96404266357419,
+      "alphanumeric_count": 6,
+      "whitelist_best": "1-800 722-LOAN",
+      "whitelist_similarity": 0.7058823529411765,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_005_line_005.png",
+      "crop_sha256": "99abea33e6389d6111fe0778bbb4ecaa2361d6f0745d54807259dd3fb738f5f1",
+      "deduplicated_into": "tile_002_line_005"
+    },
+    {
+      "id": "tile_005_line_006",
+      "tile": "tile_005",
+      "text": "Center",
+      "confidence": 1,
+      "box_normalized": [
+        0.5803307292740328,
+        0.31116657630196615,
+        0.620545205859421,
+        0.35921337924657337
+      ],
+      "box_original_px": [
+        928.5291668384525,
+        280.04991867176955,
+        992.8723293750736,
+        323.29204132191603
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 43.242122650146506,
+      "alphanumeric_count": 6,
+      "whitelist_best": "BUSINESS LOAN CENTER",
+      "whitelist_similarity": 0.5,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_005_line_006.png",
+      "crop_sha256": "852b521af58a95875ced0575338c1aba2fb5596afbaca51480a60f41775053f1",
+      "deduplicated_into": "tile_001_line_006"
+    },
+    {
+      "id": "tile_005_line_007",
+      "tile": "tile_005",
+      "text": "ERMINAL",
+      "confidence": 1,
+      "box_normalized": [
+        0.4983182191570409,
+        0.5368746258584047,
+        0.5392353486736424,
+        0.5684450646672699
+      ],
+      "box_original_px": [
+        797.3091506512654,
+        483.18716327256425,
+        862.7765578778278,
+        511.6005582005429
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 28.413394927978608,
+      "alphanumeric_count": 7,
+      "whitelist_best": "TERMINAL DINER",
+      "whitelist_similarity": 0.7,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_005_line_007.png",
+      "crop_sha256": "166c02a2ed6e48e4ea3c16f7cc130d56a067f741108be4fe02f937a5c1c73526",
+      "deduplicated_into": "tile_002_line_007"
+    },
+    {
+      "id": "tile_005_line_008",
+      "tile": "tile_005",
+      "text": "INER",
+      "confidence": 1,
+      "box_normalized": [
+        0.4975535867829508,
+        0.5588381486128986,
+        0.5412307785172648,
+        0.60409547537478
+      ],
+      "box_original_px": [
+        796.0857388527213,
+        502.9543337516087,
+        865.9692456276236,
+        543.6859278373021
+      ],
+      "kind": "OCR_LINE",
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 40.73159408569329,
+      "alphanumeric_count": 4,
+      "whitelist_best": "TERMINAL DINER",
+      "whitelist_similarity": 0.47058823529411764,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_005_line_008.png",
+      "crop_sha256": "e52a8ff57864711e0426cae654a0d1fbfc0927bced6a0018033ddb01e2173561",
+      "deduplicated_into": "tile_002_line_008"
+    },
+    {
+      "text": "oans 1-800",
+      "confidence": 0.5,
+      "box_normalized": [
+        0.4967733064862056,
+        0.17870723429041518,
+        0.5476367421063013,
+        0.2838551999341304
+      ],
+      "constituents": [
+        "tile_005_line_001",
+        "tile_005_line_002"
+      ],
+      "kind": "LINE_GROUP",
+      "id": "tile_005_group_000",
+      "tile": "tile_005",
+      "box_original_px": [
+        794.837290377929,
+        160.83651086137365,
+        876.218787370082,
+        255.46967994071736
+      ],
+      "classification": "IGNORADO_POR_SOLAPE",
+      "core_overlap": 1.0,
+      "height_at_width_1600": 94.63316907934367,
+      "alphanumeric_count": 8,
+      "whitelist_best": "1-800 722-LOAN",
+      "whitelist_similarity": 0.42105263157894735,
+      "review": "UNREVIEWED",
+      "crop": "serif_20_sharp/crops/tile_005_group_000.png",
+      "crop_sha256": "9b4ccc7b8ffea403768689571665f8c8a02724ab338cba1e6f7cb18b4b946f7d",
+      "deduplicated_into": "tile_002_group_000"
+    }
+  ],
+  "tile_errors": [],
+  "unique_counts": {
+    "VIOLACION": 1,
+    "IGNORADO_POR_SOLAPE": 25
+  },
+  "raw_finding_count": 46,
+  "core_violations": [],
+  "input_sha256_after": "29f570304abfc35961f427ad68eafa6fc343081e3a50a7c0f9a7063c77193f1a"
+}
