@@ -1,0 +1,112 @@
+{
+  "kind": "PRE_OCR_PREPARATION_ONLY",
+  "pillow": "12.3.0",
+  "inputs": {
+    "v1_D_1": {
+      "path": "/Users/macbookpro/Desktop/untitled folder/R2B-191-D_source_corrida_1.png",
+      "location": "EXTERNAL_AVAILABLE",
+      "sha256": "0f3a7fd2da3d24f5794265893b01e5b06fcd645d5068ce62280b174b199fb8c4",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB"
+    },
+    "v1_D_2": {
+      "path": "/Users/macbookpro/Desktop/untitled folder/R2B-191-D_source_corrida_2.png",
+      "location": "EXTERNAL_AVAILABLE",
+      "sha256": "e6353e48ec334a1d44be0e7f48d098dab0125b060f0e2f5a53bd03c304799799",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    "source_D": {
+      "path": "/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2/benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_source.jpg",
+      "location": "WORKSPACE",
+      "sha256": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+      "size": [
+        347,
+        389
+      ],
+      "mode": "RGB"
+    },
+    "legacy_191_D": {
+      "path": "/Users/macbookpro/Documents/STREETCRAFT_VISUAL_SYSTEM_V1_6_2/benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_candidate_PASS.png",
+      "location": "WORKSPACE",
+      "sha256": "cb8a3ffa9ed1c05c2f5455d21ca6ac56150e69f0a584eb244df751e41cc9f016",
+      "size": [
+        1086,
+        1448
+      ],
+      "mode": "RGBA"
+    }
+  },
+  "missing": [
+    "spatial_D_001",
+    "spatial_D_002",
+    "spatial_D_003_good"
+  ],
+  "missing_inputs_block_available_cases": false,
+  "spatial_core_normalized": [
+    0.283125,
+    0.06777777777777778,
+    0.716875,
+    0.9322222222222222
+  ],
+  "v1_D_2_zone": {
+    "box": [
+      0.2,
+      0,
+      0.89,
+      0.94
+    ],
+    "status": "PENDING_USER_OVERLAY_APPROVAL"
+  },
+  "v1_D_1_matching": {
+    "status": "ZONA NO DEFINIDA",
+    "parameters": {
+      "sample": [
+        24,
+        27
+      ],
+      "coarse_width_fraction": [
+        0.2,
+        0.9,
+        0.025
+      ],
+      "coarse_xy_step_fraction": 0.025,
+      "refine_step_fraction": 0.005,
+      "min_ncc": 0.8,
+      "min_quadrant_ncc": 0.5,
+      "distinct_iou_below": 0.7,
+      "min_alternative_margin": 0.03,
+      "model": "full_source_uniform_scale_translation_no_crop_no_rotation"
+    },
+    "best_candidate_box_px": [
+      130,
+      0,
+      1208,
+      1208
+    ],
+    "core_box_normalized": null,
+    "ncc": 0.7898405072170599,
+    "quadrant_ncc": [
+      0.3735046150193671,
+      0.9042908307642058,
+      0.6730237483455802,
+      0.8713306858979517
+    ],
+    "alternative_margin": 0.09369196722397477,
+    "reasons": [
+      "LOW_NCC",
+      "LOW_QUADRANT_NCC"
+    ],
+    "visual_or_pixel_preservation_claim": false
+  },
+  "ocr_executed": false,
+  "overlays_sha256": {
+    "v1_D_2_zone_review.png": "79368a260badd7b6e40696a19017fc465be2a54abb51977c58292b72081f3500"
+  }
+}
