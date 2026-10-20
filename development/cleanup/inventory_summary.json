@@ -1,0 +1,56 @@
+{
+  "head": "241366d08558c0f9240a895a3801bb21748023fc",
+  "files": 5654,
+  "bytes": 361864337,
+  "tracked": 1061,
+  "ignored": 4593,
+  "untracked": 0,
+  "categories": {
+    "ARCHIVE": {
+      "files": 791,
+      "bytes": 32053524,
+      "protected": 791
+    },
+    "DECISION_USER": {
+      "files": 2374,
+      "bytes": 134420472,
+      "protected": 71
+    },
+    "DELETE_REGENERABLE": {
+      "files": 2262,
+      "bytes": 180286718,
+      "protected": 7
+    },
+    "KEEP_GOVERNANCE": {
+      "files": 68,
+      "bytes": 792597,
+      "protected": 65
+    },
+    "KEEP_RUNTIME": {
+      "files": 96,
+      "bytes": 219549,
+      "protected": 96
+    },
+    "KEEP_TESTS": {
+      "files": 63,
+      "bytes": 14091477,
+      "protected": 63
+    }
+  },
+  "executable_files": 15,
+  "reference_reachable_files": 1096,
+  "protected_files": 1093,
+  "manifest_sources": 377,
+  "protected_references": 15641,
+  "unresolved_references": 3483,
+  "text_lines": 1384234,
+  "images": 167,
+  "image_bytes": 60194329,
+  "binary_files": 843,
+  "binary_bytes": 207731707,
+  "git_metadata": {
+    "files": 3833,
+    "bytes": 151691254
+  },
+  "errors": []
+}

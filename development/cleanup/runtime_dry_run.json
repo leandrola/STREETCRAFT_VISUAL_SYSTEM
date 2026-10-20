@@ -1,0 +1,5327 @@
+{
+  "recipe": "SHA256 UTF-8 JSON sort_keys=True separators=(comma,colon) ensure_ascii=False; exact complete result, no normalization",
+  "archive_retriever": null,
+  "image_generation": false,
+  "cases": [
+    {
+      "name": "validation/cgc_e2e/requests/CGC-E2E-01.json",
+      "request": {
+        "command_text": "/sc-2a",
+        "scene": {
+          "scene_id": "CGC-E2E-01",
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BUILDING",
+              "label": "source storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 0
+              }
+            },
+            {
+              "entity_id": "E-MATERIAL",
+              "label": "restrained facade material",
+              "kind": "SURFACE",
+              "roles": [
+                "CONTEXTUAL_SUPPORT"
+              ],
+              "preservation_level": "P3",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "reference_domain": "MATERIALS",
+              "reference_required": true,
+              "reference_problem": "Restrained weathered facade material behavior",
+              "reference_task_context": "RDR2 facade transformation",
+              "reference_source_context": "Material response under-specified",
+              "min_provenance": "P2",
+              "max_transfer_risk": "LOW",
+              "max_results": 3,
+              "source_invariants": [
+                "geometry preserved",
+                "signage preserved"
+              ],
+              "forbidden_transfers": [
+                "exact facade geometry"
+              ],
+              "salience": {
+                "task_relevance": 1
+              }
+            }
+          ],
+          "relationships": []
+        },
+        "query_budget": 2,
+        "_validation_expected": "GENERATION_READY"
+      },
+      "result": {
+        "version": "SC-ORCH-1.0",
+        "command": {
+          "status": "OK",
+          "commands": [
+            "/sc-2a"
+          ],
+          "config": {
+            "profile": "VP02",
+            "mode": "T01",
+            "camera": "CG-A",
+            "fear_city_identity": null,
+            "preservation": null,
+            "uncertainty": null,
+            "explicit_fear_city_profile_override": false,
+            "identity_lock": null,
+            "occlusion_lock": null,
+            "frontalization": null,
+            "aspect_ratio": null,
+            "street_presence": null
+          },
+          "diagnostics": []
+        },
+        "resolved_config": {
+          "profile": "VP02",
+          "mode": "T01",
+          "camera": "CG-A",
+          "fear_city_identity": null,
+          "preservation": null,
+          "uncertainty": null,
+          "explicit_fear_city_profile_override": false,
+          "identity_lock": null,
+          "occlusion_lock": null,
+          "frontalization": null,
+          "aspect_ratio": null,
+          "street_presence": null
+        },
+        "sar2": {
+          "scene_id": "CGC-E2E-01",
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BUILDING",
+              "label": "source storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 0
+              }
+            },
+            {
+              "entity_id": "E-MATERIAL",
+              "label": "restrained facade material",
+              "kind": "SURFACE",
+              "roles": [
+                "CONTEXTUAL_SUPPORT"
+              ],
+              "preservation_level": "P3",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "reference_domain": "MATERIALS",
+              "reference_required": true,
+              "reference_problem": "Restrained weathered facade material behavior",
+              "reference_task_context": "RDR2 facade transformation",
+              "reference_source_context": "Material response under-specified",
+              "min_provenance": "P2",
+              "max_transfer_risk": "LOW",
+              "max_results": 3,
+              "source_invariants": [
+                "geometry preserved",
+                "signage preserved"
+              ],
+              "forbidden_transfers": [
+                "exact facade geometry"
+              ],
+              "salience": {
+                "task_relevance": 1
+              }
+            }
+          ],
+          "relationships": [],
+          "action_plan": [
+            {
+              "entity_id": "E-BUILDING",
+              "action": "PRESERVE_EXACT",
+              "relationship_lock": false,
+              "protected_relationships": [],
+              "salience": {
+                "score": 0.75,
+                "band": "CRITICAL_ATTENTION",
+                "axes": {
+                  "identity_salience": 1.0,
+                  "structural_dependency": 1.0,
+                  "task_relevance": 1.0,
+                  "relationship_centrality": 0.0,
+                  "temporal_relevance": 0.0
+                }
+              }
+            },
+            {
+              "entity_id": "E-MATERIAL",
+              "action": "TRANSFORM_SCOPED",
+              "relationship_lock": false,
+              "protected_relationships": [],
+              "salience": {
+                "score": 0.2,
+                "band": "MINOR_ATTENTION",
+                "axes": {
+                  "identity_salience": 0.0,
+                  "structural_dependency": 0.0,
+                  "task_relevance": 1.0,
+                  "relationship_centrality": 0.0,
+                  "temporal_relevance": 0.0
+                }
+              }
+            }
+          ],
+          "identity_anchors": [
+            "E-BUILDING"
+          ],
+          "unknown_locks": [],
+          "reference_need_hints": [
+            {
+              "entity_id": "E-MATERIAL",
+              "state": "RN_REQUIRED",
+              "target_domains": [
+                "MATERIALS"
+              ],
+              "reason": "Scoped transformation may require documentary implementation evidence."
+            }
+          ],
+          "warnings": []
+        },
+        "reference_needs": [
+          {
+            "need_id": "SAR2-E-MATERIAL",
+            "state": "RN_REQUIRED",
+            "target_domains": [
+              "MATERIALS"
+            ],
+            "specific_problem": "Restrained weathered facade material behavior",
+            "task_context": "RDR2 facade transformation",
+            "source_context": "Material response under-specified",
+            "min_provenance": "P2",
+            "max_transfer_risk": "LOW",
+            "max_results": 3,
+            "source_invariants": [
+              "geometry preserved",
+              "signage preserved"
+            ],
+            "forbidden_transfers": [
+              "exact facade geometry"
+            ],
+            "region": null,
+            "period": null,
+            "target_entity_id": "E-MATERIAL"
+          }
+        ],
+        "reference_reasoning": {
+          "version": "RR-2.0",
+          "status": "BLOCKED_REQUIRED",
+          "queries": 0,
+          "query_budget": 2,
+          "need_results": {
+            "SAR2-E-MATERIAL": "UNRESOLVED"
+          },
+          "unresolved_required": [
+            "SAR2-E-MATERIAL"
+          ],
+          "trace": [
+            {
+              "need_id": "SAR2-E-MATERIAL",
+              "reason": [
+                "ARCHIVE_UNAVAILABLE"
+              ],
+              "screen_rejections": [],
+              "result": "UNRESOLVED",
+              "evidence_ids": [],
+              "evidence_bundle_ids": [],
+              "negative_evidence": []
+            }
+          ],
+          "admissions": [],
+          "generation_projection": [],
+          "locked_unknowns": []
+        },
+        "cgc_draft": {
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T01",
+          "profile": "VP02",
+          "camera": "CG-A",
+          "preserve": [
+            "E-BUILDING:source storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [],
+          "scene_intelligence": {
+            "scene_id": "CGC-E2E-01",
+            "identity_anchors": [
+              "E-BUILDING"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BUILDING",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.75,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 0.0
+                  }
+                }
+              },
+              {
+                "entity_id": "E-MATERIAL",
+                "action": "TRANSFORM_SCOPED",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.2,
+                  "band": "MINOR_ATTENTION",
+                  "axes": {
+                    "identity_salience": 0.0,
+                    "structural_dependency": 0.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 0.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": [
+              {
+                "entity_id": "E-MATERIAL",
+                "state": "RN_REQUIRED",
+                "target_domains": [
+                  "MATERIALS"
+                ],
+                "reason": "Scoped transformation may require documentary implementation evidence."
+              }
+            ]
+          },
+          "cil": {
+            "commands": "/sc-2a",
+            "resolved": {
+              "profile": "VP02",
+              "mode": "T01",
+              "camera": "CG-A",
+              "fear_city_identity": null,
+              "preservation": null,
+              "uncertainty": null,
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": null,
+              "occlusion_lock": null,
+              "frontalization": null,
+              "aspect_ratio": null,
+              "street_presence": null
+            }
+          }
+        },
+        "generation_ready": false,
+        "status": "BLOCKED_REFERENCE",
+        "block_reason": "BLOCKED_REQUIRED"
+      },
+      "result_sha256": "2b1c0f0dce76c859530f882af80217003f5ebbbb9ee97f6700aa0f7e84292441",
+      "repeat_identical": true
+    },
+    {
+      "name": "validation/cgc_e2e/requests/CGC-E2E-02.json",
+      "request": {
+        "command_text": "/sc-rdr2-elevation",
+        "scene": {
+          "scene_id": "CGC-E2E-02",
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T02",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BUILDING",
+              "label": "source storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 0
+              }
+            },
+            {
+              "entity_id": "E-HIDDEN",
+              "label": "occluded rear geometry",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "UNKNOWN_REGION"
+              ],
+              "preservation_level": "P5-D",
+              "epistemic_class": "UNKNOWN",
+              "confidence": "LOW",
+              "observed": false,
+              "salience": {}
+            }
+          ],
+          "relationships": []
+        },
+        "query_budget": 2,
+        "_validation_expected": "GENERATION_READY"
+      },
+      "result": {
+        "version": "SC-ORCH-1.0",
+        "command": {
+          "status": "OK",
+          "commands": [
+            "/sc-rdr2-elevation"
+          ],
+          "config": {
+            "profile": "VP02",
+            "mode": "T02",
+            "camera": "CG-F",
+            "fear_city_identity": null,
+            "preservation": null,
+            "uncertainty": null,
+            "explicit_fear_city_profile_override": false,
+            "identity_lock": "STRICT",
+            "occlusion_lock": "LOCKED_UNKNOWN",
+            "frontalization": "STRICT",
+            "aspect_ratio": "16:9",
+            "street_presence": "MINIMAL"
+          },
+          "diagnostics": []
+        },
+        "resolved_config": {
+          "profile": "VP02",
+          "mode": "T02",
+          "camera": "CG-F",
+          "fear_city_identity": null,
+          "preservation": null,
+          "uncertainty": null,
+          "explicit_fear_city_profile_override": false,
+          "identity_lock": "STRICT",
+          "occlusion_lock": "LOCKED_UNKNOWN",
+          "frontalization": "STRICT",
+          "aspect_ratio": "16:9",
+          "street_presence": "MINIMAL"
+        },
+        "sar2": {
+          "scene_id": "CGC-E2E-02",
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T02",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BUILDING",
+              "label": "source storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 0
+              }
+            },
+            {
+              "entity_id": "E-HIDDEN",
+              "label": "occluded rear geometry",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "UNKNOWN_REGION"
+              ],
+              "preservation_level": "P5-D",
+              "epistemic_class": "UNKNOWN",
+              "confidence": "LOW",
+              "observed": false,
+              "salience": {}
+            }
+          ],
+          "relationships": [],
+          "action_plan": [
+            {
+              "entity_id": "E-BUILDING",
+              "action": "PRESERVE_EXACT",
+              "relationship_lock": false,
+              "protected_relationships": [],
+              "salience": {
+                "score": 0.75,
+                "band": "CRITICAL_ATTENTION",
+                "axes": {
+                  "identity_salience": 1.0,
+                  "structural_dependency": 1.0,
+                  "task_relevance": 1.0,
+                  "relationship_centrality": 0.0,
+                  "temporal_relevance": 0.0
+                }
+              }
+            },
+            {
+              "entity_id": "E-HIDDEN",
+              "action": "UNKNOWN_LOCKED",
+              "relationship_lock": false,
+              "protected_relationships": [],
+              "salience": {
+                "score": 0.0,
+                "band": "MINOR_ATTENTION",
+                "axes": {
+                  "identity_salience": 0.0,
+                  "structural_dependency": 0.0,
+                  "task_relevance": 0.0,
+                  "relationship_centrality": 0.0,
+                  "temporal_relevance": 0.0
+                }
+              }
+            }
+          ],
+          "identity_anchors": [
+            "E-BUILDING"
+          ],
+          "unknown_locks": [
+            "E-HIDDEN"
+          ],
+          "reference_need_hints": [
+            {
+              "entity_id": "E-HIDDEN",
+              "state": "RN_BLOCKED",
+              "reason": "Scene evidence is locked unknown; generic references cannot create exact content."
+            }
+          ],
+          "warnings": []
+        },
+        "reference_needs": [
+          {
+            "need_id": "SAR2-E-HIDDEN",
+            "state": "RN_BLOCKED",
+            "target_domains": [],
+            "specific_problem": "Scene evidence is locked unknown; generic references cannot create exact content.",
+            "task_context": "SAR2 CGC-E2E-02",
+            "source_context": "occluded rear geometry",
+            "min_provenance": "P2",
+            "max_transfer_risk": "MEDIUM",
+            "max_results": 3,
+            "source_invariants": [],
+            "forbidden_transfers": [],
+            "region": null,
+            "period": null,
+            "target_entity_id": "E-HIDDEN"
+          }
+        ],
+        "reference_reasoning": {
+          "version": "RR-2.0",
+          "status": "READY",
+          "queries": 0,
+          "query_budget": 2,
+          "need_results": {
+            "SAR2-E-HIDDEN": "LOCKED_UNKNOWN"
+          },
+          "unresolved_required": [],
+          "trace": [
+            {
+              "need_id": "SAR2-E-HIDDEN",
+              "reason": "NO_QUERY_LOCKED_UNKNOWN"
+            }
+          ],
+          "admissions": [],
+          "generation_projection": [],
+          "locked_unknowns": [
+            "SAR2-E-HIDDEN"
+          ]
+        },
+        "cgc_draft": {
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T02",
+          "profile": "VP02",
+          "camera": "CG-F",
+          "preserve": [
+            "E-BUILDING:source storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [
+            "E-HIDDEN:occluded rear geometry"
+          ],
+          "forbid": [
+            "resolve_exact_unknown:E-HIDDEN",
+            "change_source_identity",
+            "replace_P0_geometry",
+            "camera_non_frontal",
+            "oblique_camera_drift"
+          ],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [
+            "E-HIDDEN",
+            "GLOBAL_LOCKED_UNKNOWN"
+          ],
+          "scene_intelligence": {
+            "scene_id": "CGC-E2E-02",
+            "identity_anchors": [
+              "E-BUILDING"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BUILDING",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.75,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 0.0
+                  }
+                }
+              },
+              {
+                "entity_id": "E-HIDDEN",
+                "action": "UNKNOWN_LOCKED",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.0,
+                  "band": "MINOR_ATTENTION",
+                  "axes": {
+                    "identity_salience": 0.0,
+                    "structural_dependency": 0.0,
+                    "task_relevance": 0.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 0.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [
+              "E-HIDDEN"
+            ],
+            "reference_need_hints": [
+              {
+                "entity_id": "E-HIDDEN",
+                "state": "RN_BLOCKED",
+                "reason": "Scene evidence is locked unknown; generic references cannot create exact content."
+              }
+            ]
+          },
+          "cil": {
+            "commands": "/sc-rdr2-elevation",
+            "resolved": {
+              "profile": "VP02",
+              "mode": "T02",
+              "camera": "CG-F",
+              "fear_city_identity": null,
+              "preservation": null,
+              "uncertainty": null,
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": "STRICT",
+              "occlusion_lock": "LOCKED_UNKNOWN",
+              "frontalization": "STRICT",
+              "aspect_ratio": "16:9",
+              "street_presence": "MINIMAL"
+            }
+          },
+          "aspect_ratio": "16:9",
+          "street_presence": "MINIMAL"
+        },
+        "generation_ready": true,
+        "cgc_final": {
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T02",
+          "profile": "VP02",
+          "camera": "CG-F",
+          "preserve": [
+            "E-BUILDING:source storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [
+            "E-HIDDEN:occluded rear geometry"
+          ],
+          "forbid": [
+            "resolve_exact_unknown:E-HIDDEN",
+            "change_source_identity",
+            "replace_P0_geometry",
+            "camera_non_frontal",
+            "oblique_camera_drift"
+          ],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [
+            "E-HIDDEN",
+            "GLOBAL_LOCKED_UNKNOWN"
+          ],
+          "scene_intelligence": {
+            "scene_id": "CGC-E2E-02",
+            "identity_anchors": [
+              "E-BUILDING"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BUILDING",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.75,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 0.0
+                  }
+                }
+              },
+              {
+                "entity_id": "E-HIDDEN",
+                "action": "UNKNOWN_LOCKED",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.0,
+                  "band": "MINOR_ATTENTION",
+                  "axes": {
+                    "identity_salience": 0.0,
+                    "structural_dependency": 0.0,
+                    "task_relevance": 0.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 0.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [
+              "E-HIDDEN"
+            ],
+            "reference_need_hints": [
+              {
+                "entity_id": "E-HIDDEN",
+                "state": "RN_BLOCKED",
+                "reason": "Scene evidence is locked unknown; generic references cannot create exact content."
+              }
+            ]
+          },
+          "cil": {
+            "commands": "/sc-rdr2-elevation",
+            "resolved": {
+              "profile": "VP02",
+              "mode": "T02",
+              "camera": "CG-F",
+              "fear_city_identity": null,
+              "preservation": null,
+              "uncertainty": null,
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": "STRICT",
+              "occlusion_lock": "LOCKED_UNKNOWN",
+              "frontalization": "STRICT",
+              "aspect_ratio": "16:9",
+              "street_presence": "MINIMAL"
+            }
+          },
+          "aspect_ratio": "16:9",
+          "street_presence": "MINIMAL",
+          "reference_reasoning": {
+            "version": "RR-2.0",
+            "status": "READY",
+            "queries": 0,
+            "query_budget": 2,
+            "need_results": {
+              "SAR2-E-HIDDEN": "LOCKED_UNKNOWN"
+            },
+            "unresolved_required": [],
+            "trace": [
+              {
+                "need_id": "SAR2-E-HIDDEN",
+                "reason": "NO_QUERY_LOCKED_UNKNOWN"
+              }
+            ],
+            "admissions": [],
+            "generation_projection": [],
+            "locked_unknowns": [
+              "SAR2-E-HIDDEN"
+            ]
+          },
+          "pre_generation_gate": {
+            "status": "PASS",
+            "findings": [],
+            "reference_preflight": {
+              "status": "PASS",
+              "admitted": [],
+              "rejected": []
+            }
+          },
+          "reference_features": [],
+          "text_render_plan": {
+            "tokens": [],
+            "proposed_text": {}
+          }
+        },
+        "pre_generation_gate": {
+          "status": "PASS",
+          "findings": [],
+          "reference_preflight": {
+            "status": "PASS",
+            "admitted": [],
+            "rejected": []
+          }
+        },
+        "status": "GENERATION_READY"
+      },
+      "result_sha256": "ff652e79688c405de1a05a9ce977c8a20d024eace442f3eebee74d30f965b9a5",
+      "repeat_identical": true
+    },
+    {
+      "name": "validation/cgc_e2e/requests/CGC-E2E-03.json",
+      "request": {
+        "command_text": "/sc-2 /sc-lock",
+        "scene": {
+          "scene_id": "CGC-E2E-03",
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BUILDING",
+              "label": "source storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 0
+              }
+            }
+          ],
+          "relationships": []
+        },
+        "reference_needs": [
+          {
+            "need_id": "N-TEXT",
+            "state": "RN_REQUIRED",
+            "target_domains": [
+              "SIGNAGE"
+            ],
+            "specific_problem": "Resolve unreadable storefront microtext",
+            "task_context": "Source preservation",
+            "source_context": "Exact wording not fully legible",
+            "min_provenance": "P2",
+            "max_transfer_risk": "HIGH",
+            "max_results": 3
+          }
+        ],
+        "query_budget": 2,
+        "semantic_text_lock": "STRICT",
+        "_validation_expected": "BLOCKED_REFERENCE"
+      },
+      "result": {
+        "version": "SC-ORCH-1.0",
+        "command": {
+          "status": "OK",
+          "commands": [
+            "/sc-2",
+            "/sc-lock"
+          ],
+          "config": {
+            "profile": "VP02",
+            "mode": "T01",
+            "camera": "CG-S",
+            "fear_city_identity": null,
+            "preservation": null,
+            "uncertainty": null,
+            "explicit_fear_city_profile_override": false,
+            "identity_lock": null,
+            "occlusion_lock": null,
+            "frontalization": null,
+            "aspect_ratio": null,
+            "street_presence": null
+          },
+          "diagnostics": []
+        },
+        "resolved_config": {
+          "profile": "VP02",
+          "mode": "T01",
+          "camera": "CG-S",
+          "fear_city_identity": null,
+          "preservation": null,
+          "uncertainty": null,
+          "explicit_fear_city_profile_override": false,
+          "identity_lock": null,
+          "occlusion_lock": null,
+          "frontalization": null,
+          "aspect_ratio": null,
+          "street_presence": null
+        },
+        "sar2": {
+          "scene_id": "CGC-E2E-03",
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BUILDING",
+              "label": "source storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 0
+              }
+            }
+          ],
+          "relationships": [],
+          "action_plan": [
+            {
+              "entity_id": "E-BUILDING",
+              "action": "PRESERVE_EXACT",
+              "relationship_lock": false,
+              "protected_relationships": [],
+              "salience": {
+                "score": 0.75,
+                "band": "CRITICAL_ATTENTION",
+                "axes": {
+                  "identity_salience": 1.0,
+                  "structural_dependency": 1.0,
+                  "task_relevance": 1.0,
+                  "relationship_centrality": 0.0,
+                  "temporal_relevance": 0.0
+                }
+              }
+            }
+          ],
+          "identity_anchors": [
+            "E-BUILDING"
+          ],
+          "unknown_locks": [],
+          "reference_need_hints": [],
+          "warnings": []
+        },
+        "reference_needs": [
+          {
+            "need_id": "N-TEXT",
+            "state": "RN_REQUIRED",
+            "target_domains": [
+              "SIGNAGE"
+            ],
+            "specific_problem": "Resolve unreadable storefront microtext",
+            "task_context": "Source preservation",
+            "source_context": "Exact wording not fully legible",
+            "min_provenance": "P2",
+            "max_transfer_risk": "HIGH",
+            "max_results": 3
+          }
+        ],
+        "reference_reasoning": {
+          "version": "RR-2.0",
+          "status": "BLOCKED_REQUIRED",
+          "queries": 0,
+          "query_budget": 2,
+          "need_results": {
+            "N-TEXT": "UNRESOLVED"
+          },
+          "unresolved_required": [
+            "N-TEXT"
+          ],
+          "trace": [
+            {
+              "need_id": "N-TEXT",
+              "reason": [
+                "ARCHIVE_UNAVAILABLE"
+              ],
+              "screen_rejections": [],
+              "result": "UNRESOLVED",
+              "evidence_ids": [],
+              "evidence_bundle_ids": [],
+              "negative_evidence": []
+            }
+          ],
+          "admissions": [],
+          "generation_projection": [],
+          "locked_unknowns": []
+        },
+        "cgc_draft": {
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T01",
+          "profile": "VP02",
+          "camera": "CG-S",
+          "preserve": [
+            "E-BUILDING:source storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [],
+          "scene_intelligence": {
+            "scene_id": "CGC-E2E-03",
+            "identity_anchors": [
+              "E-BUILDING"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BUILDING",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.75,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 0.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-2 /sc-lock",
+            "resolved": {
+              "profile": "VP02",
+              "mode": "T01",
+              "camera": "CG-S",
+              "fear_city_identity": null,
+              "preservation": null,
+              "uncertainty": null,
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": null,
+              "occlusion_lock": null,
+              "frontalization": null,
+              "aspect_ratio": null,
+              "street_presence": null
+            }
+          }
+        },
+        "generation_ready": false,
+        "status": "BLOCKED_REFERENCE",
+        "block_reason": "BLOCKED_REQUIRED"
+      },
+      "result_sha256": "b9ef6746d57210be3c1703f1726d5c15fbfa05cb220debb3927ea8673f765de8",
+      "repeat_identical": true
+    },
+    {
+      "name": "validation/cgc_e2e/requests/CGC-E2E-04.json",
+      "request": {
+        "command_text": "/sc-fear",
+        "scene": {
+          "scene_id": "CGC-E2E-04",
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T06",
+          "profile": "VP03",
+          "entities": [
+            {
+              "entity_id": "E-BUILDING",
+              "label": "source storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 0
+              }
+            }
+          ],
+          "relationships": []
+        },
+        "reference_needs": [
+          {
+            "need_id": "N-GEO",
+            "state": "RN_REQUIRED",
+            "target_domains": [
+              "REGIONAL_CHARACTER"
+            ],
+            "specific_problem": "Infer real-world city identity from visual resemblance",
+            "task_context": "Fear City authored-world transformation",
+            "source_context": "Authored world confirmed",
+            "min_provenance": "P2",
+            "max_transfer_risk": "HIGH",
+            "max_results": 3
+          }
+        ],
+        "query_budget": 2,
+        "fear_city_confirmed": true,
+        "_validation_expected": "BLOCKED_REFERENCE"
+      },
+      "result": {
+        "version": "SC-ORCH-1.0",
+        "command": {
+          "status": "OK",
+          "commands": [
+            "/sc-fear"
+          ],
+          "config": {
+            "profile": "VP03",
+            "mode": "T06",
+            "camera": "CG-FC",
+            "fear_city_identity": "REQUIRE_CONFIRMED_OR_RESOLVE",
+            "preservation": null,
+            "uncertainty": null,
+            "explicit_fear_city_profile_override": false,
+            "identity_lock": null,
+            "occlusion_lock": null,
+            "frontalization": null,
+            "aspect_ratio": null,
+            "street_presence": null
+          },
+          "diagnostics": []
+        },
+        "resolved_config": {
+          "profile": "VP03",
+          "mode": "T06",
+          "camera": "CG-FC",
+          "fear_city_identity": "REQUIRE_CONFIRMED_OR_RESOLVE",
+          "preservation": null,
+          "uncertainty": null,
+          "explicit_fear_city_profile_override": false,
+          "identity_lock": null,
+          "occlusion_lock": null,
+          "frontalization": null,
+          "aspect_ratio": null,
+          "street_presence": null
+        },
+        "sar2": {
+          "scene_id": "CGC-E2E-04",
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T06",
+          "profile": "VP03",
+          "entities": [
+            {
+              "entity_id": "E-BUILDING",
+              "label": "source storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 0
+              }
+            }
+          ],
+          "relationships": [],
+          "action_plan": [
+            {
+              "entity_id": "E-BUILDING",
+              "action": "PRESERVE_EXACT",
+              "relationship_lock": false,
+              "protected_relationships": [],
+              "salience": {
+                "score": 0.75,
+                "band": "CRITICAL_ATTENTION",
+                "axes": {
+                  "identity_salience": 1.0,
+                  "structural_dependency": 1.0,
+                  "task_relevance": 1.0,
+                  "relationship_centrality": 0.0,
+                  "temporal_relevance": 0.0
+                }
+              }
+            }
+          ],
+          "identity_anchors": [
+            "E-BUILDING"
+          ],
+          "unknown_locks": [],
+          "reference_need_hints": [],
+          "warnings": []
+        },
+        "reference_needs": [
+          {
+            "need_id": "N-GEO",
+            "state": "RN_REQUIRED",
+            "target_domains": [
+              "REGIONAL_CHARACTER"
+            ],
+            "specific_problem": "Infer real-world city identity from visual resemblance",
+            "task_context": "Fear City authored-world transformation",
+            "source_context": "Authored world confirmed",
+            "min_provenance": "P2",
+            "max_transfer_risk": "HIGH",
+            "max_results": 3
+          }
+        ],
+        "reference_reasoning": {
+          "version": "RR-2.0",
+          "status": "BLOCKED_REQUIRED",
+          "queries": 0,
+          "query_budget": 2,
+          "need_results": {
+            "N-GEO": "UNRESOLVED"
+          },
+          "unresolved_required": [
+            "N-GEO"
+          ],
+          "trace": [
+            {
+              "need_id": "N-GEO",
+              "reason": [
+                "ARCHIVE_UNAVAILABLE"
+              ],
+              "screen_rejections": [],
+              "result": "UNRESOLVED",
+              "evidence_ids": [],
+              "evidence_bundle_ids": [],
+              "negative_evidence": []
+            }
+          ],
+          "admissions": [],
+          "generation_projection": [],
+          "locked_unknowns": []
+        },
+        "cgc_draft": {
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T06",
+          "profile": "VP03",
+          "camera": "CG-FC",
+          "preserve": [
+            "E-BUILDING:source storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [],
+          "scene_intelligence": {
+            "scene_id": "CGC-E2E-04",
+            "identity_anchors": [
+              "E-BUILDING"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BUILDING",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.75,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 0.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-fear",
+            "resolved": {
+              "profile": "VP03",
+              "mode": "T06",
+              "camera": "CG-FC",
+              "fear_city_identity": "REQUIRE_CONFIRMED_OR_RESOLVE",
+              "preservation": null,
+              "uncertainty": null,
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": null,
+              "occlusion_lock": null,
+              "frontalization": null,
+              "aspect_ratio": null,
+              "street_presence": null
+            }
+          }
+        },
+        "generation_ready": false,
+        "status": "BLOCKED_REFERENCE",
+        "block_reason": "BLOCKED_REQUIRED"
+      },
+      "result_sha256": "26c98142e211b74d5a982eefa01c6b189d3d215ad08c766b09f1f31b2bfac764",
+      "repeat_identical": true
+    },
+    {
+      "name": "validation/cgc_e2e/requests/CGC-E2E-05.json",
+      "request": {
+        "command_text": "/sc-2b",
+        "scene": {
+          "scene_id": "CGC-E2E-05",
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BUILDING",
+              "label": "source storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 0
+              }
+            }
+          ],
+          "relationships": []
+        },
+        "reference_needs": [
+          {
+            "need_id": "N-CAM",
+            "state": "RN_REQUIRED",
+            "target_domains": [
+              "CAMERA"
+            ],
+            "specific_problem": "Find oblique architectural camera evidence",
+            "task_context": "Camera reasoning",
+            "source_context": "Need independent camera evidence",
+            "min_provenance": "P2",
+            "max_transfer_risk": "LOW",
+            "max_results": 5
+          }
+        ],
+        "query_budget": 2,
+        "_validation_expected": "GENERATION_READY"
+      },
+      "result": {
+        "version": "SC-ORCH-1.0",
+        "command": {
+          "status": "OK",
+          "commands": [
+            "/sc-2b"
+          ],
+          "config": {
+            "profile": "VP02",
+            "mode": "T01",
+            "camera": "CG-B",
+            "fear_city_identity": null,
+            "preservation": null,
+            "uncertainty": null,
+            "explicit_fear_city_profile_override": false,
+            "identity_lock": null,
+            "occlusion_lock": null,
+            "frontalization": null,
+            "aspect_ratio": null,
+            "street_presence": null
+          },
+          "diagnostics": []
+        },
+        "resolved_config": {
+          "profile": "VP02",
+          "mode": "T01",
+          "camera": "CG-B",
+          "fear_city_identity": null,
+          "preservation": null,
+          "uncertainty": null,
+          "explicit_fear_city_profile_override": false,
+          "identity_lock": null,
+          "occlusion_lock": null,
+          "frontalization": null,
+          "aspect_ratio": null,
+          "street_presence": null
+        },
+        "sar2": {
+          "scene_id": "CGC-E2E-05",
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BUILDING",
+              "label": "source storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 0
+              }
+            }
+          ],
+          "relationships": [],
+          "action_plan": [
+            {
+              "entity_id": "E-BUILDING",
+              "action": "PRESERVE_EXACT",
+              "relationship_lock": false,
+              "protected_relationships": [],
+              "salience": {
+                "score": 0.75,
+                "band": "CRITICAL_ATTENTION",
+                "axes": {
+                  "identity_salience": 1.0,
+                  "structural_dependency": 1.0,
+                  "task_relevance": 1.0,
+                  "relationship_centrality": 0.0,
+                  "temporal_relevance": 0.0
+                }
+              }
+            }
+          ],
+          "identity_anchors": [
+            "E-BUILDING"
+          ],
+          "unknown_locks": [],
+          "reference_need_hints": [],
+          "warnings": []
+        },
+        "reference_needs": [
+          {
+            "need_id": "N-CAM",
+            "state": "RN_REQUIRED",
+            "target_domains": [
+              "CAMERA"
+            ],
+            "specific_problem": "Find oblique architectural camera evidence",
+            "task_context": "Camera reasoning",
+            "source_context": "Need independent camera evidence",
+            "min_provenance": "P2",
+            "max_transfer_risk": "LOW",
+            "max_results": 5
+          }
+        ],
+        "reference_reasoning": {
+          "version": "RR-2.0",
+          "status": "BLOCKED_REQUIRED",
+          "queries": 0,
+          "query_budget": 2,
+          "need_results": {
+            "N-CAM": "UNRESOLVED"
+          },
+          "unresolved_required": [
+            "N-CAM"
+          ],
+          "trace": [
+            {
+              "need_id": "N-CAM",
+              "reason": [
+                "ARCHIVE_UNAVAILABLE"
+              ],
+              "screen_rejections": [],
+              "result": "UNRESOLVED",
+              "evidence_ids": [],
+              "evidence_bundle_ids": [],
+              "negative_evidence": []
+            }
+          ],
+          "admissions": [],
+          "generation_projection": [],
+          "locked_unknowns": []
+        },
+        "cgc_draft": {
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T01",
+          "profile": "VP02",
+          "camera": "CG-B",
+          "preserve": [
+            "E-BUILDING:source storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [],
+          "scene_intelligence": {
+            "scene_id": "CGC-E2E-05",
+            "identity_anchors": [
+              "E-BUILDING"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BUILDING",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.75,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 0.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-2b",
+            "resolved": {
+              "profile": "VP02",
+              "mode": "T01",
+              "camera": "CG-B",
+              "fear_city_identity": null,
+              "preservation": null,
+              "uncertainty": null,
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": null,
+              "occlusion_lock": null,
+              "frontalization": null,
+              "aspect_ratio": null,
+              "street_presence": null
+            }
+          }
+        },
+        "generation_ready": false,
+        "status": "BLOCKED_REFERENCE",
+        "block_reason": "BLOCKED_REQUIRED"
+      },
+      "result_sha256": "e5d1f0204f4e1fd256e3660aca144b261f6a1185e1e8aead32d0829063b579e3",
+      "repeat_identical": true
+    },
+    {
+      "name": "validation/cgc_e2e/requests/CGC-E2E-06.json",
+      "request": {
+        "command_text": "/sc-2a",
+        "scene": {
+          "scene_id": "CGC-E2E-06",
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BUILDING",
+              "label": "source storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 0
+              }
+            }
+          ],
+          "relationships": []
+        },
+        "reference_needs": [
+          {
+            "need_id": "N-WET",
+            "state": "RN_REQUIRED",
+            "target_domains": [
+              "RAIN_SNOW_ASPHALT"
+            ],
+            "specific_problem": "Determine source-compatible pavement wetness for R2B-191-A",
+            "task_context": "R2b corrective rerun",
+            "source_context": "Source and candidate disagree",
+            "min_provenance": "P2",
+            "max_transfer_risk": "MEDIUM",
+            "max_results": 5
+          }
+        ],
+        "query_budget": 2,
+        "_validation_expected": "BLOCKED_REFERENCE"
+      },
+      "result": {
+        "version": "SC-ORCH-1.0",
+        "command": {
+          "status": "OK",
+          "commands": [
+            "/sc-2a"
+          ],
+          "config": {
+            "profile": "VP02",
+            "mode": "T01",
+            "camera": "CG-A",
+            "fear_city_identity": null,
+            "preservation": null,
+            "uncertainty": null,
+            "explicit_fear_city_profile_override": false,
+            "identity_lock": null,
+            "occlusion_lock": null,
+            "frontalization": null,
+            "aspect_ratio": null,
+            "street_presence": null
+          },
+          "diagnostics": []
+        },
+        "resolved_config": {
+          "profile": "VP02",
+          "mode": "T01",
+          "camera": "CG-A",
+          "fear_city_identity": null,
+          "preservation": null,
+          "uncertainty": null,
+          "explicit_fear_city_profile_override": false,
+          "identity_lock": null,
+          "occlusion_lock": null,
+          "frontalization": null,
+          "aspect_ratio": null,
+          "street_presence": null
+        },
+        "sar2": {
+          "scene_id": "CGC-E2E-06",
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BUILDING",
+              "label": "source storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 0
+              }
+            }
+          ],
+          "relationships": [],
+          "action_plan": [
+            {
+              "entity_id": "E-BUILDING",
+              "action": "PRESERVE_EXACT",
+              "relationship_lock": false,
+              "protected_relationships": [],
+              "salience": {
+                "score": 0.75,
+                "band": "CRITICAL_ATTENTION",
+                "axes": {
+                  "identity_salience": 1.0,
+                  "structural_dependency": 1.0,
+                  "task_relevance": 1.0,
+                  "relationship_centrality": 0.0,
+                  "temporal_relevance": 0.0
+                }
+              }
+            }
+          ],
+          "identity_anchors": [
+            "E-BUILDING"
+          ],
+          "unknown_locks": [],
+          "reference_need_hints": [],
+          "warnings": []
+        },
+        "reference_needs": [
+          {
+            "need_id": "N-WET",
+            "state": "RN_REQUIRED",
+            "target_domains": [
+              "RAIN_SNOW_ASPHALT"
+            ],
+            "specific_problem": "Determine source-compatible pavement wetness for R2B-191-A",
+            "task_context": "R2b corrective rerun",
+            "source_context": "Source and candidate disagree",
+            "min_provenance": "P2",
+            "max_transfer_risk": "MEDIUM",
+            "max_results": 5
+          }
+        ],
+        "reference_reasoning": {
+          "version": "RR-2.0",
+          "status": "BLOCKED_REQUIRED",
+          "queries": 0,
+          "query_budget": 2,
+          "need_results": {
+            "N-WET": "UNRESOLVED"
+          },
+          "unresolved_required": [
+            "N-WET"
+          ],
+          "trace": [
+            {
+              "need_id": "N-WET",
+              "reason": [
+                "ARCHIVE_UNAVAILABLE"
+              ],
+              "screen_rejections": [],
+              "result": "UNRESOLVED",
+              "evidence_ids": [],
+              "evidence_bundle_ids": [],
+              "negative_evidence": []
+            }
+          ],
+          "admissions": [],
+          "generation_projection": [],
+          "locked_unknowns": []
+        },
+        "cgc_draft": {
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T01",
+          "profile": "VP02",
+          "camera": "CG-A",
+          "preserve": [
+            "E-BUILDING:source storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [],
+          "scene_intelligence": {
+            "scene_id": "CGC-E2E-06",
+            "identity_anchors": [
+              "E-BUILDING"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BUILDING",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.75,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 0.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-2a",
+            "resolved": {
+              "profile": "VP02",
+              "mode": "T01",
+              "camera": "CG-A",
+              "fear_city_identity": null,
+              "preservation": null,
+              "uncertainty": null,
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": null,
+              "occlusion_lock": null,
+              "frontalization": null,
+              "aspect_ratio": null,
+              "street_presence": null
+            }
+          }
+        },
+        "generation_ready": false,
+        "status": "BLOCKED_REFERENCE",
+        "block_reason": "BLOCKED_REQUIRED"
+      },
+      "result_sha256": "0cd63c57e05a02c309efa66cfa55b0000c6928e7ffcb93d5d79d709fe93327e5",
+      "repeat_identical": true
+    },
+    {
+      "name": "validation/cgc_e2e/requests/CGC-E2E-07.json",
+      "request": {
+        "command_text": "/sc-2a",
+        "scene": {
+          "scene_id": "CGC-E2E-07",
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BUILDING",
+              "label": "source storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 0
+              }
+            }
+          ],
+          "relationships": []
+        },
+        "reference_needs": [
+          {
+            "need_id": "N-REQ",
+            "state": "RN_REQUIRED",
+            "target_domains": [
+              "MATERIALS"
+            ],
+            "specific_problem": "Restrained facade materials",
+            "task_context": "Budget case",
+            "source_context": "Required",
+            "min_provenance": "P2",
+            "max_transfer_risk": "LOW",
+            "max_results": 3
+          },
+          {
+            "need_id": "N-SUP",
+            "state": "RN_SUPPORT",
+            "target_domains": [
+              "RAIN_SNOW_ASPHALT"
+            ],
+            "specific_problem": "Optional pavement support",
+            "task_context": "Budget case",
+            "source_context": "Optional",
+            "min_provenance": "P2",
+            "max_transfer_risk": "MEDIUM",
+            "max_results": 3
+          }
+        ],
+        "query_budget": 1,
+        "_validation_expected": "GENERATION_READY"
+      },
+      "result": {
+        "version": "SC-ORCH-1.0",
+        "command": {
+          "status": "OK",
+          "commands": [
+            "/sc-2a"
+          ],
+          "config": {
+            "profile": "VP02",
+            "mode": "T01",
+            "camera": "CG-A",
+            "fear_city_identity": null,
+            "preservation": null,
+            "uncertainty": null,
+            "explicit_fear_city_profile_override": false,
+            "identity_lock": null,
+            "occlusion_lock": null,
+            "frontalization": null,
+            "aspect_ratio": null,
+            "street_presence": null
+          },
+          "diagnostics": []
+        },
+        "resolved_config": {
+          "profile": "VP02",
+          "mode": "T01",
+          "camera": "CG-A",
+          "fear_city_identity": null,
+          "preservation": null,
+          "uncertainty": null,
+          "explicit_fear_city_profile_override": false,
+          "identity_lock": null,
+          "occlusion_lock": null,
+          "frontalization": null,
+          "aspect_ratio": null,
+          "street_presence": null
+        },
+        "sar2": {
+          "scene_id": "CGC-E2E-07",
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BUILDING",
+              "label": "source storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 0
+              }
+            }
+          ],
+          "relationships": [],
+          "action_plan": [
+            {
+              "entity_id": "E-BUILDING",
+              "action": "PRESERVE_EXACT",
+              "relationship_lock": false,
+              "protected_relationships": [],
+              "salience": {
+                "score": 0.75,
+                "band": "CRITICAL_ATTENTION",
+                "axes": {
+                  "identity_salience": 1.0,
+                  "structural_dependency": 1.0,
+                  "task_relevance": 1.0,
+                  "relationship_centrality": 0.0,
+                  "temporal_relevance": 0.0
+                }
+              }
+            }
+          ],
+          "identity_anchors": [
+            "E-BUILDING"
+          ],
+          "unknown_locks": [],
+          "reference_need_hints": [],
+          "warnings": []
+        },
+        "reference_needs": [
+          {
+            "need_id": "N-REQ",
+            "state": "RN_REQUIRED",
+            "target_domains": [
+              "MATERIALS"
+            ],
+            "specific_problem": "Restrained facade materials",
+            "task_context": "Budget case",
+            "source_context": "Required",
+            "min_provenance": "P2",
+            "max_transfer_risk": "LOW",
+            "max_results": 3
+          },
+          {
+            "need_id": "N-SUP",
+            "state": "RN_SUPPORT",
+            "target_domains": [
+              "RAIN_SNOW_ASPHALT"
+            ],
+            "specific_problem": "Optional pavement support",
+            "task_context": "Budget case",
+            "source_context": "Optional",
+            "min_provenance": "P2",
+            "max_transfer_risk": "MEDIUM",
+            "max_results": 3
+          }
+        ],
+        "reference_reasoning": {
+          "version": "RR-2.0",
+          "status": "BLOCKED_REQUIRED",
+          "queries": 0,
+          "query_budget": 1,
+          "need_results": {
+            "N-REQ": "UNRESOLVED",
+            "N-SUP": "UNRESOLVED"
+          },
+          "unresolved_required": [
+            "N-REQ"
+          ],
+          "trace": [
+            {
+              "need_id": "N-REQ",
+              "reason": [
+                "ARCHIVE_UNAVAILABLE"
+              ],
+              "screen_rejections": [],
+              "result": "UNRESOLVED",
+              "evidence_ids": [],
+              "evidence_bundle_ids": [],
+              "negative_evidence": []
+            },
+            {
+              "need_id": "N-SUP",
+              "reason": [
+                "ARCHIVE_UNAVAILABLE"
+              ],
+              "screen_rejections": [],
+              "result": "UNRESOLVED",
+              "evidence_ids": [],
+              "evidence_bundle_ids": [],
+              "negative_evidence": []
+            }
+          ],
+          "admissions": [],
+          "generation_projection": [],
+          "locked_unknowns": []
+        },
+        "cgc_draft": {
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T01",
+          "profile": "VP02",
+          "camera": "CG-A",
+          "preserve": [
+            "E-BUILDING:source storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [],
+          "scene_intelligence": {
+            "scene_id": "CGC-E2E-07",
+            "identity_anchors": [
+              "E-BUILDING"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BUILDING",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.75,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 0.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-2a",
+            "resolved": {
+              "profile": "VP02",
+              "mode": "T01",
+              "camera": "CG-A",
+              "fear_city_identity": null,
+              "preservation": null,
+              "uncertainty": null,
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": null,
+              "occlusion_lock": null,
+              "frontalization": null,
+              "aspect_ratio": null,
+              "street_presence": null
+            }
+          }
+        },
+        "generation_ready": false,
+        "status": "BLOCKED_REFERENCE",
+        "block_reason": "BLOCKED_REQUIRED"
+      },
+      "result_sha256": "dd9b53eaea2b164cff867c83fc96779b7f84cb579020d4ee069853db71b95a1d",
+      "repeat_identical": true
+    },
+    {
+      "name": "validation/cgc_e2e/requests/CGC-E2E-08.json",
+      "request": {
+        "command_text": "/sc-2a",
+        "scene": {
+          "scene_id": "CGC-E2E-08",
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BUILDING",
+              "label": "source storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 0
+              }
+            }
+          ],
+          "relationships": []
+        },
+        "text_tokens": [
+          {
+            "token_id": "T-DINER",
+            "literal": "TERMINAL DINER",
+            "confidence": 0.99,
+            "preservation_level": "P0",
+            "identity_bearing": true
+          }
+        ],
+        "proposed_text": {
+          "T-DINER": "TERMINAL DINNER"
+        },
+        "_validation_expected": "BLOCKED_PREFLIGHT"
+      },
+      "result": {
+        "version": "SC-ORCH-1.0",
+        "command": {
+          "status": "OK",
+          "commands": [
+            "/sc-2a"
+          ],
+          "config": {
+            "profile": "VP02",
+            "mode": "T01",
+            "camera": "CG-A",
+            "fear_city_identity": null,
+            "preservation": null,
+            "uncertainty": null,
+            "explicit_fear_city_profile_override": false,
+            "identity_lock": null,
+            "occlusion_lock": null,
+            "frontalization": null,
+            "aspect_ratio": null,
+            "street_presence": null
+          },
+          "diagnostics": []
+        },
+        "resolved_config": {
+          "profile": "VP02",
+          "mode": "T01",
+          "camera": "CG-A",
+          "fear_city_identity": null,
+          "preservation": null,
+          "uncertainty": null,
+          "explicit_fear_city_profile_override": false,
+          "identity_lock": null,
+          "occlusion_lock": null,
+          "frontalization": null,
+          "aspect_ratio": null,
+          "street_presence": null
+        },
+        "sar2": {
+          "scene_id": "CGC-E2E-08",
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BUILDING",
+              "label": "source storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 0
+              }
+            }
+          ],
+          "relationships": [],
+          "action_plan": [
+            {
+              "entity_id": "E-BUILDING",
+              "action": "PRESERVE_EXACT",
+              "relationship_lock": false,
+              "protected_relationships": [],
+              "salience": {
+                "score": 0.75,
+                "band": "CRITICAL_ATTENTION",
+                "axes": {
+                  "identity_salience": 1.0,
+                  "structural_dependency": 1.0,
+                  "task_relevance": 1.0,
+                  "relationship_centrality": 0.0,
+                  "temporal_relevance": 0.0
+                }
+              }
+            }
+          ],
+          "identity_anchors": [
+            "E-BUILDING"
+          ],
+          "unknown_locks": [],
+          "reference_need_hints": [],
+          "warnings": []
+        },
+        "reference_needs": [],
+        "reference_reasoning": {
+          "version": "RR-2.0",
+          "status": "READY",
+          "queries": 0,
+          "query_budget": 4,
+          "need_results": {},
+          "unresolved_required": [],
+          "trace": [],
+          "admissions": [],
+          "generation_projection": [],
+          "locked_unknowns": []
+        },
+        "cgc_draft": {
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T01",
+          "profile": "VP02",
+          "camera": "CG-A",
+          "preserve": [
+            "E-BUILDING:source storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [],
+          "scene_intelligence": {
+            "scene_id": "CGC-E2E-08",
+            "identity_anchors": [
+              "E-BUILDING"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BUILDING",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.75,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 0.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-2a",
+            "resolved": {
+              "profile": "VP02",
+              "mode": "T01",
+              "camera": "CG-A",
+              "fear_city_identity": null,
+              "preservation": null,
+              "uncertainty": null,
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": null,
+              "occlusion_lock": null,
+              "frontalization": null,
+              "aspect_ratio": null,
+              "street_presence": null
+            }
+          }
+        },
+        "generation_ready": false,
+        "cgc_final": {
+          "source_identity": "REAL_PROJECT_SOURCE",
+          "mode": "T01",
+          "profile": "VP02",
+          "camera": "CG-A",
+          "preserve": [
+            "E-BUILDING:source storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [],
+          "scene_intelligence": {
+            "scene_id": "CGC-E2E-08",
+            "identity_anchors": [
+              "E-BUILDING"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BUILDING",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.75,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 0.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-2a",
+            "resolved": {
+              "profile": "VP02",
+              "mode": "T01",
+              "camera": "CG-A",
+              "fear_city_identity": null,
+              "preservation": null,
+              "uncertainty": null,
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": null,
+              "occlusion_lock": null,
+              "frontalization": null,
+              "aspect_ratio": null,
+              "street_presence": null
+            }
+          },
+          "reference_reasoning": {
+            "version": "RR-2.0",
+            "status": "READY",
+            "queries": 0,
+            "query_budget": 4,
+            "need_results": {},
+            "unresolved_required": [],
+            "trace": [],
+            "admissions": [],
+            "generation_projection": [],
+            "locked_unknowns": []
+          },
+          "pre_generation_gate": {
+            "status": "BLOCK_GENERATION",
+            "findings": [
+              {
+                "status": "FAIL",
+                "severity": "S3",
+                "code": "TEXT_MUTATION",
+                "expected": "TERMINAL DINER",
+                "actual": "TERMINAL DINNER"
+              }
+            ],
+            "reference_preflight": {
+              "status": "PASS",
+              "admitted": [],
+              "rejected": []
+            }
+          },
+          "reference_features": [],
+          "text_render_plan": {
+            "tokens": [
+              {
+                "literal": "TERMINAL DINER",
+                "confidence": 0.99,
+                "state": "FROZEN_EXACT",
+                "preservation_level": "P0",
+                "identity_bearing": true,
+                "numeral": false,
+                "token_id": "T-DINER"
+              }
+            ],
+            "proposed_text": {
+              "T-DINER": "TERMINAL DINNER"
+            }
+          }
+        },
+        "pre_generation_gate": {
+          "status": "BLOCK_GENERATION",
+          "findings": [
+            {
+              "status": "FAIL",
+              "severity": "S3",
+              "code": "TEXT_MUTATION",
+              "expected": "TERMINAL DINER",
+              "actual": "TERMINAL DINNER"
+            }
+          ],
+          "reference_preflight": {
+            "status": "PASS",
+            "admitted": [],
+            "rejected": []
+          }
+        },
+        "status": "BLOCKED_PREFLIGHT"
+      },
+      "result_sha256": "46731d152fd8d884a74dbe6b613b6f44ce480785c577baa9982e66200ecd68d1",
+      "repeat_identical": true
+    },
+    {
+      "name": "synthetic:/sc-2a",
+      "request": {
+        "command_text": "/sc-2a",
+        "scene": {
+          "scene_id": "INVENTORY-BASELINE",
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BLDG",
+              "label": "storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 1
+              }
+            }
+          ],
+          "relationships": []
+        }
+      },
+      "result": {
+        "version": "SC-ORCH-1.0",
+        "command": {
+          "status": "OK",
+          "commands": [
+            "/sc-2a"
+          ],
+          "config": {
+            "profile": "VP02",
+            "mode": "T01",
+            "camera": "CG-A",
+            "fear_city_identity": null,
+            "preservation": null,
+            "uncertainty": null,
+            "explicit_fear_city_profile_override": false,
+            "identity_lock": null,
+            "occlusion_lock": null,
+            "frontalization": null,
+            "aspect_ratio": null,
+            "street_presence": null
+          },
+          "diagnostics": []
+        },
+        "resolved_config": {
+          "profile": "VP02",
+          "mode": "T01",
+          "camera": "CG-A",
+          "fear_city_identity": null,
+          "preservation": null,
+          "uncertainty": null,
+          "explicit_fear_city_profile_override": false,
+          "identity_lock": null,
+          "occlusion_lock": null,
+          "frontalization": null,
+          "aspect_ratio": null,
+          "street_presence": null
+        },
+        "sar2": {
+          "scene_id": "INVENTORY-BASELINE",
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BLDG",
+              "label": "storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 1
+              }
+            }
+          ],
+          "relationships": [],
+          "action_plan": [
+            {
+              "entity_id": "E-BLDG",
+              "action": "PRESERVE_EXACT",
+              "relationship_lock": false,
+              "protected_relationships": [],
+              "salience": {
+                "score": 0.85,
+                "band": "CRITICAL_ATTENTION",
+                "axes": {
+                  "identity_salience": 1.0,
+                  "structural_dependency": 1.0,
+                  "task_relevance": 1.0,
+                  "relationship_centrality": 0.0,
+                  "temporal_relevance": 1.0
+                }
+              }
+            }
+          ],
+          "identity_anchors": [
+            "E-BLDG"
+          ],
+          "unknown_locks": [],
+          "reference_need_hints": [],
+          "warnings": []
+        },
+        "reference_needs": [],
+        "reference_reasoning": {
+          "version": "RR-2.0",
+          "status": "READY",
+          "queries": 0,
+          "query_budget": 4,
+          "need_results": {},
+          "unresolved_required": [],
+          "trace": [],
+          "admissions": [],
+          "generation_projection": [],
+          "locked_unknowns": []
+        },
+        "cgc_draft": {
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T01",
+          "profile": "VP02",
+          "camera": "CG-A",
+          "preserve": [
+            "E-BLDG:storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [],
+          "scene_intelligence": {
+            "scene_id": "INVENTORY-BASELINE",
+            "identity_anchors": [
+              "E-BLDG"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BLDG",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.85,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 1.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-2a",
+            "resolved": {
+              "profile": "VP02",
+              "mode": "T01",
+              "camera": "CG-A",
+              "fear_city_identity": null,
+              "preservation": null,
+              "uncertainty": null,
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": null,
+              "occlusion_lock": null,
+              "frontalization": null,
+              "aspect_ratio": null,
+              "street_presence": null
+            }
+          }
+        },
+        "generation_ready": true,
+        "cgc_final": {
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T01",
+          "profile": "VP02",
+          "camera": "CG-A",
+          "preserve": [
+            "E-BLDG:storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [],
+          "scene_intelligence": {
+            "scene_id": "INVENTORY-BASELINE",
+            "identity_anchors": [
+              "E-BLDG"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BLDG",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.85,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 1.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-2a",
+            "resolved": {
+              "profile": "VP02",
+              "mode": "T01",
+              "camera": "CG-A",
+              "fear_city_identity": null,
+              "preservation": null,
+              "uncertainty": null,
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": null,
+              "occlusion_lock": null,
+              "frontalization": null,
+              "aspect_ratio": null,
+              "street_presence": null
+            }
+          },
+          "reference_reasoning": {
+            "version": "RR-2.0",
+            "status": "READY",
+            "queries": 0,
+            "query_budget": 4,
+            "need_results": {},
+            "unresolved_required": [],
+            "trace": [],
+            "admissions": [],
+            "generation_projection": [],
+            "locked_unknowns": []
+          },
+          "pre_generation_gate": {
+            "status": "PASS",
+            "findings": [],
+            "reference_preflight": {
+              "status": "PASS",
+              "admitted": [],
+              "rejected": []
+            }
+          },
+          "reference_features": [],
+          "text_render_plan": {
+            "tokens": [],
+            "proposed_text": {}
+          }
+        },
+        "pre_generation_gate": {
+          "status": "PASS",
+          "findings": [],
+          "reference_preflight": {
+            "status": "PASS",
+            "admitted": [],
+            "rejected": []
+          }
+        },
+        "status": "GENERATION_READY"
+      },
+      "result_sha256": "d4f0a71b3a8da4e595e227d5e29b28dbd137cc724f2c609778877c2dcdc5783a",
+      "repeat_identical": true
+    },
+    {
+      "name": "synthetic:/sc-rdr2-elevation",
+      "request": {
+        "command_text": "/sc-rdr2-elevation",
+        "scene": {
+          "scene_id": "INVENTORY-BASELINE",
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BLDG",
+              "label": "storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 1
+              }
+            }
+          ],
+          "relationships": []
+        }
+      },
+      "result": {
+        "version": "SC-ORCH-1.0",
+        "command": {
+          "status": "OK",
+          "commands": [
+            "/sc-rdr2-elevation"
+          ],
+          "config": {
+            "profile": "VP02",
+            "mode": "T02",
+            "camera": "CG-F",
+            "fear_city_identity": null,
+            "preservation": null,
+            "uncertainty": null,
+            "explicit_fear_city_profile_override": false,
+            "identity_lock": "STRICT",
+            "occlusion_lock": "LOCKED_UNKNOWN",
+            "frontalization": "STRICT",
+            "aspect_ratio": "16:9",
+            "street_presence": "MINIMAL"
+          },
+          "diagnostics": []
+        },
+        "resolved_config": {
+          "profile": "VP02",
+          "mode": "T02",
+          "camera": "CG-F",
+          "fear_city_identity": null,
+          "preservation": null,
+          "uncertainty": null,
+          "explicit_fear_city_profile_override": false,
+          "identity_lock": "STRICT",
+          "occlusion_lock": "LOCKED_UNKNOWN",
+          "frontalization": "STRICT",
+          "aspect_ratio": "16:9",
+          "street_presence": "MINIMAL"
+        },
+        "sar2": {
+          "scene_id": "INVENTORY-BASELINE",
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T02",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BLDG",
+              "label": "storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 1
+              }
+            }
+          ],
+          "relationships": [],
+          "action_plan": [
+            {
+              "entity_id": "E-BLDG",
+              "action": "PRESERVE_EXACT",
+              "relationship_lock": false,
+              "protected_relationships": [],
+              "salience": {
+                "score": 0.85,
+                "band": "CRITICAL_ATTENTION",
+                "axes": {
+                  "identity_salience": 1.0,
+                  "structural_dependency": 1.0,
+                  "task_relevance": 1.0,
+                  "relationship_centrality": 0.0,
+                  "temporal_relevance": 1.0
+                }
+              }
+            }
+          ],
+          "identity_anchors": [
+            "E-BLDG"
+          ],
+          "unknown_locks": [],
+          "reference_need_hints": [],
+          "warnings": []
+        },
+        "reference_needs": [],
+        "reference_reasoning": {
+          "version": "RR-2.0",
+          "status": "READY",
+          "queries": 0,
+          "query_budget": 4,
+          "need_results": {},
+          "unresolved_required": [],
+          "trace": [],
+          "admissions": [],
+          "generation_projection": [],
+          "locked_unknowns": []
+        },
+        "cgc_draft": {
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T02",
+          "profile": "VP02",
+          "camera": "CG-F",
+          "preserve": [
+            "E-BLDG:storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [
+            "change_source_identity",
+            "replace_P0_geometry",
+            "camera_non_frontal",
+            "oblique_camera_drift"
+          ],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [
+            "GLOBAL_LOCKED_UNKNOWN"
+          ],
+          "scene_intelligence": {
+            "scene_id": "INVENTORY-BASELINE",
+            "identity_anchors": [
+              "E-BLDG"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BLDG",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.85,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 1.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-rdr2-elevation",
+            "resolved": {
+              "profile": "VP02",
+              "mode": "T02",
+              "camera": "CG-F",
+              "fear_city_identity": null,
+              "preservation": null,
+              "uncertainty": null,
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": "STRICT",
+              "occlusion_lock": "LOCKED_UNKNOWN",
+              "frontalization": "STRICT",
+              "aspect_ratio": "16:9",
+              "street_presence": "MINIMAL"
+            }
+          },
+          "aspect_ratio": "16:9",
+          "street_presence": "MINIMAL"
+        },
+        "generation_ready": true,
+        "cgc_final": {
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T02",
+          "profile": "VP02",
+          "camera": "CG-F",
+          "preserve": [
+            "E-BLDG:storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [
+            "change_source_identity",
+            "replace_P0_geometry",
+            "camera_non_frontal",
+            "oblique_camera_drift"
+          ],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [
+            "GLOBAL_LOCKED_UNKNOWN"
+          ],
+          "scene_intelligence": {
+            "scene_id": "INVENTORY-BASELINE",
+            "identity_anchors": [
+              "E-BLDG"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BLDG",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.85,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 1.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-rdr2-elevation",
+            "resolved": {
+              "profile": "VP02",
+              "mode": "T02",
+              "camera": "CG-F",
+              "fear_city_identity": null,
+              "preservation": null,
+              "uncertainty": null,
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": "STRICT",
+              "occlusion_lock": "LOCKED_UNKNOWN",
+              "frontalization": "STRICT",
+              "aspect_ratio": "16:9",
+              "street_presence": "MINIMAL"
+            }
+          },
+          "aspect_ratio": "16:9",
+          "street_presence": "MINIMAL",
+          "reference_reasoning": {
+            "version": "RR-2.0",
+            "status": "READY",
+            "queries": 0,
+            "query_budget": 4,
+            "need_results": {},
+            "unresolved_required": [],
+            "trace": [],
+            "admissions": [],
+            "generation_projection": [],
+            "locked_unknowns": []
+          },
+          "pre_generation_gate": {
+            "status": "PASS",
+            "findings": [],
+            "reference_preflight": {
+              "status": "PASS",
+              "admitted": [],
+              "rejected": []
+            }
+          },
+          "reference_features": [],
+          "text_render_plan": {
+            "tokens": [],
+            "proposed_text": {}
+          }
+        },
+        "pre_generation_gate": {
+          "status": "PASS",
+          "findings": [],
+          "reference_preflight": {
+            "status": "PASS",
+            "admitted": [],
+            "rejected": []
+          }
+        },
+        "status": "GENERATION_READY"
+      },
+      "result_sha256": "b711e602e584f7492180594b1dfd978f4741d01aa9c26b3bd9d08f7978b33916",
+      "repeat_identical": true
+    },
+    {
+      "name": "synthetic:/sc-core /sc-lock /sc-preserve /sc-noinvent",
+      "request": {
+        "command_text": "/sc-core /sc-lock /sc-preserve /sc-noinvent",
+        "scene": {
+          "scene_id": "INVENTORY-BASELINE",
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BLDG",
+              "label": "storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 1
+              }
+            }
+          ],
+          "relationships": []
+        }
+      },
+      "result": {
+        "version": "SC-ORCH-1.0",
+        "command": {
+          "status": "OK",
+          "commands": [
+            "/sc-core",
+            "/sc-lock",
+            "/sc-preserve",
+            "/sc-noinvent"
+          ],
+          "config": {
+            "profile": "VP00",
+            "mode": "T01",
+            "camera": "CG-S",
+            "fear_city_identity": null,
+            "preservation": "STRICT_OBSERVED_EVIDENCE",
+            "uncertainty": "STRICT_UNKNOWN_PRESERVATION",
+            "explicit_fear_city_profile_override": false,
+            "identity_lock": null,
+            "occlusion_lock": null,
+            "frontalization": null,
+            "aspect_ratio": null,
+            "street_presence": null
+          },
+          "diagnostics": []
+        },
+        "resolved_config": {
+          "profile": "VP00",
+          "mode": "T01",
+          "camera": "CG-S",
+          "fear_city_identity": null,
+          "preservation": "STRICT_OBSERVED_EVIDENCE",
+          "uncertainty": "STRICT_UNKNOWN_PRESERVATION",
+          "explicit_fear_city_profile_override": false,
+          "identity_lock": null,
+          "occlusion_lock": null,
+          "frontalization": null,
+          "aspect_ratio": null,
+          "street_presence": null
+        },
+        "sar2": {
+          "scene_id": "INVENTORY-BASELINE",
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T01",
+          "profile": "VP00",
+          "entities": [
+            {
+              "entity_id": "E-BLDG",
+              "label": "storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 1
+              }
+            }
+          ],
+          "relationships": [],
+          "action_plan": [
+            {
+              "entity_id": "E-BLDG",
+              "action": "PRESERVE_EXACT",
+              "relationship_lock": false,
+              "protected_relationships": [],
+              "salience": {
+                "score": 0.85,
+                "band": "CRITICAL_ATTENTION",
+                "axes": {
+                  "identity_salience": 1.0,
+                  "structural_dependency": 1.0,
+                  "task_relevance": 1.0,
+                  "relationship_centrality": 0.0,
+                  "temporal_relevance": 1.0
+                }
+              }
+            }
+          ],
+          "identity_anchors": [
+            "E-BLDG"
+          ],
+          "unknown_locks": [],
+          "reference_need_hints": [],
+          "warnings": []
+        },
+        "reference_needs": [],
+        "reference_reasoning": {
+          "version": "RR-2.0",
+          "status": "READY",
+          "queries": 0,
+          "query_budget": 4,
+          "need_results": {},
+          "unresolved_required": [],
+          "trace": [],
+          "admissions": [],
+          "generation_projection": [],
+          "locked_unknowns": []
+        },
+        "cgc_draft": {
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T01",
+          "profile": "VP00",
+          "camera": "CG-S",
+          "preserve": [
+            "E-BLDG:storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [
+            "replace_observed_evidence",
+            "resolve_locked_unknown_without_evidence"
+          ],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [],
+          "scene_intelligence": {
+            "scene_id": "INVENTORY-BASELINE",
+            "identity_anchors": [
+              "E-BLDG"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BLDG",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.85,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 1.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-core /sc-lock /sc-preserve /sc-noinvent",
+            "resolved": {
+              "profile": "VP00",
+              "mode": "T01",
+              "camera": "CG-S",
+              "fear_city_identity": null,
+              "preservation": "STRICT_OBSERVED_EVIDENCE",
+              "uncertainty": "STRICT_UNKNOWN_PRESERVATION",
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": null,
+              "occlusion_lock": null,
+              "frontalization": null,
+              "aspect_ratio": null,
+              "street_presence": null
+            }
+          }
+        },
+        "generation_ready": true,
+        "cgc_final": {
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T01",
+          "profile": "VP00",
+          "camera": "CG-S",
+          "preserve": [
+            "E-BLDG:storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [
+            "replace_observed_evidence",
+            "resolve_locked_unknown_without_evidence"
+          ],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [],
+          "scene_intelligence": {
+            "scene_id": "INVENTORY-BASELINE",
+            "identity_anchors": [
+              "E-BLDG"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BLDG",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.85,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 1.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-core /sc-lock /sc-preserve /sc-noinvent",
+            "resolved": {
+              "profile": "VP00",
+              "mode": "T01",
+              "camera": "CG-S",
+              "fear_city_identity": null,
+              "preservation": "STRICT_OBSERVED_EVIDENCE",
+              "uncertainty": "STRICT_UNKNOWN_PRESERVATION",
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": null,
+              "occlusion_lock": null,
+              "frontalization": null,
+              "aspect_ratio": null,
+              "street_presence": null
+            }
+          },
+          "reference_reasoning": {
+            "version": "RR-2.0",
+            "status": "READY",
+            "queries": 0,
+            "query_budget": 4,
+            "need_results": {},
+            "unresolved_required": [],
+            "trace": [],
+            "admissions": [],
+            "generation_projection": [],
+            "locked_unknowns": []
+          },
+          "pre_generation_gate": {
+            "status": "PASS",
+            "findings": [],
+            "reference_preflight": {
+              "status": "PASS",
+              "admitted": [],
+              "rejected": []
+            }
+          },
+          "reference_features": [],
+          "text_render_plan": {
+            "tokens": [],
+            "proposed_text": {}
+          }
+        },
+        "pre_generation_gate": {
+          "status": "PASS",
+          "findings": [],
+          "reference_preflight": {
+            "status": "PASS",
+            "admitted": [],
+            "rejected": []
+          }
+        },
+        "status": "GENERATION_READY"
+      },
+      "result_sha256": "2d56bad7511d7a547b47e7e0b0c810bd04e49cd6ef0c6fb02149f71f56da5ab2",
+      "repeat_identical": true
+    },
+    {
+      "name": "synthetic:/sc-fear",
+      "request": {
+        "command_text": "/sc-fear",
+        "scene": {
+          "scene_id": "INVENTORY-BASELINE",
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BLDG",
+              "label": "storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 1
+              }
+            }
+          ],
+          "relationships": []
+        }
+      },
+      "result": {
+        "version": "SC-ORCH-1.0",
+        "command": {
+          "status": "OK",
+          "commands": [
+            "/sc-fear"
+          ],
+          "config": {
+            "profile": "VP03",
+            "mode": "T06",
+            "camera": "CG-FC",
+            "fear_city_identity": "REQUIRE_CONFIRMED_OR_RESOLVE",
+            "preservation": null,
+            "uncertainty": null,
+            "explicit_fear_city_profile_override": false,
+            "identity_lock": null,
+            "occlusion_lock": null,
+            "frontalization": null,
+            "aspect_ratio": null,
+            "street_presence": null
+          },
+          "diagnostics": []
+        },
+        "resolved_config": {
+          "profile": "VP03",
+          "mode": "T06",
+          "camera": "CG-FC",
+          "fear_city_identity": "REQUIRE_CONFIRMED_OR_RESOLVE",
+          "preservation": null,
+          "uncertainty": null,
+          "explicit_fear_city_profile_override": false,
+          "identity_lock": null,
+          "occlusion_lock": null,
+          "frontalization": null,
+          "aspect_ratio": null,
+          "street_presence": null
+        },
+        "sar2": {
+          "scene_id": "INVENTORY-BASELINE",
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T06",
+          "profile": "VP03",
+          "entities": [
+            {
+              "entity_id": "E-BLDG",
+              "label": "storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 1
+              }
+            }
+          ],
+          "relationships": [],
+          "action_plan": [
+            {
+              "entity_id": "E-BLDG",
+              "action": "PRESERVE_EXACT",
+              "relationship_lock": false,
+              "protected_relationships": [],
+              "salience": {
+                "score": 0.85,
+                "band": "CRITICAL_ATTENTION",
+                "axes": {
+                  "identity_salience": 1.0,
+                  "structural_dependency": 1.0,
+                  "task_relevance": 1.0,
+                  "relationship_centrality": 0.0,
+                  "temporal_relevance": 1.0
+                }
+              }
+            }
+          ],
+          "identity_anchors": [
+            "E-BLDG"
+          ],
+          "unknown_locks": [],
+          "reference_need_hints": [],
+          "warnings": []
+        },
+        "reference_needs": [],
+        "reference_reasoning": {
+          "version": "RR-2.0",
+          "status": "READY",
+          "queries": 0,
+          "query_budget": 4,
+          "need_results": {},
+          "unresolved_required": [],
+          "trace": [],
+          "admissions": [],
+          "generation_projection": [],
+          "locked_unknowns": []
+        },
+        "cgc_draft": {
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T06",
+          "profile": "VP03",
+          "camera": "CG-FC",
+          "preserve": [
+            "E-BLDG:storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [],
+          "scene_intelligence": {
+            "scene_id": "INVENTORY-BASELINE",
+            "identity_anchors": [
+              "E-BLDG"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BLDG",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.85,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 1.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-fear",
+            "resolved": {
+              "profile": "VP03",
+              "mode": "T06",
+              "camera": "CG-FC",
+              "fear_city_identity": "REQUIRE_CONFIRMED_OR_RESOLVE",
+              "preservation": null,
+              "uncertainty": null,
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": null,
+              "occlusion_lock": null,
+              "frontalization": null,
+              "aspect_ratio": null,
+              "street_presence": null
+            }
+          }
+        },
+        "generation_ready": true,
+        "cgc_final": {
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T06",
+          "profile": "VP03",
+          "camera": "CG-FC",
+          "preserve": [
+            "E-BLDG:storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [],
+          "scene_intelligence": {
+            "scene_id": "INVENTORY-BASELINE",
+            "identity_anchors": [
+              "E-BLDG"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BLDG",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.85,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 1.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-fear",
+            "resolved": {
+              "profile": "VP03",
+              "mode": "T06",
+              "camera": "CG-FC",
+              "fear_city_identity": "REQUIRE_CONFIRMED_OR_RESOLVE",
+              "preservation": null,
+              "uncertainty": null,
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": null,
+              "occlusion_lock": null,
+              "frontalization": null,
+              "aspect_ratio": null,
+              "street_presence": null
+            }
+          },
+          "reference_reasoning": {
+            "version": "RR-2.0",
+            "status": "READY",
+            "queries": 0,
+            "query_budget": 4,
+            "need_results": {},
+            "unresolved_required": [],
+            "trace": [],
+            "admissions": [],
+            "generation_projection": [],
+            "locked_unknowns": []
+          },
+          "pre_generation_gate": {
+            "status": "PASS",
+            "findings": [],
+            "reference_preflight": {
+              "status": "PASS",
+              "admitted": [],
+              "rejected": []
+            }
+          },
+          "reference_features": [],
+          "text_render_plan": {
+            "tokens": [],
+            "proposed_text": {}
+          }
+        },
+        "pre_generation_gate": {
+          "status": "PASS",
+          "findings": [],
+          "reference_preflight": {
+            "status": "PASS",
+            "admitted": [],
+            "rejected": []
+          }
+        },
+        "status": "GENERATION_READY"
+      },
+      "result_sha256": "eee08d9084dcd07454f0a65756d130b3c494c0b8b9e951654b4ffb91da6220d4",
+      "repeat_identical": true
+    },
+    {
+      "name": "synthetic:/sc-bd01",
+      "request": {
+        "command_text": "/sc-bd01",
+        "scene": {
+          "scene_id": "INVENTORY-BASELINE",
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BLDG",
+              "label": "storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 1
+              }
+            }
+          ],
+          "relationships": []
+        }
+      },
+      "result": {
+        "version": "SC-ORCH-1.0",
+        "command": {
+          "status": "OK",
+          "commands": [
+            "/sc-bd01"
+          ],
+          "config": {
+            "profile": "VP02",
+            "mode": "T02",
+            "camera": "CG-F",
+            "fear_city_identity": null,
+            "preservation": null,
+            "uncertainty": "STRICT_UNKNOWN_PRESERVATION",
+            "explicit_fear_city_profile_override": false,
+            "identity_lock": "STRICT",
+            "occlusion_lock": "LOCKED_UNKNOWN",
+            "frontalization": "STRICT",
+            "aspect_ratio": "16:9",
+            "street_presence": "MINIMAL",
+            "backdrop_preset": "BD01"
+          },
+          "diagnostics": []
+        },
+        "resolved_config": {
+          "profile": "VP02",
+          "mode": "T02",
+          "camera": "CG-F",
+          "fear_city_identity": null,
+          "preservation": null,
+          "uncertainty": "STRICT_UNKNOWN_PRESERVATION",
+          "explicit_fear_city_profile_override": false,
+          "identity_lock": "STRICT",
+          "occlusion_lock": "LOCKED_UNKNOWN",
+          "frontalization": "STRICT",
+          "aspect_ratio": "16:9",
+          "street_presence": "MINIMAL",
+          "backdrop_preset": "BD01"
+        },
+        "sar2": {
+          "scene_id": "INVENTORY-BASELINE",
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T02",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BLDG",
+              "label": "storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 1
+              }
+            }
+          ],
+          "relationships": [],
+          "action_plan": [
+            {
+              "entity_id": "E-BLDG",
+              "action": "PRESERVE_EXACT",
+              "relationship_lock": false,
+              "protected_relationships": [],
+              "salience": {
+                "score": 0.85,
+                "band": "CRITICAL_ATTENTION",
+                "axes": {
+                  "identity_salience": 1.0,
+                  "structural_dependency": 1.0,
+                  "task_relevance": 1.0,
+                  "relationship_centrality": 0.0,
+                  "temporal_relevance": 1.0
+                }
+              }
+            }
+          ],
+          "identity_anchors": [
+            "E-BLDG"
+          ],
+          "unknown_locks": [],
+          "reference_need_hints": [],
+          "warnings": []
+        },
+        "reference_needs": [],
+        "reference_reasoning": {
+          "version": "RR-2.0",
+          "status": "READY",
+          "queries": 0,
+          "query_budget": 4,
+          "need_results": {},
+          "unresolved_required": [],
+          "trace": [],
+          "admissions": [],
+          "generation_projection": [],
+          "locked_unknowns": []
+        },
+        "cgc_draft": {
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T02",
+          "profile": "VP02",
+          "camera": "CG-F",
+          "preserve": [
+            "E-BLDG:storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [
+            "change_source_identity",
+            "replace_P0_geometry",
+            "camera_non_frontal",
+            "oblique_camera_drift",
+            "resolve_locked_unknown_without_evidence",
+            "narrative street-scene composition",
+            "strong oblique perspective",
+            "corner-view streetscape",
+            "overpopulation",
+            "hero-shot framing",
+            "bird’s-eye transformation",
+            "foreground dominance",
+            "genericization that loses source identity"
+          ],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [
+            "GLOBAL_LOCKED_UNKNOWN"
+          ],
+          "scene_intelligence": {
+            "scene_id": "INVENTORY-BASELINE",
+            "identity_anchors": [
+              "E-BLDG"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BLDG",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.85,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 1.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-bd01",
+            "resolved": {
+              "profile": "VP02",
+              "mode": "T02",
+              "camera": "CG-F",
+              "fear_city_identity": null,
+              "preservation": null,
+              "uncertainty": "STRICT_UNKNOWN_PRESERVATION",
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": "STRICT",
+              "occlusion_lock": "LOCKED_UNKNOWN",
+              "frontalization": "STRICT",
+              "aspect_ratio": "16:9",
+              "street_presence": "MINIMAL",
+              "backdrop_preset": "BD01"
+            }
+          },
+          "aspect_ratio": "16:9",
+          "street_presence": "MINIMAL",
+          "backdrop_contract": {
+            "schema_version": "1.0.0",
+            "preset": "BD01",
+            "base_profile": "VP02",
+            "mode": "T02",
+            "scene_id": "INVENTORY-BASELINE",
+            "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+            "visual_validation": "PENDING",
+            "framing": {
+              "orientation": "HORIZONTAL",
+              "preferred_aspect_ratios": [
+                "16:9",
+                "2:1"
+              ],
+              "lateral_continuity": "REQUIRED",
+              "aspect_ratio": "16:9"
+            },
+            "camera": {
+              "grammar": "CG-F",
+              "reading": "FRONTAL_OR_NEAR_FRONTAL",
+              "horizon": "STABLE",
+              "verticals": "UPRIGHT",
+              "dramatic_convergence": "FORBIDDEN",
+              "birds_eye": "FORBIDDEN",
+              "spatial_structure": "COMPRESSED_WITH_READABLE_DEPTH",
+              "facade_only_flattening": false
+            },
+            "subject_hierarchy": {
+              "primary": [
+                "architecture",
+                "urban massing",
+                "skyline layers",
+                "rooftops",
+                "painted walls",
+                "building rhythm",
+                "structural silhouettes"
+              ],
+              "secondary": [
+                "water towers",
+                "rooftop equipment",
+                "signage",
+                "low-density street information",
+                "industrial traces",
+                "distant towers"
+              ]
+            },
+            "narrative": {
+              "density": "LOW",
+              "people_as_subjects": false,
+              "vehicles_as_subjects": false,
+              "action_as_subject": false,
+              "excessive_clutter": false
+            },
+            "foreground": {
+              "dominance": "SUBORDINATE",
+              "accepted_bases": [
+                "neutral street edge",
+                "curb or sidewalk strip",
+                "rooftop edge",
+                "vacant lot edge",
+                "low-detail open foreground",
+                "unobtrusive infrastructure band"
+              ]
+            },
+            "print_readability": {
+              "large_masses": "READABLE",
+              "complexity": "CONTROLLED",
+              "tonal_hierarchy": "CONSISTENT",
+              "distance_legibility": "REQUIRED"
+            },
+            "internal_locks": [
+              "PANORAMIC_FRAMING",
+              "BACKDROP_CONTINUITY",
+              "ARCHITECTURAL_PRIORITY",
+              "NARRATIVE_REDUCTION",
+              "FOREGROUND_SUPPRESSION",
+              "PRINT_READABILITY",
+              "SOURCE_URBAN_CHARACTER"
+            ],
+            "forbidden_operations": [
+              "narrative street-scene composition",
+              "strong oblique perspective",
+              "corner-view streetscape",
+              "overpopulation",
+              "hero-shot framing",
+              "bird’s-eye transformation",
+              "foreground dominance",
+              "genericization that loses source identity"
+            ],
+            "name": "Urban Backdrop Reinterpretation",
+            "primary_priority": "BACKDROP_USABILITY",
+            "structural_fidelity": "MEDIUM",
+            "urban_character_fidelity": "HIGH",
+            "reference_role": "STARTING_POINT",
+            "allowed_operations": [
+              "reorganize unprotected masses",
+              "complete plausible continuity outside locked unknown regions",
+              "simplify urban forms",
+              "replace weak unprotected sections",
+              "adjust unprotected spacing",
+              "reinterpret unprotected skyline sections",
+              "remove authorized distracting details"
+            ],
+            "emphases": [
+              "PLAUSIBLE_RECOMPOSITION",
+              "SKYLINE_COMPLETION",
+              "CONTINUITY_OPTIMIZATION"
+            ],
+            "scope": {
+              "recomposition": "UNPROTECTED_REGIONS_ONLY",
+              "protected_node_ids": [
+                "E-BLDG"
+              ],
+              "protected_relationship_ids": [],
+              "locked_unknown_ids": [],
+              "source_locks_override_preset_allowances": true,
+              "unknown_resolution": "FORBIDDEN_WITHOUT_INDEPENDENT_EVIDENCE",
+              "detail_removal": "EXISTING_AUTHORIZATION_REQUIRED"
+            },
+            "print_target": {
+              "nominal_scale": "1:64",
+              "physical_dimensions_and_resolution": "NOT_SPECIFIED",
+              "print_readiness": "REQUIRES_OUTPUT_REVIEW"
+            },
+            "contract_sha256": "4b20f06c17e0a7ab91a9f7a9059575a165209b1456947591fd3d5feefd78ceaa"
+          }
+        },
+        "generation_ready": true,
+        "cgc_final": {
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T02",
+          "profile": "VP02",
+          "camera": "CG-F",
+          "preserve": [
+            "E-BLDG:storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [
+            "change_source_identity",
+            "replace_P0_geometry",
+            "camera_non_frontal",
+            "oblique_camera_drift",
+            "resolve_locked_unknown_without_evidence",
+            "narrative street-scene composition",
+            "strong oblique perspective",
+            "corner-view streetscape",
+            "overpopulation",
+            "hero-shot framing",
+            "bird’s-eye transformation",
+            "foreground dominance",
+            "genericization that loses source identity"
+          ],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [
+            "GLOBAL_LOCKED_UNKNOWN"
+          ],
+          "scene_intelligence": {
+            "scene_id": "INVENTORY-BASELINE",
+            "identity_anchors": [
+              "E-BLDG"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BLDG",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.85,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 1.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-bd01",
+            "resolved": {
+              "profile": "VP02",
+              "mode": "T02",
+              "camera": "CG-F",
+              "fear_city_identity": null,
+              "preservation": null,
+              "uncertainty": "STRICT_UNKNOWN_PRESERVATION",
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": "STRICT",
+              "occlusion_lock": "LOCKED_UNKNOWN",
+              "frontalization": "STRICT",
+              "aspect_ratio": "16:9",
+              "street_presence": "MINIMAL",
+              "backdrop_preset": "BD01"
+            }
+          },
+          "aspect_ratio": "16:9",
+          "street_presence": "MINIMAL",
+          "backdrop_contract": {
+            "schema_version": "1.0.0",
+            "preset": "BD01",
+            "base_profile": "VP02",
+            "mode": "T02",
+            "scene_id": "INVENTORY-BASELINE",
+            "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+            "visual_validation": "PENDING",
+            "framing": {
+              "orientation": "HORIZONTAL",
+              "preferred_aspect_ratios": [
+                "16:9",
+                "2:1"
+              ],
+              "lateral_continuity": "REQUIRED",
+              "aspect_ratio": "16:9"
+            },
+            "camera": {
+              "grammar": "CG-F",
+              "reading": "FRONTAL_OR_NEAR_FRONTAL",
+              "horizon": "STABLE",
+              "verticals": "UPRIGHT",
+              "dramatic_convergence": "FORBIDDEN",
+              "birds_eye": "FORBIDDEN",
+              "spatial_structure": "COMPRESSED_WITH_READABLE_DEPTH",
+              "facade_only_flattening": false
+            },
+            "subject_hierarchy": {
+              "primary": [
+                "architecture",
+                "urban massing",
+                "skyline layers",
+                "rooftops",
+                "painted walls",
+                "building rhythm",
+                "structural silhouettes"
+              ],
+              "secondary": [
+                "water towers",
+                "rooftop equipment",
+                "signage",
+                "low-density street information",
+                "industrial traces",
+                "distant towers"
+              ]
+            },
+            "narrative": {
+              "density": "LOW",
+              "people_as_subjects": false,
+              "vehicles_as_subjects": false,
+              "action_as_subject": false,
+              "excessive_clutter": false
+            },
+            "foreground": {
+              "dominance": "SUBORDINATE",
+              "accepted_bases": [
+                "neutral street edge",
+                "curb or sidewalk strip",
+                "rooftop edge",
+                "vacant lot edge",
+                "low-detail open foreground",
+                "unobtrusive infrastructure band"
+              ]
+            },
+            "print_readability": {
+              "large_masses": "READABLE",
+              "complexity": "CONTROLLED",
+              "tonal_hierarchy": "CONSISTENT",
+              "distance_legibility": "REQUIRED"
+            },
+            "internal_locks": [
+              "PANORAMIC_FRAMING",
+              "BACKDROP_CONTINUITY",
+              "ARCHITECTURAL_PRIORITY",
+              "NARRATIVE_REDUCTION",
+              "FOREGROUND_SUPPRESSION",
+              "PRINT_READABILITY",
+              "SOURCE_URBAN_CHARACTER"
+            ],
+            "forbidden_operations": [
+              "narrative street-scene composition",
+              "strong oblique perspective",
+              "corner-view streetscape",
+              "overpopulation",
+              "hero-shot framing",
+              "bird’s-eye transformation",
+              "foreground dominance",
+              "genericization that loses source identity"
+            ],
+            "name": "Urban Backdrop Reinterpretation",
+            "primary_priority": "BACKDROP_USABILITY",
+            "structural_fidelity": "MEDIUM",
+            "urban_character_fidelity": "HIGH",
+            "reference_role": "STARTING_POINT",
+            "allowed_operations": [
+              "reorganize unprotected masses",
+              "complete plausible continuity outside locked unknown regions",
+              "simplify urban forms",
+              "replace weak unprotected sections",
+              "adjust unprotected spacing",
+              "reinterpret unprotected skyline sections",
+              "remove authorized distracting details"
+            ],
+            "emphases": [
+              "PLAUSIBLE_RECOMPOSITION",
+              "SKYLINE_COMPLETION",
+              "CONTINUITY_OPTIMIZATION"
+            ],
+            "scope": {
+              "recomposition": "UNPROTECTED_REGIONS_ONLY",
+              "protected_node_ids": [
+                "E-BLDG"
+              ],
+              "protected_relationship_ids": [],
+              "locked_unknown_ids": [],
+              "source_locks_override_preset_allowances": true,
+              "unknown_resolution": "FORBIDDEN_WITHOUT_INDEPENDENT_EVIDENCE",
+              "detail_removal": "EXISTING_AUTHORIZATION_REQUIRED"
+            },
+            "print_target": {
+              "nominal_scale": "1:64",
+              "physical_dimensions_and_resolution": "NOT_SPECIFIED",
+              "print_readiness": "REQUIRES_OUTPUT_REVIEW"
+            },
+            "contract_sha256": "4b20f06c17e0a7ab91a9f7a9059575a165209b1456947591fd3d5feefd78ceaa"
+          },
+          "reference_reasoning": {
+            "version": "RR-2.0",
+            "status": "READY",
+            "queries": 0,
+            "query_budget": 4,
+            "need_results": {},
+            "unresolved_required": [],
+            "trace": [],
+            "admissions": [],
+            "generation_projection": [],
+            "locked_unknowns": []
+          },
+          "pre_generation_gate": {
+            "status": "PASS",
+            "findings": [],
+            "reference_preflight": {
+              "status": "PASS",
+              "admitted": [],
+              "rejected": []
+            }
+          },
+          "reference_features": [],
+          "text_render_plan": {
+            "tokens": [],
+            "proposed_text": {}
+          }
+        },
+        "pre_generation_gate": {
+          "status": "PASS",
+          "findings": [],
+          "reference_preflight": {
+            "status": "PASS",
+            "admitted": [],
+            "rejected": []
+          }
+        },
+        "status": "GENERATION_READY"
+      },
+      "result_sha256": "9dacfe624fb3b6adb5ca59c4b9bafc232db298f4ae8e119566e81b26c8a5e402",
+      "repeat_identical": true
+    },
+    {
+      "name": "synthetic:/sc-bd02",
+      "request": {
+        "command_text": "/sc-bd02",
+        "scene": {
+          "scene_id": "INVENTORY-BASELINE",
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BLDG",
+              "label": "storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 1
+              }
+            }
+          ],
+          "relationships": []
+        }
+      },
+      "result": {
+        "version": "SC-ORCH-1.0",
+        "command": {
+          "status": "OK",
+          "commands": [
+            "/sc-bd02"
+          ],
+          "config": {
+            "profile": "VP02",
+            "mode": "T08",
+            "camera": "CG-F",
+            "fear_city_identity": null,
+            "preservation": "STRICT_OBSERVED_EVIDENCE",
+            "uncertainty": "STRICT_UNKNOWN_PRESERVATION",
+            "explicit_fear_city_profile_override": false,
+            "identity_lock": "STRICT",
+            "occlusion_lock": "LOCKED_UNKNOWN",
+            "frontalization": "STRICT",
+            "aspect_ratio": "16:9",
+            "street_presence": "MINIMAL",
+            "backdrop_preset": "BD02"
+          },
+          "diagnostics": []
+        },
+        "resolved_config": {
+          "profile": "VP02",
+          "mode": "T08",
+          "camera": "CG-F",
+          "fear_city_identity": null,
+          "preservation": "STRICT_OBSERVED_EVIDENCE",
+          "uncertainty": "STRICT_UNKNOWN_PRESERVATION",
+          "explicit_fear_city_profile_override": false,
+          "identity_lock": "STRICT",
+          "occlusion_lock": "LOCKED_UNKNOWN",
+          "frontalization": "STRICT",
+          "aspect_ratio": "16:9",
+          "street_presence": "MINIMAL",
+          "backdrop_preset": "BD02"
+        },
+        "sar2": {
+          "scene_id": "INVENTORY-BASELINE",
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T08",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BLDG",
+              "label": "storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 1
+              }
+            }
+          ],
+          "relationships": [],
+          "action_plan": [
+            {
+              "entity_id": "E-BLDG",
+              "action": "PRESERVE_EXACT",
+              "relationship_lock": false,
+              "protected_relationships": [],
+              "salience": {
+                "score": 0.85,
+                "band": "CRITICAL_ATTENTION",
+                "axes": {
+                  "identity_salience": 1.0,
+                  "structural_dependency": 1.0,
+                  "task_relevance": 1.0,
+                  "relationship_centrality": 0.0,
+                  "temporal_relevance": 1.0
+                }
+              }
+            }
+          ],
+          "identity_anchors": [
+            "E-BLDG"
+          ],
+          "unknown_locks": [],
+          "reference_need_hints": [],
+          "warnings": []
+        },
+        "reference_needs": [],
+        "reference_reasoning": {
+          "version": "RR-2.0",
+          "status": "READY",
+          "queries": 0,
+          "query_budget": 4,
+          "need_results": {},
+          "unresolved_required": [],
+          "trace": [],
+          "admissions": [],
+          "generation_projection": [],
+          "locked_unknowns": []
+        },
+        "cgc_draft": {
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T08",
+          "profile": "VP02",
+          "camera": "CG-F",
+          "preserve": [
+            "E-BLDG:storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [
+            "change_source_identity",
+            "replace_P0_geometry",
+            "camera_non_frontal",
+            "oblique_camera_drift",
+            "replace_observed_evidence",
+            "resolve_locked_unknown_without_evidence",
+            "bird’s-eye transformation",
+            "corner-view streetscape",
+            "erase dominant layout relationships",
+            "foreground dominance",
+            "freely redesign skyline",
+            "genericize source identity",
+            "hero-shot framing",
+            "narrative street-scene composition",
+            "overpopulation",
+            "relocate major masses",
+            "strong oblique perspective",
+            "substitute key buildings"
+          ],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [
+            "GLOBAL_LOCKED_UNKNOWN"
+          ],
+          "scene_intelligence": {
+            "scene_id": "INVENTORY-BASELINE",
+            "identity_anchors": [
+              "E-BLDG"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BLDG",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.85,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 1.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-bd02",
+            "resolved": {
+              "profile": "VP02",
+              "mode": "T08",
+              "camera": "CG-F",
+              "fear_city_identity": null,
+              "preservation": "STRICT_OBSERVED_EVIDENCE",
+              "uncertainty": "STRICT_UNKNOWN_PRESERVATION",
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": "STRICT",
+              "occlusion_lock": "LOCKED_UNKNOWN",
+              "frontalization": "STRICT",
+              "aspect_ratio": "16:9",
+              "street_presence": "MINIMAL",
+              "backdrop_preset": "BD02"
+            }
+          },
+          "aspect_ratio": "16:9",
+          "street_presence": "MINIMAL",
+          "backdrop_contract": {
+            "schema_version": "1.0.0",
+            "preset": "BD02",
+            "base_profile": "VP02",
+            "mode": "T08",
+            "scene_id": "INVENTORY-BASELINE",
+            "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+            "visual_validation": "PENDING",
+            "framing": {
+              "orientation": "HORIZONTAL",
+              "preferred_aspect_ratios": [
+                "16:9",
+                "2:1"
+              ],
+              "lateral_continuity": "REQUIRED",
+              "aspect_ratio": "16:9"
+            },
+            "camera": {
+              "grammar": "CG-F",
+              "reading": "FRONTAL_OR_NEAR_FRONTAL",
+              "horizon": "STABLE",
+              "verticals": "UPRIGHT",
+              "dramatic_convergence": "FORBIDDEN",
+              "birds_eye": "FORBIDDEN",
+              "spatial_structure": "COMPRESSED_WITH_READABLE_DEPTH",
+              "facade_only_flattening": false
+            },
+            "subject_hierarchy": {
+              "primary": [
+                "architecture",
+                "urban massing",
+                "skyline layers",
+                "rooftops",
+                "painted walls",
+                "building rhythm",
+                "structural silhouettes"
+              ],
+              "secondary": [
+                "water towers",
+                "rooftop equipment",
+                "signage",
+                "low-density street information",
+                "industrial traces",
+                "distant towers"
+              ]
+            },
+            "narrative": {
+              "density": "LOW",
+              "people_as_subjects": false,
+              "vehicles_as_subjects": false,
+              "action_as_subject": false,
+              "excessive_clutter": false
+            },
+            "foreground": {
+              "dominance": "SUBORDINATE",
+              "accepted_bases": [
+                "neutral street edge",
+                "curb or sidewalk strip",
+                "rooftop edge",
+                "vacant lot edge",
+                "low-detail open foreground",
+                "unobtrusive infrastructure band"
+              ]
+            },
+            "print_readability": {
+              "large_masses": "READABLE",
+              "complexity": "CONTROLLED",
+              "tonal_hierarchy": "CONSISTENT",
+              "distance_legibility": "REQUIRED"
+            },
+            "internal_locks": [
+              "PANORAMIC_FRAMING",
+              "BACKDROP_CONTINUITY",
+              "ARCHITECTURAL_PRIORITY",
+              "NARRATIVE_REDUCTION",
+              "FOREGROUND_SUPPRESSION",
+              "PRINT_READABILITY",
+              "REFERENCE_LAYOUT",
+              "STRUCTURAL_FIDELITY",
+              "RECOGNITION_PRESERVATION"
+            ],
+            "forbidden_operations": [
+              "bird’s-eye transformation",
+              "corner-view streetscape",
+              "erase dominant layout relationships",
+              "foreground dominance",
+              "freely redesign skyline",
+              "genericize source identity",
+              "hero-shot framing",
+              "narrative street-scene composition",
+              "overpopulation",
+              "relocate major masses",
+              "strong oblique perspective",
+              "substitute key buildings"
+            ],
+            "name": "Urban Backdrop Preserve",
+            "primary_priority": "STRUCTURAL_FIDELITY",
+            "structural_fidelity": "HIGH",
+            "urban_character_fidelity": "HIGH",
+            "reference_role": "LAYOUT_CONTRACT",
+            "allowed_operations": [
+              "clean minor interference",
+              "stabilize geometry",
+              "improve silhouette clarity",
+              "simplify authorized clutter",
+              "correct small ambiguities using evidence",
+              "unify backdrop presentation"
+            ],
+            "emphases": [
+              "RECOGNITION_PRESERVATION"
+            ],
+            "scope": {
+              "recomposition": "NO_MAJOR_RECOMPOSITION",
+              "protected_node_ids": [
+                "E-BLDG"
+              ],
+              "protected_relationship_ids": [],
+              "locked_unknown_ids": [],
+              "source_locks_override_preset_allowances": true,
+              "unknown_resolution": "FORBIDDEN_WITHOUT_INDEPENDENT_EVIDENCE",
+              "detail_removal": "EXISTING_AUTHORIZATION_REQUIRED"
+            },
+            "print_target": {
+              "nominal_scale": "1:64",
+              "physical_dimensions_and_resolution": "NOT_SPECIFIED",
+              "print_readiness": "REQUIRES_OUTPUT_REVIEW"
+            },
+            "contract_sha256": "9433089c1c61ade63ad143b3a5a695783382cf9e2dbdff547d806885273d7519"
+          }
+        },
+        "generation_ready": true,
+        "cgc_final": {
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T08",
+          "profile": "VP02",
+          "camera": "CG-F",
+          "preserve": [
+            "E-BLDG:storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [
+            "change_source_identity",
+            "replace_P0_geometry",
+            "camera_non_frontal",
+            "oblique_camera_drift",
+            "replace_observed_evidence",
+            "resolve_locked_unknown_without_evidence",
+            "bird’s-eye transformation",
+            "corner-view streetscape",
+            "erase dominant layout relationships",
+            "foreground dominance",
+            "freely redesign skyline",
+            "genericize source identity",
+            "hero-shot framing",
+            "narrative street-scene composition",
+            "overpopulation",
+            "relocate major masses",
+            "strong oblique perspective",
+            "substitute key buildings"
+          ],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [
+            "GLOBAL_LOCKED_UNKNOWN"
+          ],
+          "scene_intelligence": {
+            "scene_id": "INVENTORY-BASELINE",
+            "identity_anchors": [
+              "E-BLDG"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BLDG",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.85,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 1.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-bd02",
+            "resolved": {
+              "profile": "VP02",
+              "mode": "T08",
+              "camera": "CG-F",
+              "fear_city_identity": null,
+              "preservation": "STRICT_OBSERVED_EVIDENCE",
+              "uncertainty": "STRICT_UNKNOWN_PRESERVATION",
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": "STRICT",
+              "occlusion_lock": "LOCKED_UNKNOWN",
+              "frontalization": "STRICT",
+              "aspect_ratio": "16:9",
+              "street_presence": "MINIMAL",
+              "backdrop_preset": "BD02"
+            }
+          },
+          "aspect_ratio": "16:9",
+          "street_presence": "MINIMAL",
+          "backdrop_contract": {
+            "schema_version": "1.0.0",
+            "preset": "BD02",
+            "base_profile": "VP02",
+            "mode": "T08",
+            "scene_id": "INVENTORY-BASELINE",
+            "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+            "visual_validation": "PENDING",
+            "framing": {
+              "orientation": "HORIZONTAL",
+              "preferred_aspect_ratios": [
+                "16:9",
+                "2:1"
+              ],
+              "lateral_continuity": "REQUIRED",
+              "aspect_ratio": "16:9"
+            },
+            "camera": {
+              "grammar": "CG-F",
+              "reading": "FRONTAL_OR_NEAR_FRONTAL",
+              "horizon": "STABLE",
+              "verticals": "UPRIGHT",
+              "dramatic_convergence": "FORBIDDEN",
+              "birds_eye": "FORBIDDEN",
+              "spatial_structure": "COMPRESSED_WITH_READABLE_DEPTH",
+              "facade_only_flattening": false
+            },
+            "subject_hierarchy": {
+              "primary": [
+                "architecture",
+                "urban massing",
+                "skyline layers",
+                "rooftops",
+                "painted walls",
+                "building rhythm",
+                "structural silhouettes"
+              ],
+              "secondary": [
+                "water towers",
+                "rooftop equipment",
+                "signage",
+                "low-density street information",
+                "industrial traces",
+                "distant towers"
+              ]
+            },
+            "narrative": {
+              "density": "LOW",
+              "people_as_subjects": false,
+              "vehicles_as_subjects": false,
+              "action_as_subject": false,
+              "excessive_clutter": false
+            },
+            "foreground": {
+              "dominance": "SUBORDINATE",
+              "accepted_bases": [
+                "neutral street edge",
+                "curb or sidewalk strip",
+                "rooftop edge",
+                "vacant lot edge",
+                "low-detail open foreground",
+                "unobtrusive infrastructure band"
+              ]
+            },
+            "print_readability": {
+              "large_masses": "READABLE",
+              "complexity": "CONTROLLED",
+              "tonal_hierarchy": "CONSISTENT",
+              "distance_legibility": "REQUIRED"
+            },
+            "internal_locks": [
+              "PANORAMIC_FRAMING",
+              "BACKDROP_CONTINUITY",
+              "ARCHITECTURAL_PRIORITY",
+              "NARRATIVE_REDUCTION",
+              "FOREGROUND_SUPPRESSION",
+              "PRINT_READABILITY",
+              "REFERENCE_LAYOUT",
+              "STRUCTURAL_FIDELITY",
+              "RECOGNITION_PRESERVATION"
+            ],
+            "forbidden_operations": [
+              "bird’s-eye transformation",
+              "corner-view streetscape",
+              "erase dominant layout relationships",
+              "foreground dominance",
+              "freely redesign skyline",
+              "genericize source identity",
+              "hero-shot framing",
+              "narrative street-scene composition",
+              "overpopulation",
+              "relocate major masses",
+              "strong oblique perspective",
+              "substitute key buildings"
+            ],
+            "name": "Urban Backdrop Preserve",
+            "primary_priority": "STRUCTURAL_FIDELITY",
+            "structural_fidelity": "HIGH",
+            "urban_character_fidelity": "HIGH",
+            "reference_role": "LAYOUT_CONTRACT",
+            "allowed_operations": [
+              "clean minor interference",
+              "stabilize geometry",
+              "improve silhouette clarity",
+              "simplify authorized clutter",
+              "correct small ambiguities using evidence",
+              "unify backdrop presentation"
+            ],
+            "emphases": [
+              "RECOGNITION_PRESERVATION"
+            ],
+            "scope": {
+              "recomposition": "NO_MAJOR_RECOMPOSITION",
+              "protected_node_ids": [
+                "E-BLDG"
+              ],
+              "protected_relationship_ids": [],
+              "locked_unknown_ids": [],
+              "source_locks_override_preset_allowances": true,
+              "unknown_resolution": "FORBIDDEN_WITHOUT_INDEPENDENT_EVIDENCE",
+              "detail_removal": "EXISTING_AUTHORIZATION_REQUIRED"
+            },
+            "print_target": {
+              "nominal_scale": "1:64",
+              "physical_dimensions_and_resolution": "NOT_SPECIFIED",
+              "print_readiness": "REQUIRES_OUTPUT_REVIEW"
+            },
+            "contract_sha256": "9433089c1c61ade63ad143b3a5a695783382cf9e2dbdff547d806885273d7519"
+          },
+          "reference_reasoning": {
+            "version": "RR-2.0",
+            "status": "READY",
+            "queries": 0,
+            "query_budget": 4,
+            "need_results": {},
+            "unresolved_required": [],
+            "trace": [],
+            "admissions": [],
+            "generation_projection": [],
+            "locked_unknowns": []
+          },
+          "pre_generation_gate": {
+            "status": "PASS",
+            "findings": [],
+            "reference_preflight": {
+              "status": "PASS",
+              "admitted": [],
+              "rejected": []
+            }
+          },
+          "reference_features": [],
+          "text_render_plan": {
+            "tokens": [],
+            "proposed_text": {}
+          }
+        },
+        "pre_generation_gate": {
+          "status": "PASS",
+          "findings": [],
+          "reference_preflight": {
+            "status": "PASS",
+            "admitted": [],
+            "rejected": []
+          }
+        },
+        "status": "GENERATION_READY"
+      },
+      "result_sha256": "5d01e023413377181c854bd2deb9b83001a086b6fe695a686580dd094390f563",
+      "repeat_identical": true
+    },
+    {
+      "name": "synthetic:/sc-does-not-exist",
+      "request": {
+        "command_text": "/sc-does-not-exist",
+        "scene": {
+          "scene_id": "INVENTORY-BASELINE",
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BLDG",
+              "label": "storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 1
+              }
+            }
+          ],
+          "relationships": []
+        }
+      },
+      "result": {
+        "version": "SC-ORCH-1.0",
+        "status": "COMMAND_ERROR",
+        "command": {
+          "status": "ERROR",
+          "error": "UNKNOWN_COMMAND",
+          "commands": [
+            "/sc-does-not-exist"
+          ]
+        },
+        "generation_ready": false
+      },
+      "result_sha256": "c270fbe2d87b7f1b298f63fd5960a60b11db26e06bffc07eeecad5febbb6a637",
+      "repeat_identical": true
+    },
+    {
+      "name": "synthetic:semantic-mutation",
+      "request": {
+        "command_text": "/sc-2a",
+        "scene": {
+          "scene_id": "INVENTORY-BASELINE",
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BLDG",
+              "label": "storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 1
+              }
+            }
+          ],
+          "relationships": []
+        },
+        "text_tokens": [
+          {
+            "token_id": "T1",
+            "literal": "TERMINAL DINER",
+            "confidence": 0.99,
+            "preservation_level": "P0",
+            "identity_bearing": true
+          }
+        ],
+        "proposed_text": {
+          "T1": "TERMINAL DINNER"
+        }
+      },
+      "result": {
+        "version": "SC-ORCH-1.0",
+        "command": {
+          "status": "OK",
+          "commands": [
+            "/sc-2a"
+          ],
+          "config": {
+            "profile": "VP02",
+            "mode": "T01",
+            "camera": "CG-A",
+            "fear_city_identity": null,
+            "preservation": null,
+            "uncertainty": null,
+            "explicit_fear_city_profile_override": false,
+            "identity_lock": null,
+            "occlusion_lock": null,
+            "frontalization": null,
+            "aspect_ratio": null,
+            "street_presence": null
+          },
+          "diagnostics": []
+        },
+        "resolved_config": {
+          "profile": "VP02",
+          "mode": "T01",
+          "camera": "CG-A",
+          "fear_city_identity": null,
+          "preservation": null,
+          "uncertainty": null,
+          "explicit_fear_city_profile_override": false,
+          "identity_lock": null,
+          "occlusion_lock": null,
+          "frontalization": null,
+          "aspect_ratio": null,
+          "street_presence": null
+        },
+        "sar2": {
+          "scene_id": "INVENTORY-BASELINE",
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T01",
+          "profile": "VP02",
+          "entities": [
+            {
+              "entity_id": "E-BLDG",
+              "label": "storefront",
+              "kind": "ARCHITECTURE",
+              "roles": [
+                "STRUCTURAL_CORE",
+                "IDENTITY_ANCHOR"
+              ],
+              "preservation_level": "P0",
+              "epistemic_class": "OBSERVED",
+              "confidence": "HIGH",
+              "observed": true,
+              "salience": {
+                "identity_salience": 1,
+                "structural_dependency": 1,
+                "task_relevance": 1,
+                "relationship_centrality": 0,
+                "temporal_relevance": 1
+              }
+            }
+          ],
+          "relationships": [],
+          "action_plan": [
+            {
+              "entity_id": "E-BLDG",
+              "action": "PRESERVE_EXACT",
+              "relationship_lock": false,
+              "protected_relationships": [],
+              "salience": {
+                "score": 0.85,
+                "band": "CRITICAL_ATTENTION",
+                "axes": {
+                  "identity_salience": 1.0,
+                  "structural_dependency": 1.0,
+                  "task_relevance": 1.0,
+                  "relationship_centrality": 0.0,
+                  "temporal_relevance": 1.0
+                }
+              }
+            }
+          ],
+          "identity_anchors": [
+            "E-BLDG"
+          ],
+          "unknown_locks": [],
+          "reference_need_hints": [],
+          "warnings": []
+        },
+        "reference_needs": [],
+        "reference_reasoning": {
+          "version": "RR-2.0",
+          "status": "READY",
+          "queries": 0,
+          "query_budget": 4,
+          "need_results": {},
+          "unresolved_required": [],
+          "trace": [],
+          "admissions": [],
+          "generation_projection": [],
+          "locked_unknowns": []
+        },
+        "cgc_draft": {
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T01",
+          "profile": "VP02",
+          "camera": "CG-A",
+          "preserve": [
+            "E-BLDG:storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [],
+          "scene_intelligence": {
+            "scene_id": "INVENTORY-BASELINE",
+            "identity_anchors": [
+              "E-BLDG"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BLDG",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.85,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 1.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-2a",
+            "resolved": {
+              "profile": "VP02",
+              "mode": "T01",
+              "camera": "CG-A",
+              "fear_city_identity": null,
+              "preservation": null,
+              "uncertainty": null,
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": null,
+              "occlusion_lock": null,
+              "frontalization": null,
+              "aspect_ratio": null,
+              "street_presence": null
+            }
+          }
+        },
+        "generation_ready": false,
+        "cgc_final": {
+          "source_identity": "INVENTORY-SYNTHETIC-NO-IMAGE",
+          "mode": "T01",
+          "profile": "VP02",
+          "camera": "CG-A",
+          "preserve": [
+            "E-BLDG:storefront:PRESERVE_EXACT"
+          ],
+          "transform": [],
+          "remove": [],
+          "infer": [],
+          "unknown": [],
+          "forbid": [],
+          "semantic_text_lock": "STRICT",
+          "material_intensity_delta": 0,
+          "occlusion_locks": [],
+          "scene_intelligence": {
+            "scene_id": "INVENTORY-BASELINE",
+            "identity_anchors": [
+              "E-BLDG"
+            ],
+            "protected_relationships": [],
+            "entity_actions": [
+              {
+                "entity_id": "E-BLDG",
+                "action": "PRESERVE_EXACT",
+                "relationship_lock": false,
+                "protected_relationships": [],
+                "salience": {
+                  "score": 0.85,
+                  "band": "CRITICAL_ATTENTION",
+                  "axes": {
+                    "identity_salience": 1.0,
+                    "structural_dependency": 1.0,
+                    "task_relevance": 1.0,
+                    "relationship_centrality": 0.0,
+                    "temporal_relevance": 1.0
+                  }
+                }
+              }
+            ],
+            "unknown_locks": [],
+            "reference_need_hints": []
+          },
+          "cil": {
+            "commands": "/sc-2a",
+            "resolved": {
+              "profile": "VP02",
+              "mode": "T01",
+              "camera": "CG-A",
+              "fear_city_identity": null,
+              "preservation": null,
+              "uncertainty": null,
+              "explicit_fear_city_profile_override": false,
+              "identity_lock": null,
+              "occlusion_lock": null,
+              "frontalization": null,
+              "aspect_ratio": null,
+              "street_presence": null
+            }
+          },
+          "reference_reasoning": {
+            "version": "RR-2.0",
+            "status": "READY",
+            "queries": 0,
+            "query_budget": 4,
+            "need_results": {},
+            "unresolved_required": [],
+            "trace": [],
+            "admissions": [],
+            "generation_projection": [],
+            "locked_unknowns": []
+          },
+          "pre_generation_gate": {
+            "status": "BLOCK_GENERATION",
+            "findings": [
+              {
+                "status": "FAIL",
+                "severity": "S3",
+                "code": "TEXT_MUTATION",
+                "expected": "TERMINAL DINER",
+                "actual": "TERMINAL DINNER"
+              }
+            ],
+            "reference_preflight": {
+              "status": "PASS",
+              "admitted": [],
+              "rejected": []
+            }
+          },
+          "reference_features": [],
+          "text_render_plan": {
+            "tokens": [
+              {
+                "literal": "TERMINAL DINER",
+                "confidence": 0.99,
+                "state": "FROZEN_EXACT",
+                "preservation_level": "P0",
+                "identity_bearing": true,
+                "numeral": false,
+                "token_id": "T1"
+              }
+            ],
+            "proposed_text": {
+              "T1": "TERMINAL DINNER"
+            }
+          }
+        },
+        "pre_generation_gate": {
+          "status": "BLOCK_GENERATION",
+          "findings": [
+            {
+              "status": "FAIL",
+              "severity": "S3",
+              "code": "TEXT_MUTATION",
+              "expected": "TERMINAL DINER",
+              "actual": "TERMINAL DINNER"
+            }
+          ],
+          "reference_preflight": {
+            "status": "PASS",
+            "admitted": [],
+            "rejected": []
+          }
+        },
+        "status": "BLOCKED_PREFLIGHT"
+      },
+      "result_sha256": "0157d4c2dad18452604ab41e595e2b8cf7c89df06bd2d2bd1f129cc8e0cec310",
+      "repeat_identical": true
+    }
+  ]
+}

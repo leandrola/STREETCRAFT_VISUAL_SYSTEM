@@ -1,0 +1,2019 @@
+[
+  {
+    "sha256": "606df421aabc715cf11ef86336b9d06bbd35081a4b2f95346224506ecc445684",
+    "bytes_each": 733554,
+    "paths": [
+      "benchmark/r2b_1_9_1/sources/R2B-FC-001_source.jpg",
+      "validation/camera_routing/l3_fear_city_evidence/FCV001_VIEW_01.jpg"
+    ],
+    "potential_duplicate_bytes": 733554,
+    "protected_paths": [
+      "benchmark/r2b_1_9_1/sources/R2B-FC-001_source.jpg",
+      "validation/camera_routing/l3_fear_city_evidence/FCV001_VIEW_01.jpg"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "282ddf02a476851fa231accfceebd3b83d5d7d5ae72e6a5153097b4081d368fc",
+    "bytes_each": 33183,
+    "paths": [
+      "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_source.jpg",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/source.image",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/source.image",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/source.image",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/source.image",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/source.image",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/source.image",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/source.image"
+    ],
+    "potential_duplicate_bytes": 232281,
+    "protected_paths": [
+      "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_source.jpg",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/source.image",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/source.image",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/source.image",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/source.image",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/source.image",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/source.image",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/source.image"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "cb8a3ffa9ed1c05c2f5455d21ca6ac56150e69f0a584eb244df751e41cc9f016",
+    "bytes_each": 3470140,
+    "paths": [
+      "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_candidate_PASS.png",
+      "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-F_candidate_initial.png"
+    ],
+    "potential_duplicate_bytes": 3470140,
+    "protected_paths": [
+      "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-D_candidate_PASS.png",
+      "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-F_candidate_initial.png"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "f0ba6e1f5bb5e3f40f39c0847f3d980e25c8c110b15b932cb1b3a10984a62860",
+    "bytes_each": 155553,
+    "paths": [
+      "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-E_source.jpg",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/source.image",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/source.image",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/source.image",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/source.image",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/source.image"
+    ],
+    "potential_duplicate_bytes": 777765,
+    "protected_paths": [
+      "benchmark/r2b_1_9_1/evidence_2026_09_21/R2B-191-E_source.jpg",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/source.image",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/source.image",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/source.image",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/source.image",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/source.image"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "65b4fe55e8920d9b4ac715e8258c551d2905403d7883f7b69b761bd7e005741a",
+    "bytes_each": 237,
+    "paths": [
+      ".venv-sc/bin/pip3.14",
+      ".venv-sc/bin/pip3",
+      ".venv-sc/bin/pip"
+    ],
+    "potential_duplicate_bytes": 474,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "1b68144734c4b66791f27add5d425f3620775585718a03d0f9b110ba3a4d88db",
+    "bytes_each": 82,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/WHEEL",
+      ".venv/lib/python3.9/site-packages/typing_extensions-4.16.0.dist-info/WHEEL"
+    ],
+    "potential_duplicate_bytes": 82,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes_each": 0,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/REQUESTED",
+      ".venv-sc/lib/python3.14/site-packages/attrs/py.typed",
+      ".venv-sc/lib/python3.14/site-packages/rpds/py.typed",
+      ".venv-sc/lib/python3.14/site-packages/jsonschema-4.26.0.dist-info/REQUESTED",
+      ".venv-sc/lib/python3.14/site-packages/referencing/py.typed",
+      ".venv-sc/lib/python3.14/site-packages/referencing/tests/__init__.py",
+      ".venv-sc/lib/python3.14/site-packages/PIL/py.typed",
+      ".venv-sc/lib/python3.14/site-packages/pip/_internal/utils/__init__.py",
+      ".venv-sc/lib/python3.14/site-packages/pip/_internal/operations/__init__.py",
+      ".venv-sc/lib/python3.14/site-packages/pip/_internal/operations/build/__init__.py",
+      ".venv-sc/lib/python3.14/site-packages/pip/_internal/resolution/__init__.py",
+      ".venv-sc/lib/python3.14/site-packages/pip/_internal/resolution/legacy/__init__.py",
+      ".venv-sc/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/__init__.py",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/packaging/py.typed",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/truststore/py.typed",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/distro/py.typed",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/cachecontrol/py.typed",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/idna/py.typed",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/certifi/py.typed",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/py.typed",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/rich/py.typed",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/__init__.py",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/resolvelib/py.typed",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/platformdirs/py.typed",
+      ".venv-sc/lib/python3.14/site-packages/attr/py.typed",
+      ".venv-sc/lib/python3.14/site-packages/jsonschema/tests/__init__.py",
+      ".venv-sc/lib/python3.14/site-packages/jsonschema/tests/typing/__init__.py",
+      ".venv-sc/lib/python3.14/site-packages/jsonschema_specifications/tests/__init__.py",
+      ".venv-sc/lib/python3.14/site-packages/pillow-12.3.0.dist-info/REQUESTED",
+      ".venv/lib/python3.9/site-packages/playwright-1.60.0.dist-info/REQUESTED",
+      ".venv/lib/python3.9/site-packages/playwright/py.typed",
+      ".venv/lib/python3.9/site-packages/playwright/_impl/__init__.py",
+      ".venv/lib/python3.9/site-packages/pip/_internal/utils/__init__.py",
+      ".venv/lib/python3.9/site-packages/pip/_internal/operations/__init__.py",
+      ".venv/lib/python3.9/site-packages/pip/_internal/operations/build/__init__.py",
+      ".venv/lib/python3.9/site-packages/pip/_internal/resolution/__init__.py",
+      ".venv/lib/python3.9/site-packages/pip/_internal/resolution/legacy/__init__.py",
+      ".venv/lib/python3.9/site-packages/pip/_internal/resolution/resolvelib/__init__.py",
+      ".venv/lib/python3.9/site-packages/pip/_vendor/chardet/metadata/__init__.py",
+      ".venv/lib/python3.9/site-packages/pip/_vendor/html5lib/filters/__init__.py",
+      ".venv/lib/python3.9/site-packages/pip/_vendor/urllib3/contrib/__init__.py",
+      ".venv/lib/python3.9/site-packages/pip/_vendor/urllib3/contrib/_securetransport/__init__.py",
+      ".venv/lib/python3.9/site-packages/pip/_vendor/urllib3/packages/backports/__init__.py",
+      ".venv/lib/python3.9/site-packages/pip/_vendor/resolvelib/compat/__init__.py",
+      ".venv/lib/python3.9/site-packages/pip-21.2.4.dist-info/REQUESTED",
+      ".venv/lib/python3.9/site-packages/setuptools/_vendor/__init__.py",
+      ".venv/lib/python3.9/site-packages/pkg_resources/_vendor/__init__.py",
+      ".venv/lib/python3.9/site-packages/greenlet/platform/__init__.py",
+      ".venv/lib/python3.9/site-packages/pyee/py.typed",
+      ".venv/lib/python3.9/site-packages/setuptools-58.0.4.dist-info/REQUESTED",
+      "validation/rr2_real_archive/results/RR2-REAL-08.stderr.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-05.stderr.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-02.stderr.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-07.stderr.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-04.stderr.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-01.stderr.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-06.stderr.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-03.stderr.txt",
+      "validation/gate4_2026_09_21/cgc_e2e.stderr.txt",
+      "validation/gate4_2026_09_21/orchestrator.stdout.txt",
+      "validation/gate4_2026_09_21/rr2_unit.stdout.txt",
+      "validation/gate4_2026_09_21/final_regression_after_promotion.stderr.txt",
+      "validation/gate4_2026_09_21/full_regression.stderr.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.stderr.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.stderr.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.stderr.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.stderr.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.stderr.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.stderr.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.stderr.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.stderr.txt"
+    ],
+    "potential_duplicate_bytes": 0,
+    "protected_paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-08.stderr.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-05.stderr.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-02.stderr.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-07.stderr.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-04.stderr.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-01.stderr.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-06.stderr.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-03.stderr.txt",
+      "validation/gate4_2026_09_21/cgc_e2e.stderr.txt",
+      "validation/gate4_2026_09_21/orchestrator.stdout.txt",
+      "validation/gate4_2026_09_21/rr2_unit.stdout.txt",
+      "validation/gate4_2026_09_21/final_regression_after_promotion.stderr.txt",
+      "validation/gate4_2026_09_21/full_regression.stderr.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.stderr.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.stderr.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.stderr.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.stderr.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.stderr.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.stderr.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.stderr.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.stderr.txt"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+    "bytes_each": 4,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/INSTALLER",
+      ".venv-sc/lib/python3.14/site-packages/rpds_py-2026.6.3.dist-info/INSTALLER",
+      ".venv-sc/lib/python3.14/site-packages/jsonschema_specifications-2025.9.1.dist-info/INSTALLER",
+      ".venv-sc/lib/python3.14/site-packages/jsonschema-4.26.0.dist-info/INSTALLER",
+      ".venv-sc/lib/python3.14/site-packages/referencing-0.37.0.dist-info/INSTALLER",
+      ".venv-sc/lib/python3.14/site-packages/attrs-26.1.0.dist-info/INSTALLER",
+      ".venv-sc/lib/python3.14/site-packages/pillow-12.3.0.dist-info/INSTALLER",
+      ".venv/lib/python3.9/site-packages/playwright-1.60.0.dist-info/INSTALLER",
+      ".venv/lib/python3.9/site-packages/greenlet-3.2.5.dist-info/INSTALLER",
+      ".venv/lib/python3.9/site-packages/pip-21.2.4.dist-info/top_level.txt",
+      ".venv/lib/python3.9/site-packages/pip-21.2.4.dist-info/INSTALLER",
+      ".venv/lib/python3.9/site-packages/typing_extensions-4.16.0.dist-info/INSTALLER",
+      ".venv/lib/python3.9/site-packages/pyee-13.0.1.dist-info/INSTALLER",
+      ".venv/lib/python3.9/site-packages/setuptools-58.0.4.dist-info/INSTALLER"
+    ],
+    "potential_duplicate_bytes": 52,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+    "bytes_each": 197,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/packaging/LICENSE",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/packaging/LICENSE"
+    ],
+    "potential_duplicate_bytes": 197,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+    "bytes_each": 10174,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.APACHE",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/packaging/LICENSE.APACHE"
+    ],
+    "potential_duplicate_bytes": 10174,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+    "bytes_each": 1344,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.BSD",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/packaging/LICENSE.BSD"
+    ],
+    "potential_duplicate_bytes": 1344,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "33be7b7e8fa4fd19b1760e1a8ed8a668bdab852c91b692dd41424bcb725a9fca",
+    "bytes_each": 1086,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/truststore/LICENSE",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/truststore/LICENSE"
+    ],
+    "potential_duplicate_bytes": 1086,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "492dedba85da5872f78e6091bcd1fea474d660d35acb4dee964b8aab3f007427",
+    "bytes_each": 614,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/msgpack/COPYING",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/msgpack/COPYING"
+    ],
+    "potential_duplicate_bytes": 614,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17",
+    "bytes_each": 1331,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/pygments/LICENSE",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/pygments/LICENSE"
+    ],
+    "potential_duplicate_bytes": 1331,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "808e10c8a6ab8deb149ff9b3fb19f447a808094606d712a9ca57fead3552599d",
+    "bytes_each": 14531,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/distlib/LICENSE.txt",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/distlib/LICENSE.txt"
+    ],
+    "potential_duplicate_bytes": 14531,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "cb5e8e7e5f4a3988e1063c142c60dc2df75605f4c46515e776e3aca6df976e14",
+    "bytes_each": 11325,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/distro/LICENSE",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/distro/LICENSE"
+    ],
+    "potential_duplicate_bytes": 11325,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "86eeee87be2a43f3ff1f56496f451f69243926f025fedbb033666c304c4c161b",
+    "bytes_each": 558,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/cachecontrol/LICENSE.txt",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/cachecontrol/LICENSE.txt"
+    ],
+    "potential_duplicate_bytes": 558,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "b7a336abf3b04e180ec065cdd16e705d079e1cc7a14f910aa6e9187f36b9cd87",
+    "bytes_each": 1541,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md"
+    ],
+    "potential_duplicate_bytes": 1541,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+    "bytes_each": 10142,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/requests/LICENSE",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/requests/LICENSE"
+    ],
+    "potential_duplicate_bytes": 10142,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe",
+    "bytes_each": 1072,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/tomli/LICENSE",
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/tomli_w/LICENSE",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/tomli/LICENSE",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/tomli_w/LICENSE"
+    ],
+    "potential_duplicate_bytes": 3216,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7",
+    "bytes_each": 989,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/certifi/LICENSE",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/certifi/LICENSE"
+    ],
+    "potential_duplicate_bytes": 989,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "1b22b049b5267d6dfc23a67bf4a84d8ec04b9fdfb1a51d360e42b4342c8b4154",
+    "bytes_each": 1081,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/pyproject_hooks/LICENSE",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/LICENSE"
+    ],
+    "potential_duplicate_bytes": 1081,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "deed7c17a4318158190a3ea239cc879a5a50271cebb98ae7025f48fbe58dca15",
+    "bytes_each": 1056,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/rich/LICENSE",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/rich/LICENSE"
+    ],
+    "potential_duplicate_bytes": 1056,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686",
+    "bytes_each": 1093,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/urllib3/LICENSE.txt",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/urllib3/LICENSE.txt"
+    ],
+    "potential_duplicate_bytes": 1093,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+    "bytes_each": 1023,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/pkg_resources/LICENSE",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/pkg_resources/LICENSE"
+    ],
+    "potential_duplicate_bytes": 1023,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "f388fd38cad13112c1dc0f669bbe80e7f84541edbafb72f3030d2ca7642c3c9d",
+    "bytes_each": 751,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/resolvelib/LICENSE",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/resolvelib/LICENSE"
+    ],
+    "potential_duplicate_bytes": 751,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6",
+    "bytes_each": 1089,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/platformdirs/LICENSE",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/platformdirs/LICENSE"
+    ],
+    "potential_duplicate_bytes": 1089,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "aad0b0a12256807936d52d4a6f88a1773236ae527564a688bab4e3fe780e8724",
+    "bytes_each": 87,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/jsonschema_specifications-2025.9.1.dist-info/WHEEL",
+      ".venv-sc/lib/python3.14/site-packages/referencing-0.37.0.dist-info/WHEEL"
+    ],
+    "potential_duplicate_bytes": 87,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
+    "bytes_each": 1057,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/jsonschema_specifications-2025.9.1.dist-info/licenses/COPYING",
+      ".venv-sc/lib/python3.14/site-packages/referencing-0.37.0.dist-info/licenses/COPYING"
+    ],
+    "potential_duplicate_bytes": 1057,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "ddf071712a6926be84384714a23bdf946dc47a083b96fd90a7474d41020bacfe",
+    "bytes_each": 63,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/PIL/_imagingmath.pyi",
+      ".venv-sc/lib/python3.14/site-packages/PIL/_imagingmorph.pyi",
+      ".venv-sc/lib/python3.14/site-packages/PIL/_imagingtk.pyi",
+      ".venv-sc/lib/python3.14/site-packages/PIL/_webp.pyi",
+      ".venv-sc/lib/python3.14/site-packages/PIL/_avif.pyi"
+    ],
+    "potential_duplicate_bytes": 252,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "10156fbcf4539ff788a73e5ee50ced48276b317ed0c1ded53fddd14a82256762",
+    "bytes_each": 286,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip/py.typed",
+      ".venv/lib/python3.9/site-packages/pip/py.typed"
+    ],
+    "potential_duplicate_bytes": 286,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "fa31cb384fd31da673e4115c0a7a122fd11802d2749d77a6e3db3da1fe23bcac",
+    "bytes_each": 1015,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip/_internal/utils/_log.py",
+      ".venv/lib/python3.9/site-packages/pip/_internal/utils/_log.py"
+    ],
+    "potential_duplicate_bytes": 1015,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "b0414751a5096eabfc880acbdc702d733b5666618e157d358537ac4b2b43121d",
+    "bytes_each": 116,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip/_internal/cli/status_codes.py",
+      ".venv/lib/python3.9/site-packages/pip/_internal/cli/status_codes.py"
+    ],
+    "potential_duplicate_bytes": 116,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "500aafce96e2d156d9a3751beac904799030fa8a08651fb35ff5a909bc720a85",
+    "bytes_each": 596,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip/_internal/vcs/__init__.py",
+      ".venv/lib/python3.9/site-packages/pip/_internal/vcs/__init__.py"
+    ],
+    "potential_duplicate_bytes": 596,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "1eaea4b7a8170608cd8ade614d358b03378234e2a807e374a46612a9e86b962f",
+    "bytes_each": 858,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip/_internal/distributions/__init__.py",
+      ".venv/lib/python3.9/site-packages/pip/_internal/distributions/__init__.py"
+    ],
+    "potential_duplicate_bytes": 858,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "7424d67a2f1da64accb100dc8d093be004e5f47b08047d326edf3338f36a3187",
+    "bytes_each": 1081,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/msgpack/exceptions.py",
+      ".venv/lib/python3.9/site-packages/pip/_vendor/msgpack/exceptions.py"
+    ],
+    "potential_duplicate_bytes": 1081,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "2f06cf92c73403524c6e2e979ee3dd301527f375fb04fb85356a8f184288ebdf",
+    "bytes_each": 10820,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/distlib/resources.py",
+      ".venv/lib/python3.9/site-packages/pip/_vendor/distlib/resources.py"
+    ],
+    "potential_duplicate_bytes": 10820,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "f0f8f2675695a10a5156fb7bd66bafbaae6a13e8d315990af862c792175e6e67",
+    "bytes_each": 26,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/tomli/py.typed",
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/tomli_w/py.typed"
+    ],
+    "potential_duplicate_bytes": 26,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "d64dc2afde6f0b1c464460e58eb5b7c0c76965d2f73617f4bb59fe936a9db026",
+    "bytes_each": 255,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pip/_vendor/certifi/__main__.py",
+      ".venv/lib/python3.9/site-packages/pip/_vendor/certifi/__main__.py"
+    ],
+    "potential_duplicate_bytes": 255,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "bytes_each": 1,
+    "paths": [
+      ".venv-sc/lib/python3.14/site-packages/pillow-12.3.0.dist-info/zip-safe",
+      ".venv/lib/python3.9/site-packages/pip/_vendor/chardet/cli/__init__.py"
+    ],
+    "potential_duplicate_bytes": 1,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "a143f7ca3da6f2a12f5d7879cb2c650311ae8ab474daf5c26c21b5e96825e1ba",
+    "bytes_each": 20460,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/request.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/request.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/request.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/request.json"
+    ],
+    "potential_duplicate_bytes": 61380,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/request.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/request.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/request.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/request.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "2df2651a4730cd6d88ef467f5d76891dd7fabe28ab266c7de74621a28bf16827",
+    "bytes_each": 85792,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/runtime.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/runtime.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/runtime.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/runtime.json"
+    ],
+    "potential_duplicate_bytes": 257376,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/runtime.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/runtime.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/runtime.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/runtime.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "ed153e4ea87eaa031a483e8ae12d670b6e5c2d142924e4d944dc511425a92adc",
+    "bytes_each": 2225,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/source_provenance.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sidecars/source_provenance.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/sidecars/source_provenance.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sidecars/source_provenance.json"
+    ],
+    "potential_duplicate_bytes": 6675,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/source_provenance.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sidecars/source_provenance.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/sidecars/source_provenance.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sidecars/source_provenance.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "3fc9811743f86f70bce17764ad70d0a438f2e53685975596b4707da5127bb75b",
+    "bytes_each": 21734,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/candidate_graph.json",
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/expected_graph.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/expected_graph.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/expected_graph.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/expected_graph.json"
+    ],
+    "potential_duplicate_bytes": 152138,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/candidate_graph.json",
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/expected_graph.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/expected_graph.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/expected_graph.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/expected_graph.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "185285dc65b9e66bba8112c9c3597317eae62782a7402d5979efe2c1bdcad420",
+    "bytes_each": 18183,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/sar2.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sar2.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/sar2.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sar2.json"
+    ],
+    "potential_duplicate_bytes": 54549,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/sar2.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sar2.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/sar2.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sar2.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "c2ea9832a4705caafb6b07564235996a7da90c8e97c498b6c2fd797ccc9e83d7",
+    "bytes_each": 14902,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/preservation_baseline.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sidecars/preservation_baseline.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/sidecars/preservation_baseline.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sidecars/preservation_baseline.json"
+    ],
+    "potential_duplicate_bytes": 44706,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/preservation_baseline.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sidecars/preservation_baseline.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/sidecars/preservation_baseline.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sidecars/preservation_baseline.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "d9fd45e27f5ae76c4ce0de39ae732031077d1e776e3c2c0fad1d45d5763779b2",
+    "bytes_each": 9584,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/observations.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sidecars/observations.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/sidecars/observations.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sidecars/observations.json"
+    ],
+    "potential_duplicate_bytes": 28752,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/observations.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sidecars/observations.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/sidecars/observations.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sidecars/observations.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "e34f4fa417b637a3fa21c582497ae6cd2c3bf7e02c9a61c0414176087ca01408",
+    "bytes_each": 44522,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/manifest.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/manifest.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/manifest.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/manifest.json"
+    ],
+    "potential_duplicate_bytes": 133566,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/manifest.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/manifest.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/manifest.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/manifest.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "66ec147bea5260b2536a4f1a13d0c703d7b34a717abc9e1f5edf648089ed08d5",
+    "bytes_each": 7254,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/generation_context.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/generation_context.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/generation_context.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/generation_context.json"
+    ],
+    "potential_duplicate_bytes": 21762,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/generation_context.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/generation_context.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/generation_context.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/generation_context.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "c09e93d07aebd51203e08d385a82c49918f318e47f60f51f3b672077cd98ee4e",
+    "bytes_each": 3942,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/design.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sidecars/design.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/sidecars/design.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sidecars/design.json"
+    ],
+    "potential_duplicate_bytes": 11826,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/design.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sidecars/design.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/sidecars/design.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sidecars/design.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "37dd0f143288ade92bfb80bd8ef670b4c5f54850a5e882387cb68267214ddb5b",
+    "bytes_each": 79623,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/contract.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/contract.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/contract.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/contract.json"
+    ],
+    "potential_duplicate_bytes": 238869,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/contract.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/contract.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/contract.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/contract.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "55d76e27242f56485ca6dffe6771697ef397f1d1e1e7fd35b66a3f7625c2fe7c",
+    "bytes_each": 20309,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/cgc_final.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/cgc_final.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/cgc_final.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/cgc_final.json"
+    ],
+    "potential_duplicate_bytes": 60927,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/cgc_final.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/cgc_final.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/cgc_final.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/cgc_final.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "8bfd19dd29069057ec881fd77e78e5fcb087c905fe6f27057cf93932c0cd1fe2",
+    "bytes_each": 226,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/rr2.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/rr2.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/rr2.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/rr2.json"
+    ],
+    "potential_duplicate_bytes": 678,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/kennys_new_01/rr2.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/rr2.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/rr2.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/rr2.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "9ef38ea1a63d5d31f6542c888b336b4356dcdbf43822cfb5055b73d0604fb456",
+    "bytes_each": 1962,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/kennys/reception.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sidecars/reception.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/sidecars/reception.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sidecars/reception.json"
+    ],
+    "potential_duplicate_bytes": 5886,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/kennys/reception.json",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sidecars/reception.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/sidecars/reception.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sidecars/reception.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "ed8f17f1204d041d47f0618378e7056b9d0d95fc4b67aa9d4203003b75194f90",
+    "bytes_each": 23338,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/kennys/K0_OBSERVED_INFERRED_DESIGN.md",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sidecars/k0.md",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/sidecars/k0.md",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sidecars/k0.md"
+    ],
+    "potential_duplicate_bytes": 70014,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/kennys/K0_OBSERVED_INFERRED_DESIGN.md",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/sidecars/k0.md",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/sidecars/k0.md",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/sidecars/k0.md"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "45b8bff5c33ea411ffef3c88db99d757ce462a7f13b56df3f2fbc62b994357b2",
+    "bytes_each": 84333,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/kennys/source/kennys-shop.jpg",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/source.image",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/source.image",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/source.image"
+    ],
+    "potential_duplicate_bytes": 252999,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/kennys/source/kennys-shop.jpg",
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/source.image",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/source.image",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/source.image"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "2fe53ee2713d3077491b19875e3e0d3342d4f7ee6f1903f11e34703f42900ab0",
+    "bytes_each": 5699,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/request.json",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/request.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/request.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/request.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/request.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/request.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/request.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/request.json"
+    ],
+    "potential_duplicate_bytes": 39893,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/request.json",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/request.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/request.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/request.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/request.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/request.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/request.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/request.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "3987220126c2af9302abc34e72afab0a070b5cc825259fcc701e60d08d834e09",
+    "bytes_each": 31930,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/runtime.json",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/runtime.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/runtime.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/runtime.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/runtime.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/runtime.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/runtime.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/runtime.json"
+    ],
+    "potential_duplicate_bytes": 223510,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/runtime.json",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/runtime.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/runtime.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/runtime.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/runtime.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/runtime.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/runtime.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/runtime.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "cea40cb4fccc9c47037301c6304b3b99853e8c10be7512a215a59b8e2882ac43",
+    "bytes_each": 8714,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/candidate_graph.json",
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/expected_graph.json",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/candidate_graph.json",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/expected_graph.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/expected_graph.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/expected_graph.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/expected_graph.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/expected_graph.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/expected_graph.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/expected_graph.json"
+    ],
+    "potential_duplicate_bytes": 130710,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/candidate_graph.json",
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/expected_graph.json",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/candidate_graph.json",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/expected_graph.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/expected_graph.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/expected_graph.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/expected_graph.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/expected_graph.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/expected_graph.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/expected_graph.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "6f1586703a6fe7fc53a4f980e22406dfaa5deb54645b43b02938bd2a3f05d9b5",
+    "bytes_each": 6760,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/sar2.json",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/sar2.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/sar2.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/sar2.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/sar2.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/sar2.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/sar2.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/sar2.json"
+    ],
+    "potential_duplicate_bytes": 47320,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/sar2.json",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/sar2.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/sar2.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/sar2.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/sar2.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/sar2.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/sar2.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/sar2.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "da3c021fea39eafb972a34876786cecc648f95359c32dbbffd232ad504f14895",
+    "bytes_each": 9747,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/manifest.json",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/manifest.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/manifest.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/manifest.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/manifest.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/manifest.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/manifest.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/manifest.json"
+    ],
+    "potential_duplicate_bytes": 68229,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/manifest.json",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/manifest.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/manifest.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/manifest.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/manifest.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/manifest.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/manifest.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/manifest.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "26140b016abc6d40a30e3763816cdf947d6a040643340d6c5b2f68f25ac367c2",
+    "bytes_each": 2809,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/generation_context.json",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/generation_context.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/generation_context.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/generation_context.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/generation_context.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/generation_context.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/generation_context.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/generation_context.json"
+    ],
+    "potential_duplicate_bytes": 19663,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/generation_context.json",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/generation_context.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/generation_context.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/generation_context.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/generation_context.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/generation_context.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/generation_context.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/generation_context.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "c9ece946ae08533d2487d55c717a149caab7e8cc3e4c1eb388fdf927be9e58f8",
+    "bytes_each": 34448,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/contract.json",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/contract.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/contract.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/contract.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/contract.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/contract.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/contract.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/contract.json"
+    ],
+    "potential_duplicate_bytes": 241136,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/contract.json",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/contract.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/contract.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/contract.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/contract.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/contract.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/contract.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/contract.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "06bcde8b726ceeab1d2b823b2a25761ab44f9a9d0c9035d70bf08db8d8aad462",
+    "bytes_each": 7133,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/cgc_final.json",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/cgc_final.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/cgc_final.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/cgc_final.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/cgc_final.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/cgc_final.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/cgc_final.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/cgc_final.json"
+    ],
+    "potential_duplicate_bytes": 49931,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/cgc_final.json",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/cgc_final.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/cgc_final.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/cgc_final.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/cgc_final.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/cgc_final.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/cgc_final.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/cgc_final.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "8f22c4e7e3bee1c303699117a7225d8d816964e88aea01803512938af3010169",
+    "bytes_each": 226,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/rr2.json",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/rr2.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/rr2.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/rr2.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/rr2.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/rr2.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/rr2.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/rr2.json"
+    ],
+    "potential_duplicate_bytes": 1582,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_d_new_01/rr2.json",
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/rr2.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/rr2.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/rr2.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/rr2.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/rr2.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/rr2.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/rr2.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "8d5954d44f329decef46328046effa13b8e5373ca64ce56f2f14a1f6132c0d8b",
+    "bytes_each": 5939,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/request.json",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/request.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/request.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/request.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/request.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/request.json"
+    ],
+    "potential_duplicate_bytes": 29695,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/request.json",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/request.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/request.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/request.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/request.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/request.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "7e099e53c980735557e5d967bd4b25c92ece2ed2fe38274e8518a44bb63cf8a3",
+    "bytes_each": 32281,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/runtime.json",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/runtime.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/runtime.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/runtime.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/runtime.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/runtime.json"
+    ],
+    "potential_duplicate_bytes": 161405,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/runtime.json",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/runtime.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/runtime.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/runtime.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/runtime.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/runtime.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "c75510bf04dd03168e58d63a835cf4f95dc8ff5de0defcfb1bf1c8a09f8fb309",
+    "bytes_each": 9686,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/candidate_graph.json",
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/expected_graph.json",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/candidate_graph.json",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/expected_graph.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/expected_graph.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/expected_graph.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/expected_graph.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/expected_graph.json"
+    ],
+    "potential_duplicate_bytes": 106546,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/candidate_graph.json",
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/expected_graph.json",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/candidate_graph.json",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/expected_graph.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/expected_graph.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/expected_graph.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/expected_graph.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/candidate_graph.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/expected_graph.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "4aad179a06df8566e95ecdb385151e0f62905aa1d1ceca3a03d4b5f1f690662b",
+    "bytes_each": 6600,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/sar2.json",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/sar2.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/sar2.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/sar2.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/sar2.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/sar2.json"
+    ],
+    "potential_duplicate_bytes": 33000,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/sar2.json",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/sar2.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/sar2.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/sar2.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/sar2.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/sar2.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "9d25a10d38ff1354cc3831a1771ae6af76418de9dd1901dbc9c2a6e4cca8fc68",
+    "bytes_each": 14910,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/manifest.json",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/manifest.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/manifest.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/manifest.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/manifest.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/manifest.json"
+    ],
+    "potential_duplicate_bytes": 74550,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/manifest.json",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/manifest.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/manifest.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/manifest.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/manifest.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/manifest.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "4414c1b80f6e66dc257b1f520e4e947cd8c9b5b591542114860b57f4371cc263",
+    "bytes_each": 2618,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/generation_context.json",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/generation_context.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/generation_context.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/generation_context.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/generation_context.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/generation_context.json"
+    ],
+    "potential_duplicate_bytes": 13090,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/generation_context.json",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/generation_context.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/generation_context.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/generation_context.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/generation_context.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/generation_context.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "42db55f13f0e44f4c55161a05ce9f7dae1108a0cd426264c15321f2895edcf31",
+    "bytes_each": 33529,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/contract.json",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/contract.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/contract.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/contract.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/contract.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/contract.json"
+    ],
+    "potential_duplicate_bytes": 167645,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/contract.json",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/contract.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/contract.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/contract.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/contract.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/contract.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "15ca3622fb44cd5125348699f4c1317d55f9c42fc339c745b38065e16127a90b",
+    "bytes_each": 6179,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/cgc_final.json",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/cgc_final.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/cgc_final.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/cgc_final.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/cgc_final.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/cgc_final.json"
+    ],
+    "potential_duplicate_bytes": 30895,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/cgc_final.json",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/cgc_final.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/cgc_final.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/cgc_final.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/cgc_final.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/cgc_final.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "0cbdede2fff443d62dde992606e06b3a45a530743faaa6865e7233875a833f3b",
+    "bytes_each": 384,
+    "paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/rr2.json",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/rr2.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/rr2.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/rr2.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/rr2.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/rr2.json"
+    ],
+    "potential_duplicate_bytes": 1920,
+    "protected_paths": [
+      "visual_scene_graph/pilot/fixtures/r2b_e_new_01/rr2.json",
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/rr2.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/rr2.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/rr2.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/rr2.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/rr2.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "e7d437183432ab36de61ba91fd90f4d327bb6f45867fba6410e268513584e984",
+    "bytes_each": 283,
+    "paths": [
+      ".venv/bin/pip3.9",
+      ".venv/bin/pip3",
+      ".venv/bin/pip"
+    ],
+    "potential_duplicate_bytes": 566,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "b33e69611490a9e7603add80320c4b65d4e33bea9caff24cbe0884251f48009f",
+    "bytes_each": 4755,
+    "paths": [
+      ".venv/include/site/python3.9/greenlet/greenlet.h",
+      ".venv/lib/python3.9/site-packages/greenlet/greenlet.h"
+    ],
+    "potential_duplicate_bytes": 4755,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "d4a8c45554b3ba55e8102f03f576bab6ea4abfb70cdc60095471d504e34a1014",
+    "bytes_each": 695,
+    "paths": [
+      ".venv/lib/python3.9/site-packages/playwright/_impl/__pyinstaller/hook-playwright.sync_api.py",
+      ".venv/lib/python3.9/site-packages/playwright/_impl/__pyinstaller/hook-playwright.async_api.py"
+    ],
+    "potential_duplicate_bytes": 695,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "70bf421a13e87857ca684bfa2cc55f06d7c5a50f71253a3ff1d74769b14a957e",
+    "bytes_each": 6421,
+    "paths": [
+      ".venv/lib/python3.9/site-packages/playwright/driver/package/lib/vite/traceViewer/codeMirrorModule.DYBRYzYX.css",
+      ".venv/lib/python3.9/site-packages/playwright/driver/package/lib/vite/recorder/assets/codeMirrorModule-DYBRYzYX.css"
+    ],
+    "potential_duplicate_bytes": 6421,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "0f1d5219934e96e83b8db162d60b4d8c09b5de1e7d38031cbafe4a3c0f2889c9",
+    "bytes_each": 80340,
+    "paths": [
+      ".venv/lib/python3.9/site-packages/playwright/driver/package/lib/vite/traceViewer/codicon.DCmgc-ay.ttf",
+      ".venv/lib/python3.9/site-packages/playwright/driver/package/lib/vite/dashboard/assets/codicon-DCmgc-ay.ttf",
+      ".venv/lib/python3.9/site-packages/playwright/driver/package/lib/vite/recorder/assets/codicon-DCmgc-ay.ttf"
+    ],
+    "potential_duplicate_bytes": 160680,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "6b0a4367bdeab10995bc239278f04c68c10e48adbec15e799e01909a0d66dcb9",
+    "bytes_each": 5033,
+    "paths": [
+      ".venv/lib/python3.9/site-packages/playwright/driver/package/lib/vite/traceViewer/playwright-logo.svg",
+      ".venv/lib/python3.9/site-packages/playwright/driver/package/lib/vite/recorder/playwright-logo.svg"
+    ],
+    "potential_duplicate_bytes": 5033,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "75f12ea2f30d9c0d872dade345f30f562e6d93847b6a509ba53beec6d0b2c346",
+    "bytes_each": 65536,
+    "paths": [
+      ".venv/lib/python3.9/site-packages/setuptools/cli.exe",
+      ".venv/lib/python3.9/site-packages/setuptools/cli-32.exe"
+    ],
+    "potential_duplicate_bytes": 65536,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "5c1af46c7300e87a73dacf6cf41ce397e3f05df6bd9c7e227b4ac59f85769160",
+    "bytes_each": 65536,
+    "paths": [
+      ".venv/lib/python3.9/site-packages/setuptools/gui-32.exe",
+      ".venv/lib/python3.9/site-packages/setuptools/gui.exe"
+    ],
+    "potential_duplicate_bytes": 65536,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "99a86d920729de0acd003d2b7bff51d032ef067be3ce978bc2026a4fedc7d421",
+    "bytes_each": 232056,
+    "paths": [
+      ".venv/lib/python3.9/site-packages/setuptools/_vendor/pyparsing.py",
+      ".venv/lib/python3.9/site-packages/pkg_resources/_vendor/pyparsing.py"
+    ],
+    "potential_duplicate_bytes": 232056,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "34a312dfb668fe75ab67182c0facdb5ec5e073d79d9fd9b5eb470188b98725d1",
+    "bytes_each": 24067,
+    "paths": [
+      ".venv/lib/python3.9/site-packages/setuptools/_vendor/packaging/tags.py",
+      ".venv/lib/python3.9/site-packages/pkg_resources/_vendor/packaging/tags.py"
+    ],
+    "potential_duplicate_bytes": 24067,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "0a76e6f8e3bd0ffa9df194c5c7315c8d26af7b14981599b279aa0fbccb2380f7",
+    "bytes_each": 15470,
+    "paths": [
+      ".venv/lib/python3.9/site-packages/setuptools/_vendor/packaging/version.py",
+      ".venv/lib/python3.9/site-packages/pkg_resources/_vendor/packaging/version.py"
+    ],
+    "potential_duplicate_bytes": 15470,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "c79f44850e7b4cc4fe9134722d9576e4766f6061b06ee713a3a88a87f3b4b4cc",
+    "bytes_each": 1812,
+    "paths": [
+      ".venv/lib/python3.9/site-packages/setuptools/_vendor/packaging/_typing.py",
+      ".venv/lib/python3.9/site-packages/pkg_resources/_vendor/packaging/_typing.py"
+    ],
+    "potential_duplicate_bytes": 1812,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "e9e9dba795e045f8c18ec23df9b9f4d078c77f94c7db53c330e2a4256f31c3ec",
+    "bytes_each": 562,
+    "paths": [
+      ".venv/lib/python3.9/site-packages/setuptools/_vendor/packaging/__init__.py",
+      ".venv/lib/python3.9/site-packages/pkg_resources/_vendor/packaging/__init__.py"
+    ],
+    "potential_duplicate_bytes": 562,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "452865be78ced82b58483f2eae2df67eb30c14c4e607ede286cab5fa08732c4c",
+    "bytes_each": 1811,
+    "paths": [
+      ".venv/lib/python3.9/site-packages/setuptools/_vendor/packaging/utils.py",
+      ".venv/lib/python3.9/site-packages/pkg_resources/_vendor/packaging/utils.py"
+    ],
+    "potential_duplicate_bytes": 1811,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "a339025fc43c7f6a84d4489cdd8890e1bb8355f833da261ebd8f5eed1db2de26",
+    "bytes_each": 2022,
+    "paths": [
+      ".venv/lib/python3.9/site-packages/setuptools/_vendor/packaging/_structures.py",
+      ".venv/lib/python3.9/site-packages/pkg_resources/_vendor/packaging/_structures.py"
+    ],
+    "potential_duplicate_bytes": 2022,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "3cd32c6999f851c087cae6e044e1f56e5e8296e76e3e3239905ad2a7f660925a",
+    "bytes_each": 736,
+    "paths": [
+      ".venv/lib/python3.9/site-packages/setuptools/_vendor/packaging/__about__.py",
+      ".venv/lib/python3.9/site-packages/pkg_resources/_vendor/packaging/__about__.py"
+    ],
+    "potential_duplicate_bytes": 736,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "31776c1a9484fd6f99ac7a02f3b6a7748e0b576140c14ec72cbf9e1defc28e15",
+    "bytes_each": 1128,
+    "paths": [
+      ".venv/lib/python3.9/site-packages/setuptools/_vendor/packaging/_compat.py",
+      ".venv/lib/python3.9/site-packages/pkg_resources/_vendor/packaging/_compat.py"
+    ],
+    "potential_duplicate_bytes": 1128,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "b98a7d975dc5d0b7249d2e9de0deb4cad88180598884a89d78eabd027b314dca",
+    "bytes_each": 31944,
+    "paths": [
+      ".venv/lib/python3.9/site-packages/setuptools/_vendor/packaging/specifiers.py",
+      ".venv/lib/python3.9/site-packages/pkg_resources/_vendor/packaging/specifiers.py"
+    ],
+    "potential_duplicate_bytes": 31944,
+    "protected_paths": [],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "02035dd9e8250d75282a20fd6b6b9fd163e70d87aed4998283cf9a6ad918a56a",
+    "bytes_each": 64060,
+    "paths": [
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/comparison.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/comparison.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/comparison.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/comparison.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/comparison.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/comparison.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/comparison.json"
+    ],
+    "potential_duplicate_bytes": 384360,
+    "protected_paths": [
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/comparison.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/comparison.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/comparison.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/comparison.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/comparison.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/comparison.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/comparison.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "7b995c02541b831524236cf36c9e8e834a8ddbcaea43da6a1f6669918f8a586d",
+    "bytes_each": 57145,
+    "paths": [
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/payloads.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/payloads.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/payloads.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/payloads.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/payloads.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/payloads.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/payloads.json"
+    ],
+    "potential_duplicate_bytes": 342870,
+    "protected_paths": [
+      "outputs/vsg-2b-campaign/a96c2545-04d4-4133-a943-0032d082060f/payloads.json",
+      "validation/vsg_2b/dry_runs/9c1423c2-597b-47b6-b5e4-c9f6ba2d22ad/payloads.json",
+      "validation/vsg_2b/dry_runs/dba94160-719b-4b3e-83eb-84697454a9f8/payloads.json",
+      "validation/vsg_2b/dry_runs/a241770d-ffad-4bd6-b6fd-6a82eb1c18e7/payloads.json",
+      "validation/vsg_2b/dry_runs/f4231e08-419b-4df6-a790-054130cbb50c/payloads.json",
+      "validation/vsg_2b/dry_runs/ed04d917-c5d3-4fe3-b6de-62c13f532f7f/payloads.json",
+      "validation/vsg_2b/dry_runs/57d39ef0-282c-4b4c-a3f7-a0335a09ef9f/payloads.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "497177561603f75516a1a06ac820ac336d048f595dd85f3a18998639e29ed896",
+    "bytes_each": 62691,
+    "paths": [
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/comparison.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/comparison.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/comparison.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/comparison.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/comparison.json"
+    ],
+    "potential_duplicate_bytes": 250764,
+    "protected_paths": [
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/comparison.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/comparison.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/comparison.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/comparison.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/comparison.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "5197f955e2e3f335cd40298b0cf07564f2f2168d1d2446380df8a78b516d90f2",
+    "bytes_each": 55346,
+    "paths": [
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/payloads.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/payloads.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/payloads.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/payloads.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/payloads.json"
+    ],
+    "potential_duplicate_bytes": 221384,
+    "protected_paths": [
+      "outputs/vsg-2b-campaign/055ca103-57e3-4f8c-9231-aa73d3dbbedf/payloads.json",
+      "validation/vsg_2b/dry_runs/77c95bce-a381-4b8d-85e8-340121a67dd4/payloads.json",
+      "validation/vsg_2b/dry_runs/1a4563d9-67f0-41cd-a7b5-d1ee3dbc711e/payloads.json",
+      "validation/vsg_2b/dry_runs/cef0c18e-8e9f-4bcc-a391-e1daabcd4450/payloads.json",
+      "validation/vsg_2b/dry_runs/fe57659e-9fb4-4314-8957-da39998aeab2/payloads.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "c7cae60b151049b315427ca4f6e8743d78d417daca0e933f37e430e737757d5b",
+    "bytes_each": 447617,
+    "paths": [
+      "reference/assets/RDR-F01_L_KATZENSTEIN.jpg",
+      "reference/assets/RDR-F07_DAVES_CORNER.png"
+    ],
+    "potential_duplicate_bytes": 447617,
+    "protected_paths": [
+      "reference/assets/RDR-F01_L_KATZENSTEIN.jpg",
+      "reference/assets/RDR-F07_DAVES_CORNER.png"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "75d6a7fc6c8f13ee538769d6c560c72baf2e4efdef1cf72b661cf751ada113ba",
+    "bytes_each": 2714,
+    "paths": [
+      "validation/CGC_END_TO_END_REAL_ARCHIVE_V1.json",
+      "validation/gate4_2026_09_21/cgc_e2e.stdout.txt"
+    ],
+    "potential_duplicate_bytes": 2714,
+    "protected_paths": [
+      "validation/CGC_END_TO_END_REAL_ARCHIVE_V1.json",
+      "validation/gate4_2026_09_21/cgc_e2e.stdout.txt"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "7903de5367dbd076fa4bb6face3bf3d9a0aac99a8a5b3f7aa8ed44a0643949c3",
+    "bytes_each": 150938,
+    "paths": [
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/comparison.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/comparison.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/comparison.json"
+    ],
+    "potential_duplicate_bytes": 301876,
+    "protected_paths": [
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/comparison.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/comparison.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/comparison.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "f8ea1131d393e0cdd4ed7bfe4ce4b841a798f15f476305275c15bc12ae8ffb1a",
+    "bytes_each": 141608,
+    "paths": [
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/payloads.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/payloads.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/payloads.json"
+    ],
+    "potential_duplicate_bytes": 283216,
+    "protected_paths": [
+      "validation/vsg_2b/dry_runs/89bca550-75b4-4274-ba40-b38ea924990f/payloads.json",
+      "validation/vsg_2b/dry_runs/96c3a2c0-0243-4640-8079-e3bc720fc72d/payloads.json",
+      "validation/vsg_2b/dry_runs/ffec337b-31af-471a-bb9b-9a0c91413c7c/payloads.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "c62a62d6777b18bb179e0782faaa9820bc616430b0159358a1b40c6bf089482b",
+    "bytes_each": 18503,
+    "paths": [
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/legacy_191_D/crops/tile_001_line_003.png",
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/legacy_191_D/crops/tile_002_line_003.png"
+    ],
+    "potential_duplicate_bytes": 18503,
+    "protected_paths": [
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/legacy_191_D/crops/tile_001_line_003.png",
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/legacy_191_D/crops/tile_002_line_003.png"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "c9150dc1d027761caa83f2e100f2163c2a125266c427e8885412df6a2c832553",
+    "bytes_each": 42983,
+    "paths": [
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_2/crops/tile_001_line_006.png",
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_2/crops/tile_004_line_003.png"
+    ],
+    "potential_duplicate_bytes": 42983,
+    "protected_paths": [
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_2/crops/tile_001_line_006.png",
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_2/crops/tile_004_line_003.png"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "f56ba232aefe4a1787c56d44e5262b58af6725d0acf48c9615d6a73c64fcf378",
+    "bytes_each": 13455,
+    "paths": [
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_2/crops/tile_002_line_004.png",
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_2/crops/tile_005_line_004.png"
+    ],
+    "potential_duplicate_bytes": 13455,
+    "protected_paths": [
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_2/crops/tile_002_line_004.png",
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_2/crops/tile_005_line_004.png"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "9e8ed1958a3e5d16cea64f97a7ad693b755f090bfd6c295f5ecc4540c6548343",
+    "bytes_each": 17130,
+    "paths": [
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_1/crops/tile_001_line_006.png",
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_1/crops/tile_002_line_007.png"
+    ],
+    "potential_duplicate_bytes": 17130,
+    "protected_paths": [
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_1/crops/tile_001_line_006.png",
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_1/crops/tile_002_line_007.png"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "22f6b66b420b01eeb6d0bcccadf5118aff7322643648c02e4de1b60541ffe3bf",
+    "bytes_each": 17307,
+    "paths": [
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_1/crops/tile_007_line_001.png",
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_1/crops/tile_008_line_001.png"
+    ],
+    "potential_duplicate_bytes": 17307,
+    "protected_paths": [
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_1/crops/tile_007_line_001.png",
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_1/crops/tile_008_line_001.png"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "cbf94010b7a00c0cb8909b42b8f7d50f6c47043200739d4772895bdad617f3ef",
+    "bytes_each": 15816,
+    "paths": [
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_1/crops/tile_007_line_000.png",
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_1/crops/tile_004_line_000.png"
+    ],
+    "potential_duplicate_bytes": 15816,
+    "protected_paths": [
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_1/crops/tile_007_line_000.png",
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_1/crops/tile_004_line_000.png"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "e43c6de9e509c68860fe86a7e0e99a17aac5fafac6a035757743e3f85c271871",
+    "bytes_each": 17538,
+    "paths": [
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_1/crops/tile_004_line_001.png",
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_1/crops/tile_005_line_001.png"
+    ],
+    "potential_duplicate_bytes": 17538,
+    "protected_paths": [
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_1/crops/tile_004_line_001.png",
+      "validation/spatial_pilot_d/contrast_02/runs/contrast02_20261019/v1_D_1/crops/tile_005_line_001.png"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+    "bytes_each": 2,
+    "paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-03.exitcode.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-05.exitcode.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-02.exitcode.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.exitcode.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.exitcode.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.exitcode.txt"
+    ],
+    "potential_duplicate_bytes": 10,
+    "protected_paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-03.exitcode.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-05.exitcode.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-02.exitcode.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.exitcode.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.exitcode.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.exitcode.txt"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "bytes_each": 2,
+    "paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-04.exitcode.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-08.exitcode.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-07.exitcode.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-06.exitcode.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-01.exitcode.txt",
+      "validation/gate4_2026_09_21/cgc_e2e.exitcode.txt",
+      "validation/gate4_2026_09_21/rr2_unit.exitcode.txt",
+      "validation/gate4_2026_09_21/orchestrator.exitcode.txt",
+      "validation/gate4_2026_09_21/full_regression.exitcode.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.exitcode.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.exitcode.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.exitcode.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.exitcode.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.exitcode.txt"
+    ],
+    "potential_duplicate_bytes": 26,
+    "protected_paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-04.exitcode.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-08.exitcode.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-07.exitcode.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-06.exitcode.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-01.exitcode.txt",
+      "validation/gate4_2026_09_21/cgc_e2e.exitcode.txt",
+      "validation/gate4_2026_09_21/rr2_unit.exitcode.txt",
+      "validation/gate4_2026_09_21/orchestrator.exitcode.txt",
+      "validation/gate4_2026_09_21/full_regression.exitcode.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.exitcode.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.exitcode.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.exitcode.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.exitcode.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.exitcode.txt"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "ecce54697370c9b6f42da687c6c75cfd6dcbb9a38c7de0117159dcad40e0f132",
+    "bytes_each": 56,
+    "paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-04.stdout.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-01.stdout.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-06.stdout.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-08.stdout.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.stdout.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.stdout.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.stdout.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.stdout.txt"
+    ],
+    "potential_duplicate_bytes": 392,
+    "protected_paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-04.stdout.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-01.stdout.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-06.stdout.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-08.stdout.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.stdout.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.stdout.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.stdout.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.stdout.txt"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "b7a904f07e625a7f9eff02c5e418b61617116ed148117d3d41f0e1af79bf625b",
+    "bytes_each": 4473,
+    "paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json"
+    ],
+    "potential_duplicate_bytes": 4473,
+    "protected_paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-03.json",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "28e7f35d4e6c67d49382304ce878cec43591303ed9bcdc3ca7d955fd5788226b",
+    "bytes_each": 5200,
+    "paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json"
+    ],
+    "potential_duplicate_bytes": 5200,
+    "protected_paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-02.json",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "7cf0b717462ee85db3b3e401a1f3d8564d35f943f131fc475448a6daddc265b9",
+    "bytes_each": 5564,
+    "paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json"
+    ],
+    "potential_duplicate_bytes": 5564,
+    "protected_paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-05.json",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "e35662368cde60d2acbcc9458e119eb60f98c0be37e8b6f19a4bded7e8acd872",
+    "bytes_each": 4548,
+    "paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json"
+    ],
+    "potential_duplicate_bytes": 4548,
+    "protected_paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-04.json",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-04.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "7ee33a2d8c3dd4530366777650911ef5ccb7a39941110c103c8580caac56646c",
+    "bytes_each": 5953,
+    "paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json"
+    ],
+    "potential_duplicate_bytes": 5953,
+    "protected_paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-08.json",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-08.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "6dd361170844728b810860789f0c60e47ba2034c6de531bab68e95a54b31a62a",
+    "bytes_each": 67,
+    "paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-03.stdout.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-05.stdout.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-02.stdout.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.stdout.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.stdout.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.stdout.txt"
+    ],
+    "potential_duplicate_bytes": 335,
+    "protected_paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-03.stdout.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-05.stdout.txt",
+      "validation/rr2_real_archive/results/RR2-REAL-02.stdout.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-03.stdout.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-05.stdout.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-02.stdout.txt"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "4f80fc1000f33d60dd57128c53bfbde60379cc52c82aa3c0e09105f2f95975e2",
+    "bytes_each": 2926,
+    "paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json"
+    ],
+    "potential_duplicate_bytes": 2926,
+    "protected_paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-07.json",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "036380bb42d6bbe09283b38bbcb6c8fc11d809214fc2c0b857cdb7332bca5d70",
+    "bytes_each": 4641,
+    "paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json"
+    ],
+    "potential_duplicate_bytes": 4641,
+    "protected_paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-06.json",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-06.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "674f2dc473ee89adb39ba873b672c8dd6c83f0549cf23396cef92fa25c55b35d",
+    "bytes_each": 4371,
+    "paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json"
+    ],
+    "potential_duplicate_bytes": 4371,
+    "protected_paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-01.json",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-01.json"
+    ],
+    "deletion_authorized": false
+  },
+  {
+    "sha256": "98aadf87b0513b65c2dbf8b2b7ccd567b426fa473ce6833a69f8b2d3b293d854",
+    "bytes_each": 56,
+    "paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-07.stdout.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.stdout.txt"
+    ],
+    "potential_duplicate_bytes": 56,
+    "protected_paths": [
+      "validation/rr2_real_archive/results/RR2-REAL-07.stdout.txt",
+      "validation/gate4_2026_09_21/rr2_real_results/RR2-REAL-07.stdout.txt"
+    ],
+    "deletion_authorized": false
+  }
+]
