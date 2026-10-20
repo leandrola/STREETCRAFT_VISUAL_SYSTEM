@@ -1,0 +1,33 @@
+{
+  "status": "CERRADO",
+  "method": "Classifies every previously unresolved manifest/provenance reference by source role. Resolves group (a) only into the immutable path list; runtime imports/reads are separately listed and documentary references are retained as external, historical, or broken/non-normalized.",
+  "authoritative_sources": [
+    "PACKAGE_MANIFEST.json",
+    "RECONSTRUCTION_PROVENANCE.json",
+    "SVS_1_10_0_SHA256SUMS.json",
+    "development/coordination/CHECKPOINT.json",
+    "validation/sc_multiagent/REVIEW_MANIFEST.json",
+    "validation/sc_multiagent/continuity/CANDIDATE_04_MANIFEST.json",
+    "validation/sc_multiagent/continuity/SC06_IMPLEMENTATION_PROVENANCE.json",
+    "validation/sc_multiagent/plan_entry_20261013/ENTRY_EVIDENCE.json",
+    "validation/sc_multiagent/plan_entry_20261013/FINAL_REVIEW_RECEIPT.json",
+    "validation/sc_multiagent/plan_entry_20261013/MANIFEST.json",
+    "validation/sc_multiagent/visual_campaigns/vsg_textual_20261013/MANIFEST.json"
+  ],
+  "immutable_path_count": 1065,
+  "runtime_execution_path_count": 15,
+  "unresolved_by_group": {
+    "a_hash_or_provenance": 43,
+    "c_documentary": 3440
+  },
+  "unresolved_documentary_by_subtype": {
+    "broken_or_non_normalized_documentary_reference": 2529,
+    "external_link_or_command_token": 891,
+    "historical_absolute_path": 20
+  },
+  "limits": [
+    "An unresolved authoritative reference remains preserved in its source record; it cannot create a local immutable path without a resolved local target.",
+    "External Archive runtime inputs remain external and are not fabricated from this repository.",
+    "Documentary broken/non-normalized links are reported, not repaired, in this read-only phase."
+  ]
+}
