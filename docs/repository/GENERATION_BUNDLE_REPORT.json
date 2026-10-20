@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "bundle_path": "dist/streetcraft-generation",
+  "payload_files": 34,
+  "payload_bytes": 130307,
+  "payload_lines": 2959,
+  "complete_repository_baseline": {
+    "files": 5654,
+    "bytes": 361864337,
+    "text_lines": 1384234,
+    "scope": "Pre-cleanup inventory, excluding .git and including local ignored files."
+  },
+  "dry_run": {
+    "expected_sha256": "0cee4e3f842c76d478c9be89034eaeae8c34b815f0202701c20a30f49498cee6",
+    "actual_sha256": "0cee4e3f842c76d478c9be89034eaeae8c34b815f0202701c20a30f49498cee6",
+    "isolated_temporary_copy": true
+  },
+  "unplanned_inclusions": 19,
+  "excluded_closure_hits": [
+    {
+      "path": "visual_scene_graph/vsg_observer.py",
+      "reason": "Unconditional import by integration/streetcraft_orchestrator.py; authorized KEEP_RUNTIME exception."
+    },
+    {
+      "path": "visual_scene_graph/graph_locks.py",
+      "reason": "Transitive import by vsg_observer.py; authorized KEEP_RUNTIME exception."
+    }
+  ],
+  "frozen_evidence_dependencies": [],
+  "manifest": "dist/streetcraft-generation/MANIFEST.json",
+  "doubtful": "Recorded in the ignored bundle manifest; no ambiguity changed the stable runtime."
+}
