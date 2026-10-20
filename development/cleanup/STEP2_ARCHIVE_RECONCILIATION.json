@@ -1,0 +1,23 @@
+{
+  "status": "CERRADO",
+  "decisions_applied": {
+    "reference_assets_r2b_outputs": "Keep only runtime or immutable hash/provenance paths; classify remaining visual material ARCHIVE.",
+    "build_kit": "KEEP_NEXT_MILESTONE; dedicated material identified in ROADMAP.md. Nominal 1:64 occurrences under BD01/BD02 remain KEEP_RUNTIME.",
+    "bd01_bd02": "KEEP_RUNTIME including requested catalog, specification, tests, schema and visual validation artifacts.",
+    "archive_pinterest_maps": "No reclassification to ARCHIVE solely from name; preserve pending provenance triage."
+  },
+  "build_kit": {
+    "files": [
+      "ROADMAP.md"
+    ],
+    "bytes": 3966,
+    "runtime_read_or_import": false,
+    "separation_proposal": "At a future authorized move, place un-hashed Build Kit-only documents under docs/build_kit/ and exclude that directory from the generation-chat attachment. Do not move ROADMAP.md or any path in UNTOUCHABLE_HASH_PROVENANCE.csv before replacing every recorded hash/reference."
+  },
+  "archive_groups": 1,
+  "archive_groups_apta": 1,
+  "limits": [
+    "This is a candidate classification, not an authorization to remove or move any path.",
+    "A group can be functionally closed but retained because frozen hashes/provenance require its exact path."
+  ]
+}
