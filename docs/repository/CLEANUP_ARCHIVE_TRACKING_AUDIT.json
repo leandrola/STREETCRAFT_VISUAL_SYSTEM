@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "source": "cleanup/inventory:development/cleanup/CLASSIFICATION_CANDIDATE.csv",
+  "candidate_archive_rows": 28,
+  "candidate_archive_groups": [
+    "outputs/vsg-2b-campaign/"
+  ],
+  "tracked_archive_rows": 0,
+  "finding": "All ARCHIVE rows were ignored local outputs, not paths in main.",
+  "resolution": "NO_APLICA_CONSERVADO_LOCAL",
+  "gitignore_rule": ".gitignore:39:/outputs/",
+  "tag_checked": "pre-cleanup-2026-10-20",
+  "tag_contains_outputs": false
+}
