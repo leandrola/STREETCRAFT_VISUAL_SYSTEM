@@ -1,15 +1,60 @@
 {
   "status": "PASS",
   "immutable_paths": 1065,
-  "hash_matches": 1065,
+  "strict_immutable_paths": 1058,
+  "strict_hash_matches": 1058,
+  "documented_exceptions": [
+    {
+      "path": "benchmark/.DS_Store",
+      "expected": "fc1222e0ff6c5a53afd93d5b99a8bbe2b24109310f96efb7ac23aeabf9d773a2",
+      "actual": "MISSING",
+      "reason": "Finder metadata removed by Lean-authorized local cleanup; see docs/repository/ERRATA_DS_STORE_2026_10_20.md."
+    },
+    {
+      "path": "benchmark/r2b_1_9_1/.DS_Store",
+      "expected": "87e354dc5d03577d11776539bbd199d2910b8cc03c7cd92e115e8a10b8bd4b73",
+      "actual": "MISSING",
+      "reason": "Finder metadata removed by Lean-authorized local cleanup; see docs/repository/ERRATA_DS_STORE_2026_10_20.md."
+    },
+    {
+      "path": "validation/.DS_Store",
+      "expected": "3cfbfa297c030209803bd3d0143b43e923287e1a012d6ff49aa8b3f3e554e1d1",
+      "actual": "MISSING",
+      "reason": "Finder metadata removed by Lean-authorized local cleanup; see docs/repository/ERRATA_DS_STORE_2026_10_20.md."
+    },
+    {
+      "path": "validation/camera_routing/.DS_Store",
+      "expected": "624aaf3810ca2e81db9fe7aca324131418aeab800cddf2e17e19fc49347e4e97",
+      "actual": "MISSING",
+      "reason": "Finder metadata removed by Lean-authorized local cleanup; see docs/repository/ERRATA_DS_STORE_2026_10_20.md."
+    },
+    {
+      "path": "validation/cgc_e2e/.DS_Store",
+      "expected": "a31644226416bde2cc5d6da8c00fc2498a96acbbbe2ca7d8742b8aeeb4e51ecf",
+      "actual": "MISSING",
+      "reason": "Finder metadata removed by Lean-authorized local cleanup; see docs/repository/ERRATA_DS_STORE_2026_10_20.md."
+    },
+    {
+      "path": "validation/rr2_real_archive/.DS_Store",
+      "expected": "ddf2de9817904c6ee28fd1ad07600bc7a68b3da617b5f299f0276a5732b3d753",
+      "actual": "MISSING",
+      "reason": "Finder metadata removed by Lean-authorized local cleanup; see docs/repository/ERRATA_DS_STORE_2026_10_20.md."
+    },
+    {
+      "path": "visual_scene_graph/.DS_Store",
+      "expected": "4f45ea449f6a0a5f5e0aebb21870898f4a10239ccf721c92f36a12fa3ffb1f39",
+      "actual": "MISSING",
+      "reason": "Finder metadata removed by Lean-authorized local cleanup; see docs/repository/ERRATA_DS_STORE_2026_10_20.md."
+    }
+  ],
   "hash_mismatches": [],
-  "copied_tracked_files": 1073,
+  "copied_tracked_files": 1076,
   "checks": [
     {
       "name": "command_invocation/test_commands.py",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.103,
+      "elapsed_seconds": 0.106,
       "stdout": "PASS 19/19 CIL 1.1 tests\n",
       "stderr": ""
     },
@@ -17,15 +62,15 @@
       "name": "command_invocation/test_backdrop_presets.py",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.994,
+      "elapsed_seconds": 1.034,
       "stdout": "",
-      "stderr": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.711s\n\nOK\n"
+      "stderr": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.731s\n\nOK\n"
     },
     {
       "name": "hardening/test_operational_hardening.py",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.095,
+      "elapsed_seconds": 0.097,
       "stdout": "PASS 12/12 operational hardening tests\n",
       "stderr": ""
     },
@@ -33,7 +78,7 @@
       "name": "reference_runtime/test_archive_aware_runtime.py",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.115,
+      "elapsed_seconds": 0.121,
       "stdout": "PASS 10/10 archive-aware runtime unit tests\n",
       "stderr": ""
     },
@@ -41,15 +86,15 @@
       "name": "reference_runtime/test_reference_reasoning.py",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.204,
+      "elapsed_seconds": 0.208,
       "stdout": "",
-      "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.004s\n\nOK\n"
+      "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.006s\n\nOK\n"
     },
     {
       "name": "scene_intelligence/test_scene_intelligence.py",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.114,
+      "elapsed_seconds": 0.122,
       "stdout": "PASS 24/24 Scene Intelligence tests\n",
       "stderr": ""
     },
@@ -57,7 +102,7 @@
       "name": "integration/test_streetcraft_orchestrator.py",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.251,
+      "elapsed_seconds": 0.266,
       "stdout": "",
       "stderr": "............\n----------------------------------------------------------------------\nRan 12 tests in 0.008s\n\nOK\n"
     },
@@ -65,7 +110,7 @@
       "name": "validation/test_patch_1_9_1.py",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.13,
+      "elapsed_seconds": 0.128,
       "stdout": "PASS 24/24 SVS 1.9.1 patch tests\n",
       "stderr": ""
     },
@@ -73,7 +118,7 @@
       "name": "validation/test_single_client_1_10_0.py",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.096,
+      "elapsed_seconds": 0.097,
       "stdout": "PASS single-client governance 1.10.0\n",
       "stderr": ""
     },
@@ -81,15 +126,15 @@
       "name": "benchmark/check_r2_baseline.py",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.882,
+      "elapsed_seconds": 0.877,
       "stdout": "{\n  \"result\": \"PASS\",\n  \"cases\": 14,\n  \"fixtures_checked\": 20,\n  \"errors\": []\n}\n",
-      "stderr": "/var/folders/4j/9wb2jw_12k9gvtcfjwqv58000000gn/T/vscode-agent-codex-sandbox-hhMfml/streetcraft-cleanup-final-wvvoe_79/repo/benchmark/check_r2_baseline.py:12: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.\n  px=list(im.getdata())\n"
+      "stderr": "/var/folders/4j/9wb2jw_12k9gvtcfjwqv58000000gn/T/vscode-agent-codex-sandbox-hhMfml/streetcraft-cleanup-final-3vszh738/repo/benchmark/check_r2_baseline.py:12: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.\n  px=list(im.getdata())\n"
     },
     {
       "name": "validation/camera_routing/validate_matrix.py",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.101,
+      "elapsed_seconds": 0.098,
       "stdout": "{\n  \"status\": \"PASS\",\n  \"passed\": 26,\n  \"total\": 26\n}\n",
       "stderr": ""
     },
@@ -97,7 +142,7 @@
       "name": "validation/camera_routing/validate_l3.py",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.098,
+      "elapsed_seconds": 0.097,
       "stdout": "{\n  \"status\": \"PASS\",\n  \"passed\": 7,\n  \"total\": 7\n}\n",
       "stderr": ""
     },
@@ -105,9 +150,9 @@
       "name": "SC03 supervisor unit tests",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.403,
+      "elapsed_seconds": 0.415,
       "stdout": "",
-      "stderr": "test_lock_rejects_second_supervisor (test_sc_supervisor.SupervisorTests.test_lock_rejects_second_supervisor) ... ok\ntest_missing_envelope_blocks (test_sc_supervisor.SupervisorTests.test_missing_envelope_blocks) ... ok\ntest_reconcile_never_relaunches (test_sc_supervisor.SupervisorTests.test_reconcile_never_relaunches) ... ok\ntest_signal_permission_failure_is_orphaned (test_sc_supervisor.SupervisorTests.test_signal_permission_failure_is_orphaned) ... ok\ntest_task_key_is_stable (test_sc_supervisor.SupervisorTests.test_task_key_is_stable) ... ok\ntest_timeout_stops_process_group (test_sc_supervisor.SupervisorTests.test_timeout_stops_process_group) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.065s\n\nOK\n"
+      "stderr": "test_lock_rejects_second_supervisor (test_sc_supervisor.SupervisorTests.test_lock_rejects_second_supervisor) ... ok\ntest_missing_envelope_blocks (test_sc_supervisor.SupervisorTests.test_missing_envelope_blocks) ... ok\ntest_reconcile_never_relaunches (test_sc_supervisor.SupervisorTests.test_reconcile_never_relaunches) ... ok\ntest_signal_permission_failure_is_orphaned (test_sc_supervisor.SupervisorTests.test_signal_permission_failure_is_orphaned) ... ok\ntest_task_key_is_stable (test_sc_supervisor.SupervisorTests.test_task_key_is_stable) ... ok\ntest_timeout_stops_process_group (test_sc_supervisor.SupervisorTests.test_timeout_stops_process_group) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.062s\n\nOK\n"
     }
   ],
   "method": "selected baseline checks ran in a TemporaryDirectory copy; the worktree was not a test target"

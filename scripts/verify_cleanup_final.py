@@ -25,15 +25,30 @@ CHECKS = [
     "validation/test_single_client_1_10_0.py", "benchmark/check_r2_baseline.py",
     "validation/camera_routing/validate_matrix.py", "validation/camera_routing/validate_l3.py",
 ]
+DOCUMENTED_MISSING_EXCEPTIONS = {
+    "benchmark/.DS_Store": "Finder metadata removed by Lean-authorized local cleanup; see docs/repository/ERRATA_DS_STORE_2026_10_20.md.",
+    "benchmark/r2b_1_9_1/.DS_Store": "Finder metadata removed by Lean-authorized local cleanup; see docs/repository/ERRATA_DS_STORE_2026_10_20.md.",
+    "validation/.DS_Store": "Finder metadata removed by Lean-authorized local cleanup; see docs/repository/ERRATA_DS_STORE_2026_10_20.md.",
+    "validation/camera_routing/.DS_Store": "Finder metadata removed by Lean-authorized local cleanup; see docs/repository/ERRATA_DS_STORE_2026_10_20.md.",
+    "validation/cgc_e2e/.DS_Store": "Finder metadata removed by Lean-authorized local cleanup; see docs/repository/ERRATA_DS_STORE_2026_10_20.md.",
+    "validation/rr2_real_archive/.DS_Store": "Finder metadata removed by Lean-authorized local cleanup; see docs/repository/ERRATA_DS_STORE_2026_10_20.md.",
+    "visual_scene_graph/.DS_Store": "Finder metadata removed by Lean-authorized local cleanup; see docs/repository/ERRATA_DS_STORE_2026_10_20.md.",
+}
 
 def sha(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 def main() -> int:
     frozen = list(csv.DictReader(FROZEN.open(encoding="utf-8")))
-    mismatches = [{"path": r["path"], "expected": r["expected_sha256"],
-                   "actual": sha(ROOT / r["path"]) if (ROOT / r["path"]).is_file() else "MISSING"}
-                  for r in frozen if not (ROOT / r["path"]).is_file() or sha(ROOT / r["path"]) != r["expected_sha256"]]
+    mismatches, exceptions = [], []
+    for row in frozen:
+        path = ROOT / row["path"]
+        actual = sha(path) if path.is_file() else "MISSING"
+        if row["path"] in DOCUMENTED_MISSING_EXCEPTIONS and actual == "MISSING":
+            exceptions.append({"path": row["path"], "expected": row["expected_sha256"],
+                               "actual": actual, "reason": DOCUMENTED_MISSING_EXCEPTIONS[row["path"]]})
+        elif actual != row["expected_sha256"]:
+            mismatches.append({"path": row["path"], "expected": row["expected_sha256"], "actual": actual})
     paths = subprocess.check_output(["git", "ls-files", "-z"], cwd=ROOT).decode().rstrip("\0").split("\0")
     checks: list[dict[str, object]] = []
     with tempfile.TemporaryDirectory(prefix="streetcraft-cleanup-final-") as temp_name:
@@ -54,12 +69,14 @@ def main() -> int:
             start = time.monotonic()
             run = subprocess.run([sys.executable, "-m", "unittest", "discover", "-s", "tests", "-p", "test_sc_supervisor.py", "-v"], cwd=checkout, env=env, capture_output=True, text=True, timeout=90)
             checks.append({"name": "SC03 supervisor unit tests", "status": "PASS" if run.returncode == 0 else "FAIL", "exit_code": run.returncode, "elapsed_seconds": round(time.monotonic()-start, 3), "stdout": run.stdout, "stderr": run.stderr})
-    report = {"status": "PASS" if not mismatches and len(checks) == 13 and all(c["status"] == "PASS" for c in checks) else "FAIL",
-              "immutable_paths": len(frozen), "hash_matches": len(frozen)-len(mismatches), "hash_mismatches": mismatches,
+    report = {"status": "PASS" if not mismatches and len(exceptions) == len(DOCUMENTED_MISSING_EXCEPTIONS) and len(checks) == 13 and all(c["status"] == "PASS" for c in checks) else "FAIL",
+              "immutable_paths": len(frozen), "strict_immutable_paths": len(frozen)-len(exceptions),
+              "strict_hash_matches": len(frozen)-len(exceptions)-len(mismatches),
+              "documented_exceptions": exceptions, "hash_mismatches": mismatches,
               "copied_tracked_files": len(paths), "checks": checks,
               "method": "selected baseline checks ran in a TemporaryDirectory copy; the worktree was not a test target"}
     RESULT.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(json.dumps({k: report[k] for k in ("status", "immutable_paths", "hash_matches", "copied_tracked_files")}, ensure_ascii=False))
+    print(json.dumps({k: report[k] for k in ("status", "immutable_paths", "strict_immutable_paths", "strict_hash_matches", "copied_tracked_files")}, ensure_ascii=False))
     return 0 if report["status"] == "PASS" else 1
 
 if __name__ == "__main__":
