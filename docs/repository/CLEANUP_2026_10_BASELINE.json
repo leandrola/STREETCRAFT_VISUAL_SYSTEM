@@ -1,0 +1,14 @@
+{
+  "base_commit": "30ca4c6abd0146685540416cbe61c1f43415d6e6",
+  "inventory_ref": "cleanup/inventory",
+  "inventory_list": "development/cleanup/UNTOUCHABLE_HASH_PROVENANCE.csv",
+  "immutable_paths": 1065,
+  "hash_matches": 1065,
+  "hash_mismatches": [],
+  "baseline_results": {
+    "status": "PASS_LOCAL",
+    "head": "241366d08558c0f9240a895a3801bb21748023fc",
+    "baseline_results_sha256": "527eb6c916bbe35c92d531bbd4ab71f0e5389aeb16a964a909130abf59c7bd18",
+    "dry_run_sha256": "0cee4e3f842c76d478c9be89034eaeae8c34b815f0202701c20a30f49498cee6"
+  }
+}
