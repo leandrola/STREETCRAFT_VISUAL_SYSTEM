@@ -1,0 +1,10 @@
+{
+  "cleanup_branch": "cleanup/execute",
+  "base_branch": "main",
+  "base_commit": "241366d08558c0f9240a895a3801bb21748023fc",
+  "base_tree": "e2294a8626a16ee7cf55321fe8a06721000e1e0c",
+  "backup_tag": "pre-cleanup-2026-10-20",
+  "backup_tag_target": "241366d08558c0f9240a895a3801bb21748023fc",
+  "published": true,
+  "scope": "Backup created before cleanup; main was not modified."
+}
